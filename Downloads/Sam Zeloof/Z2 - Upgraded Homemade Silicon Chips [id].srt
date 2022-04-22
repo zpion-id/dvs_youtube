@@ -1,0 +1,676 @@
+1
+0:00:00,160 --> 0:00:01,920
+beberapa tahun yang lalu saya membuat
+
+2
+0:00:01,920 --> 0:00:04,560
+chip silikon buatan sendiri pertama di dunia di garasi saya, saya
+
+3
+0:00:04,560 --> 0:00:06,399
+baru saja membuat versi 2 yang memiliki 100
+
+4
+0:00:06,399 --> 0:00:08,400
+transistor di atasnya dan mereka lebih kecil
+
+5
+0:00:08,400 --> 0:00:10,639
+lebih baik dan lebih cepat daripada yang lama
+
+6
+0:00:10,639 --> 0:00:12,480
+saya membuat array 12 ini jadi itu
+
+7
+0:00:12,480 --> 0:00:15,040
+1  200 transistor pada bagian yang sama dari
+
+8
+0:00:15,040 --> 0:00:17,440
+prosesor pertama intel silikon hanya memiliki
+
+9
+0:00:17,440 --> 0:00:19,279
+2.000 transistor jadi kami sudah
+
+10
+0:00:19,279 --> 0:00:21,119
+mendekati tingkat kerumitan yang layak
+
+11
+0:00:21,119 --> 0:00:22,480
+dan saya harus dapat membuat beberapa
+
+12
+0:00:22,480 --> 0:00:24,240
+sirkuit yang sangat menarik dari ini segera saya
+
+13
+0:00:24,240 --> 0:00:25,840
+melakukan beberapa proyek keren dengan yang pertama
+
+14
+0:00:25,840 --> 0:00:28,240
+chip seperti flasher yang dipimpin dan
+
+15
+0:00:28,240 --> 0:00:30,240
+pedal distorsi gitar mereka bekerja dengan sangat baik
+
+16
+0:00:30,240 --> 0:00:31,760
+tetapi membutuhkan satu atau dua baterai sembilan volt yang
+
+17
+0:00:31,760 --> 0:00:33,280
+terpasang padanya karena
+
+18
+0:00:33,280 --> 0:00:35,040
+tegangan ambang MOSFET
+
+19
+0:00:35,040 --> 0:00:36,239
+lama sangat tinggi
+
+20
+0:00:36,239 --> 0:00:38,399
+chip baru ini dibuat pada
+
+21
+0:00:38,399 --> 0:00:40,800
+proses gerbang polisilikon semua detail ini adalah
+
+22
+0:00:40,800 --> 0:00:42,800
+pada tulisan di blog saya tetapi
+
+23
+0:00:42,800 --> 0:00:44,640
+efeknya adalah mereka bekerja dengan baik pada
+
+24
+0:00:44,640 --> 0:00:45,920
+tegangan yang sangat rendah, mereka memiliki tegangan ambang
+
+25
+0:00:45,920 --> 0:00:48,239
+hanya sekitar 1 volt dan
+
+26
+0:00:48,239 --> 0:00:51,360
+itu berarti saya dapat mematikannya dari 3,3
+
+27
+0:00:51,360 --> 0:00:53,520
+dan level logika 5 volt mereka menarik lebih sedikit
+
+28
+0:00:53,520 --> 0:00:55,199
+daya dan saya harus dapat mengemas lebih banyak
+
+29
+0:00:55,199 --> 0:00:58,160
+dari mereka ke area mati yang lebih kecil untuk
+
+30
+0:00:58,160 --> 0:00:59,680
+chip sederhana seperti ini proses
+
+31
+0:00:59,680 --> 0:01:01,760
+sebenarnya dimulai di photoshop
+
+32
+0:01:01,760 --> 0:01:03,600
+hanya ada empat lapisan untuk dirancang dan
+
+33
+0:01:03,600 --> 0:01:05,439
+lebih mudah menggunakan ini daripada menggunakan  beberapa
+
+34
+0:01:05,439 --> 0:01:07,119
+perangkat lunak yang lebih rumit
+
+35
+0:01:07,119 --> 0:01:08,960
+saya mulai dengan banyak wafer 200 milimeter
+
+36
+0:01:08,960 --> 0:01:10,400
+yang memiliki beberapa
+
+37
+0:01:10,400 --> 0:01:12,240
+parameter awal yang cukup spesifik mereka terlalu besar
+
+38
+0:01:12,240 --> 0:01:14,159
+jadi saya memotongnya menggunakan juru tulis berlian
+
+39
+0:01:14,159 --> 0:01:16,400
+menjadi bit yang lebih kecil saya biasanya membuat
+
+40
+0:01:16,400 --> 0:01:17,920
+kotak sekitar setengah inci seperti ini tetapi saya bisa
+
+41
+0:01:17,920 --> 0:01:19,759
+memproses hal-hal yang lebih besar hingga sekitar dua
+
+42
+0:01:19,759 --> 0:01:21,439
+inci wafer
+
+43
+0:01:21,439 --> 0:01:23,280
+lapisan pertama yang harus ditentukan adalah lapisan doping
+
+44
+0:01:23,280 --> 0:01:25,119
+yang membuat sumber dan
+
+45
+0:01:25,119 --> 0:01:27,119
+mengalirkan mosfets saya meletakkannya di spin coater buatan sendiri ini
+
+46
+0:01:27,119 --> 0:01:29,280
+dan kemudian saya menyimpan
+
+47
+0:01:29,280 --> 0:01:31,280
+photoresist di atasnya Anda hanya membutuhkan
+
+48
+0:01:31,280 --> 0:01:33,439
+sekitar 100 mikroliter atau  jadi untuk menutupi
+
+49
+0:01:33,439 --> 0:01:35,840
+wafer kecil seperti ini dan kami memutarnya pada
+
+50
+0:01:35,840 --> 0:01:39,119
+4000 rpm selama 30 detik
+
+51
+0:01:39,119 --> 0:01:40,720
+setelah semua kelebihan photoresist
+
+52
+0:01:40,720 --> 0:01:42,720
+telah dipintal itu dikeringkan di atas hot
+
+53
+0:01:42,720 --> 0:01:44,960
+plate sekitar 95 derajat c selama satu menit
+
+54
+0:01:44,960 --> 0:01:46,799
+ini  s mengusir sisa pelarut
+
+55
+0:01:46,799 --> 0:01:49,439
+dan meninggalkan kita dengan film padat
+
+56
+0:01:49,439 --> 0:01:51,200
+hasilnya adalah tampilan yang indah dan
+
+57
+0:01:51,200 --> 0:01:55,759
+penutup seragam dari seluruh wafer
+
+58
+0:01:55,759 --> 0:01:57,840
+kemudian pergi ke stepper fotolitografi tanpa topeng
+
+59
+0:01:57,840 --> 0:01:59,920
+buatan sendiri untuk eksposur
+
+60
+0:01:59,920 --> 0:02:01,920
+ide dasarnya adalah bahwa kita memuat
+
+61
+0:02:01,920 --> 0:02:03,360
+gambar pada  laptop ini yang ingin kami
+
+62
+0:02:03,360 --> 0:02:05,200
+proyeksikan ke dalam chip, lalu ada
+
+63
+0:02:05,200 --> 0:02:07,200
+proyektor dlp standar dan beberapa optik
+
+64
+0:02:07,200 --> 0:02:09,039
+yang merekamnya dan menguranginya
+
+65
+0:02:09,039 --> 0:02:10,800
+ke wafer. Saya memiliki seluruh video tentang alat ini,
+
+66
+0:02:10,800 --> 0:02:13,280
+jadi saya sarankan untuk memeriksanya
+
+67
+0:02:13,280 --> 0:02:14,879
+di tengah, Anda melihat sedikit  titik biru
+
+68
+0:02:14,879 --> 0:02:16,959
+itu seluruh bidang eksposur itu
+
+69
+0:02:16,959 --> 0:02:19,200
+berlangsung sekitar sembilan detik kemudian biru
+
+70
+0:02:19,200 --> 0:02:20,959
+hilang di akhir eksposur kita
+
+71
+0:02:20,959 --> 0:02:22,800
+bisa melangkah wafer ke lokasi lain
+
+72
+0:02:22,800 --> 0:02:25,440
+dan mengekspos bagian itu
+
+73
+0:02:25,440 --> 0:02:27,040
+juga seperti memproses filamen ruangan gelap
+
+74
+0:02:27,040 --> 0:02:29,200
+langkah selanjutnya adalah pengembangan yang saya taruh
+
+75
+0:02:29,200 --> 0:02:30,720
+itu dalam beberapa persen
+
+76
+0:02:30,720 --> 0:02:32,560
+larutan kalium hidroksida selama sekitar satu menit
+
+77
+0:02:32,560 --> 0:02:34,080
+dan ini menghilangkan bagian-bagian dari
+
+78
+0:02:34,080 --> 0:02:35,840
+photoresist yang terkena karena
+
+79
+0:02:35,840 --> 0:02:40,959
+itu photoresist positif
+
+80
+0:02:40,959 --> 0:02:42,319
+saya mencucinya dengan  air untuk menyingkirkan
+
+81
+0:02:42,319 --> 0:02:44,160
+pengembang sisa dan kemudian kami siap
+
+82
+0:02:44,160 --> 0:02
+untuk melakukan langkah berikutnya saya dapat meletakkan di bawah
+
+83
+0:02 --> 0:02:47,599
+mikroskop untuk memeriksanya dan memastikan
+
+84
+0:02:47,599 --> 0:02:49,440
+semuanya bekerja dengan baik jika tidak
+
+85
+0:02:49,440 --> 0:02:50,800
+Anda selalu dapat melepaskan
+
+86
+0:02:50,800 --> 0:02:52,640
+lapisan photoresist dan  coba lagi dengan
+
+87
+0:02:52,640 --> 0:02:53,920
+eksposur atau
+
+88
+0:02:53,920 --> 0:02:56,080
+waktu pengembangan yang berbeda
+
+89
+0:02:56,080 --> 0:02:57,280
+sekarang gambar terbentuk di
+
+90
+0:02:57,280 --> 0:02:59,280
+photoresist saya mentransfernya ke
+
+91
+0:02:59,280 --> 0:03:01,680
+lapisan polisilikon yang mendasari menggunakan
+
+92
+0:03:01,680 --> 0:03:03,519
+etsa setelah tergores kita tidak memerlukan
+
+93
+0:03:03,519 --> 0:03:05,280
+lapisan topeng photoresist lagi
+
+94
+0:03:05,280 --> 0:03:12,400
+sehingga dapat dilucuti menggunakan aseton
+
+95
+0:03:12,400 --> 0:03:14,720
+wafer kemudian dibersihkan dan dikeringkan dan
+
+96
+0:03:14,720 --> 0:03:16,959
+kami berputar pada dopan ini adalah
+
+97
+0:03:16,959 --> 0:03:19,200
+larutan fosfor yang tersuspensi
+
+98
+0:03:19,200 --> 0:03:22,080
+dalam silikon dioksida cair ini
+
+99
+0:03:22,080 --> 0:03:23,519
+diputar seperti photoresist dan kemudian kami
+
+100
+0:03:23,519 --> 0:03:25,599
+memanggangnya pada suhu yang sangat tinggi lebih dari
+
+101
+0:03:25,599 --> 0:03:28,959
+1000 derajat c selama sekitar 45 menit  ini
+
+102
+0:03:28,959 --> 0:03:31,040
+mendorong atom fosfor ke dalam
+
+103
+0:03:31,040 --> 0:03:32,640
+sumur kecil yang baru saja kita definisikan menggunakan
+
+104
+0:03:32,640 --> 0:03:35,440
+litografi dan yang pada dasarnya membentuk
+
+105
+0:03:35,440 --> 0:03:37,920
+sumber dan saluran mosfets. Saya harus
+
+106
+0:03:37,920 --> 0:03:38,959
+mendorongnya ke dalam ce  bagian dalam
+
+107
+0:03:38,959 --> 0:03:41,280
+tungku menggunakan batang kuarsa ini dan kemudian
+
+108
+0:03:41,280 --> 0:03:42,640
+pada akhir proses kami menarik keluar
+
+109
+0:03:42,640 --> 0:03:44,480
+sisi lain proses spin
+
+110
+0:03:44,480 --> 0:03:46,640
+coating photoresist memanggangnya
+
+111
+0:03:46,640 --> 0:03:48,400
+mengekspos dan mengembangkannya kemudian diulang
+
+112
+0:03:48,400 --> 0:03:50,640
+tepat dua kali sekali untuk lapisan gerbang
+
+113
+0:03:50,640 --> 0:03:52,959
+dan kemudian lagi untuk lapisan  kontak
+
+114
+0:03:52,959 --> 0:03:54,959
+gerbang tergores seperti yang kita lakukan sebelumnya
+
+115
+0:03:54,959 --> 0:03:57,200
+dengan etsa polisilikon dan lapisan kontak
+
+116
+0:03:57,200 --> 0:03:59,599
+harus tergores juga karena
+
+117
+0:03:59,599 --> 0:04:01,200
+sekarang setelah langkah suhu tinggi
+
+118
+0:04:01,200 --> 0:04:02,959
+ada lapisan silikon dioksida
+
+119
+0:04:02,959 --> 0:04:04,799
+isolasi semuanya jadi setelah
+
+120
+0:04:04,799 --> 0:04:06,959
+masker kontak terbentuk Anda harus menggunakan
+
+121
+0:04:06,959 --> 0:04:10,720
+sesuatu seperti asam fluorida atau
+
+122
+0:04:10,720 --> 0:04:12,879
+etsa ion reaktif chf3 untuk menghilangkan
+
+123
+0:04:12,879 --> 0:04:15,439
+isolator itu sehingga kami dapat membuat kontak listrik yang baik
+
+124
+0:04:15,439 --> 0:04:17,040
+kemudian kami menempelkan wafer ke dalam ruang vakum
+
+125
+0:04:17,040 --> 0:04:19,040
+untuk menggerutu atau
+
+126
+0:04:19,040 --> 0:04:21,600
+menguapkan logam secara termal Saya menguapkan aluminium
+
+127
+0:04:21,600 --> 0:04:24,240
+lapisan tebal sekitar satu mikron  atau lebih
+
+128
+0:04:24,240 --> 0:04:25,440
+dan kemudian kami melakukan seluruh
+
+129
+0:04:25,440 --> 0:04:27,840
+proses fotolitografi lagi dari
+
+130
+0:04:27,840 --> 0:04:30,240
+pelapisan berputar dan mengekspos dan mengembangkan untuk
+
+131
+0:04:30,240 --> 0:04:32,240
+menentukan lapisan logam
+
+132
+0:04:32,240 --> 0:04:34,560
+itu setelah selesai  e tempelkan wafer ke dalam
+
+133
+0:04:34,560 --> 0:04:36,800
+penangas asam fosfat hangat yang
+
+134
+0:04:36,800 --> 0:04:39,120
+menghilangkan sisa aluminium dan
+
+135
+0:04:39,120 --> 0:04:40,560
+akhirnya chip selesai
+
+136
+0:04:40,560 --> 0:04
+pada titik ini saya akan memeriksa chip dengan
+
+137
+0:04 --> 0:04:43,520
+cukup teliti dan mengambil banyak
+
+138
+0:04:43,520 --> 0:04:45,120
+gambar close-up untuk mengukur parameter
+
+139
+0:04:45,120 --> 0:04:47,199
+seperti panjang dan lebar gerbang  dan
+
+140
+0:04:47,199 --> 0:04:49,280
+ketebalan lapisan jika saya melakukan penampang saya
+
+141
+0:04:49,280 --> 0:04:50,800
+dapat meletakkannya di stasiun probe yang
+
+142
+0:04:50,800 --> 0:04:52,720
+memiliki banyak jarum tungsten yang sangat kecil
+
+143
+0:04:52,720 --> 0:04:54,800
+dan memungkinkan saya untuk membuat koneksi
+
+144
+0:04:54,800 --> 0:04:56,800
+langsung ke transistor itu sangat
+
+145
+0:04:56,800 --> 0:04:58,880
+rewel dan transistor ini sangat
+
+146
+0:04:58,880 --> 0:05:01,280
+kecil sehingga tidak benar-benar
+
+147
+0:05:01,280 --> 0:05:03,680
+sepele untuk melakukan kontak dengan mereka tetapi
+
+148
+0:05:03,680 --> 0:05:06,080
+bagaimanapun saya mem-boot semua peralatan uji ini
+
+149
+0:05:06,080 --> 0:05:08,720
+yang memungkinkan saya untuk mengkarakterisasi mereka saya
+
+150
+0:05:08,720 --> 0:05:10,479
+melakukan sedikit pemrograman untuk
+
+151
+0:05:10,479 --> 0:05:12,880
+menentukan jenis tes yang ingin saya lakukan dan kemudian
+
+152
+0:05:12,880 --> 0:05:15,120
+semoga kita disambut dengan kurva hebat ini
+
+153
+0:05:15,120 --> 0:05:17,440
+jadi ini adalah
+
+154
+0:05:17,440 --> 0:05:20,160
+kurva id versus vds dari n channel
+
+155
+0:05:20,160 --> 0:05:22,720
+mosfet ini yang ideal
+
+156
+0:05:22,720 --> 0:05:24,639
+diambil dari internet dan kemudian
+
+157
+0:05:24,639 --> 0:05
+inilah yang saya dapatkan dari
+
+158
+0:05 --> 0:05:28,639
+fets saya dan mereka tampak hebat
+
+159
+0:05:28,639 --> 0:05:29,840
+saya harap Anda menemukan bahwa saya  menarik dan
+
+160
+0:05:29,840 --> 0:05:31,120
+menikmati belajar tentang sirkuit terintegrasi kedua saya,
+
+161
+0:05:31,120 --> 0:05:32,800
+saya mendapat banyak
+
+162
+0:05:32,800 --> 0:05:34,400
+permintaan untuk mengatur patreon atau
+
+163
+0:05:34,400 --> 0:05:35,919
+sesuatu seperti itu saya tidak yakin apakah
+
+164
+0:05:35,919 --> 0:05:37,520
+itu cara terbaik untuk melakukannya tetapi saya akan
+
+165
+0:05:37,520 --> 0:05:39,280
+meletakkan tautan di deskripsi jika Anda
+
+166
+0:05:39,280 --> 0:05:40,960
+mau  untuk mendukung lebih banyak
+
+167
+0:05:40,960 --> 0:05:42,800
+eksperimen fabrikasi semikonduktor buatan rumah
+
+168
+0:05:42,800 --> 0:05:43,840
+seperti ini,
+
+169
+0:05:43,840 --> 0:05:47,160
+terima kasih telah menonton
+

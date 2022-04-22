@@ -1,0 +1,484 @@
+1
+0:00:08,330 --> 0:00:11,460
+before you begin download the sequence
+
+2
+0:00:11,460 --> 0:00:13,410
+viewing software appropriate for your
+
+3
+0:00:13,410 --> 0:00:16,320
+computing system in this example I am
+
+4
+0:00:16,320 --> 0:00:18,720
+using a Mac so we have recommended using
+
+5
+0:00:18,720 --> 0:00:21,380
+a Mac based program called for Peaks
+
+6
+0:00:21,380 --> 0:00:24,029
+check the protocol for our suggestions
+
+7
+0:00:24,029 --> 0:00:27,810
+for PC tablets and netbooks and consult
+
+8
+0:00:27,810 --> 0:00:30,480
+your IT department for your institutions
+
+9
+0:00:30,480 --> 0:00:42,020
+installation procedures
+
+10
+0:00:42,020 --> 0:00:44,480
+next you need to download the sequence
+
+11
+0:00:44,480 --> 0:00:47,060
+data we will distribute your class's
+
+12
+0:00:47,060 --> 0:00:54,860
+data using the canvas platform navigate
+
+13
+0:00:54,860 --> 0:00:57,110
+to the modules tab and scroll to the
+
+14
+0:00:57,110 --> 0:01:17,240
+laboratory module within the module
+
+15
+0:01:17,240 --> 0:01:19,370
+there will be a page called sequencing
+
+16
+0:01:19,370 --> 0:01:28,729
+results download your class data by
+
+17
+0:01:28,729 --> 0:01:37,860
+clicking on the link
+
+18
+0:01:37,860 --> 0:01:40,530
+the data is downloaded as a compressed
+
+19
+0:01:40,530 --> 0:01:44,400
+dot zip file the Mac automatically
+
+20
+0:01:44,400 --> 0:01:47,040
+uncompressed is the file but PC users
+
+21
+0:01:47,040 --> 0:01:49,320
+will need to right-click and uncompress
+
+22
+0:01:49,320 --> 0:01:51,440
+the file in order to access the data
+
+23
+0:01:51,440 --> 0:01
+keep in mind that the data is normally
+
+24
+0:01 --> 0:01:57,060
+held in a Downloads folder unless you
+
+25
+0:01:57,060 --> 0:02:07,560
+specifically save it elsewhere the data
+
+26
+0:02:07,560 --> 0:02:10,500
+files have long complicated names but
+
+27
+0:02:10,500 --> 0:02:11,820
+the designation you should pay attention
+
+28
+0:02:11,820 --> 0:02:16,110
+to comes after the 10 digit barcode you
+
+29
+0:02:16,110 --> 0:02:18,420
+can find your sample by finding the
+
+30
+0:02:18,420 --> 0:02:23,810
+sample number or the sample name
+
+31
+0:02:23,810 --> 0:02:27,959
+followed by the target gene and the
+
+32
+0:02:27,959 --> 0:02:32,160
+direction of the read for this analysis
+
+33
+0:02:32,160 --> 0:02:35,010
+we are specifically interested in a b1
+
+34
+0:02:35,010 --> 0:02:37,320
+files which can be read by the
+
+35
+0:02:37,320 --> 0:02:40,860
+downloaded sequencing software there are
+
+36
+0:02:40,860 --> 0:02:43,530
+several ways to open the file you can
+
+37
+0:02:43,530 --> 0:02:45,540
+double click it if it has been linked to
+
+38
+0:02:45,540 --> 0:02:52,349
+the software
+
+39
+0:02:52,349 --> 0:03:05,370
+open the file directly from the software
+
+40
+0:03:05,370 --> 0:03:08,769
+or drag and drop the file into the
+
+41
+0:03:08,769 --> 0:03:40,290
+software
+
+42
+0:03:40,290 --> 0:04:01,410
+let's look at some data
+
+43
+0:04:01,410 --> 0:04:04,180
+when you open the file there's a lot
+
+44
+0:04:04,180 --> 0:04:06,640
+going on visually remember this data
+
+45
+0:04:06,640 --> 0:04:08,890
+represents the detection of fragments
+
+46
+0:04:08,890 --> 0:04:10,870
+differing by one base pair in size
+
+47
+0:04:10,870 --> 0:04:13,330
+during the process of a PCR reaction
+
+48
+0:04:13,330 --> 0:04:16,840
+that includes dye deoxynucleotides the
+
+49
+0:04:16,840 --> 0:04:18,940
+line traces represent fluorescence
+
+50
+0:04:18,940 --> 0:04:20,549
+levels of the tagged dye
+
+51
+0:04:20,549 --> 0:04:21,760
+deoxynucleotides
+
+52
+0:04:21,760 --> 0:04:23,830
+as they migrate through the sequencing
+
+53
+0:04:23,830 --> 0:04:26,560
+machine the length of time that it takes
+
+54
+0:04:26,560 --> 0:04:28,600
+to migrate through the capillary gel
+
+55
+0:04:28,600 --> 0:04:31,030
+matrix corresponds with the length of
+
+56
+0:04:31,030 --> 0:04:37,180
+the amplified fragment the gray bars
+
+57
+0:04:37,180 --> 0:04:39,580
+behind the line traces represent the
+
+58
+0:04:39,580 --> 0:04:41,320
+quality of the base call at that
+
+59
+0:04:41,320 --> 0:04:43,900
+location these quality bars may be
+
+60
+0:04:43,900 --> 0:04:45,460
+represented differently in other
+
+61
+0:04:45,460 --> 0:04:48,520
+programs but most will have them if the
+
+62
+0:04:48,520 --> 0:04:50,590
+call is of good quality the bar should
+
+63
+0:04:50,590 --> 0:04:53,830
+fill the height of the window on the top
+
+64
+0:04:53,830 --> 0:04:56,110
+of the window letters represent the base
+
+65
+0:04:56,110 --> 0:04:58,030
+called by the software at each
+
+66
+0:04:58,030 --> 0:05:01,840
+nucleotide location so what is good
+
+67
+0:05:01,840 --> 0:05:04,990
+quality and what is poor quality good
+
+68
+0:05:04,990 --> 0:05:07,240
+quality sequence reads have distinct
+
+69
+0:05:07,240 --> 0:05:10,560
+steep and smooth single line peaks
+
+70
+0:05:10,560 --> 0:05:13,330
+representing well separated fragments as
+
+71
+0:05:13,330 --> 0:05:15,220
+they pass by the fluorescence detector
+
+72
+0:05:15,220 --> 0:05:18,520
+in the sequencing machine if Peaks
+
+73
+0:05:18,520 --> 0:05:21,639
+overlap are jagged or contain broad
+
+74
+0:05:21,639 --> 0:05:23,860
+shoulders then the software base calls
+
+75
+0:05:23,860 --> 0:05:27,610
+are no longer reliable in this example
+
+76
+0:05:27,610 --> 0:05:31,599
+the entire file is of poor quality where
+
+77
+0:05:31,599 --> 0:05:36,130
+you can see overlapping lines jagged
+
+78
+0:05:36,130 --> 0:05:39,689
+lines and broad lines
+
+79
+0:05:39,689 --> 0:05:41,849
+this could be due to contamination of
+
+80
+0:05:41,849 --> 0:05:44,969
+the sample multiple PCR products or
+
+81
+0:05:44,969 --> 0:05:47,219
+improper priming or process of the
+
+82
+0:05:47,219 --> 0:05:50,309
+sequencing reaction either way this data
+
+83
+0:05:50,309 --> 0:06:15,779
+is completely unusable upon opening
+
+84
+0:06:15,779 --> 0:06:18,059
+another file we can see what good
+
+85
+0:06:18,059 --> 0:06:21,050
+quality traces are supposed to look like
+
+86
+0:06:21,050 --> 0:06:25,319
+distinct steep and smooth single line
+
+87
+0:06:25,319 --> 0:06:28,110
+Peaks the base call at the top of the
+
+88
+0:06:28,110 --> 0:06:30,689
+window should reflect the color of the
+
+89
+0:06:30,689 --> 0:06:34,679
+trace below it however there is almost
+
+90
+0:06:34,679 --> 0:06:37,199
+always poor quality sequence at the
+
+91
+0:06:37,199 --> 0:06:39,989
+beginning and end of even good quality
+
+92
+0:06:39,989 --> 0:06:45,869
+reads highlight and delete the area of
+
+93
+0:06:45,869 --> 0:06:59,539
+low quality calls to be deleted
+
+94
+0:06:59,539 --> 0:07:02,430
+this does not eliminate the raw trace
+
+95
+0:07:02,430 --> 0:07:04,979
+data but simply removes the base calls
+
+96
+0:07:04,979 --> 0:07:29,300
+by the software
+
+97
+0:07:29,300 --> 0:07:32,240
+before moving on scan the sequence by
+
+98
+0:07:32,240 --> 0:07:34,160
+eye to ensure that the software is
+
+99
+0:07:34,160 --> 0:07:57,710
+making appropriate calls
+
+100
+0:07:57,710 --> 0:08:00,920
+one thing to look out for is artifacts
+
+101
+0:08:00,920 --> 0:08:03,840
+these aberrant traces will reduce call
+
+102
+0:08:03,840 --> 0:08:06,570
+quality and may tempt you to trash the
+
+103
+0:08:06,570 --> 0:08:09,480
+file however if you looked at several
+
+104
+0:08:09,480 --> 0:08:12,060
+data files you would see that this trace
+
+105
+0:08:12,060 --> 0:08:15,330
+exists in every single file indicating
+
+106
+0:08:15,330 --> 0:08:17,880
+that it's not poor quality sample but an
+
+107
+0:08:17,880 --> 0:08:19,770
+error in the technical process of
+
+108
+0:08:19,770 --> 0:08:23,100
+sequencing what can be seen is that
+
+109
+0:08:23,100 --> 0:08:25,680
+behind this shouldered artifact our
+
+110
+0:08:25,680 --> 0:08:28,050
+strong quality Peaks
+
+111
+0:08:28,050 --> 0:08:31,200
+in these artifact regions is important
+
+112
+0:08:31,200 --> 0:08:37,890
+to determine based calls manually
+
+113
+0:08:37,890 --> 0:08:40,560
+as we visually inspect through the
+
+114
+0:08:40,560 --> 0:08:43,680
+artifact we can check the calls above
+
+115
+0:08:43,680 --> 0:08:45,800
+made by the software
+
+116
+0:08:45,800 --> 0:08:54,870
+g-gee T G a G and here is an error this
+
+117
+0:08:54,870 --> 0:08:57,630
+T call by the software is really
+
+118
+0:08:57,630 --> 0:09:07,890
+supposed to be an a double click on the
+
+119
+0:09:07,890 --> 0:09:11,160
+base call above the error in order to
+
+120
+0:09:11,160 --> 0:09:19,550
+correct it
+
+121
+0:09:19,550 --> 0:09:24,230
+save the file to keep your changes
+

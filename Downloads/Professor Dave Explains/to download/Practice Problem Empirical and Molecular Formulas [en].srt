@@ -1,0 +1,464 @@
+1
+0:00:00,800 --> 0:00:07,230
+science explains today let's get some
+
+2
+0:00:07,230 --> 0:00:09,030
+practice on determining molecular
+
+3
+0:00:09,030 --> 0:00:12,690
+formula so let's take a look at the
+
+4
+0:00:12,690 --> 0:00:15,839
+question nicotine is a compound found in
+
+5
+0:00:15,839 --> 0:00:16,890
+cigarettes
+
+6
+0:00:16,890 --> 0:00:19,770
+if nicotine is seventy four point zero
+
+7
+0:00:19,770 --> 0:00:22,830
+two percent carbon eight point seven one
+
+8
+0:00:22,830 --> 0:00:26,039
+zero percent hydrogen and 17 point two
+
+9
+0:00:26,039 --> 0:00:29,939
+seven percent nitrogen by mass and forty
+
+10
+0:00:29,939 --> 0:00:32,399
+point five seven grams of nicotine is
+
+11
+0:00:32,399 --> 0:00:34,829
+equal to zero point two five zero zero
+
+12
+0:00:34,829 --> 0:00:38,670
+moles what is the molecular formula of
+
+13
+0:00:38,670 --> 0:00:41,399
+nicotine so if you're not sure how to
+
+14
+0:00:41,399 --> 0:00:43,170
+get this going go ahead and check out my
+
+15
+0:00:43,170 --> 0:00:46,320
+tutorial on elemental analysis that is
+
+16
+0:00:46,320 --> 0:00:48,539
+going to give you the strategy you need
+
+17
+0:00:48,539 --> 0:00:50,700
+to answer this question and when you're
+
+18
+0:00:50,700 --> 0:01:11,280
+ready go ahead and give it a shot so we
+
+19
+0:01:11,280 --> 0:01:13,380
+have our mass percentages up at the top
+
+20
+0:01:13,380 --> 0:01:16,049
+here and we also have our information
+
+21
+0:01:16,049 --> 0:01:18,299
+that tells us that 40 point 5 7 grams of
+
+22
+0:01:18,299 --> 0:01:20,939
+nicotine equals zero point two five zero
+
+23
+0:01:20,939 --> 0:01:23,520
+zero moles of nicotine so what are we
+
+24
+0:01:23,520 --> 0:01:25,439
+going to do with this information well
+
+25
+0:01:25,439 --> 0:01:27,240
+the easiest way to do this is to go
+
+26
+0:01:27,240 --> 0:01:30,299
+ahead and assume some mass of nicotine
+
+27
+0:01:30,299 --> 0:01:32,850
+to start doing some calculations since
+
+28
+0:01:32,850 --> 0:01:34,890
+it's totally arbitrary what mass we
+
+29
+0:01:34,890 --> 0:01:36,150
+choose because we're dealing with
+
+30
+0:01:36,150 --> 0:01:38,850
+percentages let's just use a hundred
+
+31
+0:01:38,850 --> 0:01:40,920
+grams and make the math nice and easy on
+
+32
+0:01:40,920 --> 0:01:43,740
+ourselves so if we have a hundred grams
+
+33
+0:01:43,740 --> 0:01:45,960
+of nicotine that means we must have
+
+34
+0:01:45,960 --> 0:01:48,450
+seventy four point zero two grams of
+
+35
+0:01:48,450 --> 0:01:51,329
+carbon eight point seven one zero grams
+
+36
+0:01:51,329 --> 0:01:54,720
+of hydrogen and 17 point two seven grams
+
+37
+0:01:54,720 --> 0:01:55,619
+of nitrogen
+
+38
+0:01:55,619 --> 0:01
+we're just taking those percentages
+
+39
+0:01 --> 0:01:59,310
+which are out of a hundred and turning
+
+40
+0:01:59,310 --> 0:02:04,380
+them into grams now we need to convert
+
+41
+0:02:04,380 --> 0:02:06,420
+these into moles because masses don't
+
+42
+0:02:06,420 --> 0:02:07,950
+tell us anything whenever we are doing
+
+43
+0:02:07,950 --> 0:02:09,780
+calculations of this nature we always
+
+44
+0:02:09,780 --> 0:02:11,780
+want moles so let's take our mass
+
+45
+0:02:11,780 --> 0:02:14,380
+carbon and multiply by one mole over
+
+46
+0:02:14,380 --> 0:02:17,270
+12.01 grams that is the atomic mass of
+
+47
+0:02:17,270 --> 0:02:21,050
+carbon grams will cancel and we have 6
+
+48
+0:02:21,050 --> 0:02:23,690
+point 1 6 3 moles of carbon in our
+
+49
+0:02:23,690 --> 0:02:26,780
+hypothetical sample of nicotine now for
+
+50
+0:02:26,780 --> 0:02:29,410
+hydrogen let's multiply by 1 mole over
+
+51
+0:02:29,410 --> 0:02:32,480
+1.008 grams that is the atomic mass of
+
+52
+0:02:32,480 --> 0:02:35,810
+hydrogen grams will cancel and we have
+
+53
+0:02:35,810 --> 0:02:38,090
+eight point six two four moles of
+
+54
+0:02:38,090 --> 0:02:41,450
+hydrogen lastly for nitrogen we multiply
+
+55
+0:02:41,450 --> 0:02:43,850
+by one mole over fourteen point zero one
+
+56
+0:02:43,850 --> 0:02:46,120
+grams that's the atomic mass of nitrogen
+
+57
+0:02:46,120 --> 0:02:49,040
+grams will cancel and we have one point
+
+58
+0:02:49,040 --> 0:02:54,230
+two three three moles of nitrogen so in
+
+59
+0:02:54,230 --> 0:02:56,810
+this sample we have this many moles of
+
+60
+0:02:56,810 --> 0:02:59,390
+each of these elements so this tells us
+
+61
+0:02:59,390 --> 0:03:01,250
+something about the ratio of these
+
+62
+0:03:01,250 --> 0:03:03,769
+elements in the compound so how can we
+
+63
+0:03:03,769 --> 0:03:05,690
+get this in a way that's a little more
+
+64
+0:03:05,690 --> 0:03:10,370
+useful what we can do is divide each of
+
+65
+0:03:10,370 --> 0:03:13,459
+these values by the smallest so that we
+
+66
+0:03:13,459 --> 0:03:16,340
+get one for the smallest one and then
+
+67
+0:03:16,340 --> 0:03:19,190
+some ratio for the others and hopefully
+
+68
+0:03:19,190 --> 0:03:21,170
+they'll turn out to be integers and that
+
+69
+0:03:21,170 --> 0:03:23,450
+will give us the empirical formula so if
+
+70
+0:03:23,450 --> 0:03:25,370
+we divide each of these by the smallest
+
+71
+0:03:25,370 --> 0:03:27,290
+one of them which is one point two three
+
+72
+0:03:27,290 --> 0:03:30,829
+three we end up with one mole of
+
+73
+0:03:30,829 --> 0:03:33,829
+nitrogen and we also end up with integer
+
+74
+0:03:33,829 --> 0:03:35,870
+values for carbon and hydrogen we have
+
+75
+0:03:35,870 --> 0:03:40,299
+five and seven so that means for every
+
+76
+0:03:40,299 --> 0:03:43,640
+nitrogen atom in the sample we have five
+
+77
+0:03:43,640 --> 0:03:46,310
+carbon atoms and we have seven hydrogen
+
+78
+0:03:46,310 --> 0:03:48,680
+atoms so that means the empirical
+
+79
+0:03:48,680 --> 0:03:53,720
+formula of nicotine must be c5 h7n that
+
+80
+0:03:53,720 --> 0:03:55,700
+is the only way for these mass
+
+81
+0:03:55,700 --> 0:03:57,680
+percentages to work out the way that
+
+82
+0:03:57,680 --> 0:04:01,549
+they are but once again we need the
+
+83
+0:04:01,549 --> 0:04:04,220
+molecular formula in order to get that
+
+84
+0:04:04,220 --> 0:04:07,130
+we need the molecular mass or the molar
+
+85
+0:04:07,130 --> 0:04:10,040
+mass and so let's take this other bit of
+
+86
+0:04:10,040 --> 0:04:12,140
+information we have if we want to know
+
+87
+0:04:12,140 --> 0:04:14,660
+the molar mass of nicotine in grams per
+
+88
+0:04:14,660 --> 0:04:17,120
+mole well we have forty point five seven
+
+89
+0:04:17,120 --> 0:04:19,160
+grams and we can just divide that by
+
+90
+0:04:19,160 --> 0:04:21,320
+zero point two five zero zero moles that
+
+91
+0:04:21,320 --> 0:04:23,960
+will give us a value in grams per mole
+
+92
+0:04:23,960 --> 0:04:28,460
+and so we get 160 2.3 grams per mole so
+
+93
+0:04:28,460 --> 0:04:32,630
+how is that useful well we know that if
+
+94
+0:04:32,630 --> 0:04:34,819
+we add up the masses of the 5 carbon
+
+95
+0:04:34,819 --> 0:04:37,250
+atoms and the 7 hydrogen atoms and the 1
+
+96
+0:04:37,250 --> 0:04:40,340
+nitrogen atom that adds up to 81 point 1
+
+97
+0:04:40,340 --> 0:04:43,400
+3 grams per mole so that is the molar
+
+98
+0:04:43,400 --> 0:04:47,389
+mass of one empirical formula unit now
+
+99
+0:04:47,389 --> 0:04:50,780
+our molar mass is twice as much we have
+
+100
+0:04:50,780 --> 0:04:53,030
+a two to one ratio so that means in
+
+101
+0:04:53,030 --> 0:04:55,340
+order to get the molecular formula which
+
+102
+0:04:55,340 --> 0:04:57,770
+represents the actual number of atoms of
+
+103
+0:04:57,770 --> 0:05:00,289
+each element in the molecule all we need
+
+104
+0:05:00,289 --> 0:05:03,979
+to do is double everything so let's take
+
+105
+0:05:03,979 --> 0:05:05,720
+our empirical formula and put it in
+
+106
+0:05:05,720 --> 0:05:08,900
+parentheses and multiply it by two if we
+
+107
+0:05:08,900 --> 0:05:10,699
+double everything we'll get twice that
+
+108
+0:05:10,699 --> 0:05:13,310
+mass and we will get our molar mass and
+
+109
+0:05:13,310 --> 0:05:15,620
+that means that the molecular formula
+
+110
+0:05:15,620 --> 0:05:23,270
+must be C 10 H 14 and 2 thanks for
+
+111
+0:05:23,270 --> 0:05:24,979
+watching guys subscribe to my channel
+
+112
+0:05:24,979 --> 0:05:27,020
+for more tutorials support me on patreon
+
+113
+0:05:27,020 --> 0:05:28,820
+so I can keep making content and as
+
+114
+0:05:28,820 --> 0:05:30,830
+always feel free to email me professor
+
+115
+0:05:30,830 --> 0:05:33,270
+Dave explains at gmail.com
+
+116
+0:05:33,270 --> 0:05:53,999
+[Music]
+

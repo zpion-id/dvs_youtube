@@ -1,0 +1,1076 @@
+1
+00:00:00,000 --> 0:00:02,700
+hi guys I'm Jade lovely to meet you so
+
+2
+0:00:02,700 --> 0:00:04,319
+the Schrodinger equation is one of those
+
+3
+0:00:04,319 --> 0:00:05,850
+things that pops up a lot in like
+
+4
+0:00:05,850 --> 0:00:08,069
+quantum science articles and journals
+
+5
+0:00:08,069 --> 0:00:10,650
+and stuff but the journalist doesn't
+
+6
+0:00:10,650 --> 0:00:12,960
+usually go into what it means which is
+
+7
+0:00:12,960 --> 0:00:14,969
+fair because it's a fairly complex topic
+
+8
+0:00:14,969 --> 0:00:16,830
+so today I just wanted to share with you
+
+9
+0:00:16,830 --> 0:00:19,050
+guys like what it actually means so next
+
+10
+0:00:19,050 --> 0:00:21,570
+time you read it in an article you can
+
+11
+0:00:21,570 --> 0:00:24,029
+get a better gist of what it's about so
+
+12
+0:00:24,029 --> 0:00:25,740
+the short version is the Schrodinger
+
+13
+0:00:25,740 --> 0:00:27,359
+equation tells us everything we can
+
+14
+0:00:27,359 --> 0:00:28,949
+possibly know about a quantum system
+
+15
+0:00:28,949 --> 0:00:31,289
+it's basically the ethical ma of the
+
+16
+0:00:31,289 --> 0:00:33,239
+quantum world if you throw a ball and
+
+17
+0:00:33,239 --> 0:00:34,469
+self ethical MA
+
+18
+0:00:34,469 --> 0:00:35,880
+you can predict its position and
+
+19
+0:00:35,880 --> 0:00:38,070
+momentum for any moment in time once you
+
+20
+0:00:38,070 --> 0:00:40,050
+have these two you can derive basically
+
+21
+0:00:40,050 --> 0:00:41,640
+everything else you could possibly know
+
+22
+0:00:41,640 --> 0:00:45,059
+about it velocity energy etc but when we
+
+23
+0:00:45,059 --> 0:00:46,829
+get down to particle land Newton's
+
+24
+0:00:46,829 --> 0:00:48,510
+equations don't work anymore
+
+25
+0:00:48,510 --> 0:00:50,340
+if we put a particle in a box and we
+
+26
+0:00:50,340 --> 0:00:52,800
+want to know where it is f equal MA just
+
+27
+0:00:52,800 --> 0:00:55,199
+doesn't cut it the Heisenberg
+
+28
+0:00:55,199 --> 0:00:57,030
+uncertainty principle says that we can't
+
+29
+0:00:57,030 --> 0:00:58,739
+know both the exact position and
+
+30
+0:00:58,739 --> 0:01:01,800
+momentum of quantum objects but we can
+
+31
+0:01:01,800 --> 0:01:04,049
+know other things like the energy levels
+
+32
+0:01:04,049 --> 0:01:05,939
+in the wavefunction which we'll explore
+
+33
+0:01:05,939 --> 0:01:08,040
+in this video but that information is
+
+34
+0:01:08,040 --> 0:01:10,170
+all inside the Schrodinger equation and
+
+35
+0:01:10,170 --> 0:01:12,180
+with some hardcore mathematics we can
+
+36
+0:01:12,180 --> 0:01:15,509
+tease it out now the long version so
+
+37
+0:01:15,509 --> 0:01:17,159
+before I get started I should say that
+
+38
+0:01:17,159 --> 0:01:19,290
+this is the time independent version
+
+39
+0:01:19,290 --> 0:01:22,439
+meaning that it doesn't involve time and
+
+40
+0:01:22,439 --> 0:01:24,180
+if at any point throughout the video you
+
+41
+0:01:24,180 --> 0:01:26,850
+get lost don't worry even Schrodinger
+
+42
+0:01:26,850 --> 0:01:28,320
+didn't know exactly what his equation
+
+43
+0:01:28,320 --> 0:01:30,210
+meant so let's say we have a quantum
+
+44
+0:01:30,210 --> 0:01:32,759
+system an electron in a box we want to
+
+45
+0:01:32,759 --> 0:01:34,350
+know everything we can about this
+
+46
+0:01:34,350 --> 0:01:35,700
+electron so we can make predictions
+
+47
+0:01:35,700 --> 0:01:37,259
+where it might be
+
+48
+0:01:37,259 --> 0:01:39,479
+what energy level it might be at these
+
+49
+0:01:39,479 --> 0:01:41,340
+answers are all buried within the
+
+50
+0:01:41,340 --> 0:01:43,770
+Schrodinger equation so first let's
+
+51
+0:01:43,770 --> 0:01:45,840
+start with this guy the pitchbook thing
+
+52
+0:01:45,840 --> 0:01:47,909
+this is the Greek letter sy and it
+
+53
+0:01:47,909 --> 0:01:49,350
+stands for what's called the wave
+
+54
+0:01:49,350 --> 0:01:51,479
+function it tells you where the electron
+
+55
+0:01:51,479 --> 0:01:54,659
+is likely to be but not where it will be
+
+56
+0:01:54,659 --> 0:01:57,350
+the quantum objects are sneaky in the
+
+57
+0:01:57,350 --> 0:01:58,850
+you can't predict exactly where they'll
+
+58
+0:01:58,850 --> 0:02:01,100
+be until you measure them you can only
+
+59
+0:02:01,100 --> 0:02:03,799
+predict where they'll probably be say
+
+60
+0:02:03,799 --> 0:02:05,479
+there's this kid you know you've grown
+
+61
+0:02:05,479 --> 0:02:07,220
+up with them your whole life they looked
+
+62
+0:02:07,220 --> 0:02:08,690
+in their room with their homework a
+
+63
+0:02:08,690 --> 0:02:10,850
+Playstation and a bed if you had to
+
+64
+0:02:10,850 --> 0:02:12,260
+guess where they were you'd say there's
+
+65
+0:02:12,260 --> 0:02:14,420
+about an 80% probability they're on the
+
+66
+0:02:14,420 --> 0:02:17,030
+PlayStation and 19% probability they're
+
+67
+0:02:17,030 --> 0:02:19,069
+in bed and a 1% probability they're
+
+68
+0:02:19,069 --> 0:02:20,840
+doing their homework when you open the
+
+69
+0:02:20,840 --> 0:02:22,700
+door you'll know for sure but you were
+
+70
+0:02:22,700 --> 0:02:24,590
+able to make these predictions because
+
+71
+0:02:24,590 --> 0:02:26,600
+you know this guy what if you had to
+
+72
+0:02:26,600 --> 0:02:28,280
+guess where this electron is you don't
+
+73
+0:02:28,280 --> 0:02:30,980
+know this electron well that's what the
+
+74
+0:02:30,980 --> 0:02:33,230
+wavefunction tells us it gives us the
+
+75
+0:02:33,230 --> 0:02:35,480
+probabilities of where it's likely to be
+
+76
+0:02:35,480 --> 0:02:38,060
+but a big difference is that while the
+
+77
+0:02:38,060 --> 0:02:40,580
+guy is only in one place at a time the
+
+78
+0:02:40,580 --> 0:02:42,650
+electron is in a superposition of all
+
+79
+0:02:42,650 --> 0:02:45,500
+possible places at the same time you may
+
+80
+0:02:45,500 --> 0:02:47,030
+have heard the famous thought experiment
+
+81
+0:02:47,030 --> 0:02:48,709
+Schrodinger's cat who's in a
+
+82
+0:02:48,709 --> 0:02:50,870
+superposition of being dead and alive
+
+83
+0:02:50,870 --> 0:02:52,850
+until the box is opened and it's forced
+
+84
+0:02:52,850 --> 0:02:55,340
+to choose a state it's the same deal
+
+85
+0:02:55,340 --> 0:02:57,350
+here the act of not knowing where the
+
+86
+0:02:57,350 --> 0:02:59,060
+electron is allows it's probability
+
+87
+0:02:59,060 --> 0:03:01,100
+distribution to be spread out over a
+
+88
+0:03:01,100 --> 0:03:02,810
+large space kind of like a wave
+
+89
+0:03:02,810 --> 0:03:04,579
+different kinds of waves can represent
+
+90
+0:03:04,579 --> 0:03:06,380
+different probabilities of where it's
+
+91
+0:03:06,380 --> 0:03:08,780
+likely to be hence the name wave
+
+92
+0:03:08,780 --> 0:03:10,850
+function it's a function that describes
+
+93
+0:03:10,850 --> 0:03:12,799
+the wave shape of probability
+
+94
+0:03:12,799 --> 0:03:14,630
+distribution of the electron
+
+95
+0:03:14,630 --> 0:03:16,310
+oh yeah and when you open the door and
+
+96
+0:03:16,310 --> 0:03:17,690
+measure where it is this wave
+
+97
+0:03:17,690 --> 0:03:20,209
+probability cloud function collapses and
+
+98
+0:03:20,209 --> 0:03:22,070
+the electron becomes a particle again no
+
+99
+0:03:22,070 --> 0:03:23,930
+one too sure to go was confused so
+
+100
+0:03:23,930 --> 0:03:25,519
+that's what the pitch both means the
+
+101
+0:03:25,519 --> 0:03:26,870
+wave function tells us where our
+
+102
+0:03:26,870 --> 0:03:29,120
+electron is likely to be now let's take
+
+103
+0:03:29,120 --> 0:03:31,400
+a look at this a it represents the
+
+104
+0:03:31,400 --> 0:03:33,440
+energies the electron is allowed to have
+
+105
+0:03:33,440 --> 0:03:35,570
+now before I go into what that means I
+
+106
+0:03:35,570 --> 0:03:37,070
+just want to point out that the way this
+
+107
+0:03:37,070 --> 0:03:39,200
+equation is arranged these values are
+
+108
+0:03:39,200 --> 0:03:40,970
+the ones we're trying to solve for so
+
+109
+0:03:40,970 --> 0:03:42,980
+it's telling us that hey if you do all
+
+110
+0:03:42,980 --> 0:03:45,230
+this stuff you can find out the energy
+
+111
+0:03:45,230 --> 0:03:46,670
+levels of the wave functions of the
+
+112
+0:03:46,670 --> 0:03:48,920
+electron and if we know these two things
+
+113
+0:03:48,920 --> 0:03:50,720
+we can derive everything else we can
+
+114
+0:03:50,720 --> 0:03:52,609
+possibly know about the particle just
+
+115
+0:03:52,609 --> 0:03:54,650
+like the position and momentum of wool
+
+116
+0:03:54,650 --> 0:03:57,350
+but let's backtrack a sec what do I mean
+
+117
+0:03:57,350 --> 0:03:59,450
+when I say energy levels the electron is
+
+118
+0:03:59,450 --> 0:04:01,430
+allowed to have like it's a grown
+
+119
+0:04:01,430 --> 0:04:02,630
+electron it can have whatever energy
+
+120
+0:04:02,630 --> 0:04:05,900
+levels at once right well know in the
+
+121
+0:04:05,900 --> 0:04:07,580
+regular world we see around
+
+122
+0:04:07,580 --> 0:04:09,230
+and if you can go up and down in a
+
+123
+0:04:09,230 --> 0:04:11,690
+smooth continuous way but this isn't the
+
+124
+0:04:11,690 --> 0:04:13,700
+case in the quantum world and the reason
+
+125
+0:04:13,700 --> 0:04:15,440
+comes from the wave-like nature of the
+
+126
+0:04:15,440 --> 0:04:17,630
+probability distributions because our
+
+127
+0:04:17,630 --> 0:04
+particle is inside the box it has a zero
+
+128
+0:04 --> 0:04:22,220
+probability of being found in or outside
+
+129
+0:04:22,220 --> 0:04:24,470
+the wall so this means the wavefunction
+
+130
+0:04:24,470 --> 0:04:26,870
+always needs to be zero there otherwise
+
+131
+0:04:26,870 --> 0:04:28,550
+there's some probability that the
+
+132
+0:04:28,550 --> 0:04:30,770
+electron could be outside the box which
+
+133
+0:04:30,770 --> 0:04:32,750
+we know it's not that means that the
+
+134
+0:04:32,750 --> 0:04:34,070
+electron can only have certain
+
+135
+0:04:34,070 --> 0:04:36,350
+frequencies associated with it this
+
+136
+0:04:36,350 --> 0:04:38,060
+frequency is allowed as the wave
+
+137
+0:04:38,060 --> 0:04:40,460
+function is zero in both edges and this
+
+138
+0:04:40,460 --> 0:04:43,280
+frequency is not this frequency is
+
+139
+0:04:43,280 --> 0:04:46,040
+allowed and this one is not so Einstein
+
+140
+0:04:46,040 --> 0:04:48,260
+discovered that energy is actually
+
+141
+0:04:48,260 --> 0:04:50,300
+proportional to frequency by this
+
+142
+0:04:50,300 --> 0:04:53,390
+relation e equals H F where E is the
+
+143
+0:04:53,390 --> 0:04:56,180
+energy F is the frequency and this H
+
+144
+0:04:56,180 --> 0:04:58,370
+here is Planck's constant don't worry
+
+145
+0:04:58,370 --> 0:04:59,990
+too much about that H for now all you
+
+146
+0:04:59,990 --> 0:05:01,610
+need to know is that it's a constant
+
+147
+0:05:01,610 --> 0:05:03,920
+which means its value doesn't change so
+
+148
+0:05:03,920 --> 0:05:05,690
+if only certain frequencies are allowed
+
+149
+0:05:05,690 --> 0:05:08,180
+inside the box and this is a constant
+
+150
+0:05:08,180 --> 0:05:10,520
+then it follows that only certain energy
+
+151
+0:05:10,520 --> 0:05:13,520
+levels are allowed inside the box - this
+
+152
+0:05:13,520 --> 0:05:16,040
+property of discrete or quantized values
+
+153
+0:05:16,040 --> 0:05:17,900
+is where quantum mechanics gets its name
+
+154
+0:05:17,900 --> 0:05:20,060
+things that can take on continuous
+
+155
+0:05:20,060 --> 0:05:22,310
+values in the regular world like energy
+
+156
+0:05:22,310 --> 0:05:24,169
+levels can only take on certain
+
+157
+0:05:24,169 --> 0:05:26,630
+quantized values at the quantum scale
+
+158
+0:05:26,630 --> 0:05:28,850
+now let's look at the other side of the
+
+159
+0:05:28,850 --> 0:05:30,620
+equation we know what we're solving for
+
+160
+0:05:30,620 --> 0:05:32,750
+the energy levels and the wave functions
+
+161
+0:05:32,750 --> 0:05:35,510
+but how is all of this going to help us
+
+162
+0:05:35,510 --> 0:05:38,480
+get there well overall energy is made up
+
+163
+0:05:38,480 --> 0:05:40,730
+of kinetic energy and potential energy
+
+164
+0:05:40,730 --> 0:05:42,500
+if a skateboarder is on a skate ramp
+
+165
+0:05:42,500 --> 0:05:44,330
+they'll be traveling at some speed and
+
+166
+0:05:44,330 --> 0:05:45,980
+have some kinetic energy but when they
+
+167
+0:05:45,980 --> 0:05:48,290
+stop at the top they still have energy
+
+168
+0:05:48,290 --> 0:05:50,120
+it's just transformed into a different
+
+169
+0:05:50,120 --> 0:05:52,790
+kind potential energy the entire energy
+
+170
+0:05:52,790 --> 0:05:54,890
+of the system is just the kinetic energy
+
+171
+0:05:54,890 --> 0:05:56,780
+plus the potential energy and while it
+
+172
+0:05:56,780 --> 0:05:58,220
+can move back and forth between those
+
+173
+0:05:58,220 --> 0:06:00,530
+two states its total value is always
+
+174
+0:06:00,530 --> 0:06:03,860
+conserved sometimes potential energy is
+
+175
+0:06:03,860 --> 0:06:06,229
+written as a V so this term is the
+
+176
+0:06:06,229 --> 0:06:08,720
+potential energy of the wave function so
+
+177
+0:06:08,720 --> 0:06:10,610
+if this is the potential energy that
+
+178
+0:06:10,610 --> 0:06:12,350
+must mean that this term here is the
+
+179
+0:06:12,350 --> 0:06:14,300
+kinetic energy I know it doesn't really
+
+180
+0:06:14,300 --> 0:06:15,919
+look like any kind of kinetic energy
+
+181
+0:06:15,919 --> 0:06:17,450
+equation we've seen before right so
+
+182
+0:06:17,450 --> 0:06:18,680
+here's the derivation if you don't
+
+183
+0:06:18,680 --> 0:06:20,419
+believe me so if we can solve for the
+
+184
+0:06:20,419 --> 0:06:21,009
+potential
+
+185
+0:06:21,009 --> 0:06:22,749
+kinetic energy of our quantum system
+
+186
+0:06:22,749 --> 0:06:24,309
+this will tell us the energy levels
+
+187
+0:06:24,309 --> 0:06:25,960
+allowed and that's everything there is
+
+188
+0:06:25,960 --> 0:06:28,180
+to know about our little electron so
+
+189
+0:06:28,180 --> 0:06:29,740
+what would some typical Schrodinger
+
+190
+0:06:29,740 --> 0:06:31,689
+solutions look like well to this
+
+191
+0:06:31,689 --> 0:06:32,830
+particular problem
+
+192
+0:06:32,830 --> 0:06:34,689
+all the solutions to the wave functions
+
+193
+0:06:34,689 --> 0:06:37,029
+take these two forms and the energy
+
+194
+0:06:37,029 --> 0:06:39,399
+equation that popped out was this great
+
+195
+0:06:39,399 --> 0:06:40,839
+shape so what the hell does that mean
+
+196
+0:06:40,839 --> 0:06:42,369
+well the first thing to note is that
+
+197
+0:06:42,369 --> 0:06:44,439
+every term in this expression is either
+
+198
+0:06:44,439 --> 0:06:47,289
+a constant or a whole number h-bar is a
+
+199
+0:06:47,289 --> 0:06:50,649
+constant 2 is obviously a constant M the
+
+200
+0:06:50,649 --> 0:06:53,199
+mass of the electron is a constant pi is
+
+201
+0:06:53,199 --> 0:06:55,809
+a constant and L the length of the box
+
+202
+0:06:55,809 --> 0:06:58,180
+is a constant and n stands for the
+
+203
+0:06:58,180 --> 0:06:59,919
+different states of the electron and
+
+204
+0:06:59,919 --> 0:07:03,999
+they're all whole numbers 1 2 3 etc so
+
+205
+0:07:03,999 --> 0:07:06,430
+then the energy e can only have certain
+
+206
+0:07:06,430 --> 0:07:09,639
+values it's quantized but what about the
+
+207
+0:07:09,639 --> 0:07:13,059
+wave function where is the electron well
+
+208
+0:07:13,059 --> 0:07:14,680
+let's look at this guy when the electron
+
+209
+0:07:14,680 --> 0:07:16,629
+is in its first energy state when n is
+
+210
+0:07:16,629 --> 0:07:20,319
+equal to 1 we get this that's one of the
+
+211
+0:07:20,319 --> 0:07:22,209
+wave functions of the electron and if we
+
+212
+0:07:22,209 --> 0:07:23,639
+square it we get the probability
+
+213
+0:07:23,639 --> 0:07:24,789
+distribution
+
+214
+0:07:24,789 --> 0:07:27,219
+aka where the electron is likely to be
+
+215
+0:07:27,219 --> 0:07:28,659
+we can see that there's a high
+
+216
+0:07:28,659 --> 0:07:30,370
+probability that it'll be found in the
+
+217
+0:07:30,370 --> 0:07:32,110
+middle here but as zero probability
+
+218
+0:07:32,110 --> 0:07:34,779
+it'll be found right at the edges here
+
+219
+0:07:34,779 --> 0:07:35,979
+are some more wave functions and
+
+220
+0:07:35,979 --> 0:07:37,689
+probability densities for other energy
+
+221
+0:07:37,689 --> 0:07:39,699
+states see how the wave function is
+
+222
+0:07:39,699 --> 0:07:43,509
+always always 0 right at the edges this
+
+223
+0:07:43,509 --> 0:07:45,639
+took me an entire semester of a physics
+
+224
+0:07:45,639 --> 0:07:47,259
+degree to understand and what really
+
+225
+0:07:47,259 --> 0:07:48,969
+helped me was working through a lot of
+
+226
+0:07:48,969 --> 0:07:50,830
+problems and taking the time to build a
+
+227
+0:07:50,830 --> 0:07:53,080
+strong intuition brilliant org has an
+
+228
+0:07:53,080 --> 0:07:54,879
+entire course dedicated to quantum
+
+229
+0:07:54,879 --> 0:07:56,469
+mechanics which starts with the
+
+230
+0:07:56,469 --> 0:07:58,180
+experiments which first discovered
+
+231
+0:07:58,180 --> 0:07:59,979
+quantum behavior and leads up to the
+
+232
+0:07:59,979 --> 0:08:01,269
+derivation of the Schrodinger equation
+
+233
+0:08:01,269 --> 0:08:03,729
+it has examples you can work through at
+
+234
+0:08:03,729 --> 0:08:05,559
+your own pace I actually just went
+
+235
+0:08:05,559 --> 0:08:07,149
+through it to refresh my memory and
+
+236
+0:08:07,149 --> 0:08:08,800
+learn some things I didn't know and
+
+237
+0:08:08,800 --> 0:08:10,539
+definitely understood some things better
+
+238
+0:08:10,539 --> 0:08:12,639
+they also have heaps of other courses
+
+239
+0:08:12,639 --> 0:08:14,589
+mainly on physics math and computer
+
+240
+0:08:14,589 --> 0:08:16,059
+science and they're always adding more
+
+241
+0:08:16,059 --> 0:08:18,399
+the first 200 people to click the link
+
+242
+0:08:18,399 --> 0:08:20,050
+below and sign up will get a 20%
+
+243
+0:08:20,050 --> 0:08:22,959
+discount just go to brilliant org slash
+
+244
+0:08:22,959 --> 0:08:25,959
+up and Adam the link is on screen and in
+
+245
+0:08:25,959 --> 0:08:27,759
+the description and if you're wondering
+
+246
+0:08:27,759 --> 0:08:29,769
+why I didn't include the math behind the
+
+247
+0:08:29,769 --> 0:08:31,029
+solutions to the Schrodinger equation
+
+248
+0:08:31,029 --> 0:08:32,979
+it's because it would have taken me
+
+249
+0:08:32,979 --> 0:08:34,840
+about an hour just to write out
+
+250
+0:08:34,840 --> 0:08:36,880
+probably another five weeks to explain
+
+251
+0:08:36,880 --> 0:08:38,740
+but for those of you who are especially
+
+252
+0:08:38,740 --> 0:08:41,440
+curious I've posted my final exam essay
+
+253
+0:08:41,440 --> 0:08:43,540
+on quantum physics in the description it
+
+254
+0:08:43,540 --> 0:08:44,920
+includes the derivation of the
+
+255
+0:08:44,920 --> 0:08:46,480
+Schrodinger equation as well as the
+
+256
+0:08:46,480 --> 0:08:48,640
+solutions and some other interesting
+
+257
+0:08:48,640 --> 0:08:50,260
+stuff like random questions to my
+
+258
+0:08:50,260 --> 0:08:52,450
+professor so guys please be honest do
+
+259
+0:08:52,450 --> 0:08:53,740
+you understand the Schrodinger equation
+
+260
+0:08:53,740 --> 0:08:56,530
+a bit better now I hope you do but if
+
+261
+0:08:56,530 --> 0:08:58,750
+you don't please feel free to give me
+
+262
+0:08:58,750 --> 0:09:00,610
+any feedback on how I can make my
+
+263
+0:09:00,610 --> 0:09:02,740
+explanations better for future videos
+
+264
+0:09:02,740 --> 0:09:04,900
+quantum physics is so cool and I really
+
+265
+0:09:04,900 --> 0:09:07,300
+don't want anybody to miss out so yeah
+
+266
+0:09:07,300 --> 0:09:08,910
+that's all from me bye
+
+267
+0:09:08,910 --> 0:09:16,900
+[Music]
+
+268
+0:09:16,900 --> 0:09:24,900
+[Music]
+
+269
+0:09:24,900 --> 0:09:27,980
+[Music]
+

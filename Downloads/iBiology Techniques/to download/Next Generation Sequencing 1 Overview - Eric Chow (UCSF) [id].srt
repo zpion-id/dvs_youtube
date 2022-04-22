@@ -1,0 +1,3220 @@
+1
+0:00:06,399 --> 0:00:09,320
+halo saya Eric Chow Saya asisten
+
+2
+0:00:09,320 --> 0:00:10,580
+profesor di University of
+
+3
+0:00:10,580 --> 0:00:12,440
+California San Francisco dan saya
+
+4
+0:00:12,440 --> 0:00:13,129
+akan berbicara dengan Anda hari ini tentang
+
+5
+0:00:13,129 --> 0:00:16,279
+pengurutan generasi berikutnya. Garis
+
+6
+0:00:16,279 --> 0:00:18,560
+besar pembicaraan kita hari ini akan mencakup
+
+7
+0:00:18,560 --> 0:00:20,210
+pengurutan tradisional terlebih dahulu dan kemudian kita akan  menghabiskan
+
+8
+0:00:20,210 --> 0:00:21,949
+sebagian besar waktu kita berbicara tentang
+
+9
+0:00:21,949 --> 0:00:24,170
+pengurutan Illumina dengan sintesis yang sebagian besar
+
+10
+0:00:24,170 --> 0:00:26,210
+pengurutan bagian dilakukan
+
+11
+0:00:26,210 --> 0:00:28,250
+hari ini di akhir pembicaraan juga
+
+12
+0:00:28,250 --> 0:00:29,630
+menyentuh dua platform pesaing lainnya
+
+13
+0:00:29,630 --> 0:00:31,520
+dari Oxford nanopore dan
+
+14
+0:00:31,520 --> 0:00:35,719
+bioscience Pasifik sehingga proyek genom manusia
+
+15
+0:00:35,719 --> 0:00:36,920
+benar-benar mendorong pengembangan
+
+16
+0:00:36,920 --> 0:00:39,859
+yang lebih murah  pengurutan ini adalah upaya 20 tahun
+
+17
+0:00:39,859 --> 0:00:42,199
+yang menelan biaya tiga miliar dolar
+
+18
+0:00:42,199 --> 0:00:44,719
+tetapi selesai pada tahun 2001 dan
+
+19
+0:00:44,719 --> 0:00:47,179
+ini menurunkan biaya pengurutan
+
+20
+0:00:47,179 --> 0:00:49,129
+genom manusia menjadi sekitar 100 juta
+
+21
+0:00:49,129 --> 0:00:51,589
+dolar untuk satu genom dan ini
+
+22
+0:00:51,589 --> 0:00:54,440
+menggunakan pengurutan penyanyi tradisional dengan baik
+
+23
+0:00:54,440 --> 0:00:56,089
+untuk Anda masuk ke  Urutan Sanger Saya ingin
+
+24
+0:00:56,089 --> 0:00:58,069
+memberi tahu Anda sedikit tentang DNA hanya
+
+25
+0:00:58,069 --> 0:01:00,409
+untuk mempercepat semua orang jadi apa yang
+
+26
+0:01:00,409 --> 0:01:02,569
+saya gambarkan di sini adalah urutan o  f
+
+27
+0:01:02,569 --> 0:01:04,670
+DNA itu terbuat dari dua untai berbeda
+
+28
+0:01:04,670 --> 0:01:07,010
+yang berjalan anti paralel sehingga satu untai
+
+29
+0:01:07,010 --> 0:01:08,750
+berjalan dalam satu arah yang lain berjalan ke
+
+30
+0:01:08,750 --> 0:01:10,730
+arah yang berlawanan dan Anda melihat
+
+31
+0:01:10,730 --> 0:01:13,850
+hibridisasi dua g dan A Anda hibridisasi
+
+32
+0:01:13,850 --> 0:01:18,050
+dua T kadang-kadang DNA digambarkan
+
+33
+0:01:18,050 --> 0:01:21,640
+sebagai panah yang ditunjukkan di sini hanya untuk  sederhanakan
+
+34
+0:01:21,640 --> 0:01:23,810
+gambar dan kita akan menggunakan ini
+
+35
+0:01:23,810 --> 0:01:26,450
+sedikit hari ini sekarang DNA adalah molekul beruntai ganda
+
+36
+0:01:26,450 --> 0:01:28,730
+tetapi dapat didenaturasi dan
+
+37
+0:01:28,730 --> 0:01:30,920
+dipisahkan menjadi untaian individu dan
+
+38
+0:01:30,920 --> 0:01:33,860
+mereka dapat direnature kembali bersama-sama atau kita
+
+39
+0:01:33,860 --> 0:01:36,260
+dapat menambahkan urutan DNA yang berbeda
+
+40
+0:01:36,260 --> 0:01:39,890
+dan hibridisasi mereka  seperti
+
+41
+0:01:39,890 --> 0:01:42,290
+potongan DNA merah di sini yang sekarang terikat
+
+42
+0:01:42,290 --> 0:01:47,300
+pada untai cetakan bawah ini dan DNA
+
+43
+0:01:47,300 --> 0:01:49,100
+dapat disalin oleh polimerase --is
+
+44
+0:01:49,100 --> 0:01:51,260
+dan DNA polimerase ini ditunjukkan di sini dalam
+
+45
+0:01:51,260 --> 0:01:53,960
+warna oranye dapat mengikat potongan pendek DNA
+
+46
+0:01:53,960 --> 0:01:55,700
+yang dihibridisasi ke cetakan
+
+47
+0:01:55,700 --> 0:01:59,180
+untai dan mereka dapat mempolimerisasi DNA dengan
+
+48
+0:01:59,180 --> 0:02:01,580
+blok bangunan untuk memperpanjang DNA menjadi
+
+49
+0:02:01,580 --> 0:02:04,220
+untai yang baru disintesis dan
+
+50
+0:02:04,220 --> 0:02:06,520
+blok bangunan DNA ini disebut
+
+51
+0:02:06,520 --> 0:02:08,629
+deoksiribonukleotida trifosfat dan
+
+52
+0:02:08,629 --> 0:02:10,759
+di sini adalah t  Dia empat
+
+53
+0:02:10,759 --> 0:02:13,760
+versi berbeda Anda C's GS dan T dan ini
+
+54
+0:02:13,760 --> 0:02:16,670
+semua berbagi beberapa aspek umum pertama
+
+55
+0:02:16,670 --> 0:02:19,849
+ada kelompok tri fosfat
+
+56
+0:02:19,849 --> 0:02:22,579
+yang memungkinkan untai tumbuh untuk menempel
+
+57
+0:02:22,579 --> 0:02:24,859
+ke blok bangunan Mereka memiliki
+
+58
+0:02:24,859 --> 0:02:27,920
+tiga kelompok hidroksil utama yang digunakan
+
+59
+0:02:27,920 --> 0:02:29,989
+untuk menambahkan blok bangunan tambahan
+
+60
+0:02:29,989 --> 0:02:33,140
+DNA dan mereka memiliki empat basa berbeda yang
+
+61
+0:02:33,140 --> 0:02:37,189
+melekat padanya sehingga dengan
+
+62
+0:02:37,189 --> 0:02:38,750
+sekuensing Sanger tradisional jika Anda ingin
+
+63
+0:02:38,750 --> 0:02:40,849
+mengurutkan sepotong DNA seperti ini,
+
+64
+0:02:40,849 --> 0:02:43,099
+Anda harus terlebih dahulu mendenaturasinya dan
+
+65
+0:02:43,099 --> 0:02:45,409
+menambahkan primer sehingga DNA polimerase
+
+66
+0:02:45,409 --> 0:02:49,069
+dapat mengikat sebagai bit.  lakukan di sini dan sekarang
+
+67
+0:02:49,069 --> 0:02:50,959
+alih-alih menambahkan hanya
+
+68
+0:02:50,959 --> 0:02:52,700
+basa DNA tradisional yang akan memungkinkan
+
+69
+0:02:52,700 --> 0:02:54,700
+polimerase untuk memperpanjang molekul DNA ini,
+
+70
+0:02:54,700 --> 0:02:57,349
+kami sebenarnya menggunakan terminator
+
+71
+0:02:57,349 --> 0:02:59,659
+fluoresen dan terminator fluoresen sangat
+
+72
+0:02:59,659 --> 0:03:01,459
+mirip dengan blok pembangun DNA untuk
+
+73
+0:03:01,459 --> 0:03:03,859
+memilih melekat tetapi ada beberapa
+
+74
+0:03:03,859 --> 0:03:05,599
+perbedaan pertama yang mungkin Anda  perhatikan bahwa
+
+75
+0:03:05,599 --> 0:03:07,129
+ada warna yang berbeda dan
+
+76
+0:03:07,129 --> 0:03:08,659
+ada kelompok fluoresen berbeda yang
+
+77
+0:03:08,659 --> 0:03:10,609
+melekat pada masing-masing dari empat basa
+
+78
+0:03:10,609 --> 0:03:14,930
+kuning untuk a  biru untuk G merah untuk C
+
+79
+0:03:14,930 --> 0:03:18,530
+dan hijau 40 tambahan 3
+
+80
+0:03:18,530 --> 0:03:20,569
+gugus hidroksil utama yang ada di
+
+81
+0:03:20,569 --> 0:03:22,639
+blok bangunan untuk memungkinkan DNA terus
+
+82
+0:03:22,639 --> 0:03:25,699
+memanjang sekarang dihentikan atau dihilangkan
+
+83
+0:03:25,699 --> 0:03:27,590
+inilah mengapa ini disebut
+
+84
+0:03:27,590 --> 0:03:29,840
+terminator fluoresen mereka memiliki grup Larsen dan
+
+85
+0:03:29,840 --> 0:03:32,269
+terminator  yang mencegah DNA
+
+86
+0:03:32,269 --> 0:03:34,930
+polimerase memperluas untai DNA lebih jauh
+
+87
+0:03:34,930 --> 0:03:38,060
+dan dalam tabung reaksi kami sebenarnya memiliki
+
+88
+0:03:38,060 --> 0:03:40,190
+miliaran dan miliaran salinan
+
+89
+0:03:40,190 --> 0:03:42,560
+template ini dan kami memasukkan blok pembangun DNA normal
+
+90
+0:03:42,560 --> 0:03:44,419
+dan kami meningkatkan
+
+91
+0:03:44,419 --> 0:03:46,489
+konsentrasi rendah flush dan
+
+92
+0:03:46,489 --> 0:03:49,010
+terminator ini hasilnya apa  apakah Anda memiliki
+
+93
+0:03:49,010 --> 0:03:51,049
+sekumpulan fragmen DNA yang baru disintesis
+
+94
+0:03:51,049 --> 0:03:53,750
+yang semuanya berukuran berbeda karena
+
+95
+0:03:53,750 --> 0:03:56,209
+mereka secara acak memasukkan
+
+96
+0:03:56,209 --> 0:03:58,669
+Terminator fluoresen dan molekul-molekul ini dalam
+
+97
+0:03:58,669 --> 0:04:00,709
+tabung reaksi kemudian dimasukkan ke dalam
+
+98
+0:04:00,709 --> 0:04:04,310
+pengurutan DNA yang akan memisahkannya dan
+
+99
+0:04:04,310 --> 0:04:05,750
+kemudian memungkinkan kita untuk menentukan urutan
+
+100
+0:04:05,750 --> 0:04:08,419
+apa  yang terjadi di sequencer adalah
+
+101
+0:04:08,419 --> 0:04:10,069
+molekul-molekul ini dipisahkan dalam ukuran dari yang
+
+102
+0:04:10,069 --> 0:04:12,530
+terbesar ke yang terkecil yang terkecil
+
+103
+0:04:12,530 --> 0:04:14,419
+keluar dari s  equencer pertama dan
+
+104
+0:04:14,419 --> 0:04:16,729
+terdeteksi dan kemudian potongan DNA berikutnya
+
+105
+0:04:16,729 --> 0:04:19,940
+terdeteksi dan berikutnya dan jejak
+
+106
+0:04:19,940 --> 0:04:21,620
+yang keluar dari sequencer DNA adalah
+
+107
+0:04:21,620 --> 0:04:23,810
+kromatogram di sini di bagian bawah dan
+
+108
+0:04:23,810 --> 0:04:27,860
+jika Anda mengikuti perubahan warna karena masing
+
+109
+0:04:27,860 --> 0:04:29,510
+-masing potongan DNA yang berbeda  keluar
+
+110
+0:04:29,510 --> 0:04:33,430
+dari sequencer Anda dapat membangun urutan DNA Anda
+
+111
+0:04:33,430 --> 0:04:36,530
+mesin ini dapat menjalankan hingga 384
+
+112
+0:04:36,530 --> 0:04:39,650
+sampel sekaligus dan menghasilkan sekitar 700
+
+113
+0:04:39,650 --> 0:04:41,599
+basis urutan untuk setiap sampel tersebut
+
+114
+0:04:41,599 --> 0:04:43,909
+dan Anda dapat mengurutkan hingga 1 juta
+
+115
+0:04:43,909 --> 0:04:46,580
+keping DNA atau 1 juta basa  DNA
+
+116
+0:04:46,580 --> 0:04:48,770
+dalam satu hari sekarang ini mungkin terdengar
+
+117
+0:04:48,770 --> 0:04:50,449
+seperti banyak tetapi ketika Anda mempertimbangkan
+
+118
+0:04:50,449 --> 0:04:52,430
+genom manusia sebenarnya adalah 6 miliar basa
+
+119
+0:04:52,430 --> 0:04:55,009
+dan untuk mengurutkan genom manusia Anda
+
+120
+0:04:55,009 --> 0:04:56,930
+benar-benar mengambil sampelnya berkali-kali
+
+121
+0:04:56,930 --> 0:04:59,870
+kadang-kadang rata-rata 7 kali ini
+
+122
+0:04:59,870 --> 0:05:00,919
+berarti bahwa jika Anda  untuk mencoba
+
+123
+0:05:00,919 --> 0:05:02,870
+mengurutkan satu genom manusia pada satu
+
+124
+0:05:02,870 --> 0:05:04,999
+mesin pengurutan akan memakan waktu sekitar
+
+125
+0:05:04,999 --> 0:05:08,029
+seratus tahun dan jelas sekali
+
+126
+0:05:08,029 --> 0:05:10,729
+proyek genom manusia selesai dalam waktu
+
+127
+0:05:10,729 --> 0:05:12,469
+kurang dari 100 tahun dan ini
+
+128
+0:05:12,469 --> 0:05:14,629
+dimungkinkan oleh fakta  daftar
+
+129
+0:05:14,629 --> 0:05:16,550
+instrumen pengurutan ini di sini adalah
+
+130
+0:05:16,550 --> 0:05:18,860
+instrumen pengurutan tunggal di
+
+131
+0:05:18,860 --> 0:05:20,389
+pabrik besar ini di mana terkadang kami memiliki
+
+132
+0:05:20,389 --> 0:05:21,979
+puluhan atau bahkan ratusan mesin ini yang
+
+133
+0:05:21,979 --> 0:05:27,669
+beroperasi 24/7 365 hari setahun jadi
+
+134
+0:05:27,669 --> 0:05:31,159
+genom manusia adalah pekerjaan yang sangat hebat
+
+135
+0:05:31,159 --> 0:05:33,050
+menghasilkan banyak manfaat
+
+136
+0:05:33,050 --> 0:05:36,259
+data tetapi itu hanya berasal dari
+
+137
+0:05:36,259 --> 0:05:38,089
+materi genetik dari beberapa orang dan
+
+138
+0:05:38,089 --> 0:05:40,370
+jadi kami masih tidak mengerti sebagian besar dari
+
+139
+0:05:40,370 --> 0:05:42,379
+apa genom ini Anda tahu kami
+
+140
+0:05:42,379 --> 0:05:43,969
+memiliki urutan tetapi sekali lagi itu hanya dari
+
+141
+0:05:43,969 --> 0:05:46,189
+sebagian kecil tetapi untuk benar-benar
+
+142
+0:05:46,189 --> 0:05:48,169
+memahami fungsi genom  kita membutuhkan
+
+143
+0:05:48,169 --> 0:05:50,360
+urutan ribuan hingga jutaan
+
+144
+0:05:50,360 --> 0:05:53,300
+orang yang berbeda untuk benar-benar mengambil sampel
+
+145
+0:05:53,300 --> 0:05:57,560
+berbagai materi genetik yang ada dalam
+
+146
+0:05:57,560 --> 0:06:00,589
+populasi manusia dan jelas kita
+
+147
+0:06:00,589 --> 0:06:02,060
+tidak dapat melakukan ini dengan pengurutan senior tradisional,
+
+148
+0:06:02,060 --> 0:06:04,909
+jadi untungnya selama dua
+
+149
+0:06:04,909 --> 0:06:06,620
+dekade terakhir biaya pengurutan telah
+
+150
+0:06:06,620 --> 0:06:08,960
+turun secara dramatis  di sini adalah bagan yang
+
+151
+0:06:08,960 --> 0:06:10,430
+menunjukkan kepada Anda berapa biaya untuk
+
+152
+0:06:10,430 --> 0:06:13,219
+mengurutkan 1 juta basa DNA ketika
+
+153
+0:06:13,219 --> 0:06:15,050
+proyek genom manusia selesai pada tahun
+
+154
+0:06:15,050 --> 0:06:19,520
+2001 biayanya al  paling $10.000 hari ini kita
+
+155
+0:06:19,520 --> 0:06:22,009
+mendekati satu sen untuk mengurutkan satu
+
+156
+0:06:22,009 --> 0:06:23,899
+juta basa DNA yang mewakili
+
+157
+0:06:23,899 --> 0:06:26,599
+penurunan 1 juta kali lipat dalam biaya
+
+158
+0:06:26,599 --> 0:06:29,419
+pengurutan dan jika Anda mengikuti bagan ini,
+
+159
+0:06:29,419 --> 0:06:30,439
+Anda dapat melihat bahwa ada beberapa
+
+160
+0:06:30,439 --> 0:06:36,020
+titik belok pada tahun 2007 2010 dan 2015 di
+
+161
+0:06:36,020 --> 0:06:38,120
+mana harga  memiliki beberapa penurunan yang cukup curam
+
+162
+0:06:38,120 --> 0:06:40,939
+dan ini sebagian besar didorong oleh
+
+163
+0:06:40,939 --> 0:06:42,889
+sistem pengurutan baru yang diperkenalkan oleh
+
+164
+0:06:42,889 --> 0:06:45,080
+Illumina pemain dominan di
+
+165
+0:06:45,080 --> 0:06:46,730
+pasar pengurutan generasi berikutnya
+
+166
+0:06:46,730 --> 0:06:49,160
+pada slide ini adalah tiga
+
+167
+0:06:49,160 --> 0:06:50,540
+jenis pengurutan dari Illumina mereka
+
+168
+0:06:50,540 --> 0:06:52,070
+sebenarnya memiliki beberapa lagi tetapi mereka
+
+169
+0:06:52,070 --> 0:06:53,960
+benar-benar menjangkau skala  sequencing
+
+170
+0:06:53,960 --> 0:06:56,180
+yang ditawarkan di sebelah
+
+171
+0:06:56,180 --> 0:06:58,430
+kiri adalah instrumen IC aluminium di
+
+172
+0:06:58,430 --> 0:07:00,320
+tengah adalah pencarian tinggi dan di sebelah kanan
+
+173
+0:07:00,320 --> 0:07:03,080
+adalah Nova mencari sequencer output tinggi terbaru
+
+174
+0:07:03,080 --> 0:07:05,240
+dari Illumina dan jika kita
+
+175
+0:07:05,240 --> 0:07:07,550
+membandingkan output dari mesin ini dan
+
+176
+0:07:07,550 --> 0:07:08,510
+membandingkan dengan  Platform pengurutan Sanger
+
+177
+0:07:08,510 --> 0:07:11,300
+kita dapat melihat seberapa banyak lagi
+
+178
+0:07:11,300 --> 0:07:12,710
+urutan yang dapat kita hasilkan dari
+
+179
+0:07:12,710 --> 0:07:14,300
+instrumen ini jika Anda hanya melihat berapa banyak
+
+180
+0:07:14,300 --> 0:07:16,460
+bacaan yang dapat Anda baca  et dari satu kali proses,
+
+181
+0:07:16,460 --> 0:07:19,100
+mikrofon menghasilkan 30 juta pembacaan,
+
+182
+0:07:19,100 --> 0:07:21,260
+C tinggi menghasilkan tiga miliar pembacaan, Nova
+
+183
+0:07:21,260 --> 0:07:24,230
+C menghasilkan 13 miliar pembacaan, sedangkan
+
+184
+0:07:24,230 --> 0:07:27,430
+sistem pengurutan Sanger menghasilkan sekitar
+
+185
+0:07:27,430 --> 0:07:30,290
+400 pembacaan, jadi ini adalah perbedaan besar
+
+186
+0:07:30,290 --> 0:07:32,150
+dan jika Anda hanya melihat ini dalam hal
+
+187
+0:07:32,150 --> 0:07:33,980
+berapa banyak urutan yang dapat Anda hasilkan dalam
+
+188
+0:07:33,980 --> 0:07:37,190
+satu hari Anda dapat menghasilkan hingga empat
+
+189
+0:07:37,190 --> 0:07:40,160
+triliun basis pada pencarian Nova dalam
+
+190
+0:07:40,160 --> 0:07:43,070
+satu hari dibandingkan dengan 1 juta basis
+
+191
+0:07:43,070 --> 0:07:45,700
+pada instrumen pemberat tradisional
+
+192
+0:07:45,700 --> 0:07:48,290
+Urutan Illumina adalah pemain dominan
+
+193
+0:07:48,290 --> 0:07:49,460
+di pasar
+
+194
+0:07:49,460 --> 0:07:51,980
+ini adalah metode berbasis pencitraan  dan
+
+195
+0:07:51,980 --> 0:07:54,110
+menghasilkan banyak banyak pembacaan jutaan hingga
+
+196
+0:07:54,110 --> 0:07:56,270
+miliaran pembacaan per run dan dari
+
+197
+0:07:56,270 --> 0:07:58,790
+masing-masing pembacaan ini kita dapat menghasilkan 300 hingga
+
+198
+0:07:58,790 --> 0:08:02,090
+600 basis urutan itu benar-benar sangat
+
+199
+0:08:02,090 --> 0:08:04,840
+akurat tingkat kesalahannya kira-kira 1 dalam
+
+200
+0:08:04,840 --> 0:08:08,300
+1.000 basis dan dengan mesin baru kita
+
+201
+0:08:08,300 --> 0:08:10,010
+benar-benar dapat mengurutkan a  genom manusia seharga
+
+202
+0:08:10,010 --> 0:08:14,660
+$1.000 dalam waktu kurang dari 48 jam dan
+
+203
+0:08:14,660 --> 0:08:16,370
+pengurutan pada platform Illumina ini
+
+204
+0:08:16,370 --> 0:08:17,810
+terjadi di sel aliran ini pada
+
+205
+0:08:17,810 --> 0:08:19,340
+dasarnya adalah slide mikroskop dengan
+
+206
+0:08:19,340 --> 0:08:22,040
+c  saluran di bagian dalam apa yang saya tunjukkan di
+
+207
+0:08:22,040 --> 0:08:24,080
+sini adalah sel aliran pencarian saya di sebelah
+
+208
+0:08:24,080 --> 0:08:26,180
+tabung Eppendorf standar yang digunakan
+
+209
+0:08:26,180 --> 0:08:28,820
+untuk banyak pekerjaan lab dan tabung ini
+
+210
+0:08:28,820 --> 0:08:30,740
+cukup kecil tingginya sekitar satu setengah
+
+211
+0:08:30,740 --> 0:08:33,650
+inci dan pada sel aliran C ini saya  kami
+
+212
+0:08:33,650 --> 0:08:35,510
+dapat menghasilkan sekitar bulan dengan 30 juta
+
+213
+0:08:35,510 --> 0:08:39,470
+pembacaan per proses berikutnya adalah aliran C tinggi
+
+214
+0:08:39,470 --> 0:08:41,060
+sehingga Anda dapat melihatnya sedikit lebih besar
+
+215
+0:08:41,060 --> 0:08:42,800
+daripada sel aliran C saya dan real estat yang lebih besar ini
+
+216
+0:08:42,800 --> 0:08:44,930
+memungkinkan kami untuk menghasilkan lebih banyak
+
+217
+0:08:44,930 --> 0:08:47,420
+pembacaan dalam satu putaran mendekati tiga
+
+218
+0:08:47,420 --> 0:08:50,810
+miliar bacaan dan terakhir adalah Nova C
+
+219
+0:08:50,810 --> 0:08:53,180
+Klose yang bahkan lebih besar dan pada
+
+220
+0:08:53,180 --> 0:08:55,040
+sel aliran ini kami dapat menghasilkan 13 miliar
+
+221
+0:08:55,040 --> 0:08:58,840
+bacaan dalam sekali jalan
+
+222
+0:08:58,840 --> 0:09
+sehingga Anda tidak bisa hanya memasukkan DNA ke dalam
+
+223
+0:09 --> 0:09:02,470
+sel aliran ini dan mengeluarkan urutan, Anda
+
+224
+0:09:02,470 --> 0:09:03,940
+sebenarnya harus mempersiapkan  sampel
+
+225
+0:09:03,940 --> 0:09:05,710
+dan ada beberapa langkah yang terjadi
+
+226
+0:09:05,710 --> 0:09:07,690
+tetapi pada dasarnya apa yang terjadi adalah Anda mengambil
+
+227
+0:09:07,690 --> 0:09:09,820
+sampel Anda yang Anda inginkan urutannya
+
+228
+0:09:09,820 --> 0:09:11,890
+yaitu DNA jika Anda memiliki sesuatu seperti
+
+229
+0:09:11,890 --> 0:09:14,110
+RNA Anda dapat mengubahnya dengan enzim menjadi
+
+230
+0:09:14,110 --> 0:09:16,780
+DNA Anda mengambil DNA itu dan kemudian Anda
+
+231
+0:09:16,780 --> 0:09:18,580
+harus menambahkan  pada ini  Berikut urutan adaptor di
+
+232
+0:09:18,580 --> 0:09:21,250
+akhir sehingga dengan warna biru situs pengikatan primer kami
+
+233
+0:09:21,250 --> 0:09:23,440
+yang memungkinkan reaksi sekuensing
+
+234
+0:09:23,440 --> 0:09:24,940
+terjadi ini mirip dengan menyanyikan sekuensing Anda di
+
+235
+0:09:24,940 --> 0:09:26,230
+mana kami perlu memiliki
+
+236
+0:09:26,230 --> 0:09:29,140
+ikatan primer untuk DNA polimerase untuk
+
+237
+0:09:29,140 --> 0:09:31,450
+bergerak di DNA template dan kemudian kami
+
+238
+0:09:31,450 --> 0:09:33,190
+juga memiliki  urutan penangkapan ini dalam
+
+239
+0:09:33,190 --> 0:09:36,970
+warna hijau dan oranye dan ini memungkinkan
+
+240
+0:09:36,970 --> 0:09:40,390
+sampel pengurutan Anda untuk ditangkap ke
+
+241
+0:09:40,390 --> 0:09:43,420
+sel aliran untuk diurutkan setelah Anda
+
+242
+0:09:43,420 --> 0:09:45,520
+menyiapkan sampel DNA Anda.
+
+243
+0:09:45,520 --> 0:09:47,800
+Ini adalah molekul beruntai ganda
+
+244
+0:09:47,800 --> 0:09:49,870
+yang kami denaturasi dan dimasukkan ke dalam sel aliran
+
+245
+0:09:49,870 --> 0:09:52,240
+dan di sebelah kiri  -sisi lagi
+
+246
+0:09:52,240 --> 0:09:54,730
+adalah gambar sel aliran C tinggi sehingga
+
+247
+0:09:54,730 --> 0:09:56,680
+ada delapan saluran dan sampel
+
+248
+0:09:56,680 --> 0:09:58,900
+benar-benar masuk ke slide kaca
+
+249
+0:09:58,900 --> 0:10:00,220
+ada delapan saluran berbeda di
+
+250
+0:10:00,220 --> 0:10:03,670
+dalamnya dan di dalam slide adalah
+
+251
+0:10:03,670 --> 0:10:08,650
+campuran molekul DNA pendek berwarna oranye
+
+252
+0:10:08,650 --> 0:10:10,540
+dan hijau dan  molekul hijau oranye ini
+
+253
+0:10:10,540 --> 0:10:13,810
+akan mengikat kedua ujung
+
+254
+0:10:13,810 --> 0:10:16,150
+perpustakaan pengurutan Anda sehingga kami mendenaturasi
+
+255
+0:10:16,150 --> 0:10:18,730
+sampel kami mengalirkannya ke dalam sel aliran dan
+
+256
+0:10:18,730 --> 0:10:20,740
+mereka dapat ditangkap oleh primer ini
+
+257
+0:10:20,740 --> 0:10:23,290
+a  kembali molekul DNA pendek ini pada
+
+258
+0:10:23,290 --> 0:10:25,690
+permukaan slide dan begitu itu
+
+259
+0:10:25,690 --> 0:10:28,090
+terjadi, DNA polimerase ditambahkan ke dalam
+
+260
+0:10:28,090 --> 0:10:30,190
+blok pembangun DNA yang diperkenalkan dan kami
+
+261
+0:10:30,190 --> 0:10:31,840
+menyalin template itu sehingga kami memiliki
+
+262
+0:10:31,840 --> 0:10:34,030
+untai baru yang disintesis yang sekarang
+
+263
+0:10:34,030 --> 0:10:36,430
+secara fisik dibatasi ke bagian bawah
+
+264
+0:10:36,430 --> 0:10:39,520
+sel aliran  kami mencuci
+
+265
+0:10:39,520 --> 0:10:41,530
+untai template asli dan kemudian membiarkan
+
+266
+0:10:41,530 --> 0:10:44,110
+untai yang baru disintesis sekarang mengikat ke
+
+267
+0:10:44,110 --> 0:10
+urutan DNA lain yang ada di
+
+268
+0:10 --> 0:10:47,710
+permukaan dalam hal ini potongan oranye
+
+269
+0:10:47,710 --> 0:10:51,130
+dan kemudian kami mengalir di beberapa DNA polimerase
+
+270
+0:10:51,130 --> 0:10:52,540
+dan blok bangunan dan kami mendapatkan untai lain yang
+
+271
+0:10:52,540 --> 0:10:54,580
+terbentuk  dan kami mengulangi proses ini
+
+272
+0:10:54,580 --> 0:10:57,310
+berkali-kali dan pada akhirnya kami mendapatkan
+
+273
+0:10:57,310 --> 0:11:00,250
+sekitar seribu salinan dalam sebuah cluster
+
+274
+0:11:00,250 --> 0:11:02,260
+dan ingat bahwa ribuan
+
+275
+0:11:02,260 --> 0:11:03,700
+molekul ini semuanya berasal dari
+
+276
+0:11:03,700 --> 0:11:05,500
+untai cetakan asli yang sama sehingga mereka semua
+
+277
+0:11:05,500 --> 0:11:08,650
+memiliki urutan yang sama. Kami mengubah sifat
+
+278
+0:11:08,650 --> 0:11:10,630
+menjadi untaian dan kemudian kami  selektif dapat
+
+279
+0:11:10,630 --> 0:11:12,850
+membelah salah satu ala pergi
+
+280
+0:11:12,850 --> 0:11:15,310
+atau primer dalam hal ini yang
+
+281
+0:11:15,310 --> 0:11:17,889
+hijau dan kami telah mencuci mereka jadi sekarang
+
+282
+0:11:17,889 --> 0:11:19,930
+semua ribu molekul hadir  t
+
+283
+0:11:19,930 --> 0:11:21,850
+semua untai identik karena kami
+
+284
+0:11:21,850 --> 0:11:24,819
+menghapus untai lain yang kami alirkan dalam
+
+285
+0:11:24,819 --> 0:11:27,130
+primer pengurutan dan sekarang proses pengelompokan
+
+286
+0:11:27,130 --> 0:11:30,550
+selesai dan ini adalah
+
+287
+0:11:30,550 --> 0:11:32,170
+instrumen yang melakukan pengelompokan jadi
+
+288
+0:11:32,170 --> 0:11:34,569
+hal pertama yang kami lakukan adalah kami mengambil
+
+289
+0:11:34,569 --> 0:11:37,060
+sel aliran baru lagi ini adalah  ukuran
+
+290
+0:11:37,060 --> 0:11:39,190
+slide mikroskop standar dan kemudian kami
+
+291
+0:11:39,190 --> 0:11:41,589
+meletakkannya di atas panggung instrumen
+
+292
+0:11:41,589 --> 0:11:46,209
+dan panggung adalah wilayah
+
+293
+0:11:46,209 --> 0:11:47,560
+instrumen yang benar-benar dapat memanaskan dan
+
+294
+0:11:47,560 --> 0:11:49,449
+mendinginkan untuk melakukan banyak reaksi enzimatik
+
+295
+0:11:49,449 --> 0:11:51,940
+selanjutnya kami memuat pelat
+
+296
+0:11:51,940 --> 0:11:53,800
+biru reagen  yang melakukan pengelompokan
+
+297
+0:11:53,800 --> 0:11:56,470
+dan terakhir tabung strip dengan delapan
+
+298
+0:11:56,470 --> 0:11:58,029
+sampel berbeda yang akan
+
+299
+0:11:58,029 --> 0:12:01,329
+dimuat ke sel aliran itu selanjutnya
+
+300
+0:12:01,329 --> 0:12:03,370
+manifold dipasang di atas sel aliran
+
+301
+0:12:03,370 --> 0:12:07,389
+dan terhubung ke SI BOTS dan
+
+302
+0:12:07,389 --> 0:12:08,680
+di belakang bot SI atau
+
+303
+0:12:08,680 --> 0:12:10,300
+instrumen pengelompokan ini adalah serangkaian
+
+304
+0:12:10,300 --> 0:12
+pompa yang sekarang akan menarik reagen dari
+
+305
+0:12 --> 0:12:15,069
+pelat reagen biru atau dari
+
+306
+0:12:15,069 --> 0:12:17,439
+tabung trip sampel kami dan melewatkannya melalui
+
+307
+0:12:17,439 --> 0:12:20,050
+sel aliran dan ini adalah bagaimana reagen
+
+308
+0:12:20,050 --> 0:12:22,720
+dan dan cairan  dikirim dan pada
+
+309
+0:12:22,720 --> 0:12:24,449
+titik ini prosedur pengelompokan
+
+310
+0:12:24,449 --> 0:12:26,920
+memakan waktu sekitar tiga hingga empat jam dan
+
+311
+0:12:26,920 --> 0:12:29,620
+setelah selesai, kami mengambil sel aliran itu dan
+
+312
+0:12:29,620 --> 0:12:31,600
+memindahkannya ke sequencer yang sebenarnya dalam
+
+313
+0:12:31,600 --> 0:12:34,630
+hal ini instrumen hi-c dan pada
+
+314
+0:12:34,630 --> 0:12:35,889
+instrumen high seek kami memiliki
+
+315
+0:12:35,889 --> 0:12:37,959
+pendingin  kompartemen untuk semua
+
+316
+0:12:37,959 --> 0:12:40,329
+sekuensing atau agen Banyak enzim di
+
+317
+0:12:40,329 --> 0:12:42,040
+dalamnya yang perlu tetap dingin
+
+318
+0:12:42,040 --> 0:12:43,860
+selama tiga hingga empat hari sekuens iran di
+
+319
+0:12:43,860 --> 0:12:46,300
+atas bagian berpendingin adalah
+
+320
+0:12:46,300 --> 0:12:49,269
+serangkaian pompa yang menarik reagen dari
+
+321
+0:12:49,269 --> 0:12:51,819
+kompartemen berpendingin itu dan
+
+322
+0:12:51,819 --> 0:12:54,430
+mengirimkannya ke sel aliran  yang sekarang akan kita
+
+323
+0:12:54,430 --> 0:12:56,980
+muat ke panggung dan itu adalah
+
+324
+0:12:56,980 --> 0:12:59,290
+sel aliran dari bot c yang baru saja
+
+325
+0:12:59,290 --> 0:13:01,930
+menyelesaikan pengelompokan ini dipasang
+
+326
+0:13:01,930 --> 0:13:04,470
+ke panggung dan terkunci di tempatnya dan
+
+327
+0:13:04,470 --> 0:13:07,149
+kemudian kita dapat memulai proses pengurutan dan
+
+328
+0:13:07,149 --> 0:13:09,370
+apa yang dilakukan adalah yang akan memicu
+
+329
+0:13:09,370 --> 0:13:12,459
+pompa untuk mulai mengalirkan reagen dari
+
+330
+0:13:12,459 --> 0:13:15,089
+referensi ke kompartemen ke dalam sel aliran
+
+331
+0:13:15,089 --> 0:13:19,480
+dan di belakang sel aliran sebenarnya adalah
+
+332
+0:13:19,480 --> 0:13:22,480
+mikroskop yang sangat kuat yang digunakan
+
+333
+0:13:22,480 --> 0:13:24,760
+untuk benar-benar mengurutkan setiap t  selang
+
+334
+0:13:24,760 --> 0:13:26,560
+molekul DNA
+
+335
+0:13:26,560 --> 0:13:29,680
+dan jadi ingat bahwa ketika kita menempatkan
+
+336
+0:13:29,680 --> 0:13:32,199
+sel aliran ke sequencer,
+
+337
+0:13:32,199 --> 0:13:34,269
+inilah yang terlihat seperti kita memiliki banyak
+
+338
+0:13:34,269 --> 0:13:36,999
+cluster yang masing-masing memiliki primer sequencing yang
+
+339
+0:13:36,999 --> 0:13:39,730
+terikat padanya dan kimia
+
+340
+0:13:39,730 --> 0:13:42,430
+untuk sequencing sangat mirip dengan
+
+341
+0:13:42,430 --> 0:13:44,860
+penyanyi  pengurutan terminator yang
+
+342
+0:13:44,860 --> 0:13:46,120
+digunakan tetapi satu perbedaannya adalah bahwa
+
+343
+0:13:46,120 --> 0:13:48,309
+ini dapat dibalik dan mereka
+
+344
+0:13:48,309 --> 0:13:51,490
+dapat dibalik dalam dua cara jadi pertama ini
+
+345
+0:13:51,490 --> 0:13:53,439
+dapat dimasukkan ke dalam kluster
+
+346
+0:13:53,439 --> 0:13:55,930
+oleh DNA polimerase dan kluster tersebut akan
+
+347
+0:13:55,930 --> 0:13:57,550
+menyala dalam empat warna berbeda
+
+348
+0:13:57,550 --> 0:13:58,720
+tergantung pada yang mana.  dasar
+
+349
+0:13:58,720 --> 0:14:01,449
+dimasukkan gambar diambil dan
+
+350
+0:14:01,449 --> 0:14:02,769
+setelah gambar itu diambil kita
+
+351
+0:14:02,769 --> 0:14:05,230
+benar-benar dapat menghapus terminator ini dan
+
+352
+0:14:05,230 --> 0:14:06,490
+kelompok fluorescent dengan beberapa
+
+353
+0:14:06,490 --> 0:14:09,069
+bahan kimia dan apa hasilnya kita
+
+354
+0:14:09,069 --> 0:14:10,839
+regenerasi tiga kelompok hidroksil utama
+
+355
+0:14:10,839 --> 0:14:13,600
+sehingga sekarang cluster dapat
+
+356
+0:14:13,600 --> 0:14:17,230
+memiliki putaran basa ditambahkan ke dalamnya  dan
+
+357
+0:14:17,230 --> 0:14:19,180
+jadi inilah yang terlihat untuk
+
+358
+0:14:19,180 --> 0:14:21,910
+satu molekul di ujung ini di sini
+
+359
+0:14:21,910 --> 0:14:24,819
+kita memiliki untai template terikat ke
+
+360
+0:14:24,819 --> 0:14:27,309
+primer sekuensing dan al ini  menurunkan DNA
+
+361
+0:14:27,309 --> 0:14:29,800
+polimerase untuk mengikat dan kemudian menambahkan basa
+
+362
+0:14:29,800 --> 0:14:32,079
+dalam hal ini bukan yang kuning jadi setelah
+
+363
+0:14:32,079 --> 0:14:34,110
+ini ditambahkan gambar diambil dan
+
+364
+0:14:34,110 --> 0:14:37,029
+kemudian kami menambahkan bahan kimia untuk menghilangkan
+
+365
+0:14:37,029 --> 0:14:38,800
+gugus fluoresen dan terminator
+
+366
+0:14:38,800 --> 0:14:40,269
+sehingga DNA polimerase dapat menambahkan basa kedua
+
+367
+0:14:40,269 --> 0:14:43,120
+dan  gambar diambil kimia
+
+368
+0:14:43,120 --> 0:14:45,160
+dilakukan untuk menghilangkan basa itu dan untuk
+
+369
+0:14:45,160 --> 0:14:46,930
+meregenerasi tiga hidroksil prima dan
+
+370
+0:14:46,930 --> 0:14:50,410
+kemudian kita dapat menambahkan basa lain dan dari waktu ke
+
+371
+0:14:50,410 --> 0:14:52,149
+waktu siklus hanya berulang berulang-
+
+372
+0:14:52,149 --> 0:14:55,180
+ulang dengan beberapa siklus
+
+373
+0:14:55,180 --> 0:14:58,930
+pencitraan Edisi dasar dan kemudian kimia
+
+374
+0:14:58,930 --> 0:15:02,769
+untuk menghapus  blok dan jika kita
+
+375
+0:15:02,769 --> 0:15:04,689
+melihat lihat penggambaran lima
+
+376
+0:15:04,689 --> 0:15:06,250
+siklus yang berbeda sehingga masing-masing
+
+377
+0:15:06,250 --> 0:15:08,379
+mewakili gambar yang berbeda yang diambil dan
+
+378
+0:15:08,379 --> 0:15:12,189
+jika kita mengikuti kelompok kiri atas dan kanan bawah
+
+379
+0:15:12,189 --> 0:15:15,129
+dan melihat bagaimana warna
+
+380
+0:15:15,129 --> 0:15:18,129
+berubah dari waktu ke waktu, kita dapat benar-benar membangun
+
+381
+0:15:18,129 --> 0:15:20,110
+urutannya jadi cluster atas
+
+382
+0:15:20,110 --> 0:15:23,709
+urutannya adalah AG C C T
+
+383
+0:15:23,709 --> 0:15:25,990
+karena pergi dari kuning biru merah merah hijau
+
+384
+0:15:25,990 --> 0:15:30,999
+dan yang paling bawah adalah G t AAC dan sekali
+
+385
+0:15:30,999 --> 0:15:32,350
+lagi kekuatan sistem adalah
+
+386
+0:15:32,350 --> 0:15:34,360
+y  Anda dapat mengurutkan hingga miliaran
+
+387
+0:15:34,360 --> 0:15:36,279
+urutan pada saat yang sama secara paralel
+
+388
+0:15:36,279 --> 0:15:38,740
+dan inilah yang memberi instrumen ini
+
+389
+0:15:38,740 --> 0:15:39,840
+throughput mereka
+
+390
+0:15:39,840 --> 0:15:42,120
+sehingga beberapa orang bertanya kepada saya mengapa kita tidak dapat
+
+391
+0:15:42,120 --> 0:15
+meningkatkan jumlah basis yang kita dapatkan
+
+392
+0:15 --> 0:15:46,650
+dalam sekali baca dengan hanya mengulang
+
+393
+0:15:46,650 --> 0:15:48,450
+negara  berulang-ulang lakukan ini
+
+394
+0:15:48,450 --> 0:15:50,520
+seribu dua ribu sepuluh ribu kali
+
+395
+0:15:50,520 --> 0:15:53,400
+dan alasan utama mengapa
+
+396
+0:15:53,400 --> 0:15:55,200
+enzim dan kimianya tidak sempurna
+
+397
+0:15:55,200 --> 0:15:59,040
+jadi di sini saya memiliki kluster dari satu
+
+398
+0:15:59,040 --> 0:16:01,200
+kluster tunggal yang terbuat dari
+
+399
+0:16:01,200 --> 0:16:03,960
+molekul template yang sama tetapi yang terjadi adalah
+
+400
+0:16:03,960 --> 0:16:06,779
+karena kimia tidak sempurna
+
+401
+0:16:06,779 --> 0:16:08,880
+beberapa untai tertinggal jadi yang satu ini
+
+402
+0:16:08,880 --> 0:16:11,010
+kuning bukannya hijau dan beberapa
+
+403
+0:16:11,010 --> 0:16:13,290
+kelompok melompat ke depan jadi yang ini sekarang
+
+404
+0:16:13,290 --> 0:16:15,690
+merah bukannya hijau karena melompat
+
+405
+0:16:15,690 --> 0:16:19,110
+ke depan dan yang terjadi adalah kesalahan ini
+
+406
+0:16:19,110 --> 0:16:21,630
+tidak'  t terlalu buruk tetapi seiring waktu dan banyak
+
+407
+0:16:21,630 --> 0:16:23,850
+banyak siklus selama 100 200
+
+408
+0:16:23,850 --> 0:16:26,790
+300 siklus semakin banyak untaian
+
+409
+0:16:26,790 --> 0:16:29,070
+mulai tertinggal dan lebih banyak mulai melompat ke depan
+
+410
+0:16:29,070 --> 0:16:30,570
+sehingga sinyal Anda yang sebenarnya mulai
+
+411
+0:16:30,570 --> 0:16:32,430
+menghilang dan semakin lemah dan semakin lemah dan
+
+412
+0:16:32,430 --> 0:16:34,620
+ini benar-benar membatasi pengurutan Illumina
+
+413
+0:16:34,620 --> 0:16:39,480
+menjadi sekitar 300 basis untuk setiap pembacaan sehingga
+
+414
+0:16:39,480 --> 0:16:41,220
+dengan pengurutan Illumina, empat
+
+415
+0:16:41,220 --> 0:16:43,230
+gambar berbeda diambil selama setiap
+
+416
+0:16:43,230 --> 0:16:44,940
+siklus satu untuk masing-masing dari empat
+
+417
+0:16:44,940 --> 0:16:48,600
+basis warna dan jadi gambar benar-benar terlihat
+
+418
+0:16:48,600 --> 0:16:50,700
+seperti ini, mereka tidak terlalu jelas'
+
+419
+0:16:50,700 --> 0:16:52,620
+bukanlah lingkaran yang sempurna dan sangat
+
+420
+0:16:52,620 --> 0:16:55,740
+sulit untuk dilihat dengan Saya hanya mencari tahu di
+
+421
+0:16:55,740 --> 0:16:57,570
+mana satu cluster dimulai dan yang lain
+
+422
+0:16:57,570 --> 0:16:59,760
+dimulai Anda tahu satu contoh di sini
+
+423
+0:16:59,760 --> 0:17:01,260
+katakanlah dalam siklus pertama kita memiliki dua
+
+424
+0:17:01,260 --> 0:17:04,140
+cluster yang keduanya G ini hanya terlihat
+
+425
+0:17:04,140 --> 0:17:05,939
+seperti satu  gumpalan itu satu warna
+
+426
+0:17:05,939 --> 0:17:07,170
+dan ini sangat sulit untuk dipilih
+
+427
+0:17:07,170 --> 0:17:09,209
+oleh sequencer tetapi karena kami
+
+428
+0:17:09,209 --> 0:17:11,520
+mengurutkan banyak urutan sekaligus
+
+429
+0:17:11,520 --> 0:17:13,230
+secara paralel, kemungkinan ini bukan
+
+430
+0:17:13,230 --> 0:17:14,880
+urutan yang identik dan jika kita melalui
+
+431
+0:17:14,880 --> 0:17:17,280
+siklus lain, Anda tahu kemungkinannya adalah itu
+
+432
+0:17:17,280 --> 0:17:19,260
+mereka akan memiliki perbedaan jadi sekarang
+
+433
+0:17:19,260 --> 0:17:21,810
+cluster di sebelah kanan ini sementara
+
+434
+0:17:21,810 --> 0:17:23,939
+cluster di sebelah kiri masih G tetapi
+
+435
+0:17:23,939 --> 0:17:25,740
+karena ini sequencer sekarang dapat
+
+436
+0:17:25,740 --> 0:17:28,890
+membandingkan gambar-gambar ini dan menentukan di mana
+
+437
+0:17:28,890 --> 0:17:31,620
+cluster a h  sebagai sinyal yang sangat murni di mana
+
+438
+0:17:31,620 --> 0:17:33,630
+ada campuran antara cluster a dan
+
+439
+0:17:33,630 --> 0:17:36,030
+B dan di mana cluster B memiliki sinyal murni
+
+440
+0:17:36,030 --> 0:17:38,760
+dan sedikit sisi untuk hanya mengambil
+
+441
+0:17:38,760 --> 0:17:41,760
+informasi pencitraan hanya dari area bersih ini di
+
+442
+0:17:41,760 --> 0:17:45,780
+mana mereka memiliki sinyal yang sangat murni jadi
+
+443
+0:17:45,780 --> 0:17:47,730
+sekali lagi ini untuk kimia warna  dari
+
+444
+0:17:47,730 --> 0:17:49,290
+Illumina ini adalah apa yang telah digunakan
+
+445
+0:17:49,290 --> 0:17:51,660
+selama bertahun-tahun dan itu sangat
+
+446
+0:17:51,660 --> 0:17:53,670
+jelas dan jelas satu warna untuk masing
+
+447
+0:17:53,670 --> 0:17:55,740
+-masing empat pangkalan tetapi ada masalah dengan
+
+448
+0:17:55,740 --> 0:17:58,860
+ini sehingga warna yang digambarkan di sini Anda
+
+449
+0:17:58,860 --> 0:18:00,060
+tahu Anda dapat mengatakan bahwa warnanya sangat
+
+450
+0:18:00,060 --> 0:18:01,500
+sangat berbeda namun  jika Anda benar-benar
+
+451
+0:18:01,500 --> 0:18:03,900
+melihat spektrum emisi Anda dapat melihat
+
+452
+0:18:03,900 --> 0:18:05,640
+ada tumpang tindih yang signifikan antara
+
+453
+0:18:05,640 --> 0:18:07,770
+empat warna dan ini membutuhkan
+
+454
+0:18:07,770 --> 0:18:10,050
+instrumen untuk menjalani banyak kompensasi warna
+
+455
+0:18:10,050 --> 0:18:11,340
+dan kemudian ini dapat
+
+456
+0:18:11,340 --> 0:18:14,100
+berkontribusi pada kesalahan jadi beberapa tahun yang lalu
+
+457
+0:18:14,100 --> 0:18:16,350
+di Lumina memperkenalkan dua kimia warna
+
+458
+0:18:16,350 --> 0:18:18,150
+jadi sebagai gantinya  menggunakan empat warna untuk
+
+459
+0:18:18,150 --> 0:18:19,560
+mewakili empat basa mereka sekarang menggunakan
+
+460
+0:18:19,560 --> 0:18:22,800
+dua warna untuk mewakili empat basa dalam
+
+461
+0:18:22,800 --> 0:18:24,510
+hal ini mereka menggunakan merah dan hijau
+
+462
+0:18:24,510 --> 0:18:27,080
+dan cara kerjanya adalah t  topi Anda memiliki
+
+463
+0:18:27,080 --> 0:18:31,380
+T yang berwarna hijau C yang berwarna merah a
+
+464
+0:18:31,380 --> 0:18:34,020
+s yang sebenarnya merupakan campuran dari kedua warna
+
+465
+0:18:34,020 --> 0:18:36,150
+sehingga Anda akan melihatnya di kedua gambar dan
+
+466
+0:18:36,150 --> 0:18:38,700
+kemudian G sebenarnya tidak memiliki warna atau tidak ada
+
+467
+0:18:38,700 --> 0:18:41,150
+sinyal dan jadi ini adalah bagaimana Anda dapat mengkodekan
+
+468
+0:18:41,150 --> 0:18:43,650
+empat basis yang berbeda  dengan hanya dua
+
+469
+0:18:43,650 --> 0:18:46,320
+warna sehingga pada awalnya kualitas
+
+470
+0:18:46,320 --> 0:18:48,150
+kimia dua warna tidak
+
+471
+0:18:48,150 --> 0:18:49,950
+sebaik kimia empat warna tetapi perkembangan terakhir
+
+472
+0:18:49,950 --> 0:18:51,570
+pada platform Novus II
+
+473
+0:18:51,570 --> 0:18:53,490
+salah satunya luminous sequencer baru
+
+474
+0:18:53,490 --> 0:18:55,710
+yang menggunakan dua warna kualitas data
+
+475
+0:18:55,710 --> 0:18:57,390
+sebenarnya menyaingi empat warna
+
+476
+0:18:57,390 --> 0:18:59,280
+instrumen dan pasti
+
+477
+0:18:59,280 --> 0:19:01,590
+ada beberapa perbaikan di bidang ini.
+
+478
+0:19:01,590 --> 0:19:03,360
+Manfaat lain dari dua urutan warna adalah
+
+479
+0:19:03,360 --> 0:19:04,530
+bahwa reagen ini umumnya
+
+480
+0:19:04,530 --> 0:19:05,970
+lebih murah untuk dibuat karena Anda tidak
+
+481
+0:19:05,970 --> 0:19:07,770
+harus memiliki begitu banyak warna dan
+
+482
+0:19:07,770 --> 0:19:08,760
+instrumen juga lebih murah
+
+483
+0:19:08,760 --> 0:19:11,130
+karena Anda hanya perlu  ambil dua
+
+484
+0:19:11,130 --> 0:19:13,800
+gambar, bukan empat jadi seberapa jauh
+
+485
+0:19:13,800 --> 0:19:15,540
+Anda dapat mengambil ini dapatkah Anda melakukan pengurutan
+
+486
+0:19:15,540 --> 0:19:17,310
+hanya dengan satu warna dan jawabannya adalah
+
+487
+0:19:17,310 --> 0:19:19,890
+ya platform yang lebih baru hanya rilis oleh
+
+488
+0:19:19,890 --> 0:19:23,190
+Illumina menggunakan  satu warna untuk dikodekan
+
+489
+0:19:23,190 --> 0:19:24,840
+untuk basa yang berbeda
+
+490
+0:19:24,840 --> 0:19:28,110
+dan mereka melakukan ini dengan mengambil dua gambar
+
+491
+0:19:28,110 --> 0:19:30,420
+yang dipisahkan oleh langkah kimia
+
+492
+0:19:30,420 --> 0:19:32,280
+di tengah jadi saya akan memandu Anda melalui
+
+493
+0:19:32,280 --> 0:19:34,620
+ini di gambar pertama mereka menambahkan
+
+494
+0:19:34,620 --> 0:19:36,210
+empat basa yang berbeda dan dalam hal
+
+495
+0:19:36,210 --> 0:19:39,270
+ini A  dan T memiliki warna di sana
+
+496
+0:19:39,270 --> 0:19:41,490
+dan lagi itu adalah warna yang sama musim
+
+497
+0:19:41,490 --> 0:19:44,460
+G tidak memiliki warna satu hal yang perlu
+
+498
+0:19:44,460 --> 0:19:46,950
+diperhatikan adalah basa memiliki
+
+499
+0:19:46,950 --> 0:19:50,460
+hubungan yang dapat dibelah antara basa dan warna
+
+500
+0:19:50,460 --> 0:19:55,110
+dan dasar laut memiliki molekul yang kita
+
+501
+0:19:55,110 --> 0:19
+dapat  gunakan untuk melampirkan sesuatu nanti jadi
+
+502
+0:19 --> 0:19:59,040
+kami mengambil gambar terlebih dahulu sehingga warna Slav
+
+503
+0:19:59,040 --> 0:20:01,920
+dan T akan memiliki warna CS dan G
+
+504
+0:20:01,920 --> 0:20:04,380
+tidak akan memiliki warna selanjutnya kita melalui
+
+505
+0:20:04,380 --> 0:20:07,600
+langkah kimia yang akan membelah ada
+
+506
+0:20:07,600 --> 0:20:09,940
+warna hijau dari dasar dan itu akan
+
+507
+0:20:09,940 --> 0:20:12,130
+tambahkan sebuah molekul yang akan mengikat basis C
+
+508
+0:20:12,130 --> 0:20:15,549
+dan membuatnya sekarang berwarna dan jadi
+
+509
+0:20:15,549 --> 0:20:17,350
+kami mengambil gambar kedua sehingga pada gambar kedua
+
+510
+0:20:17,350 --> 0:20:19,480
+A tidak akan memiliki warna apapun karena
+
+511
+0:20:19,480 --> 0:20:22,720
+apapun yang telah memisahkannya dari G
+
+512
+0:20:22,720 --> 0:20:25,090
+masih tidak akan memiliki warna apapun.  warna tetapi baik
+
+513
+0:20:25,090 --> 0:20:27,039
+C dan T akan memiliki warna dan wh
+
+514
+0:20:27,039 --> 0:20:28,390
+ini terlihat seperti jika Anda memecahnya
+
+515
+0:20:28,390 --> 0:20:31,090
+adalah jika Anda membandingkan satu cluster dan
+
+516
+0:20:31,090 --> 0:20:33,549
+melihat warnanya apakah itu hidup atau mati di
+
+517
+0:20:33,549 --> 0:20:35,950
+antara gambar satu atau dua Anda bisa mendapatkan
+
+518
+0:20:35,950 --> 0:20:39,340
+empat basis out yang berbeda jadi ini adalah
+
+519
+0:20:39,340 --> 0:20:40,720
+rasa yang berbeda dari pengurutan Illumina yang
+
+520
+0:20:40,720 --> 0:20:42,250
+kami mulai  dengan empat
+
+521
+0:20:42,250 --> 0:20:43,870
+warna kimia pindah ke dua warna
+
+522
+0:20:43,870 --> 0:20:45,370
+kimia sekarang kita memiliki satu warna
+
+523
+0:20:45,370 --> 0:20:47,289
+kimia semua kimia ini
+
+524
+0:20:47,289 --> 0:20:48,880
+masih digunakan saat ini pada
+
+525
+0:20:48,880 --> 0:20:51,220
+platform yang ada dan masing-masing
+
+526
+0:20:51,220 --> 0:20:54,429
+memiliki manfaat jadi sekarang kita akan
+
+527
+0:20:54,429 --> 0:20:56,350
+pindah ke sequencer salam panjang kita akan
+
+528
+0:20:56,350 --> 0:20:57,640
+pergi  untuk memulai dengan pengurutan nanopori Oxford
+
+529
+0:20:57,640 --> 0:21:00,070
+dan dengan teknologi pengurutan
+
+530
+0:21:00,070 --> 0:21:02,110
+ini menggunakan pori-pori Nana ini
+
+531
+0:21:02,110 --> 0:21:04,600
+yang merupakan pori-pori yang sangat kecil dengan
+
+532
+0:21:04,600 --> 0:21:06,730
+celah yang sangat kecil di dalamnya sehingga dalam hal
+
+533
+0:21:06,730 --> 0:21:08,860
+ini satu koma delapan nanometer yang
+
+534
+0:21:08,860 --> 0:21:11,500
+tertanam dalam membran lipid membran lipid ini
+
+535
+0:21:11,500 --> 0:21:13,390
+bertindak sebagai penghalang yang mencegah
+
+536
+0:21:13,390 --> 0:21:15,250
+arus bolak-balik sehingga
+
+537
+0:21:15,250 --> 0:21:16,990
+arus harus melewati pori
+
+538
+0:21:16,990 --> 0:21:19,390
+dan cara kerja Nana 4c
+
+539
+0:21:19,390 --> 0:21:22,690
+adalah DNA untai tunggal atau bahkan RN  A
+
+540
+0:21:22,690 --> 0:21:24,880
+dalam hal ini sekarang kami ulir
+
+541
+0:21:24,880 --> 0:21:27,340
+melalui pori dan tergantung pada basa mana yang
+
+542
+0:21:27,340 --> 0:21:29,679
+ada di pori untuk memberikan momen yang
+
+543
+0:21:29,679 --> 0:21:31,570
+mengubah arus yang dibaca dan
+
+544
+0:21:31,570 --> 0:21:33,429
+detektor dapat mengukur perubahan
+
+545
+0:21:33,429 --> 0:21:35,559
+arus ini dan di sini hanya
+
+546
+0:21:35,559 --> 0:21:37,630
+penggambaran seperti apa ini  jadi
+
+547
+0:21:37,630 --> 0:21:39,700
+misalnya Anda mungkin memiliki simbol satu
+
+548
+0:21:39,700 --> 0:21:41,679
+tingkat arus untuk T Anda yang
+
+549
+0:21:41,679 --> 0:21:44,919
+berbeda untuk G sesuatu yang lain
+
+550
+0:21:44,919 --> 0:21:46,929
+untuk C dan kemudian tingkat
+
+551
+0:21:46,929 --> 0:21:49,510
+arus lain untuk Ace dan Anda bisa mengukur
+
+552
+0:21:49,510 --> 0:21:51,850
+jejak arus ini dari waktu ke waktu dan
+
+553
+0:21:51,850 --> 0:21:54,280
+membangun urutan dan pada kenyataannya  jejaknya
+
+554
+0:21:54,280 --> 0:21:56,799
+tidak terlihat sebersih ini karena dalam
+
+555
+0:21:56,799 --> 0:21:59,260
+porinya sebenarnya ada hingga enam
+
+556
+0:21:59,260 --> 0:22:02,110
+basa sekaligus dan dengan enam basa dikalikan
+
+557
+0:22:02,110 --> 0:22:04,419
+empat kemungkinan basa yang berbeda untuk a
+
+558
+0:22:04,419 --> 0:22:07,299
+C Anda GS dan T ini menghasilkan hingga
+
+559
+0:22:07,299 --> 0:22:10,240
+4.000 kemungkinan keadaan yang berbeda dan seterusnya
+
+560
+0:22:10,240 --> 0:22:12,340
+ini benar-benar tur teknis untuk
+
+561
+0:22:12,340 --> 0:22:15,490
+membuat ini berfungsi, tetapi hari ini Anda dapat
+
+562
+0:22:15,490 --> 0:22:17,230
+membuatnya berfungsi, Anda dapat membeli sistem ini
+
+563
+0:22:17,230 --> 0:22
+dan mereka memiliki tingkat kesalahan yang tinggi di
+
+564
+0:22 --> 0:22:21,309
+mana saja dari 10 hingga 15%
+
+565
+0:22:21,309 --> 0:22:23,889
+dan kesalahan ini cenderung bias  tetapi
+
+566
+0:22:23,889 --> 0:22:25,389
+Anda dapat membaca dengan sangat lama,
+
+567
+0:22:25,389 --> 0:22:27,970
+rekor saat ini adalah dua mega basa atau 2
+
+568
+0:22:27,970 --> 0:22:30,820
+juta basa yang dibaca dari satu bagian
+
+569
+0:22:30,820 --> 0:22:34,240
+DNA dan sekali lagi seperti yang saya sebutkan, Anda sekarang dapat
+
+570
+0:22:34,240 --> 0:22:36,039
+langsung mengurutkan RNA sehingga Anda tidak
+
+571
+0:22:36,039 --> 0:22:38,620
+perlu mengubahnya menjadi DNA dan  mereka bahkan
+
+572
+0:22:38,620 --> 0:22:40,840
+kemungkinan mengurutkan protein di
+
+573
+0:22:40,840 --> 0:22:43,649
+masa depan yang akan sangat
+
+574
+0:22:43,649 --> 0:22:45,940
+menarik. Manfaat lain dari sistem nanopore Oxford
+
+575
+0:22:45,940 --> 0:22:47,950
+adalah sangat portabel
+
+576
+0:22:47,950 --> 0:22:50,529
+Anda dapat melihat ilmuwan ini benar
+
+577
+0:22:50,529 --> 0:22:52,269
+-benar melakukan pengurutan di lapangan.
+
+578
+0:22:52,269 --> 0:22:53,710
+Ini terlihat seperti hutan di suatu tempat di
+
+579
+0:22:53,710 --> 0:22:55,149
+dunia Anda dapat melihat foilage di
+
+580
+0:22:55,149 --> 0:22:57,129
+belakang sehingga ada laptop berjalan ke
+
+581
+0:22:57,129 --> 0:22:59,049
+sequencer dan sequencer sebenarnya adalah
+
+582
+0:22:59,049 --> 0:23:01,779
+perangkat kecil yang para ilmuwan
+
+583
+0:23:01,779 --> 0:23:04,450
+pipet ke dalamnya benar-benar
+
+584
+0:23:04,450 --> 0:23:06,759
+seukuran remote control kecil dan itu
+
+585
+0:23:06,759 --> 0:23:08,679
+didukung oleh komputer yang  melekat
+
+586
+0:23:08,679 --> 0:23:10,149
+pada Anda sehingga saya dan Anda benar-benar dapat melakukan
+
+587
+0:23:10,149 --> 0:23:12,399
+pengurutan di mana saja di dunia,
+
+588
+0:23:12,399 --> 0:23:14,080
+sistem ini bahkan telah dibawa ke
+
+589
+0:23:14,080 --> 0:23:15,820
+stasiun luar angkasa internasional untuk
+
+590
+0:23:15,820 --> 0:23:19,990
+pengurutan di ruang angkasa sehingga la
+
+591
+0:23:19,990 --> 0:23:21,340
+teknologi pertama yang akan saya
+
+592
+0:23:21,340 --> 0:23:23,470
+bicarakan hari ini adalah pengurutan bio spesifik
+
+593
+0:23:23,470 --> 0:23:25,720
+dan ini adalah pengurutan lain dengan
+
+594
+0:23:25,720 --> 0:23:28,509
+metode sintesis dan menggunakan blok bangunan yang
+
+595
+0:23:28,509 --> 0:23:30,610
+mirip dengan pepatah tradisional
+
+596
+0:23:30,610 --> 0:23:31,899
+pengurutan dan pengurutan lumina
+
+597
+0:23:31,899 --> 0:23:34,090
+tetapi mereka sedikit berbeda jadi di
+
+598
+0:23:34,090 --> 0:23:36,610
+sini saya  menunjukkan kepada Anda basa A dari
+
+599
+0:23:36,610 --> 0:23:39,070
+sekuenser bio Pasifik dan Anda akan melihat
+
+600
+0:23:39,070 --> 0:23:39,759
+pertama
+
+601
+0:23:39,759 --> 0:23:41,559
+tidak ada blok pada 3 hidroksil prima
+
+602
+0:23:41,559 --> 0:23:43,749
+n ini berarti bahwa setelah ini
+
+603
+0:23:43,749 --> 0:23:45,820
+dimasukkan, basa lain dapat
+
+604
+0:23:45,820 --> 0:23:48,730
+segera digabungkan dan kemudian
+
+605
+0:23:48,730 --> 0:23:50,019
+kelompok fluoresen benar-benar melekat
+
+606
+0:23:50,019 --> 0:23:53,039
+pada fosfat  dan fosfat ini
+
+607
+0:23:53,039 --> 0:23:56,440
+benar-benar dihilangkan setelah basa
+
+608
+0:23:56,440 --> 0:23:57,700
+dimasukkan ini berarti bahwa ini
+
+609
+0:23:57,700 --> 0:23:59,230
+berkembang dan kelompok setelah
+
+610
+0:23:59,230 --> 0:24:01,240
+dimasukkan ke dalam untai DNA akan
+
+611
+0:24:01,240 --> 0:24:03,700
+hanyut dari untai DNA jadi ini
+
+612
+0:24:03,700 --> 0:24:04,929
+berarti kita tidak perlu melakukan
+
+613
+0:24:04,929 --> 0:24:07,360
+kimia terpisah untuk mengaktifkan reaksi  untuk
+
+614
+0:24:07,360 --> 0:24:11,009
+melanjutkan ini terjadi secara real time dan
+
+615
+0:24:11,009 --> 0:24:14,470
+pada instrumen ada
+
+616
+0:24:14,470 --> 0:24:18,879
+susunan sumur yang sangat kecil di dalam
+
+617
+0:24:18,879 --> 0:24:21,070
+piring dan sumur ini hanya di atas  ut
+
+618
+0:24:21,070 --> 0:24:23,740
+seratus nanometer tingginya di bagian
+
+619
+0:24:23,740 --> 0:24:25,869
+bawah setiap sumur ini adalah
+
+620
+0:24:25,869 --> 0:24:27,879
+polimerase DNA dan apa yang terjadi
+
+621
+0:24:27,879 --> 0:24:31,029
+adalah molekul template terikat polimerase
+
+622
+0:24:31,029 --> 0:24:32,919
+dan kemudian mulai menggabungkan
+
+623
+0:24:32,919 --> 0:24:34,930
+dasar yang dimodifikasi ini dan ada
+
+624
+0:24:34,930 --> 0:24:36,280
+kamera di bagian bawah yang mengambil
+
+625
+0:24:36,280 --> 0:24:38,350
+video yang memantau reaksi ini  secara
+
+626
+0:24:38,350 --> 0:24:41,380
+real-time jadi ingat kita memiliki empat
+
+627
+0:24:41,380 --> 0:24:43,030
+basis berbeda yang memiliki empat
+
+628
+0:24:43,030 --> 0:24:45,190
+warna berbeda dan basis ini mengalir masuk
+
+629
+0:24:45,190 --> 0:24:47,290
+dan keluar dari sumur ini dengan sangat
+
+630
+0:24:47,290 --> 0:24:51,190
+cepat sehingga Anda mendapatkan sinyal
+
+631
+0:24:51,190 --> 0:24:53,260
+yang agak sangat bising Anda tidak benar-benar
+
+632
+0:24:53,260 --> 0:24:54,880
+melihat apa pun terjadi  tetapi ketika
+
+633
+0:24:54,880 --> 0:24:57,460
+pangkalan yang tepat terikat pada perlombaan bulu-bulu
+
+634
+0:24:57,460 --> 0:24:59,860
+dan cocok dengan template, itu benar-benar
+
+635
+0:24:59,860 --> 0:25:01,390
+berdiam di sana untuk jangka waktu tertentu
+
+636
+0:25:01,390 --> 0:25:03,940
+itu benar-benar sepersekian detik tetapi
+
+637
+0:25:03,940 --> 0:25:05,680
+sepersekian detik itu direkam oleh video
+
+638
+0:25:05,680 --> 0:25:07,870
+dan Anda melihat benjolan ini dan
+
+639
+0:25:07,870 --> 0:25:09,720
+sinyal fluoresen masuk  hal ini biru
+
+640
+0:25:09,720 --> 0:25:12,850
+yang merupakan basa G dan begitu
+
+641
+0:25:12,850 --> 0:25:15,220
+penggabungan terjadi fosfat
+
+642
+0:25:15,220 --> 0:25:17,440
+pergi dan gugus fluoresen yang
+
+643
+0:25:17,440 --> 0:25:19,030
+menetas fosfat juga pergi dan
+
+644
+0:25:19,030 --> 0:25:20,830
+menghasilkan sinyal turun kembali
+
+645
+0:25:20,830 --> 0:25:24,070
+ke tingkat latar belakang ini dan
+
+646
+0:25:24,070 --> 0:25:27,040
+ini akan berlanjut hingga pangkalan berikutnya
+
+647
+0:25:27,040 --> 0:25:28,780
+yang benar mengikat dan Anda akan melihat
+
+648
+0:25:28,780 --> 0:25:30,970
+lonjakan lain dan dengan melihat
+
+649
+0:25:30,970 --> 0:25:33,250
+lonjakan dan sinyal ini di mana saja dari
+
+650
+0:25:33,250 --> 0:25:35,800
+satu hingga delapan juta sumur pada satu waktu  kita
+
+651
+0:25:35,800 --> 0:25:39,640
+dapat membangun sekuens DNA dan
+
+652
+0:25:39,640 --> 0:25:41,740
+sekuensing PacBio menghasilkan pembacaan panjang di mana saja
+
+653
+0:25:41,740 --> 0:25:44,080
+dari satu hingga 200 kilobase dan panjangnya jadi
+
+654
+0:25:44,080 --> 0:25:45,940
+ini lebih pendek daripada
+
+655
+0:25:45,940 --> 0:25:47,470
+sekuensing nanopore tetapi masih lebih lama
+
+656
+0:25:47,470 --> 0:25:49,480
+daripada sekuens Illumina. Ini juga memiliki
+
+657
+0:25:49,480 --> 0:25:52,420
+tingkat kesalahan yang tinggi mirip dengan Oxford dan
+
+658
+0:25:52,420 --> 0:25:54,310
+pengurutan yang buruk  tetapi kesalahannya
+
+659
+0:25:54,310 --> 0:25:56,140
+acak ini sebenarnya hal yang baik
+
+660
+0:25:56,140 --> 0:25:57,760
+karena kesalahannya acak jika Anda
+
+661
+0:25:57,760 --> 0:25:59,560
+mengambil sampel molekul DNA yang sama beberapa
+
+662
+0:25:59,560 --> 0:26:01,480
+kali Anda bisa menghasilkan
+
+663
+0:26:01,480 --> 0:26:04,810
+urutan konsensus yang sangat akurat dan di atas adalah
+
+664
+0:26:04,810 --> 0:26:07,420
+model seperti apa perpustakaan bio yang dikemas
+
+665
+0:26:07,420 --> 0:26:09,790
+ada  Urutan DNA dan
+
+666
+0:26:09,790 --> 0:26:11,920
+adaptor berwarna hijau sebenarnya menyebabkan
+
+667
+0:26:11,920 --> 0:26:13,600
+DNA menjadi bentuk halter ini sehingga menjadi
+
+668
+0:26:13,600 --> 0:26:16,180
+satu struktur melingkar dan ketika
+
+669
+0:26:16,180 --> 0:26:17,860
+polimerase mengikat  s itu memulai urutan
+
+670
+0:26:17,860 --> 0:26:19,570
+dan benar-benar berputar-putar
+
+671
+0:26:19,570 --> 0:26:21,820
+molekul ini berkali-kali menghasilkan
+
+672
+0:26:21,820 --> 0:26:24,130
+serangkaian bacaan yang semuanya dilampirkan
+
+673
+0:26:24,130 --> 0:26:25,480
+bersama yang berasal dari
+
+674
+0:26:25,480 --> 0:26:27,760
+templat identik yang sama jadi misalnya jika kita
+
+675
+0:26:27,760 --> 0:26:30,190
+memiliki mutasi yang ada dalam sampel dan
+
+676
+0:26:30,190 --> 0:26:32,950
+ingin mendeteksi ini  mutasi ini
+
+677
+0:26:32,950 --> 0:26:35,080
+harus ada di semua salinan dan jadi jika
+
+678
+0:26:35,080 --> 0:26:38,290
+kita mencocokkan semua bacaan yang berbeda
+
+679
+0:26:38,290 --> 0:26:39,670
+bersama-sama mereka berasal dari
+
+680
+0:26:39,670 --> 0:26:41,530
+molekul yang sama kita dapat melihat bahwa
+
+681
+0:26:41,530 --> 0:26:43,780
+mutasi yang sebenarnya benar-benar terdeteksi kita melihat
+
+682
+0:26:43,780 --> 0:26:46,870
+bahwa dalam setiap pembacaan tunggal dan kemudian
+
+683
+0:26:46,870 --> 0:26:48,860
+kesalahan acak lainnya yang  muncul
+
+684
+0:26:48,860 --> 0:26:50,929
+tidak cocok satu sama lain dan ini
+
+685
+0:26:50,929 --> 0:26:52,309
+memungkinkan kami untuk menghasilkan
+
+686
+0:26:52,309 --> 0:26:55,130
+dupa yang sangat akurat yang memiliki akurasi di
+
+687
+0:26:55,130 --> 0:26:56,900
+mana saja dari satu hingga seribu hingga satu
+
+688
+0:26:56,900 --> 0:26:59,330
+dalam 10.000 sebenarnya bahkan melebihi
+
+689
+0:26:59,330 --> 0:27:03,260
+akurasi pengurutan Illumina mentah jadi
+
+690
+0:27:03,260 --> 0:27:04,520
+mengapa Anda lama membaca  karena ada
+
+691
+0:27:04,520 --> 0:27:05,720
+sisi buruk tertentu yang lebih sulit untuk
+
+692
+0:27:05,720 --> 0:27:08,030
+diperbaiki secara umum harganya lebih mahal tetapi
+
+693
+0:27:08,030 --> 0:27:10,340
+ada manfaat tertentu dan salah satu
+
+694
+0:27:10,340 --> 0:27:12,710
+contohnya adalah jika Anda ingin merakit
+
+695
+0:27:12,710 --> 0:27:14,830
+genom baru yang belum  telah urutan sebelumnya
+
+696
+0:27:14,830 --> 0:27:17,480
+dan jadi ini seperti memecahkan teka-
+
+697
+0:27:17,480 --> 0:27:19,400
+teki yang telah dipecah menjadi
+
+698
+0:27:19,400 --> 0:27
+10.000 keping atau menjadi empat keping
+
+699
+0:27 --> 0:27:23,660
+Urutan Illumina dan ini
+
+700
+0:27:23,660 --> 0:27:25,490
+analog dengan 10.000 keping karena
+
+701
+0:27:25,490 --> 0:27:27,140
+dia memiliki banyak bacaan pendek yang
+
+702
+0:27:27,140 --> 0:27:28,610
+harus Anda jahit bersama dan ini bisa  menjadi
+
+703
+0:27:28,610 --> 0:27:30,620
+sangat sangat sulit namun Anda memiliki
+
+704
+0:27:30,620 --> 0:27:32,660
+bacaan yang sangat panjang dan tidak banyak dari
+
+705
+0:27:32,660 --> 0:27:35,240
+mereka sangat mudah untuk menyelaraskannya untuk
+
+706
+0:27:35,240 --> 0:27:37,370
+membangun kembali genom baru yang ingin Anda
+
+707
+0:27:37,370 --> 0:27:39,679
+rakit Ini juga berguna jika Anda ingin
+
+708
+0:27:39,679 --> 0:27:41,840
+mengidentifikasi variasi struktural jadi
+
+709
+0:27:41,840 --> 0:27:44,360
+misalnya di banyak manusia
+
+710
+0:27:44,360 --> 0:27:47,059
+sampel kanker tidak hanya perubahan berbasis tunggal
+
+711
+0:27:47,059 --> 0:27:49,250
+dalam mutasi ada beberapa yang
+
+712
+0:27:49,250 --> 0:27:50,720
+merupakan variasi struktural di mana mereka adalah
+
+713
+0:27:50,720 --> 0:27:53,299
+potongan besar DNA yang telah dipindahkan
+
+714
+0:27:53,299 --> 0:27:55,070
+ke berbagai area genom di
+
+715
+0:27:55,070 --> 0:27:57,710
+sini atau dibalik dan ini bisa
+
+716
+0:27:57,710 --> 0:27:59,630
+sangat sulit untuk dideteksi  dengan membaca
+
+717
+0:27:59,630 --> 0:28:00,890
+urutan Illumina singkat tetapi jika Anda memiliki
+
+718
+0:28:00,890 --> 0:28:03,559
+urutan membaca yang sangat panjang, Anda dapat
+
+719
+0:28:03,559 --> 0:28:05,809
+merentangkan perubahan ini dan kemudian dengan mudah
+
+720
+0:28:05,809 --> 0:28:08,110
+mengidentifikasi variasi struktural
+
+721
+0:28:08,110 --> 0:28:10,309
+terakhir Anda mungkin ingin mengidentifikasi dari mana
+
+722
+0:28:10,309 --> 0:28:12,890
+mutasi berasal misalnya pada
+
+723
+0:28:12,890 --> 0:28:14,809
+manusia kita mendapatkan satu set kromosom kita
+
+724
+0:28:14,809 --> 0:28:18,559
+dari ibu satu set dari ayah dan mungkin
+
+725
+0:28:18,559 --> 0:28:20,720
+ada mutasi pada salah satunya begitu baik pada
+
+726
+0:28:20,720 --> 0:28:22,490
+pasien mungkin berada di set
+
+727
+0:28:22,490 --> 0:28:25,070
+kromosom yang sama beberapa mungkin  pada salah satu
+
+728
+0:28:25,070 --> 0:28:27,290
+dan untuk dapat melakukan ini dengan
+
+729
+0:28:27,290 --> 0:28:28,760
+batas pengurutan lagi sangat sulit
+
+730
+0:28:28,760 --> 0:28:30,440
+karena bacaan pendek menyulitkan untuk
+
+731
+0:28:30,440 --> 0:28:31,790
+menentukan dari mana kromosom mereka
+
+732
+0:28:31,790 --> 0:28:34,280
+berasal tetapi dengan pengurutan baca yang panjang
+
+733
+0:28:34,280 --> 0:28:36,530
+jauh lebih mudah untuk melakukannya begitu banyak
+
+734
+0:28:36,530 --> 0:28:37,669
+aplikasi untuk selanjutnya  -pengurutan generasi
+
+735
+0:28:37,669 --> 0:28:39,919
+Saya akan berbicara tentang beberapa
+
+736
+0:28:39,919 --> 0:28:42,530
+contoh salah satunya adalah pengujian prenatal ini
+
+737
+0:28:42,530 --> 0:28:44,179
+dulu dilakukan menggunakan
+
+738
+0:28:44,179 --> 0:28:48,710
+pengambilan sampel amniosentesis yang sangat invasif yang memiliki
+
+739
+0:28:48,710 --> 0:28:50,360
+tingkat komplikasi tertentu yang terkait
+
+740
+0:28:50,360 --> 0:28
+dengannya tetapi dengan pengurutan generasi berikutnya
+
+741
+0:28 --> 0:28:54,530
+kita sebenarnya dapat mengambil sampel darah dari
+
+742
+0:28:54,530 --> 0:28:56,540
+ibu dan tidak berada di dekat janin dan
+
+743
+0:28:56,540 --> 0:28:58,490
+benar-benar mengurutkan semua DNA yang
+
+744
+0:28:58,490 --> 0:29:00,620
+ada dalam darah dan alasan mengapa
+
+745
+0:29:00,620 --> 0:29:02,720
+ini berhasil adalah karena DNA janin
+
+746
+0:29:02,720 --> 0:29:05,180
+benar-benar membuat  ay ke dalam
+
+747
+0:29:05,180 --> 0:29:07,040
+aliran darah ibu dan jadi kita dapat menggunakannya untuk
+
+748
+0:29:07,040 --> 0:29:08,660
+mendeteksi semua jenis kelainan kromosom
+
+749
+0:29:08,660 --> 0:29
+pada janin dan
+
+750
+0:29 --> 0:29:12,860
+hal yang sama terjadi dengan pasien kanker dan
+
+751
+0:29:12,860 --> 0:29:15,860
+penolakan transplantasi sehingga pada
+
+752
+0:29:15,860 --> 0:29:17,420
+kanker sel kanker terus-menerus melepaskan
+
+753
+0:29:17,420 --> 0:29:19,160
+DNA mereka ke dalam aliran darah dan
+
+754
+0:29:19,160 --> 0:29:21,290
+karena  Genom kanselir
+
+755
+0:29:21,290 --> 0:29:23,210
+akan sedikit berbeda dari genom normal
+
+756
+0:29:23,210 --> 0:29:24,740
+kita dapat mengidentifikasi mereka melalui
+
+757
+0:29:24,740 --> 0:29:26,510
+pengurutan dan hal yang sama dengan
+
+758
+0:29:26,510 --> 0:29:29,030
+penolakan transplantasi jika hati yang disumbangkan
+
+759
+0:29:29,030 --> 0:29:31,820
+misalnya sedang mengalami penolakan
+
+760
+0:29:31,820 --> 0:29:33,500
+sel-selnya sekarat dan melepaskan DNA dan
+
+761
+0:29:33,500 --> 0:29:35,720
+urutan DNA donor tersebut sangat
+
+762
+0:29:35,720 --> 0:29:37,400
+berbeda dari  penerima
+
+763
+0:29:37,400 --> 0:29:39,410
+sekuens DNA dan kami dapat mendeteksi bahwa dengan
+
+764
+0:29:39,410 --> 0:29:42,140
+mengurutkan materi itu contoh
+
+765
+0:29:42,140 --> 0:29:44,210
+lain menggunakan sekuensing generasi berikutnya adalah untuk
+
+766
+0:29:44,210 --> 0:29:46,250
+mendeteksi patogen Patogen
+
+767
+0:29:46,250 --> 0:29:48,500
+memiliki set DNA dan RNA mereka sendiri yang sangat
+
+768
+0:29:48,500 --> 0:29:50,270
+berbeda dari sekuens manusia dan jadi jika
+
+769
+0:29:50,270 --> 0:29:52,100
+ada patogen yang ada di
+
+770
+0:29:52,100 --> 0:29:54,740
+sampel manusia kita dapat mengurutkan sampel manusia ini
+
+771
+0:29:54,740 --> 0:29:57,170
+mengabaikan semua bacaan atau urutan
+
+772
+0:29:57,170 --> 0:29:59,080
+yang hu  pria dan bertanya apa yang tersisa dan
+
+773
+0:29:59,080 --> 0:30:01,190
+biasanya jika ada patogen yang ada,
+
+774
+0:30:01,190 --> 0:30:04,280
+kami akan dapat mendeteksi urutannya dalam
+
+775
+0:30:04,280 --> 0:30:07,670
+sampel itu dan terakhir dalam konteks
+
+776
+0:30:07,670 --> 0:30:09,950
+pengobatan kanker kanker lagi didorong
+
+777
+0:30:09,950 --> 0:30:11,930
+oleh mutasi dan ada banyak
+
+778
+0:30:11,930 --> 0:30:13,850
+terapi berbeda untuk kanker tetapi
+
+779
+0:30:13,850 --> 0:30:15,020
+mereka'  sangat spesifik untuk
+
+780
+0:30:15,020 --> 0:30:17,630
+kanker tertentu dan dengan melakukan
+
+781
+0:30:17,630 --> 0:30:20,420
+pengurutan generasi berikutnya pada sampel kanker, kami dapat
+
+782
+0:30:20,420 --> 0:30:22,100
+menentukan jenis perawatan terbaik
+
+783
+0:30:22,100 --> 0:30:25,450
+untuk pasien dan meningkatkan hasil mereka
+
+784
+0:30:25,450 --> 0:30:27,890
+sehingga masa depan pengurutan sangat
+
+785
+0:30:27,890 --> 0:30:29,210
+menarik saat ini adalah seribu
+
+786
+0:30:29,210 --> 0:30:30,860
+dolar untuk mengurutkan genom tetapi dalam
+
+787
+0:30:30,860 --> 0:30:32,360
+lima atau sepuluh tahun ke depan sehingga biayanya
+
+788
+0:30:32,360 --> 0:30:33,950
+mungkin akan turun menjadi seratus dolar
+
+789
+0:30:33,950 --> 0:30:36,020
+dan itu akan menarik untuk melihat apa yang
+
+790
+0:30:36,020 --> 0:30:37,850
+terjadi ketika mari kita biaya ini tercapai
+
+791
+0:30:37,850 --> 0:30:40,130
+misalnya baik urutan genom hanya
+
+792
+0:30:40,130 --> 0:30:41,780
+menjadi bagian rutin dari catatan medis Anda
+
+793
+0:30:41,780 --> 0:30:43,970
+dan jika demikian  ini akan menjadi
+
+794
+0:30:43,970 --> 0:30:45,530
+sumber yang bagus bagi para peneliti yang mencoba mempelajari
+
+795
+0:30:45,530 --> 0:30:47,960
+penyakit genetik tetapi pada saat yang sama
+
+796
+0:30:47,960 --> 0:30:50,150
+Anda harus memahami dan mencari
+
+797
+0:30:50,150 --> 0:30:52,970
+cara untuk melindungi pati  ents
+
+798
+0:30:52,970 --> 0:30:54,730
+informasi genetik jika semua ini ada di luar sana
+
+799
+0:30:54,730 --> 0:30:56,840
+tetapi akan sangat menarik untuk
+
+800
+0:30:56,840 --> 0:30:58,820
+melihat di mana aplikasi baru
+
+801
+0:30:58,820 --> 0:31:01,190
+dikembangkan untuk pengurutan generasi berikutnya karena
+
+802
+0:31:01,190 --> 0:31:04,450
+teknologi terus berkembang menjadi dewasa
+
+803
+0:31:04,450 --> 0:31:06,710
+yang saya ingin ucapkan terima kasih telah menonton
+
+804
+0:31:06,710 --> 0:31:15,850
+dan bergabung  kami hari ini
+
+805
+0:31:15,850 --> 0:31:17,910
+kamu
+

@@ -1,0 +1,1868 @@
+1
+0:00:06,560 --> 0:00:07,759
+halo dan di sini dari
+
+2
+0:00:07,759 --> 0:00:09,599
+howtomechatronics.com
+
+3
+0:00:09,599 --> 0:00:11,759
+dan di video ini saya akan menunjukkan kepada Anda bagaimana saya
+
+4
+0:00:11,759 --> 0:00:14,400
+membuat plotter pena cnc atau mesin gambar
+
+5
+0:00:14,400 --> 0:00:16,560
+tetapi dengan satu fitur keren dan
+
+6
+0:00:16,560 --> 0:00:18,720
+itu adalah perubahan alat otomatis
+
+7
+0:00:18,720 --> 0:00:20,800
+dengan kata lain mesin akan dapat
+
+8
+0:00:20,800 --> 0:00:23,439
+berubah warna secara otomatis dan sebagainya  kita
+
+9
+0:00:23,439 --> 0:00:26,160
+dapat menggambar hal-hal yang sangat keren dengan
+
+10
+0:00:26,160 --> 0:00:27,920
+itu konstruksi mesin didasarkan
+
+11
+0:00:27,920 --> 0:00:30,560
+pada mesin pengukir laser cnc diy saya
+
+12
+0:00:30,560 --> 0:00:32,880
+dari video saya sebelumnya di mana tujuannya
+
+13
+0:00:32,880 --> 0:00:34,880
+adalah untuk membuat mesin cnc paling sederhana
+
+14
+0:00:34,880 --> 0:00:37,040
+dengan suku cadang seminimal
+
+15
+0:00:37,040 --> 0:00:39,600
+mungkin menggunakan tiga motor stepper nema 17
+
+16
+0:00:39,600 --> 0:00:42,719
+untuk xy  dan gerak sumbu z dan
+
+17
+0:00:42,719 --> 0:00:45,280
+motor servo kecil untuk gripper otak
+
+18
+0:00:45,280 --> 0:00:47,600
+mesin cnc adalah board arduino uno
+
+19
+0:00:47,600 --> 0:00
+di kombinasikan dengan cnc shield dan
+
+20
+0:00 --> 0:00:53,120
+tiga driver stepper a4988
+
+21
+0:00:53,120 --> 0:00:57,360
+area kerja cukup besar 360 x 280
+
+22
+0:00:57,360 --> 0:00:59,600
+milimeter dan tingkat detail
+
+23
+0:00:59,600 --> 0:01:02,399
+ini  output plotter can menurut saya
+
+24
+0:01:02,399 --> 0:01:04,159
+cukup mengesankan juga
+
+25
+0:01:04,159 --> 0:01:06,400
+saya benar-benar terkejut betapa bagus dan
+
+26
+0:01:06,400 --> 0:01:08,880
+presisi gambar yang keluar
+
+27
+0:01:08,880 --> 0:01:13,200
+terutama yang saya gunakan pena gel 0,6 milimeter
+
+28
+0:01:13,200 --> 0:01:14,960
+n  namun sekarang saya akan menjelaskan
+
+29
+0:01:14,960 --> 0:01:16,479
+semua yang perlu Anda ketahui tentang
+
+30
+0:01:16,479 --> 0:01:18,479
+membangun mesin gambar seperti ini
+
+31
+0:01:18,479 --> 0:01:20,720
+termasuk cara mendesainnya menghubungkan
+
+32
+0:01:20,720 --> 0:01:23,200
+elektronik firmware dan perangkat lunak apa
+
+33
+0:01:23,200 --> 0:01:26,560
+yang digunakan dan cara menghasilkan kode-g
+
+34
+0:01:26,560 --> 0:01:28,400
+untuk memulainya mari kita lihat
+
+35
+0:01:28,400 --> 0:01:31,119
+desainnya  dari mesin cnc seperti yang telah saya
+
+36
+0:01:31,119 --> 0:01:33,280
+sebutkan mesin ini didasarkan pada
+
+37
+0:01:33,280 --> 0:01:35,200
+desain mesin ukiran laser cnc saya sebelumnya di
+
+38
+0:01:35,200 --> 0:01:37,360
+mana tujuannya adalah untuk
+
+39
+0:01:37,360 --> 0:01:41,119
+membuat cnc yang sangat sederhana dengan bagian seminimal
+
+40
+0:01:41,119 --> 0:01:43,439
+mungkin dua komponen utama di sini adalah
+
+41
+0:01:43,439 --> 0:01:46,960
+rel linier mgn 15h ini bersama dengan mereka
+
+42
+0:01:46,960 --> 0:01:48,799
+blok geser yang sesuai
+
+43
+0:01:48,799 --> 0:01:51,360
+gerakan untuk sumbu x dan y
+
+44
+0:01:51,360 --> 0:01:55,520
+disediakan melalui sabuk gt2 dan beberapa katrol gt2
+
+45
+0:01:55,520 --> 0:01:58,079
+sedangkan untuk sumbu z kita memiliki
+
+46
+0:01:58,079 --> 0:02:00,240
+gerakan bolak-balik sederhana di mana bagian yang
+
+47
+0:02:00,240 --> 0:02:03,040
+bergerak meluncur ke atas dan ke bawah pada dua
+
+48
+0:02:03,040 --> 0:02:05,439
+batang linier enam milimeter dan
+
+49
+0:02:05,439 --> 0:02:06,960
+linier yang sesuai  bantalan
+
+50
+0:02:06,960 --> 0:02:09,200
+servo hobi kecil digunakan untuk
+
+51
+0:02:09,200 --> 0:02:10,560
+mencengkeram pena
+
+52
+0:02:10,560 --> 0:02:12,560
+posisi homing sangat penting untuk
+
+53
+0:02:12,560 --> 0:02:15,040
+plotter pena ini sebagai pemegang pena memiliki
+
+54
+0:02:15,040 --> 0:02:17,920
+posisi tetap tertentu sehingga m  mesin
+
+55
+0:02:17,920 --> 0:02:19,760
+harus memiliki titik awal
+
+56
+0:02:19,760 --> 0:02:21,760
+oleh karena itu kita harus memiliki sakelar batas
+
+57
+0:02:21,760 --> 0:02:23,520
+untuk setiap sumbu
+
+58
+0:02:23,520 --> 0:02:25,920
+Anda dapat menemukan dan mengunduh model 3d ini
+
+59
+0:02:25,920 --> 0:02:28,080
+serta file stl yang digunakan
+
+60
+0:02:28,080 --> 0:02:30,800
+untuk pencetakan 3d di artikel situs web
+
+61
+0:02:30,800 --> 0:02:33,599
+tautannya ada di deskripsi video
+
+62
+0:02:33,599 --> 0:02:35,519
+jadi di sini adalah  semua bagian yang diperlukan untuk
+
+63
+0:02:35,519 --> 0:02:37,760
+merakit plotter pena ini, tetapi sebelum
+
+64
+0:02:37,760 --> 0:02:39,440
+kami melakukannya, saya ingin mengucapkan terima kasih kepada
+
+65
+0:02:39,440 --> 0:02:41,920
+surfshark karena telah mensponsori video ini dan
+
+66
+0:02:41,920 --> 0:02:44,160
+juga menjelaskan mengapa dan bagaimana saya benar-benar menggunakan
+
+67
+0:02:44,160 --> 0:02:45,280
+layanan ini
+
+68
+0:02:45,280 --> 0:02:47,840
+dalam beberapa detik setelah mengunjungi situs web mana pun
+
+69
+0:02:47,840 --> 0:02:50,800
+lokasi perangkat keras Anda merinci
+
+70
+0:02:50,800 --> 0:02:52,640
+sistem operasi juga  karena semua riwayat penelusuran Anda di masa lalu
+
+71
+0:02:52,640 --> 0:02:55,680
+segera terekspos
+
+72
+0:02:55,680 --> 0:02:58,239
+jaringan pribadi virtual surfshark menjaga
+
+73
+0:02:58,239 --> 0:03:00,879
+informasi Anda tetap aman dengan mengenkripsi semua
+
+74
+0:03:00,879 --> 0:03:02,959
+lalu lintas internet ke dan dari
+
+75
+0:03:02,959 --> 0:03:05,760
+perangkat Anda dan memastikan bahwa ip Anda tetap
+
+76
+0:03:05,760 --> 0:03:07,760
+tersembunyi untuk memastikan tidak ada yang melihat apa yang
+
+77
+0:03:07,760 --> 0:03:09,120
+Anda lakukan online
+
+78
+0:03:09,120 --> 0:03:11,360
+alasan bagus lainnya untuk menggunakan  vpn adalah
+
+79
+0:03:11,360 --> 0:03:13,519
+karena konten dari layanan streaming
+
+80
+0:03:13,519 --> 0:03
+dapat dibatasi berdasarkan negara tempat
+
+81
+0:03 --> 0:03:17,040
+Anda berada
+
+82
+0:03:17,040 --> 0:03:18,959
+dengan hiu selancar yang dapat Anda selesaikan
+
+83
+0:03:18,959 --> 0:03
+masalah dengan hanya mengubah lokasi Anda
+
+84
+0:03 --> 0:03:24,080
+tidak hanya ini baik untuk orang yang
+
+85
+0:03:24,080 --> 0:03:25,840
+ingin mengikuti acara favorit mereka
+
+86
+0:03:25,840 --> 0:03:28,319
+tetapi juga dapat menjadi alat penting
+
+87
+0:03:28,319 --> 0:03:30,640
+bagi mereka yang tinggal di negara-negara yang
+
+88
+0:03:30,640 --> 0:03:33,760
+sangat menyensor atau memantau warganya
+
+89
+0:03:33,760 --> 0:03:36,080
+jadi jika Anda menginginkan keduanya perlindungan  dan
+
+90
+0:03:36,080 --> 0:03:38,080
+kebebasan online klik tautan di
+
+91
+0:03:38,080 --> 0:03:40,879
+deskripsi dan gunakan kode mekatronik untuk
+
+92
+0:03:40,879 --> 0:03:44,159
+mendapatkan diskon 83 persen plus empat
+
+93
+0:03:44,159 --> 0:03:45,680
+bulan ekstra gratis
+
+94
+0:03:45,680 --> 0:03:47,920
+surfshark menawarkan jaminan uang kembali 30 hari
+
+95
+0:03:47,920 --> 0:03:50,720
+sehingga tidak ada risiko
+
+96
+0:03:50,720 --> 0:03:52,720
+untuk mencobanya sendiri,
+
+97
+0:03:52,720 --> 0:03:54,560
+jadi sekarang kita bisa mulai
+
+98
+0:03:54,560 --> 0:03:56,799
+merakitnya  mesin saya mulai dengan mengamankan
+
+99
+0:03:56,799 --> 0:03:58,720
+pelat dasar dan braket untuk
+
+100
+0:03:58,720 --> 0:04:01,040
+rel linier bersama-sama dengan bantuan
+
+101
+0:04:01,040 --> 0:04:02,799
+beberapa baut m3
+
+102
+0:04:02,799 --> 0:04:04,560
+semua baut untuk membongkar
+
+103
+0:04:04,560 --> 0:04:07,120
+mesin ini sebenarnya m3 dengan berbagai
+
+104
+0:04:07,120 --> 0:04:09,920
+panjang kecuali beberapa baut m5 yang diperlukan
+
+105
+0:04:09,920 --> 0:04:12,080
+untuk puli gt2
+
+106
+0:04:12,080 --> 0:04:14,400
+setelah kami  siapkan kedua sisinya, kami dapat
+
+107
+0:04:14,400 --> 0:04:17,359
+mengamankan rel linier sumbu-x
+
+108
+0:04:17,359 --> 0:04
+dengan dua baut di setiap
+
+109
+0:04 --> 0:04:23,199
+sisinya, rel amg dan 15 jam ini memberikan
+
+110
+0:04:23,199 --> 0:04:25,600
+gerakan yang sangat halus dan bebas bermain sebagai
+
+111
+0:04:25,600 --> 0:04:27,840
+balok geser memiliki bola atau rol
+
+112
+0:04:27,840 --> 0:04:29,040
+di dalamnya,
+
+113
+0:04:29,040 --> 0:04:31,199
+namun sebelum memasangnya, ada
+
+114
+0:04:31,199 --> 0:04:33,440
+baiknya untuk membersihkan dan melumasinya dengan
+
+115
+0:04:33,440 --> 0:04:35,600
+baik agar berfungsi dengan baik.
+
+116
+0:04:35,600 --> 0:04:38,240
+Selanjutnya, rel sumbu y harus berada di atas
+
+117
+0:04:38,240 --> 0:04:40,800
+balok geser sumbu-x dan untuk
+
+118
+0:04:40,800 --> 0:04:42,720
+mengamankannya bersama-sama, kita  akan menggunakan
+
+119
+0:04:42,720 --> 0:04:44,720
+pelat pemasangan pusat
+
+120
+0:04:44,720 --> 0:04:47,040
+terlebih dahulu kita dapat memasang rel sumbu y ke
+
+121
+0:04:47,040 --> 0:04:49,680
+pelat tengah menggunakan tiga baut
+
+122
+0:04:49,680 --> 0:04:53,360
+kemudian kita dapat memasang dua motor stepper nema 17 yang
+
+123
+0:04:53,360 --> 0:04:55,680
+satu berjalan di sisi atas dan yang lainnya
+
+124
+0:04:55,680 --> 0:04:58,320
+berjalan di sisi bawah pelat
+
+125
+0:04:58,320 --> 0:05:00,800
+seperti saya  disebutkan sebelumnya kita membutuhkan beberapa
+
+126
+0:05:00,800 --> 0:05:03,199
+baut dan mur m5 untuk memasang
+
+127
+0:05:03,199 --> 0:05:04,800
+puli gt2 di
+
+128
+0:05:04,800 --> 0:05:07,039
+tempat kedua puli di sini sebenarnya adalah
+
+129
+0:05:07,039 --> 0:05:08,960
+puli idler yang digunakan untuk memberikan
+
+130
+0:05:08,960 --> 0:05:12,080
+pegangan pada sabuk gt2 sumbu x dan
+
+131
+0:05:12,080 --> 0:05:15,440
+puli gigi yang masuk ke motor stepper
+
+132
+0:05:15,440 --> 0:05:17,520
+seperti untuk memasang  katrol tersebut harus kita
+
+133
+0:05:17,520 --> 0:05:19,280
+ukur dan ratakan sesuai dengan
+
+134
+0:05:19,280 --> 0:05:20,960
+katrol pemalas
+
+135
+0:05:20,960 --> 0:05:23,919
+sedangkan untuk sumbu y kita hanya membutuhkan satu
+
+136
+0:05:23,919 --> 0:05
+katrol pemalas yang berada di sisi
+
+137
+0:05 --> 0:05:28,560
+lain rel sebagai sabuk untuk sumbu ini
+
+138
+0:05:28,560 --> 0:05:30,720
+akan dipasang i  n loop
+
+139
+0:05:30,720 --> 0:05:32,960
+oke selanjutnya adalah mengawinkan atau
+
+140
+0:05:32,960 --> 0:05:34,960
+menyambungkan kedua sumbu menjadi satu
+
+141
+0:05:34,960 --> 0:05:36,960
+kita cukup melakukannya dengan mengamankan
+
+142
+0:05:36,960 --> 0:05:39,520
+plat tengah ke blok geser sumbu x
+
+143
+0:05:39,520 --> 0:05:42,320
+menggunakan baut 4 m3
+
+144
+0:05:42,320 --> 0:05:45,039
+dengan ini mesin mendapatkan bentuk utamanya
+
+145
+0:05:45,039 --> 0:05:47,520
+dan sekarang balok geser sumbu y dapat
+
+146
+0:05:47,520 --> 0:05:50,400
+mencapai posisi apapun di area kerja
+
+147
+0:05:50,400 --> 0:05:54,400
+kita dapat melanjutkan dengan merakit mekanisme pengangkat pena
+
+148
+0:05:54,400 --> 0:05:57,280
+mekanisme ini terdiri dari dua bagian
+
+149
+0:05:57,280 --> 0:05:59,919
+satu tetap yang dibaut ke
+
+150
+0:05:59,919 --> 0:06
+blok geser sumbu y dan yang lainnya
+
+151
+0:06 --> 0:06:04,400
+akan meluncur ke atas dan ke bawah
+
+152
+0:06:04,400 --> 0:06:07,039
+setelah bagian tetap terpasang  diamankan di tempat
+
+153
+0:06:07,039 --> 0:06:09,600
+kita bisa memasang motor stepper sumbu z
+
+154
+0:06:09,600 --> 0:06:10,479
+di atasnya
+
+155
+0:06:10,479 --> 0:06:13,360
+stepper ini juga nema 17 tapi
+
+156
+0:06:13,360 --> 0:06:16,160
+lebih pendek 23 milimeter bukan 40
+
+157
+0:06:16,160 --> 0:06:19,280
+milimeter untuk mengurangi berat
+
+158
+0:06:19,280 --> 0:06:21,440
+maka kita bisa memasang pengangkat yang
+
+159
+0:06:21,440 --> 0:06:24,160
+cukup dipasang pada poros
+
+160
+0:06:24,160 --> 0:06:26,560
+stepper grub screw yang saya tekan agak
+
+161
+0:06:26,560 --> 0:06:29,360
+panjang jadi saya pasang pengangkat ke poros
+
+162
+0:06:29,360 --> 0:06:31,919
+tanpa itu tapi lubangnya berbentuk
+
+163
+0:06:31,919 --> 0:06:33,919
+seperti poros sehingga gerakan akan
+
+164
+0:06:33,919 --> 0:06:35,440
+ditransfer dengan baik
+
+165
+0:06:35,440 --> 0:06:37,520
+akhirnya saya memodifikasi bagian ini
+
+166
+0:06:37,520 --> 0:06:39,759
+sedikit tapi jangan khawatir Anda akan mendapatkan
+
+167
+0:06:39,759 --> 0:06:41,600
+versi terbarunya di
+
+168
+0:06:41,600 --> 0:06:43,600
+file unduhan
+
+169
+0:06:43,600 --> 0:06:46,080
+berikutnya saya memasukkan empat bantalan linier
+
+170
+0:06:46,080 --> 0:06:48,800
+ke bagian geser dan mengamankan
+
+171
+0:06:48,800 --> 0:06:51,120
+servo mikro di tempatnya
+
+172
+0:06:51,120 --> 0:06:53,360
+kemudian saya juga mengamankan bagian dudukan porter pena
+
+173
+0:06:53,360 --> 0:06:56,560
+tepat di sebelah servo
+
+174
+0:06:56,560 --> 0:06:58,800
+untuk menghubungkan bagian tetap dan geser
+
+175
+0:06:58,800 --> 0:07:01,440
+bersama-sama terlebih dahulu kita harus melewatkan
+
+176
+0:07:01,440 --> 0:07:04,479
+kawat servo ke lubang di bagian tetap
+
+177
+0:07:04,479 --> 0:07:07,199
+dan kemudian memasukkan batang enam milimeter
+
+178
+0:07:07,199 --> 0:07:09,759
+dari atas melalui bantalan dan
+
+179
+0:07:09,759 --> 0:07:11,919
+melalui lubang bagian tetap
+
+180
+0:07:11,919 --> 0:07:13,840
+saat memasang batang kita juga harus
+
+181
+0:07:13,840 --> 0:07:16,400
+masukkan pegas di antara
+
+182
+0:07:16,400 --> 0:07:19,039
+bagian tetap dan geser sedemikian rupa sehingga mendorong
+
+183
+0:07:19,039 --> 0:07:21,520
+bagian geser ke bawah ini akan membantu
+
+184
+0:07:21,520 --> 0:07:23,280
+pena untuk memiliki kontak yang lebih baik dengan
+
+185
+0:07:23,280 --> 0:07:24,800
+permukaan kerja
+
+186
+0:07:24,800 --> 0:07:26,960
+di sisi bawah bagian tetap
+
+187
+0:07:26,960 --> 0:07:28,880
+ada bukaan di mana kita bisa memasukkan
+
+188
+0:07:28,880 --> 0:07:31,520
+m3 mur dan menggunakannya untuk mengamankan
+
+189
+0:07:31,520 --> 0:07:34,240
+batang enam milimeter ini di tempat
+
+190
+0:07:34,240 --> 0:07:37,039
+selanjutnya kita dapat merakit unit pemegang pena
+
+191
+0:07:37,039 --> 0:07:39,360
+yang berada di satu sisi
+
+192
+0:07:39,360 --> 0:07:41,680
+mesin yang terdiri dari bagian atas dan bawah
+
+193
+0:07:41,680 --> 0:07:44,240
+dengan ope  nings yang dapat menampung hingga
+
+194
+0:07:44,240 --> 0:07:45,919
+12 pence
+
+195
+0:07:45,919 --> 0:07:48,639
+saya lanjutkan dengan memasang ikat pinggang
+
+196
+0:07:48,639 --> 0:07:50,639
+terlebih dahulu kita perlu mengukur berapa panjang yang
+
+197
+0:07:50,639 --> 0:07:53,919
+kita butuhkan dan memotongnya kira-kira sesuai ukuran
+
+198
+0:07:53,919 --> 0:07:55,840
+untuk memasang sabuk ke blok geser
+
+199
+0:07:55,840 --> 0:07:58,960
+saya membuat konektor sabuk keren ini di
+
+200
+0:07:58,960 --> 0:08:01,039
+mana sabuk mengelilingi a
+
+201
+0:08:01,039 --> 0:08:03,520
+poros berongga dan di antara dua dinding yang
+
+202
+0:08:03,520 --> 0:08:05,919
+tidak memungkinkan sabuk untuk bergerak
+
+203
+0:08:05,919 --> 0:08:08,240
+menggunakan baut m3 kita dapat mengamankan
+
+204
+0:08:08,240 --> 0:08:10,639
+konektor pertama di satu sisi blok dan
+
+205
+0:08:10,639 --> 0:08:13,680
+ulangi prosedur yang sama untuk sisi lain
+
+206
+0:08:13,680 --> 0:08:15,520
+kita dapat memindahkan konektor sepanjang
+
+207
+0:08:15,520 --> 0:08:18,240
+slot ini di sini  dan kencangkan sabuk
+
+208
+0:08:18,240 --> 0:08:19,919
+sebanyak yang kita inginkan
+
+209
+0:08:19,919 --> 0:08:22,720
+seperti untuk sumbu x sabuk akan berjalan
+
+210
+0:08:22,720 --> 0:08:25,440
+lurus dari satu ke sisi lain
+
+211
+0:08:25,440 --> 0:08:27,280
+sambil melewati puli
+
+212
+0:08:27,280 --> 0:08:29,840
+sedemikian rupa sehingga mereka akan memberikan ketegangan atau
+
+213
+0:08:29,840 --> 0:08:32,159
+pegangan pada puli motor stepper
+
+214
+0:08:32,159 --> 0:08:34,800
+untuk mengencangkan sumbu x yang dibangun saya
+
+215
+0:08:34,800 --> 0:08:36,959
+membuat konektor ini yang memiliki bentuk
+
+216
+0:08:36,959 --> 0:08:39,760
+sebagai sabuk dan agar kita dapat mengikatnya ke
+
+217
+0:08:39,760 --> 0:08
+sisi mesin
+
+218
+0:08 --> 0:08:44,640
+selanjutnya kita dapat memasang sakelar batas
+
+219
+0:08:44,640 --> 0:08:46,720
+akhirnya saya benar-benar menurunkan sedikit
+
+220
+0:08:46,720 --> 0:08:49,839
+sumbu z ini  sakelar batas s dan untuk sakelar batas x
+
+221
+0:08:49,839 --> 0:08:52,399
+dan y saya menggunakan yang
+
+222
+0:08:52,399 --> 0:08:54,800
+dari proyek saya sebelumnya yang sudah
+
+223
+0:08:54,800 --> 0:08:57,040
+memiliki kabel yang terhubung dengannya
+
+224
+0:08:57,040 --> 0:08:58,959
+dengan ini bagian mekanis dari
+
+225
+0:08:58,959 --> 0:09:01,440
+mesin ini sudah siap dan sekarang kita dapat melanjutkan
+
+226
+0:09:01,440 --> 0:09:03,839
+dengan menghubungkan elektronik
+
+227
+0:09:03,839 --> 0:09:05,920
+karena saya  disebutkan kami menggunakan papan arduino
+
+228
+0:09:05,920 --> 0:09:08,560
+uno dalam kombinasi dengan pelindung cnc
+
+229
+0:09:08,560 --> 0:09:09,959
+dan tiga
+
+230
+0:09:09,959 --> 0:09:12,640
+driver stepper a4988
+
+231
+0:09:12,640 --> 0:09:14,240
+untuk memasang papan arduino ke
+
+232
+0:09:14,240 --> 0:09:16,640
+mesin saya membuat bagian cetak 3d tambahan
+
+233
+0:09:16,640 --> 0:09:19,360
+yang ada di panel samping
+
+234
+0:09:19,360 --> 0:09:21,839
+saya mengamankan papan arduino dengan dua
+
+235
+0:09:21,839 --> 0:09:24,399
+baut m3 dan  di atasnya saya memasukkan
+
+236
+0:09:24,399 --> 0:09:26,240
+pelindung cnc di
+
+237
+0:09:26,240 --> 0:09:28,640
+sini kita perlu memasukkan tiga jumper untuk
+
+238
+0:09:28,640 --> 0:09:30,959
+setiap driver stepper untuk memilih
+
+239
+0:09:30,959 --> 0:09:33,839
+16 resolusi langkah dan kemudian
+
+240
+0:09:33,839 --> 0:09:36,480
+memasukkan driver stepper di tempat
+
+241
+0:09:36,480 --> 0:09:38,399
+kemudian kita dapat menghubungkan motor ke
+
+242
+0:09:38,399 --> 0:09:40,320
+cnc dengan tepat
+
+243
+0:09:40,320 --> 0:09:42,160
+untuk menghubungkan batas mikro  sakelar
+
+244
+0:09:42,160 --> 0:09:44,480
+di tempat saya hanya menyolder kabel
+
+245
+0:09:44,480 --> 0:09:47,120
+langsung ke mereka dan di sisi lain saya
+
+246
+0:09:47,120 --> 0:09:49,440
+menyolder pin header perempuan yang saya
+
+247
+0:09:49,440 --> 0:09:52,080
+dapatkan dari beberapa kabel lompat
+
+248
+0:09:52,080 --> 0:09:54,480
+seperti untuk motor servo saya  menggunakan beberapa
+
+249
+0:09:54,480 --> 0:09:56,640
+kabel ekstensi servo sehingga dapat mencapai
+
+250
+0:09:56,640 --> 0:09:58,320
+pelindung cnc
+
+251
+0:09:58,320 --> 0:10:00,240
+untuk menyalakan mesin kita membutuhkan
+
+252
+0:10:00,240 --> 0:10
+catu daya 12 volt
+
+253
+0:10 --> 0:10:04,320
+namun demikian inilah diagram rangkaian tentang
+
+254
+0:10:04,320 --> 0:10:07,200
+bagaimana semuanya perlu dihubungkan
+
+255
+0:10:07,200 --> 0:10:09,120
+ada beberapa sentuhan akhir
+
+256
+0:10:09,120 --> 0:10:11,360
+yang perlu dilakukan untuk menyelesaikan  pin
+
+257
+0:10:11,360 --> 0:10:12,480
+plotter
+
+258
+0:10:12,480 --> 0:10:14,640
+ini saya memasang pen gripper
+
+259
+0:10:14,640 --> 0:10:16,480
+yang hanya dipasang ke motor servo
+
+260
+0:10:16,480 --> 0:10:19,120
+melalui servo horn
+
+261
+0:10:19,120 --> 0:10:21,200
+untuk mengatur kabel dari
+
+262
+0:10:21,200 --> 0:10:23,839
+plotter pena saya menggunakan alas meja makan
+
+263
+0:10:23,839 --> 0:10:26,560
+yang bahannya kuat tetapi fleksibel
+
+264
+0:10:26,560 --> 0:10:28,720
+sehingga sangat cocok untuk pekerjaan itu
+
+265
+0:10:28,720 --> 0:10:30,560
+dengan ini mesin gambar kami benar-
+
+266
+0:10:30,560 --> 0:10:33,120
+benar selesai namun ada
+
+267
+0:10:33,120 --> 0:10:35,440
+beberapa hal yang harus kami perhatikan di sini
+
+268
+0:10:35,440 --> 0:10
+karena rel sumbu y tidak didukung di satu
+
+269
+0:10 --> 0:10:41,040
+sisi dan bahan pelat cetak 3d
+
+270
+0:10:41,040 --> 0:10:43,600
+itu sendiri tidak terlalu kaku ketika
+
+271
+0:10:43,600 --> 0:10:45,839
+diperpanjang penuh pengangkat pin adalah empat
+
+272
+0:10:45,839 --> 0:10:49,440
+milimeter  lebih rendah dibandingkan dengan sisi
+
+273
+0:10:49,440 --> 0:10:51,839
+yang didukung itu terlalu banyak bermain tetapi saya
+
+274
+0:10:51,839 --> 0:10:54,480
+berhasil menyelesaikan masalah itu dengan mengangkat
+
+275
+0:10:54,480 --> 0:10:56,800
+sisi depan mesin sedikit
+
+276
+0:10:56,800 --> 0:10:58,959
+dengan cara ini saya ulangi  memberikan perbedaan menjadi
+
+277
+0:10:58,959 --> 0:11:01,920
+sekitar 1 milimeter yang dapat diterima
+
+278
+0:11:01,920 --> 0:11:04,079
+jika Anda berencana untuk menggunakan rel besar ini, saya
+
+279
+0:11:04,079 --> 0:11:06,320
+pasti akan menyarankan untuk mendukung
+
+280
+0:11:06,320 --> 0:11:09,440
+rel sumbu y di sisi lain juga
+
+281
+0:11:09,440 --> 0:11:11,760
+masalah lain adalah dudukan pin
+
+282
+0:11:11,760 --> 0:11:14,160
+karena pin tidak tetap di tempatnya  nah dengan
+
+283
+0:11:14,160 --> 0:11:15,279
+cara ini
+
+284
+0:11:15,279 --> 0:11:17,360
+disini saya akan menyarankan untuk membuat
+
+285
+0:11:17,360 --> 0:11:19,760
+bukaan atas lebih besar dan menambahkan beberapa
+
+286
+0:11:19,760 --> 0:11:22,240
+bahan lunak di sisinya sehingga panci
+
+287
+0:11:22,240 --> 0:11:24,560
+bisa tetap di tempatnya sementara
+
+288
+0:11:24,560 --> 0:11:26,959
+mesin mudah memasukkannya
+
+289
+0:11:26,959 --> 0:11:29,120
+akhirnya kita bisa memasukkan papan di bawah
+
+290
+0:11:29,120 --> 0:11:31,360
+seluruh mesin sehingga  kami mendapatkan permukaan yang bagus dan
+
+291
+0:11:31,360 --> 0:11:32,720
+rata
+
+292
+0:11:32,720 --> 0:11:35,279
+dan hanya itu mesin kami selesai
+
+293
+0:11:35,279 --> 0:11:37,680
+tetapi yang tersisa untuk dilakukan sekarang adalah
+
+294
+0:11:37,680 --> 0:11:41,279
+menghidupkannya atau menjadikannya mesin cnc nyata
+
+295
+0:11:41,279 --> 0:11:43,360
+untuk tujuan itu kami perlu menginstal
+
+296
+0:11:43,360 --> 0:11:45,600
+firmware ke arduino untuk
+
+297
+0:11:45,600 --> 0:11:48,320
+mengendalikan gerakan  mesin cnc dan kami
+
+298
+0:11:48,320 --> 0:11:50,240
+memerlukan perangkat lunak kontrol di mana kami
+
+299
+0:11:50,240 --> 0:11:52,399
+akan mengirim gcode dan memberi tahu mesin
+
+300
+0:11:52,399 --> 0:11:53,760
+apa yang harus
+
+301
+0:11:53,760 --> 0:11:56,240
+dilakukan Pilihan paling populer untuk mesin cnc diy
+
+302
+0:11:56,240 --> 0:11:59,519
+adalah firmware gerbil open source
+
+303
+0:11:59,519 --> 0:12:01,680
+namun untuk plotter pin ini kami memerlukan
+
+304
+0:12:01,680 --> 0:12
+versi modifikasi yang dapat mengontrol
+
+305
+0:12 --> 0:12:06,800
+motor servo versi modifikasi
+
+306
+0:12:06,800 --> 0:12:09,440
+disebut gerbil servo yang mengubah
+
+307
+0:12:09,440 --> 0:12:12,079
+frekuensi pwm default dari
+
+308
+0:12:12,079 --> 0:12:15,360
+pin kontrol spindel atau pin digital nomor 11
+
+309
+0:12:15,360 --> 0:12:18,399
+dari satu kilohertz menjadi 50 hertz yang
+
+310
+0:12:18,399 --> 0:12:20,320
+diperlukan untuk mengontrol jenis
+
+311
+0:12:20,320 --> 0:12:22,240
+motor servo ini
+
+312
+0:12:22,240 --> 0:12:24,399
+sekali  kami mengunduh dan menginstal firmware gerbil ini
+
+313
+0:12:24,399 --> 0:12:26,880
+ke folder perpustakaan
+
+314
+0:12:26,880 --> 0:12:29,839
+ide arduino kami, kami juga perlu
+
+315
+0:12:29,839 --> 0:12:32,959
+memodifikasi file config.h-nya untuk mengaktifkan
+
+316
+0:12:32,959 --> 0:12:35,440
+homing akses pohon alih-alih
+
+317
+0:12:35,440 --> 0:12:38,320
+default ke axis homing dan tentu saja
+
+318
+0:12:38,320 --> 0:12:41,440
+mengunggah gerbil ke arduino
+
+319
+0:12:41,440 --> 0:12:43,760
+seperti untuk  perangkat lunak kontrol kita akan
+
+320
+0:12:43,760 --> 0:12:46,160
+menggunakan plotter gerbil yang merupakan
+
+321
+0:12:46,160 --> 0:12:48,320
+perangkat lunak khusus untuk mengendalikan plotter dan
+
+322
+0:12:48,320 --> 0:12:50,480
+termasuk konverter grafis di
+
+323
+0:12:50,480 --> 0:12:52,959
+mana kita dapat menghasilkan kode-g dari
+
+324
+0:12:52,959 --> 0:12:54,800
+gambar atau grafik kita yang
+
+325
+0:12:54,800 --> 0:12:56,800
+satu ini juga open source yang
+
+326
+0:12:56,800 --> 0:12:59,680
+dapat diunduh dari github di sini yang pertama
+
+327
+0:12:59,680 --> 0:13:01,519
+hal yang perlu kita lakukan adalah menghubungkan
+
+328
+0:13:01,519 --> 0:13:03,519
+board arduino kita ke perangkat lunak
+
+329
+0:13:03,519 --> 0:13:06,320
+melalui port com yang sesuai setelah kita
+
+330
+0:13:06,320 --> 0:13:08,320
+mengklik tombol kill alarm
+
+331
+0:13:08,320 --> 0:13:10,800
+monitor serial kita akan mendapatkan daftar
+
+332
+0:13:10,800 --> 0:13:13,279
+parameter gerbil kita saat ini
+
+333
+0:13:13,279 --> 0:13:14,560
+kita perlu mengubah beberapa parameter ini
+
+334
+0:13:14,560 --> 0:13:17,120
+sesuai dengan mesin kita
+
+335
+0:13:17,120 --> 0:13:18,720
+hal pertama yang harus kita sesuaikan di
+
+336
+0:13:18,720 --> 0:13:21,360
+sini adalah resolusi perjalanan atau nilai
+
+337
+0:13:21,360 --> 0:13:23,760
+langkah per milimeter
+
+338
+0:13:23,760 --> 0:13:26,079
+nilai ini menunjukkan berapa banyak langkah
+
+339
+0:13:26,079 --> 0:13:28,639
+motor harus mengambil untuk bergerak satu
+
+340
+0:13:28,639 --> 0:13:29,920
+milimeter
+
+341
+0:13:29,920 --> 0:13:32,160
+ini tergantung pada jenis motor stepper
+
+342
+0:13:32,160 --> 0:13:34,720
+yang kita miliki resolusi langkah yang dipilih
+
+343
+0:13:34,720 --> 0:13:37,200
+dan transmisi gerak
+
+344
+0:13:37,200 --> 0:13:40,079
+dalam hal ini sabuk gt2 dan katrol
+
+345
+0:13:40,079 --> 0:13:42,720
+untuk mesin kami nilai 80 langkah per
+
+346
+0:13:42,720 --> 0:13:45,199
+milimeter adalah  diperlukan agar sumbu x dan y
+
+347
+0:13:45,199 --> 0:13:46,959
+akurat
+
+348
+0:13:46,959 --> 0:13:50,160
+karena untuk sumbu z saya menetapkan nilai 40
+
+349
+0:13:50,160 --> 0:13:52,560
+yang sebenarnya tidak akurat dalam hal
+
+350
+0:13:52,560 --> 0:13:54,959
+gerakan nyata tetapi kami tidak dapat mencapainya
+
+351
+0:13:54,959 --> 0:13
+dengan gerakan bolak-balik
+
+352
+0:13 --> 0:14:00,240
+kami, kami juga harus mengatur nomor parameter
+
+353
+0:14:00,240 --> 0:14
+23 hingga 0 yang menjelaskan di mana
+
+354
+0:14 --> 0:14:05,920
+sakelar batas kami berada,
+
+355
+0:14:05,920 --> 0:14:09,040
+atur kecepatan gerak maksimum akselerasi laju umpan
+
+356
+0:14:09,040 --> 0:14:11,120
+maksimum dan atur
+
+357
+0:14:11,120 --> 0:14:14,480
+parameter nomor 1 ke nilai 255
+
+358
+0:14:14,480 --> 0:14:16,560
+yang memungkinkan  stepper untuk aktif
+
+359
+0:14:16,560 --> 0:14:17,680
+sepanjang waktu
+
+360
+0:14:17,680 --> 0:14:19,360
+namun kita harus perhatikan bahwa dengan
+
+361
+0:14:19,360 --> 0:14:22,240
+ini diaktifkan khusus untuk z-axis
+
+362
+0:14:22,240 --> 0:14:24,720
+taper kita harus menyesuaikan batas
+
+363
+0:14:24,720 --> 0:14:27,120
+arus driver seminimal mungkin karena
+
+364
+0:14:27,120 --> 0:14:29,279
+motor stepper nema 70 yang lebih pendek dapat
+
+365
+0:14:29,279 --> 0:14:31,839
+dengan cepat menjadi panas namun untuk lebih
+
+366
+0:14:31,839 --> 0:14:34,160
+jelasnya  tentang mengonfigurasi gerbil Anda
+
+367
+0:14:34,160 --> 0:14:36,320
+selalu dapat memeriksa artikel situs web di
+
+368
+0:14:36,320 --> 0:14
+mana Anda dapat menemukan tautan ke lebih banyak
+
+369
+0:14 --> 0:14:39,440
+sumber daya
+
+370
+0:14:39,440 --> 0:14:41,040
+ok jadi mari kita lihat
+
+371
+0:14:41,040 --> 0:14:43,519
+pengaturan pengontrol sekarang ada begitu banyak
+
+372
+0:14:43,519 --> 0:14:45,920
+opsi untuk menyesuaikan di sini sehingga bisa
+
+373
+0:14:45,920 --> 0:14:48,399
+sedikit menakutkan di awal sekarang saya
+
+374
+0:14:48,399 --> 0:14:49,920
+akan segera berbicara tentang
+
+375
+0:14:49,920 --> 0:14:51,839
+parameter yang paling penting dan untuk lebih
+
+376
+0:14:51,839 --> 0:14:53,839
+jelasnya seperti biasa Anda dapat memeriksa
+
+377
+0:14:53,839 --> 0:14:55,600
+artikel situs web di
+
+378
+0:14:55,600 --> 0:14:58,160
+sini terlebih dahulu kita perlu mengatur terjemahan pena ke atas dan
+
+379
+0:14:58,160 --> 0:15:01,199
+ke bawah menjadi sumbu z dan
+
+380
+0:15:01,199 --> 0:15:04,639
+mengatur nilai untuk posisi naik dan turun
+
+381
+0:15:04,639 --> 0:15:07,440
+di alat  tab tabel kita dapat menentukan
+
+382
+0:15:07,440 --> 0:15
+warna pin dan posisinya
+
+383
+0:15 --> 0:15
+kita harus mencatat di sini bahwa nilai-nilai
+
+384
+0:15 --> 0:15:16,639
+ini untuk g53 atau sistem koordinat mesin
+
+385
+0:15:16,639 --> 0:15:18,480
+ini berarti bahwa mereka ditentukan oleh th  e
+
+386
+0:15:18,480 --> 0:15:20,240
+sakelar batas keras yang dimiliki mesin
+
+387
+0:15:20,240 --> 0:15:23,040
+dan perjalanan maksimum yang kami atur
+
+388
+0:15:23,040 --> 0:15:25,760
+dalam parameter gerbil sebelumnya
+
+389
+0:15:25,760 --> 0:15:27,920
+untuk menentukan posisi setiap pena saya
+
+390
+0:15:27,920 --> 0:15:30,880
+menggunakan nilai offset yang 0 untuk
+
+391
+0:15:30,880 --> 0:15:35,600
+sumbu x dan 277 untuk sumbu y dalam hal
+
+392
+0:15:35,600 --> 0:15:37,920
+ini nilai-nilai ini  posisikan gripper di
+
+393
+0:15:37,920 --> 0:15:40,320
+depan pena pertama dan kemudian saya
+
+394
+0:15:40,320 --> 0:15:43,360
+hanya perlu menentukan nilai y untuk setiap pena
+
+395
+0:15:43,360 --> 0:15:46,079
+yaitu 21,7 milimeter ke
+
+396
+0:15:46,079 --> 0:15:49,519
+arah negatif untuk setiap pena berturut-turut di
+
+397
+0:15:49,519 --> 0:15:51,680
+sini kita juga dapat menyesuaikan laju umpan
+
+398
+0:15:51,680 --> 0:15:53,680
+dan posisi naik dan turun untuk masing-masing
+
+399
+0:15:53,680 --> 0:15:55,680
+pena secara individual jika ada
+
+400
+0:15:55,680 --> 0:15:57,440
+pena yang berbeda
+
+401
+0:15:57,440 --> 0:15:59,759
+selanjutnya di tab perubahan alat kita harus
+
+402
+0:15:59,759 --> 0:16:02,759
+memilih melakukan perubahan alat pada
+
+403
+0:16:02,759 --> 0:16
+txm06 yang memberitahu mesin untuk melakukan
+
+404
+0:16 --> 0:16:08,240
+perubahan alat ketika perintah ini muncul di
+
+405
+0:16:08,240 --> 0:16:09,759
+kode-g
+
+406
+0:16:09,759 --> 0:16:12,639
+nilai-x setelah huruf t menunjukkan
+
+407
+0:16:12,639 --> 0:16:15,600
+nomor alat dari tabel alat
+
+408
+0:16:15,600 --> 0:16:17,920
+untuk melakukan perubahan alat kita harus
+
+409
+0:16:17,920 --> 0:16:20,720
+menyertakan skrip pilih dan hapus
+
+410
+0:16:20,720 --> 0:16:24,160
+yang dijalankan ketika perintah tx m06 ini
+
+411
+0:16:24,160 --> 0:16:25,519
+muncul
+
+412
+0:16:25,519 --> 0:16:27,920
+di skrip ini kita mendefinisikan
+
+413
+0:16:27,920 --> 0:16:30,079
+pergerakan gripper  untuk mengambil atau
+
+414
+0:16:30,079 --> 0:16:31,600
+melepas alat
+
+415
+0:16:31,600 --> 0:16:33,839
+untuk memilih pena, gripper pertama kali
+
+416
+0:16:33,839 --> 0:16:35,759
+diposisikan di depan
+
+417
+0:16:35,759 --> 0:16:38,560
+pin aktual dalam koordinat mesin absolut
+
+418
+0:16:38,560 --> 0:16:41,279
+yang ditentukan dalam tabel alat
+
+419
+0:16:41,279 --> 0:16:43,839
+kemudian servo membuka gripper itu
+
+420
+0:16:43,839 --> 0:16:46,800
+bergerak naik empat milimeter lagi kemudian bergerak
+
+421
+0:16:46,800 --> 0:16:49,440
+ke arah  pen ke arah x dan
+
+422
+0:16:49,440 --> 0:16:51,920
+sedikit ke arah y
+
+423
+0:16:51,920 --> 0:16:55,040
+kemudian gripper menutup mengangkat pena ke atas
+
+424
+0:16:55,040 --> 0:16:57,040
+dan bergerak kembali ke posisi yang sama
+
+425
+0:16:57,040 --> 0:16:59,600
+sebelum mengeksekusi script
+
+426
+0:16:59,600 --> 0:17:02,079
+untuk melepas pena langkah
+
+427
+0:17:02,079 --> 0:17:04,799
+-langkah script sama tetapi dalam urutan terbalik
+
+428
+0:17:04,799 --> 0:17:06,880
+tentu semua ini  parameter tergantung
+
+429
+0:17:06,880 --> 0:17:09,760
+pada pulpen itu sendiri dimensinya
+
+430
+0:17:09,760 --> 0:17:12,079
+dan dimensi pemegang
+
+431
+0:17:12,079 --> 0:17:14,559
+satu-satunya cara untuk mendapatkan proses ini dengan benar
+
+432
+0:17:14,559 --> 0:17:17,600
+adalah dengan menguji dan mengoreksi nilai
+
+433
+0:17:17,600 --> 0:17:19,360
+akhirnya mari kita lihat bagaimana kita dapat
+
+434
+0:17:19,360 --> 0:17:21,839
+menghasilkan g-kode dari gambar dengan
+
+435
+0:17:21,839 --> 0:17:23,919
+perangkat lunak plotter gerbil ini
+
+436
+0:17:23,919 --> 0:17:26,480
+setelah kita  memuat gambar kita dapat mengklik
+
+437
+0:17:26,480 --> 0:17:29,600
+pratinjau dengan warna dari tabel sehingga kita dapat
+
+438
+0:17:29,600 --> 0:17:32,160
+melihat bagaimana gambar akan terlihat
+
+439
+0:17:32,160 --> 0:17:34,559
+dari tab koreksi gambar kemudian kita dapat
+
+440
+0:17:34,559 --> 0:17:37,600
+bermain dengan kecerahan co  ntrast nilai gamma
+
+441
+0:17:37,600 --> 0:17:39,760
+dan saturasi untuk
+
+442
+0:17:39,760 --> 0:17:42,720
+mencapai warna yang mirip dengan gambar asli
+
+443
+0:17:42,720 --> 0:17:45,520
+atau yang sebenarnya kita inginkan,
+
+444
+0:17:45,520 --> 0:17:47,360
+kita dapat mengatur ukuran output dalam
+
+445
+0:17:47,360 --> 0:17
+milimeter dan di tab penggantian warna
+
+446
+0:17 --> 0:17:52,320
+kita dapat menghapus warna yang
+
+447
+0:17:52,320 --> 0:17:53,840
+tidak ingin kita gunakan.
+
+448
+0:17:53,840 --> 0:17:56,080
+contoh kita dapat menghapus warna aprikot
+
+449
+0:17:56,080 --> 0:17
+yang merupakan warna putih pada
+
+450
+0:17 --> 0:17:59,039
+gambar
+
+451
+0:17:59,039 --> 0:18:01,600
+kemudian kita cukup mengklik tombol buat kode
+
+452
+0:18:01,600 --> 0:18:04,960
+-g dan kode-g akan dihasilkan
+
+453
+0:18:04,960 --> 0:18:07,520
+kita juga dapat menghasilkan kode-g dari
+
+454
+0:18:07,520 --> 0:18:10,160
+file svg yang bisa kita tarik dan  jatuhkan
+
+455
+0:18:10,160 --> 0:18:12,480
+mereka dan perangkat lunak akan menghasilkan
+
+456
+0:18:12,480 --> 0:18:14,640
+kode-g segera
+
+457
+0:18:14,640 --> 0:18:16,799
+sebelum kita memulai plot kita harus
+
+458
+0:18:16,799 --> 0:18:19,120
+mengatur posisi nol di mana pun kita inginkan
+
+459
+0:18:19,120 --> 0:18:23,120
+di area kerja dan kemudian klik tombol putar
+
+460
+0:18:23,120 --> 0:18:25,600
+mesin akan mulai bekerja dan kita
+
+461
+0:18:25,600 --> 0:18:28,559
+dapat menikmati menonton pembuatannya  sulap saya
+
+462
+0:18:28,559 --> 0:18:30,240
+harap Anda menikmati video ini dan mempelajari
+
+463
+0:18:30,240 --> 0:18:32,640
+sesuatu yang baru jika Anda memiliki pertanyaan,
+
+464
+0:18:32,640 --> 0:18:34,480
+jangan ragu untuk bertanya di bagian komentar
+
+465
+0:18:34,480 --> 0:18:37,280
+di bawah atau di artikel situs web
+
+466
+0:18:37,280 --> 0:18:39,520
+dan seperti biasa untuk lebih banyak tutorial dan
+
+467
+0:18:39,520 --> 0:18:43,840
+proyek kunjungi cara mekatronik  s.
+

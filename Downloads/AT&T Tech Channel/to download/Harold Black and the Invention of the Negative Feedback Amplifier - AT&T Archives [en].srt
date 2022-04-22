@@ -1,0 +1,400 @@
+1
+00:00:00,000 --> 0:00:03,570
+a wide variety of modern systems depend
+
+2
+0:00:03,570 --> 0:00:05,190
+for their operation on an invention
+
+3
+0:00:05,190 --> 0:00:07,859
+devised at Bell Laboratories more than
+
+4
+0:00:07,859 --> 0:00:11,250
+50 years ago it continues to be used
+
+5
+0:00:11,250 --> 0:00:13,530
+throughout the Bell System and telephone
+
+6
+0:00:13,530 --> 0:00:16,320
+sets the newest switching machines and
+
+7
+0:00:16,320 --> 0:00:18,420
+modern systems for transmitting
+
+8
+0:00:18,420 --> 0:00:21,660
+telephone calls this is an early version
+
+9
+0:00:21,660 --> 0:00:24,029
+of that invention called a negative
+
+10
+0:00:24,029 --> 0:00:33,969
+feedback amplifier
+
+11
+0:00:33,969 --> 0:00:36,070
+in the early days of long-distance
+
+12
+0:00:36,070 --> 0:00:38,230
+calling only a few voices could be
+
+13
+0:00:38,230 --> 0:00:41,110
+carried on one pair of wires as long
+
+14
+0:00:41,110 --> 0:00
+distance calling grew high-capacity
+
+15
+0:00 --> 0:00:45,100
+systems were needed to carry many
+
+16
+0:00:45,100 --> 0:00:48,159
+telephone calls simultaneously but
+
+17
+0:00:48,159 --> 0:00:50,559
+signals used in high capacity systems
+
+18
+0:00:50,559 --> 0:00:53,199
+need to be amplified more frequently and
+
+19
+0:00:53,199 --> 0:00:56,140
+the available amplifiers distorted the
+
+20
+0:00:56,140 --> 0:01:00,670
+signals in 1921 harold black began
+
+21
+0:01:00,670 --> 0:01:02,559
+working on an efficient distortion-free
+
+22
+0:01:02,559 --> 0:01:04,629
+amplifier that would permit
+
+23
+0:01:04,629 --> 0:01:06,610
+long-distance transmission of large
+
+24
+0:01:06,610 --> 0:01:10,229
+numbers of telephone calls at low cost I
+
+25
+0:01:10,229 --> 0:01:17,679
+tried again and again to build practical
+
+26
+0:01:17,679 --> 0:01:21,759
+or viable amplifiers that would
+
+27
+0:01:21,759 --> 0:01:26,039
+accomplish what I was trying to do and
+
+28
+0:01:26,039 --> 0:01:31,409
+each and every one was a total failure
+
+29
+0:01:31,409 --> 0:01:36,429
+some even when I made a sketch I could
+
+30
+0:01:36,429 --> 0:01:40,590
+see that I was getting nowhere
+
+31
+0:01:40,590 --> 0:01:47,340
+and when I say nowhere I mean no way and
+
+32
+0:01:47,340 --> 0:01:51,720
+then came the fateful morning in August
+
+33
+0:01:51,720 --> 0:01:57,819
+of 1927 I boarded the ferry and went to
+
+34
+0:01:57,819 --> 0:02:04,820
+work just like any other day
+
+35
+0:02:04,820 --> 0:02:07,270
+I was looking at the Statue of Liberty
+
+36
+0:02:07,270 --> 0:02:12,800
+and all of a sudden the idea came to me
+
+37
+0:02:12,800 --> 0:02:19,180
+in the flesh I thought of how to make
+
+38
+0:02:19,180 --> 0:02:25,600
+the negative feedback amplifier then I
+
+39
+0:02:25,600 --> 0:02:29,180
+bought a New York time I had nothing
+
+40
+0:02:29,180 --> 0:02:33,440
+right on so I bought it and I opened the
+
+41
+0:02:33,440 --> 0:02:38,060
+pages and it was a mere accident that
+
+42
+0:02:38,060 --> 0:02:42,890
+that particular day I had the name of
+
+43
+0:02:42,890 --> 0:02:45,830
+the newspaper and the date and then the
+
+44
+0:02:45,830 --> 0:02:49,670
+entire page was almost in a very clean
+
+45
+0:02:49,670 --> 0:02:57,260
+tape and I by no means felt it I spent a
+
+46
+0:02:57,260 --> 0:03:01,910
+little time making the diagram I called
+
+47
+0:03:01,910 --> 0:03:05,270
+it a canonical diagram because it is
+
+48
+0:03:05,270 --> 0:03:08,770
+universal and applies to anything
+
+49
+0:03:08,770 --> 0:03:13,660
+electrical mechanical chemical
+
+50
+0:03:13,660 --> 0:03:17,420
+hydrodynamic or any any any wave system
+
+51
+0:03:17,420 --> 0:03:21,430
+that you can think of when I got to the
+
+52
+0:03:21,430 --> 0:03:24,980
+laboratories and I ran to get there in
+
+53
+0:03:24,980 --> 0:03:25,489
+the hurry
+
+54
+0:03:25,489 --> 0:03:33,360
+I had that immediately
+
+55
+0:03:33,360 --> 0:03:39,300
+witnessed and understood by EC bless one
+
+56
+0:03:39,300 --> 0:03:43,200
+of my associate then I showed a copy of
+
+57
+0:03:43,200 --> 0:03:46,620
+my diagram to st-
+
+58
+0:03:46,620 --> 0:03:53,880
+and asked him to assemble the parts so
+
+59
+0:03:53,880 --> 0:03:58,680
+that we could proceed with the making of
+
+60
+0:03:58,680 --> 0:04:05,870
+a working model as the morning wore on
+
+61
+0:04:05,870 --> 0:04:12,180
+he was doing well and many of them
+
+62
+0:04:12,180 --> 0:04:17,299
+mounted but every 15 minutes I kept
+
+63
+0:04:17,299 --> 0:04:21,870
+walking into the lavatory and saying
+
+64
+0:04:21,870 --> 0:04:25,610
+Steve how are you doing and he said
+
+65
+0:04:25,610 --> 0:04:29,460
+Harold I am doing fine but if you will
+
+66
+0:04:29,460 --> 0:04:32,400
+just leave me alone go back in your
+
+67
+0:04:32,400 --> 0:04:36,320
+office relax put your feet on the desk
+
+68
+0:04:36,320 --> 0:04:40,740
+and maybe there will be other problems
+
+69
+0:04:40,740 --> 0:04:45,990
+of the negative feedback amplifier that
+
+70
+0:04:45,990 --> 0:04:49,669
+need to be attended to
+
+71
+0:04:49,669 --> 0:04:53,880
+well that proved to be a better piece of
+
+72
+0:04:53,880 --> 0:04:58,100
+advice and Steve intended I am sure
+
+73
+0:04:58,100 --> 0:05:04,820
+because by the end of the we had a
+
+74
+0:05:04,820 --> 0:05:09,090
+broadband negative feedback amplifier
+
+75
+0:05:09,090 --> 0:05:16,290
+working which curiously enough had as
+
+76
+0:05:16,290 --> 0:05:22,160
+much as 50 decibels of negative feedback
+
+77
+0:05:22,160 --> 0:05:28,190
+more than enough to accomplish the job
+
+78
+0:05:28,190 --> 0:05:33,360
+that I had started
+
+79
+0:05:33,360 --> 0:05:40,450
+December 1921 the negative feedback
+
+80
+0:05:40,450 --> 0:05:44,020
+amplifier works this way at the input is
+
+81
+0:05:44,020 --> 0:05:45,870
+the low-level signal you want to amplify
+
+82
+0:05:45,870 --> 0:05:48,840
+at the output is the amplified signal
+
+83
+0:05:48,840 --> 0:05:51,550
+magnified in the way you want but the
+
+84
+0:05:51,550 --> 0:05:54,130
+amplifier introduces distortion which is
+
+85
+0:05:54,130 --> 0:05:56,830
+also magnified by connecting a small
+
+86
+0:05:56,830 --> 0:05:58,680
+portion of the output back to the input
+
+87
+0:05:58,680 --> 0:06:01,690
+the distortion is canceled and the
+
+88
+0:06:01,690 --> 0:06:04,750
+signal becomes clear since the invention
+
+89
+0:06:04,750 --> 0:06:07,180
+of negative feedback Harald black has
+
+90
+0:06:07,180 --> 0:06:09,310
+received more than a dozen major awards
+
+91
+0:06:09,310 --> 0:06:11,260
+and has been named a fellow of 10
+
+92
+0:06:11,260 --> 0:06:14,290
+professional societies he still recalls
+
+93
+0:06:14,290 --> 0:06:16,270
+the day when it all began with a flash
+
+94
+0:06:16,270 --> 0:06:18,900
+of recognition more than 50 years ago
+
+95
+0:06:18,900 --> 0:06:23,560
+the flash of recognition is something
+
+96
+0:06:23,560 --> 0:06:29,350
+that I was unable to understand at the
+
+97
+0:06:29,350 --> 0:06:34,360
+time and in the 50 years that have gone
+
+98
+0:06:34,360 --> 0:06:37,660
+by and I have thought of it again and
+
+99
+0:06:37,660 --> 0:07:01,110
+again I have no explanation whatsoever
+
+100
+0:07:01,110 --> 0:07:03,170
+you
+

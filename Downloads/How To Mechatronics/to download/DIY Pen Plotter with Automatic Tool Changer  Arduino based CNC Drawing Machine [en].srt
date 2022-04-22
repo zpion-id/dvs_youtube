@@ -1,0 +1,1928 @@
+1
+0:00:06,560 --> 0:00:07,759
+hello dan here from
+
+2
+0:00:07,759 --> 0:00:09,599
+howtomechatronics.com
+
+3
+0:00:09,599 --> 0:00:11,759
+and in this video i will show you how i
+
+4
+0:00:11,759 --> 0:00:14,400
+built a cnc pen plotter or a drawing
+
+5
+0:00:14,400 --> 0:00:16,560
+machine but with one cool feature and
+
+6
+0:00:16,560 --> 0:00:18,720
+that's automatic tool change
+
+7
+0:00:18,720 --> 0:00:20,800
+in other words the machine will be able
+
+8
+0:00:20,800 --> 0:00:23,439
+to automatically change colors and so we
+
+9
+0:00:23,439 --> 0:00:26,160
+can draw really cool stuff with it
+
+10
+0:00:26,160 --> 0:00:27,920
+the construction of the machine is based
+
+11
+0:00:27,920 --> 0:00:30,560
+on my diy cnc laser engraver machine
+
+12
+0:00:30,560 --> 0:00:32,880
+from my previous video where the goal
+
+13
+0:00:32,880 --> 0:00:34,880
+was to make the simplest cnc machine
+
+14
+0:00:34,880 --> 0:00:37,040
+with minimum parts possible
+
+15
+0:00:37,040 --> 0:00:39,600
+it uses three nema 17 stepper motors for
+
+16
+0:00:39,600 --> 0:00:42,719
+the x y and z axis motion and a small
+
+17
+0:00:42,719 --> 0:00:45,280
+servo motor for the gripper the brain of
+
+18
+0:00:45,280 --> 0:00:47,600
+the cnc machine is an arduino uno board
+
+19
+0:00:47,600 --> 0:00
+in combination with a cnc shield and
+
+20
+0:00 --> 0:00:53,120
+three a4988 stepper drivers
+
+21
+0:00:53,120 --> 0:00:57,360
+the work area is fairly big 360 by 280
+
+22
+0:00:57,360 --> 0:00:59,600
+millimeters and the level of details
+
+23
+0:00:59,600 --> 0:01:02,399
+this plotter can output is in my opinion
+
+24
+0:01:02,399 --> 0:01:04,159
+quite impressive too
+
+25
+0:01:04,159 --> 0:01:06,400
+i was actually surprised how good and
+
+26
+0:01:06,400 --> 0:01:08,880
+precise the drawings came out especially
+
+27
+0:01:08,880 --> 0:01:11,920
+the ones where i used 0.6 millimeters
+
+28
+0:01:11,920 --> 0:01:13,200
+gel pen
+
+29
+0:01:13,200 --> 0:01:14,960
+nevertheless now i will explain
+
+30
+0:01:14,960 --> 0:01:16,479
+everything you need to know about
+
+31
+0:01:16,479 --> 0:01:18,479
+building a drawing machine like this
+
+32
+0:01:18,479 --> 0:01:20,720
+including how to design it connect the
+
+33
+0:01:20,720 --> 0:01:23,200
+electronics what firmware and software
+
+34
+0:01:23,200 --> 0:01:26,560
+to use and how to generate g-code for it
+
+35
+0:01:26,560 --> 0:01:28,400
+to begin with let's have a look at the
+
+36
+0:01:28,400 --> 0:01:31,119
+design of the cnc machine as i already
+
+37
+0:01:31,119 --> 0:01:33,280
+mentioned this machine is based on the
+
+38
+0:01:33,280 --> 0:01:35,200
+design of my previous cnc laser
+
+39
+0:01:35,200 --> 0:01:37,360
+engraving machine where the goal was to
+
+40
+0:01:37,360 --> 0:01:39,680
+make a very simple cnc with minimum
+
+41
+0:01:39,680 --> 0:01:41,119
+parts possible
+
+42
+0:01:41,119 --> 0:01:43,439
+the two main components here are these
+
+43
+0:01:43,439 --> 0:01:46,960
+mgn 15h linear rails together with their
+
+44
+0:01:46,960 --> 0:01:48,799
+suitable sliding blocks
+
+45
+0:01:48,799 --> 0:01:51,360
+the motion for the x and the y axis is
+
+46
+0:01:51,360 --> 0:01:54,240
+provided through gt2 belts and some gt2
+
+47
+0:01:54,240 --> 0:01:55,520
+pulleys
+
+48
+0:01:55,520 --> 0:01:58,079
+as for the z-axis we have a simple
+
+49
+0:01:58,079 --> 0:02:00,240
+reciprocating motion where the moving
+
+50
+0:02:00,240 --> 0:02:03,040
+parts slide up and down on two six
+
+51
+0:02:03,040 --> 0:02:05,439
+millimeters linear rods and suitable
+
+52
+0:02:05,439 --> 0:02:06,960
+linear bearings
+
+53
+0:02:06,960 --> 0:02:09,200
+a small hobby servo is used for gripping
+
+54
+0:02:09,200 --> 0:02:10,560
+the pen
+
+55
+0:02:10,560 --> 0:02:12,560
+a homing position is essential for this
+
+56
+0:02:12,560 --> 0:02:15,040
+pen plotter as the pen holders have a
+
+57
+0:02:15,040 --> 0:02:17,920
+specific fixed position so the machine
+
+58
+0:02:17,920 --> 0:02:19,760
+must have a starting point
+
+59
+0:02:19,760 --> 0:02:21,760
+therefore we must have a limit switches
+
+60
+0:02:21,760 --> 0:02:23,520
+for each axis
+
+61
+0:02:23,520 --> 0:02:25,920
+you can find and download this 3d model
+
+62
+0:02:25,920 --> 0:02:28,080
+as well as the stl files which are used
+
+63
+0:02:28,080 --> 0:02:30,800
+for 3d printing on the website article
+
+64
+0:02:30,800 --> 0:02:33,599
+the link is in the video description
+
+65
+0:02:33,599 --> 0:02:35,519
+so here are all the parts needed for
+
+66
+0:02:35,519 --> 0:02:37,760
+assembling this pen plotter but before
+
+67
+0:02:37,760 --> 0:02:39,440
+we do that i would like to thank
+
+68
+0:02:39,440 --> 0:02:41,920
+surfshark for sponsoring this video and
+
+69
+0:02:41,920 --> 0:02:44,160
+also explain why and how i actually use
+
+70
+0:02:44,160 --> 0:02:45,280
+this service
+
+71
+0:02:45,280 --> 0:02:47,840
+within a second of visiting any website
+
+72
+0:02:47,840 --> 0:02:50,800
+your location hardware details operating
+
+73
+0:02:50,800 --> 0:02:52,640
+system as well as all of your past
+
+74
+0:02:52,640 --> 0:02:55,680
+browsing history is immediately exposed
+
+75
+0:02:55,680 --> 0:02:58,239
+surfshark virtual private network keeps
+
+76
+0:02:58,239 --> 0:03:00,879
+your information safe by encrypting all
+
+77
+0:03:00,879 --> 0:03:02,959
+internet traffic to and from your
+
+78
+0:03:02,959 --> 0:03:05,760
+devices and ensures that your ip remains
+
+79
+0:03:05,760 --> 0:03:07,760
+hidden to make sure that nobody see what
+
+80
+0:03:07,760 --> 0:03:09,120
+you do online
+
+81
+0:03:09,120 --> 0:03:11,360
+another great reason to use a vpn is
+
+82
+0:03:11,360 --> 0:03:13,519
+because content from streaming services
+
+83
+0:03:13,519 --> 0:03
+can be restricted based on what country
+
+84
+0:03 --> 0:03:17,040
+you are in
+
+85
+0:03:17,040 --> 0:03:18,959
+with surf shark you can solve that
+
+86
+0:03:18,959 --> 0:03
+problem by simply changing your location
+
+87
+0:03 --> 0:03:24,080
+not only is this good for people who
+
+88
+0:03:24,080 --> 0:03:25,840
+want to keep up with their favorite
+
+89
+0:03:25,840 --> 0:03:28,319
+shows but it can be also a critical tool
+
+90
+0:03:28,319 --> 0:03:30,640
+for those who live in countries that
+
+91
+0:03:30,640 --> 0:03:33,760
+heavily censor or monitor its citizens
+
+92
+0:03:33,760 --> 0:03:36,080
+so if you want both protection and
+
+93
+0:03:36,080 --> 0:03:38,080
+freedom online click the link in the
+
+94
+0:03:38,080 --> 0:03:40,879
+description and use code mechatronics to
+
+95
+0:03:40,879 --> 0:03:44,159
+get 83 percent off plus four extra
+
+96
+0:03:44,159 --> 0:03:45,680
+months for free
+
+97
+0:03:45,680 --> 0:03:47,920
+surfshark offers 30 day money back
+
+98
+0:03:47,920 --> 0:03:50,720
+guarantee so there is no risk to try it
+
+99
+0:03:50,720 --> 0:03:52,720
+out for yourself
+
+100
+0:03:52,720 --> 0:03:54,560
+alright so now we can start assembling
+
+101
+0:03:54,560 --> 0:03:56,799
+the machine i started by securing the
+
+102
+0:03:56,799 --> 0:03:58,720
+base plate and the bracket for the
+
+103
+0:03:58,720 --> 0:04:01,040
+linear rail together with the help of
+
+104
+0:04:01,040 --> 0:04:02,799
+some m3 bolts
+
+105
+0:04:02,799 --> 0:04:04,560
+all of the bolts for unassembling this
+
+106
+0:04:04,560 --> 0:04:07,120
+machine are actually m3 with various
+
+107
+0:04:07,120 --> 0:04:09,920
+lengths except for a few m5 bolts needed
+
+108
+0:04:09,920 --> 0:04:12,080
+for the gt2 pulleys
+
+109
+0:04:12,080 --> 0:04:14,400
+once we have the two sides ready we can
+
+110
+0:04:14,400 --> 0:04:17,359
+secure the x-axis linear rail to them
+
+111
+0:04:17,359 --> 0:04
+with two bolts on each side
+
+112
+0:04 --> 0:04:23,199
+these amg and 15h rails provide very
+
+113
+0:04:23,199 --> 0:04:25,600
+smooth and play-free motion as their
+
+114
+0:04:25,600 --> 0:04:27,840
+sliding blocks have balls or rollers
+
+115
+0:04:27,840 --> 0:04:29,040
+inside them
+
+116
+0:04:29,040 --> 0:04:31,199
+however before installing them it's a
+
+117
+0:04:31,199 --> 0:04:33,440
+good idea to clean and grease them well
+
+118
+0:04:33,440 --> 0:04:35,600
+in order to work properly
+
+119
+0:04:35,600 --> 0:04:38,240
+next the y-axis rail should go on top of
+
+120
+0:04:38,240 --> 0:04:40,800
+the x-axis sliding block and for
+
+121
+0:04:40,800 --> 0:04:42,720
+securing them together we will use the
+
+122
+0:04:42,720 --> 0:04:44,720
+central mounting plate
+
+123
+0:04:44,720 --> 0:04:47,040
+first we can install the y axis rail to
+
+124
+0:04:47,040 --> 0:04:49,680
+the central plate using three bolts
+
+125
+0:04:49,680 --> 0:04
+then we can install the two nema 17
+
+126
+0:04 --> 0:04:53,360
+stepper motors
+
+127
+0:04:53,360 --> 0:04:55,680
+one goes on the top side and the other
+
+128
+0:04:55,680 --> 0:04:58,320
+goes at the bottom side of the plate
+
+129
+0:04:58,320 --> 0:05:00,800
+as i mentioned earlier we need some m5
+
+130
+0:05:00,800 --> 0:05:03,199
+bolts and nuts for installing the gt2
+
+131
+0:05:03,199 --> 0:05:04,800
+pulleys in place
+
+132
+0:05:04,800 --> 0:05:07,039
+the two pulleys here are actually idler
+
+133
+0:05:07,039 --> 0:05:08,960
+pulleys which are used for providing
+
+134
+0:05:08,960 --> 0:05:12,080
+grip for the x-axis gt2 belt and the
+
+135
+0:05:12,080 --> 0:05:14,160
+tooth pulley which goes on the stepper
+
+136
+0:05:14,160 --> 0:05:15,440
+motor
+
+137
+0:05:15,440 --> 0:05:17,520
+as for installing that pulley we should
+
+138
+0:05:17,520 --> 0:05:19,280
+measure and level it according to the
+
+139
+0:05:19,280 --> 0:05:20,960
+idler pulleys
+
+140
+0:05:20,960 --> 0:05:23,919
+as for the y-axis we only need one idler
+
+141
+0:05:23,919 --> 0:05
+pulley which goes on the other side of
+
+142
+0:05 --> 0:05:28,560
+the rail as the belt for this axis will
+
+143
+0:05:28,560 --> 0:05:30,720
+be installed in a loop
+
+144
+0:05:30,720 --> 0:05:32,960
+okay next is the marriage or connecting
+
+145
+0:05:32,960 --> 0:05:34,960
+the two axes together
+
+146
+0:05:34,960 --> 0:05:36,960
+we simply do that by securing the
+
+147
+0:05:36,960 --> 0:05:39,520
+central plate to the x-axis sliding
+
+148
+0:05:39,520 --> 0:05:42,320
+block using 4 m3 bolts
+
+149
+0:05:42,320 --> 0:05:45,039
+with this the machine got its main shape
+
+150
+0:05:45,039 --> 0:05:47,520
+and now the y-axis sliding block can
+
+151
+0:05:47,520 --> 0:05:50,400
+reach any position in the work area
+
+152
+0:05:50,400 --> 0:05:52,800
+we can continue with assembling the pen
+
+153
+0:05:52,800 --> 0:05:54,400
+lifter mechanism
+
+154
+0:05:54,400 --> 0:05:57,280
+this mechanism is composed of two parts
+
+155
+0:05:57,280 --> 0:05:59,919
+one fixed that's bolted to the y-axis
+
+156
+0:05:59,919 --> 0:06
+sliding block and the other one that
+
+157
+0:06 --> 0:06:04,400
+will be sliding up and down
+
+158
+0:06:04,400 --> 0:06:07,039
+once the fixed part is secured in place
+
+159
+0:06:07,039 --> 0:06:09,600
+we can install the z-axis stepper motor
+
+160
+0:06:09,600 --> 0:06:10,479
+on it
+
+161
+0:06:10,479 --> 0:06:13,360
+this stepper is also nema 17 but it's
+
+162
+0:06:13,360 --> 0:06:16,160
+shorter 23 millimeters instead of 40
+
+163
+0:06:16,160 --> 0:06:19,280
+millimeters in order to cut on weight
+
+164
+0:06:19,280 --> 0:06:21,440
+then we can install the lifter which is
+
+165
+0:06:21,440 --> 0:06:23,120
+simply attached to the shaft of the
+
+166
+0:06:23,120 --> 0:06:24,160
+stepper
+
+167
+0:06:24,160 --> 0:06:26,560
+the grub screw that i hit was a bit long
+
+168
+0:06:26,560 --> 0:06:29,360
+for it so i put the lifter to the shaft
+
+169
+0:06:29,360 --> 0:06:31,919
+without it but its hole has a shape as
+
+170
+0:06:31,919 --> 0:06:33,919
+the shaft so the motion will be
+
+171
+0:06:33,919 --> 0:06:35,440
+transferred well
+
+172
+0:06:35,440 --> 0:06:37,520
+i actually ended up modifying this part
+
+173
+0:06:37,520 --> 0:06:39,759
+a little bit but no worries you will get
+
+174
+0:06:39,759 --> 0:06:41,600
+the updated version of it in the
+
+175
+0:06:41,600 --> 0:06:43,600
+download files
+
+176
+0:06:43,600 --> 0:06:46,080
+next i inserted the four linear bearings
+
+177
+0:06:46,080 --> 0:06:48,800
+into the sliding part and secured the
+
+178
+0:06:48,800 --> 0:06:51,120
+micro servo in place
+
+179
+0:06:51,120 --> 0:06:53,360
+then i also secured the pen porter
+
+180
+0:06:53,360 --> 0:06:56,560
+holder part right next to the servo
+
+181
+0:06:56,560 --> 0:06:58,800
+for connecting the fixed and the sliding
+
+182
+0:06:58,800 --> 0:07:01,440
+parts together first we need to pass the
+
+183
+0:07:01,440 --> 0:07:04,479
+servo wire to a hole in the fixed part
+
+184
+0:07:04,479 --> 0:07:07,199
+and then insert the six millimeters rods
+
+185
+0:07:07,199 --> 0:07:09,759
+from the top through the bearings and
+
+186
+0:07:09,759 --> 0:07:11,919
+through the fixed part hole
+
+187
+0:07:11,919 --> 0:07:13,840
+while installing the rod we should also
+
+188
+0:07:13,840 --> 0:07:16,400
+insert a spring in between the fixed and
+
+189
+0:07:16,400 --> 0:07:19,039
+the sliding part in a way that it pushes
+
+190
+0:07:19,039 --> 0:07:21,520
+the sliding part down this will help the
+
+191
+0:07:21,520 --> 0:07:23,280
+pen to have a better contact with the
+
+192
+0:07:23,280 --> 0:07:24,800
+work surface
+
+193
+0:07:24,800 --> 0:07:26,960
+at the bottom side of the fixed part
+
+194
+0:07:26,960 --> 0:07:28,880
+there are openings where we can insert
+
+195
+0:07:28,880 --> 0:07:31,520
+m3 nuts and use them for securing these
+
+196
+0:07:31,520 --> 0:07:34,240
+six millimeters rods in place
+
+197
+0:07:34,240 --> 0:07:37,039
+next we can assemble the pen holder unit
+
+198
+0:07:37,039 --> 0:07:39,360
+that goes on one side of the machine
+
+199
+0:07:39,360 --> 0:07:41,680
+it's composed of top and a bottom part
+
+200
+0:07:41,680 --> 0:07:44,240
+with openings that can accommodate up to
+
+201
+0:07:44,240 --> 0:07:45,919
+12 pence
+
+202
+0:07:45,919 --> 0:07:48,639
+i continued with installing the belts
+
+203
+0:07:48,639 --> 0:07:50,639
+first we need to measure how much length
+
+204
+0:07:50,639 --> 0:07:53,919
+we need and cut it approximately to size
+
+205
+0:07:53,919 --> 0:07:55,840
+for attaching the belt to the sliding
+
+206
+0:07:55,840 --> 0:07:58,960
+block i made this cool belt connectors
+
+207
+0:07:58,960 --> 0:08:01,039
+where the belt goes around a hollow
+
+208
+0:08:01,039 --> 0:08:03,520
+shaft and in between two walls that
+
+209
+0:08:03,520 --> 0:08:05,919
+doesn't allow the belt to move
+
+210
+0:08:05,919 --> 0:08:08,240
+using an m3 bolt we can secure the first
+
+211
+0:08:08,240 --> 0:08:10,639
+connector on one side of the block and
+
+212
+0:08:10,639 --> 0:08:12,560
+repeat the same procedure for the other
+
+213
+0:08:12,560 --> 0:08:13,680
+side
+
+214
+0:08:13,680 --> 0:08:15,520
+we can move the connectors along these
+
+215
+0:08:15,520 --> 0:08:18,240
+slots here and so tension the belt as
+
+216
+0:08:18,240 --> 0:08:19,919
+much as we want
+
+217
+0:08:19,919 --> 0:08:22,720
+as for the x-axis the belt will go in a
+
+218
+0:08:22,720 --> 0:08:25,440
+straight line from one to the other side
+
+219
+0:08:25,440 --> 0:08:27,280
+while passing through the pulleys in a
+
+220
+0:08:27,280 --> 0:08:29,840
+way that they will provide tension or
+
+221
+0:08:29,840 --> 0:08:32,159
+grip to the stepper motor pulley
+
+222
+0:08:32,159 --> 0:08:34,800
+for tensioning the x-axis built i made
+
+223
+0:08:34,800 --> 0:08:36,959
+these connectors that have a shape as
+
+224
+0:08:36,959 --> 0:08:39,760
+the belt and so we can tie them to the
+
+225
+0:08:39,760 --> 0:08
+sides of the machine
+
+226
+0:08 --> 0:08:44,640
+next we can install the limit switches
+
+227
+0:08:44,640 --> 0:08:46,720
+i actually ended up lowering a bit this
+
+228
+0:08:46,720 --> 0:08:49,839
+z-axis limit switch and as for the x and
+
+229
+0:08:49,839 --> 0:08:52,399
+the y limit switches i used the ones
+
+230
+0:08:52,399 --> 0:08:54,800
+from my previous project which already
+
+231
+0:08:54,800 --> 0:08:57,040
+had wires connected to them
+
+232
+0:08:57,040 --> 0:08:58,959
+with this the mechanical part of this
+
+233
+0:08:58,959 --> 0:09:01,440
+machine is ready and now we can move on
+
+234
+0:09:01,440 --> 0:09:03,839
+with connecting the electronics
+
+235
+0:09:03,839 --> 0:09:05,920
+as i mentioned we are using an arduino
+
+236
+0:09:05,920 --> 0:09:08,560
+uno board in combination with a cnc
+
+237
+0:09:08,560 --> 0:09:09,959
+shield and three
+
+238
+0:09:09,959 --> 0:09:12,640
+a4988 stepper drivers
+
+239
+0:09:12,640 --> 0:09:14,240
+for attaching the arduino board to the
+
+240
+0:09:14,240 --> 0:09:16,640
+machine i made an additional 3d printed
+
+241
+0:09:16,640 --> 0:09:19,360
+part that goes on the side panel
+
+242
+0:09:19,360 --> 0:09:21,839
+i secured the arduino board with two m3
+
+243
+0:09:21,839 --> 0:09:24,399
+bolts and on top of it i inserted the
+
+244
+0:09:24,399 --> 0:09:26,240
+cnc shield
+
+245
+0:09:26,240 --> 0:09:28,640
+here we need to insert three jumpers for
+
+246
+0:09:28,640 --> 0:09:30,959
+each stepper driver in order to select
+
+247
+0:09:30,959 --> 0:09:33,839
+16 stepped resolution and then insert
+
+248
+0:09:33,839 --> 0:09:36,480
+the stepper drivers in place
+
+249
+0:09:36,480 --> 0:09:38,399
+then we can connect the motors to the
+
+250
+0:09:38,399 --> 0:09:40,320
+cnc appropriately
+
+251
+0:09:40,320 --> 0:09:42,160
+for connecting the micro limit switches
+
+252
+0:09:42,160 --> 0:09:44,480
+in place i simply soldered wires
+
+253
+0:09:44,480 --> 0:09:47,120
+directly to them and on the other side i
+
+254
+0:09:47,120 --> 0:09:49,440
+soldered female pin headers which i got
+
+255
+0:09:49,440 --> 0:09:52,080
+them from some jump wires
+
+256
+0:09:52,080 --> 0:09:54,480
+as for the servo motor i used some servo
+
+257
+0:09:54,480 --> 0:09:56,640
+extension cables so that it can reach
+
+258
+0:09:56,640 --> 0:09:58,320
+the cnc shield
+
+259
+0:09:58,320 --> 0:10:00,240
+for powering the machine we need 12
+
+260
+0:10:00,240 --> 0:10
+volts power supply
+
+261
+0:10 --> 0:10:04,320
+nevertheless here's a circuit diagram of
+
+262
+0:10:04,320 --> 0:10:07,200
+how everything needs to be connected
+
+263
+0:10:07,200 --> 0:10:09,120
+there are a few final touches that needs
+
+264
+0:10:09,120 --> 0:10:11,360
+to be done in order to complete this pin
+
+265
+0:10:11,360 --> 0:10:12,480
+plotter
+
+266
+0:10:12,480 --> 0:10:14,640
+here i'm installing the pen gripper
+
+267
+0:10:14,640 --> 0:10:16,480
+which is simply attached to the servo
+
+268
+0:10:16,480 --> 0:10:19,120
+motor through the servo horn
+
+269
+0:10:19,120 --> 0:10:21,200
+for managing the cables from the pen
+
+270
+0:10:21,200 --> 0:10:23,839
+plotter i used the dining table mat
+
+271
+0:10:23,839 --> 0:10:26,560
+which material is firm but flexible so
+
+272
+0:10:26,560 --> 0:10:28,720
+it was perfect for the job
+
+273
+0:10:28,720 --> 0:10:30,560
+with this our drawing machine is
+
+274
+0:10:30,560 --> 0:10:33,120
+actually completed however there are a
+
+275
+0:10:33,120 --> 0:10:35,440
+few things that we should note here
+
+276
+0:10:35,440 --> 0:10
+as the y-axis rail is unsupported on one
+
+277
+0:10 --> 0:10:41,040
+side and the 3d printing pla material
+
+278
+0:10:41,040 --> 0:10:43,600
+itself is not that rigid when fully
+
+279
+0:10:43,600 --> 0:10:45,839
+extended the pin lifter was four
+
+280
+0:10:45,839 --> 0:10:47,839
+millimeters lower compared to the
+
+281
+0:10:47,839 --> 0:10:49,440
+supported side
+
+282
+0:10:49,440 --> 0:10:51,839
+that's way too much play but i managed
+
+283
+0:10:51,839 --> 0:10:54,480
+to solve that issue by lifting the front
+
+284
+0:10:54,480 --> 0:10:56,800
+side of the machine a little bit
+
+285
+0:10:56,800 --> 0:10:58,959
+in this way i reduced the difference to
+
+286
+0:10:58,959 --> 0:11:01,920
+around 1 millimeter which was acceptable
+
+287
+0:11:01,920 --> 0:11:04,079
+if you plan to use these big rails i
+
+288
+0:11:04,079 --> 0:11:06,320
+would definitely suggest to support the
+
+289
+0:11:06,320 --> 0:11:09,440
+y-axis rail on the other side as well
+
+290
+0:11:09,440 --> 0:11:11,760
+another issue is the pin holder because
+
+291
+0:11:11,760 --> 0:11:14,160
+the pins don't stay in place well in
+
+292
+0:11:14,160 --> 0:11:15,279
+this way
+
+293
+0:11:15,279 --> 0:11:17,360
+here i would suggest making the top
+
+294
+0:11:17,360 --> 0:11:19,760
+openings bigger and add some soft
+
+295
+0:11:19,760 --> 0:11:22,240
+material on the sides so that the pans
+
+296
+0:11:22,240 --> 0:11:24,560
+can stay in place while being easy for
+
+297
+0:11:24,560 --> 0:11:26,959
+the machine to insert them
+
+298
+0:11:26,959 --> 0:11:29,120
+finally we can insert a board under the
+
+299
+0:11:29,120 --> 0:11:31,360
+whole machine so that we get a nice and
+
+300
+0:11:31,360 --> 0:11:32,720
+flat surface
+
+301
+0:11:32,720 --> 0:11:35,279
+and that's it our machine is completed
+
+302
+0:11:35,279 --> 0:11:37,680
+but what's left to do now is to give
+
+303
+0:11:37,680 --> 0:11:41,279
+life to it or make it a real cnc machine
+
+304
+0:11:41,279 --> 0:11:43,360
+for that purpose we need to install a
+
+305
+0:11:43,360 --> 0:11:45,600
+firmware to the arduino for controlling
+
+306
+0:11:45,600 --> 0:11:48,320
+the motion of the cnc machine and we
+
+307
+0:11:48,320 --> 0:11:50,240
+need a control software through which we
+
+308
+0:11:50,240 --> 0:11:52,399
+will send gcodes and tell the machine
+
+309
+0:11:52,399 --> 0:11:53,760
+what to do
+
+310
+0:11:53,760 --> 0:11:56,240
+the most popular choice for diy cnc
+
+311
+0:11:56,240 --> 0:11:58,320
+machines is the open source gerbil
+
+312
+0:11:58,320 --> 0:11:59,519
+firmware
+
+313
+0:11:59,519 --> 0:12:01,680
+however for this pin plotter we need a
+
+314
+0:12:01,680 --> 0:12
+modified version of it which can control
+
+315
+0:12 --> 0:12:06,800
+the servo motor the modified version is
+
+316
+0:12:06,800 --> 0:12:09,440
+called gerbil servo which alters the
+
+317
+0:12:09,440 --> 0:12:12,079
+default pwm frequency of the spindle
+
+318
+0:12:12,079 --> 0:12:15,360
+control pin or digital pin number 11
+
+319
+0:12:15,360 --> 0:12:18,399
+from one kilohertz to 50 hertz which is
+
+320
+0:12:18,399 --> 0:12:20,320
+needed for controlling this type of
+
+321
+0:12:20,320 --> 0:12:22,240
+servo motors
+
+322
+0:12:22,240 --> 0:12:24,399
+once we download and install this gerbil
+
+323
+0:12:24,399 --> 0:12:26,880
+firmware into the library folder of our
+
+324
+0:12:26,880 --> 0:12:29,839
+arduino ide we will also need to modify
+
+325
+0:12:29,839 --> 0:12:32,959
+its config.h file in order to enable
+
+326
+0:12:32,959 --> 0:12:35,440
+tree access homing instead of its
+
+327
+0:12:35,440 --> 0:12:38,320
+default to axis homing and of course
+
+328
+0:12:38,320 --> 0:12:41,440
+upload gerbil to the arduino
+
+329
+0:12:41,440 --> 0:12:43,760
+as for the control software we will use
+
+330
+0:12:43,760 --> 0:12:46,160
+the gerbil plotter which is a dedicated
+
+331
+0:12:46,160 --> 0:12:48,320
+software for controlling plotters and
+
+332
+0:12:48,320 --> 0:12:50,480
+includes a graphic converter through
+
+333
+0:12:50,480 --> 0:12:52,959
+which we can generate g-code from our
+
+334
+0:12:52,959 --> 0:12:54,800
+images or graphics
+
+335
+0:12:54,800 --> 0:12:56,800
+this one is also open source which can
+
+336
+0:12:56,800 --> 0:12:59,680
+be downloaded from github here the first
+
+337
+0:12:59,680 --> 0:13:01,519
+thing that we need to do is to connect
+
+338
+0:13:01,519 --> 0:13:03,519
+our arduino board to the software
+
+339
+0:13:03,519 --> 0:13:06,320
+through the suitable com port once we
+
+340
+0:13:06,320 --> 0:13:08,320
+click the kill alarm button on the
+
+341
+0:13:08,320 --> 0:13:10,800
+serial monitor we'll get a list of our
+
+342
+0:13:10,800 --> 0:13:13,279
+current gerbil parameters
+
+343
+0:13:13,279 --> 0:13:14,560
+we need to change some of these
+
+344
+0:13:14,560 --> 0:13:17,120
+parameters according to our machine
+
+345
+0:13:17,120 --> 0:13:18,720
+the first thing that we should adjust
+
+346
+0:13:18,720 --> 0:13:21,360
+here is the travel resolution or the
+
+347
+0:13:21,360 --> 0:13:23,760
+steps per millimeter value
+
+348
+0:13:23,760 --> 0:13:26,079
+these values indicate how many steps the
+
+349
+0:13:26,079 --> 0:13:28,639
+motors should take in order to move one
+
+350
+0:13:28,639 --> 0:13:29,920
+millimeter
+
+351
+0:13:29,920 --> 0:13:32,160
+this depends on the type of the stepper
+
+352
+0:13:32,160 --> 0:13:34,720
+motor that we have the selected step
+
+353
+0:13:34,720 --> 0:13:37,200
+resolution and the motion transmission
+
+354
+0:13:37,200 --> 0:13:40,079
+in this case the gt2 belt and the pulley
+
+355
+0:13:40,079 --> 0:13:42,720
+for our machine a value of 80 steps per
+
+356
+0:13:42,720 --> 0:13:45,199
+millimeter is needed for the x and the y
+
+357
+0:13:45,199 --> 0:13:46,959
+axis to be accurate
+
+358
+0:13:46,959 --> 0:13:50,160
+as for the z-axis i set a value of 40
+
+359
+0:13:50,160 --> 0:13:52,560
+which is actually not accurate in terms
+
+360
+0:13:52,560 --> 0:13:54,959
+of real motion but we cannot achieve
+
+361
+0:13:54,959 --> 0:13:57,120
+that anyway with our reciprocating
+
+362
+0:13:57,120 --> 0:13
+motion
+
+363
+0:13 --> 0:14:00,240
+we should also set the parameter number
+
+364
+0:14:00,240 --> 0:14
+23 to 0 which describes where our limit
+
+365
+0:14 --> 0:14:05,920
+switches are located
+
+366
+0:14:05,920 --> 0:14:09,040
+set the maximum feed rate acceleration
+
+367
+0:14:09,040 --> 0:14:11,120
+maximum travel speed and set the
+
+368
+0:14:11,120 --> 0:14:14,480
+parameter number 1 to a value of 255
+
+369
+0:14:14,480 --> 0:14:16,560
+which enables the steppers to be active
+
+370
+0:14:16,560 --> 0:14:17,680
+all the time
+
+371
+0:14:17,680 --> 0:14:19,360
+however we should note that with this
+
+372
+0:14:19,360 --> 0:14:22,240
+being enabled especially for the z-axis
+
+373
+0:14:22,240 --> 0:14:24,720
+taper we should adjust the current limit
+
+374
+0:14:24,720 --> 0:14:27,120
+of the driver to minimum because the
+
+375
+0:14:27,120 --> 0:14:29,279
+shorter nema 70 stepper motor can
+
+376
+0:14:29,279 --> 0:14:31,839
+quickly get hot nevertheless for more
+
+377
+0:14:31,839 --> 0:14:34,160
+details about configuring the gerbil you
+
+378
+0:14:34,160 --> 0:14:36,320
+can always check the website article
+
+379
+0:14:36,320 --> 0:14
+where you can find links to more
+
+380
+0:14 --> 0:14:39,440
+resources
+
+381
+0:14:39,440 --> 0:14:41,040
+ok so let's take a look at the
+
+382
+0:14:41,040 --> 0:14:43,519
+controller setup now there are so many
+
+383
+0:14:43,519 --> 0:14:45,920
+options to adjust here that it can be a
+
+384
+0:14:45,920 --> 0:14:48,399
+bit intimidating at the beginning now i
+
+385
+0:14:48,399 --> 0:14:49,920
+will quickly talk about the most
+
+386
+0:14:49,920 --> 0:14:51,839
+important parameters and for more
+
+387
+0:14:51,839 --> 0:14:53,839
+details as always you can check the
+
+388
+0:14:53,839 --> 0:14:55,600
+website article
+
+389
+0:14:55,600 --> 0:14:58,160
+here first we need to set the pen up and
+
+390
+0:14:58,160 --> 0:15:01,199
+down translation to be the z-axis and
+
+391
+0:15:01,199 --> 0:15:04,639
+set values for the up and down position
+
+392
+0:15:04,639 --> 0:15:07,440
+in the tool table tab we can define the
+
+393
+0:15:07,440 --> 0:15
+pins color and their positions
+
+394
+0:15 --> 0:15
+we should note here that these values
+
+395
+0:15 --> 0:15:14,880
+are for the g53 or the machine
+
+396
+0:15:14,880 --> 0:15:16,639
+coordinate system
+
+397
+0:15:16,639 --> 0:15:18,480
+this means that they are defined by the
+
+398
+0:15:18,480 --> 0:15:20,240
+hard limit switches that the machine
+
+399
+0:15:20,240 --> 0:15:23,040
+have and the maximum travel that we set
+
+400
+0:15:23,040 --> 0:15:25,760
+in the gerbil parameters earlier
+
+401
+0:15:25,760 --> 0:15:27,920
+for defining the position of each pen i
+
+402
+0:15:27,920 --> 0:15:30,880
+used the offset values which are 0 for
+
+403
+0:15:30,880 --> 0:15:34,639
+the x and 277 for the y-axis in this
+
+404
+0:15:34,639 --> 0:15:35,600
+case
+
+405
+0:15:35,600 --> 0:15:37,920
+these values position the gripper in
+
+406
+0:15:37,920 --> 0:15:40,320
+front of the first pen and then i just
+
+407
+0:15:40,320 --> 0:15:43,360
+had to define the y values for each pen
+
+408
+0:15:43,360 --> 0:15:46,079
+which is 21.7 millimeters in the
+
+409
+0:15:46,079 --> 0:15:48,720
+negative direction for each consecutive
+
+410
+0:15:48,720 --> 0:15:49,519
+pen
+
+411
+0:15:49,519 --> 0:15:51,680
+here we can also adjust the feed rate
+
+412
+0:15:51,680 --> 0:15:53,680
+and the up and down position for each
+
+413
+0:15:53,680 --> 0:15:55,680
+pen individually in case there are
+
+414
+0:15:55,680 --> 0:15:57,440
+different pens
+
+415
+0:15:57,440 --> 0:15:59,759
+next in the tool change tab we should
+
+416
+0:15:59,759 --> 0:16:02,759
+select the perform tool change on
+
+417
+0:16:02,759 --> 0:16
+txm06 which tells the machine to do the
+
+418
+0:16 --> 0:16:08,240
+tool change when this command appears in
+
+419
+0:16:08,240 --> 0:16:09,759
+the g-code
+
+420
+0:16:09,759 --> 0:16:12,639
+the x-value after the letter t indicates
+
+421
+0:16:12,639 --> 0:16:15,600
+the tool number from the tool table
+
+422
+0:16:15,600 --> 0:16:17,920
+to perform the tool change we must
+
+423
+0:16:17,920 --> 0:16:20,720
+include a select and remove scripts
+
+424
+0:16:20,720 --> 0:16:24,160
+which are executed when this tx m06
+
+425
+0:16:24,160 --> 0:16:25,519
+command appear
+
+426
+0:16:25,519 --> 0:16:27,920
+in these scripts we define the movement
+
+427
+0:16:27,920 --> 0:16:30,079
+of the gripper in order to take or
+
+428
+0:16:30,079 --> 0:16:31,600
+remove a tool
+
+429
+0:16:31,600 --> 0:16:33,839
+for selecting a pen the gripper is first
+
+430
+0:16:33,839 --> 0:16:35,759
+positioned in the front of the actual
+
+431
+0:16:35,759 --> 0:16:38,560
+pin in absolute machine coordinates the
+
+432
+0:16:38,560 --> 0:16:41,279
+one defined in the tool table
+
+433
+0:16:41,279 --> 0:16:43,839
+then the servo opens the gripper it
+
+434
+0:16:43,839 --> 0:16:46,800
+moves up four more millimeters then move
+
+435
+0:16:46,800 --> 0:16:49,440
+towards the pen in x direction and a
+
+436
+0:16:49,440 --> 0:16:51,920
+little bit in y direction
+
+437
+0:16:51,920 --> 0:16:55,040
+then the gripper closes lifts the pen up
+
+438
+0:16:55,040 --> 0:16:57,040
+and move back to the same position
+
+439
+0:16:57,040 --> 0:16:59,600
+before executing the script
+
+440
+0:16:59,600 --> 0:17:02,079
+for removing the pen the script steps
+
+441
+0:17:02,079 --> 0:17:04,799
+are the same but in reverse order
+
+442
+0:17:04,799 --> 0:17:06,880
+of course all of these parameters depend
+
+443
+0:17:06,880 --> 0:17:09,760
+on the pens themself their dimension and
+
+444
+0:17:09,760 --> 0:17:12,079
+the dimension of the holders
+
+445
+0:17:12,079 --> 0:17:14,559
+the only way to get this process correct
+
+446
+0:17:14,559 --> 0:17:17,600
+is by testing and correcting the values
+
+447
+0:17:17,600 --> 0:17:19,360
+finally let's take a look how we can
+
+448
+0:17:19,360 --> 0:17:21,839
+generate g-codes from images with this
+
+449
+0:17:21,839 --> 0:17:23,919
+gerbil plotter software
+
+450
+0:17:23,919 --> 0:17:26,480
+once we load an image we can click on
+
+451
+0:17:26,480 --> 0:17:29,600
+preview with colors from table so we can
+
+452
+0:17:29,600 --> 0:17:32,160
+see how the image would look like from
+
+453
+0:17:32,160 --> 0:17:34,559
+the image correction tab then we can
+
+454
+0:17:34,559 --> 0:17:37,600
+play with the brightness contrast gamma
+
+455
+0:17:37,600 --> 0:17:39,760
+and saturation values in order to
+
+456
+0:17:39,760 --> 0:17:42,720
+achieve colors similar to the real image
+
+457
+0:17:42,720 --> 0:17:45,520
+or the one that we actually want
+
+458
+0:17:45,520 --> 0:17:47,360
+we can set the output size in
+
+459
+0:17:47,360 --> 0:17
+millimeters and in the color replacing
+
+460
+0:17 --> 0:17:52,320
+tab we can remove the colors that we
+
+461
+0:17:52,320 --> 0:17:53,840
+don't want to use
+
+462
+0:17:53,840 --> 0:17:56,080
+for example we can remove the apricot
+
+463
+0:17:56,080 --> 0:17
+color which is the white color in the
+
+464
+0:17 --> 0:17:59,039
+image
+
+465
+0:17:59,039 --> 0:18:01,600
+then we can just click on create g-code
+
+466
+0:18:01,600 --> 0:18:04,960
+button and the g-code will be generated
+
+467
+0:18:04,960 --> 0:18:07,520
+we can also generate g-codes from svg
+
+468
+0:18:07,520 --> 0:18:10,160
+files which we can just drag and drop
+
+469
+0:18:10,160 --> 0:18:12,480
+them and the software will generate the
+
+470
+0:18:12,480 --> 0:18:14,640
+g-code right away
+
+471
+0:18:14,640 --> 0:18:16,799
+before we start the plotting we should
+
+472
+0:18:16,799 --> 0:18:19,120
+set the zero position wherever we want
+
+473
+0:18:19,120 --> 0:18
+in the work area and then click the play
+
+474
+0:18 --> 0:18:23,120
+button
+
+475
+0:18:23,120 --> 0:18:25,600
+the machine will start working and so we
+
+476
+0:18:25,600 --> 0:18:28,559
+can enjoy watching it making magic i
+
+477
+0:18:28,559 --> 0:18:30,240
+hope you enjoyed this video and learned
+
+478
+0:18:30,240 --> 0:18:32,640
+something new if you have any questions
+
+479
+0:18:32,640 --> 0:18:34,480
+feel free to ask them in the comment
+
+480
+0:18:34,480 --> 0:18:37,280
+section below or on the website article
+
+481
+0:18:37,280 --> 0:18:39,520
+and as always for more tutorials and
+
+482
+0:18:39,520 --> 0:18:43,840
+projects visit how to mechatronics.
+

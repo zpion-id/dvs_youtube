@@ -1,0 +1,868 @@
+1
+0:00:00,030 --> 0:00:02,310
+dapatkah komputer membuat wajah yang benar-benar unik
+
+2
+0:00:02,310 --> 0:00:04,680
+dan realistis jenis
+
+3
+0:00:04,680 --> 0:00:07,379
+fitur apa yang akan kita pelajari untuk mengetahuinya Saya
+
+4
+0:00:07,379 --> 0:00:09,420
+membutuhkan kumpulan data besar dengan banyak wajah
+
+5
+0:00:09,420 --> 0:00:12,660
+Saya memutuskan untuk menggunakan 1.700 wajah dari
+
+6
+0:00:12,660 --> 0:00:14,820
+buku tahunan sekolah menengah saya ini adalah
+
+7
+0:00:14,820 --> 0:00:16,529
+kumpulan data yang bagus karena semua orang  telah berpose dengan
+
+8
+0:00:16,529 --> 0:00:18,180
+cara yang sama di depan
+
+9
+0:00:18,180 --> 0:00:20,550
+latar belakang yang sama sisi negatifnya adalah
+
+10
+0:00:20,550 --> 0:00:22,619
+semua orang sudah remaja jadi kita tidak
+
+11
+0:00:22,619 --> 0:00:29,070
+akan mendapatkan banyak kerutan atau kebotakan di wajah.
+
+12
+0:00:29,070 --> 0:00:31,170
+penjelasan cukup klik di sini untuk
+
+13
+0:00:31,170 --> 0:00:33,600
+melompat ke hasil baik-baik saja jadi mari kita
+
+14
+0:00:33,600 --> 0:00:36,210
+bicara tentang autoencoder autoencoder
+
+15
+0:00:36,210 --> 0:00:38,370
+hanyalah transformasi yang mencoba
+
+16
+0:00:38,370 --> 0:00:40,739
+memetakan sampel dari satu ruang ke ruang yang sama
+
+17
+0:00:40,739 --> 0:00:42,600
+sehingga Anda mungkin bertanya pada diri sendiri
+
+18
+0:00:42,600 --> 0:00:44,910
+mengapa itu berguna Saya tidak mengerti caranya
+
+19
+0:00:44,910 --> 0:00:47,219
+itu berbeda dari identitas,
+
+20
+0:00:47,219 --> 0:00:49,230
+idenya adalah untuk mencoba memeras
+
+21
+0:00:49,230 --> 0:00:50,760
+ruang dimensi tinggi melalui
+
+22
+0:00:50,760 --> 0:00:52,980
+hambatan dimensi yang lebih rendah untuk melihat seberapa baik
+
+23
+0:00:52,980 --> 0:00:54,710
+ia dapat merekonstruksi sampel asli
+
+24
+0:00:54,710 --> 0:00:57,690
+dalam hal ini ada pembuat enkode dan  d
+
+25
+0:00:57,690 --> 0:00:59,579
+jaringan decoder yang dapat Anda anggap
+
+26
+0:00:59,579 --> 0:01:01,590
+sebagai kotak hitam yang melakukan perhitungan rumit
+
+27
+0:01:01,590 --> 0:01:04,470
+untuk Anda dengan gambar sangat mirip dengan
+
+28
+0:01:04,470 --> 0:01:06,930
+kompresi JPEG Anda dapat
+
+29
+0:01:06,930 --> 0:01:09,030
+kehilangan banyak dimensi yang merupakan
+
+30
+0:01:09,030 --> 0:01:11,070
+ukuran file tetapi masih merekonstruksi
+
+31
+0:01:11,070 --> 0:01:13,170
+aslinya hanya dengan sedikit  kehilangan
+
+32
+0:01:13,170 --> 0:01:15,630
+kualitas mari kita lihat contoh JPEG
+
+33
+0:01:15,630 --> 0:01:18,150
+Anda mungkin bahkan tidak dapat melihat penurunan kualitas
+
+34
+0:01:18,150 --> 0:01:20,220
+tetapi ini sudah dikompresi 14
+
+35
+0:01:20,220 --> 0:01:22,520
+kali lebih kecil dari ukuran asli mentah
+
+36
+0:01:22,520 --> 0:01:24,840
+tetapi perhatikan apa yang terjadi saat kami
+
+37
+0:01:24,840 --> 0:01:30,960
+mengurangi dimensi
+
+38
+0:01:30,960 --> 0:01:34,590
+[Musik
+
+39
+0:01:34,590 --> 0:01:37,210
+] kualitasnya menurun tetapi itu  masih dapat
+
+40
+0:01:37,210 --> 0:01:39,730
+dikenali jadi mari kita bandingkan
+
+41
+0:01:39,730 --> 0:01:41,550
+dengan encoder otomatis yang akan kita gunakan,
+
+42
+0:01:41,550 --> 0:01:44,530
+kita mulai dengan gambar
+
+43
+0:01:44,530 --> 0:01:47,680
+dengan lebar 144 piksel dan tinggi 192 piksel dengan
+
+44
+0:01:47,680 --> 0:01:50,860
+tiga saluran warna yang berukuran sekitar 83.000
+
+45
+0:01:50,860 --> 0:01:52,900
+dimensi dan kita akan
+
+46
+0:01:52,900 --> 0:01:56,020
+mempersempitnya hingga hanya 80  itu lebih dari
+
+47
+0:01:56,020 --> 0:01:58,720
+seribu kali kompresi tapi bagaimana
+
+48
+0:01:58,720 --> 0:02:00,700
+mungkin kita bisa mengharapkan wajah tampak layak
+
+49
+0:02:00,700 --> 0:02:03,220
+dengan pengurangan sebanyak ini kita baru saja melihat
+
+50
+0:02:03,220 --> 0:02:04,990
+apa yang terjadi pada JPEG dengan
+
+51
+0:02:04,990 --> 0:02:08,020
+kompresi 100x  alasannya adalah bahwa JPEG
+
+52
+0:02:08,020 --> 0:02:10,300
+harus mengompres semua gambar yang mungkin atau karena
+
+53
+0:02:10,300 --> 0:02:12,670
+kami hanya tertarik pada wajah jika Anda
+
+54
+0:02:12,670 --> 0:02:14,230
+memikirkannya, ruang semua
+
+55
+0:02:14,230 --> 0:02:16,720
+wajah yang mungkin jauh lebih kecil daripada ruang
+
+56
+0:02:16,720 --> 0:02:18,930
+semua gambar berdasarkan urutan besarnya,
+
+57
+0:02:18,930 --> 0:02:20,800
+terutama mengingat semuanya
+
+58
+0:02:20,800 --> 0:02:23,680
+berpose serupa  karena kami memaksanya untuk
+
+59
+0:02:23,680 --> 0:02:26,350
+mempelajari hanya 80 fitur, satu-satunya cara itu
+
+60
+0:02:26,350 --> 0:02:27,700
+dapat memberikan rekonstruksi yang baik
+
+61
+0:02:27,700 --> 0:02:29,320
+mengingat apa yang baru saja kami lihat dengan
+
+62
+0:02:29,320 --> 0:02:31,959
+kompresi umum adalah jika 80 fitur tersebut
+
+63
+0:02:31,959 --> 0:02:34,870
+khusus wajah jadi semoga ia akan belajar
+
+64
+0:02:34,870 --> 0:02:37,180
+apa artinya menjadi wajah ada satu
+
+65
+0:02:37,180 --> 0:02:38,799
+lagi  trik yang dapat kita gunakan untuk menyederhanakan
+
+66
+0:02:38,799 --> 0:02:41,380
+model ini meskipun karena kita benar-benar hanya
+
+67
+0:02:41,380 --> 0:02:43,269
+ingin menghasilkan wajah, kita sebenarnya
+
+68
+0:02:43,269 --> 0:02:45,900
+tidak memerlukan encoder bahkan selama pelatihan,
+
+69
+0:02:45,900 --> 0:02:48,250
+sebagai gantinya, kita hanya menyematkan semua
+
+70
+0:02:48,250 --> 0:02:50,100
+sampel pelatihan secara acak ke dalam ruang laten,
+
+71
+0:02:50,100 --> 0:02:52,570
+bobotnya, lalu diperbarui
+
+72
+0:02:52,570 --> 0:02:55,030
+seperti halnya  gelombang jaringan saat pelatihan untuk
+
+73
+0:02:55,030 --> 0:02:57,250
+menghasilkan wajah acak, kami hanya akan mengambil sampel
+
+74
+0:02:57,250 --> 0:02:59,230
+masing-masing dari 80 dimensi menggunakan
+
+75
+0:02:59,230 --> 0:03
+cara dan varians yang sama seperti yang kami lihat di
+
+76
+0:03 --> 0:03:04,060
+pelatihan, jadi apa 80  fitur yang menurut Anda
+
+77
+0:03:04,060 --> 0:03:07,390
+dipelajari dengan baik mari kita lihat masing-masing
+
+78
+0:03:07,390 --> 0:03:09,070
+penggeser ini mewakili salah satu dari 80
+
+79
+0:03:09,070 --> 0:03:11,620
+dimensi ruang laten setiap tanda centang
+
+80
+0:03:11,620 --> 0:03:13,450
+adalah satu standar deviasi dan pusatnya
+
+81
+0:03:13,450 --> 0:03:14,430
+adalah rata-rata
+
+82
+0:03:14,430 --> 0:03:16,920
+kita dapat melihat bahwa setiap penggeser membuatnya
+
+83
+0:03:16,920 --> 0:03:18,840
+berubah tetapi tidak jelas apa masing-masing  seseorang
+
+84
+0:03:18,840 --> 0:03:21,030
+melakukannya dan sebenarnya apa yang dilakukan penggeser
+
+85
+0:03:21,030 --> 0:03:22,799
+sebenarnya tergantung pada keadaan semua
+
+86
+0:03:22,799 --> 0:03:25,290
+penggeser lainnya sehingga sangat tidak mungkin
+
+87
+0:03:25,290 --> 0:03:28,260
+untuk mengatakan demikian, apakah itu berarti hanya mempelajari
+
+88
+0:03:28,260 --> 0:03:30,689
+beberapa representasi yang sangat rumit
+
+89
+0:03:30,689 --> 0:03:33,120
+yang tidak pernah dapat dipahami manusia apakah
+
+90
+0:03:33,120 --> 0:03:33,920
+kita melakukannya dengan
+
+91
+0:03:33,920 --> 0:03:36,150
+baik, sebenarnya tidak ada yang besar  kesalahan yang
+
+92
+0:03:36,150 --> 0:03:38,280
+kami buat dan memperbaikinya akan membantu kami memecahkan
+
+93
+0:03:38,280 --> 0:03:39,689
+masalah ini dan meningkatkan kualitas wajah.
+
+94
+0:03:39,689 --> 0:03:43,890
+Mari kita lihat kembali salah satu
+
+95
+0:03:43,890 --> 0:03:46,319
+asumsi yang kami buat, kami mengatakan bahwa kami akan mengambil sampel
+
+96
+0:03:46,319 --> 0:03:48,150
+setiap dimensi menggunakan mean dan
+
+97
+0:03:48,150 --> 0:03:49,950
+varians yang sama seperti sampel ruang Train Leighton
+
+98
+0:03:49,950 --> 0:03:52,530
+untuk melakukan itu  kami berasumsi bahwa setiap
+
+99
+0:03:52,530 --> 0:03:54,510
+dimensi terdistribusi normal adalah
+
+100
+0:03:54,510 --> 0:03:57,060
+asumsi yang valid dengan baik saya periksa dan
+
+101
+0:03:57,060 --> 0:03:58,829
+itu memang tampak normal jadi itu
+
+102
+0:03:58,829 --> 0:04:02,189
+bukan masalah mari kita lihat dua saja
+
+103
+0:04:02,189 --> 0:04:04,079
+dimensi sehingga kami dapat membuat visual
+
+104
+0:04:04,079 --> 0:04:07,769
+dalam 2d adalah pengambilan sampel setiap distribusi satu dimensi
+
+105
+0:04:07,769 --> 0:04:09,329
+untuk mendapatkan distribusi dua dimensi kami
+
+106
+0:04:09,329 --> 0:04:11,760
+terlihat bagus,
+
+107
+0:04:11,760 --> 0:04:14,010
+tetapi mari kita plot distribusi aktual di
+
+108
+0:04:14,010 --> 0:04:16,019
+sini alih-alih yang dihasilkan secara acak
+
+109
+0:04:16,019 --> 0:04:19,260
+seperti yang Anda lihat meskipun kedua
+
+110
+0:04:19,260 --> 0:04:20,729
+distribusi 1d benar.  jangan
+
+111
+0:04:20,729 --> 0:04:23,610
+mendefinisikan distribusi 2d secara unik
+
+112
+0:04:23,610 --> 0:04:25,169
+masalahnya adalah bahwa varians kami
+
+113
+0:04:25,169 --> 0:04:27,479
+berkorelasi sehingga mereka tidak dapat diambil sampelnya
+
+114
+0:04:27,479 --> 0:04:29,970
+secara independen jika tidak, kami lebih
+
+115
+0:04:29,970 --> 0:04:31,680
+cenderung mengambil sampel area di luar
+
+116
+0:04:31,680 --> 0:04:34,199
+distribusi jadi bagaimana kami dapat menyelesaikan
+
+117
+0:04:34,199 --> 0:04:36,900
+masalah ini dengan baik ini dilakukan dengan
+
+118
+0:04:36,900 --> 0:04:39,389
+perubahan  -of-basis alih-alih mengambil sampel
+
+119
+0:04:39,389 --> 0:04:41,760
+dua variabel laten, kami mengambil sampel melalui
+
+120
+0:04:41,760 --> 0:04:44,419
+sumbu baru yang sebebas mungkin
+
+121
+0:04:44,419 --> 0:04:47,099
+menemukan sumbu tersebut disebut
+
+122
+0:04:47,099 --> 0:04:50,430
+analisis komponen utama atau PCA Anda dapat
+
+123
+0:04:50,430 --> 0:04:52,500
+memperlakukannya sebagai kotak hitam lain untuk saat ini
+
+124
+0:04:52,500 --> 0:04:54,810
+tetapi matematika sangat menarik ini
+
+125
+0:04:54,810 --> 0:04:56,490
+dengan mudah  meluas ke dimensi yang lebih tinggi
+
+126
+0:04:56,490 --> 0:04:59,159
+setelah semua kita akan membutuhkan T hal yang
+
+127
+0:04:59,159 --> 0:05:01,380
+sangat menarik tentang PCA adalah
+
+128
+0:05:01,380 --> 0:05:03,090
+bahwa ia memberi kita panjang setiap sumbu  s
+
+129
+0:05:03,090 --> 0:05:04,949
+yang omong-omong hanyalah simpangan baku
+
+130
+0:05:04,949 --> 0:05:07,860
+sepanjang sumbu itu semakin
+
+131
+0:05:07,860 --> 0:05:09,810
+panjang semakin banyak varians yang ada dalam
+
+132
+0:05:09,810 --> 0:05:11,820
+dimensi itu dan oleh karena itu semakin
+
+133
+0:05:11,820 --> 0:05:13,500
+penting fiturnya untuk rekonstruksi keseluruhan
+
+134
+0:05:13,500 --> 0:05:15,840
+sehingga kita dapat mengurutkan
+
+135
+0:05:15,840 --> 0:05:17,330
+komponen utama berdasarkan kepentingan
+
+136
+0:05:17,330 --> 0:05:20,460
+inilah distribusi yang sebenarnya  itu
+
+137
+0:05:20,460 --> 0:05:22,110
+mengikuti peluruhan eksponensial yang
+
+138
+0:05:22,110 --> 0:05:24,180
+khas dari data terstruktur seperti wajah seperti yang
+
+139
+0:05:24,180 --> 0:05:26,580
+Anda lihat sebagian besar
+
+140
+0:05:26,580 --> 0:05:28,680
+varians sebenarnya hanya dalam
+
+141
+0:05:28,680 --> 0:05:31,229
+20 atau lebih dimensi jadi sekarang kami akan memperbarui
+
+142
+0:05:31,229 --> 0:05:33,870
+generasi wajah kami sebagai berikut kami akan
+
+143
+0:05:33,870 --> 0:05:35,639
+menghasilkan sampel di  distribusi PCA
+
+144
+0:05:35,639 --> 0:05:37,830
+mengubahnya menjadi
+
+145
+0:05:37,830 --> 0:05:40,020
+koordinat ruang laten dan akhirnya menjalankannya
+
+146
+0:05:40,020 --> 0:05:41,340
+melalui dekoder untuk menghasilkan
+
+147
+0:05:41,340 --> 0:05:43,860
+gambar sebelum saya mulai menurut Anda
+
+148
+0:05:43,860 --> 0:05:45,210
+apa delapan fitur terpenting teratas
+
+149
+0:05:45,210 --> 0:05:46,800
+dalam wajah yang menghasilkan
+
+150
+0:05:46,800 --> 0:05:49,320
+perubahan terbesar pada gambar jeda sekarang
+
+151
+0:05:49,320 --> 0:05:51,870
+jika Anda  ingin memikirkannya jadi mari kita
+
+152
+0:05:51,870 --> 0:05:54,090
+periksa Saya telah mengurutkan slider
+
+153
+0:05:54,090 --> 0:05:55,860
+dari komponen utama terbesar ke terkecil
+
+154
+0:05:55,860 --> 0:05:58,710
+sehingga fitur terpenting nomor satu
+
+155
+0:05:58,710 --> 0:06:00,990
+e tampaknya
+
+156
+0:06:00,990 --> 0:06:03,330
+warna kemeja Saya kira masuk akal kemeja
+
+157
+0:06:03,330 --> 0:06:05,010
+mengambil sekitar sepertiga dari gambar
+
+158
+0:06:05,010 --> 0:06:06,479
+dan dapat berkisar dari hitam pekat sampai
+
+159
+0:06:06,479 --> 0:06:09,090
+benar-benar putih nomor dua
+
+160
+0:06:09,090 --> 0:06:11,610
+tampaknya jenis kelamin jelas panjang rambut
+
+161
+0:06:11,610 --> 0:06:13,380
+sangat berkorelasi dengan jenis kelamin dan
+
+162
+0:06:13,380 --> 0:06:15,060
+rambut panjang memakan waktu  banyak dari gambar
+
+163
+0:06:15,060 --> 0:06:17,580
+nomor tiga adalah posisi kepala orang
+
+164
+0:06:17,580 --> 0:06:19,139
+cenderung menyandarkan kepala mereka selama foto
+
+165
+0:06:19,139 --> 0:06:20,580
+dan tidak terlalu mengejutkan bahwa ini
+
+166
+0:06:20,580 --> 0:06:23,070
+akan menjadi fitur yang dominan nomor empat
+
+167
+0:06:23,070 --> 0:06:25,289
+adalah tinggi orang lagi tidak terlalu
+
+168
+0:06:25,289 --> 0:06:26,789
+mengejutkan sangat bervariasi antara
+
+169
+0:06:26,789 --> 0:06:30,300
+orang-orang tempat nomor lima adalah  agak
+
+170
+0:06:30,300 --> 0:06:30,780
+aneh
+
+171
+0:06:30,780 --> 0:06:32,940
+saya menyebutnya kepadatan rambut itu seperti
+
+172
+0:06:32,940 --> 0:06:35,729
+seberapa banyak garis rambut surut dan juga
+
+173
+0:06:35,729 --> 0:06:39,360
+seberapa terang atau gelap rambut itu nomor enam
+
+174
+0:06:39,360 --> 0:06:42,389
+adalah ukuran kepala lebih mungkin seberapa dekat
+
+175
+0:06:42,389 --> 0:06:44,070
+atau diperbesar kepala orang itu
+
+176
+0:06:44,070 --> 0:06:48,120
+ke kamera nomor tujuh adalah tinggi kerah
+
+177
+0:06:48,120 --> 0:06:50,220
+bukan salah satu yang akan saya pikirkan tapi saya
+
+178
+0:06:50,220 --> 0:06:52,220
+rasa itu masuk akal
+
+179
+0:06:52,220 --> 0:06:55,950
+nomor delapan baik-baik saja Saya tidak begitu yakin
+
+180
+0:06:55,950 --> 0:06:58,740
+saya tidak tahu apa yang ini lakukan tetapi itu
+
+181
+0:06:58,740 --> 0:07:01,919
+melakukan sesuatu yang terakhir benar-benar
+
+182
+0:07:01,919 --> 0:07:04,530
+jelas adalah  nomor sembilan ke
+
+183
+0:07:04,530 --> 0:07:10,050
+arah mana kepala menghadap
+
+184
+0:07:10,050 --> 0:07:14,740
+[Musik]
+
+185
+0:07:14,740 --> 0:07:18,430
+saat saya menyesuaikan penggeser yang tidak terlalu penting,
+
+186
+0:07:18,430 --> 0:07:20,110
+Anda dapat melihat betapa kecilnya mereka memengaruhi
+
+187
+0:07:20,110 --> 0:07:22,449
+gambar, sebagian besar, mereka hanya membuat
+
+188
+0:07:22,449 --> 0:07:25,300
+detail penyetelan yang sangat kecil, tetapi sekarang kita dapat membangun
+
+189
+0:07:25,300 --> 0:07:27,729
+fase berdasarkan parameter ini
+
+190
+0:07:27,729 --> 0:07:29,639
+katakanlah kita ingin seseorang dengan kemeja gelap
+
+191
+0:07:29,639 --> 0:07:33,610
+perempuan condong ke kiri tinggi
+
+192
+0:07:33,610 --> 0:07:36,160
+rambut tipis besar atau sebenarnya mari kita memberinya
+
+193
+0:07:36,160 --> 0:07:38,919
+kepala yang lebih kecil dan kami akan hanya sisa
+
+194
+0:07:38,919 --> 0:07:41,740
+ini sesuai dengan keinginan kita Anda bisa bayangkan bagaimana
+
+195
+0:07:41,740 --> 0:07:43,270
+ini bisa memiliki beberapa aplikasi yang berguna
+
+196
+0:07:43,270 --> 0:07:47,080
+seperti mungkin  untuk sketsa polisi apa yang menurut
+
+197
+0:07:47,080 --> 0:07:49,060
+saya paling menakjubkan tentang ini adalah bahwa
+
+198
+0:07:49,060 --> 0:07:51,009
+seluruh proses dilakukan tanpa pengawasan.
+
+199
+0:07:51,009 --> 0:07:53,409
+Artinya, kami hanya menggunakan
+
+200
+0:07:53,409 --> 0:07:56,169
+gambar wajah tanpa label apa pun, kami
+
+201
+0:07:56,169 --> 0:07:57,970
+bisa mendapatkan hasil yang lebih baik jika
+
+202
+0:07:57,970 --> 0:07:59,770
+kami memiliki 80
+
+203
+0:07:59,770 --> 0:08
+fitur yang sangat bagus.  dan kemudian belajar
+
+204
+0:08 --> 0:08:03,639
+rekonstruksi dari itu tetapi sekali lagi
+
+205
+0:08:03,639 --> 0:08:05,860
+saya tidak akan duduk di sini dan memberi label
+
+206
+0:08:05,860 --> 0:08:09,069
+1700 gambar dengan 80 properti masing-masing yang
+
+207
+0:08:09,069 --> 0:08:11,020
+akan memakan waktu berhari-hari dan ini adalah
+
+208
+0:08:11,020 --> 0:08:13,750
+kumpulan data yang relatif kecil -  biasanya Anda ingin
+
+209
+0:08:13,750 --> 0:08:15,639
+menggunakan ratusan ribu sampel sehingga
+
+210
+0:08:15,639 --> 0:08:17,650
+Anda benar-benar dapat melihat keuntungan dari
+
+211
+0:08:17,650 --> 0:08:20,979
+pembelajaran tanpa pengawasan, beri tahu saya
+
+212
+0:08:20,979 --> 0:08:22,419
+jika Anda ingin melihat
+
+213
+0:08:22,419 --> 0:08:24,159
+video teknis yang lebih mendalam seperti ini di masa mendatang.
+
+214
+0:08:24,159 --> 0:08:26,259
+Saya masih tidak yakin  apa format
+
+215
+0:08:26,259 --> 0:08:29,480
+saluran ini terima kasih telah menonton
+
+216
+0:08:29,480 --> 0:09:00,150
+[Musik]
+
+217
+0:09:00,150 --> 0:09:03,260
+[Musik]
+

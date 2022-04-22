@@ -1,0 +1,424 @@
+1
+0:00:02,550 --> 0:00:14,920
+[Music]
+
+2
+0:00:14,920 --> 0:00:17,150
+okay
+
+3
+0:00:17,150 --> 0:00:51,680
+[Music]
+
+4
+0:00:51,680 --> 0:00:56,399
+jesus nope not jesus it's just me
+
+5
+0:00:56,399 --> 0:00:59,840
+what the hell is going on oh yeah um
+
+6
+0:00:59,840 --> 0:01
+yeah i was working on this program and
+
+7
+0:01 --> 0:01:02,879
+um yeah
+
+8
+0:01:02,879 --> 0:01:04,799
+i i think i figured it out i think i got
+
+9
+0:01:04,799 --> 0:01:06,560
+the formula so basically if
+
+10
+0:01:06,560 --> 0:01:09,040
+you merge the projection equation wait
+
+11
+0:01:09,040 --> 0:01:10,640
+wait wait
+
+12
+0:01:10,640 --> 0:01:13,920
+what are you doing oh right
+
+13
+0:01:13,920 --> 0:01:17,280
+um okay let let me just show you
+
+14
+0:01:17,280 --> 0:01:26,990
+let me just finish up real quick
+
+15
+0:01:26,990 --> 0:01:38,840
+[Music]
+
+16
+0:01:38,840 --> 0:01:40,370
+ready
+
+17
+0:01:40,370 --> 0:01:47,280
+[Music]
+
+18
+0:01:47,280 --> 0:01:50,159
+wait i i i don't follow this is that
+
+19
+0:01:50,159 --> 0:01:51,600
+it's a donut
+
+20
+0:01:51,600 --> 0:01:54,799
+it's incredible isn't it
+
+21
+0:01:54,799 --> 0:01:58,159
+so so all this just
+
+22
+0:01:58,159 --> 0:02
+to render a donut on your terminal
+
+23
+0:02 --> 0:02:07,680
+what the [ __ ] thanks for watching
+
+24
+0:02:07,680 --> 0:02:10,319
+the idea and code were originally from
+
+25
+0:02:10,319 --> 0:02:12,480
+the amazing andy sloan
+
+26
+0:02:12,480 --> 0:02:14,640
+where he was able to code this whole
+
+27
+0:02:14,640 --> 0:02:16,400
+program and see
+
+28
+0:02:16,400 --> 0:02:19,280
+and made the code itself look like a
+
+29
+0:02:19,280 --> 0:02:20,400
+donut
+
+30
+0:02:20,400 --> 0:02:22,160
+he has an article explaining how the
+
+31
+0:02:22,160 --> 0:02:23,840
+code works which i'll link
+
+32
+0:02:23,840 --> 0:02:26,959
+in the description so why is math
+
+33
+0:02:26,959 --> 0:02:28,480
+important for programming
+
+34
+0:02:28,480 --> 0:02:31,920
+well it's because even if 99
+
+35
+0:02:31,920 --> 0:02:34,160
+of the time you won't need it there's a
+
+36
+0:02:34,160 --> 0:02:36,319
+one percent chance that you might
+
+37
+0:02:36,319 --> 0:02:38,640
+and it's in those moments that separate
+
+38
+0:02:38,640 --> 0:02:40,319
+out a great programmer
+
+39
+0:02:40,319 --> 0:02:42,720
+from average ones and if you do know
+
+40
+0:02:42,720 --> 0:02:43,519
+your math
+
+41
+0:02:43,519 --> 0:02:45,840
+you'll know how to modify this donut to
+
+42
+0:02:45,840 --> 0:02:47,200
+increase the size
+
+43
+0:02:47,200 --> 0:02
+change the rotation or even make a cube
+
+44
+0:02 --> 0:02
+instead
+
+45
+0:02 --> 0:02:54,480
+also if you want to do computer graphics
+
+46
+0:02:54,480 --> 0:02:56,800
+machine learning or cryptography
+
+47
+0:02:56,800 --> 0:02:59,360
+you're gonna need math so might as well
+
+48
+0:02:59,360 --> 0:03:00,319
+get good at it
+
+49
+0:03:00,319 --> 0:03:03,519
+as you did for programming anyway back
+
+50
+0:03:03,519 --> 0:03:04,640
+to the donut
+
+51
+0:03:04,640 --> 0:03:07,920
+how do we write this program well first
+
+52
+0:03:07,920 --> 0:03:08,959
+you have to create
+
+53
+0:03:08,959 --> 0:03:11,599
+a donut which is essentially a solid of
+
+54
+0:03:11,599 --> 0:03:12,560
+revolution
+
+55
+0:03:12,560 --> 0:03:14,879
+where we have a circle that rotates
+
+56
+0:03:14,879 --> 0:03:16,400
+around the y-axis
+
+57
+0:03:16,400 --> 0:03:20,400
+which will make a donut aka a tourist
+
+58
+0:03:20,400 --> 0:03:22,879
+this is the formula to create the circle
+
+59
+0:03:22,879 --> 0:03:24,640
+centered at r2
+
+60
+0:03:24,640 --> 0:03:27,680
+with radius r1 and this
+
+61
+0:03:27,680 --> 0:03:30,319
+is the rotation matrix to rotate this
+
+62
+0:03:30,319 --> 0:03:30,879
+circle
+
+63
+0:03:30,879 --> 0:03:33,599
+around the y axis so when we combine
+
+64
+0:03:33,599 --> 0:03:34,080
+them
+
+65
+0:03:34,080 --> 0:03:36,480
+we get the coordinates of every point on
+
+66
+0:03:36,480 --> 0:03:38,080
+your donut
+
+67
+0:03:38,080 --> 0:03:40,959
+now that we have a donut shut up i know
+
+68
+0:03:40,959 --> 0:03:42,319
+this is a bagel
+
+69
+0:03:42,319 --> 0:03:44,560
+now that we have a donut we want to
+
+70
+0:03:44,560 --> 0:03:46,400
+rotate it around the x
+
+71
+0:03:46,400 --> 0:03:49,680
+and z axis so it looks cool all flying
+
+72
+0:03:49,680 --> 0:03:50,959
+and stuff
+
+73
+0:03:50,959 --> 0:03:53,280
+we can do that by multiplying our donut
+
+74
+0:03:53,280 --> 0:03:54,319
+coordinates with
+
+75
+0:03:54,319 --> 0:03:57,360
+these two rotation matrices
+
+76
+0:03:57,360 --> 0:04:00,720
+now we have to map this 3d flying donut
+
+77
+0:04:00,720 --> 0:04:03,840
+onto a 2d screen which will become our
+
+78
+0:04:03,840 --> 0:04:04,720
+terminal
+
+79
+0:04:04,720 --> 0:04:07,360
+so each character on the terminal will
+
+80
+0:04:07,360 --> 0:04:08,319
+be a pixel
+
+81
+0:04:08,319 --> 0:04:11,519
+on the screen to figure out how to shade
+
+82
+0:04:11,519 --> 0:04:12,400
+our donut
+
+83
+0:04:12,400 --> 0:04:14,560
+we calculate the dot product of the
+
+84
+0:04:14,560 --> 0:04:15,840
+surface normal
+
+85
+0:04:15,840 --> 0:04:18,320
+and the direction of the light so as you
+
+86
+0:04:18,320 --> 0:04:19,280
+can see
+
+87
+0:04:19,280 --> 0:04
+when the normal points this way it's way
+
+88
+0:04 --> 0:04:22,800
+brighter
+
+89
+0:04:22,800 --> 0:04:24,880
+and when it points that way it's way
+
+90
+0:04:24,880 --> 0:04:25,840
+darker
+
+91
+0:04:25,840 --> 0:04:27,680
+so the dot product will tell us how
+
+92
+0:04:27,680 --> 0:04:29,680
+light or dark it is
+
+93
+0:04:29,680 --> 0:04:32,320
+we take the result of the dot product
+
+94
+0:04:32,320 --> 0:04:33,120
+and map it
+
+95
+0:04:33,120 --> 0:04
+into these characters from darkest to
+
+96
+0:04 --> 0:04:37,120
+brightest
+
+97
+0:04:37,120 --> 0:04:39,600
+and lastly we draw that on our terminal
+
+98
+0:04:39,600 --> 0:04:41,360
+and voila
+
+99
+0:04:41,360 --> 0:04:43,680
+if you like the way i teach you can
+
+100
+0:04:43,680 --> 0:04:45,520
+check out my new course on data
+
+101
+0:04:45,520 --> 0:04:47,199
+structures and algorithms
+
+102
+0:04:47,199 --> 0:04:49,120
+where i use easy to understand
+
+103
+0:04:49,120 --> 0:04:52,560
+animations to explain these concepts
+
+104
+0:04:52,560 --> 0:04:54,720
+the first 100 people to sign up for joma
+
+105
+0:04:54,720 --> 0:04:55,680
+class will get
+
+106
+0:04:55,680 --> 0:05:04,160
+15 percent off joma class
+

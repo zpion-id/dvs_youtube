@@ -1,0 +1,3224 @@
+1
+0:00:06,399 --> 0:00:09,320
+hello I'm Eric Chow I'm an assistant
+
+2
+0:00:09,320 --> 0:00:10,580
+professor at the University of
+
+3
+0:00:10,580 --> 0:00:12,440
+California San Francisco and I'm going
+
+4
+0:00:12,440 --> 0:00:13,129
+to talk to you today about
+
+5
+0:00:13,129 --> 0:00:16,279
+next-generation sequencing the outline
+
+6
+0:00:16,279 --> 0:00:18,560
+of our talk today will cover traditional
+
+7
+0:00:18,560 --> 0:00:20,210
+sequencing first and then we'll spend
+
+8
+0:00:20,210 --> 0:00:21,949
+most of our time talking about Illumina
+
+9
+0:00:21,949 --> 0:00:24,170
+sequencing by synthesis which most
+
+10
+0:00:24,170 --> 0:00:26,210
+nection sequencing is being performed on
+
+11
+0:00:26,210 --> 0:00:28,250
+today at the end of the talk also
+
+12
+0:00:28,250 --> 0:00:29,630
+touched upon two other competing
+
+13
+0:00:29,630 --> 0:00:31,520
+platforms from Oxford nanopore and
+
+14
+0:00:31,520 --> 0:00:35,719
+Pacific bioscience so the human genome
+
+15
+0:00:35,719 --> 0:00:36,920
+project really spurred the development
+
+16
+0:00:36,920 --> 0:00:39,859
+of cheaper sequencing this was a 20-year
+
+17
+0:00:39,859 --> 0:00:42,199
+effort that cost three billion dollars
+
+18
+0:00:42,199 --> 0:00:44,719
+but was completed in the year 2001 and
+
+19
+0:00:44,719 --> 0:00:47,179
+this lower the cost of sequencing a
+
+20
+0:00:47,179 --> 0:00:49,129
+human genome to about 100 million
+
+21
+0:00:49,129 --> 0:00:51,589
+dollars for a single genome and this
+
+22
+0:00:51,589 --> 0:00:54,440
+used traditional singer sequencing well
+
+23
+0:00:54,440 --> 0:00:56,089
+for you go into Sanger sequencing I want
+
+24
+0:00:56,089 --> 0:00:58,069
+to tell you a little bit about DNA just
+
+25
+0:00:58,069 --> 0:01:00,409
+to bring everybody up to speed so what I
+
+26
+0:01:00,409 --> 0:01:02,569
+have depicted over here is a sequence of
+
+27
+0:01:02,569 --> 0:01:04,670
+DNA it's made of two different strands
+
+28
+0:01:04,670 --> 0:01:07,010
+that run anti parallel so one strand
+
+29
+0:01:07,010 --> 0:01:08,750
+runs in one direction the other runs to
+
+30
+0:01:08,750 --> 0:01:10,730
+the opposite direction and your sees
+
+31
+0:01:10,730 --> 0:01:13,850
+hybridize two g's and your A's hybridize
+
+32
+0:01:13,850 --> 0:01:18,050
+two T's sometimes DNA is depicted as as
+
+33
+0:01:18,050 --> 0:01:21,640
+an arrow shown here just to simplify
+
+34
+0:01:21,640 --> 0:01:23,810
+images and we'll be using this quite a
+
+35
+0:01:23,810 --> 0:01:26,450
+bit today now DNA is a double-stranded
+
+36
+0:01:26,450 --> 0:01:28,730
+molecule but it can be denatured and
+
+37
+0:01:28,730 --> 0:01:30,920
+separated into individual strands and
+
+38
+0:01:30,920 --> 0:01:33,860
+they can be renature back together or we
+
+39
+0:01:33,860 --> 0:01:36,260
+can add on different sequences of DNA
+
+40
+0:01:36,260 --> 0:01:39,890
+and hybridize those on such as this red
+
+41
+0:01:39,890 --> 0:01:42,290
+piece of DNA over here that's now bound
+
+42
+0:01:42,290 --> 0:01:47,300
+to this bottom template strand and DNA
+
+43
+0:01:47,300 --> 0:01:49,100
+can be copied by polymerase --is and
+
+44
+0:01:49,100 --> 0:01:51,260
+these DNA polymerase is shown here in
+
+45
+0:01:51,260 --> 0:01:53,960
+orange can bind to short pieces of DNA
+
+46
+0:01:53,960 --> 0:01:55,700
+that are hybridize onto a template
+
+47
+0:01:55,700 --> 0:01:59,180
+strand and they can polymerize DNA with
+
+48
+0:01:59,180 --> 0:02:01,580
+building blocks to extend DNA into a
+
+49
+0:02:01,580 --> 0:02:04,220
+newly synthesized strand and these
+
+50
+0:02:04,220 --> 0:02:06,520
+building blocks of DNA's are called
+
+51
+0:02:06,520 --> 0:02:08,629
+deoxyribonucleotide triphosphates and
+
+52
+0:02:08,629 --> 0:02:10,759
+over here are the four different
+
+53
+0:02:10,759 --> 0:02:13,760
+versions your a C's GS and T's and these
+
+54
+0:02:13,760 --> 0:02:16,670
+all share several common aspects first
+
+55
+0:02:16,670 --> 0:02:19,849
+there's a tri phosphate group
+
+56
+0:02:19,849 --> 0:02:22,579
+that allow the growing strand to attach
+
+57
+0:02:22,579 --> 0:02:24,859
+onto the building block they have a
+
+58
+0:02:24,859 --> 0:02:27,920
+three prime hydroxyl group which is used
+
+59
+0:02:27,920 --> 0:02:29,989
+to add on additional building blocks of
+
+60
+0:02:29,989 --> 0:02:33,140
+DNA and they have four different bases
+
+61
+0:02:33,140 --> 0:02:37,189
+attached to them so with traditional
+
+62
+0:02:37,189 --> 0:02:38,750
+Sanger sequencing if you wanted to
+
+63
+0:02:38,750 --> 0:02:40,849
+sequence a piece of DNA like this you
+
+64
+0:02:40,849 --> 0:02:43,099
+would have to first denature it and add
+
+65
+0:02:43,099 --> 0:02:45,409
+on a primer so that DNA polymerase can
+
+66
+0:02:45,409 --> 0:02:49,069
+can bind on as the bit did here and now
+
+67
+0:02:49,069 --> 0:02:50,959
+instead of adding just the traditional
+
+68
+0:02:50,959 --> 0:02:52,700
+DNA bases which would allow the
+
+69
+0:02:52,700 --> 0:02:54,700
+polymerase to extend this DNA molecule
+
+70
+0:02:54,700 --> 0:02:57,349
+we actually use fluorescent terminators
+
+71
+0:02:57,349 --> 0:02:59,659
+and fluorescent terminators are very
+
+72
+0:02:59,659 --> 0:03:01,459
+similar to the DNA building blocks to
+
+73
+0:03:01,459 --> 0:03:03,859
+pick adhere but there are a couple
+
+74
+0:03:03,859 --> 0:03:05,599
+differences first you might notice that
+
+75
+0:03:05,599 --> 0:03:07,129
+there are different colors and so
+
+76
+0:03:07,129 --> 0:03:08,659
+there's a different fluorescent group
+
+77
+0:03:08,659 --> 0:03:10,609
+attached to each of the four bases a
+
+78
+0:03:10,609 --> 0:03:14,930
+yellow for a a blue for G a red for C
+
+79
+0:03:14,930 --> 0:03:18,530
+and a green 40 additionally the 3 prime
+
+80
+0:03:18,530 --> 0:03:20,569
+hydroxyl group that's present on the
+
+81
+0:03:20,569 --> 0:03:22,639
+building blocks to allow DNA to continue
+
+82
+0:03:22,639 --> 0:03:25,699
+extending is now terminated or removed
+
+83
+0:03:25,699 --> 0:03:27,590
+this is why these are called fluorescent
+
+84
+0:03:27,590 --> 0:03:29,840
+terminators they have Larsen group and a
+
+85
+0:03:29,840 --> 0:03:32,269
+terminator that prevents DNA polymerase
+
+86
+0:03:32,269 --> 0:03:34,930
+from further extending the DNA strand
+
+87
+0:03:34,930 --> 0:03:38,060
+and so in a test tube we actually have
+
+88
+0:03:38,060 --> 0:03:40,190
+billions and billions of copies of this
+
+89
+0:03:40,190 --> 0:03:42,560
+template and we put in the normal DNA
+
+90
+0:03:42,560 --> 0:03:44,419
+building blocks and we spike in a low
+
+91
+0:03:44,419 --> 0:03:46,489
+concentration of these flush and
+
+92
+0:03:46,489 --> 0:03:49,010
+terminators what results is you have a
+
+93
+0:03:49,010 --> 0:03:51,049
+bunch of fragments of newly synthesized
+
+94
+0:03:51,049 --> 0:03:53,750
+DNA that are all different sizes because
+
+95
+0:03:53,750 --> 0:03:56,209
+they randomly incorporated a fluorescent
+
+96
+0:03:56,209 --> 0:03:58,669
+Terminator and these molecules in the
+
+97
+0:03:58,669 --> 0:04:00,709
+test tube are then put onto a DNA
+
+98
+0:04:00,709 --> 0:04:04,310
+sequencer which will separate these and
+
+99
+0:04:04,310 --> 0:04:05,750
+then allow us to determine the sequence
+
+100
+0:04:05,750 --> 0:04:08,419
+what happens in the sequencer is these
+
+101
+0:04:08,419 --> 0:04:10,069
+molecules are separated in size from
+
+102
+0:04:10,069 --> 0:04:12,530
+largest to smallest the smallest ones
+
+103
+0:04:12,530 --> 0:04:14,419
+come out of the sequencer first and get
+
+104
+0:04:14,419 --> 0:04:16,729
+detected and then the next piece of DNA
+
+105
+0:04:16,729 --> 0:04:19,940
+gets detected and the next and the trace
+
+106
+0:04:19,940 --> 0:04:21,620
+that comes out of the DNA sequencer is a
+
+107
+0:04:21,620 --> 0:04:23,810
+chromatogram down here at the bottom and
+
+108
+0:04:23,810 --> 0:04:27,860
+if you follow the color changes as each
+
+109
+0:04:27,860 --> 0:04:29,510
+of the different pieces of DNA come out
+
+110
+0:04:29,510 --> 0:04:31,070
+of the sequencer you can build up your
+
+111
+0:04:31,070 --> 0:04:33,430
+DNA sequence
+
+112
+0:04:33,430 --> 0:04:36,530
+these machines can run up to 384 samples
+
+113
+0:04:36,530 --> 0:04:39,650
+at a time and generate about 700 bases
+
+114
+0:04:39,650 --> 0:04:41,599
+of sequence for each of those samples
+
+115
+0:04:41,599 --> 0:04:43,909
+and you can sequence up to 1 million
+
+116
+0:04:43,909 --> 0:04:46,580
+pieces of DNA or 1 million bases of DNA
+
+117
+0:04:46,580 --> 0:04:48,770
+in a single day now this might sound
+
+118
+0:04:48,770 --> 0:04:50,449
+like a lot but when you consider the
+
+119
+0:04:50,449 --> 0:04:52,430
+human genome is actually 6 billion bases
+
+120
+0:04:52,430 --> 0:04:55,009
+and to sequence the human genome you
+
+121
+0:04:55,009 --> 0:04:56,930
+actually sample it many many times
+
+122
+0:04:56,930 --> 0:04:59,870
+sometimes on average of 7 times this
+
+123
+0:04:59,870 --> 0:05:00,919
+means that if you were to try to
+
+124
+0:05:00,919 --> 0:05:02,870
+sequence a single human genome on one
+
+125
+0:05:02,870 --> 0:05:04,999
+sequencing machine it would take about a
+
+126
+0:05:04,999 --> 0:05:08,029
+hundred years and so clearly the human
+
+127
+0:05:08,029 --> 0:05:10,729
+genome project was completed in much
+
+128
+0:05:10,729 --> 0:05:12,469
+under 100 years and this was made
+
+129
+0:05:12,469 --> 0:05:14,629
+possible by factories of these
+
+130
+0:05:14,629 --> 0:05:16,550
+sequencing instruments over here is a
+
+131
+0:05:16,550 --> 0:05:18,860
+single sequencing instrument in this
+
+132
+0:05:18,860 --> 0:05:20,389
+huge factory where we have sometimes
+
+133
+0:05:20,389 --> 0:05:21,979
+dozens or even hundreds of these
+
+134
+0:05:21,979 --> 0:05:27,669
+machines running 24/7 365 days a year so
+
+135
+0:05:27,669 --> 0:05:31,159
+the human genome was was a really great
+
+136
+0:05:31,159 --> 0:05:33,050
+undertaking generated a lot of useful
+
+137
+0:05:33,050 --> 0:05:36,259
+data but it was only came from the
+
+138
+0:05:36,259 --> 0:05:38,089
+genetic material of several people and
+
+139
+0:05:38,089 --> 0:05:40,370
+so we still don't understand most of
+
+140
+0:05:40,370 --> 0:05:42,379
+what this genome does you know we have
+
+141
+0:05:42,379 --> 0:05:43,969
+the sequence but again it's only from a
+
+142
+0:05:43,969 --> 0:05:46,189
+small subset but to really understand
+
+143
+0:05:46,189 --> 0:05:48,169
+the function of the genome we need a
+
+144
+0:05:48,169 --> 0:05:50,360
+sequence thousands to millions of
+
+145
+0:05:50,360 --> 0:05:53,300
+different people to really sample the
+
+146
+0:05:53,300 --> 0:05:57,560
+variety of genetic material present in
+
+147
+0:05:57,560 --> 0:06:00,589
+the human population and it's obvious we
+
+148
+0:06:00,589 --> 0:06:02,060
+can't do this with traditional senior
+
+149
+0:06:02,060 --> 0:06:04,909
+sequencing so luckily over the past two
+
+150
+0:06:04,909 --> 0:06:06,620
+decades the cost of sequencing has
+
+151
+0:06:06,620 --> 0:06:08,960
+dropped dramatically over here's a chart
+
+152
+0:06:08,960 --> 0:06:10,430
+showing you how much it costs to
+
+153
+0:06:10,430 --> 0:06:13,219
+sequence 1 million bases of DNA when the
+
+154
+0:06:13,219 --> 0:06:15,050
+human genome project completed in 2001
+
+155
+0:06:15,050 --> 0:06:19,520
+it cost almost $10,000 today we're
+
+156
+0:06:19,520 --> 0:06:22,009
+approaching one cent to sequence a
+
+157
+0:06:22,009 --> 0:06:23,899
+million bases of DNA which represents a
+
+158
+0:06:23,899 --> 0:06:26,599
+1 million fold drop in the cost of
+
+159
+0:06:26,599 --> 0:06:29,419
+sequencing and if you follow this chart
+
+160
+0:06:29,419 --> 0:06:30,439
+you can see that there are several
+
+161
+0:06:30,439 --> 0:06:36,020
+inflection points in 2007 2010 and 2015
+
+162
+0:06:36,020 --> 0:06:38,120
+where prices had some fairly steep drops
+
+163
+0:06:38,120 --> 0:06:40,939
+and these were largely driven by new
+
+164
+0:06:40,939 --> 0:06:42,889
+sequencing systems introduced by
+
+165
+0:06:42,889 --> 0:06:45,080
+Illumina the dominant player in the
+
+166
+0:06:45,080 --> 0:06:46,730
+next-gen sequencing market
+
+167
+0:06:46,730 --> 0:06:49,160
+on this slide are three different types
+
+168
+0:06:49,160 --> 0:06:50,540
+of sequencers from Illumina they
+
+169
+0:06:50,540 --> 0:06:52,070
+actually have several more but they
+
+170
+0:06:52,070 --> 0:06:53,960
+really span the the scale of sequencing
+
+171
+0:06:53,960 --> 0:06:56,180
+that's being offered on the left-hand
+
+172
+0:06:56,180 --> 0:06:58,430
+side is aluminum IC instrument in the
+
+173
+0:06:58,430 --> 0:07:00,320
+middle is the high seek and on the right
+
+174
+0:07:00,320 --> 0:07:03,080
+is the Nova seek the newest high output
+
+175
+0:07:03,080 --> 0:07:05,240
+sequencer from Illumina and if we
+
+176
+0:07:05,240 --> 0:07:07,550
+compare the output of these machines and
+
+177
+0:07:07,550 --> 0:07:08,510
+comparing with the Sanger sequencing
+
+178
+0:07:08,510 --> 0:07:11,300
+platforms we can see just how much more
+
+179
+0:07:11,300 --> 0:07:12,710
+sequence we can generate from these
+
+180
+0:07:12,710 --> 0:07:14,300
+instruments if you just look at how many
+
+181
+0:07:14,300 --> 0:07:16,460
+reads you can get from a single run the
+
+182
+0:07:16,460 --> 0:07:19,100
+mic generates 30 million reads the high
+
+183
+0:07:19,100 --> 0:07:21,260
+C generates three billion reads the Nova
+
+184
+0:07:21,260 --> 0:07:24,230
+C generates 13 billion reads while the
+
+185
+0:07:24,230 --> 0:07:27,430
+Sanger sequencing system generates about
+
+186
+0:07:27,430 --> 0:07:30,290
+400 reads and so it's a huge difference
+
+187
+0:07:30,290 --> 0:07:32,150
+and if you just look at this in terms of
+
+188
+0:07:32,150 --> 0:07:33,980
+how much sequence you can generate in a
+
+189
+0:07:33,980 --> 0:07:37,190
+single day you can generate up to four
+
+190
+0:07:37,190 --> 0:07:40,160
+trillion bases on the Nova seek in one
+
+191
+0:07:40,160 --> 0:07:43,070
+single day compared to 1 million bases
+
+192
+0:07:43,070 --> 0:07:45,700
+on the traditional sinker instrument
+
+193
+0:07:45,700 --> 0:07:48,290
+Illumina sequencing is the dominant
+
+194
+0:07:48,290 --> 0:07:49,460
+player in the market
+
+195
+0:07:49,460 --> 0:07:51,980
+it's an imaging based method and
+
+196
+0:07:51,980 --> 0:07:54,110
+generates many many reads millions to
+
+197
+0:07:54,110 --> 0:07:56,270
+billions of reads per run and from each
+
+198
+0:07:56,270 --> 0:07:58,790
+of these reads we can generate 300 to
+
+199
+0:07:58,790 --> 0:08:02,090
+600 bases of sequence it's really really
+
+200
+0:08:02,090 --> 0:08:04,840
+accurate the error rate is roughly 1 in
+
+201
+0:08:04,840 --> 0:08:08,300
+1,000 bases and with the new machines we
+
+202
+0:08:08,300 --> 0:08:10,010
+can actually sequence a human genome for
+
+203
+0:08:10,010 --> 0:08:14,660
+$1,000 in less than 48 hours and the
+
+204
+0:08:14,660 --> 0:08:16,370
+sequencing on these Illumina platforms
+
+205
+0:08:16,370 --> 0:08:17,810
+happens in flow cells these are
+
+206
+0:08:17,810 --> 0:08:19,340
+essentially microscope slides with
+
+207
+0:08:19,340 --> 0:08:22,040
+channels on the inside what I have shown
+
+208
+0:08:22,040 --> 0:08:24,080
+here is a my seek flow cell next to a
+
+209
+0:08:24,080 --> 0:08:26,180
+standard Eppendorf tube that's used for
+
+210
+0:08:26,180 --> 0:08:28,820
+a lot of lab work and these tubes are
+
+211
+0:08:28,820 --> 0:08:30,740
+pretty small about one and a half inches
+
+212
+0:08:30,740 --> 0:08:33,650
+in height and on this my C flow cell we
+
+213
+0:08:33,650 --> 0:08:35,510
+can generate about months at 30 million
+
+214
+0:08:35,510 --> 0:08:39,470
+reads per run next up is the high C flow
+
+215
+0:08:39,470 --> 0:08:41,060
+so you can see it's quite a bit larger
+
+216
+0:08:41,060 --> 0:08:42,800
+than the my C flow cell and this larger
+
+217
+0:08:42,800 --> 0:08:44,930
+real estate allows us to generate more
+
+218
+0:08:44,930 --> 0:08:47,420
+reads in a single run approaching three
+
+219
+0:08:47,420 --> 0:08:50,810
+billion reads and lastly is the Nova C
+
+220
+0:08:50,810 --> 0:08:53,180
+Klose which is even larger and on this
+
+221
+0:08:53,180 --> 0:08:55,040
+flow cell we can generate 13 billion
+
+222
+0:08:55,040 --> 0:08:58,840
+reads in a single run
+
+223
+0:08:58,840 --> 0:09
+so you can't just put DNA into these
+
+224
+0:09 --> 0:09:02,470
+flow cells and get sequences out you
+
+225
+0:09:02,470 --> 0:09:03,940
+actually have to prepare your sample and
+
+226
+0:09:03,940 --> 0:09:05,710
+so there are several steps that occur
+
+227
+0:09:05,710 --> 0:09:07,690
+but basically what happens is you take
+
+228
+0:09:07,690 --> 0:09:09,820
+your sample that you want a sequence
+
+229
+0:09:09,820 --> 0:09:11,890
+which is DNA if you have something like
+
+230
+0:09:11,890 --> 0:09:14,110
+RNA you can convert it with enzymes into
+
+231
+0:09:14,110 --> 0:09:16,780
+DNA you take that DNA and then you have
+
+232
+0:09:16,780 --> 0:09:18,580
+to add on these adapter sequences at the
+
+233
+0:09:18,580 --> 0:09:21,250
+end so in blue our primer binding sites
+
+234
+0:09:21,250 --> 0:09:23,440
+that allow the sequencing reaction to
+
+235
+0:09:23,440 --> 0:09:24,940
+occur this is similar to sing your
+
+236
+0:09:24,940 --> 0:09:26,230
+sequencing where we needed to have a
+
+237
+0:09:26,230 --> 0:09:29,140
+primer bind for DNA polymerase to move
+
+238
+0:09:29,140 --> 0:09:31,450
+along at the template DNA and then we
+
+239
+0:09:31,450 --> 0:09:33,190
+also have these capture sequences in
+
+240
+0:09:33,190 --> 0:09:36,970
+green and orange and these allow your
+
+241
+0:09:36,970 --> 0:09:40,390
+sequencing sample to be captured on to
+
+242
+0:09:40,390 --> 0:09:43,420
+the flow cell for sequencing once you
+
+243
+0:09:43,420 --> 0:09:45,520
+have your DNA sample prepared
+
+244
+0:09:45,520 --> 0:09:47,800
+it's a double-stranded molecule that
+
+245
+0:09:47,800 --> 0:09:49,870
+which we denature and put into the flow
+
+246
+0:09:49,870 --> 0:09:52,240
+cell and on the left-hand side again is
+
+247
+0:09:52,240 --> 0:09:54,730
+a picture of the high C flow cell so
+
+248
+0:09:54,730 --> 0:09:56,680
+there are eight channels and samples
+
+249
+0:09:56,680 --> 0:09:58,900
+actually go into the glass slide there
+
+250
+0:09:58,900 --> 0:10:00,220
+are eight different channels within
+
+251
+0:10:00,220 --> 0:10:03,670
+there and inside of the slide are a
+
+252
+0:10:03,670 --> 0:10:08,650
+mixture of short DNA molecules in orange
+
+253
+0:10:08,650 --> 0:10:10,540
+and green and these orange green
+
+254
+0:10:10,540 --> 0:10:13,810
+molecules will bind to both ends of your
+
+255
+0:10:13,810 --> 0:10:16,150
+sequencing library so we denature our
+
+256
+0:10:16,150 --> 0:10:18,730
+sample flow those into the flow cell and
+
+257
+0:10:18,730 --> 0:10:20,740
+they can get captured by these primers
+
+258
+0:10:20,740 --> 0:10:23,290
+are these short DNA molecules on the
+
+259
+0:10:23,290 --> 0:10:25,690
+surface of the slide and once that
+
+260
+0:10:25,690 --> 0:10:28,090
+occurs a DNA polymerase is added in the
+
+261
+0:10:28,090 --> 0:10:30,190
+DNA building blocks introduced and we
+
+262
+0:10:30,190 --> 0:10:31,840
+copy that template and so we have a
+
+263
+0:10:31,840 --> 0:10:34,030
+newly synthesized strand that's now
+
+264
+0:10:34,030 --> 0:10:36,430
+physically constrained to the bottom of
+
+265
+0:10:36,430 --> 0:10:39,520
+the flow cell we wash out the original
+
+266
+0:10:39,520 --> 0:10:41,530
+template strand and then allow the newly
+
+267
+0:10:41,530 --> 0:10:44,110
+synthesized strand to now bind on to the
+
+268
+0:10:44,110 --> 0:10
+other DNA sequence present on the
+
+269
+0:10 --> 0:10:47,710
+surface in this case the orange piece
+
+270
+0:10:47,710 --> 0:10:51,130
+and then we flow in some DNA polymerase
+
+271
+0:10:51,130 --> 0:10:52,540
+and building blocks and we get another
+
+272
+0:10:52,540 --> 0:10:54,580
+strand formed and we repeat this process
+
+273
+0:10:54,580 --> 0:10:57,310
+many many times and in the end we get
+
+274
+0:10:57,310 --> 0:11:00,250
+about a thousand copies within a cluster
+
+275
+0:11:00,250 --> 0:11:02,260
+and remember that these thousand
+
+276
+0:11:02,260 --> 0:11:03,700
+molecules all came from the same
+
+277
+0:11:03,700 --> 0:11:05,500
+original template strand so they all
+
+278
+0:11:05,500 --> 0:11:08,650
+have the same sequence we denature to
+
+279
+0:11:08,650 --> 0:11:10,630
+the strands and then we can selectively
+
+280
+0:11:10,630 --> 0:11:12,850
+cleave off one of the ala goes
+
+281
+0:11:12,850 --> 0:11:15,310
+or the primers in this case the green
+
+282
+0:11:15,310 --> 0:11:17,889
+one and we've washed those away so now
+
+283
+0:11:17,889 --> 0:11:19,930
+all the thousand molecules present are
+
+284
+0:11:19,930 --> 0:11:21,850
+all the identical strand because we
+
+285
+0:11:21,850 --> 0:11:24,819
+removed the other strand we flow in a
+
+286
+0:11:24,819 --> 0:11:27,130
+sequencing primer and now the clustering
+
+287
+0:11:27,130 --> 0:11:30,550
+process is complete and this is the
+
+288
+0:11:30,550 --> 0:11:32,170
+instrument that performs clustering so
+
+289
+0:11:32,170 --> 0:11:34,569
+first thing we do is we take a brand new
+
+290
+0:11:34,569 --> 0:11:37,060
+flow cell again this is the size of a
+
+291
+0:11:37,060 --> 0:11:39,190
+standard microscope slide and then we
+
+292
+0:11:39,190 --> 0:11:41,589
+put it on to the stage of the instrument
+
+293
+0:11:41,589 --> 0:11:46,209
+and the stage is a region of the
+
+294
+0:11:46,209 --> 0:11:47,560
+instrument that can actually heat and
+
+295
+0:11:47,560 --> 0:11:49,449
+cool to perform a lot of the enzymatic
+
+296
+0:11:49,449 --> 0:11:51,940
+reactions next we load a blue plates of
+
+297
+0:11:51,940 --> 0:11:53,800
+the reagents that perform the clustering
+
+298
+0:11:53,800 --> 0:11:56,470
+and lastly a strip tube with the eight
+
+299
+0:11:56,470 --> 0:11:58,029
+different samples that are going to be
+
+300
+0:11:58,029 --> 0:12:01,329
+loaded onto that flow cell next a
+
+301
+0:12:01,329 --> 0:12:03,370
+manifold is mounted on top of the flow
+
+302
+0:12:03,370 --> 0:12:07,389
+cell and connected to the SI BOTS and in
+
+303
+0:12:07,389 --> 0:12:08,680
+the back of the SI bot or this
+
+304
+0:12:08,680 --> 0:12:10,300
+clustering instrument are a series of
+
+305
+0:12:10,300 --> 0:12
+pumps that will now pull reagents from
+
+306
+0:12 --> 0:12:15,069
+the blue reagent plate or from our
+
+307
+0:12:15,069 --> 0:12:17,439
+samples trip tube and pass them through
+
+308
+0:12:17,439 --> 0:12:20,050
+the flow cell and this is how reagents
+
+309
+0:12:20,050 --> 0:12:22,720
+and and liquids are delivered and at
+
+310
+0:12:22,720 --> 0:12:24,449
+this point the clustering procedure
+
+311
+0:12:24,449 --> 0:12:26,920
+takes about three to four hours and once
+
+312
+0:12:26,920 --> 0:12:29,620
+that's done we take that flow cell and
+
+313
+0:12:29,620 --> 0:12:31,600
+move it on to the actual sequencer in
+
+314
+0:12:31,600 --> 0:12:34,630
+this case a hi-c instrument and on the
+
+315
+0:12:34,630 --> 0:12:35,889
+high seek instrument we have a
+
+316
+0:12:35,889 --> 0:12:37,959
+refrigerated compartment for all the
+
+317
+0:12:37,959 --> 0:12:40,329
+sequencing or agents a lot of enzymes in
+
+318
+0:12:40,329 --> 0:12:42,040
+there that need to be kept cool during
+
+319
+0:12:42,040 --> 0:12:43,860
+the three to four day secuence iran
+
+320
+0:12:43,860 --> 0:12:46,300
+above the refrigerated section is a
+
+321
+0:12:46,300 --> 0:12:49,269
+series of pumps that pull reagents from
+
+322
+0:12:49,269 --> 0:12:51,819
+that refrigerated compartment and send
+
+323
+0:12:51,819 --> 0:12:54,430
+them to the flow cell which we will now
+
+324
+0:12:54,430 --> 0:12:56,980
+load onto the stage and so that is the
+
+325
+0:12:56,980 --> 0:12:59,290
+flow cell from the c bot that just
+
+326
+0:12:59,290 --> 0:13:01,930
+completed clustering this gets mounted
+
+327
+0:13:01,930 --> 0:13:04,470
+onto a stage and locked in place and
+
+328
+0:13:04,470 --> 0:13:07,149
+then we can begin the sequencing run and
+
+329
+0:13:07,149 --> 0:13:09,370
+what that does is that will trigger the
+
+330
+0:13:09,370 --> 0:13:12,459
+pumps to start flowing reagents from the
+
+331
+0:13:12,459 --> 0:13:15,089
+refer to compartment into the flow cell
+
+332
+0:13:15,089 --> 0:13:19,480
+and behind the flow cell is actually a
+
+333
+0:13:19,480 --> 0:13:22,480
+really powerful microscope that is used
+
+334
+0:13:22,480 --> 0:13:24,760
+to actually sequence each of those
+
+335
+0:13:24,760 --> 0:13:26,560
+molecules of DNA
+
+336
+0:13:26,560 --> 0:13:29,680
+and so remember that when we put the
+
+337
+0:13:29,680 --> 0:13:32,199
+flow cell on to the sequencer this is
+
+338
+0:13:32,199 --> 0:13:34,269
+what it looks like we have a lot of
+
+339
+0:13:34,269 --> 0:13:36,999
+clusters that each have a sequencing
+
+340
+0:13:36,999 --> 0:13:39,730
+primer bound to them and the chemistry
+
+341
+0:13:39,730 --> 0:13:42,430
+for sequencing is very similar to the
+
+342
+0:13:42,430 --> 0:13:44,860
+singer sequencing terminators that were
+
+343
+0:13:44,860 --> 0:13:46,120
+used but the one difference is that
+
+344
+0:13:46,120 --> 0:13:48,309
+these are reversible and so they're
+
+345
+0:13:48,309 --> 0:13:51,490
+reversible in in two ways so first these
+
+346
+0:13:51,490 --> 0:13:53,439
+can be incorporated into the clusters by
+
+347
+0:13:53,439 --> 0:13:55,930
+a DNA polymerase and those clusters will
+
+348
+0:13:55,930 --> 0:13:57,550
+light up in four different colors
+
+349
+0:13:57,550 --> 0:13:58,720
+depending on which base gets
+
+350
+0:13:58,720 --> 0:14:01,449
+incorporated a picture is taken and
+
+351
+0:14:01,449 --> 0:14:02,769
+after that picture is taken we can
+
+352
+0:14:02,769 --> 0:14:05,230
+actually remove these terminators and
+
+353
+0:14:05,230 --> 0:14:06,490
+the fluorescent groups with some
+
+354
+0:14:06,490 --> 0:14:09,069
+chemicals and what results is we
+
+355
+0:14:09,069 --> 0:14:10,839
+regenerate the three prime hydroxyl
+
+356
+0:14:10,839 --> 0:14:13,600
+groups so now that cluster can have
+
+357
+0:14:13,600 --> 0:14:17,230
+another round of bases added to it and
+
+358
+0:14:17,230 --> 0:14:19,180
+so this is what it looks like for a
+
+359
+0:14:19,180 --> 0:14:21,910
+single molecule on this end over here we
+
+360
+0:14:21,910 --> 0:14:24,819
+have our template strand bound to a
+
+361
+0:14:24,819 --> 0:14:27,309
+sequencing primer and this allows DNA
+
+362
+0:14:27,309 --> 0:14:29,800
+polymerase to bind and then add the base
+
+363
+0:14:29,800 --> 0:14:32,079
+in this case isn't yellow one so once
+
+364
+0:14:32,079 --> 0:14:34,110
+this gets added a picture is taken and
+
+365
+0:14:34,110 --> 0:14:37,029
+then we add chemicals to remove the
+
+366
+0:14:37,029 --> 0:14:38,800
+fluorescent group and the terminator so
+
+367
+0:14:38,800 --> 0:14:40,269
+that DNA polymerase can add a second
+
+368
+0:14:40,269 --> 0:14:43,120
+base an image is taken chemistry is
+
+369
+0:14:43,120 --> 0:14:45,160
+performed to remove that base and to
+
+370
+0:14:45,160 --> 0:14:46,930
+regenerate the three prime hydroxyl and
+
+371
+0:14:46,930 --> 0:14:50,410
+then we can add another base and so over
+
+372
+0:14:50,410 --> 0:14:52,149
+time the cycle just repeats over and
+
+373
+0:14:52,149 --> 0:14:55,180
+over again with multiple cycles of a
+
+374
+0:14:55,180 --> 0:14:58,930
+base Edition imaging and then chemistry
+
+375
+0:14:58,930 --> 0:15:02,769
+to remove the blocks and so if we look
+
+376
+0:15:02,769 --> 0:15:04,689
+at take a look at this depiction of five
+
+377
+0:15:04,689 --> 0:15:06,250
+different cycles so each of these
+
+378
+0:15:06,250 --> 0:15:08,379
+represents a different image taken and
+
+379
+0:15:08,379 --> 0:15:12,189
+if we follow the top left and the bottom
+
+380
+0:15:12,189 --> 0:15:15,129
+right clusters and see how those colors
+
+381
+0:15:15,129 --> 0:15:18,129
+changes over time we can actually build
+
+382
+0:15:18,129 --> 0:15:20,110
+the sequence so the top cluster the
+
+383
+0:15:20,110 --> 0:15:23,709
+sequence is going to be AG C C T because
+
+384
+0:15:23,709 --> 0:15:25,990
+it goes from yellow blue red red green
+
+385
+0:15:25,990 --> 0:15:30,999
+and the bottom one is G t AAC and so
+
+386
+0:15:30,999 --> 0:15:32,350
+again the power of the system is that
+
+387
+0:15:32,350 --> 0:15:34,360
+you can sequence up to billions of
+
+388
+0:15:34,360 --> 0:15:36,279
+sequences at the same time in parallel
+
+389
+0:15:36,279 --> 0:15:38,740
+and this is what gives these instruments
+
+390
+0:15:38,740 --> 0:15:39,840
+their throughput
+
+391
+0:15:39,840 --> 0:15:42,120
+so some people ask me why can't we
+
+392
+0:15:42,120 --> 0:15
+increase the amount of bases that we get
+
+393
+0:15 --> 0:15:46,650
+in a single read by just repeating the
+
+394
+0:15:46,650 --> 0:15:48,450
+country over and over again do this a
+
+395
+0:15:48,450 --> 0:15:50,520
+thousand two thousand ten thousand times
+
+396
+0:15:50,520 --> 0:15:53,400
+and the main reason why is that the
+
+397
+0:15:53,400 --> 0:15:55,200
+enzymes and chemistry's aren't perfect
+
+398
+0:15:55,200 --> 0:15:59,040
+so over here I have a cluster of one
+
+399
+0:15:59,040 --> 0:16:01,200
+single cluster made out of the same
+
+400
+0:16:01,200 --> 0:16:03,960
+template molecules but what happens is
+
+401
+0:16:03,960 --> 0:16:06,779
+because chemistry isn't perfect some of
+
+402
+0:16:06,779 --> 0:16:08,880
+the strands lag behind so this one is a
+
+403
+0:16:08,880 --> 0:16:11,010
+yellow instead of a green and some
+
+404
+0:16:11,010 --> 0:16:13,290
+clusters jump ahead so this one is now a
+
+405
+0:16:13,290 --> 0:16:15,690
+red instead of a green because it hopped
+
+406
+0:16:15,690 --> 0:16:19,110
+ahead and what happens is these errors
+
+407
+0:16:19,110 --> 0:16:21,630
+aren't too bad but over time and many
+
+408
+0:16:21,630 --> 0:16:23,850
+many cycles over the course of 100 200
+
+409
+0:16:23,850 --> 0:16:26,790
+300 cycles more and more strands start
+
+410
+0:16:26,790 --> 0:16:29,070
+to lag and more start to jump ahead so
+
+411
+0:16:29,070 --> 0:16:30,570
+that your true signal starts to
+
+412
+0:16:30,570 --> 0:16:32,430
+disappear and gets weaker and weaker and
+
+413
+0:16:32,430 --> 0:16:34,620
+this really limits Illumina sequencing
+
+414
+0:16:34,620 --> 0:16:39,480
+to about 300 bases for each read so with
+
+415
+0:16:39,480 --> 0:16:41,220
+the the Illumina sequencer four
+
+416
+0:16:41,220 --> 0:16:43,230
+different images are taken during each
+
+417
+0:16:43,230 --> 0:16:44,940
+cycle one for each of the four color
+
+418
+0:16:44,940 --> 0:16:48,600
+bases and so the images actually look
+
+419
+0:16:48,600 --> 0:16:50,700
+like this they're not very clear they're
+
+420
+0:16:50,700 --> 0:16:52,620
+not perfect circles and they're very
+
+421
+0:16:52,620 --> 0:16:55,740
+difficult to see by I just figure out
+
+422
+0:16:55,740 --> 0:16:57,570
+where one cluster starts and another
+
+423
+0:16:57,570 --> 0:16:59,760
+begins you know one example is here
+
+424
+0:16:59,760 --> 0:17:01,260
+let's say in the first cycle we have two
+
+425
+0:17:01,260 --> 0:17:04,140
+clusters that are both G these just look
+
+426
+0:17:04,140 --> 0:17:05,939
+like a single blob that's a single color
+
+427
+0:17:05,939 --> 0:17:07,170
+and this is really hard for the
+
+428
+0:17:07,170 --> 0:17:09,209
+sequencer to pick out but because we're
+
+429
+0:17:09,209 --> 0:17:11,520
+sequencing many many sequences at a time
+
+430
+0:17:11,520 --> 0:17:13,230
+in parallel chances are these aren't
+
+431
+0:17:13,230 --> 0:17:14,880
+identical sequences and if we go through
+
+432
+0:17:14,880 --> 0:17:17,280
+another cycle you know chances are that
+
+433
+0:17:17,280 --> 0:17:19,260
+they'll have a difference so now this
+
+434
+0:17:19,260 --> 0:17:21,810
+cluster on the right is an a while the
+
+435
+0:17:21,810 --> 0:17:23,939
+cluster on the left is still a G but
+
+436
+0:17:23,939 --> 0:17:25,740
+because of this the sequencer can now
+
+437
+0:17:25,740 --> 0:17:28,890
+compare these images and determine where
+
+438
+0:17:28,890 --> 0:17:31,620
+cluster a has a very pure signal where
+
+439
+0:17:31,620 --> 0:17:33,630
+there's a mixture between cluster a and
+
+440
+0:17:33,630 --> 0:17:36,030
+B and where cluster B has a pure signal
+
+441
+0:17:36,030 --> 0:17:38,760
+and a little side to just take imaging
+
+442
+0:17:38,760 --> 0:17:41,760
+information from just these clean areas
+
+443
+0:17:41,760 --> 0:17:45,780
+where do they have very pure signal so
+
+444
+0:17:45,780 --> 0:17:47,730
+again this is for color chemistry from
+
+445
+0:17:47,730 --> 0:17:49,290
+Illumina this is what had been used for
+
+446
+0:17:49,290 --> 0:17:51,660
+for many many years and it was very
+
+447
+0:17:51,660 --> 0:17:53,670
+clear and obvious one color for each
+
+448
+0:17:53,670 --> 0:17:55,740
+the four bases but there are issues with
+
+449
+0:17:55,740 --> 0:17:58,860
+this so the colors depicted here you
+
+450
+0:17:58,860 --> 0:18:00,060
+know you can tell the colors are very
+
+451
+0:18:00,060 --> 0:18:01,500
+very different however if you actually
+
+452
+0:18:01,500 --> 0:18:03,900
+look at the emission spectra you can see
+
+453
+0:18:03,900 --> 0:18:05,640
+there's significant overlap between the
+
+454
+0:18:05,640 --> 0:18:07,770
+four colors and this requires the
+
+455
+0:18:07,770 --> 0:18:10,050
+instruments to undergo a lot of color
+
+456
+0:18:10,050 --> 0:18:11,340
+compensation and then this can
+
+457
+0:18:11,340 --> 0:18:14,100
+contribute to errors so a few years ago
+
+458
+0:18:14,100 --> 0:18:16,350
+in Lumina introduced two color chemistry
+
+459
+0:18:16,350 --> 0:18:18,150
+so instead of using four colors to
+
+460
+0:18:18,150 --> 0:18:19,560
+represent four bases they're now using
+
+461
+0:18:19,560 --> 0:18:22,800
+two colors to represent four bases in
+
+462
+0:18:22,800 --> 0:18:24,510
+this case they're using red and green
+
+463
+0:18:24,510 --> 0:18:27,080
+and the way this works is that you have
+
+464
+0:18:27,080 --> 0:18:31,380
+T's which are green C's which are red a
+
+465
+0:18:31,380 --> 0:18:34,020
+s which are actually a mix of both color
+
+466
+0:18:34,020 --> 0:18:36,150
+so you'll see them in both images and
+
+467
+0:18:36,150 --> 0:18:38,700
+then G's actually have no color or no
+
+468
+0:18:38,700 --> 0:18:41,150
+signal and so this is how you can encode
+
+469
+0:18:41,150 --> 0:18:43,650
+four different bases with only two
+
+470
+0:18:43,650 --> 0:18:46,320
+colors and so initially the quality of
+
+471
+0:18:46,320 --> 0:18:48,150
+the two color chemistry wasn't as great
+
+472
+0:18:48,150 --> 0:18:49,950
+as the four color chemistry but recent
+
+473
+0:18:49,950 --> 0:18:51,570
+developments on the Novus II platform
+
+474
+0:18:51,570 --> 0:18:53,490
+one of them luminous newer sequencers
+
+475
+0:18:53,490 --> 0:18:55,710
+that uses two colors the data quality
+
+476
+0:18:55,710 --> 0:18:57,390
+actually rivals the four color
+
+477
+0:18:57,390 --> 0:18:59,280
+instruments and so there's definitely
+
+478
+0:18:59,280 --> 0:19:01,590
+been some improvements in this area the
+
+479
+0:19:01,590 --> 0:19:03,360
+other benefit of two color sequencing is
+
+480
+0:19:03,360 --> 0:19:04,530
+that these reagents are generally
+
+481
+0:19:04,530 --> 0:19:05,970
+cheaper to make because you don't have
+
+482
+0:19:05,970 --> 0:19:07,770
+to have so many colors and the
+
+483
+0:19:07,770 --> 0:19:08,760
+instruments are also less expensive
+
+484
+0:19:08,760 --> 0:19:11,130
+because you only have to capture two
+
+485
+0:19:11,130 --> 0:19:13,800
+images instead of four so how far can
+
+486
+0:19:13,800 --> 0:19:15,540
+you take this can you do sequencing with
+
+487
+0:19:15,540 --> 0:19:17,310
+only a single color and the answer is
+
+488
+0:19:17,310 --> 0:19:19,890
+yes a newer platform just a release by
+
+489
+0:19:19,890 --> 0:19:23,190
+Illumina uses a single color to encode
+
+490
+0:19:23,190 --> 0:19:24,840
+for different bases
+
+491
+0:19:24,840 --> 0:19:28,110
+and they do this by taking two images
+
+492
+0:19:28,110 --> 0:19:30,420
+that are separated by a chemistry step
+
+493
+0:19:30,420 --> 0:19:32,280
+in the middle so I'll walk you through
+
+494
+0:19:32,280 --> 0:19:34,620
+this in the first image they add the
+
+495
+0:19:34,620 --> 0:19:36,210
+four different bases and in this case
+
+496
+0:19:36,210 --> 0:19:39,270
+the A's and T's have a color on there
+
+497
+0:19:39,270 --> 0:19:41,490
+and again it's the same color the season
+
+498
+0:19:41,490 --> 0:19:44,460
+G's don't have any color one thing to
+
+499
+0:19:44,460 --> 0:19:46,950
+note is the a base has a cleavable
+
+500
+0:19:46,950 --> 0:19:50,460
+linkage between the base and the color
+
+501
+0:19:50,460 --> 0:19:55,110
+and the sea base has a molecule that we
+
+502
+0:19:55,110 --> 0:19
+can use to attach something later on so
+
+503
+0:19 --> 0:19:59,040
+we take an image first so a Slav color
+
+504
+0:19:59,040 --> 0:20:01,920
+and T's will have color CS and G's will
+
+505
+0:20:01,920 --> 0:20:04,380
+not have any color next we go through a
+
+506
+0:20:04,380 --> 0:20:07,600
+chemistry step that will cleave there
+
+507
+0:20:07,600 --> 0:20:09,940
+green color from the a basis and it'll
+
+508
+0:20:09,940 --> 0:20:12,130
+add a molecule that will bind to the C
+
+509
+0:20:12,130 --> 0:20:15,549
+basis and make them now colored and so
+
+510
+0:20:15,549 --> 0:20:17,350
+we take a second image so in the second
+
+511
+0:20:17,350 --> 0:20:19,480
+image A's won't have any color because
+
+512
+0:20:19,480 --> 0:20:22,720
+any that did had them cleaved off the G
+
+513
+0:20:22,720 --> 0:20:25,090
+still won't have any color but both the
+
+514
+0:20:25,090 --> 0:20:27,039
+C's and T's will have color and what
+
+515
+0:20:27,039 --> 0:20:28,390
+this looks like if you break this down
+
+516
+0:20:28,390 --> 0:20:31,090
+is if you compare a single cluster and
+
+517
+0:20:31,090 --> 0:20:33,549
+look at its color whether it's on or off
+
+518
+0:20:33,549 --> 0:20:35,950
+between image one or two you can get
+
+519
+0:20:35,950 --> 0:20:39,340
+four different basis outs so these are
+
+520
+0:20:39,340 --> 0:20:40,720
+the different flavors of Illumina
+
+521
+0:20:40,720 --> 0:20:42,250
+sequencing we started off with four
+
+522
+0:20:42,250 --> 0:20:43,870
+color chemistry move to two color
+
+523
+0:20:43,870 --> 0:20:45,370
+chemistry now we have one color
+
+524
+0:20:45,370 --> 0:20:47,289
+chemistry all these chemistry's are
+
+525
+0:20:47,289 --> 0:20:48,880
+still used currently on existing
+
+526
+0:20:48,880 --> 0:20:51,220
+platforms and each of them have have
+
+527
+0:20:51,220 --> 0:20:54,429
+their benefits so now we're gonna move
+
+528
+0:20:54,429 --> 0:20:56,350
+over to the long greet sequencers we're
+
+529
+0:20:56,350 --> 0:20:57,640
+going to start with Oxford nanopore
+
+530
+0:20:57,640 --> 0:21:00,070
+sequencing and with this sequencing
+
+531
+0:21:00,070 --> 0:21:02,110
+technology it uses these Nana pores
+
+532
+0:21:02,110 --> 0:21:04,600
+which are extremely small pores with
+
+533
+0:21:04,600 --> 0:21:06,730
+really small gaps in them so in this
+
+534
+0:21:06,730 --> 0:21:08,860
+case one point eight nanometers that are
+
+535
+0:21:08,860 --> 0:21:11,500
+embedded in lipid membranes these lipid
+
+536
+0:21:11,500 --> 0:21:13,390
+membranes act as a barrier that prevent
+
+537
+0:21:13,390 --> 0:21:15,250
+currents from going back and forth so
+
+538
+0:21:15,250 --> 0:21:16,990
+currents have to pass through the pore
+
+539
+0:21:16,990 --> 0:21:19,390
+and the way the Nana 4c would serve
+
+540
+0:21:19,390 --> 0:21:22,690
+works is single-stranded DNA or even RNA
+
+541
+0:21:22,690 --> 0:21:24,880
+in this case now our threaded through
+
+542
+0:21:24,880 --> 0:21:27,340
+the pore and depending on which bases
+
+543
+0:21:27,340 --> 0:21:29,679
+are in the pore to give a moment that
+
+544
+0:21:29,679 --> 0:21:31,570
+changes the current that's read out and
+
+545
+0:21:31,570 --> 0:21:33,429
+detectors can measure this change in
+
+546
+0:21:33,429 --> 0:21:35,559
+current and over here is just a
+
+547
+0:21:35,559 --> 0:21:37,630
+depiction of what this looks like so for
+
+548
+0:21:37,630 --> 0:21:39,700
+instance you might have a symbol of one
+
+549
+0:21:39,700 --> 0:21:41,679
+level of current for your T's a
+
+550
+0:21:41,679 --> 0:21:44,919
+different ones for G's something else
+
+551
+0:21:44,919 --> 0:21:46,929
+for C's and then another level of
+
+552
+0:21:46,929 --> 0:21:49,510
+current for Ace and you can just measure
+
+553
+0:21:49,510 --> 0:21:51,850
+these current traces over time and build
+
+554
+0:21:51,850 --> 0:21:54,280
+a sequence and in reality the traces
+
+555
+0:21:54,280 --> 0:21:56,799
+don't look this clean because in the
+
+556
+0:21:56,799 --> 0:21:59,260
+pore they're actually up to six bases at
+
+557
+0:21:59,260 --> 0:22:02,110
+a time present and with six bases times
+
+558
+0:22:02,110 --> 0:22:04,419
+four different possible bases for your a
+
+559
+0:22:04,419 --> 0:22:07,299
+C's GS and T's this generates up to
+
+560
+0:22:07,299 --> 0:22:10,240
+4,000 different possible states and so
+
+561
+0:22:10,240 --> 0:22:12,340
+it's really a technical tour de force to
+
+562
+0:22:12,340 --> 0:22:15,490
+get this to work but today you can get
+
+563
+0:22:15,490 --> 0:22:17,230
+this to work you can buy these systems
+
+564
+0:22:17,230 --> 0:22
+and they do have high error rates
+
+565
+0:22 --> 0:22:21,309
+anywhere from 10 to 15%
+
+566
+0:22:21,309 --> 0:22:23,889
+and these errors tend to be biased but
+
+567
+0:22:23,889 --> 0:22:25,389
+you can get really really long reads the
+
+568
+0:22:25,389 --> 0:22:27,970
+current record is a two mega base or 2
+
+569
+0:22:27,970 --> 0:22:30,820
+million base read from a single piece of
+
+570
+0:22:30,820 --> 0:22:34,240
+DNA and again as I mentioned you can now
+
+571
+0:22:34,240 --> 0:22:36,039
+directly sequence RNA so you don't have
+
+572
+0:22:36,039 --> 0:22:38,620
+to convert that to DNA and they're even
+
+573
+0:22:38,620 --> 0:22:40,840
+possibilities of sequencing proteins in
+
+574
+0:22:40,840 --> 0:22:43,649
+the future which will be very exciting
+
+575
+0:22:43,649 --> 0:22:45,940
+the other benefit of the Oxford nanopore
+
+576
+0:22:45,940 --> 0:22:47,950
+system is that it's extremely portable
+
+577
+0:22:47,950 --> 0:22:50,529
+you can see this scientist is actually
+
+578
+0:22:50,529 --> 0:22:52,269
+doing some sequencing out in the field
+
+579
+0:22:52,269 --> 0:22:53,710
+this looks like a jungle somewhere in
+
+580
+0:22:53,710 --> 0:22:55,149
+the world you can see the foilage in the
+
+581
+0:22:55,149 --> 0:22:57,129
+back so there's a laptop run to the
+
+582
+0:22:57,129 --> 0:22:59,049
+sequencer and the sequencer is actually
+
+583
+0:22:59,049 --> 0:23:01,779
+the small device that the scientists is
+
+584
+0:23:01,779 --> 0:23:04,450
+pipetting into it's really the smize of
+
+585
+0:23:04,450 --> 0:23:06,759
+of a small remote control and it's
+
+586
+0:23:06,759 --> 0:23:08,679
+powered by the computer that is attached
+
+587
+0:23:08,679 --> 0:23:10,149
+to you so me and so you can really take
+
+588
+0:23:10,149 --> 0:23:12,399
+sequencing anywhere in the world these
+
+589
+0:23:12,399 --> 0:23:14,080
+systems have even been taking up to the
+
+590
+0:23:14,080 --> 0:23:15,820
+international space station for
+
+591
+0:23:15,820 --> 0:23:19,990
+sequencing in space so the last
+
+592
+0:23:19,990 --> 0:23:21,340
+technology i'm going to talk to you
+
+593
+0:23:21,340 --> 0:23:23,470
+about today is specific bio sequencing
+
+594
+0:23:23,470 --> 0:23:25,720
+and this is another sequencing by
+
+595
+0:23:25,720 --> 0:23:28,509
+synthesis method and it uses building
+
+596
+0:23:28,509 --> 0:23:30,610
+blocks similar to traditional saying
+
+597
+0:23:30,610 --> 0:23:31,899
+your sequencing and lumina sequencing
+
+598
+0:23:31,899 --> 0:23:34,090
+but they're slightly different so down
+
+599
+0:23:34,090 --> 0:23:36,610
+here I'm showing you an A base from the
+
+600
+0:23:36,610 --> 0:23:39,070
+Pacific bio sequencer and you'll notice
+
+601
+0:23:39,070 --> 0:23:39,759
+first
+
+602
+0:23:39,759 --> 0:23:41,559
+there's no block on the 3 prime hydroxyl
+
+603
+0:23:41,559 --> 0:23:43,749
+n this means that once this gets
+
+604
+0:23:43,749 --> 0:23:45,820
+incorporated another base can get
+
+605
+0:23:45,820 --> 0:23:48,730
+incorporated right away and then the
+
+606
+0:23:48,730 --> 0:23:50,019
+fluorescent group is actually attached
+
+607
+0:23:50,019 --> 0:23:53,039
+to the phosphates and these phosphates
+
+608
+0:23:53,039 --> 0:23:56,440
+actually are removed once a base is
+
+609
+0:23:56,440 --> 0:23:57,700
+incorporated this means that this
+
+610
+0:23:57,700 --> 0:23:59,230
+flourish and group once it gets
+
+611
+0:23:59,230 --> 0:24:01,240
+incorporated into a DNA strand will
+
+612
+0:24:01,240 --> 0:24:03,700
+float away from the DNA strand so this
+
+613
+0:24:03,700 --> 0:24:04,929
+means that we don't have to do separate
+
+614
+0:24:04,929 --> 0:24:07,360
+chemistry to enable the reaction to
+
+615
+0:24:07,360 --> 0:24:11,009
+proceed this happens in in real time and
+
+616
+0:24:11,009 --> 0:24:14,470
+on the instrument there's a really
+
+617
+0:24:14,470 --> 0:24:18,879
+really tiny array of wells into in a
+
+618
+0:24:18,879 --> 0:24:21,070
+plate and these wells are only about a
+
+619
+0:24:21,070 --> 0:24:23,740
+hundred nanometers in height at the
+
+620
+0:24:23,740 --> 0:24:25,869
+bottom of each of these wells is a DNA
+
+621
+0:24:25,869 --> 0:24:27,879
+polymerase and what happens is a
+
+622
+0:24:27,879 --> 0:24:31,029
+template molecule is bounded polymerase
+
+623
+0:24:31,029 --> 0:24:32,919
+and then it starts incorporating this
+
+624
+0:24:32,919 --> 0:24:34,930
+modified basis and there's
+
+625
+0:24:34,930 --> 0:24:36,280
+camera at the bottom that's taking the
+
+626
+0:24:36,280 --> 0:24:38,350
+video that's monitoring this reaction in
+
+627
+0:24:38,350 --> 0:24:41,380
+real-time so remember we have four
+
+628
+0:24:41,380 --> 0:24:43,030
+different bases that have four different
+
+629
+0:24:43,030 --> 0:24:45,190
+colors and these bases are flowing in
+
+630
+0:24:45,190 --> 0:24:47,290
+and out of this well really really
+
+631
+0:24:47,290 --> 0:24:51,190
+quickly and so you get a signal that's
+
+632
+0:24:51,190 --> 0:24:53,260
+just kind of very noisy you don't really
+
+633
+0:24:53,260 --> 0:24:54,880
+see anything happening but when the
+
+634
+0:24:54,880 --> 0:24:57,460
+proper base is bound to the plume race
+
+635
+0:24:57,460 --> 0:24:59,860
+and matches the template it actually
+
+636
+0:24:59,860 --> 0:25:01,390
+dwells there for a certain amount of
+
+637
+0:25:01,390 --> 0:25:03,940
+time it's really a split second but that
+
+638
+0:25:03,940 --> 0:25:05,680
+split second gets recorded by the video
+
+639
+0:25:05,680 --> 0:25:07,870
+and you see this bump up and the
+
+640
+0:25:07,870 --> 0:25:09,720
+fluorescent signal in this case blue
+
+641
+0:25:09,720 --> 0:25:12,850
+which is the G base and so once the
+
+642
+0:25:12,850 --> 0:25:15,220
+incorporation occurs the phosphates
+
+643
+0:25:15,220 --> 0:25:17,440
+leave and the fluorescent group that
+
+644
+0:25:17,440 --> 0:25:19,030
+hatch the phosphates also leaves and
+
+645
+0:25:19,030 --> 0:25:20,830
+resulting in the signal dropping back
+
+646
+0:25:20,830 --> 0:25:24,070
+down to this this background level and
+
+647
+0:25:24,070 --> 0:25:27,040
+this will continue until the next base
+
+648
+0:25:27,040 --> 0:25:28,780
+that's correct binds and you'll see
+
+649
+0:25:28,780 --> 0:25:30,970
+another spike and so by looking at these
+
+650
+0:25:30,970 --> 0:25:33,250
+spikes and signals across anywhere from
+
+651
+0:25:33,250 --> 0:25:35,800
+one to eight million wells at a time we
+
+652
+0:25:35,800 --> 0:25:39,640
+can build up DNA sequences and PacBio
+
+653
+0:25:39,640 --> 0:25:41,740
+sequencing generates long reads anywhere
+
+654
+0:25:41,740 --> 0:25:44,080
+from one to 200 kilobases and length so
+
+655
+0:25:44,080 --> 0:25:45,940
+this is shorter than the nanopore
+
+656
+0:25:45,940 --> 0:25:47,470
+sequencing but it's still much longer
+
+657
+0:25:47,470 --> 0:25:49,480
+than Illumina sequencing it also has a
+
+658
+0:25:49,480 --> 0:25:52,420
+high error rate similar to Oxford and a
+
+659
+0:25:52,420 --> 0:25:54,310
+poor sequencing but it's errors are
+
+660
+0:25:54,310 --> 0:25:56,140
+random this is actually a good thing
+
+661
+0:25:56,140 --> 0:25:57,760
+because the errors are random if you
+
+662
+0:25:57,760 --> 0:25:59,560
+sample the same DNA molecule several
+
+663
+0:25:59,560 --> 0:26:01,480
+times you could generate a very accurate
+
+664
+0:26:01,480 --> 0:26:04,810
+consensus sequence and on the top is a
+
+665
+0:26:04,810 --> 0:26:07,420
+model of what a packed bio library looks
+
+666
+0:26:07,420 --> 0:26:09,790
+like there's a DNA sequence and the
+
+667
+0:26:09,790 --> 0:26:11,920
+adapters in green actually caused the
+
+668
+0:26:11,920 --> 0:26:13,600
+DNA become this dumbbell shape so it's
+
+669
+0:26:13,600 --> 0:26:16,180
+one circular structure and when the
+
+670
+0:26:16,180 --> 0:26:17,860
+polymerase binds it starts a sequence
+
+671
+0:26:17,860 --> 0:26:19,570
+and actually go round and round this
+
+672
+0:26:19,570 --> 0:26:21,820
+molecule many many times generating a
+
+673
+0:26:21,820 --> 0:26:24,130
+series of reads that are all attached
+
+674
+0:26:24,130 --> 0:26:25,480
+together that came from the same
+
+675
+0:26:25,480 --> 0:26:27,760
+identical template so for instance if we
+
+676
+0:26:27,760 --> 0:26:30,190
+have a mutation present in a sample and
+
+677
+0:26:30,190 --> 0:26:32,950
+want to detect this this mutation should
+
+678
+0:26:32,950 --> 0:26:35,080
+be present in all the copies and so if
+
+679
+0:26:35,080 --> 0:26:38,290
+we match up all of the different reads
+
+680
+0:26:38,290 --> 0:26:39,670
+together they came from the same
+
+681
+0:26:39,670 --> 0:26:41,530
+molecule we can see that the true
+
+682
+0:26:41,530 --> 0:26:43,780
+mutation is actually detected we see
+
+683
+0:26:43,780 --> 0:26:46,870
+that in every single read and then other
+
+684
+0:26:46,870 --> 0:26:48,860
+random errors that show up
+
+685
+0:26:48,860 --> 0:26:50,929
+don't match up with each other and this
+
+686
+0:26:50,929 --> 0:26:52,309
+allows us to generate a very accurate
+
+687
+0:26:52,309 --> 0:26:55,130
+incenses that has an accuracy of
+
+688
+0:26:55,130 --> 0:26:56,900
+anywhere from one to a thousand to one
+
+689
+0:26:56,900 --> 0:26:59,330
+in 10,000 actually so even exceeding a
+
+690
+0:26:59,330 --> 0:27:03,260
+raw Illumina sequencing accuracy so why
+
+691
+0:27:03,260 --> 0:27:04,520
+do you long reads because there are
+
+692
+0:27:04,520 --> 0:27:05,720
+certain down sides they're harder to
+
+693
+0:27:05,720 --> 0:27:08,030
+repair in general they cost more but
+
+694
+0:27:08,030 --> 0:27:10,340
+there are certain benefits and one
+
+695
+0:27:10,340 --> 0:27:12,710
+example is if you want to assemble a new
+
+696
+0:27:12,710 --> 0:27:14,830
+genome that hasn't been sequences before
+
+697
+0:27:14,830 --> 0:27:17,480
+and so this is kind of like solving a
+
+698
+0:27:17,480 --> 0:27:19,400
+puzzle that's been either split into
+
+699
+0:27:19,400 --> 0:27
+10,000 pieces or into four pieces
+
+700
+0:27 --> 0:27:23,660
+Illumina sequencing and this is
+
+701
+0:27:23,660 --> 0:27:25,490
+analogous to the 10,000 pieces because
+
+702
+0:27:25,490 --> 0:27:27,140
+he had many many short reads that you
+
+703
+0:27:27,140 --> 0:27:28,610
+have to stitch together and this can be
+
+704
+0:27:28,610 --> 0:27:30,620
+very very difficult however you have
+
+705
+0:27:30,620 --> 0:27:32,660
+very long reads and not that many of
+
+706
+0:27:32,660 --> 0:27:35,240
+them it's really easy to align them to
+
+707
+0:27:35,240 --> 0:27:37,370
+rebuild this new genome that you want to
+
+708
+0:27:37,370 --> 0:27:39,679
+assemble it's also useful if you want to
+
+709
+0:27:39,679 --> 0:27:41,840
+identify structural variations so for
+
+710
+0:27:41,840 --> 0:27:44,360
+instance in a lot of human cancer
+
+711
+0:27:44,360 --> 0:27:47,059
+samples there aren't just single based
+
+712
+0:27:47,059 --> 0:27:49,250
+changes in mutations there are some that
+
+713
+0:27:49,250 --> 0:27:50,720
+are structural variations where they're
+
+714
+0:27:50,720 --> 0:27:53,299
+huge chunks of DNA that have been moved
+
+715
+0:27:53,299 --> 0:27:55,070
+to different areas of the genome here
+
+716
+0:27:55,070 --> 0:27:57,710
+there or flipped around and this can be
+
+717
+0:27:57,710 --> 0:27:59,630
+very difficult to detect by short read
+
+718
+0:27:59,630 --> 0:28:00,890
+Illumina sequencing but if you have
+
+719
+0:28:00,890 --> 0:28:03,559
+really long read sequencing you can span
+
+720
+0:28:03,559 --> 0:28:05,809
+these changes and then really easily
+
+721
+0:28:05,809 --> 0:28:08,110
+identify the structural variations
+
+722
+0:28:08,110 --> 0:28:10,309
+lastly you might want to identify where
+
+723
+0:28:10,309 --> 0:28:12,890
+mutations come from for instance in
+
+724
+0:28:12,890 --> 0:28:14,809
+humans we get one set of our chromosomes
+
+725
+0:28:14,809 --> 0:28:18,559
+from mom one set from dad and there can
+
+726
+0:28:18,559 --> 0:28:20,720
+be mutations on either one so nice in
+
+727
+0:28:20,720 --> 0:28:22,490
+patients might be on the same set of
+
+728
+0:28:22,490 --> 0:28:25,070
+chromosomes some might be on either one
+
+729
+0:28:25,070 --> 0:28:27,290
+and to be able to do this with the limit
+
+730
+0:28:27,290 --> 0:28:28,760
+of sequencing again is very difficult
+
+731
+0:28:28,760 --> 0:28:30,440
+because the short reads make it hard to
+
+732
+0:28:30,440 --> 0:28:31,790
+determine which chromosome they came
+
+733
+0:28:31,790 --> 0:28:34,280
+from but with long read sequencing it's
+
+734
+0:28:34,280 --> 0:28:36,530
+much easier to do so so lots of
+
+735
+0:28:36,530 --> 0:28:37,669
+applications for next-generation
+
+736
+0:28:37,669 --> 0:28:39,919
+sequencing I'm gonna talk about a couple
+
+737
+0:28:39,919 --> 0:28:42,530
+examples one is prenatal testing this
+
+738
+0:28:42,530 --> 0:28:44,179
+used to be done using a very invasive
+
+739
+0:28:44,179 --> 0:28:48,710
+amniocentesis sampling which had certain
+
+740
+0:28:48,710 --> 0:28:50,360
+rates of complications associated with
+
+741
+0:28:50,360 --> 0:28
+it but with next-generation sequencing
+
+742
+0:28 --> 0:28:54,530
+we can actually take a blood sample from
+
+743
+0:28:54,530 --> 0:28:56,540
+the mom and nowhere near the fetus and
+
+744
+0:28:56,540 --> 0:28:58,490
+actually sequence all the DNA that's
+
+745
+0:28:58,490 --> 0:29:00,620
+present in the blood and the reason why
+
+746
+0:29:00,620 --> 0:29:02,720
+this works is that fetal DNA
+
+747
+0:29:02,720 --> 0:29:05,180
+actually makes its way into the mothers
+
+748
+0:29:05,180 --> 0:29:07,040
+bloodstream and so we can use that to
+
+749
+0:29:07,040 --> 0:29:08,660
+detect any type of chromosomal
+
+750
+0:29:08,660 --> 0:29
+abnormalities in a fetus and the same
+
+751
+0:29 --> 0:29:12,860
+thing happens with cancer and transplant
+
+752
+0:29:12,860 --> 0:29:15,860
+rejection patients so in cancer the
+
+753
+0:29:15,860 --> 0:29:17,420
+cancer cells are constantly shedding
+
+754
+0:29:17,420 --> 0:29:19,160
+their DNA out into the bloodstream and
+
+755
+0:29:19,160 --> 0:29:21,290
+because the Chancellor genome is going
+
+756
+0:29:21,290 --> 0:29:23,210
+to be slightly different than the normal
+
+757
+0:29:23,210 --> 0:29:24,740
+genome we can identify those through
+
+758
+0:29:24,740 --> 0:29:26,510
+sequencing and same thing with
+
+759
+0:29:26,510 --> 0:29:29,030
+transplant rejection if a donated hearts
+
+760
+0:29:29,030 --> 0:29:31,820
+for instance is undergoing rejection its
+
+761
+0:29:31,820 --> 0:29:33,500
+cells are dying and shedding DNA and
+
+762
+0:29:33,500 --> 0:29:35,720
+those donor DNA sequences are very
+
+763
+0:29:35,720 --> 0:29:37,400
+different from the recipients DNA
+
+764
+0:29:37,400 --> 0:29:39,410
+sequences and we can detect that by
+
+765
+0:29:39,410 --> 0:29:42,140
+sequencing that material another example
+
+766
+0:29:42,140 --> 0:29:44,210
+of using a next-gen sequencing is to
+
+767
+0:29:44,210 --> 0:29:46,250
+detect pathogens pathogens have their
+
+768
+0:29:46,250 --> 0:29:48,500
+own set of DNA and RNA that are very
+
+769
+0:29:48,500 --> 0:29:50,270
+different from human sequences and so if
+
+770
+0:29:50,270 --> 0:29:52,100
+there's a pathogen present in a human
+
+771
+0:29:52,100 --> 0:29:54,740
+sample we can sequence this human sample
+
+772
+0:29:54,740 --> 0:29:57,170
+ignore all the reads or the sequences
+
+773
+0:29:57,170 --> 0:29:59,080
+that are human and asked what's left and
+
+774
+0:29:59,080 --> 0:30:01,190
+typically if there's a pathogen present
+
+775
+0:30:01,190 --> 0:30:04,280
+we'll be able to detect its sequence in
+
+776
+0:30:04,280 --> 0:30:07,670
+that sample and lastly in the context of
+
+777
+0:30:07,670 --> 0:30:09,950
+cancer treatment cancer again is driven
+
+778
+0:30:09,950 --> 0:30:11,930
+by mutations and there are lots of
+
+779
+0:30:11,930 --> 0:30:13,850
+different therapies for cancer but
+
+780
+0:30:13,850 --> 0:30:15,020
+they're very specific for certain
+
+781
+0:30:15,020 --> 0:30:17,630
+cancers and so by doing next-generation
+
+782
+0:30:17,630 --> 0:30:20,420
+sequencing on cancer samples we can
+
+783
+0:30:20,420 --> 0:30:22,100
+determine the best types of treatments
+
+784
+0:30:22,100 --> 0:30:25,450
+for patients and improve their outcomes
+
+785
+0:30:25,450 --> 0:30:27,890
+so the future of sequencing is very
+
+786
+0:30:27,890 --> 0:30:29,210
+exciting currently it's a thousand
+
+787
+0:30:29,210 --> 0:30:30,860
+dollars to sequence a genome but in the
+
+788
+0:30:30,860 --> 0:30:32,360
+next five or ten years so the cost will
+
+789
+0:30:32,360 --> 0:30:33,950
+probably come down to a hundred dollars
+
+790
+0:30:33,950 --> 0:30:36,020
+and it'll be interesting to see what
+
+791
+0:30:36,020 --> 0:30:37,850
+happens when let's this cost is reached
+
+792
+0:30:37,850 --> 0:30:40,130
+for instance well genome sequence just
+
+793
+0:30:40,130 --> 0:30:41,780
+become a routine part of your medical
+
+794
+0:30:41,780 --> 0:30:43,970
+record and if so this would be a great
+
+795
+0:30:43,970 --> 0:30:45,530
+resource for researchers trying to study
+
+796
+0:30:45,530 --> 0:30:47,960
+genetic diseases but at the same point
+
+797
+0:30:47,960 --> 0:30:50,150
+you have to understand and figure out
+
+798
+0:30:50,150 --> 0:30:52,970
+ways of protecting patients genetic
+
+799
+0:30:52,970 --> 0:30:54,730
+information if all of this is out there
+
+800
+0:30:54,730 --> 0:30:56,840
+but it's going to be very exciting to
+
+801
+0:30:56,840 --> 0:30:58,820
+see where what new applications are
+
+802
+0:30:58,820 --> 0:31:01,190
+developed for next-gen sequencing as the
+
+803
+0:31:01,190 --> 0:31:04,450
+technology continues to develop a mature
+
+804
+0:31:04,450 --> 0:31:06,710
+that I'd like to thank you for watching
+
+805
+0:31:06,710 --> 0:31:15,850
+and joining us today
+
+806
+0:31:15,850 --> 0:31:17,910
+you
+

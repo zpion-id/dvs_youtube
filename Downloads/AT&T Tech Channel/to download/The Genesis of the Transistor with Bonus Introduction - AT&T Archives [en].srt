@@ -1,0 +1,1040 @@
+1
+0:00:08,269 --> 0:00:11,639
+when the transistor arguably the most
+
+2
+0:00:11,639 --> 0:00:14,490
+important invention of the 20th century
+
+3
+0:00:14,490 --> 0:00:17,039
+was invented at Bell Labs at the tail
+
+4
+0:00:17,039 --> 0:00:20,730
+end of 1947 there was one problem that
+
+5
+0:00:20,730 --> 0:00:24,240
+remained unsolved what to call such an
+
+6
+0:00:24,240 --> 0:00:26,880
+important device though members of the
+
+7
+0:00:26,880 --> 0:00:29,610
+lab staff were aware of the transistors
+
+8
+0:00:29,610 --> 0:00:32,399
+existence it would be months before the
+
+9
+0:00:32,399 --> 0:00:33,629
+public would hear of it
+
+10
+0:00:33,629 --> 0:00:35,820
+that would happen when the patents were
+
+11
+0:00:35,820 --> 0:00:38,039
+filed and the press materials released
+
+12
+0:00:38,039 --> 0:00:41,399
+as the day drew closer it became
+
+13
+0:00:41,399 --> 0:00:43,710
+increasingly clear that this particular
+
+14
+0:00:43,710 --> 0:00:48,059
+invention really needed a great name the
+
+15
+0:00:48,059 --> 0:00:49,649
+descriptive terms that were floating
+
+16
+0:00:49,649 --> 0:00:51,929
+around the labs like semiconductor
+
+17
+0:00:51,929 --> 0:00:55,979
+triode or surface States amplifier just
+
+18
+0:00:55,979 --> 0:00:58,620
+wouldn't cut it one of the devices
+
+19
+0:00:58,620 --> 0:01:00,569
+inventors Walter Brattain
+
+20
+0:01:00,569 --> 0:01:02,699
+asked his friend and fellow lab
+
+21
+0:01:02,699 --> 0:01:05,759
+scientist John our peers what he thought
+
+22
+0:01:05,759 --> 0:01:08,420
+it should be called Pierce came up with
+
+23
+0:01:08,420 --> 0:01:12,200
+transistor based on the root concepts of
+
+24
+0:01:12,200 --> 0:01:15,229
+transconductance and variable resistance
+
+25
+0:01:15,229 --> 0:01:17,729
+the final decision will be made by
+
+26
+0:01:17,729 --> 0:01:20,369
+committee but the committee was stumped
+
+27
+0:01:20,369 --> 0:01:22,649
+it failed to reach a unanimous decision
+
+28
+0:01:22,649 --> 0:01:26,850
+in a somewhat unusual move the name was
+
+29
+0:01:26,850 --> 0:01:29,549
+opened up to a vote engineers at the
+
+30
+0:01:29,549 --> 0:01:31,710
+labs received a ballot with names like
+
+31
+0:01:31,710 --> 0:01:36,060
+iota Tron and crystal triode included on
+
+32
+0:01:36,060 --> 0:01:38,490
+the list was Pierce's proposal the
+
+33
+0:01:38,490 --> 0:01:41,899
+transistor it won by a landslide
+
+34
+0:01:41,899 --> 0:01:50,719
+now here's genesis of the transistor
+
+35
+0:01:50,719 --> 0:01:55,750
+ever assembled the year 1947
+
+36
+0:01:55,750 --> 0:01:57,670
+and this is one of the latest
+
+37
+0:01:57,670 --> 0:01:59,560
+transistors a much more sophisticated
+
+38
+0:01:59,560 --> 0:02:02,080
+device but based on the same physical
+
+39
+0:02:02,080 --> 0:02:10,750
+principles as its ancestor the impact of
+
+40
+0:02:10,750 --> 0:02:12,250
+the transistor on the electronic
+
+41
+0:02:12,250 --> 0:02:15,370
+industry and on our society is
+
+42
+0:02:15,370 --> 0:02:41,530
+unquestioned
+
+43
+0:02:41,530 --> 0:02:44,239
+what is the origin of this remarkable
+
+44
+0:02:44,239 --> 0:03:05,300
+device
+
+45
+0:03:05,300 --> 0:03:08,070
+the discovery of the transistor is the
+
+46
+0:03:08,070 --> 0:03:12,570
+result of scientific research research
+
+47
+0:03:12,570 --> 0:03:15,990
+by men of insight who sought to
+
+48
+0:03:15,990 --> 0:03:18,300
+understand the atomic structure and
+
+49
+0:03:18,300 --> 0:03:20,310
+electrical behavior of semiconductors
+
+50
+0:03:20,310 --> 0:03:23,390
+which had intrigued them for years
+
+51
+0:03:23,390 --> 0:03:26,610
+for example electrical conductivity of
+
+52
+0:03:26,610 --> 0:03:33,540
+semiconductors like germanium lie
+
+53
+0:03:33,540 --> 0:03:35,160
+somewhere between that of good
+
+54
+0:03:35,160 --> 0:03:40,110
+conductors like copper and good
+
+55
+0:03:40,110 --> 0:03:46,380
+insulators like rubber conductivity of
+
+56
+0:03:46,380 --> 0:03:48,360
+semiconductors increases when their
+
+57
+0:03:48,360 --> 0:03:54,690
+temperature is raised conductivity of
+
+58
+0:03:54,690 --> 0:04:06,410
+metals decreases when they are heated
+
+59
+0:04:06,410 --> 0:04:08,720
+conductivity of most semiconductors like
+
+60
+0:04:08,720 --> 0:04:13,940
+germanium increases when they are
+
+61
+0:04:13,940 --> 0:04:21,980
+exposed to light
+
+62
+0:04:21,980 --> 0:04:24,560
+and when a metal like this copper wire
+
+63
+0:04:24,560 --> 0:04:27,020
+is in contact with a semiconductor in
+
+64
+0:04:27,020 --> 0:04:29,050
+this case a piece of germanium
+
+65
+0:04:29,050 --> 0:04:35,230
+conductivity is less in one direction
+
+66
+0:04:35,230 --> 0:04:42,760
+than the other
+
+67
+0:04:42,760 --> 0:04:45,160
+this characteristic of semiconductors
+
+68
+0:04:45,160 --> 0:04:47,350
+was exploited in the early days of radio
+
+69
+0:04:47,350 --> 0:04:50,440
+to make excellent radio detectors using
+
+70
+0:04:50,440 --> 0:04:54,310
+lead sulphide or silicon when these
+
+71
+0:04:54,310 --> 0:04:56,380
+semiconductors were touched with a fine
+
+72
+0:04:56,380 --> 0:04:59,710
+wire called a cat's whisker they changed
+
+73
+0:04:59,710 --> 0:05:02,350
+the incoming high-frequency signal to a
+
+74
+0:05:02,350 --> 0:05:04,720
+low frequency signal which could then be
+
+75
+0:05:04,720 --> 0:05:10,590
+heard with earphones
+
+76
+0:05:10,590 --> 0:05:13,230
+later semiconductors were used to build
+
+77
+0:05:13,230 --> 0:05:15,690
+devices like this copper oxide rectifier
+
+78
+0:05:15,690 --> 0:05:19,850
+for telephone systems
+
+79
+0:05:19,850 --> 0:05:24,020
+and cat's whisker rectifiers were
+
+80
+0:05:24,020 --> 0:05:26,300
+reactivated during World War two
+
+81
+0:05:26,300 --> 0:05:35,610
+for microwave radar
+
+82
+0:05:35,610 --> 0:05:38,110
+even though semiconductors were being
+
+83
+0:05:38,110 --> 0:05:41,440
+used they were not fully understood thus
+
+84
+0:05:41,440 --> 0:05
+after the war Bell Telephone
+
+85
+0:05 --> 0:05:45,220
+laboratories intensified the
+
+86
+0:05:45,220 --> 0:05:47,590
+investigation of semiconductors with a
+
+87
+0:05:47,590 --> 0:05:53,920
+hope for understanding understanding
+
+88
+0:05:53,920 --> 0:05:57,910
+might bring control and control was the
+
+89
+0:05:57,910 --> 0:06:02,370
+key to further use Bell Laboratories
+
+90
+0:06:02,370 --> 0:06:05,200
+scientists decided to study silicon and
+
+91
+0:06:05,200 --> 0:06:06,880
+germanium which are the simplest
+
+92
+0:06:06,880 --> 0:06:12,280
+semiconductors the work proceeded in two
+
+93
+0:06:12,280 --> 0:06:15,960
+areas the studies of bulk properties and
+
+94
+0:06:15,960 --> 0:06:21,850
+surface properties at a very early stage
+
+95
+0:06:21,850 --> 0:06:23,920
+of the investigation William Shockley
+
+96
+0:06:23,920 --> 0:06:25,990
+predicted from existing theories of
+
+97
+0:06:25,990 --> 0:06:27,660
+electrical conduction in semiconductors
+
+98
+0:06:27,660 --> 0:06:30,100
+that it should be possible to control
+
+99
+0:06:30,100 --> 0:06:32,320
+the supply of electrons near the surface
+
+100
+0:06:32,320 --> 0:06:34,840
+of a semiconductor by influencing them
+
+101
+0:06:34,840 --> 0:06:37,450
+with an electric field imposed from the
+
+102
+0:06:37,450 --> 0:06:41,200
+outside if true this might lead to a new
+
+103
+0:06:41,200 --> 0:06:43,990
+amplifier without the limitations of the
+
+104
+0:06:43,990 --> 0:06:48,250
+electron to Shockley devised some
+
+105
+0:06:48,250 --> 0:06:50,860
+experiments to test his hypothesis but
+
+106
+0:06:50,860 --> 0:06:52,750
+was unable to secure satisfactory
+
+107
+0:06:52,750 --> 0:06:58,060
+results the negative result of the field
+
+108
+0:06:58,060 --> 0:07:00,430
+effect experiments was an important
+
+109
+0:07:00,430 --> 0:07:02,620
+factor in suggesting to John Bardeen
+
+110
+0:07:02,620 --> 0:07:05,080
+that electrons were trapped in the
+
+111
+0:07:05,080 --> 0:07:12,880
+surface of the semiconductor this theory
+
+112
+0:07:12,880 --> 0:07:15,550
+suggested new experiments which Walter
+
+113
+0:07:15,550 --> 0:07:18,640
+Brattain carried out recently dr.
+
+114
+0:07:18,640 --> 0:07:20,140
+Bratton describes some of the
+
+115
+0:07:20,140 --> 0:07:22,810
+experiments one of the types of
+
+116
+0:07:22,810 --> 0:07:27,970
+measurements that was being done was to
+
+117
+0:07:27,970 --> 0:07:30,820
+measure the contact potential of the
+
+118
+0:07:30,820 --> 0:07:37,410
+surface of germanium one did this and
+
+119
+0:07:37,410 --> 0:07:40,960
+after the fashion of the first
+
+120
+0:07:40,960 --> 0:07:42,970
+experiment on contact potential by
+
+121
+0:07:42,970 --> 0:07:49,080
+kelvin by having a semiconductor surface
+
+122
+0:07:49,080 --> 0:07:51,520
+whether electrical contact or
+
+123
+0:07:51,520 --> 0:07:53,650
+semiconductor placing close to the
+
+124
+0:07:53,650 --> 0:08:03,880
+semiconductor a a metal conductor if one
+
+125
+0:08:03,880 --> 0:08:05,830
+moved the metal conductor with respect
+
+126
+0:08:05,830 --> 0:08:08,170
+to the semiconductor when a general got
+
+127
+0:08:08,170 --> 0:08:13,540
+current flow in the external circuit but
+
+128
+0:08:13,540 --> 0:08:16,570
+one found as Kelvin did that if one put
+
+129
+0:08:16,570 --> 0:08:20,710
+in a battery of the proper amount one
+
+130
+0:08:20,710 --> 0:08:24,700
+could move that one the metal with
+
+131
+0:08:24,700 --> 0:08:26,800
+respect to semiconductor without getting
+
+132
+0:08:26,800 --> 0:08:30,510
+any current in studying this effect it
+
+133
+0:08:30,510 --> 0:08:34,840
+we decided at one time to see if we
+
+134
+0:08:34,840 --> 0:08:37,300
+could do this when the whole system was
+
+135
+0:08:37,300 --> 0:08:42,300
+immersed in electric the phenomena that
+
+136
+0:08:42,300 --> 0:08:48,640
+resulted were very interesting and we
+
+137
+0:08:48,640 --> 0:08:51,310
+finally decided that by using
+
+138
+0:08:51,310 --> 0:08:54,040
+electrolyte one should be able to make
+
+139
+0:08:54,040 --> 0:08:57,490
+intense ball an amplifier out of a
+
+140
+0:08:57,490 --> 0:09:02,339
+semiconductor one morning after we had
+
+141
+0:09:02,339 --> 0:09:05,410
+discussed the results of this type of
+
+142
+0:09:05,410 --> 0:09:08,470
+experiment john bardeen walked into my
+
+143
+0:09:08,470 --> 0:09:11,910
+office and suggested a geometry for a
+
+144
+0:09:11,910 --> 0:09:15,490
+producing an amplifier using the
+
+145
+0:09:15,490 --> 0:09:20,140
+electrolyte Bardeen suggested that on a
+
+146
+0:09:20,140 --> 0:09:22,240
+piece of germanium they place a drop of
+
+147
+0:09:22,240 --> 0:09:27,520
+electrolyte in this case water then to
+
+148
+0:09:27,520 --> 0:09:29,500
+wax a metal wire and push it through the
+
+149
+0:09:29,500 --> 0:09:32,940
+water to make contact with the germanium
+
+150
+0:09:32,940 --> 0:09:35,620
+the wax would insulate the wire from the
+
+151
+0:09:35,620 --> 0:09:38,550
+water
+
+152
+0:09:38,550 --> 0:09:41,110
+another point would make contact with
+
+153
+0:09:41,110 --> 0:09:45,040
+the water potentials would be supplied
+
+154
+0:09:45,040 --> 0:09:46,900
+between the water and the germanium and
+
+155
+0:09:46,900 --> 0:09:49,180
+also between the wax point and the
+
+156
+0:09:49,180 --> 0:09:51,820
+germanium it was thought that the
+
+157
+0:09:51,820 --> 0:09:53,710
+potential on the electrolyte would
+
+158
+0:09:53,710 --> 0:09:55,390
+influence the flow of current between
+
+159
+0:09:55,390 --> 0:10:02,650
+the wax point and the germanium
+
+160
+0:10:02,650 --> 0:10:06,620
+this experiment worked they had produced
+
+161
+0:10:06,620 --> 0:10:11,090
+a semiconductor amplifier this
+
+162
+0:10:11,090 --> 0:10:13,490
+experiment was the key that led to the
+
+163
+0:10:13,490 --> 0:10:18,410
+invention of the transistor but there
+
+164
+0:10:18,410 --> 0:10:21,280
+were several problems the water
+
+165
+0:10:21,280 --> 0:10:27,320
+evaporated too quickly so they changed
+
+166
+0:10:27,320 --> 0:10:29,870
+the electrolyte to glycol borate which
+
+167
+0:10:29,870 --> 0:10:33,500
+evaporates very slowly this worked quite
+
+168
+0:10:33,500 --> 0:10:36,860
+well but the device would not amplify
+
+169
+0:10:36,860 --> 0:10:39,860
+above eight cycles per second they were
+
+170
+0:10:39,860 --> 0:10:41,660
+quite sure that the electrolyte was
+
+171
+0:10:41,660 --> 0:10:44,870
+responsible for the slow response they
+
+172
+0:10:44,870 --> 0:10:46,580
+tried to replace the electrolyte and
+
+173
+0:10:46,580 --> 0:10:51,050
+it's contact with a spot of gold instead
+
+174
+0:10:51,050 --> 0:10:52,820
+of the wax point they placed a wire
+
+175
+0:10:52,820 --> 0:11:02,029
+contact near the edge of the gold spot
+
+176
+0:11:02,029 --> 0:11:04,919
+it was then they observed an entirely
+
+177
+0:11:04,919 --> 0:11:08,909
+new phenomenon now called the transistor
+
+178
+0:11:08,909 --> 0:11:13,399
+effect four days later on December 23rd
+
+179
+0:11:13,399 --> 0:11:17,279
+1947 utilizing the transistor effect the
+
+180
+0:11:17,279 --> 0:11:20,489
+very first transistor was made this was
+
+181
+0:11:20,489 --> 0:11:22,739
+an eventful day and Walter Brattain
+
+182
+0:11:22,739 --> 0:11:27,749
+recorded the events my notes for the day
+
+183
+0:11:27,749 --> 0:11:32,999
+say this using the germanium surface see
+
+184
+0:11:32,999 --> 0:11:36,989
+top of page 197 and the gold contacts
+
+185
+0:11:36,989 --> 0:11:40,379
+the following circuit was set up this
+
+186
+0:11:40,379 --> 0:11:43,259
+circuit was actually spoken over and by
+
+187
+0:11:43,259 --> 0:11:45,689
+switching the device in and out
+
+188
+0:11:45,689 --> 0:11:48,119
+they distinct gain and speech level
+
+189
+0:11:48,119 --> 0:11:51,659
+could be heard and seen on the scope
+
+190
+0:11:51,659 --> 0:11:54,359
+presentation with no noticeable change
+
+191
+0:11:54,359 --> 0:11:57,359
+in quality by measurements at a fixed
+
+192
+0:11:57,359 --> 0:11:59,699
+frequency it was determined that the
+
+193
+0:11:59,699 --> 0:12:02,489
+power gain was of the order of a factor
+
+194
+0:12:02,489 --> 0:12:05,849
+of 18 or greater various people were
+
+195
+0:12:05,849 --> 0:12:09,659
+present and witnessed this test and
+
+196
+0:12:09,659 --> 0:12:12,779
+listened i'll whom some were the
+
+197
+0:12:12,779 --> 0:12:17,459
+following RB gibney a charm or je
+
+198
+0:12:17,459 --> 0:12:22,379
+Bardeen Gio Pearson W Shockley age
+
+199
+0:12:22,379 --> 0:12:26,519
+Fletcher and our bow mr. a charm or
+
+200
+0:12:26,519 --> 0:12:28,799
+assisted in setting up the circuit and
+
+201
+0:12:28,799 --> 0:12:31,019
+the demonstration occurred on the
+
+202
+0:12:31,019 --> 0:12:37,940
+afternoon of December 23rd 1947
+
+203
+0:12:37,940 --> 0:12:40,370
+the question in everyone's mind at the
+
+204
+0:12:40,370 --> 0:12:43,490
+time was could this embryo amplifier be
+
+205
+0:12:43,490 --> 0:12:46,790
+the hope for prize or was it merely an
+
+206
+0:12:46,790 --> 0:12:49,880
+erratic laboratory curiosity could it be
+
+207
+0:12:49,880 --> 0:12:52,630
+made into a thoroughly practical device
+
+208
+0:12:52,630 --> 0:12:55,100
+this challenge was taken up by the
+
+209
+0:12:55,100 --> 0:12:57,920
+design and development group this new
+
+210
+0:12:57,920 --> 0:12:59,800
+device had to meet extended performance
+
+211
+0:12:59,800 --> 0:13:03,080
+requirements be reliable and yet be
+
+212
+0:13:03,080 --> 0:13:05,900
+economically feasible to produce the
+
+213
+0:13:05,900 --> 0:13
+point-contact transistor was the first
+
+214
+0:13 --> 0:13:10,460
+production line model further
+
+215
+0:13:10,460 --> 0:13:12,860
+understanding and control led to the
+
+216
+0:13:12,860 --> 0:13:15,140
+growing of single crystals of germanium
+
+217
+0:13:15,140 --> 0:13:17,630
+and made possible William Shockley's
+
+218
+0:13:17,630 --> 0:13:21,080
+concept of a junction transistor this
+
+219
+0:13:21,080 --> 0:13:26,210
+was in 1951 a few years later the alloy
+
+220
+0:13:26,210 --> 0:13:29,090
+transistor was developed the industry
+
+221
+0:13:29,090 --> 0:13:31,040
+was now in a period of substantial
+
+222
+0:13:31,040 --> 0:13:34,430
+growth but more work lay ahead the
+
+223
+0:13:34,430 --> 0:13:36,470
+frequency of the alloy transistor was
+
+224
+0:13:36,470 --> 0:13:38,660
+definitely limited and it could only be
+
+225
+0:13:38,660 --> 0:13:50,060
+produced on a one-at-a-time basis
+
+226
+0:13:50,060 --> 0:13:53,660
+now came another breakthrough the
+
+227
+0:13:53,660 --> 0:13:56,420
+diffused-base transistor which is a
+
+228
+0:13:56,420 --> 0:14:02,570
+high-frequency high-speed device working
+
+229
+0:14:02,570 --> 0:14:04,400
+together the development and
+
+230
+0:14:04,400 --> 0:14:06,260
+manufacturing groups developed today's
+
+231
+0:14:06,260 --> 0:14:10,310
+production methods now a single slice of
+
+232
+0:14:10,310 --> 0:14:12,980
+silicon may contain as many as two
+
+233
+0:14:12,980 --> 0:14:30,680
+thousand transistors
+
+234
+0:14:30,680 --> 0:14:33,660
+the transistor is a truly remarkable
+
+235
+0:14:33,660 --> 0:14:36,480
+device one of its features is its
+
+236
+0:14:36,480 --> 0:14:39,150
+ability to perform at very low power
+
+237
+0:14:39,150 --> 0:14:46,590
+levels as demonstrated here the light
+
+238
+0:14:46,590 --> 0:14:51,120
+energy from a burning match falling on a
+
+239
+0:14:51,120 --> 0:14:55,260
+solar battery is sufficient to drive
+
+240
+0:14:55,260 --> 0:15:00,720
+this transistor oscillator
+
+241
+0:15:00,720 --> 0:15:02,639
+a more important feature of the
+
+242
+0:15:02,639 --> 0:15:05,459
+transistor is its reliability its
+
+243
+0:15:05,459 --> 0:15:07,980
+ability to operate for extended periods
+
+244
+0:15:07,980 --> 0:15:10,709
+of time without changing it can also
+
+245
+0:15:10,709 --> 0:15:12,959
+transmit and amplify high-frequency
+
+246
+0:15:12,959 --> 0:15:16,680
+signals at very high speed all these
+
+247
+0:15:16,680 --> 0:15:18,870
+features contribute to modern switching
+
+248
+0:15:18,870 --> 0:15:30,089
+in computer systems this tiny electronic
+
+249
+0:15:30,089 --> 0:15:32,699
+device is the outcome of scientific
+
+250
+0:15:32,699 --> 0:15:36,089
+research by trained men dedicated to
+
+251
+0:15:36,089 --> 0:15:39,329
+understanding working in an environment
+
+252
+0:15:39,329 --> 0:15:41,819
+which fosters the uninhibited search for
+
+253
+0:15:41,819 --> 0:15:44,639
+answers to riddles of science which are
+
+254
+0:15:44,639 --> 0:15:49,290
+related to communications needs for
+
+255
+0:15:49,290 --> 0:15:51,439
+their discovery of the transistor effect
+
+256
+0:15:51,439 --> 0:15:55,829
+John Bardeen Walter Brattain and William
+
+257
+0:15:55,829 --> 0:16:00,300
+Shockley in 1956 shared the highest
+
+258
+0:16:00,300 --> 0:16:33,620
+honor and science the Nobel Prize
+
+259
+0:16:33,620 --> 0:16:43,440
+you
+
+260
+0:16:43,440 --> 0:16:45,500
+you
+

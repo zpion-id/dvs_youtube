@@ -1,0 +1,1948 @@
+1
+00:00:00,000 --> 0:00:01,290
+hello and welcome to lower-level
+
+2
+0:00:01,290 --> 0:00:02,730
+JavaScript today we're going to be
+
+3
+0:00:02,730 --> 0:00:03,840
+talking about something that is often
+
+4
+0:00:03,840 --> 0:00:05,730
+mistaken by developers as a JavaScript
+
+5
+0:00:05,730 --> 0:00:08,460
+shortcoming namely what exactly do you
+
+6
+0:00:08,460 --> 0:00:09,960
+expect the answer to this simple
+
+7
+0:00:09,960 --> 0:00:13,290
+addition to be if you said nor point
+
+8
+0:00:13,290 --> 0:00:15,719
+three zero zero zero zero zero zero zero
+
+9
+0:00:15,719 --> 0:00:18,359
+zero zero zero zero zero zero zero four
+
+10
+0:00:18,359 --> 0:00:20,279
+then you're correct although it means
+
+11
+0:00:20,279 --> 0:00:21,359
+you've probably been exposed to this
+
+12
+0:00:21,359 --> 0:00:23,670
+numerical weirdness perform now this is
+
+13
+0:00:23,670 --> 0:00:25,560
+of course strange right and on computers
+
+14
+0:00:25,560 --> 0:00:27,599
+meant to be good at calculation how did
+
+15
+0:00:27,599 --> 0:00:29,369
+JavaScript manage to mess this up
+
+16
+0:00:29,369 --> 0:00:31,710
+so badly and of course this is not
+
+17
+0:00:31,710 --> 0:00:33,899
+actually JavaScript fault there are many
+
+18
+0:00:33,899 --> 0:00:35,309
+languages where this would happen you
+
+19
+0:00:35,309 --> 0:00:36,899
+might find this happening in Python or
+
+20
+0:00:36,899 --> 0:00:41,219
+in Haskell or in C or C++ L go Java rust
+
+21
+0:00:41,219 --> 0:00:43,170
+and many many others and the thing is
+
+22
+0:00:43,170 --> 0:00:45,390
+it's not really even a fault it's just a
+
+23
+0:00:45,390 --> 0:00:47,219
+consequence of a system that's been
+
+24
+0:00:47,219 --> 0:00:48,420
+designed with certain kinds of
+
+25
+0:00:48,420 --> 0:00:50,700
+trade-offs in mind that system is the I
+
+26
+0:00:50,700 --> 0:00:53,489
+Triple E 754 floating point number
+
+27
+0:00:53,489 --> 0:00:55,350
+specification which provides a method to
+
+28
+0:00:55,350 --> 0:00:57,539
+standardize the binary encoding of the
+
+29
+0:00:57,539 --> 0:00:59,460
+number that can have a decimal expansion
+
+30
+0:00:59,460 --> 0:01:01,050
+I mean just think about it for a second
+
+31
+0:01:01,050 --> 0:01:02,640
+computers operate on circuitry that
+
+32
+0:01:02,640 --> 0:01:04,589
+deals with ones and zeros and they can
+
+33
+0:01:04,589 --> 0:01:06,420
+pretty much only perform really simple
+
+34
+0:01:06,420 --> 0:01:08,310
+operations like addition and without
+
+35
+0:01:08,310 --> 0:01:10,290
+some kind of system on top of regular
+
+36
+0:01:10,290 --> 0:01:12,090
+old ones and zeros how could you ever
+
+37
+0:01:12,090 --> 0:01:14,220
+hope to express such concepts as pi
+
+38
+0:01:14,220 --> 0:01:16,650
+that's actually what the I Triple E 754
+
+39
+0:01:16,650 --> 0:01:19,140
+spec is all about and in this video not
+
+40
+0:01:19,140 --> 0:01:20,009
+only we're going to learn how that
+
+41
+0:01:20,009 --> 0:01:21,750
+system works but we're also going to
+
+42
+0:01:21,750 --> 0:01:23,670
+build one from scratch in software now
+
+43
+0:01:23,670 --> 0:01:24,900
+if you go looking for it you'll find
+
+44
+0:01:24,900 --> 0:01:26,520
+tons of resources that dive into the
+
+45
+0:01:26,520 --> 0:01:28,680
+spec and use deeply academic language to
+
+46
+0:01:28,680 --> 0:01:30,329
+describe the concepts and you might be
+
+47
+0:01:30,329 --> 0:01:30,960
+fine with that
+
+48
+0:01:30,960 --> 0:01:33,150
+or you might find it deeply overwhelming
+
+49
+0:01:33,150 --> 0:01:34,619
+in this video we're actually going to
+
+50
+0:01:34,619 --> 0:01:36,840
+skip the academic approach and rather
+
+51
+0:01:36,840 --> 0:01:38,430
+jump him with an intuition based
+
+52
+0:01:38,430 --> 0:01:40,290
+approach that lets you view this system
+
+53
+0:01:40,290 --> 0:01:42,270
+as the execution of a particular kind of
+
+54
+0:01:42,270 --> 0:01:44,610
+idea which at its heart is really kind
+
+55
+0:01:44,610 --> 0:01:47,189
+of simple encoded floating-point numbers
+
+56
+0:01:47,189 --> 0:01:48,780
+is actually a sort of compression
+
+57
+0:01:48,780 --> 0:01:50,759
+algorithm by which I mean we're
+
+58
+0:01:50,759 --> 0:01:53,130
+compressing the infinite set of numbers
+
+59
+0:01:53,130 --> 0:01:55,439
+from 0 to infinity and from 0 to minus
+
+60
+0:01:55,439 --> 0:01:57,630
+infinity and all the numbers that come
+
+61
+0:01:57,630 --> 0:01:59,820
+between every single integer we're
+
+62
+0:01:59,820 --> 0:02:01,649
+compressing all of those numbers into
+
+63
+0:02:01,649 --> 0:02:03,960
+the very finite space of a certain
+
+64
+0:02:03,960 --> 0:02:06,119
+number of binary bits if we have let's
+
+65
+0:02:06,119 --> 0:02:08,700
+say 16 bits available to store numbers
+
+66
+0:02:08,700 --> 0:02:10,950
+that means that we can express at the
+
+67
+0:02:10,950 --> 0:02:13,440
+very best
+
+68
+0:02:13,440 --> 0:02:15,810
+six different numbers and in reality we
+
+69
+0:02:15,810 --> 0:02:17,430
+can't even manage all of those numbers
+
+70
+0:02:17,430 --> 0:02:20,460
+the I Triple E 75 for spec tries to
+
+71
+0:02:20,460 --> 0:02:22,500
+capture as many of those numbers as
+
+72
+0:02:22,500 --> 0:02:24,360
+possible in this system while keeping
+
+73
+0:02:24,360 --> 0:02:26,520
+things sensible but no matter how many
+
+74
+0:02:26,520 --> 0:02:28,500
+bits you have there are always going to
+
+75
+0:02:28,500 --> 0:02:30,510
+be gaps because we simply don't have an
+
+76
+0:02:30,510 --> 0:02:32,580
+infinite amount of space what do you
+
+77
+0:02:32,580 --> 0:02:34,890
+have in the end with this system is a
+
+78
+0:02:34,890 --> 0:02:36,840
+single number format that allows you to
+
+79
+0:02:36,840 --> 0:02:39,360
+express very big things and very tiny
+
+80
+0:02:39,360 --> 0:02:41,370
+things in the sub integer precision and
+
+81
+0:02:41,370 --> 0:02:42,810
+that's something we kind of take for
+
+82
+0:02:42,810 --> 0:02:44,520
+granted now but this is actually no
+
+83
+0:02:44,520 --> 0:02:46,230
+small accomplishment and hopefully with
+
+84
+0:02:46,230 --> 0:02:47,790
+that in mind that should already answer
+
+85
+0:02:47,790 --> 0:02:49,650
+the riddle of Y naught point one blast
+
+86
+0:02:49,650 --> 0:02:51,480
+null point two equals this strange
+
+87
+0:02:51,480 --> 0:02:53,340
+naught point three variation there
+
+88
+0:02:53,340 --> 0:02:54,720
+simply isn't a way to express that
+
+89
+0:02:54,720 --> 0:02:56,790
+number one we have this number of bits
+
+90
+0:02:56,790 --> 0:02:59,310
+which actually for us is close enough in
+
+91
+0:02:59,310 --> 0:03:00,840
+most circumstances that it doesn't
+
+92
+0:03:00,840 --> 0:03:02,370
+actually matter unless you're
+
+93
+0:03:02,370 --> 0:03:03,600
+calculating money or you're building
+
+94
+0:03:03,600 --> 0:03:05,790
+Rockets then those things really matter
+
+95
+0:03:05,790 --> 0:03:07,620
+to people but for most things it's fine
+
+96
+0:03:07,620 --> 0:03:09,120
+let's get real now and talk about the
+
+97
+0:03:09,120 --> 0:03:10,710
+actual mechanics of play we're going to
+
+98
+0:03:10,710 --> 0:03:13,260
+build a 16-bit floating-point number
+
+99
+0:03:13,260 --> 0:03:16,170
+system this is way way less than the 64
+
+100
+0:03:16,170 --> 0:03:17,670
+bits that JavaScript and most other
+
+101
+0:03:17,670 --> 0:03:19,320
+languages use as their standard
+
+102
+0:03:19,320 --> 0:03:21,239
+floating-point number but the principles
+
+103
+0:03:21,239 --> 0:03:23,190
+are going to be exactly the same no
+
+104
+0:03:23,190 --> 0:03:24,270
+matter how many bits you use
+
+105
+0:03:24,270 --> 0:03:26,370
+floating-point numbers are always split
+
+106
+0:03:26,370 --> 0:03:29,190
+up into three parts the sign the
+
+107
+0:03:29,190 --> 0:03:32,160
+exponent and the mantissa now you
+
+108
+0:03:32,160 --> 0:03:33,420
+probably have some idea about what a
+
+109
+0:03:33,420 --> 0:03:35,790
+sign is and what an exponent is but
+
+110
+0:03:35,790 --> 0:03:37,110
+unless you're a mathematician or you've
+
+111
+0:03:37,110 --> 0:03:38,820
+worked a lot with logarithm tables you
+
+112
+0:03:38,820 --> 0:03:40,020
+probably haven't even seen the word
+
+113
+0:03:40,020 --> 0:03:42,420
+Mount Isa before the sign is talking all
+
+114
+0:03:42,420 --> 0:03:43,530
+about whether the number is going to be
+
+115
+0:03:43,530 --> 0:03:45,120
+positive or negative and that only takes
+
+116
+0:03:45,120 --> 0:03:47,340
+up one bit the exponent is a number
+
+117
+0:03:47,340 --> 0:03:49,560
+that's used in an expression like two to
+
+118
+0:03:49,560 --> 0:03:51,150
+the power of something and that's going
+
+119
+0:03:51,150 --> 0:03:52,769
+to be used to indicate the general
+
+120
+0:03:52,769 --> 0:03:54,360
+region of the number line that we're
+
+121
+0:03:54,360 --> 0:03:56,370
+focusing in on that takes up five bits
+
+122
+0:03:56,370 --> 0:03:58,110
+and finally the mantissa is like a
+
+123
+0:03:58,110 --> 0:04:00,030
+magnifying glass and it's going to let
+
+124
+0:04:00,030 --> 0:04:02,070
+us zoom in on more or less the exact
+
+125
+0:04:02,070 --> 0:04:03,989
+location of the number and that takes up
+
+126
+0:04:03,989 --> 0:04:06,360
+the remaining ten bits of our total 16
+
+127
+0:04:06,360 --> 0:04
+these three components together fit into
+
+128
+0:04 --> 0:04:11,220
+a kind of formula where in here is the
+
+129
+0:04:11,220 --> 0:04:12,120
+floating point number that we're
+
+130
+0:04:12,120 --> 0:04:14,280
+actually dealing with now this probably
+
+131
+0:04:14,280 --> 0:04:16,049
+doesn't make anything that much clearer
+
+132
+0:04:16,049 --> 0:04:18,090
+right now but what I want you to know is
+
+133
+0:04:18,090 --> 0:04:19,590
+that if you squint you should still be
+
+134
+0:04:19,590 --> 0:04:20,970
+able to see the three distinct parts
+
+135
+0:04:20,970 --> 0:04:23,310
+that we already have looked at the sign
+
+136
+0:04:23,310 --> 0:04:26,160
+the exponent and the mantissa but I
+
+137
+0:04:26,160 --> 0:04:27,290
+actually promised some
+
+138
+0:04:27,290 --> 0:04:29,360
+tuition and not all these fancy formulas
+
+139
+0:04:29,360 --> 0:04:30,710
+and names like I said before
+
+140
+0:04:30,710 --> 0:04:32,630
+floating-point numbers are a compression
+
+141
+0:04:32,630 --> 0:04:34,520
+algorithm and that's also their
+
+142
+0:04:34,520 --> 0:04:36,590
+trade-off they trade-off how easily you
+
+143
+0:04:36,590 --> 0:04:38,450
+can represent a huge range of numbers
+
+144
+0:04:38,450 --> 0:04:40,430
+with how precisely those numbers can be
+
+145
+0:04:40,430 --> 0:04:42,140
+represented the real key to
+
+146
+0:04:42,140 --> 0:04:43,430
+understanding these numbers is to
+
+147
+0:04:43,430 --> 0:04:44,570
+realize that there's going to be a
+
+148
+0:04:44,570 --> 0:04:46,850
+process of play here and that's the idea
+
+149
+0:04:46,850 --> 0:04:48,560
+of taking a rough idea of where the
+
+150
+0:04:48,560 --> 0:04:50,570
+number is that we want and then zooming
+
+151
+0:04:50,570 --> 0:04
+in on the fine location of it let's look
+
+152
+0:04 --> 0:04:55,190
+at the rough area first this is where
+
+153
+0:04:55,190 --> 0:04:57,140
+the exponent comes in you should already
+
+154
+0:04:57,140 --> 0:04:58,610
+know that computers work with powers of
+
+155
+0:04:58,610 --> 0:05:00,260
+two here in this chart we can see that
+
+156
+0:05:00,260 --> 0:05:02,390
+two to the power 0 is 1 to the 1 it's 2
+
+157
+0:05:02,390 --> 0:05:04,790
+2 to the 2 is 4 they double every time
+
+158
+0:05:04,790 --> 0:05:06,770
+likewise we can use negative powers and
+
+159
+0:05:06,770 --> 0:05:08,600
+that actually gives us the inverses in
+
+160
+0:05:08,600 --> 0:05:10,640
+our implementation we have 5 bits
+
+161
+0:05:10,640 --> 0:05:12,740
+available to us to express the exponent
+
+162
+0:05:12,740 --> 0:05:14,180
+and we're going to treat those as a
+
+163
+0:05:14,180 --> 0:05:16,310
+signed integer which means we're going
+
+164
+0:05:16,310 --> 0:05:18,680
+to have all the numbers from minus 16 to
+
+165
+0:05:18,680 --> 0:05:20,780
+15 and I want you to think about this
+
+166
+0:05:20,780 --> 0:05:22,640
+exponent in a particular way not as a
+
+167
+0:05:22,640 --> 0:05:25,220
+single number but as a range so we can
+
+168
+0:05:25,220 --> 0:05:27,230
+make ranges out of these powers of two
+
+169
+0:05:27,230 --> 0:05
+which says that if we have an exponent
+
+170
+0:05 --> 0:05:30,710
+like zero we're going to treat that as
+
+171
+0:05:30,710 --> 0:05:32,870
+the range zero one if we have two to the
+
+172
+0:05:32,870 --> 0:05:34,190
+zero that's going to give us one and if
+
+173
+0:05:34,190 --> 0:05:35,630
+we have two to the one that's going to
+
+174
+0:05:35,630 --> 0:05:37,100
+give us two so we have this numerical
+
+175
+0:05:37,100 --> 0:05:39,440
+range one and two likewise if we would
+
+176
+0:05:39,440 --> 0:05:41,540
+have an exponent of two then we would
+
+177
+0:05:41,540 --> 0:05:43,310
+think of our range being two and three
+
+178
+0:05:43,310 --> 0:05:45,170
+which would give us a numerical range of
+
+179
+0:05:45,170 --> 0:05:46,880
+four and eight this is going to be our
+
+180
+0:05:46,880 --> 0:05:48,980
+tool when we talk about the rough area
+
+181
+0:05:48,980 --> 0:05:51,170
+of the number we represent the rough
+
+182
+0:05:51,170 --> 0:05:53,270
+area that the number falls into as one
+
+183
+0:05:53,270 --> 0:05:55,580
+of these ranges let's take a concrete
+
+184
+0:05:55,580 --> 0:05:57,080
+example now let's look at a number like
+
+185
+0:05:57,080 --> 0:05:59,570
+twelve point five two five seven one
+
+186
+0:05:59,570 --> 0:06
+that number falls into the numerical
+
+187
+0:06 --> 0:06:04,220
+range of eight and sixteen and we
+
+188
+0:06:04,220 --> 0:06:05,390
+already know that that's going to
+
+189
+0:06:05,390 --> 0:06:07,490
+represent the exponent range three and
+
+190
+0:06:07,490 --> 0:06:09,350
+four which means our exponent is going
+
+191
+0:06:09,350 --> 0:06:12,290
+to be three now what we need to do is to
+
+192
+0:06:12,290 --> 0:06:13,910
+zoom in and that's when the mantissa is
+
+193
+0:06:13,910 --> 0:06:15,650
+going to come in and the first thing
+
+194
+0:06:15,650 --> 0:06:17,330
+we're going to do in order to do that is
+
+195
+0:06:17,330 --> 0:06:19,070
+to work out exactly where as a
+
+196
+0:06:19,070 --> 0:06:21,470
+percentage twelve point five two five
+
+197
+0:06:21,470 --> 0:06:24,380
+seven one is in our range of eight to
+
+198
+0:06:24,380 --> 0:06:26,570
+sixteen and we can do that like this we
+
+199
+0:06:26,570 --> 0:06:28,640
+have our lower bound of the numerical
+
+200
+0:06:28,640 --> 0:06:30,080
+range and our upper bound and if we
+
+201
+0:06:30,080 --> 0:06:31,940
+substitute those in then we can work
+
+202
+0:06:31,940 --> 0:06:34,340
+this out as a kind of percentage we end
+
+203
+0:06:34,340 --> 0:06:36,169
+up with nine point five six five seven
+
+204
+0:06:36,169 --> 0:06:38,210
+one three seven five and we can convince
+
+205
+0:06:38,210 --> 0:06:39,860
+ourselves of that by looking at this on
+
+206
+0:06:39,860 --> 0:06:40,940
+a number line and
+
+207
+0:06:40,940 --> 0:06:42,770
+seeing that it is roughly just over
+
+208
+0:06:42,770 --> 0:06:45,350
+halfway into this range and so one way
+
+209
+0:06:45,350 --> 0:06:47,420
+we might think about this is we take the
+
+210
+0:06:47,420 --> 0:06:49,520
+lower end of the range which is 8 and we
+
+211
+0:06:49,520 --> 0:06:51,980
+multiply it by 1 plus and then this
+
+212
+0:06:51,980 --> 0:06:53,450
+percentage that we have we actually
+
+213
+0:06:53,450 --> 0:06:55,940
+arrive back at the original number so
+
+214
+0:06:55,940 --> 0:06:57,710
+we've kind of using that exponent and
+
+215
+0:06:57,710 --> 0:06:59,930
+this fractional part that we've derived
+
+216
+0:06:59,930 --> 0:07:01,940
+as a percentage we're able to encode
+
+217
+0:07:01,940 --> 0:07:04,520
+that original number but how do we
+
+218
+0:07:04,520 --> 0:07:06,380
+actually encode this percentage into a
+
+219
+0:07:06,380 --> 0:07:08,630
+binary number because now we still have
+
+220
+0:07:08,630 --> 0:07:10,130
+a floating-point number it seems like
+
+221
+0:07:10,130 --> 0:07:12,410
+we're back at square one let's think
+
+222
+0:07:12,410 --> 0:07:14,510
+about the mantissa in our mantissa we
+
+223
+0:07:14,510 --> 0:07:16,820
+have 10 bits available that gives us all
+
+224
+0:07:16,820 --> 0:07:20,960
+the numbers between 0 and 1024 we could
+
+225
+0:07:20,960 --> 0:07:22,700
+kind of encode this percentage by
+
+226
+0:07:22,700 --> 0:07:27,350
+working out what 56.57 1 3 7 5% of 1024
+
+227
+0:07:27,350 --> 0:07:29,270
+actually is if we work that out we get
+
+228
+0:07:29,270 --> 0:07:32,270
+579 point two nine zero eight eight and
+
+229
+0:07:32,270 --> 0:07:34,370
+if we just round that to the closest
+
+230
+0:07:34,370 --> 0:07:37,100
+integer we end up with 579 which in
+
+231
+0:07:37,100 --> 0:07:39,890
+binary will happily fit in ten bits so
+
+232
+0:07:39,890 --> 0:07:41,570
+here we've managed to encode that
+
+233
+0:07:41,570 --> 0:07:44,900
+roughly 56 percent into an integer which
+
+234
+0:07:44,900 --> 0:07:46,460
+we can have inside our 16-bit
+
+235
+0:07:46,460 --> 0:07:49,400
+floating-point representation and notice
+
+236
+0:07:49,400 --> 0:07:50,630
+that this is the step where we actually
+
+237
+0:07:50,630 --> 0:07:52,669
+performed the compression because the
+
+238
+0:07:52,669 --> 0:07:54,410
+rounding we did means that we lost some
+
+239
+0:07:54,410 --> 0:07:55,490
+of the precision that would have given
+
+240
+0:07:55,490 --> 0:07:58,610
+us exactly twelve point five two five
+
+241
+0:07:58,610 --> 0:08:00,560
+seven one if we try to do this in
+
+242
+0:08:00,560 --> 0:08:03,440
+Reverse now and we convert 579 back into
+
+243
+0:08:03,440 --> 0:08:05,840
+a percentage that actually gives us nor
+
+244
+0:08:05,840 --> 0:08:08,960
+point five six five four two nine six
+
+245
+0:08:08,960 --> 0:08:11,180
+eight seven five which is very close to
+
+246
+0:08:11,180 --> 0:08:14,480
+but not exactly our original nor point
+
+247
+0:08:14,480 --> 0:08:17,570
+five six seven one three seven five when
+
+248
+0:08:17,570 --> 0:08:19,790
+we sort of go through the process and we
+
+249
+0:08:19,790 --> 0:08:21,770
+take our exponent and we multiply it by
+
+250
+0:08:21,770 --> 0:08:24,230
+one plus that number we end up with
+
+251
+0:08:24,230 --> 0:08:26,630
+twelve point five two three four three
+
+252
+0:08:26,630 --> 0:08:29,780
+seven five and again that's pretty close
+
+253
+0:08:29,780 --> 0:08:31,880
+to what our original number was but it's
+
+254
+0:08:31,880 --> 0:08:33,860
+not quite there we have an error of
+
+255
+0:08:33,860 --> 0:08:35,839
+roughly naught point naught naught two
+
+256
+0:08:35,839 --> 0:08:37,969
+to seven and that's pretty good even for
+
+257
+0:08:37,969 --> 0:08:40,610
+a 16-bit floating point number but again
+
+258
+0:08:40,610 --> 0:08:42,080
+that is probably not the kind of error
+
+259
+0:08:42,080 --> 0:08:44,290
+you want in your banking calculations
+
+260
+0:08:44,290 --> 0:08:46,339
+armed with all of this knowledge we've
+
+261
+0:08:46,339 --> 0:08:48,110
+probably got enough to go in and write a
+
+262
+0:08:48,110 --> 0:08:49,820
+software implementation of that so let's
+
+263
+0:08:49,820 --> 0:08:51,560
+hop over to the editor and start writing
+
+264
+0:08:51,560 --> 0:08:54,200
+some code let's start out here with a
+
+265
+0:08:54,200 --> 0:08:54,710
+little tail
+
+266
+0:08:54,710 --> 0:08:56,720
+there just reminds us of the position of
+
+267
+0:08:56,720 --> 0:08:58,610
+the bits and the role that they play
+
+268
+0:08:58,610 --> 0:09:00,290
+with regard to the sign the exponent or
+
+269
+0:09:00,290 --> 0:09:02,990
+the mantissa and then we can write some
+
+270
+0:09:02,990 --> 0:09:04,790
+known constants related to the
+
+271
+0:09:04,790 --> 0:09:06,980
+arrangement of these bits for instance
+
+272
+0:09:06,980 --> 0:09:08,540
+we can set exponent bits to five because
+
+273
+0:09:08,540 --> 0:09:09,830
+we use five bits for that and mantissa
+
+274
+0:09:09,830 --> 0:09:12,770
+bits to ten let's write a function
+
+275
+0:09:12,770 --> 0:09:14,779
+called encode first this function is
+
+276
+0:09:14,779 --> 0:09:16,130
+going to take a floating-point number N
+
+277
+0:09:16,130 --> 0:09:20,120
+and encode it into our binary system so
+
+278
+0:09:20,120 --> 0:09:21,440
+we we need to create those three
+
+279
+0:09:21,440 --> 0:09:22,970
+components the sine the exponent the
+
+280
+0:09:22,970 --> 0:09:24,920
+mantissa the sine is pretty easy we just
+
+281
+0:09:24,920 --> 0:09:26,450
+need to work out which sine our number
+
+282
+0:09:26,450 --> 0:09:27,830
+is and we can use math or sine for that
+
+283
+0:09:27,830 --> 0:09:29,750
+next we need to work out the range we're
+
+284
+0:09:29,750 --> 0:09:31,670
+in now before we just sort of look this
+
+285
+0:09:31,670 --> 0:09:33,230
+up in the table that we built but if we
+
+286
+0:09:33,230 --> 0:09:34,760
+want to do this programmatically we need
+
+287
+0:09:34,760 --> 0:09:37,279
+to ask the question what is the closest
+
+288
+0:09:37,279 --> 0:09:39,050
+power of two that is less than or
+
+289
+0:09:39,050 --> 0:09
+exactly our number and we can answer
+
+290
+0:09 --> 0:09:43,190
+that question using logarithms now if
+
+291
+0:09:43,190 --> 0:09:44,510
+you're ever dealing with an exponent a
+
+292
+0:09:44,510 --> 0:09:45,980
+logarithm is always hiding around the
+
+293
+0:09:45,980 --> 0:09:47,180
+corner and that's because there's sort
+
+294
+0:09:47,180 --> 0:09:49,160
+of two sides of the same coin three blue
+
+295
+0:09:49,160 --> 0:09:50,839
+one brown did an excellent video on this
+
+296
+0:09:50,839 --> 0:09:52,399
+I'm not even gonna try to explain it the
+
+297
+0:09:52,399 --> 0:09:53,779
+way he did so check that if you want to
+
+298
+0:09:53,779 --> 0:09:55,940
+know more but we can find our power of
+
+299
+0:09:55,940 --> 0:09:57,980
+two by taking the logarithm of our
+
+300
+0:09:57,980 --> 0:09:59,810
+number divided by the logarithm two
+
+301
+0:09:59,810 --> 0:10:02,060
+that's gonna give us exactly the power
+
+302
+0:10:02,060 --> 0:10:03,709
+of two we would need to use in order to
+
+303
+0:10:03,709 --> 0:10:05,660
+get back to our number but we need to
+
+304
+0:10:05,660 --> 0:10:07,760
+take the floor of that in order to bump
+
+305
+0:10:07,760 --> 0:10:09,230
+it down to the lower part of the range
+
+306
+0:10:09,230 --> 0:10:11,990
+this is now gonna be our exponent well
+
+307
+0:10:11,990 --> 0:10:14,330
+almost remember that formula like I
+
+308
+0:10:14,330 --> 0:10:15,709
+showed earlier that has this little
+
+309
+0:10:15,709 --> 0:10:17,420
+clause in it that says the exponent has
+
+310
+0:10:17,420 --> 0:10:19,310
+to be encoded there are specific reasons
+
+311
+0:10:19,310 --> 0:10:20,570
+for that but I'm not going to go into
+
+312
+0:10:20,570 --> 0:10:22,550
+them here all we need to do is add 15 to
+
+313
+0:10:22,550 --> 0:10:24,080
+one number and then make sure that we've
+
+314
+0:10:24,080 --> 0:10:25,610
+definitely got that in five bits so
+
+315
+0:10:25,610 --> 0:10:27,070
+we'll use some masking to do that
+
+316
+0:10:27,070 --> 0:10:29,270
+getting the upper part of the ranges is
+
+317
+0:10:29,270 --> 0:10:32,630
+easier as adding one now the edge case
+
+318
+0:10:32,630 --> 0:10:33,830
+here is that if the number is negative
+
+319
+0:10:33,830 --> 0:10:35,390
+this isn't gonna work of course however
+
+320
+0:10:35,390 --> 0:10:37,339
+if we just use the absolute value in our
+
+321
+0:10:37,339 --> 0:10:39,740
+calculations we can encode whether it's
+
+322
+0:10:39,740 --> 0:10:41,300
+positive or negative a little bit later
+
+323
+0:10:41,300 --> 0:10:43,100
+on using the sign bit and that will take
+
+324
+0:10:43,100 --> 0:10:44,720
+care of not having to deal with negative
+
+325
+0:10:44,720 --> 0:10:46,850
+exponents right now so we've got our
+
+326
+0:10:46,850 --> 0:10:48,440
+power ranges then we can use the same
+
+327
+0:10:48,440 --> 0:10:50,480
+kind of calculation as we did earlier to
+
+328
+0:10:50,480 --> 0:10:52,579
+get this percentage making sure we use
+
+329
+0:10:52,579 --> 0:10:54,709
+the absolute value of n again the actual
+
+330
+0:10:54,709 --> 0:10:57,320
+mantissa can be easily calculated based
+
+331
+0:10:57,320 --> 0:10:59,899
+on this percentage now all that's left
+
+332
+0:10:59,899 --> 0:11:01,279
+to do is to put these three parts
+
+333
+0:11:01,279 --> 0:11:03,290
+together into one single number by
+
+334
+0:11:03,290 --> 0:11:05,120
+shifting and during the different parts
+
+335
+0:11:05,120 --> 0:11:08,630
+into place
+
+336
+0:11:08,630 --> 0:11:11,060
+now let's try it out
+
+337
+0:11:11,060 --> 0:11:15,590
+if we encode our 12 point 5 2 5 7 1 we
+
+338
+0:11:15,590 --> 0:11:20,900
+get the integer 19,000 and 11 and we can
+
+339
+0:11:20,900 --> 0:11:22,490
+look at the exact bits of those and that
+
+340
+0:11:22,490 --> 0:11:25,970
+gives us this this has an implicit 0 a
+
+341
+0:11:25,970 --> 0:11:28,130
+bit for the sign and if we split this up
+
+342
+0:11:28,130 --> 0:11:30,050
+into the three parts we can see that the
+
+343
+0:11:30,050 --> 0:11:32,090
+exponent that's going to come out as 18
+
+344
+0:11:32,090 --> 0:11:34,220
+but of course we need to minus 15 from
+
+345
+0:11:34,220 --> 0:11:36,650
+that which gives us 3 and finally we
+
+346
+0:11:36,650 --> 0:11:38,360
+have the mantissa which if we look at it
+
+347
+0:11:38,360 --> 0:11:41,420
+is 579 exactly what we came out with
+
+348
+0:11:41,420 --> 0:11:44,150
+earlier so the whole thing looks like
+
+349
+0:11:44,150 --> 0:11:45,920
+it's working in the encoding stage but
+
+350
+0:11:45,920 --> 0:11:47,150
+we won't know for sure until we
+
+351
+0:11:47,150 --> 0:11:48,620
+implement the decode function so let's
+
+352
+0:11:48,620 --> 0:11:50,110
+do that
+
+353
+0:11:50,110 --> 0:11:52,400
+decode is also going to take an end but
+
+354
+0:11:52,400 --> 0:11:54,230
+in this case that n is going to be our
+
+355
+0:11:54,230 --> 0:11:56,120
+encoded number the first thing we need
+
+356
+0:11:56,120 --> 0:11:57,740
+to do is to extract the sign the
+
+357
+0:11:57,740 --> 0:11:59,600
+exponent and the mantissa and we'll do a
+
+358
+0:11:59,600 --> 0:12:01,220
+little bit more shifting a masking bit
+
+359
+0:12:01,220 --> 0:12:09,590
+magic to make that happen
+
+360
+0:12:09,590 --> 0:12:11,910
+the next thing we need to do is to turn
+
+361
+0:12:11,910 --> 0:12:13,740
+that mantissa back into a percentage
+
+362
+0:12:13,740 --> 0:12:15,510
+that's basically the reverse of what
+
+363
+0:12:15,510 --> 0:12:17,160
+we've already done we simply need to
+
+364
+0:12:17,160 --> 0:12:21,840
+divide it by 1,024 now we have all the
+
+365
+0:12:21,840 --> 0:12:23,460
+components to implement the formula that
+
+366
+0:12:23,460 --> 0:12:24,660
+we actually saw in the beginning of the
+
+367
+0:12:24,660 --> 0:12:27,210
+video first of all we've got the sine
+
+368
+0:12:27,210 --> 0:12:29,040
+which is just negative 1 to the power of
+
+369
+0:12:29,040 --> 0:12:31,350
+the sign notice that this is because
+
+370
+0:12:31,350 --> 0:12:33,150
+sine is always going to be 0 or is going
+
+371
+0:12:33,150 --> 0:12:35,100
+to be 1 and the only two values that can
+
+372
+0:12:35,100 --> 0:12:36,690
+come out of this expression or one and
+
+373
+0:12:36,690 --> 0:12:38,190
+minus one it's actually a pretty nifty
+
+374
+0:12:38,190 --> 0:12:40,590
+little trick there next we need to
+
+375
+0:12:40,590 --> 0:12:42,800
+multiply that by 1 plus the mantissa and
+
+376
+0:12:42,800 --> 0:12
+finally the whole thing gets multiplied
+
+377
+0:12 --> 0:12:47,130
+by 2 to the power of the exponent minus
+
+378
+0:12:47,130 --> 0:12:49,020
+15 and that's it
+
+379
+0:12:49,020 --> 0:12:50,940
+let's see if our decode function can
+
+380
+0:12:50,940 --> 0:12:55,110
+decode our number and we see we get 12
+
+381
+0:12:55,110 --> 0:12:59,100
+point 5 2 3 4 3 7 5 which is the value
+
+382
+0:12:59,100 --> 0:13:01,170
+that we expected from earlier so we're
+
+383
+0:13:01,170 --> 0:13:03,810
+done here right well close there are a
+
+384
+0:13:03,810 --> 0:13:05,880
+few things missing here now first of all
+
+385
+0:13:05,880 --> 0:13:08,490
+the I Triple E 754 actually specifies
+
+386
+0:13:08,490 --> 0:13:11,100
+some special values for example not a
+
+387
+0:13:11,100 --> 0:13:13,950
+number infinity minus infinity and minus
+
+388
+0:13:13,950 --> 0:13:17,280
+0 these numbers occur as the result of
+
+389
+0:13:17,280 --> 0:13:19,140
+performing certain kinds of operations
+
+390
+0:13:19,140 --> 0:13
+on the floating-point number such as
+
+391
+0:13 --> 0:13:23,970
+division they typically don't occur by
+
+392
+0:13:23,970 --> 0:13:25,050
+constructing them although you certainly
+
+393
+0:13:25,050 --> 0:13:27,660
+can do that negative zero is one that
+
+394
+0:13:27,660 --> 0:13:29,730
+makes some amount of sense if you have a
+
+395
+0:13:29,730 --> 0:13:31,980
+sign bit which is set but the actual
+
+396
+0:13:31,980 --> 0:13:33,870
+value of the number is zero then you
+
+397
+0:13:33,870 --> 0:13:35,580
+still have zero but now it's negative
+
+398
+0:13:35,580 --> 0:13:37,740
+doesn't really make sense in reality but
+
+399
+0:13:37,740 --> 0:13:39,990
+in this system it's a requirement if you
+
+400
+0:13:39,990 --> 0:13:41,940
+have the highest possible exponent and
+
+401
+0:13:41,940 --> 0:13:44,460
+all zeros for the mantissa then the spec
+
+402
+0:13:44,460 --> 0:13:46,320
+considers this number to be an infinite
+
+403
+0:13:46,320 --> 0:13:48,120
+value and the sign bit says whether
+
+404
+0:13:48,120 --> 0:13:50,900
+that's positive or negative infinity
+
+405
+0:13:50,900 --> 0:13:53,330
+if you have highest possible exponent
+
+406
+0:13:53,330 --> 0:13:55,880
+and a nonzero mantissa then the spec
+
+407
+0:13:55,880 --> 0:13:58,279
+considers this to be not a number now in
+
+408
+0:13:58,279 --> 0:14:00,440
+JavaScript we only have one not a number
+
+409
+0:14:00,440 --> 0:14:01,940
+value and in many other languages too
+
+410
+0:14:01,940 --> 0:14:04,190
+but the spec actually specifies
+
+411
+0:14:04,190 --> 0:14:05,960
+different kinds if not a number which
+
+412
+0:14:05,960 --> 0:14:08,180
+can encode what went wrong in the
+
+413
+0:14:08,180 --> 0:14:10,040
+calculation now we're going to skip over
+
+414
+0:14:10,040 --> 0:14:12,350
+that for now and just encode the basic
+
+415
+0:14:12,350 --> 0:14:15,529
+not a number rules now I said there were
+
+416
+0:14:15,529 --> 0:14:17,060
+a couple of problems here and another
+
+417
+0:14:17,060 --> 0:14:18,800
+problem that can come up is if when we
+
+418
+0:14:18,800 --> 0:14:20,390
+calculate the exponent for our number it
+
+419
+0:14:20,390 --> 0:14:22,220
+ends up being zero this is considered to
+
+420
+0:14:22,220 --> 0:14:23,600
+be something called a denormalized
+
+421
+0:14:23,600 --> 0:14:26,210
+number functionally what that means
+
+422
+0:14:26,210 --> 0:14:28,910
+don't instead of doing one mantissa as
+
+423
+0:14:28,910 --> 0:14:31,100
+we do in the formula we simply use the
+
+424
+0:14:31,100 --> 0:14:33,050
+mantissa on its own I don't want to get
+
+425
+0:14:33,050 --> 0:14:34,430
+too bogged down in the mathematical
+
+426
+0:14:34,430 --> 0:14:36,050
+details here but this is simply a way
+
+427
+0:14:36,050 --> 0:14:37,700
+for us to represent numbers that we
+
+428
+0:14:37,700 --> 0:14:39,500
+can't represent otherwise and it's quite
+
+429
+0:14:39,500 --> 0:14:41,089
+a clever addition to the system I'm
+
+430
+0:14:41,089 --> 0:14:42,350
+going to leave a bunch of links down in
+
+431
+0:14:42,350 --> 0:14:43,880
+the description where you can read about
+
+432
+0:14:43,880 --> 0:14:45,380
+all of these different concepts in much
+
+433
+0:14:45,380 --> 0:14:48,800
+more detail zeros are pretty
+
+434
+0:14:48,800 --> 0:14:49,790
+straightforward because they only
+
+435
+0:14:49,790 --> 0:14:51,650
+require that everything but perhaps the
+
+436
+0:14:51,650 --> 0:14:55,040
+sign bit is a zero we need to add this
+
+437
+0:14:55,040 --> 0:14:57,260
+condition in or encode as well to ensure
+
+438
+0:14:57,260 --> 0:14:58,760
+that we can actually properly encode the
+
+439
+0:14:58,760 --> 0:15:00,260
+zero or the negative zero for that
+
+440
+0:15:00,260 --> 0:15:02,150
+method so if n is zero then we need to
+
+441
+0:15:02,150 --> 0:15:03,680
+get the sign this can actually be quite
+
+442
+0:15:03,680 --> 0:15:05,600
+tricky because if you try to just take
+
+443
+0:15:05,600 --> 0:15:08,209
+math dot sine of negative zero it simply
+
+444
+0:15:08,209 --> 0:15:09,650
+gives you negative zero back again
+
+445
+0:15:09,650 --> 0:15:11,720
+instead of minus one you can get the
+
+446
+0:15:11,720 --> 0:15:13,970
+real sign by dividing one by whichever
+
+447
+0:15:13,970 --> 0:15:15,980
+zero you have and then taking the sign
+
+448
+0:15:15,980 --> 0:15:17,660
+of the result of that since it will be
+
+449
+0:15:17,660 --> 0:15:19,160
+either negative infinity or positive
+
+450
+0:15:19,160 --> 0:15:21,770
+infinity now we can turn that into
+
+451
+0:15:21,770 --> 0:15:24,050
+either a 1 or a 0 and shift it into the
+
+452
+0:15:24,050 --> 0:15:25,850
+sign bit place
+
+453
+0:15:25,850 --> 0:15:27,890
+Infinity's can be checked by seeing if
+
+454
+0:15:27,890 --> 0:15:29,510
+the exponent is equal to the highest
+
+455
+0:15:29,510 --> 0:15:31,550
+possible 5 bit value then we need to
+
+456
+0:15:31,550 --> 0:15:33,200
+check the mantissa is not equal to 0
+
+457
+0:15:33,200 --> 0:15:35,480
+which would be not a number if it's
+
+458
+0:15:35,480 --> 0:15:36,890
+nonzero then the side bit is going to
+
+459
+0:15:36,890 --> 0:15:38,090
+determine whether it's negative infinity
+
+460
+0:15:38,090 --> 0:15:40,340
+or positive infinity and then we'll just
+
+461
+0:15:40,340 --> 0:15:41,720
+handle the else case where this would be
+
+462
+0:15:41,720 --> 0:15:43,430
+a noun and finally if we make it through
+
+463
+0:15:43,430 --> 0:15:44,840
+all of those checks we need to handle
+
+464
+0:15:44,840 --> 0:15:46,700
+the possibility of a denormalized number
+
+465
+0:15:46,700 --> 0:15:49,310
+if the exponent is a zero that means the
+
+466
+0:15:49,310 --> 0:15:50,870
+whole part of the mantissa will actually
+
+467
+0:15:50,870 --> 0:15:53,030
+also be a zero otherwise it will be a 1
+
+468
+0:15:53,030 --> 0:15:55,280
+and although we can't get all of these
+
+469
+0:15:55,280 --> 0:15:56,990
+values to our encode function we can
+
+470
+0:15:56,990 --> 0:15:58,520
+manually construct a couple of them to
+
+471
+0:15:58,520 --> 0:16:09,760
+check the code first the infinities
+
+472
+0:16:09,760 --> 0:16:14,030
+not a number
+
+473
+0:16:14,030 --> 0:16:17,970
+you
+
+474
+0:16:17,970 --> 0:16:20,339
+so this has been an explanation but also
+
+475
+0:16:20,339 --> 0:16:21,130
+an expert
+
+476
+0:16:21,130 --> 0:16:23,170
+into the implementation of an eye trip
+
+477
+0:16:23,170 --> 0:16:24,850
+to the e75 for floating-point number
+
+478
+0:16:24,850 --> 0:16:26,590
+system but it's not complete without the
+
+479
+0:16:26,590 --> 0:16:28,360
+actual operations that we perform on
+
+480
+0:16:28,360 --> 0:16:30,070
+these numbers in the next installment
+
+481
+0:16:30,070 --> 0:16:31,840
+we'll actually implement some of the
+
+482
+0:16:31,840 --> 0:16:33,160
+required operations like addition
+
+483
+0:16:33,160 --> 0:16:35,320
+subtraction multiplication division and
+
+484
+0:16:35,320 --> 0:16:36,910
+the square root so make sure you
+
+485
+0:16:36,910 --> 0:16:38,350
+subscribe to low-level JavaScript if you
+
+486
+0:16:38,350 --> 0:16:40,210
+want to catch that thanks for watching
+
+487
+0:16:40,210 --> 0:16:43,140
+and I'll see you next time
+

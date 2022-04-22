@@ -1,0 +1,460 @@
+1
+0:00:01,410 --> 0:00:08,240
+[Music]
+
+2
+0:00:08,240 --> 0:00:10,800
+I'm Rita Hana and I'm part of the
+
+3
+0:00:10,800 --> 0:00:13,259
+orangey DNA pipelines team here at the
+
+4
+0:00:13,259 --> 0:00:16,830
+Sanger Institute my job is to test and
+
+5
+0:00:16,830 --> 0:00:20,210
+develop new methods to sequence DNA a
+
+6
+0:00:20,210 --> 0:00:24,210
+DNA pipeline is the process of taking
+
+7
+0:00:24,210 --> 0:00:26,670
+DNA samples preparing them for
+
+8
+0:00:26,670 --> 0:00:29,130
+sequencing and sequencing them before
+
+9
+0:00:29,130 --> 0:00:31,279
+releasing the data to the researcher
+
+10
+0:00:31,279 --> 0:00:33,960
+because we work with DNA samples and
+
+11
+0:00:33,960 --> 0:00:35,700
+sometimes those samples have very low
+
+12
+0:00:35,700 --> 0:00:37,800
+amount of DNA we need to make sure that
+
+13
+0:00:37,800 --> 0:00:39,840
+we will never contaminate them with our
+
+14
+0:00:39,840 --> 0:00:41,969
+own DNA and that's why we wear lab coats
+
+15
+0:00:41,969 --> 0:00:44,760
+and gloves all the time we receive the
+
+16
+0:00:44,760 --> 0:00:47,760
+samples in 96-well plates and I've
+
+17
+0:00:47,760 --> 0:00:50,039
+already been extracted and purified from
+
+18
+0:00:50,039 --> 0:00:53,370
+cell tissue or blood when we receive
+
+19
+0:00:53,370 --> 0:00:54,780
+those samples we need to check the
+
+20
+0:00:54,780 --> 0:00:56,579
+quality of the DNA to check that it's
+
+21
+0:00:56,579 --> 0:00:59,309
+still very long strength of genomic DNA
+
+22
+0:00:59,309 --> 0:01:01,680
+that's what we call the quality control
+
+23
+0:01:01,680 --> 0:01:04,530
+or QC step we really don't want to waste
+
+24
+0:01:04,530 --> 0:01:06,930
+a lot of the sample for quality control
+
+25
+0:01:06,930 --> 0:01:09,330
+that's why we are using the mosquito
+
+26
+0:01:09,330 --> 0:01:11,700
+robots for that step because it's able
+
+27
+0:01:11,700 --> 0:01:15,960
+to be pet only nanoliters of DNA these
+
+28
+0:01:15,960 --> 0:01:18,600
+nano liters of DNA pitted by the robot
+
+29
+0:01:18,600 --> 0:01:20,790
+are then mixed with a solution
+
+30
+0:01:20,790 --> 0:01:23,369
+containing a fluorescent dye these
+
+31
+0:01:23,369 --> 0:01:25,799
+molecules of dye grow very very bright
+
+32
+0:01:25,799 --> 0:01:28,470
+only when they touch DNA so we can
+
+33
+0:01:28,470 --> 0:01:31,200
+relate the level of fluorescence with
+
+34
+0:01:31,200 --> 0:01:33,329
+the actual concentration of DNA in the
+
+35
+0:01:33,329 --> 0:01:35,729
+sample then when we are sure that how
+
+36
+0:01:35,729 --> 0:01:38,250
+DNA is of good quality and in good
+
+37
+0:01:38,250 --> 0:01:40,020
+amounts we start the library
+
+38
+0:01:40,020 --> 0:01:42,630
+construction itself this take place in
+
+39
+0:01:42,630 --> 0:01:46,020
+our pre PCL lab on the Bravo robots the
+
+40
+0:01:46,020 --> 0:01:49,290
+Bravo robot will be able to peep at some
+
+41
+0:01:49,290 --> 0:01:51,509
+solution containing what we call
+
+42
+0:01:51,509 --> 0:01:54,390
+adapters those adapters are very short
+
+43
+0:01:54,390 --> 0:01:56,729
+fragment of DNA that get attached or
+
+44
+0:01:56,729 --> 0:02:00,090
+ligated to the end of audio samples the
+
+45
+0:02:00,090 --> 0:02:02,250
+adapters have two goals they will load
+
+46
+0:02:02,250 --> 0:02:04,320
+the sample to attach at the surface of
+
+47
+0:02:04,320 --> 0:02:06,960
+the flow cell and they also contain a
+
+48
+0:02:06,960 --> 0:02:09,750
+tag that will be part of our sequencing
+
+49
+0:02:09,750 --> 0:02:11,980
+data and with all of us to
+
+50
+0:02:11,980 --> 0:02:14,890
+know which fragments of DNA came from
+
+51
+0:02:14,890 --> 0:02:17,800
+which sample because we process such a
+
+52
+0:02:17,800 --> 0:02:20,290
+high number of samples we need to make
+
+53
+0:02:20,290 --> 0:02:22,660
+sure that we never exchange them or lose
+
+54
+0:02:22,660 --> 0:02:24,760
+them and that's why we use barcodes on
+
+55
+0:02:24,760 --> 0:02:28,060
+each of our plates we have a process
+
+56
+0:02:28,060 --> 0:02:30,550
+called limbs for laboratory information
+
+57
+0:02:30,550 --> 0:02:33,880
+management system which allow us to scan
+
+58
+0:02:33,880 --> 0:02:36,220
+all those barcodes and track the samples
+
+59
+0:02:36,220 --> 0:02:38,200
+all along the library preparation
+
+60
+0:02:38,200 --> 0:02:41,560
+process after attaching the adapters to
+
+61
+0:02:41,560 --> 0:02:44,830
+a DNA fragment we take the samples off
+
+62
+0:02:44,830 --> 0:02:48,610
+the robot deck onto a bench because we
+
+63
+0:02:48,610 --> 0:02:50,709
+are sharing those benches with a lot of
+
+64
+0:02:50,709 --> 0:02:52,510
+people in the lab they need to remain
+
+65
+0:02:52,510 --> 0:02:55,599
+very tidy and clean so we have divided
+
+66
+0:02:55,599 --> 0:02
+the space with tape and labels so that
+
+67
+0:02 --> 0:03:00,579
+we know exactly where things are the
+
+68
+0:03:00,579 --> 0:03:02,290
+samples are now ready for PCR
+
+69
+0:03:02,290 --> 0:03:05,380
+amplification and during this process we
+
+70
+0:03:05,380 --> 0:03:07,450
+have to heat the sample to high
+
+71
+0:03:07,450 --> 0:03:10,720
+temperature to avoid evaporation we seal
+
+72
+0:03:10,720 --> 0:03:14,110
+the plates with a very tight seal PCR
+
+73
+0:03:14,110 --> 0:03:16,060
+amplification has to be done in a
+
+74
+0:03:16,060 --> 0:03:17,500
+different lab to avoid
+
+75
+0:03:17,500 --> 0:03:20,170
+cross-contamination and we pass the
+
+76
+0:03:20,170 --> 0:03:22,480
+sample through a special hatch between
+
+77
+0:03:22,480 --> 0:03:25,660
+those two labs each lab has different
+
+78
+0:03:25,660 --> 0:03:27,790
+colors of lab coats to make sure that we
+
+79
+0:03:27,790 --> 0:03:29,739
+are not contaminating samples between
+
+80
+0:03:29,739 --> 0:03:32,440
+the labs we then take the samples and
+
+81
+0:03:32,440 --> 0:03:35,019
+put them in a PCR machine that is able
+
+82
+0:03:35,019 --> 0:03:38,109
+to amplify the DNA the DNA samples are
+
+83
+0:03:38,109 --> 0:03:41,109
+now ready for sequencing and in order to
+
+84
+0:03:41,109 --> 0:03:42,970
+be loaded on the sequencer we need to
+
+85
+0:03:42,970 --> 0:03:45,220
+remove the seal now that's quite a
+
+86
+0:03:45,220 --> 0:03:47,079
+tricky step despite the fact that it
+
+87
+0:03:47,079 --> 0:03:49,209
+looks very simple and no robots can do
+
+88
+0:03:49,209 --> 0:03:51,660
+it it has to be done by hand to avoid
+
+89
+0:03:51,660 --> 0:03:54,340
+splashes between the samples which would
+
+90
+0:03:54,340 --> 0:03:57,670
+lead to cross-contamination the samples
+
+91
+0:03:57,670 --> 0:03:59,859
+are then put on a flow cell loaded on
+
+92
+0:03:59,859 --> 0:04:02,170
+the sequencer and the sequencing run can
+
+93
+0:04:02,170 --> 0:04:03,299
+start
+
+94
+0:04:03,299 --> 0:04:06,640
+during a run we can check on the monitor
+
+95
+0:04:06,640 --> 0:04:09,280
+of each sequencer the quality of the
+
+96
+0:04:09,280 --> 0:04:11,110
+data being created and check that
+
+97
+0:04:11,110 --> 0:04:12,760
+everything is working fine on the
+
+98
+0:04:12,760 --> 0:04:14,920
+sequencer when a sequencing run is
+
+99
+0:04:14,920 --> 0:04:16,870
+finished the data is transferred to a
+
+100
+0:04:16,870 --> 0:04:19,780
+data center which is a huge cluster of
+
+101
+0:04:19,780 --> 0:04:22,900
+computers the last stage for pipelines
+
+102
+0:04:22,900 --> 0:04:24,820
+team is to check that we have produced
+
+103
+0:04:24,820 --> 0:04:27,970
+enough data and of good quality and when
+
+104
+0:04:27,970 --> 0:04:30,610
+that last check is done the researchers
+
+105
+0:04:30,610 --> 0:04:32,199
+that have initially requested the
+
+106
+0:04:32,199 --> 0:04:34,240
+sequencing are able to access the data
+
+107
+0:04:34,240 --> 0:04:37,720
+in the cluster I really like working in
+
+108
+0:04:37,720 --> 0:04:40,630
+the DNA pipelines because it use a lot
+
+109
+0:04:40,630 --> 0:04:43,630
+of different skills I studied chemistry
+
+110
+0:04:43,630 --> 0:04:46,720
+and then I work in a biophysics lab so
+
+111
+0:04:46,720 --> 0:04:48,940
+that's why I particularly like it it's
+
+112
+0:04:48,940 --> 0:04:52,030
+always exciting and never boring
+
+113
+0:04:52,030 --> 0:04:52,360
+[Applause]
+
+114
+0:04:52,360 --> 0:05:04,050
+[Music]
+
+115
+0:05:04,050 --> 0:05:06,110
+you
+

@@ -1,0 +1,2500 @@
+1
+0:00:15,039 --> 0:00:17,689
+cara biasa untuk mengembangkan aplikasi komputer besar
+
+2
+0:00:17,689 --> 0:00:21,890
+melibatkan
+
+3
+0:00:21,890 --> 0:00:23,810
+tim besar orang yang bekerja dalam
+
+4
+0:00:23,810 --> 0:00:27,439
+koordinasi yang erat sebagian besar waktu ini bekerja dengan
+
+5
+0:00:27,439 --> 0:00:29,810
+sangat baik tetapi memang memiliki
+
+6
+0:00:29,810 --> 0:00:34,760
+masalah dan proyek besar cenderung
+
+7
+0:00:34,760 --> 0:00:38,930
+diselesaikan dengan buruk mereka membutuhkan waktu lama mereka
+
+8
+0:00:38,930 --> 0:00:40,550
+mengkonsumsi  jumlah uang yang mencengangkan
+
+9
+0:00:40,550 --> 0:00:43,879
+dan dalam banyak kasus anggota tim individu
+
+10
+0:00:43,879 --> 0:00:46,429
+tidak puas sehingga semua orang dalam
+
+11
+0:00:46,429 --> 0:00:48,230
+bisnis komputasi terus
+
+12
+0:00:48,230 --> 0:00:51,050
+-menerus mencari cara untuk melakukan pekerjaan yang lebih baik dalam
+
+13
+0:00:51,050 --> 0:00:55,280
+mengembangkan aplikasi komputer.
+
+14
+0:00:55,280 --> 0:00:57,339
+Tidak mungkin ada jawaban akhir
+
+15
+0:00:57,339 --> 0:01:00,079
+karena masalahnya sulit.  dan
+
+16
+0:01:00,079 --> 0:01:02,510
+karena saat kami menemukan solusi, kami mencoba
+
+17
+0:01:02,510 --> 0:01:05,810
+tujuan yang lebih ambisius tetapi ada
+
+18
+0:01:05,810 --> 0:01:07,310
+beberapa hal yang dapat dilakukan untuk membuat
+
+19
+0:01:07,310 --> 0:01:09,080
+hidup lebih mudah bagi semua orang di
+
+20
+0:01:09,080 --> 0:01:12,320
+proyek pemrograman besar, lingkungan pemrograman yang baik
+
+21
+0:01:12,320 --> 0:01:15,590
+banyak membantu dan dalam
+
+22
+0:01:15,590 --> 0:01:18,080
+beberapa menit berikutnya kami akan  menunjukkan kepada Anda
+
+23
+0:01:18,080 --> 0:01:19,670
+beberapa properti sistem operasi
+
+24
+0:01:19,670 --> 0:01:22,280
+UNIX yang menjadikannya lingkungan pemrograman yang baik
+
+25
+0:01:22,280 --> 0:01:25,790
+untuk berbagai tujuan di Bell
+
+26
+0:01:25,790 --> 0:01:28,250
+Labs  seperti di banyak industri, hampir
+
+27
+0:01:28,250 --> 0:01:30,320
+setiap orang memiliki semacam keterlibatan
+
+28
+0:01:30,320 --> 0:01:32,690
+dengan perangkat lunak baik mereka benar-benar
+
+29
+0:01:32,690 --> 0:01:34,700
+memproduksi perangkat lunak dan itu adalah pekerjaan
+
+30
+0:01:34,700 --> 0:01:38,510
+mereka atau mereka dipengaruhi oleh perangkat lunak atau mereka
+
+31
+0:01:38,510 --> 0:01:41,180
+menggunakan perangkat lunak Fakta bahwa Bell Labs sekitar
+
+32
+0:01:41,180 --> 0:01:43,400
+50% orang benar-benar memproduksi
+
+33
+0:01:43,400 --> 0:01:45,740
+perangkat lunak dan semua orang  lain memiliki
+
+34
+0:01:45,740 --> 0:01:46,940
+semacam keterlibatan dengan
+
+35
+0:01:46,940 --> 0:01:49,130
+itu sebenarnya itu adalah salah satu masalah kami yang lebih buruk
+
+36
+0:01:49,130 --> 0:01:52,220
+hari ini ada kebutuhan yang mendesak untuk
+
+37
+0:01:52,220 --> 0:01:55,640
+perangkat lunak yang berguna untuk melakukan pekerjaan yang efektif kami hanya
+
+38
+0:01:55,640 --> 0:01:57,170
+tidak memiliki cukup orang untuk menulis semua
+
+39
+0:01:57,170 --> 0:02:00,260
+perangkat lunak itu menjaga sejumlah besar
+
+40
+0:02:00,260 --> 0:02:02,420
+perangkat lunak bekerja dan menyimpannya  bekerja
+
+41
+0:02:02,420 --> 0:02:04,700
+dalam menghadapi perubahan adalah pekerjaan besar yang
+
+42
+0:02:04,700 --> 0:02:07,550
+membutuhkan banyak orang terampil untuk melakukannya sekarang
+
+43
+0:02:07,550 --> 0:02:10,970
+perangkat lunak berbeda dari perangkat keras ketika
+
+44
+0:02:10,970 --> 0:02:13,190
+Anda membangun perangkat keras dan mengirimkannya
+
+45
+0:02:13,190 --> 0:02:15,709
+Anda mungkin harus memperbaikinya karena rusak
+
+46
+0:02:15,709 --> 0:02:18,830
+tetapi Anda tidak menuntut misalnya  bahwa
+
+47
+0:02:18,830 --> 0:02:20,360
+radio Anda tiba-tiba berubah menjadi
+
+48
+0:02:20,360 --> 0:02:22,670
+televisi dan Anda tidak menuntut agar
+
+49
+0:02:22,670 --> 0:02:24,290
+perangkat keras tiba-tiba melakukan
+
+50
+0:02:24,290 --> 0:02:26,450
+fungsi yang sama sekali berbeda tetapi orang
+
+51
+0:02:26,450 --> 0:02:27,830
+-orang melakukan itu semua perangkat
+
+52
+0:02:27,830 --> 0:02:30,890
+lunak  waktu ada permintaan terus-menerus untuk
+
+53
+0:02:30,890 --> 0:02:34,670
+perubahan peningkatan fitur baru yang
+
+54
+0:02:34,670 --> 0:02:36,980
+orang anggap perlu setelah mereka terbiasa
+
+55
+0:02:36,980 --> 0:02:39,080
+dengan sistem dengan kata lain kami menempatkan
+
+56
+0:02:39,080 --> 0:02:41,180
+sistem di luar sana orang terbiasa dengannya,
+
+57
+0:02:41,180 --> 0:02:43,730
+pekerjaan mereka berubah, mereka kembali dengan
+
+58
+0:02:43,730 --> 0:02:45,590
+lebih banyak tuntutan untuk berbagai jenis
+
+59
+0:02:45,590 --> 0:02:48,860
+fitur  dalam sistem hasilnya
+
+60
+0:02:48,860 --> 0:02:50,390
+tidak ada cara untuk mendapatkan
+
+61
+0:02:50,390 --> 0:02:52,760
+persyaratan yang sempurna di tempat pertama dan itu
+
+62
+0:02:52,760 --> 0:02:54,290
+berarti bahwa kita harus membangun perangkat
+
+63
+0:02:54,290 --> 0:02:57,380
+lunak menjadi sangat toleran terhadap perubahan karena kita
+
+64
+0:02:57,380 --> 0:02:59,270
+tidak ingin membuang perangkat lunak
+
+65
+0:02:59,270 --> 0:03:01,880
+tahun setelah kita menulisnya ada
+
+66
+0:03:01,880 --> 0:03:04,760
+beberapa cara untuk melakukannya adalah dengan membuat
+
+67
+0:03:04,760 --> 0:03
+perangkat lunak cukup jelas dan mudah
+
+68
+0:03 --> 0:03:10,760
+dibaca dan dipahami dan diubah dan Anda
+
+69
+0:03:10,760 --> 0:03:14,620
+melakukannya dengan beberapa teknik pemrograman terstruktur populer saat ini,
+
+70
+0:03:14,620 --> 0:03:18,320
+cara lain adalah dengan menulis banyak banyak
+
+71
+0:03:18,320 --> 0:03:20,930
+modul kecil kode seperti itu ketika Anda  memiliki
+
+72
+0:03:20,930 --> 0:03:23,630
+perubahan mungkin Anda hanya membuang beberapa
+
+73
+0:03:23,630 --> 0:03:25,940
+modul kecil atau membuat perubahan dalam beberapa
+
+74
+0:03:25,940 --> 0:03:28,370
+modul daripada ribuan dan
+
+75
+0:03:28,370 --> 0:03:30,650
+ribuan baris kode apa yang
+
+76
+0:03:30,650 --> 0:03:32,360
+harus kita lakukan i  n bisnis komputasi
+
+77
+0:03:32,360 --> 0:03:34,820
+sedang mencoba untuk meningkatkan tingkat di
+
+78
+0:03:34,820 --> 0:03:37,160
+mana kita bekerja sehingga seorang programmer dapat
+
+79
+0:03:37,160 --> 0:03:40,250
+menulis beberapa baris kode yang berubah menjadi
+
+80
+0:03:40,250 --> 0:03:42,320
+banyak banyak instruksi di mesin
+
+81
+0:03:42,320 --> 0:03:44,780
+begitu ketika perubahan perlu dilakukan
+
+82
+0:03:44,780 --> 0:03:46,850
+satu hanya mengubah beberapa baris kode
+
+83
+0:03:46,850 --> 0:03:49,340
+daripada ribuan dan ribuan
+
+84
+0:03:49,340 --> 0:03:52,160
+di antaranya dalam mitos man-month
+
+85
+0:03:52,160 --> 0:03:54,950
+fred brooks memperkirakan bahwa dibutuhkan 5.000
+
+86
+0:03:54,950 --> 0:03:56,930
+tahun upaya staf untuk menghasilkan
+
+87
+0:03:56,930 --> 0:03:59,390
+sistem operasi untuk komputer seri 360 IBM
+
+88
+0:03:59,390 --> 0:04:02,750
+jelas tidak ada yang akan melakukan
+
+89
+0:04:02,750 --> 0:04:04,430
+hal semacam itu sangat sering tentu saja
+
+90
+0:04:04,430 --> 0:04:06,200
+tidak untuk setiap  jenis perangkat keras baru atau
+
+91
+0:04:06,200 --> 0:04:08,620
+untuk setiap kelas aplikasi baru
+
+92
+0:04:08,620 --> 0:04:11,209
+seseorang pernah berkata bahwa perangkat lunak berdiri di
+
+93
+0:04:11,209 --> 0:04:13,310
+antara pengguna dan mesin dan bagi
+
+94
+0:04:13,310 --> 0:04:15,230
+saya ini menyampaikan gambaran
+
+95
+0:04:15,230 --> 0:04:17,209
+tembok besar perangkat lunak di atas sana yang harus
+
+96
+0:04:17,209 --> 0:04:19,760
+Anda atasi untuk menyelesaikan sesuatu.
+
+97
+0:04:19,760 --> 0:04:21,109
+butir kebenaran dalam komentar
+
+98
+0:04:21,109 --> 0:04:23,510
+tetap jika Anda berhenti untuk melihat banyak banyak
+
+99
+0:04:23,510 --> 0:04:25,250
+sistem operasi tampaknya menghabiskan
+
+100
+0:04:25,250 --> 0:04:27,860
+sebagian besar waktu dan
+
+101
+0:04:27,860 --> 0:04:30,140
+usaha mereka tidak dalam membantu Anda tetapi dalam
+
+102
+0:04:30,140 --> 0:04:31,940
+saya  membantu Anda mempersulit pekerjaan
+
+103
+0:04:31,940 --> 0:04:33,919
+semacam memberikan hambatan untuk
+
+104
+0:04:33,919 --> 0:04:36,169
+diatasi ketika Ken Thompson dan Dennis
+
+105
+0:04:36,169 --> 0:04:37,040
+Ritchie memulai
+
+106
+0:04:37,040 --> 0:04:39,850
+sistem unit 1969
+
+107
+0:04:39,850 --> 0:04:42,720
+mereka menemukan struktur yang menyederhanakan
+
+108
+0:04:42,720 --> 0:04:45,250
+banyak aspek interaksi antara
+
+109
+0:04:45,250 --> 0:04:48,400
+komputer dan orang-orang Thomson dan
+
+110
+0:04:48,400 --> 0:04:50,260
+Richie bertujuan untuk menjaga sistem mereka tetap sederhana
+
+111
+0:04:50,260 --> 0:04:52,180
+dan mereka menemukan kumpulan
+
+112
+0:04:52,180 --> 0:04:54,400
+primitif yang memungkinkan mereka melakukan
+
+113
+0:04:54,400 --> 0:04:56,050
+banyak hal dengan sangat sedikit primitif.
+
+114
+0:04:56,050 --> 0:04:59,470
+Sistem UNIX terdiri dari
+
+115
+0:04:59,470 --> 0:05:01,420
+tiga lapisan jika Anda menyukai
+
+116
+0:05:01,420 --> 0:05:03,550
+lapisan pusat, kernel adalah hal yang
+
+117
+0:05:03,550 --> 0:05:05,310
+mengontrol sumber daya mesin,
+
+118
+0:05:05,310 --> 0:05:08,100
+lalu  melilit itu setidaknya secara
+
+119
+0:05:08,100 --> 0:05:10,180
+konseptual adalah sesuatu yang disebut
+
+120
+0:05:10,180 --> 0:05:12,160
+shell yang merupakan antarmuka antara
+
+121
+0:05:12,160 --> 0:05:15,070
+sebagian besar pengguna dan bagian kernel yang
+
+122
+0:05:15,070 --> 0:05:16,360
+ada di sana dan menunggu Anda mengetikkan perintah
+
+123
+0:05:16,360 --> 0:05:18,280
+padanya dan kemudian menafsirkannya dan
+
+124
+0:05:18,280 --> 0:05:20,020
+kemudian di sekitar lapisan lain semacam itu
+
+125
+0:05:20,020 --> 0:05:22,720
+adalah program yang berguna hal-hal seperti
+
+126
+0:05:22,720 --> 0:05:24,970
+editor dan kompiler untuk
+
+127
+0:05:24,970 --> 0:05:26,800
+bahasa pemrograman dan program pemformatan dokumen
+
+128
+0:05:26,800 --> 0:05:29,110
+dan program yang Anda buat  tentukan
+
+129
+0:05:29,110 --> 0:05:33,970
+sendiri dan apa yang dapat Anda lakukan adalah memikirkan
+
+130
+0:05:33,970 --> 0:05
+program sistem UNIX ini pada dasarnya
+
+131
+0:05 --> 0:05:38,830
+sebagai blok bangunan
+
+132
+0:05:38,830 --> 0:05:41,770
+yang dapat digunakan untuk membuat sesuatu dan
+
+133
+0:05:41,770 --> 0:05:43,270
+hal yang membedakan sistem UNIX
+
+134
+0:05:43,270 --> 0:05:45,400
+dari sistem lain adalah sejauh
+
+135
+0:05:45,400 --> 0:05:47,080
+mana blok bangunan tersebut dapat dibuat.
+
+136
+0:05:47,080 --> 0:05:49,300
+direkatkan dalam berbagai cara yang berbeda
+
+137
+0:05:49,300 --> 0:05:51,250
+bukan hanya cara yang jelas tetapi dalam banyak
+
+138
+0:05:51,250 --> 0:05:54,070
+kasus cara yang sangat tidak jelas untuk
+
+139
+0:05:54,070 --> 0:05:57,220
+menyelesaikan pekerjaan yang berbeda sistem ini sangat fleksibel dalam
+
+140
+0:05:57,220 --> 0:05:59,110
+hal itu Saya pikir gagasan
+
+141
+0:05:59,110 --> 0:06:00,850
+pipelining adalah
+
+142
+0:06:00,850 --> 0:06:03,300
+kontribusi mendasar jika sistem ini Anda dapat
+
+143
+0:06:03,300 --> 0:06:06,580
+mengambil  sekelompok program dua atau lebih
+
+144
+0:06:06,580 --> 0:06:08,290
+program dan menyatukannya dari ujung ke
+
+145
+0:06:08,290 --> 0:06:10,150
+ujung sehingga data hanya mengalir
+
+146
+0:06:10,150 --> 0:06:11,470
+dari yang di kiri ke yang di
+
+147
+0:06:11,470 --> 0:06:13,840
+kanan dan sistem itu sendiri menjaga
+
+148
+0:06:13,840 --> 0:06:15,220
+semua koneksi semua
+
+149
+0:06:15,220 --> 0:06:17,170
+sinkronisasi memastikan bahwa
+
+150
+0:06:17,170 --> 0:06:18,700
+data  berpindah dari satu ke yang
+
+151
+0:06:18,700 --> 0:06:21,010
+lain program itu sendiri tidak tahu
+
+152
+0:06:21,010 --> 0:06:22,780
+apa-apa tentang koneksi sejauh yang
+
+153
+0:06:22,780 --> 0:06:23,830
+mereka ketahui mereka hanya berbicara
+
+154
+0:06:23,830 --> 0:06:25,390
+dengan file terminal  t saya berikan
+
+155
+0:06:25,390 --> 0:06:29,190
+contoh bagaimana ini bekerja dalam
+
+156
+0:06:29,190 --> 0:06:32,230
+praktek sistem seperti yang saya sebutkan digunakan
+
+157
+0:06:32,230 --> 0:06:34,810
+banyak untuk persiapan dokumen
+
+158
+0:06:34,810 --> 0:06:37,360
+hal-hal program untuk membantu Anda mengetik
+
+159
+0:06:37,360 --> 0:06:39,550
+surat atau menghasilkan makalah teknis atau
+
+160
+0:06:39,550 --> 0:06:42,970
+menulis buku dalam semua hal itu
+
+161
+0:06:42,970 --> 0:06:44,230
+tentu saja orang-orang ketika  mereka mengetik ke
+
+162
+0:06:44,230 --> 0:06:45,880
+mesin membuat kesalahan ejaan jadi mari kita
+
+163
+0:06:45,880 --> 0:06:47,050
+lihat bagaimana kita bisa menggunakan beberapa
+
+164
+0:06:47,050 --> 0:06:48,880
+gagasan blok bangunan ini dalam praktik untuk
+
+165
+0:06:48,880 --> 0:06:51,070
+membantu Anda mengembangkan program untuk menemukan
+
+166
+0:06:51,070 --> 0:06:52,810
+kesalahan ejaan misalkan saya mengambil
+
+167
+0:06:52,810 --> 0:06:53,590
+kalimat ini adalah
+
+168
+0:06:53,590 --> 0:06:57,160
+kalimat yang ada di kertas yang John
+
+169
+0:06:57,160 --> 0:07:01,900
+Massey dan saya menulis beberapa tahun yang lalu sekarang jika
+
+170
+0:07:01,900 --> 0:07:03,070
+Anda melihatnya dengan hati-hati Anda akan melihat bahwa
+
+171
+0:07:03,070 --> 0:07:04,720
+sebenarnya ada beberapa kesalahan ejaan
+
+172
+0:07:04,720 --> 0:07:07,120
+di sana sekarang misalkan bahwa kita
+
+173
+0:07:07,120 --> 0:07:08,710
+ingin menemukan kesalahan ejaan
+
+174
+0:07:08,710 --> 0:07:10,150
+menggunakan mesin bagaimana kita melakukannya dengan
+
+175
+0:07:10,150 --> 0:07:12,790
+baik pada dasarnya apa  kami akan melakukan
+
+176
+0:07:12,790 --> 0:07:14,080
+hal paling sederhana yang dapat saya pikirkan adalah
+
+177
+0:07:14,080 --> 0:07:18,490
+membagi kalimat di sana menjadi dua kata kata
+
+178
+0:07:18,490 --> 0:07:20,170
+-kata individual dan kemudian membandingkan kata-
+
+179
+0:07:20,170 --> 0:07:22,030
+kata itu dengan kamus dan setiap
+
+180
+0:07:22,030 --> 0:07:23,650
+kali kami menemukan kata yang  ada dalam
+
+181
+0:07:23,650 --> 0:07:25,270
+kalimat itu tetapi tidak dalam kamus itu
+
+182
+0:07:25,270 --> 0:07:27,250
+setidaknya pesaing yang masuk akal untuk menjadi
+
+183
+0:07:27,250 --> 0:07:29,590
+kesalahan ejaan sekarang bagaimana kita melakukannya
+
+184
+0:07:29,590 --> 0:07:31,690
+apa yang ingin saya tunjukkan adalah bahwa Anda dapat melakukannya
+
+185
+0:07:31,690 --> 0:07:33,640
+hanya dengan menggunakan program UNIX yang ada
+
+186
+0:07:33,640 --> 0:07:35,410
+hanya dengan menempelkannya bersama untuk menyelesaikan
+
+187
+0:07:35,410 --> 0:07:38,080
+pekerjaan  misalkan kita katakan pertama kita akan
+
+188
+0:07:38,080 --> 0:07:40,770
+mengambil program yang disebut make words dan
+
+189
+0:07:40,770 --> 0:07:43,300
+kita akan menjalankannya pada kalimat sekarang apa
+
+190
+0:07:43,300 --> 0:07:46,450
+yang dilakukannya adalah memecahnya menjadi satu
+
+191
+0:07:46,450 --> 0:07:50,260
+kata per baris sekarang saya akan mengambil output
+
+192
+0:07:50,260 --> 0:07:53,170
+dan saya akan menyalurkannya ke  program lain
+
+193
+0:07:53,170 --> 0:07:54,490
+yang hanya akan mengubahnya menjadi
+
+194
+0:07:54,490 --> 0:07:56,200
+huruf kecil alasan saya ingin
+
+195
+0:07:56,200 --> 0:07:57,850
+mengubahnya menjadi huruf kecil adalah bahwa kamus saya
+
+196
+0:07:57,850 --> 0:07:59,650
+tidak memiliki huruf besar dan
+
+197
+0:07:59,650 --> 0:08:02,260
+kata-kata seperti Bell dan UNIX yang
+
+198
+0:08:02,260 --> 0:08:03,730
+dikapitalisasi di sini akan muncul sebagai
+
+199
+0:08:03,730 --> 0:08:06,580
+kesalahan ejaan kecuali saya melakukan ini sekarang
+
+200
+0:08:06,580 --> 0:08:08,320
+hal berikutnya yang ingin saya lakukan
+
+201
+0:08:08,320 --> 0:08:09,880
+kamus saya sebenarnya diurutkan dalam
+
+202
+0:08:09,880 --> 0:08:12,010
+kamus urutan abjad dan
+
+203
+0:08:12,010 --> 0:08:13,930
+jadi jauh lebih mudah bagi saya untuk membandingkan
+
+204
+0:08:13,930 --> 0:08:16,690
+kata-kata dokumen saya dengan kata-kata
+
+205
+0:08:16,690 --> 0:08:18,760
+dalam kamus jika mereka dimulai jadi saya
+
+206
+0:08:18,760 --> 0:08:25,480
+akan mengurutkannya dan akhirnya
+
+207
+0:08:25,480 --> 0:08:26,710
+jika Anda melihatnya dengan hati-hati itu tidak
+
+208
+0:08:26,710 --> 0:08:29,710
+muncul dengan sangat mudah di sini tetapi
+
+209
+0:08:29,710 --> 0:08:32,350
+sebenarnya ada kata duplikat
+
+210
+0:08:32,350 --> 0:08:35,050
+sistem mereka muncul dua kali dan dalam dokumen nyata
+
+211
+0:08:35,050 --> 0:08:36,970
+kata-kata seperti TIG akan muncul
+
+212
+0:08:36,970 --> 0:08:38,380
+berkali-kali  jadi kami ingin menyingkirkan
+
+213
+0:08:38,380 --> 0:08:40,270
+duplikat jadi mari kita lempar itu melalui
+
+214
+0:08:40,270 --> 0:08:43,720
+program lain yang disebut unik jadi apa yang
+
+215
+0:08:43,720 --> 0:08:45,790
+kami dapatkan sejauh ini adalah kami mendapatkan kata-kata
+
+216
+0:08:45,790 --> 0:08:47,590
+dari dokumen saya dalam hal ini kalimat
+
+217
+0:08:47,590 --> 0:08:51,130
+satu kata per baris dalam huruf kecil diurutkan dengan rapi
+
+218
+0:08:51,130 --> 0:08:52,930
+dan semua kata duplikat
+
+219
+0:08:52,930 --> 0:08:55,390
+dibuang sehingga hanya ada satu kata, satu
+
+220
+0:08:55,390 --> 0:08:57,520
+contoh dari setiap kata yang berbeda, maka
+
+221
+0:08:57,520 --> 0:08:58,930
+yang akan saya lakukan adalah menjalankannya ke dalam satu
+
+222
+0:08:58,930 --> 0:09:01,300
+program terakhir yang disebut mismatch yang
+
+223
+0:09:01,300 --> 0:09:03,010
+hanya akan mencetak semua kata yang muncul
+
+224
+0:09:03,010 --> 0:09:05,540
+di saluran ini dan
+
+225
+0:09:05,540 --> 0:09:08,180
+cetak yang ada di
+
+226
+0:09:08,180 --> 0:09:10,810
+dokumen kata itu di kamus
+
+227
+0:09:10,810 --> 0:09:14,390
+apa yang kami miliki di sini adalah lima
+
+228
+0:09:14,390 --> 0:09:17,380
+program terpisah yang bekerja sama untuk melakukan pekerjaan ini dan
+
+229
+0:09:17,380 --> 0:09:20,990
+dalam satu saluran raksasa sekarang jika Anda
+
+230
+0:09:20,990 --> 0:09:22,340
+melihat daftar yang keluar, Anda akan melihat bahwa
+
+231
+0:09:22,340 --> 0:09:24,470
+memang kami mendapatkannya  laboratorium  ries dan memberikan
+
+232
+0:09:24,470 --> 0:09:26,390
+yang merupakan dua kesalahan ejaan
+
+233
+0:09:26,390 --> 0:09:27,860
+kami tentu saja kami memiliki dua kata lain juga
+
+234
+0:09:27,860 --> 0:09:30,290
+dan ini memberitahu Anda tidak hanya
+
+235
+0:09:30,290 --> 0:09:32,150
+apa yang baik tentang pendekatan tetapi juga
+
+236
+0:09:32,150 --> 0:09:34,850
+apa yang buruk tentang itu berbagi waktu bukanlah
+
+237
+0:09:34,850 --> 0:09:36,560
+kesalahan ejaan tapi itu sempurna
+
+238
+0:09:36,560 --> 0:09:38,660
+contoh bagus jargon teknis
+
+239
+0:09:38,660 --> 0:09:39,830
+semacam hal yang berarti sesuatu untuk
+
+240
+0:09:39,830 --> 0:09:41,570
+semua orang di bisnis komputer itu
+
+241
+0:09:41,570 --> 0:09:43,100
+tidak berarti apa-apa untuk orang
+
+242
+0:09:43,100 --> 0:09:45,320
+yang bukan tipe komputer dan kata UNIX
+
+243
+0:09:45,320 --> 0:09:47,900
+adalah contoh bagus dari sesuatu yang
+
+244
+0:09:47,900 --> 0:09:49,220
+tidak akan ditemukan dalam kamus biasa
+
+245
+0:09:49,220 --> 0:09:53,390
+jadi  apa yang kita lakukan pertama kita
+
+246
+0:09:53,390 --> 0:09:55,550
+ambil kata-kata yang salah eja dan kita kembali
+
+247
+0:09:55,550 --> 0:09:57,050
+ke dokumen asli dan
+
+248
+0:09:57,050 --> 0:09:58,040
+kita perbaiki agar tidak ada kesalahan ejaan
+
+249
+0:09:58,040 --> 0:10:00,560
+kedua kita ambil kata-kata yang
+
+250
+0:10:00,560 --> 0:10:02,810
+seperti time-sharing dan unix yang bukan
+
+251
+0:10:02,810 --> 0:10:04,310
+kesalahan ejaan tapi yang  muncul di
+
+252
+0:10:04,310 --> 0:10:06,290
+sini dan kami memasukkannya kembali ke dalam
+
+253
+0:10:06,290 --> 0:10:07,970
+kamus kami sehingga lain kali
+
+254
+0:10:07,970 --> 0:10:09,860
+seseorang memiliki dokumen yang
+
+255
+0:10:09,860 --> 0:10:11,420
+berisi UNIX atau pembagian waktu, mereka tidak
+
+256
+0:10:11,420 --> 0:10:13,250
+muncul sebagai kesalahan ejaan jadi kami tidak
+
+257
+0:10:13,250 --> 0:10:14,900
+hanya melakukan pekerjaan kami sendiri tetapi kami telah
+
+258
+0:10:14,900 --> 0:10:17,170
+meningkatkan alat yang kami gunakan dalam proses
+
+259
+0:10:17,170 --> 0:10:19,640
+sehingga Anda perhatikan bahwa saya melakukan seluruh pekerjaan itu
+
+260
+0:10:19,640 --> 0:10:21,650
+tanpa menulis program sama
+
+261
+0:10:21,650 --> 0:10:23,330
+sekali semuanya digabungkan dari
+
+262
+0:10:23,330 --> 0:10:25,070
+program yang sudah ada dan semuanya  Saya
+
+263
+0:10:25,070 --> 0:10:27,560
+lakukan adalah menggunakan fakta bahwa sistem
+
+264
+0:10:27,560 --> 0:10:29,630
+menyediakan mekanisme saluran ini
+
+265
+0:10:29,630 --> 0:10:31,190
+sehingga saya dapat mengambil program dan
+
+266
+0:10:31,190 --> 0:10:33,020
+menyatukannya satu demi satu untuk
+
+267
+0:10:33,020 --> 0:10:35,780
+menyelesaikan pekerjaan saya dan saya pikir ini adalah salah
+
+268
+0:10:35,780 --> 0:10:37,250
+satu alasan mengapa sistem begitu produktif
+
+269
+0:10:37,250 --> 0:10:40,130
+sehingga ada  kumpulan besar
+
+270
+0:10:40,130 --> 0:10:41,780
+hal-hal yang telah dibangun orang
+
+271
+0:10:41,780 --> 0:10:45,740
+yang kami gunakan dan saat kami membangun hal-hal baru kami,
+
+272
+0:10:45,740 --> 0:10:47,060
+maka mereka menjadi bagian dari
+
+273
+0:10:47,060 --> 0:10:48,700
+repertoar hal-hal yang
+
+274
+0:10:48,700 --> 0:10:51,590
+kemudian dapat dibangun orang selama
+
+275
+0:10:51,590 --> 0:10:56,980
+dekade terakhir kami telah menemukan sejumlah
+
+276
+0:10:56,980 --> 0:10:59,480
+algoritma pencocokan pola baru yang kuat  yang berguna untuk menemukan
+
+277
+0:10:59,480 --> 0:11
+pola dan teks banyak dari
+
+278
+0:11 --> 0:11:05,030
+algoritma ini telah dikembangkan menggunakan
+
+279
+0:11:05,030 --> 0:11:07,640
+wawasan yang diperoleh dari teori yang diperoleh
+
+280
+0:11:07,640 --> 0:11:09,770
+dengan mempelajari automata dan teori bahasa
+
+281
+0:11:09,770 --> 0:11:14,180
+sebagai pengetahuan kita  algoritma pencocokan pola
+
+282
+0:11:14,180 --> 0:11:17,060
+meningkat kita dapat dengan sangat cepat
+
+283
+0:11:17,060 --> 0:11:19,260
+mengambil pengetahuan ini dan
+
+284
+0:11:19,260 --> 0:11:21,390
+mengemasnya dalam bentuk program UNIX
+
+285
+0:11:21,390 --> 0:11:25,050
+dan kita dapat menyebarkan program UNIX ini
+
+286
+0:11:25,050 --> 0:11:35,660
+ke seluruh komunitas dengan sangat cepat
+
+287
+0:11:35,660 --> 0:11:38,600
+. Sistem UNIX memiliki banyak fitur
+
+288
+0:11:38,600 --> 0:11:41,060
+yang memudahkan programmer untuk
+
+289
+0:11:41,060 --> 0:11:42,170
+menulis program
+
+290
+0:11:42,170 --> 0:11:46,580
+ini termasuk bentuk file atlas
+
+291
+0:11:46,580 --> 0:11:49,340
+struktur direktori hirarkis
+
+292
+0:11:49,340 --> 0:11:51,260
+kemampuan untuk menyalurkan output dari satu
+
+293
+0:11:51,260 --> 0:11:55,070
+perintah sebagai input dari perangkat lain
+
+294
+0:11:55,070 --> 0:11:58,910
+independen i/o semua hal ini membuat
+
+295
+0:11:58,910 --> 0:12:01,730
+pemrograman jauh lebih mudah daripada pada
+
+296
+0:12:01,730 --> 0:12:04,790
+kebanyakan sistem lain inti dari
+
+297
+0:12:04,790 --> 0:12:06,530
+sistem adalah benar-benar file  sistem
+
+298
+0:12:06,530 --> 0:12:08,540
+kemampuan untuk menyimpan informasi untuk
+
+299
+0:12:08,540 --> 0:12:11,240
+jangka waktu yang lama dan alasan
+
+300
+0:12:11,240 --> 0:12:12,890
+salah satu alasan sistem bekerja
+
+301
+0:12:12,890 --> 0:12:14,750
+sebaik itu adalah bahwa sistem file
+
+302
+0:12:14,750 --> 0:12:17,630
+dirancang dengan baik dan banyak sistem Anda
+
+303
+0:12:17,630 --> 0:12:19,220
+harus mengatakan banyak hal tentang file
+
+304
+0:12:19,220 --> 0:12:20,840
+sebelum Anda dapat  lakukan apa saja dengan itu Anda
+
+305
+0:12:20,840 --> 0:12:23,030
+harus mengatakan di mana itu dan seberapa besar
+
+306
+0:12:23,030 --> 0:12:24,770
+itu dan jenis informasi apa
+
+307
+0:12:24,770 --> 0:12:26,450
+yang akan ada di dalamnya
+
+308
+0:12:26,450 --> 0:12:27,980
+segala macam hal yang pada dasarnya
+
+309
+0:12:27,980 --> 0:12:30,620
+sama sekali tidak relevan di sini Anda
+
+310
+0:12:30,620 --> 0:12:32,480
+tidak perlu melakukan apa pun bahwa
+
+311
+0:12:32,480 --> 0:12
+file sebesar itu tidak masalah di mana
+
+312
+0:12 --> 0:12:36,200
+itu selama Anda tahu apa
+
+313
+0:12:36,200 --> 0:12:38,960
+namanya dan pada dasarnya Anda tidak  tidak
+
+314
+0:12:38,960 --> 0:12:40,340
+perlu memikirkan kerumitan apa pun
+
+315
+0:12:40,340 --> 0:12:42,260
+yang Anda miliki di sistem lain ketika Anda
+
+316
+0:12:42,260 --> 0:12:43,760
+menginginkan informasi dalam sebuah file, Anda meletakkannya di
+
+317
+0:12:43,760 --> 0:12:45,230
+sana ketika Anda menginginkannya kembali, Anda
+
+318
+0:12:45,230 --> 0:12:46,460
+mengeluarkannya lagi dan Anda tidak perlu
+
+319
+0:12:46,460 --> 0:12:49,160
+memikirkan ukuran atau jumlah  Catatan atau
+
+320
+0:12:49,160 --> 0:12:50,570
+jumlah bidang atau semacamnya
+
+321
+0:12:50,570 --> 0:12:52,490
+kecuali itu benar-benar erat dengan
+
+322
+0:12:52,490 --> 0:12:54,740
+program Anda untuk sebagian besar tujuan itu sama sekali
+
+323
+0:12:54,740 --> 0:12:57,290
+tidak relevan file hanyalah
+
+324
+0:12:57,290 --> 0:13:00,140
+urutan byte atribut utamanya adalah
+
+325
+0:13:00,140 --> 0:13:02,600
+ukurannya sebaliknya dan
+
+326
+0:13:02,600 --> 0:13:05,960
+file sistem yang lebih konvensional memiliki selusin atau lebih atribut
+
+327
+0:13:05,960 --> 0:13:08,660
+untuk ditentukan  atau membuat file dibutuhkan
+
+328
+0:13:08,660 --> 0:13:11,210
+obrolan yang tidak ada habisnya jika Anda menginginkan
+
+329
+0:13:11,210 --> 0:13:13,610
+file sistem UNIX, Anda cukup meminta
+
+330
+0:13:13,610 --> 0:13:14,810
+file dan Anda dapat menggunakannya secara bergantian di
+
+331
+0:13:14,810 --> 0:13:17,900
+mana pun Anda ingin mengajukan. Sistem UNIX
+
+332
+0:13:17,900 --> 0:13:20,170
+terdiri dari hierarki
+
+333
+0:13:20,170 --> 0:13:22,970
+direktori yang terdiri dari  direktori hanyalah
+
+334
+0:13:22,970 --> 0:13:25,220
+sebuah file yang berisi nama-nama
+
+335
+0:13:25,220 --> 0:13:28,100
+direktori atau file lain dan semua
+
+336
+0:13:28,100 --> 0:13:30,920
+ini berlangsung secara rekursif ketika Anda
+
+337
+0:13:30,920 --> 0:13:32,780
+masuk ke sistem UNIX Anda biasanya
+
+338
+0:13:32,780 --> 0:13:34,070
+duduk di tempat yang disebut
+
+339
+0:13:34,070 --> 0:13:36,050
+direktori home atau direktori pengguna Anda dan saya
+
+340
+0:13:36,050 --> 0:13:38,330
+dapat mengatakan TWD yang  berarti cetak nama
+
+341
+0:13:38,330 --> 0:13:39,890
+direktori kerja saya dan itu akan memberi tahu
+
+342
+0:13:39,890 --> 0:13:41,480
+saya di mana saya mengatakan pada saat yang
+
+343
+0:13:41,480 --> 0:13:44,420
+saya maksud pengguna bwk di situlah saya mulai
+
+344
+0:13:44,420 --> 0:13:48,200
+ketika saya masuk sekarang saya bisa naik level
+
+345
+0:13:48,200 --> 0:13:49,230
+yang bisa saya
+
+346
+0:13:49,230 --> 0:13:52,380
+ubah ke level induk  dan sekarang jika
+
+347
+0:13:52,380 --> 0:13:54,150
+saya mencetak direktori kerja saya, saya menggunakan slash
+
+348
+0:13:54,150 --> 0:13:56,400
+user dan saya dapat naik satu tingkat lagi
+
+349
+0:13:56,400 --> 0:13:58,830
+ke root dari seluruh sistem file, biarkan saya
+
+350
+0:13:58,830 --> 0:14:02,070
+kembali ke BW k dan saya dapat membuat daftar
+
+351
+0:14:02,070 --> 0:14:03,930
+langsung file yang saya miliki di
+
+352
+0:14:03,930 --> 0:14:08,520
+direktori itu dan saya menemukan di sana antara
+
+353
+0:14:08,520 --> 0:14:12,390
+lain sebuah direktori bernama TV dan saya dapat membuat
+
+354
+0:14:12,390 --> 0:14:13,710
+daftar file yang ada di sana dan saya akan
+
+355
+0:14:13,710 --> 0:14:15,960
+menemukan antara lain kalimat
+
+356
+0:14:15,960 --> 0:14:17,940
+yang kami cetak dalam
+
+357
+0:14:17,940 --> 0:14:20,160
+program pencarian kesalahan ejaan mereka melihat itu dan
+
+358
+0:14:20,160 --> 0:14:22,920
+cukup yakin di sana  adalah agar Anda dapat
+
+359
+0:14:22,920 --> 0:14:25,350
+melihat f  Hirarki sistem ile
+
+360
+0:14:25,350 --> 0:14:27,270
+memungkinkan pengguna untuk mengatur
+
+361
+0:14:27,270 --> 0:14:29,610
+informasi ke dalam pengelompokan alami
+
+362
+0:14:29,610 --> 0:14:32,610
+dan untuk naik atau turun dan menemukan sesuatu
+
+363
+0:14:32,610 --> 0:14:35,670
+dengan cepat dan mudah Antarmuka sistem UNIX
+
+364
+0:14:35,670 --> 0:14:37,950
+bagi kebanyakan orang adalah melalui
+
+365
+0:14:37,950 --> 0:14:39,930
+program yang disebut shell atau command
+
+366
+0:14:39,930 --> 0:14:41,490
+interpreter pada dasarnya itu hanyalah sebuah
+
+367
+0:14:41,490 --> 0:14:44,630
+program yang  melihat apa yang Anda ketik dan
+
+368
+0:14:44,630 --> 0:14:48,270
+memperlakukannya sebagai permintaan untuk menjalankan
+
+369
+0:14:48,270 --> 0:14:50,810
+program tertentu sekarang tidak ada keajaiban dalam
+
+370
+0:14:50,810 --> 0:14:53,280
+menjalankan program program yang Anda
+
+371
+0:14:53,280 --> 0:14:55,590
+jalankan sebenarnya hanyalah nama file
+
+372
+0:14:55,590 --> 0:14:58,320
+dalam sistem file yang dicari shell di
+
+373
+0:14:58,320 --> 0:14:59,970
+sistem file dengan cara tertentu untuk
+
+374
+0:14:59,970 --> 0:15:02,430
+menemukan  file yang namanya adalah
+
+375
+0:15:02,430 --> 0:15:03,540
+nama program yang Anda pikir sedang Anda
+
+376
+0:15:03,540 --> 0:15:06,410
+jalankan dan ia berjalan dan mengeksekusinya dan
+
+377
+0:15:06,410 --> 0:15:10,170
+pada kenyataannya tidak mungkin bagi Anda sebagai
+
+378
+0:15:10,170 --> 0:15:13,110
+pengguna hanya dengan menjalankan sebuah program untuk memberi tahu
+
+379
+0:15:13,110 --> 0:15:15,540
+bagaimana program tertentu telah
+
+380
+0:15:15,540 --> 0:15:17,040
+diimplementasikan misalnya itu  mungkin
+
+381
+0:15:17,040 --> 0:15:18,450
+telah ditulis dalam bahasa seperti Fortran
+
+382
+0:15:18,450 --> 0:15:20,970
+atau C atau mungkin sebenarnya telah ditulis
+
+383
+0:15:20,970 --> 0:15:23,520
+sebagai sesuatu seperti program mantra yang
+
+384
+0:15:23,520 --> 0:15:24,780
+kita bicarakan sebelumnya  r yang merupakan
+
+385
+0:15:24,780 --> 0:15:27,120
+kombinasi dari program lain yang
+
+386
+0:15:27,120 --> 0:15:29,520
+disatukan dengan pipa atau hal serupa
+
+387
+0:15:29,520 --> 0:15:33,890
+dan semua dimasukkan ke dalam satu file sebagai
+
+388
+0:15:33,890 --> 0:15:36,980
+urutan shell atau urutan perintah
+
+389
+0:15:36,980 --> 0:15:40,200
+apa yang dilakukan Brian sebelumnya adalah dia mengetik
+
+390
+0:15:40,200 --> 0:15:42,740
+semua perintah lima nama program
+
+391
+0:15:42,740 --> 0:15:45,780
+untuk pemeriksa ejaannya  pada satu baris
+
+392
+0:15:45,780 --> 0:15:48,630
+menggunakan fasilitas pipa yang
+
+393
+0:15:48,630 --> 0:15:50,820
+bagus kecuali bahwa Anda mungkin ingin sering memeriksa
+
+394
+0:15:50,820 --> 0:15:54,270
+dokumen dan Anda tidak ingin
+
+395
+0:15:54,270 --> 0:15:55,740
+harus mengetik urutan perintah yang panjang
+
+396
+0:15:55,740 --> 0:15:58,560
+sehingga memungkinkan untuk meletakkan semua
+
+397
+0:15:58,560 --> 0:16:00,930
+perintah ini dalam file dan memberi tahu
+
+398
+0:16:00,930 --> 0:16:02,070
+shell kapan
+
+399
+0:16:02,070 --> 0:16:04,769
+Saya mengetik nama file itu Saya ingin
+
+400
+0:16:04,769 --> 0:16:06,540
+Anda menjalankan perintah yang ada di dalam
+
+401
+0:16:06,540 --> 0:16:08,880
+file itu izinkan saya menunjukkan kepada Anda sebuah contoh dari
+
+402
+0:16:08,880 --> 0:16:12,660
+ini kami memiliki program yang disebut spline
+
+403
+0:16:12,660 --> 0:16:17,970
+yang cocok dengan kurva ke satu set titik data
+
+404
+0:16:17,970 --> 0:16:19,680
+dan saya punya satu set  lima
+
+405
+0:16:19,680 --> 0:16:21,420
+titik data yang akan kita lihat
+
+406
+0:16:21,420 --> 0:16:23,790
+seperti apa kurvanya Saya akan menjalankan spline
+
+407
+0:16:23,790 --> 0:16:28,019
+melalui program yang mengubahnya menjadi
+
+408
+0:16:28,019 --> 0:16:30,600
+grafik yang disebut grafik dan saya akan
+
+409
+0:16:30,600 --> 0:16
+menjalankannya melalui program khusus yang
+
+410
+0:16 --> 0:16:35,779
+mengubah bahasa grafik  e menjadi
+
+411
+0:16:35,779 --> 0:16:38,339
+sesuatu yang spesifik untuk terminal ini Saya
+
+412
+0:16:38,339 --> 0:16:42,990
+hanya perlu mengetik plot dan data karena
+
+413
+0:16:42,990 --> 0:16:45,300
+di dalam plot file adalah string
+
+414
+0:16:45,300 --> 0:16:47,069
+perintah dan di sini adalah hasil dari
+
+415
+0:16:47,069 --> 0:16:48,720
+memplot lima titik data pada
+
+416
+0:16:48,720 --> 0:16:51,660
+terminal khusus ini kemampuan untuk meletakkan
+
+417
+0:16:51,660 --> 0:16:54,810
+perintah dalam file dan hanya memiliki  mengetik
+
+418
+0:16:54,810 --> 0:16:56,699
+nama file untuk menjalankan perintah ini
+
+419
+0:16:56,699 --> 0:17:00,209
+membuat bisnis komputasi
+
+420
+0:17:00,209 --> 0:17:02,339
+jauh lebih mudah sering Anda melakukan hal-
+
+421
+0:17:02,339 --> 0:17:04,380
+hal yang berulang dan Anda tidak
+
+422
+0:17:04,380 --> 0:17:06,809
+ingin harus mengetik daftar panjang hal
+
+423
+0:17:06,809 --> 0:17:08,850
+ini membuat hidup kita lebih mudah dan
+
+424
+0:17:08,850 --> 0:17:11,069
+memungkinkan kita untuk  menyesuaikan lingkungan kita
+
+425
+0:17:11,069 --> 0:17:13,980
+dengan cara kita ingin bekerja Fitur lain yang bagus
+
+426
+0:17:13,980 --> 0:17:15,419
+dari lingkungan pemrograman UNIX
+
+427
+0:17:15,419 --> 0:17:17,790
+adalah konsep pengalihan output input secara
+
+428
+0:17:17,790 --> 0:17:21,120
+normal ketika Anda
+
+429
+0:17:21,120 --> 0:17:23,429
+mengetik perintah, output dari perintah itu masuk
+
+430
+0:17:23,429 --> 0:17:25,439
+ke terminal Anda dan inputnya berasal
+
+431
+0:17:25,439 --> 0:17:26,750
+dari keyboard Anda
+
+432
+0:17:26,750 --> 0:17:29,010
+namun shell bisa  diberi tahu dengan
+
+433
+0:17:29,010 --> 0:17:31,409
+notasi sederhana bahwa ketika Anda menjalankan
+
+434
+0:17:31,409 --> 0:17:32,850
+program, Anda ingin output
+
+435
+0:17:32,850 --> 0:17:35,190
+diarahkan ke file atau
+
+436
+0:17:35,190 --> 0:17:37,830
+input diambil dari file misalnya untuk
+
+437
+0:17:37,830 --> 0:17:39,840
+mencetak output  t dari program ejaan saya
+
+438
+0:17:39,840 --> 0:17:42,120
+di printer baris alih-alih
+
+439
+0:17:42,120 --> 0:17:44,220
+meletakkannya di terminal saya, yang harus saya lakukan adalah
+
+440
+0:17:44,220 --> 0:17:47,940
+mengatakan kalimat mantra saya lebih besar dari
+
+441
+0:17:47,940 --> 0:17:50,970
+printer baris perangkat daripada kalimat mantra saya
+
+442
+0:17:50,970 --> 0:17:52,890
+dan hasilnya masuk ke
+
+443
+0:17:52,890 --> 0:17:55,320
+file yang tampak seperti file kecuali itu
+
+444
+0:17:55,320 --> 0:17:56,730
+itu sebenarnya file yang menyebabkan
+
+445
+0:17:56,730 --> 0:17:58,409
+printer baris beraksi dan
+
+446
+0:17:58,409 --> 0:18:01,200
+mencetak tiga atau empat kesalahan ejaan saya
+
+447
+0:18:01,200 --> 0:18:04,520
+pada printer baris pada banyak sistem,
+
+448
+0:18:04,520 --> 0:18:08,010
+pengalihan input dan output benar-
+
+449
+0:18:08,010 --> 0:18:09,419
+benar tidak mungkin karena
+
+450
+0:18:09,419 --> 0:18:11,610
+program telah menghubungkan mereka dengan gagasan
+
+451
+0:18:11,610 --> 0:18:13,950
+bahwa mereka harus membaca  atau tulis
+
+452
+0:18:13,950 --> 0:18:15,540
+terminal pengguna dan tidak ada
+
+453
+0:18:15,540 --> 0:18:15,960
+cara
+
+454
+0:18:15,960 --> 0:18:17,429
+untuk meyakinkan mereka jika tidak, mereka
+
+455
+0:18:17,429 --> 0:18:20,610
+harus melakukannya di sini, itu tidak terjadi di
+
+456
+0:18:20,610 --> 0:18:23,039
+sini, program apa pun dapat mengarahkan input atau
+
+457
+0:18:23,039 --> 0:18:25,409
+outputnya karena pengalihan input dan
+
+458
+0:18:25,409 --> 0:18:27,210
+output tidak ditangani oleh
+
+459
+0:18:27,210 --> 0:18:29,190
+masing-masing program  tetapi dengan shell
+
+460
+0:18:29,190 --> 0:18:31,049
+dan cara itu berlaku untuk semua program
+
+461
+0:18:31,049 --> 0:18:33,690
+tanpa pengecualian sama sekali dan sebenarnya
+
+462
+0:18:33,690 --> 0:18:35,309
+ini berjalan sedikit lebih jauh dari yang Anda
+
+463
+0:18:35,309 --> 0:18:38,700
+harapkan karena tidak o  Hanya bagian
+
+464
+0:18:38,700 --> 0:18:41,039
+dari file disk seperti yang ada di
+
+465
+0:18:41,039 --> 0:18:45,240
+sistem lain tetapi selain perangkat i/o
+
+466
+0:18:45,240 --> 0:18:47,279
+perangkat periferal yang terhubung ke
+
+467
+0:18:47,279 --> 0:18:49,499
+komputer juga file dalam sistem file
+
+468
+0:18:49,499 --> 0:18:51,299
+misalnya printer baris
+
+469
+0:18:51,299 --> 0:18:52,799
+dan tape drive dan bahkan hal yang
+
+470
+0:18:52,799 --> 0:18:55,590
+memanggil  nomor telepon adalah semua perangkat
+
+471
+0:18:55,590 --> 0:18:57,330
+dalam sistem file dalam program
+
+472
+0:18:57,330 --> 0:18:59,759
+yang sama yang akan menyalin informasi dari satu
+
+473
+0:18:59,759 --> 0:19:01,769
+file disk ke file disk lain juga akan menyalin
+
+474
+0:19:01,769 --> 0:19:04,289
+informasi dari file disk ke line
+
+475
+0:19:04,289 --> 0:19:06,119
+printer atau dari magnetic tape drive
+
+476
+0:19:06,119 --> 0:19:08,249
+ke printer program yang sama persis
+
+477
+0:19:08,249 --> 0:19:12,090
+sistem operasi yang baik paling mudah
+
+478
+0:19:12,090 --> 0:19:14,970
+digunakan oleh programmer jika bahasa pemrograman
+
+479
+0:19:14,970 --> 0:19:17,309
+sesuai dengan gaya
+
+480
+0:19:17,309 --> 0:19:19,799
+sistem sehingga dalam perjalanan
+
+481
+0:19:19,799 --> 0:19:21,869
+pengembangan sistem unit Dennis
+
+482
+0:19:21,869 --> 0:19:24,509
+Ritchie menciptakan bahasa C C adalah
+
+483
+0:19:24,509 --> 0:19:27,029
+bahasa tingkat tinggi yang sangat bagus dengan banyak
+
+484
+0:19:27,029 --> 0:19:29,460
+dari konstruksi pemrograman modern di
+
+485
+0:19:29,460 --> 0:19:32,039
+dalamnya hal yang sangat penting tentang
+
+486
+0:19:32,039 --> 0:19:35,610
+itu adalah memungkinkan Anda menghindari
+
+487
+0:19:35,610 --> 0:19:38,369
+detail mesin saat Anda menginginkannya tetapi ketika
+
+488
+0:19:38,369 --> 0:19:40,679
+Anda membutuhkannya dan  kadang-kadang ketika Anda sedang
+
+489
+0:19:40,679 --> 0:19:42,299
+menulis sebuah sistem operasi Anda benar
+
+490
+0:19:42,299 --> 0:19:45,149
+-benar perlu Anda bisa mendapatkan
+
+491
+0:19:45,149 --> 0:19:47,549
+rincian mesin dan mengontrol semuanya tetapi
+
+492
+0:19:47,549 --> 0:19:49,080
+Anda tidak dipaksa untuk melakukan itu dan itu
+
+493
+0:19:49,080 --> 0:19:51,419
+penting karena itu berarti Anda dapat
+
+494
+0:19:51,419 --> 0:19:53,159
+menulis sistem operasi dalam bahasa ini
+
+495
+0:19:53,159 --> 0:19:58,590
+dan  masih memiliki sesuatu yang dapat
+
+496
+0:19:58,590 --> 0:20:00,299
+dipindah-pindahkan ke mesin lain sistem UNIX telah dipindahkan ke
+
+497
+0:20:00,299 --> 0:20:03,029
+berbagai jenis komputer lagi yang
+
+498
+0:20:03,029 --> 0:20:05,460
+berarti bahwa orang dapat mengabaikan detail
+
+499
+0:20:05,460 --> 0:20:09,299
+dari mesin apa yang ada di bawahnya dan
+
+500
+0:20:09,299 --> 0:20:13,350
+melanjutkan pekerjaan mereka sekarang sehingga pada level C itu
+
+501
+0:20:13,350 --> 0:20:15,659
+sejauh ini merupakan bahasa favorit di
+
+502
+0:20:15,659 --> 0:20:17,549
+tingkat berikutnya bahasa pemrograman shell
+
+503
+0:20:17,549 --> 0:20:20,460
+sangat populer di beberapa
+
+504
+0:20:20,460 --> 0:20:22,440
+mesin orang menemukan bahwa shell
+
+505
+0:20:22,440 --> 0:20:24,330
+memenuhi semua kebutuhan pemrograman
+
+506
+0:20:24,330 --> 0:20:26,789
+mereka mereka menulis banyak prosedur untuk
+
+507
+0:20:26,789 --> 0:20:28,799
+membantu mereka mengelola pekerjaan mereka yang bahkan tidak mereka
+
+508
+0:20:28,799 --> 0:20:29,789
+miliki  untuk
+
+509
+0:20:29,789 --> 0:20:33,899
+pergi ke bahasa pada tingkat melihat seperti
+
+510
+0:20:33,899 --> 0:20:36,359
+yang terjadi meskipun karena sistemnya adalah
+
+511
+0:20:36,359 --> 0:20:38,299
+lingkungan pemrograman yang menyenangkan yang
+
+512
+0:20:38,299 --> 0:20:40,679
+telah
+
+513
+0:20:40,679 --> 0:20:43,859
+diimpor atau diiklankan oleh programmer di seluruh dunia  ded bahasa mereka sendiri sehingga
+
+514
+0:20:43,859 --> 0:20:46,440
+misalnya Anda dapat menemukan Fortran Algol
+
+515
+0:20:46,440 --> 0:20:50,460
+Lisp fakta dasar hampir semua bahasa yang
+
+516
+0:20:50,460 --> 0:20:53,009
+dapat Anda pikirkan ada di beberapa sistem UNIX di
+
+517
+0:20:53,009 --> 0:20:54,570
+suatu tempat yang penting tentang
+
+518
+0:20:54,570 --> 0:20:56,789
+sistem yang unik bukanlah apa yang Ricci
+
+519
+0:20:56,789 --> 0:20:59,190
+dan Thompson masukkan ke dalamnya sebagai apa yang
+
+520
+0:20:59,190 --> 0:21:01,769
+mereka mampu  untuk meninggalkannya daripada
+
+521
+0:21:01,769 --> 0:21:03,779
+menghasilkan sejumlah besar primitif
+
+522
+0:21:03,779 --> 0:21:07,349
+masing-masing kompleks mereka dapat
+
+523
+0:21:07,349 --> 0:21:09,330
+memilih sejumlah kecil
+
+524
+0:21:09,330 --> 0:21:11,519
+primitif sederhana yang dapat dipasang
+
+525
+0:21:11,519 --> 0:21:14,070
+secara alami bersama-sama untuk menyelesaikan
+
+526
+0:21:14,070 --> 0:21:16,229
+tugas-tugas kompleks struktur sistem operasi
+
+527
+0:21:16,229 --> 0:21:20,190
+ini membuatnya alami dan mudah bagi
+
+528
+0:21:20,190 --> 0:21:21,809
+orang-orang  yang membuat aplikasi untuk
+
+529
+0:21:21,809 --> 0:21:24,019
+menghasilkan aplikasi dalam gaya yang sama
+
+530
+0:21:24,019 --> 0:21:26,970
+misalnya karena skala integrasi
+
+531
+0:21:26,970 --> 0:21:29,700
+sirkuit silikon semakin besar, kami
+
+532
+0:21:29,700 --> 0:21:31,289
+merasa perlu untuk memiliki
+
+533
+0:21:31,289 --> 0:21:33,359
+alat bantu desain yang lebih canggih untuk membantu orang
+
+534
+0:21:33,359 --> 0:21:37,979
+membuat sirkuit terpadu skala besar.
+
+535
+0:21:37,979 --> 0:21:40,320
+dan efektif tetapi kemajuan dalam VLSI
+
+536
+0:21:40,320 --> 0:21:42,210
+menciptakan kebutuhan akan alat yang lebih baik
+
+537
+0:21:42,210 --> 0:21:44,340
+daripada memproduksi alat tersebut dalam t  Dia
+
+538
+0:21:44,340 --> 0:21:47,729
+membentuk satu program besar yang dirancang
+
+539
+0:21:47,729 --> 0:21:50,519
+untuk melakukan segala hal. Orang-orang di sini
+
+540
+0:21:50,519 --> 0:21:52,679
+telah memproduksi paket-paket kecil yang masing-masing
+
+541
+0:21:52,679 --> 0:21:54,840
+dirancang untuk melakukan beberapa fungsi individual
+
+542
+0:21:54,840 --> 0:21:56,220
+yang membantu dalam desain
+
+543
+0:21:56,220 --> 0:21:58,679
+sirkuit terpadu, kemudian
+
+544
+0:21:58,679 --> 0:22:00,809
+paket-paket individual ini dapat digabungkan
+
+545
+0:22:00,809 --> 0:22:03,359
+menggunakan prosedur shell untuk mendesain bagian
+
+546
+0:22:03,359 --> 0:22:05,820
+dari sebuah sirkuit  atau rangkaian dan bagian-bagian
+
+547
+0:22:05,820 --> 0:22:07,559
+dari rangkaian dapat digabungkan untuk membuat
+
+548
+0:22:07,559 --> 0:22:11,009
+keseluruhan rangkaian Steve Johnson adalah salah
+
+549
+0:22:11,009 --> 0:22:12,389
+satu orang yang telah terlibat dalam
+
+550
+0:22:12,389 --> 0:22:14,700
+upaya ini. Saat ini ia sedang mengerjakan sebuah
+
+551
+0:22:14,700 --> 0:22:16,590
+program yang disebut Elgin yang menggunakan
+
+552
+0:22:16,590 --> 0:22:19,019
+persamaan boolean sebagai input dan menghasilkan
+
+553
+0:22:19,019 --> 0:22:21,749
+rangkaian logika  desain sebagai output karena
+
+554
+0:22:21,749 --> 0:22:24,359
+pembuatan alat adalah cara hidup pada
+
+555
+0:22:24,359 --> 0:22:26,220
+sistem UNIX selama bertahun-tahun kami telah
+
+556
+0:22:26,220 --> 0:22:28,559
+mengembangkan alat yang benar-benar membantu kami
+
+557
+0:22:28,559 --> 0:22:31,950
+membuat alat lain ini melibatkan hal
+
+558
+0:22:31,950 --> 0:22:35,220
+-hal seperti generator parser generator penganalisis leksikal
+
+559
+0:22:35,220 --> 0:22:38,639
+dan program lain yang membantu
+
+560
+0:22:38,639 --> 0:22:44,220
+kami mengatur dan mengembangkan alat
+
+561
+0:22:44,220 --> 0:22:45,480
+alat-alat ini telah digunakan dalam pengembangan
+
+562
+0:22:45,480 --> 0:22:48,259
+gen L dan banyak aplikasi lain di
+
+563
+0:22:48,259 --> 0:22:52,830
+sini kita melihat persamaan boolean  untuk
+
+564
+0:22:52,830 --> 0:22:57,419
+masalah sederhana di sini kita memiliki
+
+565
+0:22:57,419 --> 0:23:08,140
+persamaan untuk carryout dan jumlah
+
+566
+0:23:08,140 --> 0:23:10,600
+di tengah kita memiliki beberapa
+
+567
+0:23:10,600 --> 0:23:13,840
+deskripsi tentang bagaimana kita ingin sel
+
+568
+0:23:13,840 --> 0:23:16,809
+diletakkan secara geometris lihat kita
+
+569
+0:23:16,809 --> 0:23:20,919
+ingin dua input di sisi kiri
+
+570
+0:23:20,919 --> 0:23:24,399
+carry  di bagian bawah pelaksanaan di
+
+571
+0:23:24,399 --> 0:23:28,980
+bagian atas dan output di sisi kanan
+
+572
+0:23:28,980 --> 0:23:31,990
+persamaan input terlebih dahulu harus
+
+573
+0:23:31,990 --> 0:23:34,630
+diproses sehingga dapat lebih
+
+574
+0:23:34,630 --> 0:23:36,970
+mudah direpresentasikan dalam silikon
+
+575
+0:23:36,970 --> 0:23:39,309
+proses ini sangat mirip dengan mengenali
+
+576
+0:23:39,309 --> 0:23:41,679
+sub-ekspresi umum dalam input a
+
+577
+0:23:41,679 --> 0:23:45,250
+bahasa input compiler persamaan boolean
+
+578
+0:23:45,250 --> 0:23:48,220
+dibaca dan diproses oleh
+
+579
+0:23:48,220 --> 0:23:51,220
+program yang disebut yak yang awalnya
+
+580
+0:23:51,220 --> 0:23:54,909
+dikembangkan untuk membantu kita membangun compiler tetapi
+
+581
+0:23:54,909 --> 0:23:56,529
+sebenarnya telah digunakan dalam sejumlah
+
+582
+0:23:56,529 --> 0:23:59,820
+besar program aplikasi juga yak
+
+583
+0:23:59,820 --> 0:24:06,210
+didasarkan pada teori lalr 1 parsing
+
+584
+0:24:06,210 --> 0:24:08,559
+mewakili  itu membangun mesin keadaan terbatas kecil
+
+585
+0:24:08,559 --> 0:24:11,590
+yang mampu
+
+586
+0:24:11,590 --> 0:24:14,679
+mengontrol tindakan program yang
+
+587
+0:24:14,679 --> 0:24:19,169
+membaca input mendeteksi kesalahan secara akurat dan
+
+588
+0:24:19,169 --> 0:24:21,789
+menyusun input sedemikian rupa sehingga
+
+589
+0:24:21,789 --> 0:24:23,669
+program kemudian dapat melanjutkan dan
+
+590
+0:24:23,669 --> 0:24:28,779
+melakukan operasinya setelah
+
+591
+0:24:28,779 --> 0:24:30,460
+persamaan ini diproses
+
+592
+0:24:30,460 --> 0:24:33,220
+, maka perlu khawatir tentang
+
+593
+0:24:33,220 --> 0:24:38,200
+tata letak geometris rangkaian ini
+
+594
+0:24:38,200 --> 0:24:41,200
+dilakukan dalam 2 bagian berikutnya dari el jem
+
+595
+0:24:41,200 --> 0:24:44,710
+program pertama khawatir tentang
+
+596
+0:24:44,710 --> 0:24:50,289
+pemesanan ini  kolom itu menggunakan
+
+597
+0:24:50,289 --> 0:24:53,610
+teknik yang disebut partisi grafik untuk
+
+598
+0:24:53,610 --> 0:24:56,139
+mencoba secara iteratif menghasilkan
+
+599
+0:24:56,139 --> 0:24:58,210
+solusi yang baik untuk apa yang sebenarnya merupakan
+
+600
+0:24:58,210 --> 0:25:01,440
+masalah yang sangat sulit dalam teori
+
+601
+0:25:01,440 --> 0:25:04,659
+setelah kolom telah dipesan
+
+602
+0:25:04,659 --> 0:25:07,840
+kemudian trek di mana sinyal dijalankan
+
+603
+0:25:07,840 --> 0:25:11,309
+ditata juga oleh program lain  dan
+
+604
+0:25:11,309 --> 0:25:14,950
+akhirnya dalam beberapa hal kami sekarang memiliki
+
+605
+0:25:14,950 --> 0:25:17,110
+sirkuit yang dirancang dan itu hanya
+
+606
+0:25:17,110 --> 0:25
+pertanyaan untuk mewujudkannya dengan
+
+607
+0:25 --> 0:25:20,320
+aturan khusus
+
+608
+0:25:20,320 --> 0:25:24,190
+untuk proses fabrikasi kami dan itu
+
+609
+0:25:24,190 --> 0:25:27,910
+dilakukan oleh program keempat jadi sekali lagi
+
+610
+0:25:27,910 --> 0:25:31,030
+kami memiliki contoh mengambil masalah yang sangat
+
+611
+0:25:31,030 --> 0:25:33,990
+kompleks membaginya  menjadi bagian-bagian yang
+
+612
+0:25:33,990 --> 0:25:36,640
+mewakili setiap bagian dengan program terpisah
+
+613
+0:25:36,640 --> 0:25:39,880
+dan kemudian menggunakan fasilitas
+
+614
+0:25:39,880 --> 0:25:41,680
+sistem UNIX untuk merekatkan bagian-bagian
+
+615
+0:25:41,680 --> 0:25:45,990
+itu menjadi satu  keseluruhan yang koheren lagi
+
+616
+0:25:45,990 --> 0:25:47,920
+komputasi akan semakin
+
+617
+0:25:47,920 --> 0:25:49,810
+terjalin erat dengan kehidupan masyarakat
+
+618
+0:25:49,810 --> 0:25:53,020
+seiring berjalannya waktu sehingga teknologi
+
+619
+0:25:53,020 --> 0:25:55,150
+komputer harus berkembang agar lebih mudah bagi
+
+620
+0:25:55,150 --> 0:25:58,300
+orang untuk menggunakan sistem unit bukanlah
+
+621
+0:25:58,300 --> 0:26:00,280
+akhir dari jalan dalam hal ini  tapi saya
+
+622
+0:26:00,280 --> 0:26:41,080
+pikir itu adalah langkah yang baik di sepanjang jalan
+
+623
+0:26:41,080 --> 0:27:10,370
+Anda
+
+624
+0:27:10,370 --> 0:27:17,340
+Anda
+
+625
+0:27:17,340 --> 0:27:19,400
+Anda
+

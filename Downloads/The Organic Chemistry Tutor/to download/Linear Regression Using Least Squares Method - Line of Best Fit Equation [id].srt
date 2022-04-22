@@ -1,0 +1,1196 @@
+1
+0:00:01,120 --> 0:00:02,960
+dalam video ini kita akan fokus pada
+
+2
+0:00:02,960 --> 0:00:04,560
+regresi linier
+
+3
+0:00:04,560 --> 0:00:07,680
+menggunakan metode kuadrat terkecil
+
+4
+0:00:07,680 --> 0:00:09,679
+dan pendekatan ini akan membantu kita untuk menulis
+
+5
+0:00:09,679 --> 0:00:11,120
+persamaan linier
+
+6
+0:00:11,120 --> 0:00:14,160
+yang paling sesuai dengan data dalam tabel di
+
+7
+0:00:14,160 --> 0:00:16,080
+bawah ini
+
+8
+0:00:16,080 --> 0:00:18,720
+jadi izinkan saya memberikan ilustrasi visual
+
+9
+0:00:18,720 --> 0:00:20,880
+jadi katakanlah
+
+10
+0:00:20,880 --> 0:00:23,119
+kita  memiliki titik-titik data ini yang
+
+11
+0:00:23,119 --> 0:00:26,800
+akan saya soroti dengan warna biru
+
+12
+0:00:26,800 --> 0:00:31,119
+sekarang titik-titik data ini tidak semuanya
+
+13
+0:00:31,119 --> 0:00:33,680
+berada pada garis lurus namun apa yang
+
+14
+0:00:33,680 --> 0:00:34,559
+dapat kita lakukan
+
+15
+0:00:34,559 --> 0:00:37,120
+adalah kita dapat menghitung persamaan
+
+16
+0:00:37,120 --> 0:00:38,079
+garis yang paling
+
+17
+0:00:38,079 --> 0:00:41,440
+sesuai dengan data ini di mana semua titik
+
+18
+0:00:41,440 --> 0:00:46,320
+sedekat mungkin dengan garis itu
+
+19
+0:00:46,320 --> 0:00:47,520
+sekarang apa yang akan kita lakukan adalah kita
+
+20
+0:00:47,520 --> 0:00:49,200
+akan menggunakan metode yang disebut
+
+21
+0:00:49,200 --> 0:00:50,320
+metode kuadrat terkecil
+
+22
+0:00:50,320 --> 0:00:52,640
+untuk menemukan persamaan garis dan
+
+23
+0:00:52,640 --> 0:00:54,079
+kemudian setelah kita memilikinya
+
+24
+0:00:54,079 --> 0:00:56,559
+kita akan menguji  persamaan itu untuk melihat
+
+25
+0:00:56,559 --> 0:00:58,320
+seberapa akurat
+
+26
+0:00:58,320 --> 0:01:00,719
+dalam memberi kita nilai y ketika kita memasukkan
+
+27
+0:01:00,719 --> 0:01:02,079
+nilai x
+
+28
+0:01:02,079 --> 0:01:03,280
+dan kemudian kita akan mengkonfirmasi
+
+29
+0:01:03,280 --> 0:01:05,199
+jawaban kita menggunakan excel
+
+30
+0:01:05,199 --> 0:01:10,479
+jadi mari kita mulai
+
+31
+0:01:10,479 --> 0:01:11,840
+jadi hal pertama yang akan kita lakukan adalah
+
+32
+0:01:11,840 --> 0:01:15,119
+pergi  untuk membuat tabel
+
+33
+0:01:15,119 --> 0:01:19,280
+tabel ini akan memiliki empat kolom
+
+34
+0:01:19,280 --> 0:01:22,479
+s  o kolom
+
+35
+0:01:22,479 --> 0:01:25,520
+pertama akan menjadi x kolom kedua
+
+36
+0:01:25,520 --> 0:01:27,200
+akan menjadi y
+
+37
+0:01:27,200 --> 0:01:30,159
+kolom ketiga akan menjadi produk dari
+
+38
+0:01:30,159 --> 0:01:32,079
+x dan y
+
+39
+0:01:32,079 --> 0:01:38,840
+dan kemudian kolom terakhir akan menjadi x
+
+40
+0:01:38,840 --> 0:01:40,079
+kuadrat
+
+41
+0:01:40,079 --> 0:01:42,399
+sekarang mari kita masukkan nilainya sehingga
+
+42
+0:01:42,399 --> 0:01:44,960
+nilai x pertama adalah satu
+
+43
+0:01:44,960 --> 0:01:48,320
+berikutnya adalah dua dan kemudian
+
+44
+0:01:48,320 --> 0:01:51,680
+tiga
+
+45
+0:01:51,680 --> 0:01:56,880
+empat di antaranya adalah 5
+
+46
+0:01:56,880 --> 0:02:01,119
+6 dan 7.
+
+47
+0:02:01,119 --> 0:02:02,560
+sekarang mari kita tulis nilai y yang sesuai
+
+48
+0:02:02,560 --> 0:02:05,840
+sehingga menjadi 1,5
+
+49
+0:02:05,840 --> 0:02:09,520
+3,8 berdasarkan apa yang kita lihat di tabel ini
+
+50
+0:02:09,520 --> 0:02:13,920
+dan kemudian menjadi 6,7
+
+51
+0:02:13,920 --> 0:02:18,760
+9,0 11,2
+
+52
+0:02:18,760 --> 0:02:21,680
+13,6 dan kemudian 16.
+
+53
+0:02:21,680 --> 0:02:24,160
+untuk kolom berikutnya kita perlu
+
+54
+0:02:24,160 --> 0:02:25,200
+mengalikan
+
+55
+0:02:25,200 --> 0:02:28,640
+x dan y
+
+56
+0:02:28,640 --> 0:02:32,959
+jadi 1 kali 1,5 adalah 1,5
+
+57
+0:02:32,959 --> 0:02:36,160
+2 kali 3,8 itu akan menjadi
+
+58
+0:02:36,160 --> 0:02:40,080
+tujuh koma enam tiga kali enam koma
+
+59
+0:02:40,080 --> 0:02:42,239
+tujuh
+
+60
+0:02:42,239 --> 0:02:45,040
+itu dua puluh koma satu empat kali sembilan
+
+61
+0:02:45,040 --> 0:02:47,519
+adalah tiga puluh enam
+
+62
+0:02:47,519 --> 0:02:51,360
+lima kali sebelas koma dua
+
+63
+0:02:51,360 --> 0:02:55,120
+56 dan  lalu 6 kali 13,6
+
+64
+0:02:55,120 --> 0:02:59,599
+itu 81,6 sekarang 7 kali 16
+
+65
+0:02:59,599 --> 0:03:03,760
+7 kali 10 adalah 70 7 kali 6 adalah 42
+
+66
+0:03:03,760 --> 0:03:07,760
+70 ditambah 42 adalah 112. sekarang mari kita hitung
+
+67
+0:03:07,760 --> 0:03:11,120
+x kuadrat satu kuadrat adalah satu dua kuadrat
+
+68
+0:03:11,120 --> 0:03:12,239
+adalah empat
+
+69
+0:03:12,239 --> 0:03:14,640
+tiga kuadrat adalah sembilan empat kuadrat adalah
+
+70
+0:03:14,640 --> 0:03:16,159
+enam belas
+
+71
+0:03:16,159 --> 0:03:20,080
+lima kuadrat adalah  25 6 kuadrat adalah 36
+
+72
+0:03:20,080 --> 0:03:23,680
+7 kuadrat adalah 49. sekarang hal berikutnya yang kita
+
+73
+0:03:23,680 --> 0:03:24,640
+n  yang harus dilakukan
+
+74
+0:03:24,640 --> 0:03:28,480
+adalah kita perlu mengambil jumlah dari setiap
+
+75
+0:03:28,480 --> 0:03:32,400
+kolom angka jadi mari kita lanjutkan dan lakukan itu
+
+76
+0:03:32,400 --> 0:03
+jadi mari kita mulai dengan
+
+77
+0:03 --> 0:03:39,680
+jumlah nilai x jadi mari kita jumlahkan
+
+78
+0:03:39,680 --> 0:03:43,840
+setiap angka di kolom pertama
+
+79
+0:03:43,840 --> 0:03:46,959
+1 ditambah 2 ditambah 3 ditambah 4 ditambah  5 ditambah 6
+
+80
+0:03:46,959 --> 0:03:51,840
+ditambah 7 dan itu akan menjadi
+
+81
+0:03:51,840 --> 0:03:55,760
+28. sekarang mari kita jumlahkan nilai-nilai y
+
+82
+0:03:55,760 --> 0:04:00,080
+jadi 1,5 ditambah 3,8 ditambah 6,7 ditambah
+
+83
+0:04:00,080 --> 0:04:04,480
+9 ditambah 11,2 ditambah 13,6
+
+84
+0:04:04,480 --> 0:04:07,959
+ditambah 16. jadi itu
+
+85
+0:04:07,959 --> 0:04:10,879
+61,8 sekarang
+
+86
+0:04:10,879 --> 0:04:12,720
+mari kita cari jumlah dari jumlah kolom berikutnya
+
+87
+0:04:12,720 --> 0:04:14,959
+dari nilai xy
+
+88
+0:04:14,959 --> 0:04:18,560
+jadi 1,5 ditambah 7,6
+
+89
+0:04:18,560 --> 0:04:21,600
+dan seterusnya sampai
+
+90
+0:04:21,600 --> 0:04:25,280
+112. jika kita menjumlahkan tujuh angka itu,
+
+91
+0:04:25,280 --> 0:04:28,800
+kita akan mendapatkan 314,8
+
+92
+0:04:28,800 --> 0:04:32,160
+sekarang mari kita cari jumlah
+
+93
+0:04:32,160 --> 0:04:35,840
+nilai x kuadrat jadi 1 ditambah 4 ditambah 9
+
+94
+0:04:35,840 --> 0:04:36,639
+ditambah 16
+
+95
+0:04:36,639 --> 0:04:40,960
+ditambah 25  ditambah 36 ditambah 49
+
+96
+0:04:40,960 --> 0:04
+itu akan menjadi 140. sekarang mari kita
+
+97
+0:04 --> 0:04:46,560
+tulis informasi penting
+
+98
+0:04:46,560 --> 0:04:49,440
+yang telah kita peroleh dari tabel ini
+
+99
+0:04:49,440 --> 0:04:51,040
+jumlah nilai x
+
+100
+0:04:51,040 --> 0:04
+adalah angka ini di sini jadi 28.
+
+101
+0:04 --> 0:05:02,240
+sekarang jumlah nilai y
+
+102
+0:05:02,240 --> 0:05:07,280
+adalah 61,8
+
+103
+0:05:07,280 --> 0:05:08,880
+nilai-nilai ini  penting karena
+
+104
+0:05:08,880 --> 0:05:10,800
+akan membantu kita menghitung kemiringan
+
+105
+0:05:10,800 --> 0:05:14,080
+dan perpotongan y dari persamaan linier
+
+106
+0:05:14,080 --> 0:05:18,800
+selanjutnya kita memiliki
+
+107
+0:05:18,800 --> 0:05:22,160
+jumlah nilai x-y
+
+108
+0:05:22,160 --> 0:05:27,199
+dan itu adalah 314 314,8
+
+109
+0:05:27,199 --> 0:05:31,360
+dan akhirnya kita memiliki
+
+110
+0:05:31,360 --> 0:05:36,560
+jumlah nilai x kuadrat yaitu 140.
+
+111
+0:05:36,560 --> 0:05:38,960
+jadi sekarang kita menulis bahwa mari kita
+
+112
+0:05:38,960 --> 0:05:42,960
+singkirkan ini
+
+113
+0:05:42,960 --> 0:05:44,400
+sehingga persamaan linier akan menjadi format ini
+
+114
+0:05:44,400 --> 0:05:46,400
+y adalah  sama dengan mx
+
+115
+0:05:46,400 --> 0:05:50,479
+ditambah b dalam statistik
+
+116
+0:05:50,479 --> 0:05:52,400
+Anda mungkin melihat persamaan seperti ini y
+
+117
+0:05:52,400 --> 0:05:53,759
+sama dengan b
+
+118
+0:05:53,759 --> 0:05:57,120
+nol ditambah b satu x
+
+119
+0:05:57,120 --> 0:05:59,039
+jadi yang perlu Anda ketahui adalah
+
+120
+0:05:59,039 --> 0:06:00,479
+kemiringan angka di depan
+
+121
+0:06:00,479 --> 0:06:03,759
+x adalah m atau b satu lakukan hal yang sama
+
+122
+0:06:03,759 --> 0:06:06,800
+jadi i  'm hanya akan menulis bahwa di sini sehingga
+
+123
+0:06:06,800 --> 0:06:11,039
+kemiringan garis sama dengan m yang adalah
+
+124
+0:06:11,039 --> 0:06:12,560
+bagaimana Anda akan melihatnya di aljabar tetapi dalam
+
+125
+0:06:12,560 --> 0:06:16,319
+statistik Anda mungkin melihat b1
+
+126
+0:06:16,319 --> 0:06:19,600
+sekarang y-intercept
+
+127
+0:06:19,600 --> 0:06:21,600
+dan aljabar diwakili oleh simbol
+
+128
+0:06:21,600 --> 0:06:26,080
+b jadi i'  saya akan menyoroti bahwa dalam warna biru
+
+129
+0:06:26,080 --> 0:06:29,039
+dalam statistik Anda akan melihatnya sebagai b0 jadi
+
+130
+0:06:29,039 --> 0:06:30,479
+kedua angka
+
+131
+0:06:30,479 --> 0:06:34,400
+ini sama
+
+132
+0:06:34,400 --> 0:06:38,639
+dalam video ini saya akan fokus pada
+
+133
+0:06:38,639 --> 0:06:40,400
+persamaan linier dalam bentuk intersep kemiringan
+
+134
+0:06:40,400 --> 0:06:42,240
+seperti yang diajarkan dalam aljabar
+
+135
+0:06:42,240 --> 0:06:44,400
+yang ada di sini  format y sama dengan mx
+
+136
+0:06:44,400 --> 0:06:46,479
+ditambah b
+
+137
+0:06:46,479 --> 0:06:48,080
+tetapi saya ingin Anda melihat hubungan
+
+138
+0:06:48,080 --> 0:06:50,160
+antara bagaimana persamaan linier
+
+139
+0:06:50,160 --> 0:06:51,680
+dideskripsikan  ribed dalam aljabar
+
+140
+0:06:51,680 --> 0:06
+dibandingkan dengan bagaimana itu dijelaskan dalam
+
+141
+0:06 --> 0:06:57,280
+statistik
+
+142
+0:06:57,280 --> 0:06:59,199
+sekarang mari kita bicara tentang bagaimana kita dapat
+
+143
+0:06:59,199 --> 0:07:02,639
+menghitung kemiringan dalam contoh ini
+
+144
+0:07:02,639 --> 0:07:06,080
+sehingga kemiringan sama dengan n
+
+145
+0:07:06,080 --> 0:07:09,280
+kali jumlah nilai xy
+
+146
+0:07:09,280 --> 0:07:13,120
+dikurangi jumlah nilai x
+
+147
+0:07:13,120 --> 0:07:15,919
+kali jumlah y  nilai dan kemudian kita
+
+148
+0:07:15,919 --> 0:07:16,960
+akan membaginya dengan
+
+149
+0:07:16,960 --> 0:07:20,240
+n kali jumlah
+
+150
+0:07:20,240 --> 0:07:23,360
+x kuadrat dikurangi
+
+151
+0:07:23,360 --> 0:07:26,800
+jumlah x kuadrat
+
+152
+0:07:26,800 --> 0:07:29,599
+dengan cara n adalah jumlah nilai
+
+153
+0:07:29,599 --> 0:07:31,120
+yang kita miliki dalam data
+
+154
+0:07:31,120 --> 0:07:35,520
+kita sehingga kita memiliki tujuh poin jadi n adalah tujuh
+
+155
+0:07:35,520 --> 0:07:37,280
+jadi mari  masukkan semuanya ke dalam rumus kemiringan
+
+156
+0:07:37,280 --> 0:07:40,240
+jadi ini akan menjadi tujuh
+
+157
+0:07:40,240 --> 0:07:44,280
+kali jumlah xy yang
+
+158
+0:07:44,280 --> 0:07:48,319
+314,8 dikurangi jumlah x
+
+159
+0:07:48,319 --> 0:07:51,400
+jadi 28 kali jumlah y yaitu
+
+160
+0:07:51,400 --> 0:07
+61,8
+
+161
+0:07 --> 0:07:56,960
+lalu dibagi n sekarang jumlah x
+
+162
+0:07:56,960 --> 0:08:01,199
+kuadrat yaitu 140
+
+163
+0:08:01,199 --> 0:08:05,120
+dan  lalu dikurangi jumlah x yaitu 28
+
+164
+0:08:05,120 --> 0:08:08,479
+tapi kita akan mengkuadratkannya dan jadi
+
+165
+0:08:08,479 --> 0:08:12,319
+inilah yang akan kita dapatkan
+
+166
+0:08:12,319 --> 0:08:15,360
+jadi sekarang mari kita masukkan semuanya 7 kali
+
+167
+0:08:15,360 --> 0:08:17,280
+3 14,8
+
+168
+0:08:17,280 --> 0:08:20,879
+dikurangi 28 kali 61,8
+
+169
+0:08:20,879 --> 0:08
+itu adalah 473,2
+
+170
+0:08 --> 0:08:30,720
+lalu 7 kali 140 dikurangi 28  kuadrat
+
+171
+0:08:30,720 --> 0:08:34,159
+itu 196.
+
+172
+0:08:34,159 --> 0:08:37,919
+jadi membagi dua angka
+
+173
+0:08:37,919 --> 0:08:44,640
+ini menjadi 2  .4142857
+
+174
+0:08:44,640 --> 0:08:45,920
+jadi saya hanya akan menulis ulang itu di bagian
+
+175
+0:08:45,920 --> 0:08:48,160
+bawah sehingga kami dapat
+
+176
+0:08:48,160 --> 0:08:52,560
+menyimpannya untuk nanti jadi ini adalah
+
+177
+0:08:52,560 --> 0:08:57,440
+kemiringan garis
+
+178
+0:08:57,440 --> 0:08:59,760
+saya tidak akan membulatkannya lebih awal karena
+
+179
+0:08:59,760 --> 0:09:01,200
+kami akan membutuhkan nilai m kami untuk
+
+180
+0:09:01,200 --> 0:09
+menghitung  nilai b kita
+
+181
+0:09 --> 0:09:12,399
+jadi sekarang kita bisa menghilangkannya
+
+182
+0:09:12,399 --> 0:09:15,440
+sekarang mari kita hitung intersep y b
+
+183
+0:09:15,440 --> 0:09:18,720
+jadi ini akan menjadi jumlah nilai y
+
+184
+0:09:18,720 --> 0:09:22,800
+dikurangi m kali jumlah nilai x
+
+185
+0:09:22,800 --> 0:09:26,560
+dibagi n jadi jumlah nilai y
+
+186
+0:09:26,560 --> 0:09:28,399
+itu  61.8
+
+187
+0:09:28,399 --> 0:09:31,600
+nilai m kita kita akan menggunakan angka yang paling
+
+188
+0:09:31,600 --> 0:09:33,120
+akurat yang kita miliki
+
+189
+0:09:33,120 --> 0:09:35,760
+untuk mendapatkan nilai b yang akurat jadi ini adalah
+
+190
+0:09:35,760 --> 0:09
+dua koma empat satu empat
+
+191
+0:09 --> 0:09:41,839
+dua delapan lima tujuh
+
+192
+0:09:41,839 --> 0:09:44,399
+jika kita membulatkannya terlalu dini akan mempengaruhi
+
+193
+0:09:44,399 --> 0:09:45,519
+nilai b kita
+
+194
+0:09:45,519 --> 0:09:46,800
+jadi itu sebabnya  yang di sekitarnya terlalu
+
+195
+0:09:46,800 --> 0:09:50,320
+dini jumlah nilai x adalah 28
+
+196
+0:09:50,320 --> 0:09:53,680
+dibagi n yaitu tujuh
+
+197
+0:09:53,680 --> 0:10:00,959
+jadi jika Anda memasukkan ini
+
+198
+0:10:00,959 --> 0:10:04,320
+Anda harus mendapatkan negatif lima poin
+
+199
+0:10:04,320 --> 0:10:06,079
+kira-kira negatif 5,8 pada
+
+200
+0:10:06,079 --> 0:10:10,560
+pembilang dibagi tujuh
+
+201
+0:10:10,560 --> 0:10:13,600
+ini akan memberi Anda
+
+202
+0:10:13,600 --> 0:10:16,720
+nilai b
+
+203
+0:10:16,720 --> 0:10:25,920
+poin negatif  0.828571
+
+204
+0:10:25,920 --> 0:10:28,959
+baiklah jadi sekarang mari kita singkirkan ini
+
+205
+0:10:28,959 --> 0:10:35,120
+dan kita tidak lagi membutuhkan ini  informasi
+
+206
+0:10:35,120 --> 0:10:37,279
+sehingga untuk menulis persamaan linier kita
+
+207
+0:10:37,279 --> 0:10:39,040
+perlu memasukkan nilai m
+
+208
+0:10:39,040 --> 0:10:42,640
+dan nilai b kita ke persamaan intersep kemiringan
+
+209
+0:10:42,640 --> 0:10:44,880
+sehingga akan menjadi y sama dengan saya
+
+210
+0:10:44,880 --> 0:10:46,399
+akan membulatkan kemiringan
+
+211
+0:10:46,399 --> 0:10:50,880
+menjadi 2,41 dan kemudian saya akan  bulatkan b
+
+212
+0:10:50,880 --> 0:10:53,920
+ke negatif 0,83
+
+213
+0:10:53,920 --> 0:10:57,200
+kita tidak perlu menggunakan jawaban yang tepat
+
+214
+0:10:57,200 --> 0:10:58,320
+jadi ini akan menjadi perkiraan yang cukup baik
+
+215
+0:10:58,320 --> 0:11:01,440
+dari data
+
+216
+0:11:01,440 --> 0:11:03,519
+yang kita miliki dalam sebuah tabel dan mari kita
+
+217
+0:11:03,519 --> 0:11:04,880
+periksa jadi mari kita
+
+218
+0:11:04,880 --> 0:11:08,880
+lihat berapa nilai y kita jika kita
+
+219
+0:11:08,880 --> 0:11:12,839
+mencolokkan  x nilai 2. jadi ini akan menjadi
+
+220
+0:11:12,839 --> 0:11:14,480
+2,41
+
+221
+0:11:14,480 --> 0:11:21,440
+kali 2 dikurangi 0,83
+
+222
+0:11:21,440 --> 0:11:24,720
+dan jadi kita mendapatkan 3,99
+
+223
+0:11:24,720 --> 0:11:28,800
+sekarang 3,99 tidak terlalu jauh dari 3,8
+
+224
+0:11:28,800 --> 0:11
+jadi itu perkiraan yang bagus
+
+225
+0:11 --> 0:11:33,440
+sekarang mari kita coba memasukkan nilai yang berbeda mari kita gunakan
+
+226
+0:11:33,440 --> 0:11:37,920
+5.
+
+227
+0:11:37,920 --> 0:11:42,800
+jadi 2,41  kali 5 dikurangi
+
+228
+0:11:42,800 --> 0:11:48,640
+0,83
+
+229
+0:11:48,640 --> 0:11:52,920
+jadi ini sama dengan 11,22
+
+230
+0:11:52,920 --> 0:11:57,279
+11,22 sangat dekat dengan 11,2 jadi itu
+
+231
+0:11:57,279 --> 0:12:00,800
+perkiraan yang lebih baik sekarang mari kita coba
+
+232
+0:12:00,800 --> 0:12:02,959
+satu lagi
+
+233
+0:12:02,959 --> 0:12:13,200
+mari kita coba nilai x tujuh
+
+234
+0:12:13,200 --> 0:12:17,320
+dalam hal ini saya mendapatkan 16,04
+
+235
+0:12:17,320 --> 0:12:20,720
+16,04 sangat dekat dengan 16.
+
+236
+0:12:20,720 --> 0:12:24,560
+jadi kita  dapat melihat bahwa persamaan linier ini
+
+237
+0:12:24,560 --> 0:12:28,560
+sangat cocok dengan data yang diamati,
+
+238
+0:12:28,560 --> 0:12:30,320
+jadi sekarang Anda tahu  w bagaimana menggunakan
+
+239
+0:12:30,320 --> 0:12:31,839
+metode kuadrat terkecil
+
+240
+0:12:31,839 --> 0:12:33,839
+ketika melakukan regresi linier
+
+241
+0:12:33,839 --> 0:12
+yaitu ketika Anda perlu menulis persamaan linier
+
+242
+0:12 --> 0:12:39,040
+yang paling sesuai dengan data yang diamati dari beberapa
+
+243
+0:12:39,040 --> 0:12:41,600
+jenis eksperimen atau sesuatu
+
+244
+0:12:41,600 --> 0:12:44,079
+sekarang apa yang akan kita lakukan saat ini
+
+245
+0:12:44,079 --> 0:12:45,680
+adalah bahwa kita'  akan menggunakan
+
+246
+0:12:45,680 --> 0:12:49,040
+excel untuk
+
+247
+0:12:49,040 --> 0:12:51,120
+mendapatkan kemiringan dan perpotongan y dengan cepat karena
+
+248
+0:12:51,120 --> 0:12:52,880
+setelah kita memiliki m dan b
+
+249
+0:12:52,880 --> 0:12
+yang perlu kita lakukan hanyalah memasukkannya ke dalam persamaan ini
+
+250
+0:12 --> 0:12:58,480
+dan kita memiliki persamaan linier yang
+
+251
+0:12:58,480 --> 0:13:00,160
+paling sesuai dengan data
+
+252
+0:13:00,160 --> 0:13
+dan terkadang saat Anda  melakukan
+
+253
+0:13 --> 0:13:04,560
+percobaan sains atau jika Anda memiliki laporan lab
+
+254
+0:13:04,560 --> 0:13:06,079
+dan Anda perlu menulis persamaan linier
+
+255
+0:13:06,079 --> 0:13:08,079
+yang paling menggambarkan data
+
+256
+0:13:08,079 --> 0:13:10,320
+excel adalah cara cepat dan sederhana untuk
+
+257
+0:13:10,320 --> 0:13:12,480
+melakukannya akan menghemat banyak waktu
+
+258
+0:13:12,480 --> 0:13:14,800
+jadi di sini kami memiliki excel dan apa  yang
+
+259
+0:13:14,800 --> 0:13:16,160
+akan kita lakukan adalah
+
+260
+0:13:16,160 --> 0:13:19,760
+memasukkan nilai x dan y kita
+
+261
+0:13:19,760 --> 0:13:23,040
+ke kolom b dan c jadi mari kita mulai dengan
+
+262
+0:13:23,040 --> 0:13:25,839
+nilai x
+
+263
+0:13:25,839 --> 0:13:29,040
+jadi 1 adalah 7 dan kemudian
+
+264
+0:13:29,040 --> 0:13:32,399
+masukkan nilai y yang sesuai jadi
+
+265
+0:13:32,399 --> 0:13:33,279
+1,5
+
+266
+0:13:33,279 --> 0:13:37,920
+3,8 6,7
+
+267
+0:13:37,920 --> 0:13:42,720
+9 11.2 13.6
+
+268
+0:13:42,720 --> 0:13:45,760
+dan 16. sekarang hal berikutnya yang perlu kita
+
+269
+0:13:45,760 --> 0:13
+hitung  adalah kemiringan
+
+270
+0:13 --> 0:13:51,760
+sehingga dalam sel c9 ketik dalam
+
+271
+0:13:51,760 --> 0:13:55,199
+kurung buka kemiringan yang sama sekarang perhatikan bahwa
+
+272
+0:13:55,199 --> 0:13:55,920
+ia mengatakan
+
+273
+0:13:55,920 --> 0:13:59,680
+nilai y yang diketahui Anda ingin
+
+274
+0:13:59,680 --> 0:14:02,079
+menyorot nilai di kolom y setelah Anda
+
+275
+0:14:02,079 --> 0:14:02,800
+melakukannya tekan
+
+276
+0:14:02,800 --> 0:14:06,320
+koma dan kemudian dikatakan nilai x yang diketahui
+
+277
+0:14:06,320 --> 0:14:09,360
+menyoroti nilai di
+
+278
+0:14:09,360 --> 0:14
+tanda kurung tutup kolom x lalu tekan enter dan
+
+279
+0:14 --> 0:14:14,839
+perhatikan bahwa kita mendapatkan kemiringan yang sama
+
+280
+0:14:14,839 --> 0:14:17,760
+2.414 seperti
+
+281
+0:14:17,760 --> 0:14:21,440
+yang kita dapatkan sebelumnya di video ini
+
+282
+0:14:21,440 --> 0:14:22,720
+jadi sekarang kita akan menghitung
+
+283
+0:14:22,720 --> 0:14:25,600
+perpotongan y menggunakan excel
+
+284
+0:14:25,600 --> 0:14:28,880
+jadi jika Anda mengetikkan
+
+285
+0:14:28,880 --> 0:14:32,240
+tanda kurung buka intersep yang sama  sorot nilai y
+
+286
+0:14:32,240 --> 0:14:35,760
+tekan koma lalu sorot nilai x
+
+287
+0:14:35,760 --> 0:14:38,639
+tutup kurung tekan enter sekarang ini
+
+288
+0:14:38,639 --> 0:14:39,920
+memberi Anda nilai b
+
+289
+0:14:39,920 --> 0:14:44,959
+intersep y yang negatif 0.8285
+
+290
+0:14:44,959 --> 0:14:48,079
+yang merupakan apa yang kita miliki sebelumnya juga
+
+291
+0:14:48,079 --> 0:14:50,160
+sehingga Anda dapat melihat ini adalah
+
+292
+0:14:50,160 --> 0:14:52,800
+waktu yang sangat lama-  cara hemat untuk menghitung
+
+293
+0:14:52,800 --> 0:14:55,360
+kemiringan dan perpotongan y dari persamaan linier
+
+294
+0:14:55,360 --> 0:14:58,160
+yang taruhannya sesuai dengan data jadi itu saja untuk
+
+295
+0:14:58,160 --> 0:14:59,519
+video ini semoga dapat
+
+296
+0:14:59,519 --> 0:15:00,399
+mengedukasi
+
+297
+0:15:00,399 --> 0:15:02,399
+jika suka jangan lupa tekan
+
+298
+0:15:02,399 --> 0:15:03,519
+tombol subscribe
+
+299
+0:15:03,519 --> 0:15:06,639
+dan terima kasih sudah menonton
+

@@ -1,0 +1,1264 @@
+1
+0:00:01,120 --> 0:00:02,960
+in this video we're going to focus on
+
+2
+0:00:02,960 --> 0:00:04,560
+linear regression
+
+3
+0:00:04,560 --> 0:00:07,680
+using the least squares method
+
+4
+0:00:07,680 --> 0:00:09,679
+and this approach will help us to write
+
+5
+0:00:09,679 --> 0:00:11,120
+a linear equation
+
+6
+0:00:11,120 --> 0:00:14,160
+that best fits the data in the table
+
+7
+0:00:14,160 --> 0:00:16,080
+shown below
+
+8
+0:00:16,080 --> 0:00:18,720
+so let me give you a visual illustration
+
+9
+0:00:18,720 --> 0:00:20,880
+so let's say
+
+10
+0:00:20,880 --> 0:00:23,119
+we have these data points which i'm
+
+11
+0:00:23,119 --> 0:00:26,800
+going to highlight in blue
+
+12
+0:00:26,800 --> 0:00:31,119
+now these data points don't all
+
+13
+0:00:31,119 --> 0:00:33,680
+fall on a straight line however what we
+
+14
+0:00:33,680 --> 0:00:34,559
+can do
+
+15
+0:00:34,559 --> 0:00:37,120
+is we can calculate the equation of a
+
+16
+0:00:37,120 --> 0:00:38,079
+line that best
+
+17
+0:00:38,079 --> 0:00:41,040
+fits this data where all of the points
+
+18
+0:00:41,040 --> 0:00:41,440
+are
+
+19
+0:00:41,440 --> 0:00:46,320
+as close to as possible to that line
+
+20
+0:00:46,320 --> 0:00:47,520
+now what we're going to do is we're
+
+21
+0:00:47,520 --> 0:00:49,200
+going to use a method called the least
+
+22
+0:00:49,200 --> 0:00:50,320
+squares method
+
+23
+0:00:50,320 --> 0:00:52,640
+to find the equation of the line and
+
+24
+0:00:52,640 --> 0:00:54,079
+then once we have it
+
+25
+0:00:54,079 --> 0:00:56,559
+we're going to test that equation to see
+
+26
+0:00:56,559 --> 0:00:58,320
+how accurate it is
+
+27
+0:00:58,320 --> 0:01:00,719
+in giving us the y values when we input
+
+28
+0:01:00,719 --> 0:01:02,079
+the x values
+
+29
+0:01:02,079 --> 0:01:03,280
+and then we're going to confirm our
+
+30
+0:01:03,280 --> 0:01:05,199
+answer using excel
+
+31
+0:01:05,199 --> 0:01:10,479
+so let's begin
+
+32
+0:01:10,479 --> 0:01:11,840
+so the first thing we're going to do is
+
+33
+0:01:11,840 --> 0:01:15,119
+we're going to create a table
+
+34
+0:01:15,119 --> 0:01:19,280
+this table is going to have four columns
+
+35
+0:01:19,280 --> 0:01:22,479
+so the first column
+
+36
+0:01:22,479 --> 0:01:25,520
+is going to be x the second column is
+
+37
+0:01:25,520 --> 0:01:27,200
+going to be y
+
+38
+0:01:27,200 --> 0:01:30,159
+the third column will be the product of
+
+39
+0:01:30,159 --> 0:01:32,079
+x and y
+
+40
+0:01:32,079 --> 0:01:38,840
+and then the last column will be x
+
+41
+0:01:38,840 --> 0:01:40,079
+squared
+
+42
+0:01:40,079 --> 0:01:42,399
+now let's plug in the values so the
+
+43
+0:01:42,399 --> 0:01:44,960
+first x value is one
+
+44
+0:01:44,960 --> 0:01:48,320
+next is two and then
+
+45
+0:01:48,320 --> 0:01:51,680
+three
+
+46
+0:01:51,680 --> 0:01:56,880
+four of that is 5
+
+47
+0:01:56,880 --> 0:02:01,119
+6 and 7.
+
+48
+0:02:01,119 --> 0:02:02,560
+now let's write the corresponding y
+
+49
+0:02:02,560 --> 0:02:05,840
+values so it's going to be 1.5
+
+50
+0:02:05,840 --> 0:02:09,520
+3.8 based on what we see in this table
+
+51
+0:02:09,520 --> 0:02:13,920
+and then it's uh 6.7
+
+52
+0:02:13,920 --> 0:02:18,760
+9.0 11.2
+
+53
+0:02:18,760 --> 0:02:21,680
+13.6 and then 16.
+
+54
+0:02:21,680 --> 0:02:24,160
+now for the next column we need to
+
+55
+0:02:24,160 --> 0:02:25,200
+multiply
+
+56
+0:02:25,200 --> 0:02:28,640
+x and y together
+
+57
+0:02:28,640 --> 0:02:32,959
+so 1 times 1.5 is 1.5
+
+58
+0:02:32,959 --> 0:02:36,160
+2 times 3.8 that's going to be
+
+59
+0:02:36,160 --> 0:02:40,080
+seven point six three times six point
+
+60
+0:02:40,080 --> 0:02:42,239
+seven
+
+61
+0:02:42,239 --> 0:02:45,040
+that's twenty point one four times nine
+
+62
+0:02:45,040 --> 0:02:47,519
+is thirty six
+
+63
+0:02:47,519 --> 0:02:51,360
+five times eleven point two
+
+64
+0:02:51,360 --> 0:02:55,120
+56 and then 6 times 13.6
+
+65
+0:02:55,120 --> 0:02:59,599
+that's 81.6 now 7 times 16
+
+66
+0:02:59,599 --> 0:03:03,760
+7 times 10 is 70 7 times 6 is 42
+
+67
+0:03:03,760 --> 0:03:07,760
+70 plus 42 is 112. now let's calculate
+
+68
+0:03:07,760 --> 0:03:11,120
+x squared one squared is one two squared
+
+69
+0:03:11,120 --> 0:03:12,239
+is four
+
+70
+0:03:12,239 --> 0:03:14,640
+three squared is nine four squared is
+
+71
+0:03:14,640 --> 0:03:16,159
+sixteen
+
+72
+0:03:16,159 --> 0:03:20,080
+five squared is 25 6 squared is 36
+
+73
+0:03:20,080 --> 0:03:23,680
+7 squared is 49. now the next thing we
+
+74
+0:03:23,680 --> 0:03:24,640
+need to do
+
+75
+0:03:24,640 --> 0:03:27,599
+is we need to take the sum of each
+
+76
+0:03:27,599 --> 0:03:28,480
+column
+
+77
+0:03:28,480 --> 0:03:32,400
+of numbers so let's go ahead and do that
+
+78
+0:03:32,400 --> 0:03
+so let's start with the sum
+
+79
+0:03 --> 0:03:39,680
+of the x values so let's add up
+
+80
+0:03:39,680 --> 0:03:43,840
+every number in the first column
+
+81
+0:03:43,840 --> 0:03:46,959
+1 plus 2 plus 3 plus 4 plus 5 plus 6
+
+82
+0:03:46,959 --> 0:03:51,840
+plus 7 and that's going to be
+
+83
+0:03:51,840 --> 0:03:54,400
+28. now let's take the sum of the y
+
+84
+0:03:54,400 --> 0:03:55,760
+values
+
+85
+0:03:55,760 --> 0:04:00,080
+so 1.5 plus 3.8 plus 6.7 plus
+
+86
+0:04:00,080 --> 0:04:04,480
+9 plus 11.2 plus 13.6
+
+87
+0:04:04,480 --> 0:04:07,959
+plus 16. so that's
+
+88
+0:04:07,959 --> 0:04:10,879
+61.8 now
+
+89
+0:04:10,879 --> 0:04:12,720
+let's find the sum of the next column
+
+90
+0:04:12,720 --> 0:04:14,959
+the sum of the xy values
+
+91
+0:04:14,959 --> 0:04:18,560
+so 1.5 plus 7.6
+
+92
+0:04:18,560 --> 0:04:21,600
+and so forth all the way to
+
+93
+0:04:21,600 --> 0:04:25,280
+112. if we add those seven numbers
+
+94
+0:04:25,280 --> 0:04:28,800
+we're going to get 314.8
+
+95
+0:04:28,800 --> 0:04:32,160
+now let's find the sum of
+
+96
+0:04:32,160 --> 0:04:35,840
+the x squared values so 1 plus 4 plus 9
+
+97
+0:04:35,840 --> 0:04:36,639
+plus 16
+
+98
+0:04:36,639 --> 0:04:40,960
+plus 25 plus 36 plus 49
+
+99
+0:04:40,960 --> 0:04
+that's going to be 140. now let's write
+
+100
+0:04 --> 0:04:46,560
+down the important information
+
+101
+0:04:46,560 --> 0:04:49,440
+that we've gleaned from this table the
+
+102
+0:04:49,440 --> 0:04:51,040
+sum of the x values
+
+103
+0:04:51,040 --> 0:04
+is this number here so that's 28.
+
+104
+0:04 --> 0:05:02,240
+now the sum of the y values
+
+105
+0:05:02,240 --> 0:05:07,280
+is 61.8
+
+106
+0:05:07,280 --> 0:05:08,880
+these values are important because it's
+
+107
+0:05:08,880 --> 0:05:10,800
+going to help us to calculate the slope
+
+108
+0:05:10,800 --> 0:05:12,320
+and the y-intercept of the linear
+
+109
+0:05:12,320 --> 0:05:14,080
+equation
+
+110
+0:05:14,080 --> 0:05:18,800
+next we have the sum
+
+111
+0:05:18,800 --> 0:05:22,160
+of the x-y values
+
+112
+0:05:22,160 --> 0:05:27,199
+and that's 314 314.8
+
+113
+0:05:27,199 --> 0:05:31,360
+and finally we have the sum
+
+114
+0:05:31,360 --> 0:05:36,560
+of the x squared values which is 140.
+
+115
+0:05:36,560 --> 0:05:38,960
+so now that we wrote that let's get rid
+
+116
+0:05:38,960 --> 0:05:42,960
+of this
+
+117
+0:05:42,960 --> 0:05:44,400
+so the linear equation will be in this
+
+118
+0:05:44,400 --> 0:05:46,400
+format y is equal to mx
+
+119
+0:05:46,400 --> 0:05:50,479
+plus b in statistics
+
+120
+0:05:50,479 --> 0:05:52,400
+you might see an equation like this y is
+
+121
+0:05:52,400 --> 0:05:53,759
+equal to b
+
+122
+0:05:53,759 --> 0:05:57,120
+zero plus b one x
+
+123
+0:05:57,120 --> 0:05:59,039
+so what you need to know is that the
+
+124
+0:05:59,039 --> 0:06:00,479
+slope the number in front of
+
+125
+0:06:00,479 --> 0:06:03,759
+x is m or b one do the same
+
+126
+0:06:03,759 --> 0:06:05,520
+so i'm just gonna write that here so the
+
+127
+0:06:05,520 --> 0:06:06,800
+slope
+
+128
+0:06:06,800 --> 0:06:11,039
+of the line is equal to m which is
+
+129
+0:06:11,039 --> 0:06:12,560
+how you'll see it in algebra but in
+
+130
+0:06:12,560 --> 0:06:16,319
+statistics you might see b1
+
+131
+0:06:16,319 --> 0:06:19,600
+now the y-intercept
+
+132
+0:06:19,600 --> 0:06:21,600
+and algebra is represented by the symbol
+
+133
+0:06:21,600 --> 0:06:26,080
+b so i'm going to highlight that in blue
+
+134
+0:06:26,080 --> 0:06:29,039
+in statistics you'll see it as b0 so
+
+135
+0:06:29,039 --> 0:06:30,479
+these two numbers
+
+136
+0:06:30,479 --> 0:06:34,400
+they're the same
+
+137
+0:06:34,400 --> 0:06:38,639
+in this video i'm going to focus on
+
+138
+0:06:38,639 --> 0:06:40,400
+the linear equation in slope intercept
+
+139
+0:06:40,400 --> 0:06:42,240
+form as taught in algebra
+
+140
+0:06:42,240 --> 0:06:44,400
+that is in this format y is equal to mx
+
+141
+0:06:44,400 --> 0:06:46,479
+plus b
+
+142
+0:06:46,479 --> 0:06:48,080
+but i want you to see the relationship
+
+143
+0:06:48,080 --> 0:06:50,160
+between how a linear equation is
+
+144
+0:06:50,160 --> 0:06:51,680
+described in algebra
+
+145
+0:06:51,680 --> 0:06
+compared to how it's described in
+
+146
+0:06 --> 0:06:57,280
+statistics
+
+147
+0:06:57,280 --> 0:06:59,199
+now let's talk about how we can
+
+148
+0:06:59,199 --> 0:07:02,639
+calculate the slope in this example
+
+149
+0:07:02,639 --> 0:07:06,080
+so the slope is equal to n
+
+150
+0:07:06,080 --> 0:07:09,280
+times the sum of the x y values
+
+151
+0:07:09,280 --> 0:07:13,120
+minus the sum of the x values times
+
+152
+0:07:13,120 --> 0:07:15,919
+the sum of the y values and then we're
+
+153
+0:07:15,919 --> 0:07:16,960
+going to divide that by
+
+154
+0:07:16,960 --> 0:07:20,240
+n times the sum of
+
+155
+0:07:20,240 --> 0:07:23,360
+x squared minus the sum
+
+156
+0:07:23,360 --> 0:07:26,800
+of x squared
+
+157
+0:07:26,800 --> 0:07:29,599
+by the way n is the number of values
+
+158
+0:07:29,599 --> 0:07:31,120
+that we have in our data
+
+159
+0:07:31,120 --> 0:07:35,520
+so we have seven points thus n is seven
+
+160
+0:07:35,520 --> 0:07:37,280
+so let's plug everything into the slope
+
+161
+0:07:37,280 --> 0:07:40,240
+formula so this is going to be seven
+
+162
+0:07:40,240 --> 0:07:44,280
+times the sum of x y which
+
+163
+0:07:44,280 --> 0:07:48,319
+314.8 minus the sum of x
+
+164
+0:07:48,319 --> 0:07:51,400
+so that's 28 times the sum of y which is
+
+165
+0:07:51,400 --> 0:07
+61.8
+
+166
+0:07 --> 0:07:56,960
+and then divided by n now the sum of x
+
+167
+0:07:56,960 --> 0:08:01,199
+squared that's 140
+
+168
+0:08:01,199 --> 0:08:05,120
+and then minus the sum of x which is 28
+
+169
+0:08:05,120 --> 0:08:08,479
+but we're going to square that and so
+
+170
+0:08:08,479 --> 0:08:12,319
+this is what we're going to get
+
+171
+0:08:12,319 --> 0:08:15,360
+so now let's plug everything in 7 times
+
+172
+0:08:15,360 --> 0:08:17,280
+3 14.8
+
+173
+0:08:17,280 --> 0:08:20,879
+minus 28 times 61.8
+
+174
+0:08:20,879 --> 0:08
+that's 473.2
+
+175
+0:08 --> 0:08:30,720
+then 7 times 140 minus 28 squared
+
+176
+0:08:30,720 --> 0:08:34,159
+that's 196.
+
+177
+0:08:34,159 --> 0:08:37,919
+so dividing these two numbers
+
+178
+0:08:37,919 --> 0:08:44,640
+this is going to be 2.4142857
+
+179
+0:08:44,640 --> 0:08:45,920
+so i'm just going to rewrite that at the
+
+180
+0:08:45,920 --> 0:08:48,160
+bottom so we can
+
+181
+0:08:48,160 --> 0:08:52,560
+save that for later so this is the slope
+
+182
+0:08:52,560 --> 0:08:57,440
+of the line
+
+183
+0:08:57,440 --> 0:08:59,760
+i'm not going to round it early because
+
+184
+0:08:59,760 --> 0:09:01,200
+we're going to need our m value to
+
+185
+0:09:01,200 --> 0:09
+calculate our b
+
+186
+0:09 --> 0:09:12,399
+value so now we can get rid of this
+
+187
+0:09:12,399 --> 0:09:15,440
+now let's calculate the y intercept b
+
+188
+0:09:15,440 --> 0:09:17,600
+so this is going to be the sum of the y
+
+189
+0:09:17,600 --> 0:09:18,720
+values
+
+190
+0:09:18,720 --> 0:09:22,800
+minus m times the sum of the x values
+
+191
+0:09:22,800 --> 0:09:26,560
+divided by n so the sum of the y values
+
+192
+0:09:26,560 --> 0:09:28,399
+that's 61.8
+
+193
+0:09:28,399 --> 0:09:31,600
+our m value we're going to use the most
+
+194
+0:09:31,600 --> 0:09:33,120
+accurate number that we have
+
+195
+0:09:33,120 --> 0:09:35,760
+to get an accurate b value so this is
+
+196
+0:09:35,760 --> 0:09
+two point four one four
+
+197
+0:09 --> 0:09:41,839
+two eight five seven
+
+198
+0:09:41,839 --> 0:09:44,399
+if we round it too early it will affect
+
+199
+0:09:44,399 --> 0:09:45,519
+our b value
+
+200
+0:09:45,519 --> 0:09:46,800
+so that's why the one around it too
+
+201
+0:09:46,800 --> 0:09:50,320
+early the sum of the x values is 28
+
+202
+0:09:50,320 --> 0:09:53,680
+divided by n which is seven
+
+203
+0:09:53,680 --> 0:10:00,959
+so if you plug this in
+
+204
+0:10:00,959 --> 0:10:04,320
+you should get negative five point
+
+205
+0:10:04,320 --> 0:10:06,079
+approximately negative 5.8 on the
+
+206
+0:10:06,079 --> 0:10:10,560
+numerator divided by seven
+
+207
+0:10:10,560 --> 0:10:13,600
+this will give you
+
+208
+0:10:13,600 --> 0:10:16,720
+a b value of negative
+
+209
+0:10:16,720 --> 0:10:25,920
+point 0.828571
+
+210
+0:10:25,920 --> 0:10:28,959
+all right so now let's get rid of this
+
+211
+0:10:28,959 --> 0:10:35,120
+and we no longer need this information
+
+212
+0:10:35,120 --> 0:10:37,279
+so to write the linear equation we need
+
+213
+0:10:37,279 --> 0:10:39,040
+to plug in our m value
+
+214
+0:10:39,040 --> 0:10:41,680
+and our b value into the slope intercept
+
+215
+0:10:41,680 --> 0:10:42,640
+equation
+
+216
+0:10:42,640 --> 0:10:44,880
+so it's going to be y is equal to i'm
+
+217
+0:10:44,880 --> 0:10:46,399
+going to round the slope
+
+218
+0:10:46,399 --> 0:10:50,880
+to 2.41 and then i'm going to round b
+
+219
+0:10:50,880 --> 0:10:53,920
+to negative 0.83
+
+220
+0:10:53,920 --> 0:10:57,200
+we don't need to use the exact answer
+
+221
+0:10:57,200 --> 0:10:58,320
+so this will be a good enough
+
+222
+0:10:58,320 --> 0:11:01,440
+approximation of the data
+
+223
+0:11:01,440 --> 0:11:03,519
+that we have in a table and let's check
+
+224
+0:11:03,519 --> 0:11:04,880
+it so let's
+
+225
+0:11:04,880 --> 0:11:07,920
+see what our y value will be if we plug
+
+226
+0:11:07,920 --> 0:11:08,880
+in
+
+227
+0:11:08,880 --> 0:11:12,839
+an x value of 2. so this is going to be
+
+228
+0:11:12,839 --> 0:11:14,480
+2.41
+
+229
+0:11:14,480 --> 0:11:21,440
+times 2 minus 0.83
+
+230
+0:11:21,440 --> 0:11:24,720
+and so we get 3.99
+
+231
+0:11:24,720 --> 0:11:28,800
+now 3.99 is not too far away from 3.8
+
+232
+0:11:28,800 --> 0:11
+so that's a good approximation
+
+233
+0:11 --> 0:11:33,440
+now let's try plugging in a different
+
+234
+0:11:33,440 --> 0:11:37,920
+value let's go with 5.
+
+235
+0:11:37,920 --> 0:11:42,800
+so 2.41 times 5 minus
+
+236
+0:11:42,800 --> 0:11:48,640
+0.83
+
+237
+0:11:48,640 --> 0:11:52,920
+so this is equal to 11.22
+
+238
+0:11:52,920 --> 0:11:57,279
+11.22 is very close to 11.2 so that's an
+
+239
+0:11:57,279 --> 0:12:00,800
+even better approximation now let's try
+
+240
+0:12:00,800 --> 0:12:02,959
+one more
+
+241
+0:12:02,959 --> 0:12:13,200
+let's try an x value of seven
+
+242
+0:12:13,200 --> 0:12:17,320
+in this case i get 16.04
+
+243
+0:12:17,320 --> 0:12:20,720
+16.04 is very close to 16.
+
+244
+0:12:20,720 --> 0:12:23,200
+so thus we could see that this linear
+
+245
+0:12:23,200 --> 0:12:24,560
+equation
+
+246
+0:12:24,560 --> 0:12:28,560
+fits the observed data very well
+
+247
+0:12:28,560 --> 0:12:30,320
+so now you know how to use the least
+
+248
+0:12:30,320 --> 0:12:31,839
+squares method
+
+249
+0:12:31,839 --> 0:12:33,839
+when performing linear regression that
+
+250
+0:12:33,839 --> 0:12:35,040
+is when you need to write a linear
+
+251
+0:12:35,040 --> 0:12
+equation
+
+252
+0:12 --> 0:12:39,040
+that best fits the observed data of some
+
+253
+0:12:39,040 --> 0:12:41,600
+type of experiment or something
+
+254
+0:12:41,600 --> 0:12:44,079
+now what we're going to do at this point
+
+255
+0:12:44,079 --> 0:12:45,680
+is that we're going to use
+
+256
+0:12:45,680 --> 0:12:49,040
+excel to quickly get
+
+257
+0:12:49,040 --> 0:12:51,120
+the slope and the y-intercept because
+
+258
+0:12:51,120 --> 0:12:52,880
+once we have m and b
+
+259
+0:12:52,880 --> 0:12:54,959
+all we need to do is plug it into this
+
+260
+0:12:54,959 --> 0:12
+equation
+
+261
+0:12 --> 0:12:58,480
+and we have our linear equation that
+
+262
+0:12:58,480 --> 0:13:00,160
+best fits the data
+
+263
+0:13:00,160 --> 0:13
+and sometimes when you're performing a
+
+264
+0:13 --> 0:13:03,680
+science experiment or if you have a lab
+
+265
+0:13:03,680 --> 0:13:04,560
+report
+
+266
+0:13:04,560 --> 0:13:06,079
+and you need to write a linear equation
+
+267
+0:13:06,079 --> 0:13:08,079
+that best describes the data
+
+268
+0:13:08,079 --> 0:13:10,320
+excel is a quick and simple way to do it
+
+269
+0:13:10,320 --> 0:13:12,480
+it'll save you a lot of time
+
+270
+0:13:12,480 --> 0:13:14,800
+so here we have excel and what we're
+
+271
+0:13:14,800 --> 0:13:16,160
+going to do is
+
+272
+0:13:16,160 --> 0:13:18,399
+we're going to plug in our x and our y
+
+273
+0:13:18,399 --> 0:13:19,760
+values
+
+274
+0:13:19,760 --> 0:13:23,040
+into columns b and c so let's start with
+
+275
+0:13:23,040 --> 0:13:25,839
+the x values
+
+276
+0:13:25,839 --> 0:13:29,040
+so it's 1 is 7 and then let's
+
+277
+0:13:29,040 --> 0:13:32,399
+input the corresponding y values so it's
+
+278
+0:13:32,399 --> 0:13:33,279
+1.5
+
+279
+0:13:33,279 --> 0:13:37,920
+3.8 6.7
+
+280
+0:13:37,920 --> 0:13:42,720
+9 11.2 13.6
+
+281
+0:13:42,720 --> 0:13:45,760
+and 16. now the next thing we need to
+
+282
+0:13:45,760 --> 0:13
+calculate is the slope
+
+283
+0:13 --> 0:13:51,760
+so in cell c9 type in equal
+
+284
+0:13:51,760 --> 0:13:55,199
+slope open parenthesis now notice that
+
+285
+0:13:55,199 --> 0:13:55,920
+it says
+
+286
+0:13:55,920 --> 0:13:59,680
+the known y values you want to highlight
+
+287
+0:13:59,680 --> 0:14:02,079
+the values in the y column once you do
+
+288
+0:14:02,079 --> 0:14:02,800
+that press
+
+289
+0:14:02,800 --> 0:14:05,279
+comma and then it says the known x
+
+290
+0:14:05,279 --> 0:14:06,320
+values
+
+291
+0:14:06,320 --> 0:14:09,360
+highlight the values in the x column
+
+292
+0:14:09,360 --> 0:14
+close parenthesis and then hit enter and
+
+293
+0:14 --> 0:14:14,839
+notice that we get the same slope
+
+294
+0:14:14,839 --> 0:14:17,760
+2.414
+
+295
+0:14:17,760 --> 0:14:20,320
+which is what we got earlier in this
+
+296
+0:14:20,320 --> 0:14:21,440
+video
+
+297
+0:14:21,440 --> 0:14:22,720
+so now we're going to calculate the
+
+298
+0:14:22,720 --> 0:14:25,600
+y-intercept using excel
+
+299
+0:14:25,600 --> 0:14:28,880
+so if you type in equal intercept
+
+300
+0:14:28,880 --> 0:14:32,240
+open parenthesis highlight the y values
+
+301
+0:14:32,240 --> 0:14:35,199
+press comma and then highlight the x
+
+302
+0:14:35,199 --> 0:14:35,760
+values
+
+303
+0:14:35,760 --> 0:14:38,639
+close parenthesis press enter now it
+
+304
+0:14:38,639 --> 0:14:39,920
+gives you the b value
+
+305
+0:14:39,920 --> 0:14:44,959
+the y-intercept which is negative 0.8285
+
+306
+0:14:44,959 --> 0:14:48,079
+which is what we had earlier as well so
+
+307
+0:14:48,079 --> 0:14:50,160
+as you can see this is a very
+
+308
+0:14:50,160 --> 0:14:52,800
+time-saving method to calculate the
+
+309
+0:14:52,800 --> 0:14:54,560
+slope and the y-intercept of the linear
+
+310
+0:14:54,560 --> 0:14:55,360
+equation
+
+311
+0:14:55,360 --> 0:14:58,160
+that bets fits the data so that's it for
+
+312
+0:14:58,160 --> 0:14:59,519
+this video hopefully you found it to be
+
+313
+0:14:59,519 --> 0:15:00,399
+educational
+
+314
+0:15:00,399 --> 0:15:02,399
+if you like it don't forget to hit that
+
+315
+0:15:02,399 --> 0:15:03,519
+subscribe button
+
+316
+0:15:03,519 --> 0:15:06,639
+and thanks for watching
+

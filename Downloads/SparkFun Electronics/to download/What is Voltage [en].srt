@@ -1,0 +1,692 @@
+1
+0:00:03,920 --> 0:00:06,629
+to understand how electricity works we
+
+2
+0:00:06,629 --> 0:00:09,030
+need to zoom in on atoms the things that
+
+3
+0:00:09,030 --> 0:00:11,160
+make up all matter atoms are made up of
+
+4
+0:00:11,160 --> 0:00:13,920
+three basic particles that is protons
+
+5
+0:00:13,920 --> 0:00:15,890
+which have a positive electric charge
+
+6
+0:00:15,890 --> 0:00:18,539
+neutrons which have no electric charge
+
+7
+0:00:18,539 --> 0:00:21,390
+and electrons which have a negative
+
+8
+0:00:21,390 --> 0:00
+electric charge the protons and neutrons
+
+9
+0:00 --> 0:00:26,160
+are tightly packed in the core or
+
+10
+0:00:26,160 --> 0:00:28,650
+nucleus of an atom while electrons move
+
+11
+0:00:28,650 --> 0:00:30,539
+about this nucleus in regions known as
+
+12
+0:00:30,539 --> 0:00:33,390
+shells or orbitals right now this atom
+
+13
+0:00:33,390 --> 0:00:35,130
+is electrically neutral as it has the
+
+14
+0:00:35,130 --> 0:00:36,750
+same number of protons and electrons
+
+15
+0:00:36,750 --> 0:00:39,239
+with enough energy an electron may be
+
+16
+0:00:39,239 --> 0:00:41,100
+stripped away leaving the atom with a
+
+17
+0:00:41,100 --> 0:00:44,910
+net positive charge likewise another
+
+18
+0:00:44,910 --> 0:00:47,250
+atom may receive a free electron which
+
+19
+0:00:47,250 --> 0:00:48,719
+then makes the atom electrically
+
+20
+0:00:48,719 --> 0:00:51,480
+negative when we have two objects with
+
+21
+0:00:51,480 --> 0:00:53,129
+different electric charges due to the
+
+22
+0:00:53,129 --> 0:00:55,199
+absence or presence of excess electrons
+
+23
+0:00:55,199 --> 0:00:57,030
+we say that we have static electricity
+
+24
+0:00:57,030 --> 0:00:59,879
+we can demonstrate this using a balloon
+
+25
+0:00:59,879 --> 0:01:02,760
+and a soda can when I rub a piece of
+
+26
+0:01:02,760 --> 0:01:04,890
+cloth against the balloon I strip away
+
+27
+0:01:04,890 --> 0:01:07,020
+electrons from the piece of cloth and
+
+28
+0:01:07,020 --> 0:01:09,119
+add them to the balloon as a result this
+
+29
+0:01:09,119 --> 0:01:11,360
+balloon now has a net negative charge
+
+30
+0:01:11,360 --> 0:01:14,010
+when we bring it close to the can the
+
+31
+0:01:14,010 --> 0:01:17,520
+can chases the balloon let's look at why
+
+32
+0:01:17,520 --> 0:01:19,950
+that's happening the aluminum in the can
+
+33
+0:01:19,950 --> 0:01:21,750
+is a conductor which means that the
+
+34
+0:01:21,750 --> 0:01:23,520
+electrons can freely move about the
+
+35
+0:01:23,520 --> 0:01:25,830
+material as we bring the negatively
+
+36
+0:01:25,830 --> 0:01:27,990
+charged balloon near the metal the
+
+37
+0:01:27,990 --> 0:01:29,729
+electrons are pushed away to the far
+
+38
+0:01:29,729 --> 0:01:31,890
+side of the can since like charges repel
+
+39
+0:01:31,890 --> 0:01:34,590
+that leaves an excess of positive charge
+
+40
+0:01:34,590 --> 0:01:36,119
+on the side of the can nearest the
+
+41
+0:01:36,119 --> 0:01:37,979
+balloon which is pulled toward the
+
+42
+0:01:37,979 --> 0:01:39,840
+balloon as opposite charges attract
+
+43
+0:01:39,840 --> 0:01:42,299
+since the positive charges are closer to
+
+44
+0:01:42,299 --> 0:01:43,680
+the balloon than the negative charges
+
+45
+0:01:43,680 --> 0:01:45,840
+the attractive force is greater than the
+
+46
+0:01:45,840 --> 0:01:48,360
+repulsive force this results in a net
+
+47
+0:01:48,360 --> 0:01:50,220
+force that pulls the can toward the
+
+48
+0:01:50,220 --> 0:01:52,079
+balloon let's see that again in instant
+
+49
+0:01:52,079 --> 0:01:56,670
+replay before we go any further let's
+
+50
+0:01:56,670 --> 0:01:58,860
+talk about units the SI unit for
+
+51
+0:01:58,860 --> 0:02:01,229
+electric charge is the Coulomb generally
+
+52
+0:02:01,229 --> 0:02
+abbreviated with an uppercase C an
+
+53
+0:02 --> 0:02:05,460
+electron has a charge of about negative
+
+54
+0:02:05,460 --> 0:02:07,860
+one point 602 times 10 to the negative
+
+55
+0:02:07,860 --> 0:02:11,400
+19 coulombs and a proton has a charge of
+
+56
+0:02:11,400 --> 0:02:13,770
+about positive 1.60 to tie
+
+57
+0:02:13,770 --> 0:02:16,770
+10 to the negative 19 coulombs energy is
+
+58
+0:02:16,770 --> 0:02:18,420
+usually given in joules which is
+
+59
+0:02:18,420 --> 0:02:20,580
+abbreviated with the symbol uppercase J
+
+60
+0:02:20,580 --> 0:02:22,920
+1 joule is equal to the amount of energy
+
+61
+0:02:22,920 --> 0:02:25,380
+transferred to an object when a force of
+
+62
+0:02:25,380 --> 0:02:27,480
+one Newton is applied to that object
+
+63
+0:02:27,480 --> 0:02:30,240
+over a distance of 1 meter energy can
+
+64
+0:02:30,240 --> 0:02:32,220
+either be potential which results from
+
+65
+0:02:32,220 --> 0:02:34,410
+an object's position or arrangement or
+
+66
+0:02:34,410 --> 0:02:36,390
+kinetic resulting from the object's
+
+67
+0:02:36,390 --> 0:02:39,030
+motion both kinetic and potential energy
+
+68
+0:02:39,030 --> 0:02:40,920
+are given in joules now we can define
+
+69
+0:02:40,920 --> 0:02:43,530
+voltage voltage is a measure of electric
+
+70
+0:02:43,530 --> 0:02:46,500
+potential between two points the unit
+
+71
+0:02:46,500 --> 0:02:48,330
+volt is defined as one Joule of
+
+72
+0:02:48,330 --> 0:02:50,790
+potential energy per unit charge given
+
+73
+0:02:50,790 --> 0:02:52,860
+in coulombs let's explain this with an
+
+74
+0:02:52,860 --> 0:02:55,170
+example let's say that I've got a
+
+75
+0:02:55,170 --> 0:02:57,300
+particle with a negative 1 Coulomb of
+
+76
+0:02:57,300 --> 0:02:59,490
+charge then let's say there is a
+
+77
+0:02:59,490 --> 0:03:01,380
+particle with positive 1 Coulomb of
+
+78
+0:03:01,380 --> 0:03:03,480
+charge next to it since opposites
+
+79
+0:03:03,480 --> 0:03:05,580
+attract and the positive particle is as
+
+80
+0:03:05,580 --> 0:03:07,440
+close as it can get to the negative
+
+81
+0:03:07,440 --> 0:03:09,690
+particle everything is at rest there is
+
+82
+0:03:09,690 --> 0:03:13,110
+no kinetic or potential energy now let's
+
+83
+0:03:13,110 --> 0:03:15,300
+say that I need to use 10 joules of
+
+84
+0:03:15,300 --> 0:03:17,640
+energy to move the positive particle
+
+85
+0:03:17,640 --> 0:03:19,800
+from its resting position to this point
+
+86
+0:03:19,800 --> 0:03:22,380
+if I were to release it it would move
+
+87
+0:03:22,380 --> 0:03:24,660
+back to the negative particle as a
+
+88
+0:03:24,660 --> 0:03:27,150
+result we can say that it has 10 joules
+
+89
+0:03:27,150 --> 0:03:29,760
+of electric potential energy so long as
+
+90
+0:03:29,760 --> 0:03:33,360
+I hold it here now if I repeated this
+
+91
+0:03:33,360 --> 0:03:35,820
+demo with 3 positively charged particles
+
+92
+0:03:35,820 --> 0:03:38,310
+it would take 30 joules of energy to
+
+93
+0:03:38,310 --> 0:03:39,990
+move them the same distance away from
+
+94
+0:03:39,990 --> 0:03:42,750
+the negative particle so they have 30
+
+95
+0:03:42,750 --> 0:03:44,700
+joules of potential energy as long as
+
+96
+0:03:44,700 --> 0:03:46,650
+I'm holding them here as we defined
+
+97
+0:03:46,650 --> 0:03:48,540
+earlier voltage is the electric
+
+98
+0:03:48,540 --> 0:03:50,910
+potential between two points to
+
+99
+0:03:50,910 --> 0:03:52,500
+calculate the voltage between their
+
+100
+0:03:52,500 --> 0:03:54,420
+starting and ending points we know that
+
+101
+0:03:54,420 --> 0:03:56,250
+I did 30 joules of work to move the
+
+102
+0:03:56,250 --> 0:03:58,530
+particles and the total charges three
+
+103
+0:03:58,530 --> 0:04:01,290
+coulombs so the voltage is 30 joules
+
+104
+0:04:01,290 --> 0:04:03,870
+divided by 3 coulombs which is 10 volts
+
+105
+0:04:03,870 --> 0:04:06,060
+we would say that the electric potential
+
+106
+0:04:06,060 --> 0:04:08,580
+between these two points is 10 volts if
+
+107
+0:04:08,580 --> 0:04:11,010
+I released one of the particles it would
+
+108
+0:04:11,010 --> 0:04:12,540
+move back to the negatively charged
+
+109
+0:04:12,540 --> 0:04:14,610
+particle that would leave me with 20
+
+110
+0:04:14,610 --> 0:04:16,530
+joules of potential energy and 2
+
+111
+0:04:16,530 --> 0:04:18,810
+coulombs of charge so the potential is
+
+112
+0:04:18,810 --> 0:04:21,930
+still 10 volts even if I had no positive
+
+113
+0:04:21,930 --> 0:04:23,970
+particles the potential between the two
+
+114
+0:04:23,970 --> 0:04:26,310
+points is still 10 volts as you can see
+
+115
+0:04:26,310 --> 0:04:26,990
+a
+
+116
+0:04:26,990 --> 0:04:29,060
+your potential energy is not the same as
+
+117
+0:04:29,060 --> 0:04:31,430
+electric potential when we start talking
+
+118
+0:04:31,430 --> 0:04:32,810
+about moving electrons through
+
+119
+0:04:32,810 --> 0:04:34,789
+conductors and electronic components we
+
+120
+0:04:34,789 --> 0:04:36,620
+are talking about current electricity
+
+121
+0:04:36,620 --> 0:04:38,419
+which is slightly different than static
+
+122
+0:04:38,419 --> 0:04:40,160
+electricity let's take a look at a
+
+123
+0:04:40,160 --> 0:04:42,380
+battery it doesn't really matter how far
+
+124
+0:04:42,380 --> 0:04:44,120
+apart the terminals of a battery are the
+
+125
+0:04:44,120 --> 0:04:46,009
+chemicals inside a battery determine the
+
+126
+0:04:46,009 --> 0:04:47,449
+electrical potential between the
+
+127
+0:04:47,449 --> 0:04:49,669
+terminals a fully charged double a
+
+128
+0:04:49,669 --> 0:04:52,430
+alkaline battery is listed as having 1.5
+
+129
+0:04:52,430 --> 0:04:54,650
+volts that means each Coulomb of charge
+
+130
+0:04:54,650 --> 0:04:56,810
+moving from one end of the battery will
+
+131
+0:04:56,810 --> 0:05:00,080
+do 1.5 joules of work now compare that
+
+132
+0:05:00,080 --> 0:05:02,479
+to a much larger d-cell battery each
+
+133
+0:05:02,479 --> 0:05:05,419
+Coulomb of charge will still only do 1.5
+
+134
+0:05:05,419 --> 0:05:08,210
+joules of work but a D cell has far more
+
+135
+0:05:08,210 --> 0:05:10,490
+coulombs of charge than a double a as a
+
+136
+0:05:10,490 --> 0:05:12,770
+result these cells will last a lot
+
+137
+0:05:12,770 --> 0:05:14,750
+longer than double A batteries doing the
+
+138
+0:05:14,750 --> 0:05:17,360
+same amount of work static electricity
+
+139
+0:05:17,360 --> 0:05:19,520
+can be a lot of fun but more often than
+
+140
+0:05:19,520 --> 0:05:21,259
+not it's considered dangerous or a
+
+141
+0:05:21,259 --> 0:05:22,849
+nuisance one of the most dramatic
+
+142
+0:05:22,849 --> 0:05:25,039
+displays of static electricity happens
+
+143
+0:05:25,039 --> 0:05:27,470
+in nature storm clouds can build up a
+
+144
+0:05:27,470 --> 0:05:29,210
+potential difference of millions of
+
+145
+0:05:29,210 --> 0:05:31,520
+volts when compared to the earth and at
+
+146
+0:05:31,520 --> 0:05:34,250
+some point the electrons actually forced
+
+147
+0:05:34,250 --> 0:05:36,080
+their way through the air creating
+
+148
+0:05:36,080 --> 0:05:37,970
+lightning in order to balance out that
+
+149
+0:05:37,970 --> 0:05:40,520
+charge difference this sudden flow of
+
+150
+0:05:40,520 --> 0:05:42,650
+electricity an attempt to neutralize two
+
+151
+0:05:42,650 --> 0:05:44,539
+statically charged objects is known as
+
+152
+0:05:44,539 --> 0:05:47,509
+electrostatic discharge or ESD while
+
+153
+0:05:47,509 --> 0:05:49,610
+lightning is a rather extreme display of
+
+154
+0:05:49,610 --> 0:05:51,259
+electrostatic build-up and discharge
+
+155
+0:05:51,259 --> 0:05:53,479
+static electricity can still be quite
+
+156
+0:05:53,479 --> 0:05:56,210
+useful for example many factory and
+
+157
+0:05:56,210 --> 0:05:57,949
+power plant smokestacks employ a
+
+158
+0:05:57,949 --> 0:06:00,349
+technology that use a static electricity
+
+159
+0:06:00,349 --> 0:06:02,900
+to pull soot and ash out of the air as
+
+160
+0:06:02,900 --> 0:06:05,210
+it flows up through the pipe resulting
+
+161
+0:06:05,210 --> 0:06:08,240
+in less pollution also most cars are
+
+162
+0:06:08,240 --> 0:06:10,009
+painted using a process called powder
+
+163
+0:06:10,009 --> 0:06:12,349
+coating in this paint leaving the spray
+
+164
+0:06:12,349 --> 0:06:14,300
+nozzle is given an electric charge and
+
+165
+0:06:14,300 --> 0:06:16,039
+the car body is given a different
+
+166
+0:06:16,039 --> 0:06:18,620
+electric charge which creates a stronger
+
+167
+0:06:18,620 --> 0:06:20,330
+bond between the paint and the car body
+
+168
+0:06:20,330 --> 0:06:22,820
+this allows for a more uniform paint
+
+169
+0:06:22,820 --> 0:06:25,400
+coverage and reduces paint waste since
+
+170
+0:06:25,400 --> 0:06:27,229
+less of its likely to stick around in
+
+171
+0:06:27,229 --> 0:06:30,289
+the air or drip off the car body next
+
+172
+0:06:30,289 --> 0:06:31,940
+time we'll dive into current electricity
+
+173
+0:06:31,940 --> 0:06:36,159
+and talk about making it do work for us
+

@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 0:00:02,310
+terima kasih telah mendengarkan sobat aerospace
+
+2
+0:00:02,310 --> 0:00:04,350
+saat kita membahas pro dan kontra dari
+
+3
+0:00:04,350 --> 0:00:06,810
+sirkuit pembatas arus ketika
+
+4
+0:00:06,810 --> 0:00:08,849
+merancang catu daya, seseorang harus mempertimbangkan
+
+5
+0:00:08,849 --> 0:00:10,260
+waktu penahanan selama
+
+6
+0:00:10,260 --> 0:00:12,330
+gangguan daya dan sering kali
+
+7
+0:00:12,330 --> 0:00:14,219
+kapasitor besar ditempatkan pada saluran listrik
+
+8
+0:00:14,219 --> 0:00:16,440
+utama untuk menangani tujuan ini  karena
+
+9
+0:00:16,440 --> 0:00:18,300
+persyaratan minat atau
+
+10
+0:00:18,300 --> 0:00:20,490
+keterbatasan komponen tantalum, maka diperlukan
+
+11
+0:00:20,490 --> 0:00:22,650
+untuk membatasi arus ke sirkuit perampokan itu,
+
+12
+0:00:22,650 --> 0:00:24,960
+banyak insinyur menggunakan
+
+13
+0:00:24,960 --> 0:00:27,300
+resistor dan dioda pembatas arus sederhana untuk
+
+14
+0:00:27,300 --> 0:00:30,060
+melakukan pekerjaan ini dan ini berfungsi sederhana
+
+15
+0:00:30,060 --> 0:00:31,940
+dan efektif untuk pemadaman listrik
+
+16
+0:00:31,940 --> 0:00:34,200
+namun insinyur kehilangan banyak hal.
+
+17
+0:00:34,200 --> 0:00:36,450
+peluang yang mungkin merugikan mereka ketika
+
+18
+0:00:36,450 --> 0:00:38,579
+mereka pergi untuk melakukan pengujian emisi pada
+
+19
+0:00:38,579 --> 0:00:41,370
+kualifikasi kapasitansi tinggi
+
+20
+0:00:41,370 --> 0:00:43,620
+efektif menyaring kebisingan frekuensi rendah
+
+21
+0:00:43,620 --> 0:00:45,329
+dan dapat sulit dilakukan dengan
+
+22
+0:00:45,329 --> 0:00:47,789
+komponen lain menggunakan konfigurasi yang
+
+23
+0:00:47,789 --> 0:00:50,219
+ditunjukkan batas penahanan seribu
+
+24
+0:00:50,219 --> 0:00:52,800
+mikrofarad akan dibebankan ke
+
+25
+0:00:52,800 --> 0:00:55,649
+tingkat yang sama dengan tutup satu mikrofarad namun
+
+26
+0:00:55,649 --> 0:00:58,170
+selama acara frekuensi rendah itu akan
+
+27
+0:00:58,170 --> 0:01:00,660
+terbatas  d ke penurunan tegangan maju d1
+
+28
+0:01:00,660 --> 0:01:03,420
+dan seperti yang Anda lihat jika Anda melakukan
+
+29
+0:01:03,420 --> 0:01:04,949
+uji gangguan daya, itu akan
+
+30
+0:01:04,949 --> 0:01:07,619
+langsung turun oleh tegangan maju d1.
+
+31
+0:01:07,619 --> 0:01:10,080
+Transien ini dapat menyebabkan
+
+32
+0:01:10,080 --> 0:01:12,330
+kegagalan emisi pada kualifikasi sebagai
+
+33
+0:01:12,330 --> 0:01:15,180
+alternatif jika menggunakan rangkaian empat komponen ini
+
+34
+0:01:15,180 --> 0:01:17,700
+untuk secara aktif membatasi arus ke
+
+35
+0:01:17,700 --> 0:01:19,470
+Anda  kapasitor perampok itu akan menempatkan
+
+36
+0:01:19,470 --> 0:01:21,450
+kapasitor perampok Anda sejalan dengan
+
+37
+0:01:21,450 --> 0:01:23,850
+tutup decoupling Anda secara efektif
+
+38
+0:01:23,850 --> 0:01:26,189
+menyaring kebisingan permintaan arus frekuensi rendah
+
+39
+0:01:26,189 --> 0:01:28,590
+menggunakan sirkuit ini dan itu adalah
+
+40
+0:01:28,590 --> 0:01:30,600
+resistansi dinamis Anda dapat mengisi kapasitansi perampokan Anda
+
+41
+0:01:30,600 --> 0:01:32,670
+dalam jumlah waktu yang
+
+42
+0:01:32,670 --> 0:01:35,070
+Anda pilih pelajari cara menggunakan ini  sirkuit
+
+43
+0:01:35,070 --> 0:01:37,530
+memilih nilai spesifik untuk setiap
+
+44
+0:01:37,530 --> 0:01:40,740
+komponen di aerospace sobat comm
+
+45
+0:01:40,740 --> 0:01:42,930
+klik tautan di bawah ini untuk mendapatkan akses langsung
+
+46
+0:01:42,930 --> 0:01:45,479
+terima kasih telah menonton dan saya harap Anda
+
+47
+0:01:45,479 --> 0:01:47,790
+memeriksa sobat aerospace dan menggunakan sirkuit ini
+
+48
+0:01:47,790 --> 0:01:50,840
+pada desain masa depan
+

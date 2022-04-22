@@ -1,0 +1,836 @@
+1
+0:00:02,990 --> 0:00:15,619
+[Musik]
+
+2
+0:00:15,619 --> 0:00:18,119
+hai teman-teman saya adalah Smith yang diretas dan pada
+
+3
+0:00:18,119 --> 0:00:19,650
+episode ini menjadikannya nyata, kami akan mencoba dan
+
+4
+0:00:19,650 --> 0:00:21,480
+membuat reaktor busur nyata karena ini adalah
+
+5
+0:00:21,480 --> 0:00:27,470
+salah satu permintaan paling umum Anda
+
+6
+0:00:27,470 --> 0:00:31,050
+jadi apa sebenarnya reaktor busur
+
+7
+0:00:31,050 --> 0:00:32,880
+itu pertama kali diperkenalkan  ke MCU di
+
+8
+0:00:32,880 --> 0:00:35,160
+iron man dan hanya
+
+9
+0:00:35,160 --> 0:00:37,050
+melihatnya sepertinya menghasilkan busur listrik terus-menerus
+
+10
+0:00:37,050 --> 0:00:39,720
+dalam satu lingkaran dan entah bagaimana itu
+
+11
+0:00:39,720 --> 0:00:42,900
+menghasilkan daya dalam rekaman sekarang bagi saya
+
+12
+0:00:42,900 --> 0:00:44,580
+itu terlihat seperti perangkat energi abadi
+
+13
+0:00:44,580 --> 0:00:47,400
+yang kita tahu tidak mungkin
+
+14
+0:00:47,400 --> 0:00:49,200
+karena  hukum fisika yang paling mendasar
+
+15
+0:00:49,200 --> 0:00:50,700
+adalah kekekalan energi
+
+16
+0:00:50,700 --> 0:00:52,739
+yang menyatakan bahwa energi dalam sistem tertutup
+
+17
+0:00:52,739 --> 0:00:54,540
+adalah konstan yang berarti energi
+
+18
+0:00:54,540 --> 0:00:58,020
+tidak dapat diciptakan hanya
+
+19
+0:00:58,020 --> 0:01:00,180
+diubah menjadi persamaan energi N
+
+20
+0:01:00,180 --> 0:01:02,879
+sama dengan energi yang keluar ditambah kerugian biasanya
+
+21
+0:01:02,879 --> 0:01:04,800
+dalam bentuk panas karena
+
+22
+0:01:04,800 --> 0:01:06,360
+hukum kedua termodinamika kita tahu
+
+23
+0:01:06,360 --> 0:01:09,030
+selalu ada kerugian yang selalu masuk
+
+24
+0:01:09,030 --> 0:01:11,490
+akal ketika Obaja mengatakan ini reaktor busur
+
+25
+0:01:11,490 --> 0:01:20,250
+itu adalah aksi publisitas
+
+26
+0:01:20,250 --> 0:01:22,620
+menutup hippies bekerja ya sebagai
+
+27
+0:01:22,620 --> 0:01:25,890
+ilmu  proyek tapi kemudian di gua
+
+28
+0:01:25,890 --> 0:01:27,570
+ketika Toni miniatur reaktor busur
+
+29
+0:01:27,570 --> 0:01:30,180
+menggunakan paladium apa
+
+30
+0:01:30,180 --> 0:01:33,240
+itu paladium 0,15 gram yang
+
+31
+0:01:33,240 --> 0:01:34,799
+menunjukkan bahwa reaktor busur mungkin sebenarnya
+
+32
+0:01:34,799 --> 0:01:36,659
+teknologi nuklir karena beberapa
+
+33
+0:01:36,659 --> 0:01:39,180
+paladium bersifat radioaktif sayangnya
+
+34
+0:01:39,180 --> 0:01:41,579
+itu juga sangat karsinogenik dan beracun
+
+35
+0:01:41,579 --> 0:01:43,289
+jadi saya tidak akan melakukannya  bermain dengan lady
+
+36
+0:01:43,289 --> 0:01:46,259
+'m untuk teknologi fiksi sekarang
+
+37
+0:01:46,259 --> 0:01:48,719
+output daya yang ditentukan juga agak
+
+38
+0:01:48,719 --> 0:01:52,049
+konyol dapatkah Anda menghasilkan jika matematika
+
+39
+0:01:52,049 --> 0:01:54,869
+saya benar Saya tahu itu adalah tiga gigajoule
+
+40
+0:01:54,869 --> 0:01:57,810
+per detik Joule per detik hanyalah
+
+41
+0:01:57,810 --> 0:01:59,880
+cara ilmiah yang bagus untuk mengatakan satu
+
+42
+0:01:59,880 --> 0:02:01,380
+watt yang berarti reaktor busur
+
+43
+0:02:01,380 --> 0:02:04,079
+menghasilkan tiga gigawatt daya yang
+
+44
+0:02:04,079 --> 0:02:06,060
+hampir tiga kali lipat output daya
+
+45
+0:02:06,060 --> 0:02:07,649
+DeLorean yang melakukan perjalanan waktu dari Kembali ke
+
+46
+0:02:07,649 --> 0:02:16,320
+Masa Depan sebenarnya jika kita menjual
+
+47
+0:02:16,320 --> 0:02:17,970
+energi itu kembali ke jaringan listrik
+
+48
+0:02:17,970 --> 0:02:20,100
+dengan cara yang sama saya menjual energi matahari  untuk atap
+
+49
+0:02:20,100 --> 0:02:22,470
+saya akan setara dengan 833
+
+50
+0:02:22,470 --> 0:02:24,630
+kilowatt jam yang akan menghasilkan pendapatan dua
+
+51
+0:02:24,630 --> 0:02:26,400
+ratus lima puluh dolar per detik
+
+52
+0:02:26,400 --> 0:02:28,500
+atau dua puluh satu koma enam mil  triliunan
+
+53
+0:02:28,500 --> 0:02:31,350
+dolar per hari pada dasarnya jika saya ingin
+
+54
+0:02:31,350 --> 0:02:32,910
+menciptakan reaktor Eric yang berfungsi nyata, semua
+
+55
+0:02:32,910 --> 0:02:34,470
+masalah pendanaan kami akan terpecahkan
+
+56
+0:02:34,470 --> 0:02:36,840
+dan kami akan baik-baik saja dalam perjalanan kami untuk membangun
+
+57
+0:02:36,840 --> 0:02:39,540
+setelan iron man kehidupan nyata atau lebih realistisnya
+
+58
+0:02:39,540 --> 0:02:41,310
+seluruh perusahaan kami akan dibunuh oleh
+
+59
+0:02:41,310 --> 0:02:43,680
+perusahaan minyak besar jadi sangat
+
+60
+0:02:43,680 --> 0:02:45,180
+tidak mungkin untuk membuat
+
+61
+0:02:45,180 --> 0:02:47,640
+aktor gagak jam kerja yang sebenarnya jadi mari kita bangun
+
+62
+0:02:47,640 --> 0:02:49,590
+jam kerja yang sebenarnya Aktor Cree sekarang juga
+
+63
+0:02:49,590 --> 0:02:51,090
+sebelum kita membuat korektor seni mari
+
+64
+0:02:51,090 --> 0:02:52,680
+kita lihat model 3d menggunakan beberapa
+
+65
+0:02:52,680 --> 0:02:54,599
+teknologi augmented reality tidak seperti  tony
+
+66
+0:02:54,599 --> 0:02:58,440
+stark sendiri cukup keren kan mari kita
+
+67
+0:02:58,440 --> 0:03:04,230
+lihat lebih dekat sekarang sepertinya
+
+68
+0:03:04,230 --> 0:03:05,849
+listrik sedang dihasilkan di
+
+69
+0:03:05,849 --> 0:03:08,099
+cincin terakhir perakitan tapi saya kira
+
+70
+0:03:08,099 --> 0:03:09,329
+pertanyaan sebenarnya adalah jika kita sedang membangun
+
+71
+0:03:09,329 --> 0:03:11,160
+reaktor busur bagaimana kita akan melakukannya
+
+72
+0:03:11,160 --> 0:03:13,319
+mari kita dapatkan  beberapa kertas keluar dan benar-benar melakukan
+
+73
+0:03:13,319 --> 0:03:31,049
+beberapa perhitungan dengan tangan sehingga untuk
+
+74
+0:03:31,049 --> 0:03
+mempertahankan busur listrik di sekitar reaktor busur
+
+75
+0:03 --> 0:03:34,590
+kita akan membutuhkan banyak
+
+76
+0:03:34,590 --> 0:03:36,480
+tegangan tetapi saya selama reaktor busur
+
+77
+0:03:36,480 --> 0:03:38,819
+adalah sekitar 75 milimeter  di seberangnya
+
+78
+0:03:38,819 --> 0:03:40,650
+memberi kita keliling sekitar 2 atau
+
+79
+0:03:40,650 --> 0:03:42,959
+41 milimeter yang akan menjadi jalur yang
+
+80
+0:03:42,959 --> 0:03:45,420
+sebenarnya harus diikuti oleh listrik.
+
+81
+0:03:45,420 --> 0:03:46,889
+Sekarang dibutuhkan sekitar tiga juta
+
+82
+0:03:46,889 --> 0:03:49,290
+volt untuk mengionisasi udara agar busur terbentuk
+
+83
+0:03:49,290 --> 0:03:51,720
+melintasi jarak 1 meter pada sekitar
+
+84
+0:03:51,720 --> 0:03:55,019
+30.000 volt per sentimeter jadi  dengan
+
+85
+0:03:55,019 --> 0:03:57,180
+jalur perjalanan 24 koma satu sentimeter
+
+86
+0:03:57,180 --> 0:04:00,510
+kita akan membutuhkan sekitar 720 3900
+
+87
+0:04:00,510 --> 0:04:02,670
+volt listrik untungnya kita memiliki
+
+88
+0:04:02,670 --> 0:04:04,319
+transformator tegangan tinggi kecil yang
+
+89
+0:04:04,319 --> 0:04:06,750
+menghasilkan sekitar 80.000 volt masing-masing ada
+
+90
+0:04:06,750 --> 0:04:09,209
+sepuluh segmen di reaktor busur sehingga
+
+91
+0:04:09,209 --> 0:04:11,310
+akan menjadi sekitar delapan hati ini mungkin
+
+92
+0:04:11,310 --> 0:04:24,590
+benar-benar bekerja  mari kita mulai merakitnya
+
+93
+0:04:24,590 --> 0:04:29,470
+[Musik]
+
+94
+0:04:29,470 --> 0:04:31,270
+mereka harus berdekatan jadi saya
+
+95
+0:04:31,270 --> 0:04:35,750
+mungkin muak dengan dinding pemisah itu ya
+
+96
+0:04:35,750 --> 0:04:40,340
+[Musik]
+
+97
+0:04:40,340 --> 0:04:43,350
+berbau harum ya saya tidak tahu apa yang
+
+98
+0:04:43,350 --> 0:04:49,350
+saya pikir itu mungkin akrilik tetapi
+
+99
+0:04:49,350 --> 0:04:51,380
+reaktor busur paling realistis yang pernah ada
+
+100
+0:04:51,380 --> 0:04:55,879
+[Musik  ]
+
+101
+0:04:55,879 --> 0:05:00,469
+ya jadi kabel ini Anda tidak terlalu sakit
+
+102
+0:05:00,469 --> 0:05:01,999
+tetapi seperti jika mereka bersebelahan
+
+103
+0:05:01,999 --> 0:05:04,339
+mereka tidak melengkung selama ada
+
+104
+0:05:04,339 --> 0:05:06,259
+sesuatu yang lain di sana jadi saya bertanya-tanya
+
+105
+0:05:06,259 --> 0:05:08,509
+seberapa tebal wi  res Saya perlu membawa
+
+106
+0:05:08,509 --> 0:05:15,379
+tegangan tinggi di dekat tubuh saya dengan aman, aman
+
+107
+0:05:15,379 --> 0:05:16,819
+selama Anda tidak menjadi jalan yang
+
+108
+0:05:16,819 --> 0:05:21,590
+paling tidak tahan akan baik-baik saja
+
+109
+0:05:21,590 --> 0:05:34,970
+[Musik]
+
+110
+0:05:34,970 --> 0:05:45,830
+[Musik]
+
+111
+0:05:45,830 --> 0:05:48,569
+[Musik]
+
+112
+0:05:48,569 --> 0:05:50,469
+baiklah sekarang kami memiliki sebagian besar
+
+113
+0:05:50,469 --> 0:05:51,879
+komponen yang dirakit, kami akan  harus
+
+114
+0:05:51,879 --> 0:05:54,490
+mengontrol mereka entah bagaimana saya membuat
+
+115
+0:05:54,490 --> 0:05:55,990
+diagram blok cepat untuk menjelaskan bagaimana
+
+116
+0:05:55,990 --> 0:05:57,550
+sirkuit benar-benar akan bekerja tetapi
+
+117
+0:05:57,550 --> 0:05:59,110
+pada dasarnya kita akan menggunakan bank relay
+
+118
+0:05:59,110 --> 0:06:00,789
+untuk mengontrol output dari setiap
+
+119
+0:06:00,789 --> 0:06:04,360
+modul tegangan tinggi menggunakan Arduino
+
+120
+0:06:04,360 --> 0:06:05,649
+input daya dari baterai lithium polimer
+
+121
+0:06:05,649 --> 0:06:07,839
+sekarang  kami sebenarnya memiliki
+
+122
+0:06:07,839 --> 0:06:09,639
+diagram elektronik yang lebih rinci yang
+
+123
+0:06:09,639 --> 0:06:10,839
+dapat Anda lihat menggunakan tautan dalam
+
+124
+0:06:10,839 --> 0:06:12,699
+deskripsi di bawah ini untuk mengunjungi proyek kami
+
+125
+0:06:12,699 --> 0:06:14,080
+di pembuat dot io
+
+126
+0:06:14,080 --> 0:06:46,880
+[Musik]
+
+127
+0:06:46,880 --> 0:06:51,170
+lebih baik dia terhubung l oke nona kekuatan
+
+128
+0:06:51,170 --> 0:07:00,780
+sedang
+
+129
+0:07:00,780 --> 0:07:04,800
+bersiap untuk tes pertama untuk hal yang
+
+130
+0:07:04,800 --> 0:07:06,180
+paling realistis  tentang pesawat ini
+
+131
+0:07:06,180 --> 0:07:07,650
+adalah jumlah kabel yang terlepas
+
+132
+0:07:07,650 --> 0:07:08,970
+karena itu benar-benar menghasilkan
+
+133
+0:07:08,970 --> 0:07
+listrik sebanyak itu Anda perlu
+
+134
+0:07 --> 0:07:13,980
+pembawa arus yang serius untuk mendapatkan energi itu ada
+
+135
+0:07:13,980 --> 0:07:27,510
+juga yang berguna
+
+136
+0:07:27,510 --> 0:07:55,490
+[Musik]
+
+137
+0:07:55,490 --> 0:09:06,650
+[Musik]
+
+138
+0:09:06,650 --> 0:09:44,870
+[Musik]
+
+139
+0:09:44,870 --> 0:09:52,980
+[Musik]
+
+140
+0:09:52,980 --> 0:09:59,460
+[Musik]
+
+141
+0:09:59,460 --> 0:10:15,220
+[Musik]
+
+142
+0:10:15,220 --> 0:10:25,400
+[Musik]
+
+143
+0:10:25,400 --> 0:10:48,930
+[Musik]
+
+144
+0:10:48,930 --> 0:11:00,650
+[Musik]
+
+145
+0:11:00,650 --> 0:11:11,889
+[Musik
+
+146
+0:11:11,889 --> 0:11:13,939
+] oke jadi kita sudah menyiapkan reaktor busur
+
+147
+0:11:13,939 --> 0:11:15,799
+dan kita punya meteran penjepit untuk
+
+148
+0:11:15,799 --> 0:11:17,209
+mengukur arus yang mengalir melalui
+
+149
+0:11:17,209 --> 0:11:26,760
+kabel saat kami melakukan urutan start-up baik-baik
+
+150
+0:11:26,760 --> 0:11:29,170
+saja jadi jelas saya tidak memiliki
+
+151
+0:11:29,170 --> 0:11:30,700
+lubang di dada saya jadi saya tidak bisa benar
+
+152
+0:11:30,700 --> 0:11:33,430
+-benar memakai reaktor busur ini jadi saya pikir akan
+
+153
+0:11:33,430 --> 0:11:34,690
+lebih baik untuk membuat semacam
+
+154
+0:11:34,690 --> 0:11:37,480
+etalase yang bagus  yang bisa kita gunakan untuk satu
+
+155
+0:11:37,480 --> 0:11:39,070
+kita benar-benar menyalakan barang menggunakan
+
+156
+0:11:39,070 --> 0:11:54,230
+reaktor busur
+
+157
+0:11:54,230 --> 0:12:00,640
+[Musik]
+
+158
+0:12:00,640 --> 0:12:02,170
+baiklah jadi kita punya reaktor busur
+
+159
+0:12:02,170 --> 0:12:03,970
+di dalam kotaknya sekarang dan kita benar-benar
+
+160
+0:12:03,970 --> 0:12:06,370
+punya sakelar di kotak jadi mari kita
+
+161
+0:12:06,370 --> 0:12:15,070
+buka semuanya  benar jadi daya utama adalah sakelar di
+
+162
+0:12:15,070 --> 0:12:39,280
+sini dan kami akan mencoba dan melakukan urutan startup baik-baik
+
+163
+0:12:39,280 --> 0:12:41,540
+saja mari kita lihat apa lagi yang ada di
+
+164
+0:12:41,540 --> 0:12:52,870
+daya baik-baik
+
+165
+0:12:52,870 --> 0:12:55,160
+saja jadi kami di sini di
+
+166
+0:12:55,160 --> 0:12:56,720
+pemutus sirkuit utama untuk rumah saya dan kami
+
+167
+0:12:56,720 --> 0:12:59,510
+akan mencolokkan  reaktor busur baiklah
+
+168
+0:12:59,510 --> 0:13:01,790
+mari kita hidupkan dan lihat apa yang terjadi
+
+169
+0:13:01,790 --> 0:13:04,870
+[Tepuk tangan]
+
+170
+0:13:04,870 --> 0:13:06,950
+baiklah jadi ini adalah meteran listrik
+
+171
+0:13:06,950 --> 0:13:09,079
+untuk rumah dan seperti yang Anda lihat itu
+
+172
+0:13:09,079 --> 0:13:10,970
+berapa k  ilowatt hours digunakan oke
+
+173
+0:13:10,970 --> 0:13:17,750
+mari kita sambungkan kembali ke jaringan dengan baik
+
+174
+0:13:17,750 --> 0:13:19,190
+jadi jelas itu tidak benar-benar menghasilkan
+
+175
+0:13:19,190 --> 0:13:21,019
+daya yang cukup untuk melakukan sesuatu yang berguna
+
+176
+0:13:21,019 --> 0:13:22,970
+tetapi tentu saja terlihat keren dan terdengar
+
+177
+0:13:22,970 --> 0:13:23,959
+menakutkan
+
+178
+0:13:23,959 --> 0:13:25,519
+kami akan menggunakannya untuk beberapa lelucon
+
+179
+0:13:25,519 --> 0:13:27,079
+di video mendatang di mana kami menggunakannya  untuk
+
+180
+0:13:27,079 --> 0:13:29,060
+benar-benar memberdayakan proyek kami, salah satu tujuan kami di
+
+181
+0:13:29,060 --> 0:13:30,649
+sini adalah untuk menginspirasi orang ke
+
+182
+0:13:30,649 --> 0:13:32,300
+bidang STEM untuk belajar dan menciptakan sesuatu
+
+183
+0:13:32,300 --> 0:13:34,399
+sendiri, kami mendapatkan banyak pesan yang
+
+184
+0:13:34,399 --> 0:13:36,050
+menanyakan bagaimana kami belajar melakukan hal ini
+
+185
+0:13:36,050 --> 0:13:37,760
+dan jawabannya sederhana Saya seorang
+
+186
+0:13:37,760 --> 0:13:39,769
+pemecah masalah Saya  bukan semacam jenius Saya
+
+187
+0:13:39,769 --> 0:13:41,089
+hanya suka belajar dan menggunakan
+
+188
+0:13:41,089 --> 0:13:43,490
+konsep-konsep itu untuk membuat hal-hal keren yang saya pelajari dengan
+
+189
+0:13:43,490 --> 0:13:44,839
+melakukan dan itulah yang
+
+190
+0:13:44,839 --> 0:13:47,180
+memungkinkan Anda untuk melakukan brilian org brilian
+
+191
+0:13:47,180 --> 0:13:48,620
+org adalah situs pemecahan masalah yang membantu
+
+192
+0:13:48,620 --> 0:13:50,720
+Anda berpikir seperti seorang insinyur dengan membimbing
+
+193
+0:13:50,720 --> 0:13:51,950
+Anda  melalui masalah yang membawa Anda
+
+194
+0:13:51,950 --> 0:13:53,630
+dari tidak tahu apa-apa menjadi memiliki
+
+195
+0:13:53,630 --> 0:13:55,550
+pemahaman yang mendalam tentang topik jika Anda
+
+196
+0:13:55,550 --> 0:13:56,930
+ingin mempelajari lebih lanjut tentang pemecahan masalah dan
+
+197
+0:13:56,930 --> 0:13:58,430
+rekayasa sehingga Anda dapat membangun hal-hal seperti
+
+198
+0:13:58,430 --> 0:14:00,260
+ini sendiri  dan dukung saluran pada
+
+199
+0:14:00,260 --> 0:14:02,120
+saat yang sama pergi ke brilian org slash
+
+200
+0:14:02,120 --> 0:14:03,949
+hack Smith dan daftar gratis
+
+201
+0:14:03,949 --> 0:14:05,480
+200 orang pertama yang pergi ke tautan itu
+
+202
+0:14:05,480 --> 0:14:07,250
+akan menerima 20% dari langganan premium tahunan mereka dengan
+
+203
+0:14:07,250 --> 0:14:10,279
+baik terima kasih telah
+
+204
+0:14:10,279 --> 0:14:11,839
+menonton hack industri Smith sekarang memiliki milik
+
+205
+0:14:11,839 --> 0:14:13,610
+mereka sendiri  reaktor busur tinggalkan
+
+206
+0:14:13,610 --> 0:14:14,899
+komentar di bawah untuk memberi tahu kami
+
+207
+0:14:14,899 --> 0:14:16,750
+teknologi buku komik apa lagi yang harus kami buat ulang
+
+208
+0:14:16,750 --> 0:14:26,610
+[Musik]
+
+209
+0:14:26,610 --> 0:14:29,690
+hak gadai tidak akan menyentuhnya
+

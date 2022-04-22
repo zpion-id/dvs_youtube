@@ -1,0 +1,688 @@
+1
+0:00:03,920 --> 0:00:06,629
+untuk memahami cara kerja listrik kita
+
+2
+0:00:06,629 --> 0:00:09,030
+perlu memperbesar atom hal-hal yang
+
+3
+0:00:09,030 --> 0:00:11,160
+membentuk semua materi atom terdiri dari
+
+4
+0:00:11,160 --> 0:00:13,920
+tiga partikel dasar yaitu proton
+
+5
+0:00:13,920 --> 0:00:15,890
+yang memiliki muatan listrik positif
+
+6
+0:00:15,890 --> 0:00:18,539
+neutron yang tidak memiliki muatan listrik
+
+7
+0:00:18,539 --> 0:00:21,390
+dan elektron yang memiliki
+
+8
+0:00:21,390 --> 0:00
+muatan listrik negatif  proton dan
+
+9
+0:00 --> 0:00:26,160
+neutron terkemas rapat dalam inti atau
+
+10
+0:00:26,160 --> 0:00:28,650
+nukleus atom sementara elektron bergerak di
+
+11
+0:00:28,650 --> 0:00:30,539
+sekitar inti ini di daerah yang dikenal sebagai
+
+12
+0:00:30,539 --> 0:00:33,390
+kulit atau orbital sekarang atom
+
+13
+0:00:33,390 --> 0:00:35,130
+ini secara elektrik netral karena
+
+14
+0:00:35,130 --> 0:00:36,750
+memiliki jumlah proton dan elektron yang sama
+
+15
+0:00:36,750 --> 0:00:39,239
+dengan energi yang cukup elektron  dapat
+
+16
+0:00:39,239 --> 0:00:41,100
+dilucuti meninggalkan atom dengan
+
+17
+0:00:41,100 --> 0:00:44,910
+muatan positif bersih demikian juga
+
+18
+0:00:44,910 --> 0:00:47,250
+atom lain dapat menerima elektron bebas yang
+
+19
+0:00:47,250 --> 0:00:48,719
+kemudian membuat atom menjadi
+
+20
+0:00:48,719 --> 0:00:51,480
+negatif secara elektrik ketika kita memiliki dua benda dengan
+
+21
+0:00:51,480 --> 0:00:53,129
+muatan listrik yang berbeda karena
+
+22
+0:00:53,129 --> 0:00:55,199
+tidak adanya atau adanya kelebihan elektron,
+
+23
+0:00:55,199 --> 0:00:57,030
+kita katakan bahwa kita memiliki  listrik statis
+
+24
+0:00:57,030 --> 0:00:59,879
+kita dapat mendemonstrasikannya menggunakan balon
+
+25
+0:00:59,879 --> 0:01:02,760
+dan kaleng soda ketika saya menggosokkan selembar
+
+26
+0:01:02,760 --> 0:01:04,890
+kain ke permukaan  balon saya melepaskan
+
+27
+0:01:04,890 --> 0:01:07,020
+elektron dari selembar kain dan
+
+28
+0:01:07,020 --> 0:01:09,119
+menambahkannya ke balon sebagai hasilnya
+
+29
+0:01:09,119 --> 0:01:11,360
+balon ini sekarang memiliki muatan negatif bersih
+
+30
+0:01:11,360 --> 0:01:14,010
+ketika kita mendekatkannya ke kaleng
+
+31
+0:01:14,010 --> 0:01:17,520
+kaleng mengejar balon mari kita lihat mengapa
+
+32
+0:01:17,520 --> 0:01:19,950
+itu terjadi aluminium di  kaleng
+
+33
+0:01:19,950 --> 0:01:21,750
+adalah konduktor yang berarti bahwa
+
+34
+0:01:21,750 --> 0:01:23,520
+elektron dapat dengan bebas bergerak di sekitar
+
+35
+0:01:23,520 --> 0:01:25,830
+bahan saat kita membawa
+
+36
+0:01:25,830 --> 0:01:27,990
+balon bermuatan negatif di dekat logam,
+
+37
+0:01:27,990 --> 0:01:29,729
+elektron didorong menjauh ke
+
+38
+0:01:29,729 --> 0:01:31,890
+sisi yang jauh dari kaleng karena muatan sejenis tolak menolak
+
+39
+0:01:31,890 --> 0:01:34,590
+yang meninggalkan kelebihan muatan positif
+
+40
+0:01:34,590 --> 0:01:36,119
+pada kaleng.  sisi kaleng terdekat dengan
+
+41
+0:01:36,119 --> 0:01:37,979
+balon yang ditarik ke arah
+
+42
+0:01:37,979 --> 0:01:39,840
+balon karena muatan yang berlawanan menarik
+
+43
+0:01:39,840 --> 0:01:42,299
+karena muatan positif lebih dekat
+
+44
+0:01:42,299 --> 0:01:43,680
+ke balon daripada muatan negatif
+
+45
+0:01:43,680 --> 0:01:45,840
+gaya tarik menarik lebih besar daripada
+
+46
+0:01:45,840 --> 0:01:48,360
+gaya tolak ini menghasilkan
+
+47
+0:01:48,360 --> 0:01:50,220
+gaya total yang menarik kaleng ke arah
+
+48
+0:01:50,220 --> 0:01:52,079
+balon mari kita lihat itu lagi dalam
+
+49
+0:01:52,079 --> 0:01:56,670
+tayangan ulang instan sebelum kita melangkah lebih jauh mari kita
+
+50
+0:01:56,670 --> 0:01:58,860
+bicara tentang satuan Satuan SI untuk
+
+51
+0:01:58,860 --> 0:02:01,229
+muatan listrik adalah Coulomb umumnya
+
+52
+0:02:01,229 --> 0:02
+ab  disingkat dengan huruf besar C sebuah
+
+53
+0:02 --> 0:02:05,460
+elektron memiliki muatan sekitar negatif
+
+54
+0:02:05,460 --> 0:02:07,860
+satu titik 602 kali 10 hingga negatif
+
+55
+0:02:07,860 --> 0:02:11,400
+19 coulomb dan proton memiliki muatan
+
+56
+0:02:11,400 --> 0:02:13,770
+sekitar positif 1,60 untuk mengikat
+
+57
+0:02:13,770 --> 0:02:16,770
+10 ke negatif 19 coulomb energi
+
+58
+0:02:16,770 --> 0:02:18,420
+biasanya diberikan dalam joule yang
+
+59
+0:02:18,420 --> 0:02:20,580
+disingkat  dengan simbol huruf besar J
+
+60
+0:02:20,580 --> 0:02:22,920
+1 joule sama dengan jumlah energi yang
+
+61
+0:02:22,920 --> 0:02:25,380
+ditransfer ke suatu benda ketika gaya
+
+62
+0:02:25,380 --> 0:02:27,480
+satu Newton diterapkan pada benda itu
+
+63
+0:02:27,480 --> 0:02:30,240
+pada jarak 1 meter energi dapat
+
+64
+0:02:30,240 --> 0:02:32,220
+berupa potensial yang dihasilkan dari
+
+65
+0:02:32,220 --> 0:02:34,410
+posisi atau pengaturan benda atau
+
+66
+0:02:34,410 --> 0:02:36,390
+kinetik  yang dihasilkan dari gerak benda
+
+67
+0:02:36,390 --> 0:02:39,030
+energi kinetik dan
+
+68
+0:02:39,030 --> 0:02:40,920
+potensial diberikan dalam joule sekarang kita dapat mendefinisikan
+
+69
+0:02:40,920 --> 0:02:43,530
+tegangan tegangan adalah ukuran potensial listrik
+
+70
+0:02:43,530 --> 0:02:46,500
+antara dua titik satuan
+
+71
+0:02:46,500 --> 0:02:48,330
+volt didefinisikan sebagai satu joule
+
+72
+0:02:48,330 --> 0:02:50,790
+energi potensial per satuan muatan yang diberikan
+
+73
+0:02:50,790 --> 0:02:52,860
+dalam coulomb mari kita jelaskan ini dengan
+
+74
+0:02:52,860 --> 0:02:55,170
+contoh misalkan saya punya
+
+75
+0:02:55,170 --> 0:02:57,300
+partikel dengan muatan negatif 1 Coulomb
+
+76
+0:02:57,300 --> 0:02:59,490
+maka katakanlah ada
+
+77
+0:02:59,490 --> 0:03:01,380
+partikel dengan muatan positif 1 Coulomb
+
+78
+0:03:01,380 --> 0:03:03,480
+muatan di sebelahnya karena berlawanan
+
+79
+0:03:03,480 --> 0:03:05,580
+menarik dan partikel positif
+
+80
+0:03:05,580 --> 0:03:07,440
+sedekat mungkin dengan partikel negatif
+
+81
+0:03:07,440 --> 0:03:09,690
+semuanya diam tidak
+
+82
+0:03:09,690 --> 0:03:13,110
+ada energi kinetik atau potensial sekarang
+
+83
+0:03:13,110 --> 0:03:15,300
+katakanlah saya perlu menggunakan 10 joule
+
+84
+0:03:15,300 --> 0:03:17,640
+energi untuk memindahkan partikel positif
+
+85
+0:03:17,640 --> 0:03:19,800
+dari posisi diam ke titik ini
+
+86
+0:03:19,800 --> 0:03:22,380
+jika saya melepaskannya akan bergerak
+
+87
+0:03:22,380 --> 0:03:24,660
+kembali ke partikel negatif sebagai
+
+88
+0:03:24,660 --> 0:03:27,150
+hasilnya kita dapat mengatakan bahwa ia memiliki
+
+89
+0:03:27,150 --> 0:03:29,760
+energi potensial listrik 10 joule selama
+
+90
+0:03:29,760 --> 0:03:33,360
+saya menahannya di sini sekarang jika saya mengulangi
+
+91
+0:03:33,360 --> 0:03:35,820
+demo ini dengan  3 partikel bermuatan positif
+
+92
+0:03:35,820 --> 0:03:38,310
+dibutuhkan 30 joule energi untuk
+
+93
+0:03:38,310 --> 0:03:39,990
+memindahkannya pada jarak yang sama dari
+
+94
+0:03:39,990 --> 0:03:42,750
+partikel negatif sehingga mereka memiliki
+
+95
+0:03:42,750 --> 0:03:44,700
+energi potensial 30 joule selama
+
+96
+0:03:44,700 --> 0:03:46,650
+saya menahannya di sini seperti yang kita definisikan
+
+97
+0:03:46,650 --> 0:03:48,540
+sebelumnya tegangan adalah
+
+98
+0:03:48,540 --> 0:03:50,910
+potensial listrik antara dua  poin untuk
+
+99
+0:03:50,910 --> 0:03:52,500
+menghitung tegangan antara
+
+100
+0:03:52,500 --> 0:03:54,420
+titik awal dan akhir mereka kita tahu bahwa
+
+101
+0:03:54,420 --> 0:03:56,250
+saya melakukan 30 joule kerja untuk memindahkan
+
+102
+0:03:56,250 --> 0:03:58,530
+partikel dan muatan total tiga
+
+103
+0:03:58,530 --> 0:04:01,290
+coulomb sehingga tegangan adalah 30 joule
+
+104
+0:04:01,290 --> 0:04:03,870
+dibagi 3 coulomb yaitu 10 volt
+
+105
+0:04:03,870 --> 0:04:06,060
+kita akan mengatakan bahwa potensial listrik
+
+106
+0:04:06,060 --> 0:04:08,580
+antara dua titik ini adalah 10 volt jika
+
+107
+0:04:08,580 --> 0:04:11,010
+saya melepaskan salah satu partikel itu akan
+
+108
+0:04:11,010 --> 0:04:12,540
+pindah kembali ke partikel bermuatan negatif
+
+109
+0:04:12,540 --> 0:04:14,610
+yang akan meninggalkan saya dengan 20
+
+110
+0:04:14,610 --> 0:04:16,530
+joule energi potensial dan 2
+
+111
+0:04:16,530 --> 0:04:18,810
+coulomb muatan sehingga potensinya
+
+112
+0:04:18,810 --> 0:04:21,930
+masih 10 volt bahkan jika saya tidak memiliki
+
+113
+0:04:21,930 --> 0:04:23,970
+partikel positif potensi antara dua
+
+114
+0:04:23,970 --> 0:04:26,990
+titik masih 10 volt seperti yang Anda lihat
+
+115
+0:04:26,990 --> 0:04:29,060
+energi potensial Anda tidak sama dengan
+
+116
+0:04:29,060 --> 0:04:31,430
+potensial listrik ketika kita mulai berbicara
+
+117
+0:04:31,430 --> 0:04:32,810
+tentang memindahkan elektron melalui
+
+118
+0:04:32,810 --> 0:04:34,789
+konduktor dan komponen elektronik
+
+119
+0:04:34,789 --> 0:04:36,620
+kita berbicara tentang arus listrik
+
+120
+0:04:36,620 --> 0:04:38,419
+yang sedikit berbeda dari
+
+121
+0:04:38,419 --> 0:04:40,160
+listrik statis mari kita lihat
+
+122
+0:04:40,160 --> 0:04:42,380
+baterai Tidak masalah seberapa
+
+123
+0:04:42,380 --> 0:04:44,120
+jauh terminal baterai
+
+124
+0:04:44,120 --> 0:04:46,009
+bahan kimia di dalam baterai menentukan
+
+125
+0:04:46,009 --> 0:04:47,449
+potensial listrik antara
+
+126
+0:04:47,449 --> 0:04:49,669
+terminal baterai alkaline yang terisi penuh ganda
+
+127
+0:04:49,669 --> 0:04:52,430
+terdaftar memiliki 1,5
+
+128
+0:04:52,430 --> 0:04:54,650
+volt yang berarti setiap Coulomb muatan
+
+129
+0:04:54,650 --> 0:04:56,810
+bergerak  dari satu ujung baterai akan
+
+130
+0:04:56,810 --> 0:05:00,080
+melakukan kerja 1,5 joule sekarang bandingkan
+
+131
+0:05:00,080 --> 0:05:02,479
+dengan baterai sel-d yang jauh lebih besar setiap
+
+132
+0:05:02,479 --> 0:05:05,419
+Coulomb muatan masih hanya akan melakukan kerja 1,5
+
+133
+0:05:05,419 --> 0:05:08,210
+joule tetapi sel D memiliki muatan jauh lebih banyak
+
+134
+0:05:08,210 --> 0:05:10,490
+daripada dua kali lipat a
+
+135
+0:05:10,490 --> 0:05:12,770
+akibatnya sel-sel ini akan bertahan
+
+136
+0:05:12,770 --> 0:05:14,750
+lebih lama dari baterai A ganda melakukan
+
+137
+0:05:14,750 --> 0:05:17,360
+jumlah pekerjaan yang sama listrik statis
+
+138
+0:05:17,360 --> 0:05:19,520
+bisa sangat menyenangkan tetapi lebih sering daripada
+
+139
+0:05:19,520 --> 0:05:21,259
+tidak dianggap berbahaya atau
+
+140
+0:05:21,259 --> 0:05:22,849
+mengganggu salah satu
+
+141
+0:05:22,849 --> 0:05:25,039
+tampilan listrik statis paling dramatis terjadi
+
+142
+0:05:25,039 --> 0:05:27,470
+di alam  awan badai dapat membangun
+
+143
+0:05:27,470 --> 0:05:29,210
+perbedaan potensial jutaan
+
+144
+0:05:29,210 --> 0:05:31,520
+volt jika dibandingkan dengan bumi dan pada
+
+145
+0:05:31,520 --> 0:05:34,250
+titik tertentu elektron benar-benar memaksa
+
+146
+0:05:34,250 --> 0:05:36,080
+jalan mereka melalui udara menciptakan
+
+147
+0:05:36,080 --> 0:05:37,970
+petir untuk menyeimbangkan
+
+148
+0:05:37,970 --> 0:05:40,520
+perbedaan muatan aliran listrik yang tiba-tiba ini
+
+149
+0:05:40,520 --> 0:05:42,650
+upaya untuk menetralkan dua
+
+150
+0:05:42,650 --> 0:05:44,539
+benda bermuatan statis dikenal sebagai
+
+151
+0:05:44,539 --> 0:05:47,509
+pelepasan muatan listrik statis atau ESD sedangkan
+
+152
+0:05:47,509 --> 0:05:49,610
+petir adalah tampilan yang agak ekstrim dari
+
+153
+0:05:49,610 --> 0:05:51,259
+penumpukan elektrostatik dan pelepasan
+
+154
+0:05:51,259 --> 0:05:53,479
+listrik statis  masih bisa sangat
+
+155
+0:05:53,479 --> 0:05:56,210
+berguna misalnya banyak
+
+156
+0:05:56,210 --> 0:05:57,949
+cerobong asap pabrik dan pembangkit listrik menggunakan
+
+157
+0:05:57,949 --> 0:06:00,349
+teknologi yang menggunakan listrik statis
+
+158
+0:06:00,349 --> 0:06:02,900
+untuk menarik jelaga dan abu dari udara
+
+159
+0:06:02,900 --> 0:06:05,210
+saat mengalir melalui pipa
+
+160
+0:06:05,210 --> 0:06:08,240
+sehingga mengurangi polusi juga kebanyakan mobil
+
+161
+0:06:08,240 --> 0:06:10,009
+dicat menggunakan proses yang disebut  powder
+
+162
+0:06:10,009 --> 0:06:12,349
+coating pada cat ini meninggalkan
+
+163
+0:06:12,349 --> 0:06:14,300
+nozzle semprotan diberi muatan listrik dan
+
+164
+0:06:14,300 --> 0:06:16,039
+bodi mobil diberi
+
+165
+0:06:16,039 --> 0:06:18,620
+muatan listrik berbeda yang menciptakan ikatan yang lebih kuat
+
+166
+0:06:18,620 --> 0:06:20,330
+antara cat dan bodi mobil
+
+167
+0:06:20,330 --> 0:06:22,820
+ini memungkinkan cakupan cat yang lebih seragam
+
+168
+0:06:22,820 --> 0:06:25,400
+dan mengurangi limbah cat karena
+
+169
+0:06:25,400 --> 0:06:27,229
+lebih sedikit  kemungkinannya akan menempel
+
+170
+0:06:27,229 --> 0:06:30,289
+di udara atau menetes dari bodi mobil lain
+
+171
+0:06:30,289 --> 0:06:31,940
+kali kita akan membahas listrik saat ini
+
+172
+0:06:31,940 --> 0:06:36,159
+dan berbicara tentang membuatnya bekerja untuk kita
+

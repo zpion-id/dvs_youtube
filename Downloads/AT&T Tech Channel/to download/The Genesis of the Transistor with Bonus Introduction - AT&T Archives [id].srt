@@ -1,0 +1,1036 @@
+1
+0:00:08,269 --> 0:00:11,639
+ketika transistor bisa dibilang penemuan paling
+
+2
+0:00:11,639 --> 0:00:14,490
+penting abad ke-
+
+3
+0:00:14,490 --> 0:00:17,039
+20 ditemukan di Bell Labs pada
+
+4
+0:00:17,039 --> 0:00:20,730
+akhir tahun 1947, ada satu masalah yang
+
+5
+0:00:20,730 --> 0:00:24,240
+masih belum terpecahkan apa yang harus disebut
+
+6
+0:00:24,240 --> 0:00:26,880
+perangkat penting tersebut meskipun anggota
+
+7
+0:00:26,880 --> 0:00:29,610
+staf lab sadar akan keberadaan transistor
+
+8
+0:00:29,610 --> 0:00:32,399
+itu  akan berbulan-bulan sebelum
+
+9
+0:00:32,399 --> 0:00:33,629
+publik akan mendengarnya
+
+10
+0:00:33,629 --> 0:00:35,820
+yang akan terjadi ketika paten
+
+11
+0:00:35,820 --> 0:00:38,039
+diajukan dan materi pers dirilis
+
+12
+0:00:38,039 --> 0:00:41,399
+saat hari semakin dekat menjadi
+
+13
+0:00:41,399 --> 0:00:43,710
+semakin jelas bahwa penemuan khusus ini
+
+14
+0:00:43,710 --> 0:00:48,059
+benar-benar membutuhkan nama besar
+
+15
+0:00:48,059 --> 0:00:49,649
+istilah deskriptif yang beredar di
+
+16
+0:00:49,649 --> 0:00:51,929
+sekitar laboratorium  seperti
+
+17
+0:00:51,929 --> 0:00:55,979
+trioda semikonduktor atau penguat
+
+18
+0:00:55,979 --> 0:00:58,620
+keadaan permukaan tidak akan memotongnya salah satu penemu perangkat
+
+19
+0:00:58,620 --> 0:01:00,569
+Walter Brattain
+
+20
+0:01:00,569 --> 0:01:02,699
+bertanya kepada temannya dan sesama
+
+21
+0:01:02,699 --> 0:01:05,759
+ilmuwan lab John rekan-rekan kami apa yang dia pikir
+
+22
+0:01:05,759 --> 0:01:08,420
+itu harus disebut Pierce datang dengan
+
+23
+0:01:08,420 --> 0:01:12,200
+transistor berdasarkan konsep akar
+
+24
+0:01:12,200 --> 0:01:15,229
+transkonduktansi dan  variabel resistensi
+
+25
+0:01:15,229 --> 0:01:17,729
+keputusan akhir akan dibuat oleh
+
+26
+0:01:17,729 --> 0:01:20,369
+panitia tetapi panitia bingung
+
+27
+0:01:20,369 --> 0:01:22,649
+i  t gagal mencapai keputusan bulat
+
+28
+0:01:22,649 --> 0:01:26,850
+dalam langkah yang agak tidak biasa nama itu
+
+29
+0:01:26,850 --> 0:01:29,549
+dibuka untuk pemungutan suara insinyur di
+
+30
+0:01:29,549 --> 0:01:31,710
+laboratorium menerima surat suara dengan nama-nama seperti
+
+31
+0:01:31,710 --> 0:01:36,060
+iota Tron dan kristal triode termasuk
+
+32
+0:01:36,060 --> 0:01:38,490
+dalam daftar adalah proposal Pierce
+
+33
+0:01:38,490 --> 0:01:41,899
+transistor yang dimenangkan dengan telak
+
+34
+0:01:41,899 --> 0:01:50,719
+sekarang  inilah asal usul transistor yang
+
+35
+0:01:50,719 --> 0:01:55,750
+pernah dirakit tahun 1947
+
+36
+0:01:55,750 --> 0:01:57,670
+dan ini adalah salah satu
+
+37
+0:01:57,670 --> 0:01:59,560
+transistor terbaru perangkat yang jauh lebih canggih
+
+38
+0:01:59,560 --> 0:02:02,080
+tetapi berdasarkan prinsip fisik yang sama
+
+39
+0:02:02,080 --> 0:02:10,750
+seperti nenek moyangnya
+
+40
+0:02:10,750 --> 0:02:12,250
+dampak transistor pada industri elektronik
+
+41
+0:02:12,250 --> 0:02:15,370
+dan pada masyarakat kita tidak
+
+42
+0:02:15,370 --> 0:02:41,530
+perlu dipertanyakan lagi
+
+43
+0:02:41,530 --> 0:03:05,300
+apa itu  asal usul perangkat yang luar biasa ini
+
+44
+0:03:05,300 --> 0:03:08,070
+, penemuan transistor adalah
+
+45
+0:03:08,070 --> 0:03:12,570
+hasil penelitian penelitian ilmiah
+
+46
+0:03:12,570 --> 0:03:15,990
+oleh orang-orang yang berwawasan luas yang berusaha
+
+47
+0:03:15,990 --> 0:03:18,300
+memahami struktur atom dan
+
+48
+0:03:18,300 --> 0:03:20,310
+perilaku listrik semikonduktor
+
+49
+0:03:20,310 --> 0:03:23,390
+yang telah menarik minat mereka selama bertahun
+
+50
+0:03:23,390 --> 0:03:26,610
+-tahun misalnya konduktivitas listrik
+
+51
+0:03:26,610 --> 0:03:33,540
+semikonduktor seperti germanium terletak di
+
+52
+0:03:33,540 --> 0:03:35,160
+suatu tempat  antara
+
+53
+0:03:35,160 --> 0:03:40,110
+konduktor yang baik seperti tembaga dan
+
+54
+0:03:40,110 --> 0:03:46,380
+isolator yang baik seperti ru  bber konduktivitas
+
+55
+0:03:46,380 --> 0:03:48,360
+semikonduktor meningkat ketika
+
+56
+0:03:48,360 --> 0:03:54,690
+suhunya dinaikkan konduktivitas
+
+57
+0:03:54,690 --> 0:04:06,410
+logam menurun ketika dipanaskan
+
+58
+0:04:06,410 --> 0:04:08,720
+Konduktivitas sebagian besar semikonduktor seperti
+
+59
+0:04:08,720 --> 0:04:13,940
+germanium meningkat ketika
+
+60
+0:04:13,940 --> 0:04:21,980
+terkena cahaya
+
+61
+0:04:21,980 --> 0:04:24,560
+dan ketika logam seperti kawat tembaga
+
+62
+0:04:24,560 --> 0:04:27,020
+ini bersentuhan dengan semikonduktor dalam
+
+63
+0:04:27,020 --> 0:04:29,050
+hal ini sepotong  konduktivitas germanium
+
+64
+0:04:29,050 --> 0:04:35,230
+kurang dalam satu arah
+
+65
+0:04:35,230 --> 0:04:42,760
+daripada yang
+
+66
+0:04:42,760 --> 0:04:45,160
+lain, karakteristik semikonduktor
+
+67
+0:04:45,160 --> 0:04:47,350
+ini dieksploitasi pada hari-hari awal radio
+
+68
+0:04:47,350 --> 0:04:50,440
+untuk membuat detektor radio yang sangat baik menggunakan
+
+69
+0:04:50,440 --> 0:04:54,310
+timbal sulfida atau silikon ketika
+
+70
+0:04:54,310 --> 0:04:56,380
+semikonduktor ini disentuh dengan kawat halus yang
+
+71
+0:04:56,380 --> 0:04:59,710
+disebut kumis kucing.
+
+72
+0:04:59,710 --> 0:05:02,350
+sinyal frekuensi tinggi ke
+
+73
+0:05:02,350 --> 0:05:04,720
+sinyal frekuensi rendah yang kemudian dapat
+
+74
+0:05:04,720 --> 0:05:10,590
+didengar dengan earphone
+
+75
+0:05:10,590 --> 0:05:13,230
+kemudian semikonduktor digunakan untuk membangun
+
+76
+0:05:13,230 --> 0:05:15,690
+perangkat seperti penyearah oksida tembaga ini
+
+77
+0:05:15,690 --> 0:05:19,850
+untuk sistem telepon
+
+78
+0:05:19,850 --> 0:05:24,020
+dan penyearah kumis kucing
+
+79
+0:05:24,020 --> 0:05:26,300
+diaktifkan kembali selama Perang Dunia kedua
+
+80
+0:05:26,300 --> 0:05:35,610
+untuk radar gelombang mikro
+
+81
+0:05:35,610 --> 0:05:38,110
+meskipun semikonduktor sedang
+
+82
+0:05:38,110 --> 0:05:41,440
+digunakan  mereka tidak f  ully dipahami demikian
+
+83
+0:05:41,440 --> 0:05
+setelah perang Bell
+
+84
+0:05 --> 0:05:45,220
+Laboratorium telepon mengintensifkan
+
+85
+0:05:45,220 --> 0:05:47,590
+penyelidikan semikonduktor dengan
+
+86
+0:05:47,590 --> 0:05:53,920
+harapan pemahaman pemahaman
+
+87
+0:05:53,920 --> 0:05:57,910
+mungkin membawa kontrol dan kontrol adalah
+
+88
+0:05:57,910 --> 0:06:02,370
+kunci untuk menggunakan lebih lanjut Bell Laboratories
+
+89
+0:06:02,370 --> 0:06:05,200
+ilmuwan memutuskan untuk mempelajari silikon dan
+
+90
+0:06:05,200 --> 0:06:06,880
+germanium yang merupakan semikonduktor paling sederhana
+
+91
+0:06:06,880 --> 0:06:12,280
+pekerjaan dilanjutkan dalam dua
+
+92
+0:06:12,280 --> 0:06:15,960
+bidang studi sifat massal dan
+
+93
+0:06:15,960 --> 0:06:21,850
+sifat permukaan pada tahap yang sangat
+
+94
+0:06:21,850 --> 0:06:23,920
+awal penyelidikan William Shockley
+
+95
+0:06:23,920 --> 0:06:25,990
+meramalkan dari teori yang ada
+
+96
+0:06:25,990 --> 0:06:27,660
+konduksi listrik dalam semikonduktor
+
+97
+0:06:27,660 --> 0:06:30,100
+bahwa itu harus mungkin untuk
+
+98
+0:06:30,100 --> 0:06:32,320
+mengontrol pasokan elektron di dekat
+
+99
+0:06:32,320 --> 0:06:34,840
+permukaan semikonduktor dengan mempengaruhi mereka
+
+100
+0:06:34,840 --> 0:06:37,450
+dengan  medan listrik yang dipaksakan dari
+
+101
+0:06:37,450 --> 0:06:41,200
+luar jika benar ini dapat menyebabkan penguat baru
+
+102
+0:06:41,200 --> 0:06:43,990
+tanpa batasan
+
+103
+0:06:43,990 --> 0:06:48,250
+elektron. Shockley merancang beberapa
+
+104
+0:06:48,250 --> 0:06:50,860
+eksperimen untuk menguji hipotesisnya
+
+105
+0:06:50,860 --> 0:06:52,750
+tetapi tidak dapat mengamankan
+
+106
+0:06:52,750 --> 0:06:58,060
+hasil yang memuaskan. Hasil negatif dari
+
+107
+0:06:58,060 --> 0:07:00,430
+eksperimen efek medan merupakan faktor penting
+
+108
+0:07:00,430 --> 0:07:02,620
+i  n menyarankan kepada John Bardeen
+
+109
+0:07:02,620 --> 0:07:05,080
+bahwa elektron terperangkap di
+
+110
+0:07:05,080 --> 0:07:12,880
+permukaan semikonduktor teori ini
+
+111
+0:07:12,880 --> 0:07:15,550
+menyarankan eksperimen baru yang
+
+112
+0:07:15,550 --> 0:07:18,640
+dilakukan Walter Brattain baru-baru ini dr.
+
+113
+0:07:18,640 --> 0:07:20,140
+Bratton menjelaskan beberapa
+
+114
+0:07:20,140 --> 0:07:22,810
+percobaan salah satu jenis
+
+115
+0:07:22,810 --> 0:07:27,970
+pengukuran yang dilakukan adalah
+
+116
+0:07:27,970 --> 0:07:30,820
+mengukur potensial kontak
+
+117
+0:07:30,820 --> 0:07:37,410
+permukaan germanium yang satu melakukan ini dan
+
+118
+0:07:37,410 --> 0:07:40,960
+setelah melakukan percobaan pertama
+
+119
+0:07:40,960 --> 0:07:42,970
+pada potensial kontak oleh
+
+120
+0:07:42,970 --> 0:07:49,080
+kelvin dengan memiliki permukaan semikonduktor
+
+121
+0:07:49,080 --> 0:07:51,520
+apakah listrik  kontak atau
+
+122
+0:07:51,520 --> 0:07:53,650
+semikonduktor menempatkan dekat dengan
+
+123
+0:07:53,650 --> 0:08:03,880
+semikonduktor sebuah konduktor logam jika seseorang
+
+124
+0:08:03,880 --> 0:08:05,830
+memindahkan konduktor logam sehubungan
+
+125
+0:08:05,830 --> 0:08:08,170
+dengan semikonduktor ketika seorang jenderal mendapat
+
+126
+0:08:08,170 --> 0:08:13,540
+aliran arus di sirkuit eksternal tetapi
+
+127
+0:08:13,540 --> 0:08:16,570
+yang ditemukan seperti Kelvin melakukan itu jika seseorang
+
+128
+0:08:16,570 --> 0:08:20,710
+memasukkan baterai dengan jumlah yang tepat satu
+
+129
+0:08:20,710 --> 0:08:24,700
+dapat memindahkan logam itu
+
+130
+0:08:24,700 --> 0:08:26,800
+terhadap semikonduktor tanpa mendapatkan
+
+131
+0:08:26,800 --> 0:08:30,510
+arus apa pun dalam mempelajari efek ini.
+
+132
+0:08:30,510 --> 0:08:34,840
+Kami memutuskan pada satu waktu untuk melihat apakah kami
+
+133
+0:08:34,840 --> 0:08:37,300
+dapat melakukan ini ketika seluruh sistem
+
+134
+0:08:37,300 --> 0:08:42,300
+direndam dalam listrik, fenomena yang
+
+135
+0:08:42,300 --> 0:08:48,640
+dihasilkan sangat menarik dan kami
+
+136
+0:08:48,640 --> 0:08:51,310
+akhirnya memutuskan  bahwa dengan menggunakan
+
+137
+0:08:51,310 --> 0:08:54,040
+elektrolit seseorang harus dapat membuat
+
+138
+0:08:54,040 --> 0:08:57,490
+bola yang kuat menjadi penguat dari
+
+139
+0:08:57,490 --> 0:09:02,339
+semikonduktor  suatu pagi setelah kami
+
+140
+0:09:02,339 --> 0:09:05,410
+membahas hasil eksperimen jenis ini
+
+141
+0:09:05,410 --> 0:09:08,470
+john bardeen berjalan ke
+
+142
+0:09:08,470 --> 0:09:11,910
+kantor saya dan menyarankan geometri untuk
+
+143
+0:09:11,910 --> 0:09:15,490
+memproduksi penguat menggunakan
+
+144
+0:09:15,490 --> 0:09:20,140
+elektrolit Bardeen menyarankan agar pada
+
+145
+0:09:20,140 --> 0:09:22,240
+sepotong germanium mereka menempatkan setetes
+
+146
+0:09:22,240 --> 0:09:27,520
+elektrolit dalam hal ini air kemudian
+
+147
+0:09:27,520 --> 0:09:29,500
+lilin kawat logam dan mendorong melalui
+
+148
+0:09:29,500 --> 0:09:32,940
+air untuk membuat kontak dengan
+
+149
+0:09:32,940 --> 0:09:35,620
+germanium lilin akan mengisolasi kawat dari
+
+150
+0:09:35,620 --> 0:09:38,550
+air
+
+151
+0:09:38,550 --> 0:09:41,110
+titik lain akan membuat kontak dengan
+
+152
+0:09:41,110 --> 0:09:45,040
+potensi air akan diberikan
+
+153
+0:09:45,040 --> 0:09:46,900
+antara air dan germanium dan
+
+154
+0:09:46,900 --> 0:09:49,180
+juga antara titik lilin  dan
+
+155
+0:09:49,180 --> 0:09:51,820
+germanium diperkirakan bahwa
+
+156
+0:09:51,820 --> 0:09:53,710
+potensial pada elektrolit akan
+
+157
+0:09:53,710 --> 0:09:55,390
+mempengaruhi aliran arus antara
+
+158
+0:09:55,390 --> 0:10:02,650
+titik lilin dan germanium
+
+159
+0:10:02,650 --> 0:10:06,620
+percobaan ini berhasil mereka telah menghasilkan
+
+160
+0:10:06,620 --> 0:10:11,090
+penguat semikonduktor
+
+161
+0:10:11,090 --> 0:10:13,490
+percobaan ini adalah kunci yang mengarah pada
+
+162
+0:10:13,490 --> 0:10:18,410
+penemuan transistor tetapi
+
+163
+0:10:18,410 --> 0:10:21,280
+ada  beberapa masalah air
+
+164
+0:10:21,280 --> 0:10:27,320
+menguap terlalu cepat sehingga mereka
+
+165
+0:10:27,320 --> 0:10:29,870
+mengubah elektrolit menjadi glikol borat yang
+
+166
+0:10:29,870 --> 0:10:33,500
+e  menguap sangat lambat ini bekerja cukup
+
+167
+0:10:33,500 --> 0:10:36,860
+baik tetapi perangkat tidak akan memperkuat di
+
+168
+0:10:36,860 --> 0:10:39,860
+atas delapan siklus per detik mereka
+
+169
+0:10:39,860 --> 0:10:41,660
+cukup yakin bahwa elektrolit
+
+170
+0:10:41,660 --> 0:10:44,870
+bertanggung jawab atas respon yang lambat mereka
+
+171
+0:10:44,870 --> 0:10:46,580
+mencoba untuk mengganti elektrolit
+
+172
+0:10:46,580 --> 0:10:51,050
+dan kontak dengan titik emas
+
+173
+0:10:51,050 --> 0:10:52,820
+bukan titik lilin  mereka menempatkan kontak kawat di
+
+174
+0:10:52,820 --> 0:11:02,029
+dekat tepi titik emas
+
+175
+0:11:02,029 --> 0:11:04,919
+itu kemudian mereka mengamati fenomena yang sama sekali
+
+176
+0:11:04,919 --> 0:11:08,909
+baru sekarang disebut efek transistor
+
+177
+0:11:08,909 --> 0:11:13,399
+empat hari kemudian pada 23 Desember
+
+178
+0:11:13,399 --> 0:11:17,279
+1947 memanfaatkan
+
+179
+0:11:17,279 --> 0:11:20,489
+efek transistor transistor pertama dibuat ini adalah
+
+180
+0:11:20,489 --> 0:11:22,739
+hari yang penting dan Walter  Brattain
+
+181
+0:11:22,739 --> 0:11:27,749
+mencatat peristiwa catatan saya untuk hari itu
+
+182
+0:11:27,749 --> 0:11:32,999
+mengatakan ini menggunakan permukaan germanium lihat
+
+183
+0:11:32,999 --> 0:11:36,989
+bagian atas halaman 197 dan kontak emas
+
+184
+0:11:36,989 --> 0:11:40,379
+sirkuit berikut telah diatur
+
+185
+0:11:40,379 --> 0:11:43,259
+sirkuit ini benar-benar diucapkan dan dengan
+
+186
+0:11:43,259 --> 0:11:45,689
+mengganti perangkat masuk dan keluar
+
+187
+0:11:45,689 --> 0:11:48,119
+mereka membedakan gain dan tingkat bicara
+
+188
+0:11:48,119 --> 0:11:51,659
+dapat didengar dan dilihat pada
+
+189
+0:11:51,659 --> 0:11:54,359
+presentasi ruang lingkup tanpa
+
+190
+0:11:54,359 --> 0:11:57,359
+perubahan kualitas yang nyata dengan pengukuran pada
+
+191
+0:11:57,359 --> 0:11:59,699
+frekuensi tetap  ditentukan bahwa
+
+192
+0:11:59,699 --> 0:12:02,489
+perolehan kekuatan adalah urutan
+
+193
+0:12:02,489 --> 0:12:05,849
+faktor 18 atau lebih berbagai orang
+
+194
+0:12:05,849 --> 0:12:09,659
+hadir dan menyaksikan tes ini dan
+
+195
+0:12:09,659 --> 0:12:12,779
+mendengarkan saya akan siapa beberapa
+
+196
+0:12:12,779 --> 0:12:17,459
+berikut RB gibney a charm atau je
+
+197
+0:12:17,459 --> 0:12:22,379
+Bardeen Gio Pearson W Shockley usia
+
+198
+0:12:22,379 --> 0:12:26,519
+Fletcher dan kami  busur mr.  pesona atau
+
+199
+0:12:26,519 --> 0:12:28,799
+bantuan dalam mengatur sirkuit
+
+200
+0:12:28,799 --> 0:12:31,019
+dan demonstrasi terjadi pada
+
+201
+0:12:31,019 --> 0:12:37,940
+sore hari tanggal 23 Desember
+
+202
+0:12:37,940 --> 0:12:40,370
+1947 pertanyaan di benak semua orang
+
+203
+0:12:40,370 --> 0:12:43,490
+saat itu adalah mungkinkah penguat embrio ini
+
+204
+0:12:43,490 --> 0:12:46,790
+menjadi harapan untuk hadiah atau hanya
+
+205
+0:12:46,790 --> 0:12:49,880
+laboratorium yang tidak menentu keingintahuan dapat
+
+206
+0:12:49,880 --> 0:12:52,630
+dibuat  menjadi perangkat yang benar-benar praktis
+
+207
+0:12:52,630 --> 0:12:55,100
+tantangan ini diambil oleh
+
+208
+0:12:55,100 --> 0:12:57,920
+kelompok desain dan pengembangan
+
+209
+0:12:57,920 --> 0:12:59,800
+perangkat baru ini harus memenuhi persyaratan kinerja yang diperluas
+
+210
+0:12:59,800 --> 0:13:03,080
+dapat diandalkan namun
+
+211
+0:13:03,080 --> 0:13:05,900
+layak secara ekonomi untuk menghasilkan
+
+212
+0:13:05,900 --> 0:13
+transistor titik-kontak adalah
+
+213
+0:13 --> 0:13:10,460
+model lini produksi pertama
+
+214
+0:13:10,460 --> 0:13:12,860
+pemahaman dan kontrol lebih lanjut dipimpin  untuk
+
+215
+0:13:12,860 --> 0:13:15,140
+pertumbuhan kristal tunggal germanium
+
+216
+0:13:15,140 --> 0:13:17,630
+dan memungkinkan
+
+217
+0:13:17,630 --> 0:13:21,080
+konsep transistor persimpangan William Shockley ini
+
+218
+0:13:21,080 --> 0:13:26,210
+pada tahun 1951 beberapa tahun kemudian
+
+219
+0:13:26,210 --> 0:13:29,090
+transistor paduan dikembangkan
+
+220
+0:13:29,090 --> 0:13:31,040
+industri sekarang dalam periode pertumbuhan substansial
+
+221
+0:13:31,040 --> 0:13:34,430
+tetapi lebih banyak pekerjaan terbentang di depan
+
+222
+0:13:34,430 --> 0:13:36,470
+frekuensi  transistor paduan
+
+223
+0:13:36,470 --> 0:13:38,660
+sangat terbatas dan hanya dapat
+
+224
+0:13:38,660 --> 0:13:50,060
+diproduksi dalam satu waktu  Dasar
+
+225
+0:13:50,060 --> 0:13:53,660
+sekarang datang terobosan lain
+
+226
+0:13:53,660 --> 0:13:56,420
+transistor basis tersebar yang merupakan
+
+227
+0:13:56,420 --> 0:14:02,570
+perangkat berkecepatan tinggi frekuensi tinggi bekerja
+
+228
+0:14:02,570 --> 0:14:04,400
+sama kelompok pengembangan dan
+
+229
+0:14:04,400 --> 0:14:06,260
+manufaktur dikembangkan
+
+230
+0:14:06,260 --> 0:14:10,310
+metode produksi saat ini sekarang satu irisan
+
+231
+0:14:10,310 --> 0:14:12,980
+silikon dapat berisi sebanyak dua
+
+232
+0:14:12,980 --> 0:14:30,680
+ribu
+
+233
+0:14:30,680 --> 0:14:33,660
+transistor transistor adalah  perangkat yang benar-benar luar biasa
+
+234
+0:14:33,660 --> 0:14:36,480
+salah satu fiturnya adalah
+
+235
+0:14:36,480 --> 0:14:39,150
+kemampuannya untuk bekerja pada tingkat daya yang sangat
+
+236
+0:14:39,150 --> 0:14:46,590
+rendah seperti yang ditunjukkan di sini energi cahaya
+
+237
+0:14:46,590 --> 0:14:51,120
+dari korek api yang jatuh pada
+
+238
+0:14:51,120 --> 0:14:55,260
+baterai surya cukup untuk menggerakkan
+
+239
+0:14:55,260 --> 0:15:00,720
+osilator transistor ini
+
+240
+0:15:00,720 --> 0:15:02,639
+fitur yang lebih penting dari
+
+241
+0:15:02,639 --> 0:15:05,459
+transistor adalah keandalannya
+
+242
+0:15:05,459 --> 0:15:07,980
+kemampuan untuk beroperasi untuk waktu
+
+243
+0:15:07,980 --> 0:15:10,709
+yang lama tanpa mengubahnya juga dapat
+
+244
+0:15:10,709 --> 0:15:12,959
+mengirimkan dan memperkuat
+
+245
+0:15:12,959 --> 0:15:16,680
+sinyal frekuensi tinggi dengan kecepatan sangat tinggi semua
+
+246
+0:15:16,680 --> 0:15:18,870
+fitur ini berkontribusi pada peralihan modern
+
+247
+0:15:18,870 --> 0:15:30,089
+dalam sistem komputer Perangkat elektronik kecil ini
+
+248
+0:15:30,089 --> 0:15:32,699
+adalah hasil penelitian ilmiah
+
+249
+0:15:32,699 --> 0:15:36,089
+oleh orang-orang terlatih yang berdedikasi untuk
+
+250
+0:15:36,089 --> 0:15:39,329
+memahami  bekerja di lingkungan
+
+251
+0:15:39,329 --> 0:15:41,819
+yang mendorong kebebasan  d mencari
+
+252
+0:15:41,819 --> 0:15:44,639
+jawaban atas teka-teki sains yang
+
+253
+0:15:44,639 --> 0:15:49,290
+berkaitan dengan kebutuhan komunikasi
+
+254
+0:15:49,290 --> 0:15:51,439
+untuk penemuan efek transistor
+
+255
+0:15:51,439 --> 0:15:55,829
+John Bardeen Walter Brattain dan William
+
+256
+0:15:55,829 --> 0:16:00,300
+Shockley pada tahun 1956 berbagi penghargaan tertinggi
+
+257
+0:16:00,300 --> 0:16:33,620
+dan sains Hadiah Nobel
+
+258
+0:16:33,620 --> 0:16:43,440
+Anda
+
+259
+0:16:43,440 --> 0:16:45,500
+Anda
+

@@ -1,0 +1,1676 @@
+1
+0:00:00,030 --> 0:00:02,909
+angka floating-point jika Anda memiliki
+
+2
+0:00:02,909 --> 0:00:05,759
+program yang mungkin Anda gunakan ini
+
+3
+0:00:05,759 --> 0:00:07,649
+angka titik mengalir yang tepat dan angka yang
+
+4
+0:00:07,649 --> 0:00:11,610
+mendukung titik desimal sekarang kami memiliki
+
+5
+0:00:11,610 --> 0:00:13,620
+gagasan tentang bagaimana komputer menyimpan angka
+
+6
+0:00:13,620 --> 0:00:15,570
+semoga jika Anda tidak memiliki
+
+7
+0:00:15,570 --> 0:00:17,550
+sumber daya video yang dapat Anda rujuk untuk ditonton
+
+8
+0:00:17,550 --> 0:00:19,350
+video itu pertama untuk mendapatkan gambaran tentang bagaimana
+
+9
+0:00:19,350 --> 0:00:22,140
+bilangan bulat disimpan
+
+10
+0:00:22,140 --> 0:00:24,300
+oleh komputer dan kemudian kembali ke sini dan
+
+11
+0:00:24,300 --> 0:00:25,880
+kita akan berbicara tentang desimal oke
+
+12
+0:00:25,880 --> 0:00:27,779
+Yoshi tidak memiliki siang merah
+
+13
+0:00:27,779 --> 0:00:34,020
+episode Rabu pada nol enam satu dua TV halo dan
+
+14
+0:00:34,020 --> 0:00:36,180
+selamat datang kembali ke  episode rabu acak lainnya hari
+
+15
+0:00:36,180 --> 0:00:39,570
+ini mari kita bicara floating point
+
+16
+0:00:39,570 --> 0:00:42,180
+dengan jelas bilangan desimal tidak
+
+17
+0:00:42,180 --> 0:00:45,090
+mudah untuk direpresentasikan kita pertama-tama akan
+
+18
+0:00:45,090 --> 0:00:47,309
+berbicara secara singkat tentang bilangan fixed point
+
+19
+0:00:47,309 --> 0:00:49,410
+Anda tahu bagaimana ketika Anda bekerja dengan
+
+20
+0:00:49,410 --> 0:00:51,870
+bilangan bulat normal Anda memiliki
+
+21
+0:00:51,870 --> 0:00:54,480
+bit yang berbeda  dan setiap bit pada dasarnya
+
+22
+0:00:54,480 --> 0:00:56,579
+mewakili apakah Anda ingin mengaktifkan
+
+23
+0:00:56,579 --> 0:00:58,890
+atau menonaktifkan kekuatan tertentu dari dua kanan
+
+24
+0:00:58,890 --> 0:01:01,079
+sehingga kombinasi ini akan memberi Anda
+
+25
+0:01:01,079 --> 0:01:03,270
+nilai-nilai yang Anda tambahkan bersama dan
+
+26
+0:01:03,270 --> 0:01:06,540
+yang memberikan  Anda jawaban ini
+
+27
+0:01:06,540 --> 0:01:09,720
+cara termudah untuk melakukan angka desimal adalah dengan hanya
+
+28
+0:01:09,720 --> 0:01:13,010
+mengubah kekuatan dua di atas
+
+29
+0:01:13,010 --> 0:01:16,259
+apa yang bisa saya katakan adalah mari kita menetapkan
+
+30
+0:01:16,259 --> 0:01:18,780
+titik desimal di tengah sisi
+
+31
+0:01:18,780 --> 0:01:20,520
+kiri titik desimal adalah di mana
+
+32
+0:01:20,520 --> 0:01:23,400
+kekuatan normal kita dari dua dimulai  di sisi kanan
+
+33
+0:01:23,400 --> 0:01:28,380
+kita memiliki kekuatan negatif dua ya
+
+34
+0:01:28,380 --> 0:01:30,210
+apa artinya ini adalah setengah ini adalah
+
+35
+0:01:30,210 --> 0:01:34,979
+1/4 akhir ini jika ini adalah 16 jadi ya kita
+
+36
+0:01:34,979 --> 0:01:36,420
+bisa melakukannya dengan benar dan Anda dapat mulai
+
+37
+0:01:36,420 --> 0:01:39,990
+memiliki angka desimal tetapi perhatikan apa yang
+
+38
+0:01:39,990 --> 0:01:41,030
+terjadi
+
+39
+0:01:41,030 --> 0:01:43,439
+awalnya  kami dapat mewakili nol hingga
+
+40
+0:01:43,439 --> 0:01:47,189
+255 dengan nomor 8-bit yang tidak ditandatangani, jadi
+
+41
+0:01:47,189 --> 0:01:49,680
+kami memiliki jangkauan yang cukup baik, tetapi sekarang
+
+42
+0:01:49,680 --> 0:01:52,399
+karena cara kami seperti yang Anda ketahui,
+
+43
+0:01:52,399 --> 0:01:55,140
+mengalokasikan kembali bit kami di sini, mereka tidak
+
+44
+0:01:55,140 --> 0:01:57,299
+mewakili rentang angka yang jauh lebih kecil,
+
+45
+0:01:57,299 --> 0:02:00,090
+kan  karena saya pada dasarnya hanya
+
+46
+0:02:00,090 --> 0:02:01,979
+memiliki empat bit di gel di sebelah kiri saya
+
+47
+0:02:01,979 --> 0:02:05,280
+hanya memiliki 0 hingga 15 dan di sisi kanan saya
+
+48
+0:02:05,280 --> 0:02:07,350
+ini tidak memberi saya semua angka desimal
+
+49
+0:02:07,350 --> 0:02:09,420
+yang mungkin dapat saya wakili
+
+50
+0:02:09,420 --> 0:02:11,489
+dalam kisaran ini misalnya jika saya
+
+51
+0:02:11,489 --> 0:02:13,020
+ingin menunjuk  lima saya bisa melakukannya dengan
+
+52
+0:02:13,020 --> 0:02:13,650
+benar
+
+53
+0:02:13,650 --> 0:02:15,720
+saya akan mendapatkan dua  di sisi kiri dengan Anda
+
+54
+0:02:15,720 --> 0:02:18,980
+tahu melakukannya dengan cara biasa dan untuk 1,5
+
+55
+0:02:18,980 --> 0:02:22,470
+maka dua pangkat minus satu bit
+
+56
+0:02:22,470 --> 0:02:23,340
+akan diaktifkan
+
+57
+0:02:23,340 --> 0:02:26,010
+setengahnya sehingga dalam konteks itu semuanya
+
+58
+0:02:26,010 --> 0:02:27,989
+baik-baik saja dan semuanya berfungsi dengan baik
+
+59
+0:02:27,989 --> 0:02:30,930
+tetapi itu hanya karena saya memilih
+
+60
+0:02:30,930 --> 0:02:33,390
+contoh yang berhasil mari kita lihat
+
+61
+0:02:33,390 --> 0:02:35,040
+beberapa angka lain yang tidak akan berfungsi
+
+62
+0:02:35,040 --> 0:02:38,299
+dengan skema titik tetap yang sangat sederhana ini
+
+63
+0:02:38,299 --> 0:02:40,680
+dimulai pertama dengan sesuatu seperti
+
+64
+0:02:40,680 --> 0:02:42,689
+16 dengan jelas Anda tidak dapat melakukannya karena
+
+65
+0:02:42,689 --> 0:02:45,390
+Anda hanya memiliki empat bit bilangan bulat
+
+66
+0:02:45,390 --> 0:02:47,340
+angka terbesar yang dapat Anda wakili  adalah 15
+
+67
+0:02:47,340 --> 0:02:49,290
+jadi ada overflow dalam
+
+68
+0:02:49,290 --> 0:02:51,690
+situasi ini um ide yang sama sebenarnya
+
+69
+0:02:51,690 --> 0:02:54,120
+berlaku pada bagian desimal juga jika
+
+70
+0:02:54,120 --> 0:02:55,590
+Anda ingin mewakili 2 pangkat
+
+71
+0:02:55,590 --> 0:02:57,540
+negatif 5 Anda kurang beruntung karena
+
+72
+0:02:57,540 --> 0:03:00,510
+tidak ada bit seperti itu tentu saja tidak ada
+
+73
+0:03:00,510 --> 0:03:02,189
+menghentikan kami dari memiliki keduanya pada nomor yang sama dengan
+
+74
+0:03:02,189 --> 0:03:04,109
+benar sehingga Anda mendapatkan luapan di
+
+75
+0:03:04,109 --> 0:03:06,959
+kedua ujungnya, contoh-contoh ini hanyalah yang
+
+76
+0:03:06,959 --> 0:03:08,909
+sederhana untuk representasi titik tetap khusus ini
+
+77
+0:03:08,909 --> 0:03:11,579
+untuk ketiga masalah ini yang secara
+
+78
+0:03:11,579 --> 0:03:14,159
+teknis dapat kami coba  s
+
+79
+0:03:14,159 --> 0:03:16,590
+untuk menyelesaikannya hanya dengan menambahkan lebih banyak bit
+
+80
+0:03:16,590 --> 0:03:19,379
+kami memiliki total 8 bit di sini jika kami memiliki 16
+
+81
+0:03:19,379 --> 0:03:21,359
+maka tentu saja kami memiliki lebih banyak nomor di
+
+82
+0:03:21,359 --> 0:03:24,419
+situs namun masih ada
+
+83
+0:03:24,419 --> 0:03:27,180
+fleksibilitas yang besar misalnya kami tidak akan
+
+84
+0:03:27,180 --> 0:03:29,669
+memiliki masalah menyimpan nilai ini jika kami
+
+85
+0:03:29,669 --> 0:03:31,470
+dapat menggeser titik desimal di
+
+86
+0:03:31,470 --> 0:03:32,310
+tempat
+
+87
+0:03:32,310 --> 0:03:34,260
+lain sebenarnya bukan karena bergeser hanya dengan
+
+88
+0:03:34,260 --> 0:03:36,750
+satu tempat maka ini akan baik-baik saja
+
+89
+0:03:36,750 --> 0:03:39,659
+tetapi sayangnya ini adalah angka titik tetap
+
+90
+0:03:39,659 --> 0:03:41,400
+dan itu tidak terjadi
+
+91
+0:03:41,400 --> 0:03:43,650
+tentu saja ada batasan yang berlaku di
+
+92
+0:03:43,650 --> 0:03:45,930
+sini juga misalnya jika  Anda mencoba untuk
+
+93
+0:03:45,930 --> 0:03:48,959
+mewakili nol titik 2 sebagai pecahan
+
+94
+0:03:48,959 --> 0:03:52,440
+yang 1 di atas 5 dan tidak ada
+
+95
+0:03:52,440 --> 0:03:55,260
+kekuatan negatif yang mungkin dari 2 yang dapat secara tepat
+
+96
+0:03:55,260 --> 0:03:58,739
+mewakili ini sekarang masalah ini berjalan
+
+97
+0:03:58,739 --> 0:04:01,109
+dalam ketika kita beralih ke angka floating point
+
+98
+0:04:01,109 --> 0:04:03,329
+masalah ini tidak dapat diselesaikan
+
+99
+0:04:03,329 --> 0:04:05,790
+baik jadi kita benar-benar  hanya memasukkan
+
+100
+0:04:05,790 --> 0:04:08,940
+ini di sini demi kelengkapan jadi
+
+101
+0:04:08,940 --> 0:04:10,919
+angka titik tetap adalah langkah yang baik untuk
+
+102
+0:04:10,919 --> 0:04:13,829
+memiliki angka desimal tetapi tidak
+
+103
+0:04:13,829 --> 0:04:16,019
+cukup baik karena sebagian besar angka tidak
+
+104
+0:04:16,019 --> 0:04:19,169
+dapat direpresentasikan dengan benar wanita dan
+
+105
+0:04:19,169 --> 0:04:20,940
+lembut ini  laki-laki adalah di mana angka floating point
+
+106
+0:04:20,940 --> 0:04:23,460
+ikut bermain kita sekarang akan
+
+107
+0:04:23,460 --> 0:04:26,430
+memasuki dunia angka 32-bit
+
+108
+0:04:26,430 --> 0:04:27,240
+jadi
+
+109
+0:04:27,240 --> 0:04:29,220
+ya setiap angka yang akan kita bicarakan
+
+110
+0:04:29,220 --> 0:04:31,380
+mulai saat ini terdiri dari
+
+111
+0:04:31,380 --> 0:04:33,780
+total 32 bit begitulah  kebanyakan komputer
+
+112
+0:04:33,780 --> 0:04:34,979
+merasakannya,
+
+113
+0:04:34,979 --> 0:04:37,530
+inilah idenya daripada menggunakan
+
+114
+0:04:37,530 --> 0:04:40,080
+seluruh 32 bit untuk mewakili satu angka,
+
+115
+0:04:40,080 --> 0:04:42,599
+kita akan memecah bit ini menjadi
+
+116
+0:04:42,599 --> 0:04:44,759
+tiga bagian dan mereka akan mewakili
+
+117
+0:04:44,759 --> 0:04:47,580
+tiga angka yang berbeda pada dasarnya
+
+118
+0:04:47,580 --> 0:04:49,800
+persamaan matematika yang pada akhirnya dapat kita
+
+119
+0:04:49,800 --> 0:04:52,560
+evaluasi  Anda melihat
+
+120
+0:04:52,560 --> 0:04:54,150
+cara cerdik di mana angka floating-
+
+121
+0:04:54,150 --> 0:04:56,490
+point memanfaatkan studi dua bit
+
+122
+0:04:56,490 --> 0:04:58,740
+adalah bit pertama mewakili sebuah situs
+
+123
+0:04:58,740 --> 0:05:01,889
+seperti di nomor sty delapan bit berikutnya
+
+124
+0:05:01,889 --> 0:05:04,020
+mewakili hal ini disebut eksponen
+
+125
+0:05:04,020 --> 0:05:06,660
+sementara sisanya adalah hal ini disebut
+
+126
+0:05:06,660 --> 0:05:10,440
+a  mantissa kami menggunakan tiga angka ini
+
+127
+0:05:10,440 --> 0:05:13,860
+dalam persamaan seperti ini dari kami sains
+
+128
+0:05:13,860 --> 0:05:16,199
+hanya menentukan apakah mereka
+
+129
+0:05:16,199 --> 0:05:18,229
+akan memiliki angka positif atau
+
+130
+0:05:18,229 --> 0:05:21,539
+negatif mantissa mengacu pada tubuh
+
+131
+0:05:21,539 --> 0:05:24,720
+angka itu sendiri dan th  e eksponen digunakan
+
+132
+0:05:24,720 --> 0:05:27,659
+sebagai pangkat 2 dari sesuatu yang
+
+133
+0:05:27,659 --> 0:05:29,669
+sangat keren tentang ini adalah baik tidak
+
+134
+0:05:29,669 --> 0:05:31,710
+peduli apa mantissa itu, Anda dapat
+
+135
+0:05:31,710 --> 0:05:33,479
+memainkan eksponen dan mendapatkan angka yang sangat kecil
+
+136
+0:05:33,479 --> 0:05:36,539
+atau angka yang sangat besar
+
+137
+0:05:36,539 --> 0:05:38,880
+itu sebabnya ini semacam floating point  itu tidak
+
+138
+0:05:38,880 --> 0:05:41,130
+memiliki titik desimal tetap di suatu tempat di
+
+139
+0:05:41,130 --> 0:05:43,650
+dalam string bit melainkan
+
+140
+0:05:43,650 --> 0:05:46,349
+menggunakan eksponen yang memungkinkan Anda untuk menggeser
+
+141
+0:05:46,349 --> 0:05:48,509
+titik desimal ke keduanya pada dasarnya di
+
+142
+0:05:48,509 --> 0:05:51,570
+mana saja dan itulah kekuatannya sekarang
+
+143
+0:05:51,570 --> 0:05:52,889
+karena singkatnya adalah bagaimana angka floating-
+
+144
+0:05:52,889 --> 0:05:54,990
+point bekerja dan jika satu-satunya  satu adalah
+
+145
+0:05:54,990 --> 0:05:56,669
+pemahaman permukaan maka kita bisa berhenti di
+
+146
+0:05:56,669 --> 0:05:59,789
+sini tapi bukan saya karena kita akan
+
+147
+0:05:59,789 --> 0:06:01,590
+menggali lebih dalam lagi kita akan
+
+148
+0:06:01,590 --> 0:06:04,669
+membangun angka floating point kita sendiri
+
+149
+0:06:04,669 --> 0:06:06,840
+Di sinilah hal-hal menjadi sedikit
+
+150
+0:06:06,840 --> 0:06:10,169
+berantakan dan berantakan pada saat yang sama sehingga Anda
+
+151
+0:06:10,169 --> 0:06:12,360
+tahu  persiapkan dirimu bagaimana saya akan melakukan
+
+152
+0:06:12,360 --> 0:06:15,300
+ini dengan benar adalah saya akan memperbaiki
+
+153
+0:06:15,300 --> 0:06:17,430
+angka untuk memulai dengan saya tidak akan
+
+154
+0:06:17,430 --> 0:06:19,259
+memberi tahu Anda berapa nomornya saya akan
+
+155
+0:06:19,259 --> 0:06:21,810
+menunjukkan pohon 32-bit
+
+156
+0:06:21,810 --> 0:06:25,050
+seperti apa  ini dan aku sudah berpisah
+
+157
+0:06:25,050 --> 0:06:29,070
+tanda jalur eksponen dan mantissa jadi ya
+
+158
+0:06:29,070 --> 0:06:31,289
+kita sudah memiliki tiga jalur sekarang mari kita
+
+159
+0:06:31,289 --> 0:06:33,270
+coba dan mencari tahu bagaimana setiap bagian
+
+160
+0:06:33,270 --> 0:06:35,669
+sebenarnya bekerja tanda adalah bagian yang paling mudah
+
+161
+0:06:35,669 --> 0:06:38,039
+jika bit itu 0 angkanya
+
+162
+0:06:38,039 --> 0:06:40,229
+positif jika bit itu 1 angkanya
+
+163
+0:06:40,229 --> 0:06:41,039
+negatif
+
+164
+0:06:41,039 --> 0:06:44,580
+ayah satu  ketiga dari masalah yang jelas mari kita
+
+165
+0:06:44,580 --> 0:06:47,369
+beralih ke eksponen sekarang
+
+166
+0:06:47,369 --> 0:06:48,869
+eksponen menarik karena bagaimana Anda
+
+167
+0:06:48,869 --> 0:06:51,180
+membacanya sama seperti nomor 8-bit lama yang tidak ditandatangani
+
+168
+0:06:51,180 --> 0:06:54,149
+jadi mari kita lanjutkan dan
+
+169
+0:06:54,149 --> 0:06:57,240
+membacanya seperti yang Anda lihat jika kita menggunakan
+
+170
+0:06:57,240 --> 0:07:00,569
+kami  kekuatan melakukan matematika biasa kita, kita mendapatkan
+
+171
+0:07:00,569 --> 0:07:04,409
+angka sekarang itu angka yang sangat besar untuk
+
+172
+0:07:04,409 --> 0:07:06,659
+eksponen dan itulah alasan mengapa
+
+173
+0:07:06,659 --> 0:07:09,899
+ada jangan lupa itu adalah angka yang tidak
+
+174
+0:07:09,899 --> 0:07:11,999
+ditandatangani tetapi saat kita berurusan dengan
+
+175
+0:07:11,999 --> 0:07:14,099
+angka floating-point kita akan
+
+176
+0:07:14,099 --> 0:07:16,729
+eksponen negatif sekali  membuat angka kecil
+
+177
+0:07:16,729 --> 0:07:19,289
+betapa indahnya masalah bagaimana mereka
+
+178
+0:07:19,289 --> 0:07:21,300
+memperkenalkan kembali tanda kembali ke persamaan
+
+179
+0:07:21,300 --> 0:07:25,289
+adalah bahwa angka sedang diimbangi
+
+180
+0:07:25,289 --> 0:07:27,529
+sebenarnya angka sebenarnya adalah nilai yang Anda dapatkan
+
+181
+0:07:27,529 --> 0:07:29,539
+dikurangi satu hingga tujuh
+
+182
+0:07:29,539 --> 0:07:31,860
+yang bagus adalah jika Anda melihat angka itu
+
+183
+0:07:31,860 --> 0:07:35,580
+sebagai nol lalu t  eksponen aktual yang
+
+184
+0:07:35,580 --> 0:07:37,559
+diwakili itu adalah negatif satu hingga
+
+185
+0:07:37,559 --> 0:07:40,289
+tujuh jika Anda melihat satu hingga delapan eksponen sebenarnya
+
+186
+0:07:40,289 --> 0:07:42,779
+adalah satu semoga masuk
+
+187
+0:07:42,779 --> 0:07:43,499
+akal bagi Anda
+
+188
+0:07:43,499 --> 0:07:46,050
+dengan mengimbangi angka itu sehingga Anda dapat
+
+189
+0:07:46,050 --> 0:07:48,149
+mewakili angka positif dan negatif
+
+190
+0:07:48,149 --> 0:07:49,979
+Anda hanya perlu melakukan sedikit matematika untuk
+
+191
+0:07:49,979 --> 0:07:51,629
+pulihkan nomor sebenarnya
+
+192
+0:07:51,629 --> 0:07:55,050
+yang seharusnya Anda selesaikan dengan sangat eksponen mari kita
+
+193
+0:07:55,050 --> 0:07:57,209
+beralih ke penggoda pria kami bagian terbesar kami
+
+194
+0:07:57,209 --> 0:08:00,839
+terdiri dari 23 bit ya bagaimana
+
+195
+0:08:00,839 --> 0:08:02,879
+maksud saya Anda pak bekerja jika Anda mengarahkan
+
+196
+0:08:02,879 --> 0:08:06,360
+pikiran Anda kembali untuk memperbaiki nomor titik dengan baik
+
+197
+0:08:06,360 --> 0:08:08,430
+maksud saya sel T  bekerja dengan cara yang sama
+
+198
+0:08:08,430 --> 0:08:10,620
+kekuatan semu minus 1 ke kekuatan minus 2
+
+199
+0:08:10,620 --> 0:08:12,930
+itu semua kekuatan negatif mulai dari
+
+200
+0:08:12,930 --> 0:08:15,539
+negatif 1 jadi ya itu pada dasarnya
+
+201
+0:08:15,539 --> 0:08:19,289
+matematika bit biasa kita lagi tapi kali ini kita
+
+202
+0:08:19,289 --> 0:08:21,120
+perlu memperkenalkan satu hal lagi dan
+
+203
+0:08:21,120 --> 0:08:23,819
+itu 2 kita untuk kekuatan  0
+
+204
+0:08:23,819 --> 0:08:26,399
+ternyata sementara tidak ada sedikit pun untuk
+
+205
+0:08:26,399 --> 0:08:30,360
+itu aktif secara default oleh karena itu tidak peduli
+
+206
+0:08:30,360 --> 0:08:32,880
+apa yang dikatakan mantissa kami
+
+207
+0:08:32,880 --> 0:08:35,639
+selalu menambahkan 1 sekarang bagaimana
+
+208
+0:08:35,639 --> 0:08:37,139
+pendekatannya langkah selanjutnya adalah saya akan
+
+209
+0:08:37,139 --> 0:08:39,229
+mengonversi semua angka itu  ke dalam  o
+
+210
+0:08:39,229 --> 0:08:41,550
+pecahan alasan mengapa saya mengubahnya menjadi
+
+211
+0:08:41,550 --> 0:08:43,440
+pecahan adalah karena saya tidak ingin melakukan
+
+212
+0:08:43,440 --> 0:08:46,019
+matematika desimal dulu ingat kita sedang
+
+213
+0:08:46,019 --> 0:08:47,790
+mendiskusikan pekerjaan desimal kita benar kita
+
+214
+0:08:47,790 --> 0:08:50,459
+tidak memiliki desimal untuk melakukan itu jadi kita akan
+
+215
+0:08:50,459 --> 0:08:52,949
+meninggalkan semuanya sebagai pecahan dan  apa
+
+216
+0:08:52,949 --> 0:08:54,340
+yang memungkinkan kita lakukan adalah
+
+217
+0:08:54,340 --> 0:08:57,340
+menaikkan pecahan ini ke
+
+218
+0:08:57,340 --> 0:08:59,200
+persamaan akhir kita ingat persamaan terakhir
+
+219
+0:08:59,200 --> 0:09:01,270
+kita benar kita tidak terlihat kita memiliki
+
+220
+0:09:01,270 --> 0:09:03,250
+dua pangkat eksponen
+
+221
+0:09:03,250 --> 0:09:05,410
+yang menghitungnya kita mendapatkan
+
+222
+0:09:05,410 --> 0:09:07,600
+mantissa dan  kita perlu mengalikan
+
+223
+0:09:07,600 --> 0:09:10,360
+semuanya lagi Saya akan melakukan
+
+224
+0:09:10,360 --> 0:09:12,190
+ini dalam bentuk pecahan
+
+225
+0:09:12,190 --> 0:09:13,680
+sampai akhir
+
+226
+0:09:13,680 --> 0:09:17,290
+pada dasarnya setelah kita menyelesaikan bagian ini, kita
+
+227
+0:09:17,290 --> 0:09:19,750
+berakhir dengan satu pecahan raksasa
+
+228
+0:09:19,750 --> 0:09:22,420
+yang terlihat seperti ini karena kita memiliki satu
+
+229
+0:09:22,420 --> 0:09:24,610
+pecahan yang pada dasarnya adalah pembagian
+
+230
+0:09:24,610 --> 0:09:27,130
+yang memungkinkan  kita untuk mendapatkan nilai akhir kita
+
+231
+0:09:27,130 --> 0:09:30,660
+dan itu adalah nilai desimal
+
+232
+0:09:30,660 --> 0:09:33,220
+yang dilakukan dengan baik adalah kita baru saja bekerja
+
+233
+0:09:33,220 --> 0:09:36,220
+dari representasi biner
+
+234
+0:09:36,220 --> 0:09:38,820
+sampai ke desimal asli
+
+235
+0:09:38,820 --> 0:09:42,280
+yang bit string di sana memberi kita
+
+236
+0:09:42,280 --> 0:09:45,820
+nilai desimal ini sehingga  cukup keren
+
+237
+0:09:45,820 --> 0:09:48,030
+kita baru saja membuat angka floating-point
+
+238
+0:09:48,030 --> 0:09:50,800
+Tentu saja kita bisa melakukan kebalikannya dan saya
+
+239
+0:09:50,800 --> 0:09:52,390
+akan melakukannya sedikit lebih
+
+240
+0:09:52,390 --> 0:09:55,210
+cepat karena banyak pembagian tapi
+
+241
+0:09:55,210 --> 0:09:57,940
+ya cara kita mengubah angka desimal
+
+242
+0:09:57,940 --> 0:10:00,280
+menjadi  string bit juga cukup
+
+243
+0:10:00,280 --> 0:10:02,350
+mudah jika mengkonversi dari
+
+244
+0:10:02,350 --> 0:10:04,480
+biner ke desimal adalah
+
+245
+0:10:04,480 --> 0:10:06,520
+perkalian berulang seperti dalam kekuatan dua
+
+246
+0:10:06,520 --> 0:10:09,940
+kemudian mengubah mundur ke biner adalah
+
+247
+0:10:09,940 --> 0:10:12,820
+pembagian berulang untuk bagian ini kita akan
+
+248
+0:10:12,820 --> 0:10:15,040
+mulai dengan mengambil bagian bilangan bulat dan
+
+249
+0:10:15,040 --> 0:10:18,190
+hanya berulang kali membaginya dengan dua masing-masing
+
+250
+0:10:18,190 --> 0:10:20,650
+waktu kita membagi kita lebih
+
+251
+0:10:20,650 --> 0:10:22,780
+mementingkan sisa daripada hasil sebenarnya
+
+252
+0:10:22,780 --> 0:10:26,320
+dari pembagian dalam hal ini 17
+
+253
+0:10:26,320 --> 0:10:30,070
+dibagi 2 hanya sebagai sisa 1 kita
+
+254
+0:10:30,070 --> 0:10:32,560
+lanjutkan dengan hasil bagi makan dan
+
+255
+0:10:32,560 --> 0:10:35,980
+pada dasarnya kita ulangi prosedur ini jika kita
+
+256
+0:10:35,980 --> 0:10:38,860
+terus kita akan  berakhir dengan satu set
+
+257
+0:10:38,860 --> 0:10:41,200
+sisa yang hanya dapat berupa 0 atau
+
+258
+0:10:41,200 --> 0:10:44,740
+1 kita harus terus berjalan sampai kita berhenti
+
+259
+0:10:44,740 --> 0:10:47,710
+di 0 sekarang terjadi bahwa untuk
+
+260
+0:10:47,710 --> 0:10:49,990
+contoh khusus ini string bit ini
+
+261
+0:10:49,990 --> 0:10:51,820
+dapat dibaca ke arah mana pun dan i
+
+262
+0:10:51,820 --> 0:10:53,800
+terlihat sama tetapi
+
+263
+0:10:53,800 --> 0:10:56,290
+sebenarnya Anda harus membaca ini ke
+
+264
+0:10:56,290 --> 0:10:58,900
+atas urutannya penting Anda akan
+
+265
+0:10:58,900 --> 0:11:01,450
+mulai dari bawah bagaimanapun ini adalah
+
+266
+0:11:01,450 --> 0:11:05,080
+bagian in dejure kita selesai mari kita beralih ke
+
+267
+0:11:05,080 --> 0:11:07,360
+bagian desimal
+
+268
+0:11:07,360 --> 0:11:09,790
+sekarang karena kita sekarang berurusan dengan
+
+269
+0:11:09,790 --> 0:11:12,220
+kekuatan negatif dari dua kita lagi
+
+270
+0:11:12,220 --> 0:11:14,949
+melakukan kebalikannya jadi bagaimana ini dilakukan adalah
+
+271
+0:11:14,949 --> 0:11:17,290
+kita pada dasarnya melakukan
+
+272
+0:11:17,290 --> 0:11:20,619
+penggandaan setiap kali menggandakan angka memberi kita
+
+273
+0:11:20,619 --> 0:11:22,899
+angka lain dan pada dasarnya
+
+274
+0:11:22,899 --> 0:11:25,480
+hasil kita untuk pad itu sisa kita sehingga untuk
+
+275
+0:11:25,480 --> 0:11:28,600
+berbicara memeriksa bagian bilangan bulat dari
+
+276
+0:11:28,600 --> 0:11:31,269
+angka ini  jika nol maka hasilnya adalah
+
+277
+0:11:31,269 --> 0:11:34,119
+nol dan kita cukup melanjutkan bilas dan
+
+278
+0:11:34,119 --> 0:11:36,489
+ulangi dan pada dasarnya apa yang terjadi
+
+279
+0:11:36,489 --> 0:11:40,119
+baik-baik saja dalam hal ini kita akan berakhir pada
+
+280
+0:11:40,119 --> 0:11:43,629
+nilai yang 1 atau lebih besar ketika Anda mendapatkan
+
+281
+0:11:43,629 --> 0:11:46,540
+bahwa bit yang direfleksikan di sini akan
+
+282
+0:11:46,540 --> 0:11:49,420
+menjadi 1  dan kami akan mengurangi satu dari
+
+283
+0:11:49,420 --> 0:11:52,839
+ini sebelum melanjutkannya terjadi bahwa
+
+284
+0:11:52,839 --> 0:11:54,579
+dalam kasus ini karena itu sempurna satu
+
+285
+0:11:54,579 --> 0:11:57,040
+setelah pengurangan kami mendapatkan nol jadi kami
+
+286
+0:11:57,040 --> 0:11:59,529
+berhenti jika tidak maka Anda harus
+
+287
+0:11:59,529 --> 0:12:02,439
+melanjutkan proses sekarang dalam hal ini  kasus
+
+288
+0:12:02,439 --> 0:12:04,119
+karena contoh ini cukup
+
+289
+0:12:04,119 --> 0:12:06,910
+sederhana kita sudah selesai untuk bagian desimal
+
+290
+0:12:06,910 --> 0:12:09,069
+kita membaca bit dari atas ke
+
+291
+0:12:09,069 --> 0:12:09,730
+bawah
+
+292
+0:12:09,730 --> 0:12:12,040
+sekarang seperti yang disebutkan ini adalah
+
+293
+0:12:12,040 --> 0:12:14,919
+kasus yang sangat sederhana tetapi mungkin ada beberapa
+
+294
+0:12:14,919 --> 0:12:16,899
+nilai desimal yang terus berjalan
+
+295
+0:12:16,899 --> 0:12:19,629
+tanpa henti dalam hal ini kita gunakan  nol koma
+
+296
+0:12:19,629 --> 0:12:21,850
+tujuh dan seperti yang Anda lihat, apa pun yang
+
+297
+0:12:21,850 --> 0:12:24,279
+Anda lakukan, Anda tidak akan pernah mendapatkan nilai satu jika
+
+298
+0:12:24,279 --> 0:12:26,679
+Anda mendapatkan nilai satu koma enam,
+
+299
+0:12:26,679 --> 0:12:28,419
+kan, Anda akan mengambil nilai yang Anda
+
+300
+0:12:28,419 --> 0:12:31,149
+lanjutkan dengan nol koma enam dan
+
+301
+0:12:31,149 --> 0:12:34,600
+ternyata  ini tidak pernah berakhir kita tahu
+
+302
+0:12:34,600 --> 0:12:37,329
+ini dengan pasti karena kita memiliki
+
+303
+0:12:37,329 --> 0:12:40,059
+titik yang membawa kita kembali ke hal yang pada
+
+304
+0:12:40,059 --> 0:12:41,290
+dasarnya sama itu adalah pola
+
+305
+0:12:41,290 --> 0:12:44,290
+yang berulang ini memberitahu kita dengan pasti
+
+306
+0:12:44,290 --> 0:12:46,540
+bahwa urutan tertentu ini akan berlangsung
+
+307
+0:12:46,540 --> 0:12:49,239
+selamanya ada dua cara di mana kita
+
+308
+0:12:49,239 --> 0:12:51,730
+bisa  hentikan proses ini baik ketika kita
+
+309
+0:12:51,730 --> 0:12:55,269
+mengenali pengulangan seperti ini atau ketika
+
+310
+0:12:55,269 --> 0:12:58,569
+kita memiliki cukup bit untuk dikerjakan mengatakan
+
+311
+0:12:58,569 --> 0:13:00,549
+mantissa kita memiliki batas panjang kita
+
+312
+0:13:00,549 --> 0:13:02,410
+tidak harus terus berjalan begitu kita memiliki
+
+313
+0:13:02,410 --> 0:13:05,799
+cukup bit itu jadi apa yang
+
+314
+0:13:05,799 --> 0:13:08,019
+pada dasarnya kita miliki  sekarang adalah satu bit string
+
+315
+0:13:08,019 --> 0:13:10,689
+untuk bagian integer dan satu bit
+
+316
+0:13:10,689 --> 0:13:13,049
+string untuk bagian desimal
+
+317
+0:13:13,049 --> 0:13:15,819
+pada dasarnya kita memiliki nomor titik tetap
+
+318
+0:13:15,819 --> 0:13:17,589
+jika kita merakit dua bagian ini
+
+319
+0:13:17,589 --> 0:13:19,990
+bersama-sama jadi ya jika kita berurusan dengan
+
+320
+0:13:19,990 --> 0:13:20,950
+titik tetap lebih besar
+
+321
+0:13:20,950 --> 0:13:23,200
+berhenti di sini tapi apa yang kita  lakukan di sini adalah
+
+322
+0:13:23,200 --> 0:13:24,850
+floating point jadi kita harus memasukkan
+
+323
+0:13:24,850 --> 0:13:26,620
+semuanya ke dalam cetakan penglihatan
+
+324
+0:13:26,620 --> 0:13:30,400
+mantissa dan eksponen Mari kita mulai dengan
+
+325
+0:13:30,400 --> 0:13:32,980
+mencari tahu eksponen sekarang
+
+326
+0:13:32,980 --> 0:13:35,950
+dasarnya apa yang kita miliki sekarang
+
+327
+0:13:35,950 --> 0:13:37,810
+dapat dinyatakan sebagai dikalikan dengan 2
+
+328
+0:13:37,810 --> 0:13:40,360
+pangkat 0 ini tentu saja berarti  1
+
+329
+0:13:40,360 --> 0:13:42,760
+benar dan semuanya tidak
+
+330
+0:13:42,760 --> 0:13:45,250
+berubah tetapi yang dapat kita lakukan adalah kita dapat
+
+331
+0:13:45,250 --> 0:13:49,330
+menggeser titik desimal setiap pergeseran
+
+332
+0:13:49,330 --> 0:13:51,700
+ke kiri meningkatkan eksponen sebesar 1
+
+333
+0:13:51,700 --> 0:13:54,520
+setiap pergeseran ke kanan
+
+334
+0:13:54,520 --> 0:13:57,490
+mengurangi eksponen sekarang dalam hal ini
+
+335
+0:13:57,490 --> 0:14:00,520
+karena jumlahnya baik  cukup besar
+
+336
+0:14:00,520 --> 0:14:03,850
+kami menggeser ke kiri dan tujuan kami
+
+337
+0:14:03,850 --> 0:14:06,940
+adalah untuk terus melakukan ini sampai
+
+338
+0:14:06,940 --> 0:14:11,260
+titik desimal kami berakhir di sini pada dasarnya
+
+339
+0:14:11,260 --> 0:14:13,600
+kami ingin berhenti ketika hanya ada
+
+340
+0:14:13,600 --> 0:14:17,440
+satu sebelum titik desimal ini dengan
+
+341
+0:14:17,440 --> 0:14:19,660
+th  salah satu caranya adalah mengapa kita selalu menganggap
+
+342
+0:14:19,660 --> 0:14:22,690
+ada 1 jika itu 0 maka kita dapat berhenti di tempat yang
+
+343
+0:14:22,690 --> 0:14:24,190
+berbeda dan menyatakan bahwa dengan
+
+344
+0:14:24,190 --> 0:14:26,980
+eksponen yang berbeda apa artinya karena secara
+
+345
+0:14:26,980 --> 0:14:29,020
+teknis kita sudah memiliki segalanya
+
+346
+0:14:29,020 --> 0:14:31,150
+tentu saja kita tahu tandanya benar kita bisa
+
+347
+0:14:31,150 --> 0:14:33,280
+mengetahuinya  keluar dengan hanya memeriksa
+
+348
+0:14:33,280 --> 0:14:36,370
+nomor aslinya tetapi kita juga tahu
+
+349
+0:14:36,370 --> 0:14:39,640
+mantissa itu pada dasarnya semua yang
+
+350
+0:14:39,640 --> 0:14:42,730
+datang setelah titik desimal dan
+
+351
+0:14:42,730 --> 0:14:46,480
+eksponen kita hanyalah kekuatan di sini
+
+352
+0:14:46,480 --> 0:14:48,490
+kita perlu melakukan satu langkah lagi dengan
+
+353
+0:14:48,490 --> 0:14:49,750
+eksponen yang benar
+
+354
+0:14:49,750 --> 0:14:51,910
+ingat eksponen kita adalah offset jadi  kita
+
+355
+0:14:51,910 --> 0:14:55,030
+perlu menambahkan 1 hingga 7 ke nomor ini memberi
+
+356
+0:14:55,030 --> 0:14:58,270
+kita 1 3 1 yang kemudian dapat kita konversi kembali
+
+357
+0:14:58,270 --> 0:15:00,340
+ke biner jadi sekali lagi kita melakukan
+
+358
+0:15:00,340 --> 0:15:03,610
+pembagian berganda itu dengan benar.
+
+359
+0:15:03,610 --> 0:15:06,190
+langkah di penghujung hari
+
+360
+0:15:06,190 --> 0:15:10,330
+1 3 1 memberi kita string bit ini yang merupakan
+
+361
+0:15:10,330 --> 0:15:13,150
+eksponen kita karena kita sekarang memiliki
+
+362
+0:15:13,150 --> 0:15:15,130
+ketiga bagian kita sekarang dapat merakit
+
+363
+0:15:15,130 --> 0:15:17,350
+semuanya bersama-sama dimulai dengan
+
+364
+0:15:17,350 --> 0:15:20,620
+tanda yang tentu saja 0 eksponen
+
+365
+0:15:20,620 --> 0:15:22,060
+yang baru saja dihitung dengan  h
+
+366
+0:15:22,060 --> 0:15:25,540
+nilai 1 3 1 dan akhirnya mantissa kami
+
+367
+0:15:25,540 --> 0:15:28,690
+tentu saja ini mengarah ke total hingga 32
+
+368
+0:15:28,690 --> 0:15:30,880
+bit jadi kami cukup mengisi sisa
+
+369
+0:15:30,880 --> 0:15:34,840
+mantissa dengan nol sehingga ini terus
+
+370
+0:15:34,840 --> 0:15:36,400
+mewakili sisa kekuatan negatif Anda
+
+371
+0:15:36,400 --> 0:15:38,530
+dari dua tetapi kami tidak perlu  mereka kita
+
+372
+0:15:38,530 --> 0:15:40,540
+tidak menggunakannya jadi ya kita biarkan saja
+
+373
+0:15:40,540 --> 0:15:43,750
+sebagai nol dan itu pada dasarnya
+
+374
+0:15:43,750 --> 0:15:46,090
+apa yang kita miliki di sini adalah bit string yang sama
+
+375
+0:15:46,090 --> 0:15:48,250
+yang kita gunakan sebelumnya untuk mendapatkan nilai
+
+376
+0:15:48,250 --> 0:15:53,110
+tujuh belas koma satu dua lima jadi
+
+377
+0:15:53,110 --> 0:15:55,330
+begitulah yang mengambang Anda
+
+378
+0:15:55,330 --> 0:15:58,870
+nomor poin sekarang dengan hanya membahas
+
+379
+0:15:58,870 --> 0:16:00,970
+angka floating point 32-bit hari ini tetapi
+
+380
+0:16:00,970 --> 0:16:02,980
+logika berfungsi untuk melihat apakah Anda berurusan
+
+381
+0:16:02,980 --> 0:16:05,650
+dengan dobel, dobel adalah angka floating
+
+382
+0:16:05,650 --> 0:16:08,920
+point dalam 64 bit ke dalamnya,
+
+383
+0:16:08,920 --> 0:16:11,080
+kan ganda, kami menggunakan ruang devildis sehingga kami
+
+384
+0:16:11,080 --> 0:16:13,330
+mendapatkan presisi yang lebih baik  bit tanda
+
+385
+0:16:13,330 --> 0:16:15,430
+tetap satu bit kita punya beberapa
+
+386
+0:16:15,430 --> 0:16:18,610
+bit eksponen dan lebih banyak
+
+387
+0:16:18,610 --> 0:16:19,720
+bit ISA mint
+
+388
+0:16:19,720 --> 0:16:21,880
+baik ini berarti tentu saja
+
+389
+0:16:21,880 --> 0:16:24,220
+baik seluruh hal membuang terjadi jauh di
+
+390
+0:16:24,220 --> 0:16:26,350
+kemudian hari dan sebagai
+
+391
+0:16:26,350 --> 0:16:28,960
+hasilnya kita dapat memiliki  va desimal jauh lebih baik
+
+392
+0:16:28,960 --> 0:16:31,540
+lues makanya biasanya kita suka
+
+393
+0:16:31,540 --> 0:16:33,910
+double kan karena ya
+
+394
+0:16:33,910 --> 0:16:36,610
+cenderung lebih sedikit masalah dengan itu dengan asumsi
+
+395
+0:16:36,610 --> 0:16:38,200
+tentu saja sistem Anda mendukungnya dan
+
+396
+0:16:38,200 --> 0:16:40,960
+itu bisa cepat jadi ya itu saja
+
+397
+0:16:40,960 --> 0:16:43,450
+itu angka floating point jika Anda
+
+398
+0:16:43,450 --> 0:16:45,040
+ingin bermain dengan angka floating point jika
+
+399
+0:16:45,040 --> 0:16:46,860
+Anda  ingin melihat cara kerja dan matematika saya
+
+400
+0:16:46,860 --> 0:16:50,080
+telah menyiapkan program kecil untuk melakukan ini
+
+401
+0:16:50,080 --> 0:16:52,510
+di situs web jadi silakan
+
+402
+0:16:52,510 --> 0:16:54,310
+klik tautan di layar atau di deskripsi video
+
+403
+0:16:54,310 --> 0:16:57,460
+dan mainkan dengan baik
+
+404
+0:16:57,460 --> 0:16:59,260
+bersenang-senang mari kita lihat caranya
+
+405
+0:16:59,260 --> 0:17:01,090
+angka desimal sedang dipecah,
+
+406
+0:17:01,090 --> 0:17:03,220
+itu saja untuk
+
+407
+0:17:03,220 --> 0:17:04,930
+episode khusus ini Saya harap Anda merasa
+
+408
+0:17:04,930 --> 0:17:07,180
+berguna tetapi sampai waktu berikutnya Anda
+
+409
+0:17:07,180 --> 0:17:09,010
+menonton 0 6 ingin Anda TV dengan catatan
+
+410
+0:17:09,010 --> 0:17:11,410
+pertama dotnet terima kasih banyak telah
+
+411
+0:17:11,410 --> 0:17:13,360
+menonton jika Anda menyukai pekerjaan saya  dan saya
+
+412
+0:17:13,360 --> 0:17:15,070
+merasa murah hati Anda dapat memberi saya
+
+413
+0:17:15,070 --> 0:17:17,290
+sumbangan satu kali di PayPal atau mendaftar
+
+414
+0:17:17,290 --> 0:17:19,930
+untuk yang berulang di patreon tentu saja
+
+415
+0:17:19,930 --> 0:17:21,340
+Anda cukup menyukai komentar dan
+
+416
+0:17:21,340 --> 0:17:23,830
+berlangganan Anda tahu kesepakatan untuk lebih banyak
+
+417
+0:17:23,830 --> 0:17:26,080
+video tautan ke saluran saya dan
+
+418
+0:17:26,080 --> 0:17:28,420
+daftar putar terkait ada di layar terima kasih atas
+
+419
+0:17:28,420 --> 0:17:30,660
+dukungan Anda
+

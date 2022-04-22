@@ -1,0 +1,1748 @@
+1
+0:00:00,030 --> 0:00:02,040
+dalam video terakhir kami berbicara
+
+2
+0:00:02,040 --> 0:00:04,110
+tentang permulaan JPEG jadi apa yang kami lakukan
+
+3
+0:00:04,110 --> 0:00:05,490
+di awal proses untuk mulai
+
+4
+0:00:05,490 --> 0:00:06,960
+mempersiapkan transformasi cosinus
+
+5
+0:00:06,960 --> 0:00:09,360
+diskrit yang sebenarnya adalah bagaimana
+
+6
+0:00:09,360 --> 0:00:11,570
+kompresi lossy terjadi dalam
+
+7
+0:00:11,570 --> 0:00:15,299
+file terkompresi JPEG jadi kami mulai dengan RGB kami
+
+8
+0:00:15,299 --> 0:00:17,340
+image kita mengubahnya menjadi
+
+9
+0:00:17,340 --> 0:00:19,020
+ruang warna ycbcr yang memisahkan untuk
+
+10
+0:00:19,020 --> 0:00:20,910
+luminance dan chrominance dan kemudian
+
+11
+0:00:20,910 --> 0:00:22,560
+kita dapat menurunkan sampel chrominance jika kita
+
+12
+0:00:22,560 --> 0:00:24,300
+mau dan kita bisa lolos dengan
+
+13
+0:00:24,300 --> 0:00:26,310
+sedikit down sampling di sana tetapi
+
+14
+0:00:26,310 --> 0:00:27,869
+orang tidak akan bisa  lihat langkah selanjutnya
+
+15
+0:00:27,869 --> 0:00:31,730
+adalah transformasi kosinus diskrit
+
+16
+0:00:31,730 --> 0:00:34,320
+sebelum kita mulai berbicara tentang bagaimana
+
+17
+0:00:34,320 --> 0:00:35,760
+gambar dikompres menggunakan transformasi kosinus diskrit
+
+18
+0:00:35,760 --> 0:00:38,040
+. Jauh lebih baik untuk memulai
+
+19
+0:00:38,040 --> 0:00:39,780
+dengan contoh sederhana tentang apa itu
+
+20
+0:00:39,780 --> 0:00:41,579
+transformasi kosinus diskrit dan cara kerjanya
+
+21
+0:00:41,579 --> 0:00:43,260
+fungsi kosinus untuk siapa saja yang tidak.  'tidak
+
+22
+0:00:43,260 --> 0:00:45,030
+akrab dengannya adalah fungsi yang berjalan
+
+23
+0:00:45,030 --> 0:00:47,760
+antara 1 dan minus 1 apa yang cenderung kita lakukan
+
+24
+0:00:47,760 --> 0:00:50,039
+pada ini pada sumbu x ini adalah dari nol
+
+25
+0:00:50,039 --> 0:00:53,910
+ke PI ke 2 pi ini dalam radian
+
+26
+0:00:53,910 --> 0:00:56,039
+dari yo  Anda akrab dengan derajat ini adalah 180
+
+27
+0:00:56,039 --> 0:00:59,129
+derajat pada pi dan 360 derajat pada 2pi dan
+
+28
+0:00:59,129 --> 0:01:01,170
+gelombang kosinus terlihat seperti ini jadi
+
+29
+0:01:01,170 --> 0:01:05,189
+1 pada 0 dan kemudian pada pi turun ke
+
+30
+0:01:05,189 --> 0:01:08,670
+minus 1 dan ketika kembali ke 1 pada
+
+31
+0:01:08,670 --> 0:01:10,439
+2pi dan itu hanya  terus dan terus seperti ini
+
+32
+0:01:10,439 --> 0:01:12,479
+naik dan turun jika Anda meningkatkan pengabaian
+
+33
+0:01:12,479 --> 0:01:14,610
+ke transformasi kosinus diskrit bekerja adalah kami
+
+34
+0:01:14,610 --> 0:01:16,320
+mengambil beberapa data dalam hal ini data gambar kami
+
+35
+0:01:16,320 --> 0:01:19,140
+dan kami mencoba dan mewakilinya sebagai
+
+36
+0:01:19,140 --> 0:01:21,119
+jumlah dari banyak gelombang ini yang tidak
+
+37
+0:01:21,119 --> 0:01:22,170
+membuat  masuk akal sampai Anda mulai
+
+38
+0:01:22,170 --> 0:01:23,430
+menggambarnya jadi mari kita bayangkan bahwa
+
+39
+0:01:23,430 --> 0:01:25,740
+kita memiliki gelombang kosinus di sini yang merupakan
+
+40
+0:01:25,740 --> 0:01:27,630
+gelombang kosinus frekuensi standar kita dan
+
+41
+0:01:27,630 --> 0:01:29,579
+kemudian kita memiliki gelombang kosinus lain
+
+42
+0:01:29,579 --> 0:01:31,710
+yang frekuensinya jauh lebih tinggi sehingga
+
+43
+0:01:31,710 --> 0:01:34,320
+akan turun  sedikit lebih cepat naik sedikit
+
+44
+0:01:34,320 --> 0:01:36,540
+lebih cepat turun sedikit lebih cepat dan bergerak
+
+45
+0:01:36,540 --> 0:01:38,909
+sedikit lebih cepat seperti ini ok jadi sekarang kita memiliki
+
+46
+0:01:38,909 --> 0:01:41,490
+dua gelombang jika kita menambahkannya bersama apa yang
+
+47
+0:01:41,490 --> 0:01:43,920
+kita dapatkan adalah semacam gelombang lain yang
+
+48
+0:01:43,920 --> 0:01:45,840
+merupakan kombinasi dari keduanya jadi jika kita
+
+49
+0:01:45,840 --> 0:01:47,850
+menggambarnya di sini di garis putus-putus ini kita
+
+50
+0:01:47,850 --> 0:01:50,159
+bisa melihat setengah jalan di antara keduanya
+
+51
+0:01:50,159 --> 0:01:53,009
+gelombang seperti ini dan kemudian seperti ini
+
+52
+0:01:53,009 --> 0:01:54,780
+dan Anda dapat melihat bahwa kami telah membuat
+
+53
+0:01:54,780 --> 0:01:56,850
+gelombang lain yang lebih kompleks dengan
+
+54
+0:01:56,850 --> 0:02:00,240
+menambahkan keduanya bersama-sama sekarang saat kami
+
+55
+0:02:00,240 --> 0:02:02,520
+meningkatkan jumlah kosinus, kami dapat
+
+56
+0:02:02,520 --> 0:02:04,439
+meningkatkan jumlah kemungkinan
+
+57
+0:02:04,439 --> 0:02:06,719
+bentuk dengan cara yang kami dapat  menghasilkan dalam praktik
+
+58
+0:02:06,719 --> 0:02:08,280
+jika kita menambahkan dua cara ini bersama-sama kita akan
+
+59
+0:02:08,280 --> 0:02:09,660
+memiliki cara yang jauh lebih tinggi daripada
+
+60
+0:02:09,660 --> 0:02:12,150
+input jadi ini akan menjadi 2 bukan 1 jadi
+
+61
+0:02:12,150 --> 0:02:13,500
+apa yang sebenarnya kita lakukan adalah kita melakukan
+
+62
+0:02:13,500 --> 0:02:15,480
+keduanya dan jadi kita ambil rata-rata
+
+63
+0:02:15,480 --> 0:02:17,130
+jadi  keduanya berbobot dalam
+
+64
+0:02:17,130 --> 0:02:19,620
+kasus ini sebagai 1/2 dan jadi ini pada dasarnya
+
+65
+0:02:19,620 --> 0:02:21,330
+rata-rata dari keduanya, kami
+
+66
+0:02:21,330 --> 0:02:23,730
+juga dapat mengubah bobot ini sehingga kami
+
+67
+0:02:23,730 --> 0:02:25,320
+dapat memilikinya sebagian besar
+
+68
+0:02:25,320 --> 0:02
+frekuensi tinggi ini tetapi hanya
+
+69
+0:02 --> 0:02:28,890
+sedikit  frekuensi rendah ini dan kami akan memiliki
+
+70
+0:02:28,890 --> 0:02:30,510
+gelombang berbentuk berbeda yang keluar dari
+
+71
+0:02:30,510 --> 0:02:33,570
+ujung sehingga setiap gelombang mewakili konstituen kecil
+
+72
+0:02:33,570 --> 0:02:36,030
+dari output dan
+
+73
+0:02:36,030 --> 0:02:37,590
+semakin tinggi frekuensi gelombang,
+
+74
+0:02:37,590 --> 0:02:39,540
+bagian frekuensi yang lebih tinggi dari sinyal yang
+
+75
+0:02:39,540 --> 0:02:40,740
+kita hadapi jadi  jika kita melihat
+
+76
+0:02:40,740 --> 0:02:42,540
+jumper saya di sini ada  perubahan frekuensi rendah
+
+77
+0:02:42,540 --> 0:02:44,670
+dari meja hitam ini menjadi
+
+78
+0:02:44,670 --> 0:02:46,530
+kecerahan tepat di atas jumper saya ke
+
+79
+0:02:46,530 --> 0:02:48,390
+meja gelap lagi dan frekuensi yang jauh lebih
+
+80
+0:02:48,390 --> 0:02:50,550
+tinggi berubah pada jumper saya di mana kami
+
+81
+0:02:50,550 --> 0:02:52,530
+naik dan turun dalam semacam
+
+82
+0:02:52,530 --> 0:02:53,940
+rajutan wol dan itu adalah prinsip yang sama yang
+
+83
+0:02:53,940 --> 0:02:56,370
+kami perdebatkan  di JPEG bahwa kita dapat
+
+84
+0:02:56,370 --> 0:02:57,690
+menghilangkan beberapa sinyal frekuensi yang lebih tinggi
+
+85
+0:02:57,690 --> 0:03:00,180
+dan inti umum
+
+86
+0:03:00,180 --> 0:03:02,340
+gambar akan tetap ada jadi ini
+
+87
+0:03:02,340 --> 0:03:04,320
+hanya transformasi cosinus diskrit satu dimensi
+
+88
+0:03:04,320 --> 0:03:06,060
+dengan hanya dua komponen
+
+89
+0:03:06,060 --> 0:03:08,730
+cara kerja matematika adalah jika
+
+90
+0:03:08,730 --> 0:03:11,459
+kita  memiliki sinyal yang panjangnya 8 maka kami
+
+91
+0:03:11,459 --> 0:03:13,350
+menemukan bahwa kami dapat mewakilinya menggunakan 8
+
+92
+0:03:13,350 --> 0:03:15,480
+gelombang kosinus dengan frekuensi yang berbeda
+
+93
+0:03:15,480 --> 0:03:18,420
+dan hal yang sama berlaku untuk gambar apa yang kami
+
+94
+0:03:18,420 --> 0:03:21,030
+lakukan di JPEG adalah kami membagi setiap gambar menjadi 8
+
+95
+0:03:21,030 --> 0:03:23,130
+dengan 8 kelompok piksel dan masing-masing
+
+96
+0:03:23,130 --> 0:03:25,530
+piksel tersebut  grup dikodekan secara terpisah
+
+97
+0:03:25,530 --> 0:03:27,570
+dengan transformasi kosinus diskritnya
+
+98
+0:03:27,570 --> 0:03:29,519
+masing-masing grup piksel 8 kali 8 tersebut dapat
+
+99
+0:03:29,519 --> 0:03:32,880
+direplikasi secara tepat oleh 64 sehingga gelombang kosinus 8 kali 8
+
+100
+0:03:32,880 --> 0:03:36,209
+ini sebenarnya menunjukkan 64
+
+101
+0:03:36,209 --> 0:03:40,170
+gelombang kosinus dasar yang menghasilkan gambar apa pun yang
+
+102
+0:03:40,170 --> 0:03:42,420
+kami  mungkin ingin dilakukan dalam 8 kali 8 piksel
+
+103
+0:03:42,420 --> 0:03:44,280
+komponen khusus ini di sini
+
+104
+0:03:44,280 --> 0:03:47,250
+pada dasarnya datar oke jadi jika Anda hanya memiliki
+
+105
+0:03:47,250 --> 0:03:48,930
+komponen ini dan hanya itu yang
+
+106
+0:03:48,930 --> 0:03:51,090
+berkontribusi pada hasil akhir Anda
+
+107
+0:03:51,090 --> 0:03:53,280
+gambar Anda akan terlihat seperti itu oke jika Anda
+
+108
+0:03:53,280 --> 0:03:54,780
+hanya memiliki satu ini gambar Anda akan  menjadi
+
+109
+0:03:54,780 --> 0:03:56,790
+putih dan kemudian akan turun dan menjadi
+
+110
+0:03:56,790 --> 0:03:58,170
+hitam dan Anda dapat melihat bahwa
+
+111
+0:03:58,170 --> 0:04:00,420
+frekuensi meningkat saat kita berjalan di sini ini
+
+112
+0:04:00,420 --> 0:04:02,220
+adalah dalam arah X dan kemudian dalam arah Y
+
+113
+0:04:02,220 --> 0:04:04,049
+frekuensi meningkat
+
+114
+0:04:04,049 --> 0:04:07,110
+di sini jadi ini adalah gelombang kosinus dan
+
+115
+0:04:07,110 --> 0:04:09,239
+ini adalah gelombang kosinus frekuensi tinggi
+
+116
+0:04:09,239 --> 0:04:11,130
+di sini saat kami meningkatkan frekuensi
+
+117
+0:04:11,130 --> 0:04:12,720
+di kedua arah, kami mendapatkan semacam
+
+118
+0:04:12,720 --> 0:04:14,130
+pola kotak-kotak jika ini adalah
+
+119
+0:04:14,130 --> 0:04:16,620
+informasi frekuensi tinggi yang kami
+
+120
+0:04:16,620 --> 0:04:19,950
+enkode di wilayah ini jadi ini adalah
+
+121
+0:04:19,950 --> 0:04:22,890
+v60 untuk fungsi kosinus yang dapat
+
+122
+0:04:22,890 --> 0:04:26,030
+digabungkan  untuk membuat gambar 8x8
+
+123
+0:04:26,030 --> 0:04:28,160
+itu hanya dalam satu saluran jadi katakanlah
+
+124
+0:04:28,160 --> 0:04:30,590
+hanya Anda luminance atau hanya CR
+
+125
+0:04:30,590 --> 0:04:33,170
+misalnya jika kita memiliki setengah dari gelombang ini dan
+
+126
+0:04:33,170 --> 0:04:35,540
+setengah dari gelombang ini maka yang Anda dapatkan adalah
+
+127
+0:04:35,540 --> 0:04:37,490
+persegi gambar yang merupakan gen  reli
+
+128
+0:04:37,490 --> 0:04:39,350
+lebih terang di sebelah kiri dengan
+
+129
+0:04:39,350 --> 0:04
+sedikit cahaya di sebelah kanan karena
+
+130
+0:04 --> 0:04:42,860
+Anda telah samba dua bersama-sama untuk membuat
+
+131
+0:04:42,860 --> 0:04:45,170
+jenis gambar 8x8 apa yang perlu kita lakukan adalah
+
+132
+0:04:45,170 --> 0:04:47,150
+memiliki kombinasi dari semua ini pada
+
+133
+0:04:47,150 --> 0:04:49,490
+waktu yang sama masing-masing  dibobot
+
+134
+0:04:49,490 --> 0:04:51,320
+berdasarkan sesuatu yang disebut koefisien
+
+135
+0:04:51,320 --> 0:04:52,820
+yang mewakili adalah angka yang
+
+136
+0:04:52,820 --> 0:04:54,710
+mewakili kontribusi masing
+
+137
+0:04:54,710 --> 0:04:57,890
+-masing blok individu ini ke keseluruhan jadi
+
+138
+0:04:57,890 --> 0:04:59,270
+misalnya jika kontribusi yang satu ini
+
+139
+0:04:59,270 --> 0:05:01,430
+adalah nol maka tidak ada bagian dari
+
+140
+0:05:01,430 --> 0:05:03,800
+gelombang kosinus ini di dalam 8x8  gambar
+
+141
+0:05:03,800 --> 0:05:05,360
+yang kita lihat jika itu nol
+
+142
+0:05:05,360 --> 0:05:08,419
+titik satu dan yang ini sepuluh maka
+
+143
+0:05:08,419 --> 0:05:09,950
+ini jelas mendapat dampak seratus kali lipat lebih sedikit
+
+144
+0:05:09,950 --> 0:05:12,050
+pada gambar keluaran Anda daripada yang
+
+145
+0:05:12,050 --> 0:05:13,820
+ini dan apa yang kami lakukan dengan
+
+146
+0:05:13,820 --> 0:05:16,010
+transformasi kosinus diskrit pada dasarnya menghitung
+
+147
+0:05:16,010 --> 0:05:17,690
+koefisien untuk gelombang ini
+
+148
+0:05:17,690 --> 0:05:19,430
+mengesampingkan transformasi kosinus diskrit ini
+
+149
+0:05:19,430 --> 0:05:21,560
+sebentar jika kita hanya melihat gambar contoh
+
+150
+0:05:21,560 --> 0:05:23,990
+jadi ini adalah bagian kecil dari
+
+151
+0:05:23,990 --> 0:05:25,960
+gambar bunga kita ini adalah komponen Y
+
+152
+0:05:25,960 --> 0:05:28,910
+jadi itu hanya setiap nilai dari nol  t ke
+
+153
+0:05:28,910 --> 0:05:32,240
+255 seberapa intens pikselnya sehingga Anda dapat
+
+154
+0:05:32,240 --> 0:05:33,830
+melihat ini bukan
+
+155
+0:05:33,830 --> 0:05:35,930
+bagian gambar yang sangat menarik ini agak abu-abu dengan
+
+156
+0:05:35,930 --> 0:05:37,550
+sedikit wilayah yang lebih cerah di sini
+
+157
+0:05:37,550 --> 0:05:39,979
+yang ingin kami coba dan lakukan adalah
+
+158
+0:05:39,979 --> 0:05:41,419
+menghitung kontribusi masing-masing kosinus kami
+
+159
+0:05:41,419 --> 0:05:44,419
+gelombang ke gambar ini bit kosinus
+
+160
+0:05:44,419 --> 0:05:46,880
+mana yang kita perlukan yang ditambahkan bersama untuk
+
+161
+0:05:46,880 --> 0:05:48,650
+membuat gambar yang terlihat persis seperti ini jadi
+
+162
+0:05:48,650 --> 0:05:50,440
+untuk memulai dengan apa yang perlu kita lakukan adalah
+
+163
+0:05:50,440 --> 0:05:52,610
+Pusatkan semua nilai ini yang
+
+164
+0:05:52,610 --> 0:05:54,560
+saat ini dipusatkan di sekitar 128 karena
+
+165
+0:05:54,560 --> 0:05:56,870
+mereka dari nol  ke 255 kami mengirim
+
+166
+0:05:56,870 --> 0:05:58,250
+semua nilai ini sekitar nol karena
+
+167
+0:05:58,250 --> 0:06:00,860
+ingat gelombang kosinus beralih dari 1 ke
+
+168
+0:06:00,860 --> 0:06:03,950
+minus 1 bukan dari 1 menjadi nol jadi kami
+
+169
+0:06:03,950 --> 0:06:07,010
+mengambil 128 dari setiap nilai dan kami mendapatkan
+
+170
+0:06:07,010 --> 0:06:08,570
+blok yang digeser seperti ini jadi ini adalah
+
+171
+0:06:08,570 --> 0:06:10,940
+gambar yang sama persis tapi ini  waktu sekarang
+
+172
+0:06:10,940 --> 0:06:12,979
+berpusat di sekitar 0 dan sekarang kita dapat menggunakan
+
+173
+0:06:12,979 --> 0:06:15,410
+ini dalam transformasi kosinus diskrit untuk
+
+174
+0:06:15,410 --> 0:06:17,360
+menghitung koefisien kita, kita menerapkan
+
+175
+0:06:17,360 --> 0:06:19,520
+itu sebenarnya transformasi kosinus diskrit
+
+176
+0:06:19,520 --> 0:06:21,890
+nomor 2 yang selalu menggunakan
+
+177
+0:06:21,890 --> 0:06:25,040
+jpg dan apa yang dilakukannya adalah menghitung
+
+178
+0:06:25,040 --> 0:06:27,050
+kontribusi dari masing-masing gelombang kosinus kami
+
+179
+0:06:27,050 --> 0:06:29,240
+yang ketika ditambahkan bersama-sama akan membuat
+
+180
+0:06:29,240 --> 0:06:31,310
+gambar ini tepat yang mana dari
+
+181
+0:06:31,310 --> 0:06:33,260
+blok-blok ini ketika dikalikan dengan
+
+182
+0:06:33,260 --> 0:06:34,820
+koefisiennya untuk memberi tahu kami berapa banyak dari masing-masing yang
+
+183
+0:06:34,820 --> 0:06:37,310
+kami gunakan akan ditambahkan bersama untuk membuat
+
+184
+0:06:37,310 --> 0:06:39,439
+gambar yang tepat ini sehingga mungkin sedikit
+
+185
+0:06:39,439 --> 0:06:42,019
+dari sedikit ini ya banyak itu ya
+
+186
+0:06:42,019 --> 0:06:43,759
+dan tidak satu pun dari ini persis dan
+
+187
+0:06:43,759 --> 0:06:45,919
+Anda akan menemukan bahwa semua ini akan
+
+188
+0:06:45,919 --> 0:06:47,360
+berdampak pada gambar hampir
+
+189
+0:06:47,360 --> 0:06:48,679
+pasti kecuali gambar benar-benar
+
+190
+0:06:48,679 --> 0:06:50,269
+datar salah satu hal yang baik tentang JPEG
+
+191
+0:06:50,269 --> 0:06:52,129
+apakah frekuensi rendah ini akan memiliki efek yang
+
+192
+0:06:52,129 --> 0:06:53,239
+jauh lebih besar dari
+
+193
+0:06:53,239 --> 0:06:55,399
+data frekuensi tinggi dan kami juga melihatnya
+
+194
+0:06:55,399 --> 0:06:57,860
+lebih baik jadi itulah cara kami mengompresi JPEG
+
+195
+0:06:57,860 --> 0:07:00,709
+sehingga kami menghitung dua koefisien DCT kami
+
+196
+0:07:00,709 --> 0:07:02,209
+dan itu memberi kami beberapa
+
+197
+0:07:02,209 --> 0:07:05,599
+nilai yang sedikit berubah-ubah antara minus 1024 dan
+
+198
+0:07:05,599 --> 0:07:07,849
+plus 1024  tapi itu bukan
+
+199
+0:07:07,849 --> 0:07:09,559
+masalah besar dan apa yang kita miliki masing-masing
+
+200
+0:07:09,559 --> 0:07:11,449
+mewakili berat atau
+
+201
+0:07:11,449 --> 0:07:13,459
+jumlah masing-masing gelombang kosinus kita jadi jika
+
+202
+0:07:13,459 --> 0:07:15,409
+kita meletakkan ini di sebelah sini kita dapat mengatakan bahwa
+
+203
+0:07:15,409 --> 0:07:18,110
+jika kita mengambil cosi ini  ne dan kalikan
+
+204
+0:07:18,110 --> 0:07:20,389
+dengan minus 370 dan tambahkan ke yang ini
+
+205
+0:07:20,389 --> 0:07:21,889
+dikalikan dengan dua puluh sembilan koma tujuh
+
+206
+0:07:21,889 --> 0:07:23,809
+dan seterusnya dan kami melakukannya untuk semuanya
+
+207
+0:07:23,809 --> 0:07:25,999
+jumlah yang ditambahkan akan menjadi gambar asli kami
+
+208
+0:07:25,999 --> 0:07:29,419
+kembali lagi biasanya koefisien kiri atas
+
+209
+0:07:29,419 --> 0:07:30,919
+ini jauh lebih besar dari
+
+210
+0:07:30,919 --> 0:07:32,300
+lain karena ini karena
+
+211
+0:07:32,300 --> 0:07:33,559
+datar dan sebenarnya datar dan bukan
+
+212
+0:07:33,559 --> 0:07:35,329
+gelombang kosinus yang mewakili intensitas umum
+
+213
+0:07:35,329 --> 0:07:37,369
+dari blok gambar tertentu
+
+214
+0:07:37,369 --> 0:07:38,989
+jadi ini disebut koefisien arus searah
+
+215
+0:07:38,989 --> 0:07:41,149
+atau koefisien DC semua yang
+
+216
+0:07:41,149 --> 0:07:42,459
+lain adalah koefisien AC arus bolak-balik
+
+217
+0:07:42,459 --> 0:07:45,439
+dalam praktiknya biasanya
+
+218
+0:07:45,439 --> 0:07:47,089
+Koefisien DC disimpan secara terpisah tetapi
+
+219
+0:07:47,089 --> 0:07:48,319
+kami Anda tahu kami tidak akan
+
+220
+0:07:48,319 --> 0:07:49,909
+membahasnya terlalu banyak. Aspek yang sangat penting
+
+221
+0:07:49,909 --> 0:07:51,469
+dari JPEG yang perlu Anda
+
+222
+0:07:51,469 --> 0:07:52,729
+pahami adalah bahwa koefisien
+
+223
+0:07:52,729 --> 0:07:55,219
+ini seringkali sangat sangat kecil dan yang
+
+224
+0:07:55,219 --> 0:07:56,990
+ini sangat sangat  besar dan apa yang memberitahu kita
+
+225
+0:07:56,990 --> 0:07:59,479
+adalah bahwa gelombang kosinus frekuensi tinggi
+
+226
+0:07:59,479 --> 0:08:01,279
+tidak benar-benar berkontribusi banyak pada
+
+227
+0:08:01,279 --> 0:08:03,289
+gambar misalnya yang satu ini adalah nol
+
+228
+0:08:03,289 --> 0:08:05,269
+yang berarti gelombang kosinus ini di sini
+
+229
+0:08:05,269 --> 0:08:07,039
+tidak berpengaruh pada gambar sama sekali
+
+230
+0:08:07,039 --> 0:08:08,809
+gambar pada dasarnya bukan kotak-kotak
+
+231
+0:08:08,809 --> 0:08:11,360
+dengan cara apa pun yang dibandingkan dengan
+
+232
+0:08:11,360 --> 0:08:13,069
+koefisien besar ini di sini juga sangat
+
+233
+0:08:13,069 --> 0:08:15,379
+kecil dan memiliki
+
+234
+0:08:15,379 --> 0:08:17,509
+efek yang sangat halus pada data piksel keluaran aktual
+
+235
+0:08:17,509 --> 0:08:19,309
+Maksud saya bobot ini sangat kecil  tetapi jika
+
+236
+0:08:19,309 --> 0:08:21,319
+Anda mengambilnya, gambarnya akan
+
+237
+0:08:21,319 --> 0:08:23,569
+hampir identik dan kita
+
+238
+0:08:23,569 --> 0:08:25,039
+bisa mengambilnya dan menghemat semua ruang itu
+
+239
+0:08:25,039 --> 0:08:27,469
+jadi begitulah cara kita melakukannya untuk langkah selanjutnya
+
+240
+0:08:27,469 --> 0:08:28,909
+setelah menghitung
+
+241
+0:08:28,909 --> 0:08:31,999
+koefisien transformasi kosinus diskrit kita pada dasarnya mencoba
+
+242
+0:08:31,999 --> 0:08:33,319
+dan menghapus yang tidak kita lakukan  't ingin kita
+
+243
+0:08:33,319 --> 0:08:35,539
+sebut proses menghapus
+
+244
+0:08:35,539 --> 0:08:38,240
+kuantisasi data frekuensi tinggi mudah
+
+245
+0:08:38,240 --> 0:08:39,199
+-mudahan akan lebih mudah jika saya menunjukkan
+
+246
+0:08:39,199 --> 0:08:41,419
+tabel kuantisasi ini adalah
+
+247
+0:08:41,419 --> 0:08:43,550
+tabel kuantisasi JPEG standar yang
+
+248
+0:08:43,550 --> 0:08:46,220
+mewakili kualitas lima puluh persen sehingga dalam standar JPEG
+
+249
+0:08:46,220 --> 0:08:48,470
+kompresor yang berbeda seperti
+
+250
+0:08:48,470 --> 0:08:49,880
+yang digunakan di Photoshop akan menggunakan
+
+251
+0:08:49,880 --> 0:08:50,830
+kuantisasi yang berbeda
+
+252
+0:08:50,830 --> 0:08:53,200
+tergantung pada apa yang mereka rasakan dan juga
+
+253
+0:08:53,200 --> 0:08:54,970
+tingkat kualitas apa yang Anda tetapkan dan apa yang
+
+254
+0:08:54,970 --> 0:08:58,630
+kami lakukan adalah kami membagi setiap o  salah satu koefisien kami
+
+255
+0:08:58,630 --> 0:09:00,510
+dengan
+
+256
+0:09:00,510 --> 0:09:02,980
+nilai kuantisasi yang sesuai dan kemudian bulatkan ke
+
+257
+0:09:02,980 --> 0:09:04,450
+bilangan bulat terdekat oke
+
+258
+0:09:04,450 --> 0:09:06,040
+dan Anda sudah bisa melihat tetapi yang
+
+259
+0:09:06,040 --> 0:09:08,110
+ini jauh lebih besar dari yang ini jadi yang
+
+260
+0:09:08,110 --> 0:09:09,430
+pada dasarnya terjadi adalah ini diskalakan
+
+261
+0:09:09,430 --> 0:09:11,410
+dengan jumlah yang sangat besar biasanya terlalu dekat dengan
+
+262
+0:09:11,410 --> 0:09:13,450
+nol dan kemudian  dihilangkan dengan disetel
+
+263
+0:09:13,450 --> 0:09:14,620
+ke nol ketika kita membulatkan ke
+
+264
+0:09:14,620 --> 0:09:18,610
+bilangan bulat terdekat jadi misalnya 370 dibagi 16
+
+265
+0:09:18,610 --> 0:09:22,570
+kira-kira 23 atau minus 23 dan
+
+266
+0:09:22,570 --> 0:09:25,240
+output terkuantisasi yang sebenarnya adalah ini dan Anda dapat melihat
+
+267
+0:09:25,240 --> 0:09:27,550
+tetapi hampir semuanya sekarang nol jadi
+
+268
+0:09:27,550 --> 0:09:29,260
+koefisien ini sekarang tidak  lagi memiliki efek
+
+269
+0:09:29,260 --> 0:09:30,700
+juga tidak yang ini atau yang ini satu-
+
+270
+0:09:30,700 --> 0:09:32,800
+satunya yang memiliki efek pada gambar kita
+
+271
+0:09:32,800 --> 0:09:36,310
+adalah 9 ini di sini dan pada dasarnya
+
+272
+0:09:36,310 --> 0:09:39,610
+argumen yang kita buat adalah bahwa
+
+273
+0:09:39,610 --> 0:09:42,130
+hanya dengan 9 ini kita bisa mendapatkan
+
+274
+0:09:42,130 --> 0:09:43,510
+kembali gambar yang sama persis  dia tidak akan
+
+275
+0:09:43,510 --> 0:09:44,950
+persis sama bahwa beberapa piksel
+
+276
+0:09:44,950 --> 0:09:46,690
+mungkin akan menjadi tingkat intensitas naik atau
+
+277
+0:09:46,690 --> 0:09:49,329
+turun tetapi ketika dilihat pada rentang gambar normal,
+
+278
+0:09:49,329 --> 0:09:51,160
+Anda tahu, katakanlah sebuah foto atau
+
+279
+0:09:51,160 --> 0:09:52,630
+pada monitor itu akan terlihat persis sama
+
+280
+0:09:52,630 --> 0:09:55,060
+dengan  kami jadi apa yang akhirnya kami lakukan ketika kami
+
+281
+0:09:55,060 --> 0:09:56,920
+ingin mengeluarkan informasi ini ke dalam
+
+282
+0:09:56,920 --> 0:09:59,290
+file kami adalah pada dasarnya kami mencantumkan semua ini dalam
+
+283
+0:09:59,290 --> 0:10:01,149
+garis panjang, kami kemudian menggunakan pengkodean Huffman
+
+284
+0:10:01,149 --> 0:10:03,550
+yang untuk Belfort
+
+285
+0:10:03,550 --> 0:10:05,920
+tercakup dalam video untuk lebih lanjut mengompres
+
+286
+0:10:05,920 --> 0:10:08,290
+data ini dengan cara itu  kami membuat serial ini
+
+287
+0:10:08,290 --> 0:10:10,390
+ke dalam file kami secara zigzag jadi
+
+288
+0:10:10,390 --> 0:10:13,300
+kami mulai dengan minus 23 lalu kami pergi ke minus
+
+289
+0:10:13,300 --> 0:10:16,570
+2 minus 21 jadi kami akan naik dan turun naik
+
+290
+0:10:16,570 --> 0:10:22,089
+dan turun 6 4 0 0 2 1 dan seterusnya dan yang
+
+291
+0:10:22,089 --> 0:10:23,829
+penting tentang ini  adalah dengan melakukan
+
+292
+0:10:23,829 --> 0:10:25,750
+ini kita akan mendapatkan daftar
+
+293
+0:10:25,750 --> 0:10:27,880
+nol besar semua berturut-turut dan itu sangat
+
+294
+0:10:27,880 --> 0:10:30,279
+mudah dikompresi oleh pengkodean Huffman jadi
+
+295
+0:10:30,279 --> 0:10:32,050
+kami mengambil tabel ini kami melakukan ini untuk setiap
+
+296
+0:10:32,050 --> 0:10:34,660
+8 kali 8 blok dalam gambar kami, kami melampiaskannya secara
+
+297
+0:10:34,660 --> 0:10:36,520
+bersambung  menjadi garis panjang dan
+
+298
+0:10:36,520 --> 0:10:38,110
+kami menggunakan pengkodean Huffman untuk
+
+299
+0:10:38,110 --> 0:10:39,730
+mengecilkannya dan itulah yang masuk ke
+
+300
+0:10:39,730 --> 0:10:42,520
+jpg kami dan dalam semua aspek lain dari JPEG,
+
+301
+0:10:42,520 --> 0:10:43,750
+semacam pertimbangan format kecil
+
+302
+0:10:43,750 --> 0:10:45,399
+itulah inti dari cara
+
+303
+0:10:45,399 --> 0:10:47,649
+kerja kompresi untuk mendekompresi
+
+304
+0:10:47,649 --> 0:10:49,720
+gambar, mari kita bayangkan itu  kami telah mengirimkan
+
+305
+0:10:49,720 --> 0:10:51,070
+jpg kami ke  seseorang dan mereka sedang memecahkan kode
+
+306
+0:10:51,070 --> 0:10:52,810
+mencoba membacanya apa yang harus kita lakukan
+
+307
+0:10:52,810 --> 0:10:54,310
+adalah kebalikan dari pendekatan ini
+
+308
+0:10:54,310 --> 0:10:57,760
+jadi kita mulai dengan mengalikan masing-masing
+
+309
+0:10:57,760 --> 0:11:00,490
+nilai ini dengan tabel kuantisasi kita jadi ini
+
+310
+0:11:00,490 --> 0:11:02,260
+adalah tabel kuantisasi yang sama yang
+
+311
+0:11:02,260 --> 0:11:03,910
+disimpan di dalam JPEG jadi kita  tahu yang
+
+312
+0:11:03,910 --> 0:11:04,750
+mana mereka Anda
+
+313
+0:11:04,750 --> 0:11:05,680
+karena jika Anda menggunakan yang berbeda
+
+314
+0:11:05,680 --> 0:11:06,760
+di jalan keluar Anda akan merusak
+
+315
+0:11:06,760 --> 0:11:08,320
+gambar Anda jadi kami mengalikan masing-masing
+
+316
+0:11:08,320 --> 0:11:10,900
+nilai ini dengan nilai spesifik dalam
+
+317
+0:11:10,900 --> 0:11:13,270
+tabel kuantisasi dan kami mendapatkan
+
+318
+0:11:13,270 --> 0:11:14,920
+koefisien dan Anda dapat melihatnya
+
+319
+0:11:14,920 --> 0:11:16,390
+karena  kebanyakan dari mereka adalah sia-sia kebanyakan dari
+
+320
+0:11:16,390 --> 0:11:18,100
+mereka di sisi lain juga tidak akan jadi
+
+321
+0:11:18,100 --> 0:11:20,350
+tidak satu pun dari ini akan berkontribusi pada
+
+322
+0:11:20,350 --> 0:11:22,390
+citra kita lagi kemudian sebaliknya kita menggunakan
+
+323
+0:11:22,390 --> 0:11:24,040
+transformasi cosinus diskrit nomor tiga
+
+324
+0:11:24,040 --> 0:11:27,100
+yang biasanya hanya disebut
+
+325
+0:11:27,100 --> 0:11:28,420
+invers transformasi kosinus diskrit
+
+326
+0:11:28,420 --> 0:11:30,250
+karena itu  umumnya digunakan untuk membalikkan
+
+327
+0:11:30,250 --> 0:11:31,600
+apa yang kami lakukan untuk
+
+328
+0:11:31,600 --> 0:11:33,370
+transformasi dua kosinus diskrit dan itu memberi kami
+
+329
+0:11:33,370 --> 0:11:35,530
+blok yang digeser kembali lagi yang tentu saja
+
+330
+0:11:35,530 --> 0:11:38,380
+kami kemudian menambahkan 198 ke setiap nilai dan kami
+
+331
+0:11:38,380 --> 0:11:40,600
+memiliki blok output kami dan
+
+332
+0:11:40,600 --> 0:11:42,670
+begitulah kompresi JPEG lengkap
+
+333
+0:11:42,670 --> 0:11:44,950
+menggunakan transformasi cosinus diskrit jika
+
+334
+0:11:44,950 --> 0:11:46,720
+kita melihat blok input dan blok output kita
+
+335
+0:11:46,720 --> 0:11:50,050
+bersebelahan sehingga
+
+336
+0:11:50,050 --> 0:11:52,090
+kita dapat melihat bahwa ada beberapa perubahan
+
+337
+0:11:52,090 --> 0:11:53,380
+dalam nilai-nilai ini tetapi sebenarnya cukup
+
+338
+0:11:53,380 --> 0:11:55,120
+dekat ini adalah  semacam perubahan
+
+339
+0:11:55,120 --> 0:11:56,530
+Krista naik beberapa tingkat intensitas
+
+340
+0:11:56,530 --> 0:11:58,150
+ini sama ini telah turun untuk
+
+341
+0:11:58,150 --> 0:12:00,790
+tetapi ini adalah untuk 255 tidak ada yang
+
+342
+0:12:00,790 --> 0:12:02,980
+akan melihat perbedaan semacam itu dan
+
+343
+0:12:02,980 --> 0:12:05,170
+ini adalah 50% sehingga Anda dapat melakukan jauh lebih sedikit
+
+344
+0:12:05,170 --> 0:12:07,900
+daripada  ini jika Anda memiliki kualitas JPEG yang
+
+345
+0:12:07,900 --> 0:12:09,820
+menetapkan nilai yang lebih tinggi dan lebih kecil di
+
+346
+0:12:09,820 --> 0:12:11,890
+tabel kuantisasi Anda jadi dalam standar JPEG
+
+347
+0:12:11,890 --> 0:12:13,960
+ini adalah tabel kuantisasi yang
+
+348
+0:12:13,960 --> 0:12:15,490
+mereka berikan ini sebenarnya
+
+349
+0:12:15,490 --> 0:12:17,920
+tabel kuantisasi untuk luminositas bukan
+
+350
+0:12:17,920 --> 0:12:19,210
+untuk chrominance mereka memiliki yang
+
+351
+0:12:19,210 --> 0:12:20,950
+berbeda untuk kromatid yang jauh  memiliki
+
+352
+0:12:20,950 --> 0:12:23,500
+hukuman yang jauh lebih tinggi pada frekuensi tinggi
+
+353
+0:12:23,500 --> 0:12:25,840
+karena jika data frekuensi tinggi
+
+354
+0:12:25,840 --> 0:12:27,490
+tidak terlalu penting dalam warna abu-abu, itu bahkan
+
+355
+0:12:27,490 --> 0:12:29,350
+kurang penting mengingat kita tidak melihat
+
+356
+0:12:29,350 --> 0:12:31,060
+warna dengan baik satu hal yang dapat Anda lakukan  untuk
+
+357
+0:12:31,060 --> 0:12:33,820
+segera meningkatkan kualitas
+
+358
+0:12:33,820 --> 0:12:35,860
+hari kompresi JPEG oval adalah mempertahankan
+
+359
+0:12:35,860 --> 0:12:38,080
+gambar sebanyak mungkin adalah memiliki semua
+
+360
+0:12:38,080 --> 0:12:39,790
+nilai ini dalam tabel kuantisasi jika
+
+361
+0:12:39,790 --> 0:12:42,610
+kita membagi semua nilai ini dengan 2 maka
+
+362
+0:12:42,610 --> 0:12:43,720
+pada dasarnya semuanya diskalakan
+
+363
+0:12:43,720 --> 0:12:45,730
+dengan mengurangi semua frekuensi tinggi ini
+
+364
+0:12:45,730 --> 0:12:47,320
+koefisien tidak harus
+
+365
+0:12:47,320 --> 0:12:48,820
+dibulatkan ke 0 mereka mungkin dibulatkan menjadi
+
+366
+0:12:48,820 --> 0:12:50,110
+satu atau dua dan mereka masih akan memiliki
+
+367
+0:12:50,110 --> 0:12:51,370
+sedikit efek di sisi lain
+
+368
+0:12:51,370 --> 0:12:53,110
+jika kami meningkatkan nilai dalam
+
+369
+0:12:53,110 --> 0:12:54,700
+tabel kuantisasi ini, kami pada dasarnya
+
+370
+0:12:54,700 --> 0:12
+mengoperasikan JPEG yang lebih rendah  pengaturan kualitas
+
+371
+0:12 --> 0:12:59,770
+ini adalah pendekatan yang
+
+372
+0:12:59,770 --> 0:13:02,740
+digunakan standar JPEG dalam perangkat lunak lain mereka mungkin
+
+373
+0:13:02,740 --> 0:13:05,110
+memiliki tabel kuantisasi mereka sendiri
+
+374
+0:13:05,110 --> 0:13:07,030
+sebenarnya sejauh yang saya tahu Photoshop Saya pikir
+
+375
+0:13:07,030 --> 0:13:09,010
+mereka memiliki 12 pengaturan kualitas dan mereka
+
+376
+0:13:09,010 --> 0:13:10,330
+memiliki tabel kuantisasi yang berbeda untuk
+
+377
+0:13:10,330 --> 0:13:11,920
+sebagian besar pengaturan dan
+
+378
+0:13:11,920 --> 0:13:14,110
+pengambilan sampel yang berbeda  frekuensi begitu banyak
+
+379
+0:13:14,110 --> 0:13:15,070
+hal berbeda yang mereka putuskan
+
+380
+0:13:15,070 --> 0:13:17,860
+untuk dijadikan bilah skala yang cukup bagus tetapi
+
+381
+0:13:17,860 --> 0:13:20,350
+Berita pengguna dan semua pengaturan itu kemudian
+
+382
+0:13:20,350 --> 0:13:22,149
+disimpan di h  pemecah file ya
+
+383
+0:13:22,149 --> 0:13:23,680
+antara pihak-pihak ini Anda akan mendapatkan blok kecil
+
+384
+0:13:23,680 --> 0:13:24,910
+yang mengatakan ini adalah
+
+385
+0:13:24,910 --> 0:13:26,620
+tabel kuantisasi dan tabel pengkodean Huffman
+
+386
+0:13:26,620 --> 0:13:29,140
+yang kami gunakan sehingga semua orang dapat
+
+387
+0:13:29,140 --> 0:13:31,209
+membalikkan proses itu jika Anda tidak tahu
+
+388
+0:13:31,209 --> 0:13:33,010
+apa tabel kuantisasi itu Anda
+
+389
+0:13:33,010 --> 0:13:34,540
+mungkin  mengalikan
+
+390
+0:13:34,540 --> 0:13:36,310
+koefisien yang dikodekan dengan nilai yang berbeda dan mendapatkan
+
+391
+0:13:36,310 --> 0:13:37,510
+sesuatu yang sama sekali berbeda
+
+392
+0:13:37,510 --> 0:13:37,839
+pada akhirnya
+
+393
+0:13:37,839 --> 0:13:39,579
+apa yang akan menjadi warna yang berbeda itu
+
+394
+0:13:39,579 --> 0:13:40,600
+bisa menjadi gambar yang sama sekali berbeda
+
+395
+0:13:40,600 --> 0:13:42,399
+Anda telah dibagi dengan angka-angka tertentu Anda
+
+396
+0:13:42,399 --> 0:13:43,810
+perlu mengalikan lagi dengan angka-angka itu
+
+397
+0:13:43,810 --> 0:13:45,250
+untuk membalikkan proses sebaliknya  Anda
+
+398
+0:13:45,250 --> 0:13:47,110
+mungkin mendapatkan omong kosong kembali jadi
+
+399
+0:13:47,110 --> 0:13:49,269
+kembali ke diagram asli yang saya gambar
+
+400
+0:13:49,269 --> 0:13:52,329
+ini adalah semacam gambaran umum JPEG kita
+
+401
+0:13:52,329 --> 0:13:54,010
+mulai dengan gambar kita, kita telah mengubah
+
+402
+0:13:54,010 --> 0:13:56,920
+warna kita dan kemudian DCT kita pada dasarnya
+
+403
+0:13:56,920 --> 0:13:58,690
+menghilangkan informasi frekuensi tinggi
+
+404
+0:13:58,690 --> 0:14:00,730
+dalam gambar kita jadi jika  kami memiliki gambar di
+
+405
+0:14:00,730 --> 0:14:02,070
+mana banyak informasi
+
+406
+0:14:02,070 --> 0:14:04,329
+frekuensi tinggi terjadi perubahan piksel frekuensi tinggi
+
+407
+0:14:04,329 --> 0:14:06,160
+yang mungkin dikompresi secara signifikan
+
+408
+0:14:06,160 --> 0:14:07,600
+tetapi mungkin  juga terlihat lebih buruk
+
+409
+0:14:07,600 --> 0:14:10,209
+baik-baik saja tetapi jika tetapi di sebagian besar foto
+
+410
+0:14:10,209 --> 0:14:12,579
+tentu saja di atas blok gambar 8 kali 8 Anda
+
+411
+0:14:12,579 --> 0:14:13,779
+tidak akan menemukan informasi frekuensi yang jauh lebih
+
+412
+0:14:13,779 --> 0:14:15,760
+tinggi dan jadi kami dapat
+
+413
+0:14:15,760 --> 0:14:17,800
+dengan aman menyingkirkan banyak darinya, kami
+
+414
+0:14:17,800 --> 0:14:19,839
+menghitung koefisien DCT kami, kami
+
+415
+0:14:19,839 --> 0:14:21,220
+mengkuantisasinya  untuk menghapus yang frekuensi tinggi
+
+416
+0:14:21,220 --> 0:14:23,079
+dan kemudian kami menggunakan
+
+417
+0:14:23,079 --> 0:14:25,149
+pengkodean Huffman untuk mengompresnya menjadi
+
+418
+0:14:25,149 --> 0:14:27,100
+aliran kecil yang dapat dikelola yang kami masukkan ke
+
+419
+0:14:27,100 --> 0:14:28,779
+dalam file JPEG kami dan kemudian kebalikan dari
+
+420
+0:14:28,779 --> 0:14:31,240
+proses itu adalah kami mendekode
+
+421
+0:14:31,240 --> 0:14:33,640
+tabel Huffman pengkodean
+
+422
+0:14:33,640 --> 0:14:37,149
+Huffman kami tidak dapat menghitung semua nilai kami  di
+
+423
+0:14:37,149 --> 0:14:39,190
+tabel kuantisasi dan kemudian kami menerapkan
+
+424
+0:14:39,190 --> 0:14:41,800
+dct terbalik untuk mendapatkan blok kami kembali dan
+
+425
+0:14:41,800 --> 0:14:43,690
+kami melakukan ini untuk setiap gambar 8x8 kecil
+
+426
+0:14:43,690 --> 0:14:46,540
+di gambar kami jika gambar kami bukan
+
+427
+0:14:46,540 --> 0:14:49,180
+kelipatan 8 maka kami harus menambahkan beberapa
+
+428
+0:14:49,180 --> 0:14:50,980
+byte padding di  akhir untuk membuatnya bekerja
+
+429
+0:14:50,980 --> 0:14:52,660
+biasanya kita bisa menduplikasi yang
+
+430
+0:14:52,660 --> 0:14:54,220
+dekat tepi jadi tapi ini memiliki
+
+431
+0:14:54,220 --> 0:14:56,709
+koheren ini atau Anda mungkin melakukan sesuatu yang
+
+432
+0:14:56,709 --> 0:15:00,970
+sedikit lebih cerdas teks melanggar
+
+433
+0:15:00,970 --> 0:15:03,010
+asumsi kami bahwa informasi frekuensi tinggi
+
+434
+0:15:03,010 --> 0:15:04,570
+on tidak berkontribusi banyak
+
+435
+0:15:04,570 --> 0:15:06,370
+pada gambar jadi ini adalah gambar 8 kali 8 kecil
+
+436
+0:15:06,370 --> 0:15:08,680
+ini dalam teks terkirim ini adalah
+
+437
+0:15:08,680 --> 0:15:12,810
+file komputer V lihat itu kurung segitiga kecil
+

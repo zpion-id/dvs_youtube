@@ -1,0 +1,684 @@
+1
+0:00:00,160 --> 0:00:01,920
+a few years ago i made the world's first
+
+2
+0:00:01,920 --> 0:00:04,560
+homemade silicon chip in my garage fab i
+
+3
+0:00:04,560 --> 0:00:06,399
+just made version 2 which has 100
+
+4
+0:00:06,399 --> 0:00:08,400
+transistors on it and they're smaller
+
+5
+0:00:08,400 --> 0:00:10,639
+better and faster than the old one
+
+6
+0:00:10,639 --> 0:00:12,480
+i made an array of 12 of these so that's
+
+7
+0:00:12,480 --> 0:00:15,040
+1 200 transistors on the same piece of
+
+8
+0:00:15,040 --> 0:00:17,440
+silicon intel's first processor had only
+
+9
+0:00:17,440 --> 0:00:19,279
+2 000 transistors so we're already
+
+10
+0:00:19,279 --> 0:00:21,119
+approaching a decent level of complexity
+
+11
+0:00:21,119 --> 0:00:22,480
+and i should be able to make some really
+
+12
+0:00:22,480 --> 0:00:24,240
+interesting circuits out of this soon i
+
+13
+0:00:24,240 --> 0:00:25,840
+did some cool projects with my first
+
+14
+0:00:25,840 --> 0:00:28,240
+chip like a led flasher and a guitar
+
+15
+0:00:28,240 --> 0:00:30,240
+distortion pedal they worked really well
+
+16
+0:00:30,240 --> 0:00:31,760
+but needed one or two nine volt
+
+17
+0:00:31,760 --> 0:00:33,280
+batteries attached to them because the
+
+18
+0:00:33,280 --> 0:00:35,040
+threshold voltage of the old mosfets
+
+19
+0:00:35,040 --> 0:00:36,239
+were really high
+
+20
+0:00:36,239 --> 0:00:38,399
+this new chip is made on a polysilicon
+
+21
+0:00:38,399 --> 0:00:40,800
+gate process all these details are on
+
+22
+0:00:40,800 --> 0:00:42,800
+the write up on my blog but the effect
+
+23
+0:00:42,800 --> 0:00:44,640
+of that is that they work well at very
+
+24
+0:00:44,640 --> 0:00:45,920
+low voltages they have a threshold
+
+25
+0:00:45,920 --> 0:00:48,239
+voltage of only about 1 volt and that
+
+26
+0:00:48,239 --> 0:00:51,360
+means that i can power them off of 3.3
+
+27
+0:00:51,360 --> 0:00:53,520
+and 5 volt logic levels they draw less
+
+28
+0:00:53,520 --> 0:00:55,199
+power and i should be able to pack more
+
+29
+0:00:55,199 --> 0:00:58,160
+of them into a smaller die area for
+
+30
+0:00:58,160 --> 0:00:59,680
+simple chips like this the process
+
+31
+0:00:59,680 --> 0:01:01,760
+actually starts in photoshop there's
+
+32
+0:01:01,760 --> 0:01:03,600
+only four layers to design and it's
+
+33
+0:01:03,600 --> 0:01:05,439
+easier to use this than to use some more
+
+34
+0:01:05,439 --> 0:01:07,119
+complicated software
+
+35
+0:01:07,119 --> 0:01:08,960
+i start with a lot of 200 millimeter
+
+36
+0:01:08,960 --> 0:01:10,400
+wafers that have some pretty specific
+
+37
+0:01:10,400 --> 0:01:12,240
+starting parameters they're way too big
+
+38
+0:01:12,240 --> 0:01:14,159
+so i dice them up using a diamond scribe
+
+39
+0:01:14,159 --> 0:01:16,400
+into smaller bits i normally do about
+
+40
+0:01:16,400 --> 0:01:17,920
+half inch squares like this but i can
+
+41
+0:01:17,920 --> 0:01:19,759
+process larger things up to about two
+
+42
+0:01:19,759 --> 0:01:21,439
+inch wafers
+
+43
+0:01:21,439 --> 0:01:23,280
+the first layer to define is the doped
+
+44
+0:01:23,280 --> 0:01:25,119
+layer that makes the source and drains
+
+45
+0:01:25,119 --> 0:01:27,119
+the mosfets i put it on this homemade
+
+46
+0:01:27,119 --> 0:01:29,280
+spin coater and then i deposit
+
+47
+0:01:29,280 --> 0:01:31,280
+photoresist on top of it you only need
+
+48
+0:01:31,280 --> 0:01:33,439
+about 100 microliters or so to cover a
+
+49
+0:01:33,439 --> 0:01:35,840
+small wafer like this and we spin it at
+
+50
+0:01:35,840 --> 0:01:39,119
+4000 rpm for 30 seconds
+
+51
+0:01:39,119 --> 0:01:40,720
+after all the excess photoresist has
+
+52
+0:01:40,720 --> 0:01:42,720
+been spun off it's dried on a hot plate
+
+53
+0:01:42,720 --> 0:01:44,960
+at about 95 degrees c for one minute
+
+54
+0:01:44,960 --> 0:01:46,799
+this drives off the rest of the solvents
+
+55
+0:01:46,799 --> 0:01:49,439
+and leaves us with a solid film
+
+56
+0:01:49,439 --> 0:01:51,200
+the result is a beautiful looking and
+
+57
+0:01:51,200 --> 0:01:55,759
+uniform covering of the whole wafer
+
+58
+0:01:55,759 --> 0:01:57,840
+then it's off to the homebuilt maskless
+
+59
+0:01:57,840 --> 0:01:59,920
+photolithography stepper for exposure
+
+60
+0:01:59,920 --> 0:02:01,920
+the basic idea is that we load up an
+
+61
+0:02:01,920 --> 0:02:03,360
+image on this laptop that we want to
+
+62
+0:02:03,360 --> 0:02:05,200
+project onto the chip then there's a
+
+63
+0:02:05,200 --> 0:02:07,200
+standard dlp projector and some optics
+
+64
+0:02:07,200 --> 0:02:09,039
+that shoot that down and reduce it onto
+
+65
+0:02:09,039 --> 0:02:10,800
+the wafer i have a whole video on this
+
+66
+0:02:10,800 --> 0:02:13,280
+tool so i recommend checking that out in
+
+67
+0:02:13,280 --> 0:02:14,879
+the center you see a little blue dot
+
+68
+0:02:14,879 --> 0:02:16,959
+that's the entire exposure field it
+
+69
+0:02:16,959 --> 0:02:19,200
+lasts about nine seconds then the blue
+
+70
+0:02:19,200 --> 0:02:20,959
+goes away at the end of the exposure we
+
+71
+0:02:20,959 --> 0:02:22,800
+can step the wafer to another location
+
+72
+0:02:22,800 --> 0:02:25,440
+and expose that part too
+
+73
+0:02:25,440 --> 0:02:27,040
+just like processing filament a dark
+
+74
+0:02:27,040 --> 0:02:29,200
+room the next step is development i put
+
+75
+0:02:29,200 --> 0:02:30,720
+it in a couple percent potassium
+
+76
+0:02:30,720 --> 0:02:32,560
+hydroxide solution for about a minute
+
+77
+0:02:32,560 --> 0:02:34,080
+and this etches away the parts of the
+
+78
+0:02:34,080 --> 0:02:35,840
+photoresist that were exposed because
+
+79
+0:02:35,840 --> 0:02:40,959
+it's a positive photoresist
+
+80
+0:02:40,959 --> 0:02:42,319
+i wash it with water to get rid of the
+
+81
+0:02:42,319 --> 0:02:44,160
+residual developer and then we're ready
+
+82
+0:02:44,160 --> 0:02
+to do the next step i can put under a
+
+83
+0:02 --> 0:02:47,599
+microscope to inspect it and make sure
+
+84
+0:02:47,599 --> 0:02:49,440
+everything worked out well if it didn't
+
+85
+0:02:49,440 --> 0:02:50,800
+you can always just strip off the
+
+86
+0:02:50,800 --> 0:02:52,640
+photoresist layer and try again with
+
+87
+0:02:52,640 --> 0:02:53,920
+maybe a different exposure or
+
+88
+0:02:53,920 --> 0:02:56,080
+development time
+
+89
+0:02:56,080 --> 0:02:57,280
+now the image is formed in the
+
+90
+0:02:57,280 --> 0:02:59,280
+photoresist i transfer that into the
+
+91
+0:02:59,280 --> 0:03:01,680
+underlying polysilicon layer using an
+
+92
+0:03:01,680 --> 0:03:03,519
+etchant once it's etched we don't need
+
+93
+0:03:03,519 --> 0:03:05,280
+the photoresist mask layer anymore so
+
+94
+0:03:05,280 --> 0:03:12,400
+that can be stripped off using acetone
+
+95
+0:03:12,400 --> 0:03:14,720
+the wafer is then cleaned and dried and
+
+96
+0:03:14,720 --> 0:03:16,959
+we spin on a dopant this is a
+
+97
+0:03:16,959 --> 0:03:19,200
+phosphorous solution that's suspended in
+
+98
+0:03:19,200 --> 0:03:22,080
+a liquid silicon dioxide this is spun on
+
+99
+0:03:22,080 --> 0:03:23,519
+just like the photoresist and then we
+
+100
+0:03:23,519 --> 0:03:25,599
+bake it at very high temperature over
+
+101
+0:03:25,599 --> 0:03:28,959
+1000 degrees c for about 45 minutes this
+
+102
+0:03:28,959 --> 0:03:31,040
+drives in the phosphorus atoms into the
+
+103
+0:03:31,040 --> 0:03:32,640
+little wells that we just defined using
+
+104
+0:03:32,640 --> 0:03:35,440
+lithography and that basically forms the
+
+105
+0:03:35,440 --> 0:03:37,920
+source and drains of the mosfets i have
+
+106
+0:03:37,920 --> 0:03:38,959
+to push it into the center of the
+
+107
+0:03:38,959 --> 0:03:41,280
+furnace using this quartz rod and then
+
+108
+0:03:41,280 --> 0:03:42,640
+at the end of the process we pulled out
+
+109
+0:03:42,640 --> 0:03:44,480
+the other side the process of spin
+
+110
+0:03:44,480 --> 0:03:46,640
+coating photoresist baking it exposing
+
+111
+0:03:46,640 --> 0:03:48,400
+it and developing it is then repeated
+
+112
+0:03:48,400 --> 0:03:50,640
+exactly twice once for the gate layer
+
+113
+0:03:50,640 --> 0:03:52,959
+and then again for the contact the gate
+
+114
+0:03:52,959 --> 0:03:54,959
+is etched just like we did before with
+
+115
+0:03:54,959 --> 0:03:57,200
+the polysilicon etchant and the contact
+
+116
+0:03:57,200 --> 0:03:59,599
+layer has to be etched as well because
+
+117
+0:03:59,599 --> 0:04:01,200
+now after the high temperature step
+
+118
+0:04:01,200 --> 0:04:02,959
+there's a layer of silicon dioxide
+
+119
+0:04:02,959 --> 0:04:04,799
+insulating everything so after the
+
+120
+0:04:04,799 --> 0:04:06,959
+contact mask is formed you have to use
+
+121
+0:04:06,959 --> 0:04:09,360
+something like hydrofluoric acid or
+
+122
+0:04:09,360 --> 0:04:10,720
+chf3
+
+123
+0:04:10,720 --> 0:04:12,879
+reactive ion etching to get rid of that
+
+124
+0:04:12,879 --> 0:04:14,319
+insulator so we can make good electrical
+
+125
+0:04:14,319 --> 0:04:15,439
+contact
+
+126
+0:04:15,439 --> 0:04:17,040
+then we stick the wafer into a vacuum
+
+127
+0:04:17,040 --> 0:04:19,040
+chamber to either sputter or thermally
+
+128
+0:04:19,040 --> 0:04:21,600
+evaporate metal i'm evaporating aluminum
+
+129
+0:04:21,600 --> 0:04:24,240
+a thick layer of about a micron or so
+
+130
+0:04:24,240 --> 0:04:25,440
+and then we do the whole
+
+131
+0:04:25,440 --> 0:04:27,840
+photolithography process again of spin
+
+132
+0:04:27,840 --> 0:04:30,240
+coating and exposing and developing to
+
+133
+0:04:30,240 --> 0:04:32,240
+define that metal layer
+
+134
+0:04:32,240 --> 0:04:34,560
+once that's done stick the wafer into a
+
+135
+0:04:34,560 --> 0:04:36,800
+warm phosphoric acid bath that etches
+
+136
+0:04:36,800 --> 0:04:39,120
+off the residual aluminum and finally
+
+137
+0:04:39,120 --> 0:04:40,560
+the chip is done
+
+138
+0:04:40,560 --> 0:04
+at this point i'll inspect the chip
+
+139
+0:04 --> 0:04:43,520
+pretty thoroughly and take a lot of
+
+140
+0:04:43,520 --> 0:04:45,120
+close-up pictures to measure parameters
+
+141
+0:04:45,120 --> 0:04:47,199
+like gate length and width and layer
+
+142
+0:04:47,199 --> 0:04:49,280
+thicknesses if i do a cross-section i
+
+143
+0:04:49,280 --> 0:04:50,800
+can put it on the probe station which
+
+144
+0:04:50,800 --> 0:04:52,720
+has a bunch of really small tungsten
+
+145
+0:04:52,720 --> 0:04:54,800
+needles and allow me to make connections
+
+146
+0:04:54,800 --> 0:04:56,800
+directly to the transistors it's very
+
+147
+0:04:56,800 --> 0:04:58,880
+finicky and these transistors are so
+
+148
+0:04:58,880 --> 0:05:01,280
+small that it's not actually that
+
+149
+0:05:01,280 --> 0:05:03,680
+trivial to make contact to them but
+
+150
+0:05:03,680 --> 0:05:06,080
+anyway i boot up all this test equipment
+
+151
+0:05:06,080 --> 0:05:08,720
+that allows me to characterize them i do
+
+152
+0:05:08,720 --> 0:05:10,479
+a little bit of programming to define
+
+153
+0:05:10,479 --> 0:05:12,880
+the kind of tests i want to do and then
+
+154
+0:05:12,880 --> 0:05:15,120
+hopefully we're greeted with this great
+
+155
+0:05:15,120 --> 0:05:17,440
+curve so this is the
+
+156
+0:05:17,440 --> 0:05:20,160
+id versus vds curve of an n channel
+
+157
+0:05:20,160 --> 0:05:22,720
+mosfet here's an ideal one
+
+158
+0:05:22,720 --> 0:05:24,639
+taken off of the internet and then
+
+159
+0:05:24,639 --> 0:05
+here's the one that i'm getting from my
+
+160
+0:05 --> 0:05:28,639
+fets and they look great
+
+161
+0:05:28,639 --> 0:05:29,840
+i hope you found that interesting and
+
+162
+0:05:29,840 --> 0:05:31,120
+enjoyed learning about my second
+
+163
+0:05:31,120 --> 0:05:32,800
+integrated circuit i got a bunch of
+
+164
+0:05:32,800 --> 0:05:34,400
+requests to set up a patreon or
+
+165
+0:05:34,400 --> 0:05:35,919
+something like that i'm not sure if
+
+166
+0:05:35,919 --> 0:05:37,520
+that's the best way to do it but i'll
+
+167
+0:05:37,520 --> 0:05:39,280
+put a link in the description if you
+
+168
+0:05:39,280 --> 0:05:40,960
+want to support more homebrew
+
+169
+0:05:40,960 --> 0:05:42,800
+semiconductor fabrication experiments
+
+170
+0:05:42,800 --> 0:05:43,840
+like this
+
+171
+0:05:43,840 --> 0:05:47,160
+thanks for watching
+

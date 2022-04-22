@@ -1,0 +1,572 @@
+1
+0:00:04,220 --> 0:00:06,750
+sebelumnya kita berbicara tentang bagaimana
+
+2
+0:00:06,750 --> 0:00:08,460
+muatan listrik dapat menumpuk di permukaan dan
+
+3
+0:00:08,460 --> 0:00:10,019
+menciptakan sesuatu yang dikenal sebagai
+
+4
+0:00:10,019 --> 0:00:12,750
+listrik statis di episode ini mari kita bicara
+
+5
+0:00:12,750 --> 0:00:14,250
+tentang apa yang terjadi ketika muatan listrik ini
+
+6
+0:00:14,250 --> 0:00:16,440
+terus bergerak dalam proses yang
+
+7
+0:00:16,440 --> 0:00:18,869
+dikenal sebagai listrik arus, sebagian besar
+
+8
+0:00:18,869 --> 0:00:20,369
+barang elektronik mulai dari
+
+9
+0:00:20,369 --> 0:00:22,619
+kulkas hingga ponsel cerdas Anda membutuhkan
+
+10
+0:00:22,619 --> 0:00:25,230
+listrik saat ini untuk beroperasi mari kita
+
+11
+0:00:25,230 --> 0:00:26,939
+asumsikan bahwa kita memiliki kawat tembaga yang
+
+12
+0:00:26,939 --> 0:00:29,189
+diisi dengan atom tembaga tembaga adalah salah
+
+13
+0:00:29,189 --> 0:00:30,689
+satu elemen yang hanya memiliki satu
+
+14
+0:00:30,689 --> 0:00:33,030
+elektron di kulit terluarnya yang
+
+15
+0:00:33,030 --> 0:00:35,010
+berarti bahwa hanya dengan sedikit
+
+16
+0:00:35,010 --> 0:00:37,200
+energi elektron dapat dengan mudah dikeluarkan jika
+
+17
+0:00:37,200 --> 0:00:39,510
+kita mendorong  elektron bebas ke dalam
+
+18
+0:00:39,510 --> 0:00:41,610
+kawat tembaga akhirnya akan menemukan atom baru
+
+19
+0:00:41,610 --> 0:00:43,800
+untuk menempel pada muatan negatif
+
+20
+0:00:43,800 --> 0:00:45,390
+elektron itu akan mengeluarkan
+
+21
+0:00:45,390 --> 0:00:47,850
+elektron lain dari kulit terluar yang
+
+22
+0:00:47,850 --> 0:00:49,980
+kemudian akan pindah ke atom berikutnya dan seterusnya
+
+23
+0:00:49,980 --> 0:00:52,649
+dan seterusnya rantai elektron yang bergerak ini
+
+24
+0:00:52,649 --> 0:00:55,110
+menciptakan aliran yang dikenal sebagai arus listrik,
+
+25
+0:00:55,110 --> 0:00:57,629
+beberapa elemen seperti tembaga aluminium dan
+
+26
+0:00:57,629 --> 0:00:59,879
+emas dapat memindahkan elektro  ns mudah dan
+
+27
+0:00:59,879 --> 0:01:02,550
+dikenal sebagai konduktor kita dapat melihat
+
+28
+0:01:02,550 --> 0:01:05,070
+muatan bergerak dengan cara lain
+
+29
+0:01:05,070 --> 0:01:06,960
+katakanlah tabung ini adalah kawat konduktif dan
+
+30
+0:01:06,960 --> 0:01:08,729
+bola baja adalah muatan listrik negatif
+
+31
+0:01:08,729 --> 0:01:11,070
+elektron dalam hal ini kita mungkin
+
+32
+0:01:11,070 --> 0:01:13,470
+berpikir bahwa satu partikel bermuatan perlu
+
+33
+0:01:13,470 --> 0:01:15,330
+bergerak sepenuhnya melalui  konduktor untuk
+
+34
+0:01:15,330 --> 0:01:17,490
+membuat aliran tapi itu tidak benar
+
+35
+0:01:17,490 --> 0:01:20,040
+-benar terjadi saat kita mendorong bola di salah satu
+
+36
+0:01:20,040 --> 0:01:22,320
+ujung gaya menyebabkan semua bola bergerak
+
+37
+0:01:22,320 --> 0:01:24,659
+dan satu muncul di ujung yang lain karena Anda
+
+38
+0:01:24,659 --> 0:01:27,150
+dapat melihat satu elektron bahkan jika tidak
+
+39
+0:01:27,150 --> 0:01:29,189
+bergerak terlalu jauh dapat  memaksa semua
+
+40
+0:01:29,189 --> 0:01:31,950
+elektron lain untuk bergerak menciptakan aliran apa yang
+
+41
+0:01:31,950 --> 0:01:33,840
+baru saja kami tunjukkan adalah arus listrik
+
+42
+0:01:33,840 --> 0:01:35,939
+yang merupakan aliran muatan listrik di
+
+43
+0:01:35,939 --> 0:01:38,070
+sebagian besar rangkaian ini dilakukan dengan
+
+44
+0:01:38,070 --> 0:01:40,409
+memindahkan elektron Satuan untuk mengukur
+
+45
+0:01:40,409 --> 0:01:42,810
+arus adalah ampere yang sering
+
+46
+0:01:42,810 --> 0:01:44,640
+disingkat sebagai amp dan ditulis dengan
+
+47
+0:01:44,640 --> 0:01:47,790
+modal Satu ampere didefinisikan sebagai satu
+
+48
+0:01:47,790 --> 0:01:49,920
+Coulomb muatan yang bergerak melewati satu titik
+
+49
+0:01:49,920 --> 0:01:52,619
+per detik. Mari kita lihat
+
+50
+0:01:52,619 --> 0:01:54,990
+penampang kawat yang dialiri arus listrik
+
+51
+0:01:54,990 --> 0:01:58,020
+jika diperlukan waktu tiga detik untuk  6 coulomb
+
+52
+0:01:58,020 --> 0:01:59,130
+muatan untuk bergerak melalui
+
+53
+0:01:59,130 --> 0:02:01,799
+penampang itu maka kita katakan bahwa dua
+
+54
+0:02:01,799 --> 0:02:03,079
+amp bergerak melalui kawat itu
+
+55
+0:02:03,079 --> 0:02:05,490
+sayangnya arus listrik tidak
+
+56
+0:02:05,490 --> 0:02:07,590
+hanya mengalir secara ajaib melalui kabel itu
+
+57
+0:02:07,590 --> 0:02:10,890
+perlu sedikit bantuan jika dibiarkan saja
+
+58
+0:02:10,890 --> 0:02:12,740
+elektron dalam kawat tidak akan bergerak
+
+59
+0:02:12,740 --> 0:02:14,810
+kita perlu memberi mereka sedikit dorongan untuk melakukan
+
+60
+0:02:14,810 --> 0:02:16,790
+itu kita akan menggunakan sumber tegangan seperti
+
+61
+0:02:16,790 --> 0:02:18,920
+baterai di baterai ada penumpukan
+
+62
+0:02:18,920 --> 0:02:20,900
+muatan negatif di satu sisi dalam
+
+63
+0:02:20,900 --> 0:02:23,300
+bentuk kelebihan elektron sisi lain
+
+64
+0:02:23,300 --> 0:02:25,190
+memiliki penumpukan muatan positif di
+
+65
+0:02:25,190 --> 0:02:27,710
+tidak adanya elektron dalam hal ini
+
+66
+0:02:27,710 --> 0:02:30,050
+muatan ingin menyeimbangkan tetapi satu-satunya
+
+67
+0:02:30,050 --> 0:02:31,880
+cara untuk melakukannya adalah agar kelebihan
+
+68
+0:02:31,880 --> 0:02:33,560
+elektron mengalir di sekitar baterai
+
+69
+0:02:33,560 --> 0:02:36,260
+melalui konduktor yang kami sediakan jika
+
+70
+0:02:36,260 --> 0:02:37,820
+kami menghubungkan seutas kabel ke
+
+71
+0:02:37,820 --> 0:02:39,740
+terminal negatif elektron akan
+
+72
+0:02:39,740 --> 0:02:41,810
+mendorong  terhadap elektron di kawat
+
+73
+0:02:41,810 --> 0:02:44,390
+namun udara adalah isolator karena
+
+74
+0:02:44,390 --> 0:02:45,920
+molekulnya tidak memiliki
+
+75
+0:02:45,920 --> 0:02:48,050
+elektron yang sangat mobile dan tidak akan mudah
+
+76
+0:02:48,050 --> 0:02:49,940
+menerima elektron bebas untuk menunjukkan ini, kita akan
+
+77
+0:02:49,940 --> 0:02:51,500
+menempelkan selotip di ujung
+
+78
+0:02:51,500 --> 0:02:53,900
+t  ube sekarang elektron di ujung
+
+79
+0:02:53,900 --> 0:02:54,950
+kabel tidak punya tempat untuk pergi
+
+80
+0:02:54,950 --> 0:02:57,380
+bahkan jika kita mendorong elektron
+
+81
+0:02:57,380 --> 0:02:59,450
+di kabel mereka masih tidak mau mengalah untuk
+
+82
+0:02:59,450 --> 0:03:01,460
+memperbaikinya kita perlu menghubungkan
+
+83
+0:03:01,460 --> 0:03:03,140
+ujung kabel ke tempat yang
+
+84
+0:03:03,140 --> 0:03:05,240
+diinginkan elektron  untuk pergi dan ujung positif
+
+85
+0:03:05,240 --> 0:03:06,560
+baterai akan dengan senang hati menerima
+
+86
+0:03:06,560 --> 0:03:09,080
+elektron sebenarnya jangan coba ini dengan
+
+87
+0:03:09,080 --> 0:03:10,880
+baterai asli tidak ada yang
+
+88
+0:03:10,880 --> 0:03:11,900
+memperlambat atau membatasi aliran
+
+89
+0:03:11,900 --> 0:03:13,910
+elektron yang menghasilkan
+
+90
+0:03:13,910 --> 0:03:15,860
+sejumlah besar energi yang diubah menjadi
+
+91
+0:03:15,860 --> 0:03:17,960
+panas di kawat  dan ini dapat dengan mudah
+
+92
+0:03:17,960 --> 0:03:20,110
+melelehkan isolasi kawat atau menyalakan api.
+
+93
+0:03:20,110 --> 0:03:23,150
+Ini dikenal sebagai sirkuit tertutup karena
+
+94
+0:03:23,150 --> 0:03:24,980
+menciptakan lingkaran dari satu sisi
+
+95
+0:03:24,980 --> 0:03:27,320
+sumber energi ke sisi lain jika kita
+
+96
+0:03:27,320 --> 0:03:29,120
+memutus kabel atau melepaskannya dari salah satu
+
+97
+0:03:29,120 --> 0:03:30,980
+terminal, maka elektron  akan berhenti
+
+98
+0:03:30,980 --> 0:03:33,340
+mengalir ini dikenal sebagai rangkaian terbuka
+
+99
+0:03:33,340 --> 0:03:35,810
+kita telah berbicara tentang aliran elektron
+
+100
+0:03:35,810 --> 0:03:37,760
+dalam sebuah rangkaian dan menunjukkan bagaimana elektron
+
+101
+0:03:37,760 --> 0:03:39,590
+bergerak dari terminal negatif ke
+
+102
+0:03:39,590 --> 0:03:42,830
+terminal positif namun dalam elektronik
+
+103
+0:03:42,830 --> 0:03:44,780
+kita biasanya menetapkan c  arus mengalir
+
+104
+0:03:44,780 --> 0:03:47,480
+dari positif ke negatif atau dari
+
+105
+0:03:47,480 --> 0:03:49,760
+potensial yang lebih tinggi ke potensial yang lebih rendah ini
+
+106
+0:03:49,760 --> 0:03:52,430
+dikenal sebagai arus konvensional pada
+
+107
+0:03:52,430 --> 0:03:55,100
+pertengahan 1700-an Benjamin Franklin berteori
+
+108
+0:03:55,100 --> 0:03:57,320
+bahwa benda bermuatan positif memiliki
+
+109
+0:03:57,320 --> 0:03:59,300
+kelebihan dari apa yang disebutnya cairan listrik
+
+110
+0:03:59,300 --> 0:04:01,910
+dan benda bermuatan negatif
+
+111
+0:04:01,910 --> 0:04:04,550
+memiliki defisit  cairan ini Franklin mencatat
+
+112
+0:04:04,550 --> 0:04:06,800
+bahwa cairan ini memiliki kecenderungan untuk mengalir
+
+113
+0:04:06,800 --> 0:04:08,960
+dari positif ke negatif untuk mendistribusikan
+
+114
+0:04:08,960 --> 0:04:11,330
+dirinya lebih merata. Baru pada
+
+115
+0:04:11,330 --> 0:04:13,250
+akhir abad ke-19
+
+116
+0:04:13,250 --> 0:04:15,530
+fisikawan Inggris JJ Thompson menemukan
+
+117
+0:04:15,530 --> 0:04:17,930
+keberadaan elektron meskipun kita
+
+118
+0:04:17,930 --> 0:04:19,940
+sekarang tahu bahwa itu  adalah elektron yang bergerak
+
+119
+0:04:19,940 --> 0:04:21,799
+di dalam sebagian besar rangkaian dari potensial rendah ke tinggi
+
+120
+0:04:21,799 --> 0:04:24,050
+konvensi arus yang
+
+121
+0:04:24,050 --> 0:04:26,060
+bergerak dari potensial tinggi ke rendah berhenti
+
+122
+0:04:26,060 --> 0:04:28,190
+sebagai akibatnya sebagian besar pengukuran arus
+
+123
+0:04:28,190 --> 0:04:29,960
+diberikan sebagai arus konvensional yang
+
+124
+0:04:29,960 --> 0:04:32,150
+merupakan pergerakan muatan positif dalam suatu
+
+125
+0:04:32,150 --> 0:04:33,800
+rangkaian dan diwakili oleh
+
+126
+0:04:33,800 --> 0:04:36,080
+huruf kapital Saya tidak khawatir matematika
+
+127
+0:04:36,080 --> 0:04:37,880
+masih berfungsi selama kita tetap menggunakan
+
+128
+0:04:37,880 --> 0:04:40,040
+aliran elektron atau co
+
+129
+0:04:40,040 --> 0:04:42,050
+arus konvensional dan karena sebagian besar
+
+130
+0:04:42,050 --> 0:04:43,910
+buku teks elektronik menggunakan arus konvensional, kita akan
+
+131
+0:04:43,910 --> 0:04:46,040
+membahas tentang membuat
+
+132
+0:04:46,040 --> 0:04:48,410
+listrik bekerja untuk kita dan
+
+133
+0:04:48,410 --> 0:04:50,389
+rangkaian membentuk dasar untuk semua elektronik modern,
+
+134
+0:04:50,389 --> 0:04:52,340
+mulai dari senter sederhana
+
+135
+0:04:52,340 --> 0:04:54,500
+hingga superkomputer besar jika
+
+136
+0:04:54,500 --> 0:04:56,720
+kita membuat rangkaian dari  hanya baterai
+
+137
+0:04:56,720 --> 0:04:58,970
+dan sepotong kawat ada kemungkinan kita
+
+138
+0:04:58,970 --> 0:05:00,770
+bisa melelehkan kawat itu saat elektron
+
+139
+0:05:00,770 --> 0:05:02,389
+bergerak melalui kawat itu pada
+
+140
+0:05:02,389 --> 0:05:04,760
+tingkat yang mengkhawatirkan dan menghasilkan
+
+141
+0:05:04,760 --> 0:05:06,979
+panas dalam jumlah besar di episode berikutnya kita akan berbicara
+
+142
+0:05:06,979 --> 0:05:08,540
+tentang hubungan antara tegangan
+
+143
+0:05:08,540 --> 0:05:13,030
+dan arus dan memperkenalkan  resistor
+

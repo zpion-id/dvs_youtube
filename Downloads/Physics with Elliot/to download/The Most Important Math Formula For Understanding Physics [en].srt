@@ -1,0 +1,3552 @@
+1
+0:00:00,320 --> 0:00:02,080
+math is the language that we use to
+
+2
+0:00:02,080 --> 0:00:03,600
+describe the laws of nature as
+
+3
+0:00:03,600 --> 0:00:05,600
+physicists and there's no way around it
+
+4
+0:00:05,600 --> 0:00:07,359
+if you want to understand physics you're
+
+5
+0:00:07,359 --> 0:00:09,519
+going to have to learn a lot of math and
+
+6
+0:00:09,519 --> 0:00:11,840
+if i had to pick one formula that's the
+
+7
+0:00:11,840 --> 0:00:13,920
+most important for understanding physics
+
+8
+0:00:13,920 --> 0:00:16,560
+it would be this one taylor's formula it
+
+9
+0:00:16,560 --> 0:00:18,560
+shows up in virtually everything we do
+
+10
+0:00:18,560 --> 0:00:20,640
+in physics and in this video i want to
+
+11
+0:00:20,640 --> 0:00:22,640
+explain how it works and give you a few
+
+12
+0:00:22,640 --> 0:00:24,640
+examples of its importance in different
+
+13
+0:00:24,640 --> 0:00:26,720
+corners of physics you probably learned
+
+14
+0:00:26,720 --> 0:00:28,320
+this theorem before if you've taken a
+
+15
+0:00:28,320 --> 0:00:30,160
+calculus class though you might not have
+
+16
+0:00:30,160 --> 0:00:31,679
+written it in this nice and compact
+
+17
+0:00:31,679 --> 0:00:33,520
+notation i'll show you that it's
+
+18
+0:00:33,520 --> 0:00:35,280
+equivalent to the taylor series that
+
+19
+0:00:35,280 --> 0:00:37,680
+lets us expand any smooth function in
+
+20
+0:00:37,680 --> 0:00:39,040
+powers of x
+
+21
+0:00:39,040 --> 0:00:40,800
+in the first half of the video i'm going
+
+22
+0:00:40,800 --> 0:00:42,559
+to explain where this incredibly
+
+23
+0:00:42,559 --> 0:00:44,320
+important formula comes from and what it
+
+24
+0:00:44,320 --> 0:00:46,559
+means and then in the second half i'll
+
+25
+0:00:46,559 --> 0:00:48,640
+tell you about three applications in
+
+26
+0:00:48,640 --> 0:00:50,640
+physics where it shows up though again
+
+27
+0:00:50,640 --> 0:00:52,399
+you'd be hard-pressed to find a chapter
+
+28
+0:00:52,399 --> 0:00:54,559
+of any physics textbook where it's not
+
+29
+0:00:54,559 --> 0:00:56,960
+applied number one we'll look at how the
+
+30
+0:00:56,960 --> 0:00:59,120
+taylor series enables us to understand
+
+31
+0:00:59,120 --> 0:01:01,520
+the complicated equations we often need
+
+32
+0:01:01,520 --> 0:01:03,760
+to solve in physics by studying a limit
+
+33
+0:01:03,760 --> 0:01:06,320
+where the equations simplify second i'll
+
+34
+0:01:06,320 --> 0:01:08,560
+show you how einstein's e equals m c
+
+35
+0:01:08,560 --> 0:01:10,720
+squared or actually his more general
+
+36
+0:01:10,720 --> 0:01:12,880
+formula for the energy of a relativistic
+
+37
+0:01:12,880 --> 0:01:15,360
+particle of mass m and momentum p
+
+38
+0:01:15,360 --> 0:01:17,439
+correctly reproduces the more familiar
+
+39
+0:01:17,439 --> 0:01:19,920
+kinetic energy one-half mv squared for
+
+40
+0:01:19,920 --> 0:01:21,759
+particles that aren't moving too close
+
+41
+0:01:21,759 --> 0:01:24,080
+to the speed of light and also how that
+
+42
+0:01:24,080 --> 0:01:26,400
+same taylor series leads to the fine
+
+43
+0:01:26,400 --> 0:01:28,240
+structure of the energy levels of the
+
+44
+0:01:28,240 --> 0:01:30,479
+hydrogen atom and third we'll look at
+
+45
+0:01:30,479 --> 0:01:32,560
+how taylor's formula leads directly to
+
+46
+0:01:32,560 --> 0:01:34,799
+the definition of the momentum operator
+
+47
+0:01:34,799 --> 0:01:36,960
+in quantum mechanics i'm not assuming
+
+48
+0:01:36,960 --> 0:01:38,560
+you've learned much about relativity or
+
+49
+0:01:38,560 --> 0:01:40,560
+quantum mechanics before by the way the
+
+50
+0:01:40,560 --> 0:01:42,079
+point is just to see some of the
+
+51
+0:01:42,079 --> 0:01:43,680
+different ways that taylor's formula
+
+52
+0:01:43,680 --> 0:01:46,240
+shows up in different areas of physics
+
+53
+0:01:46,240 --> 0:01:47,840
+so let's start with the math and
+
+54
+0:01:47,840 --> 0:01:49,520
+understand what this formula is all
+
+55
+0:01:49,520 --> 0:01:52,240
+about say we have some function f x
+
+56
+0:01:52,240 --> 0:01:54,159
+here's a random example it looks really
+
+57
+0:01:54,159 --> 0:01:56,079
+complicated but instead of trying to
+
+58
+0:01:56,079 --> 0:01:57,680
+understand the whole complicated
+
+59
+0:01:57,680 --> 0:02:00,240
+function at once let's zoom in and look
+
+60
+0:02:00,240 --> 0:02:01,920
+at it in a smaller region where it's a
+
+61
+0:02:01,920 --> 0:02:03,920
+lot simpler take this point here for
+
+62
+0:02:03,920 --> 0:02:06,320
+example and let's choose our origin so
+
+63
+0:02:06,320 --> 0:02:08,080
+that this point is sitting at x equals
+
+64
+0:02:08,080 --> 0:02:09,920
+zero so the height of the function there
+
+65
+0:02:09,920 --> 0:02:12,640
+is f of zero imagine that this curve is
+
+66
+0:02:12,640 --> 0:02:14,560
+the shape of a treacherous mountain and
+
+67
+0:02:14,560 --> 0:02:16,800
+you're an intrepid explorer plotting out
+
+68
+0:02:16,800 --> 0:02:18,879
+its map you're high up in the air and
+
+69
+0:02:18,879 --> 0:02:20,959
+it's very foggy so you can't see very
+
+70
+0:02:20,959 --> 0:02:22,400
+far in either direction
+
+71
+0:02:22,400 --> 0:02:24,080
+you just need to carefully walk along
+
+72
+0:02:24,080 --> 0:02:26,160
+the mountain and record its shape using
+
+73
+0:02:26,160 --> 0:02
+an altimeter that measures your height
+
+74
+0:02 --> 0:02:29,760
+above the ground starting from this
+
+75
+0:02:29,760 --> 0:02:32,480
+point x equals zero initially all you
+
+76
+0:02:32,480 --> 0:02:34,239
+can say is that your starting height is
+
+77
+0:02:34,239 --> 0:02:36,400
+f zero for all you know the whole
+
+78
+0:02:36,400 --> 0:02:38,640
+mountain might just be a flat horizontal
+
+79
+0:02:38,640 --> 0:02:40,879
+line at this height then when you try to
+
+80
+0:02:40,879 --> 0:02:42,640
+write down in your field journal a
+
+81
+0:02:42,640 --> 0:02:44,080
+function that describes the height of
+
+82
+0:02:44,080 --> 0:02:46,239
+the mountain your first guess is just f
+
+83
+0:02:46,239 --> 0:02:49,200
+of x equals f of zero a horizontal line
+
+84
+0:02:49,200 --> 0:02:50,640
+at your starting height
+
+85
+0:02:50,640 --> 0:02:52,160
+but now you take a little hop to the
+
+86
+0:02:52,160 --> 0:02:53,920
+right and you discover that the height
+
+87
+0:02:53,920 --> 0:02:56,319
+of the mountain has changed so it's not
+
+88
+0:02:56,319 --> 0:02:58,800
+actually a horizontal line instead as
+
+89
+0:02:58,800 --> 0:03:00,720
+far as you can tell now it looks like a
+
+90
+0:03:00,720 --> 0:03:02,879
+line that's sloped at an angle where the
+
+91
+0:03:02,879 --> 0:03:04,879
+slope is given by the first derivative
+
+92
+0:03:04,879 --> 0:03:06,959
+of f at x equals 0.
+
+93
+0:03:06,959 --> 0:03:08,879
+now your new best guess for the height
+
+94
+0:03:08,879 --> 0:03:10,800
+function is the equation of this sloped
+
+95
+0:03:10,800 --> 0:03:14,080
+line f of x equals f of 0 plus f prime
+
+96
+0:03:14,080 --> 0:03:16,480
+of 0 times x but now you take another
+
+97
+0:03:16,480 --> 0:03:18,480
+hop and you discover that the curve
+
+98
+0:03:18,480 --> 0:03:20,959
+isn't a straight line after all instead
+
+99
+0:03:20,959 --> 0:03:22,879
+it starts to deflect away from a line
+
+100
+0:03:22,879 --> 0:03:25,120
+like a parabola so now you expect
+
+101
+0:03:25,120 --> 0:03:26,640
+there's a better approximation to the
+
+102
+0:03:26,640 --> 0:03:28,879
+function like this with an x squared
+
+103
+0:03:28,879 --> 0:03:30,959
+term and some coefficient a in front of
+
+104
+0:03:30,959 --> 0:03:33,040
+it but at this point you start to think
+
+105
+0:03:33,040 --> 0:03:34,640
+to yourself that you might be able to
+
+106
+0:03:34,640 --> 0:03:36,319
+get an even better description of the
+
+107
+0:03:36,319 --> 0:03:38,799
+function over a wider range by including
+
+108
+0:03:38,799 --> 0:03:41,680
+many more powers of x x cubed x to the
+
+109
+0:03:41,680 --> 0:03:44,159
+fourth and so on so you stop exploring
+
+110
+0:03:44,159 --> 0:03:45,840
+for a moment and sit down to do some
+
+111
+0:03:45,840 --> 0:03:46,640
+math
+
+112
+0:03:46,640 --> 0:03:49,040
+you want to express this function f as a
+
+113
+0:03:49,040 --> 0:03:50,959
+sum of powers of x with some
+
+114
+0:03:50,959 --> 0:03:54,640
+coefficients c0 c1 c2 and so on the
+
+115
+0:03:54,640 --> 0:03:57,120
+question is how to pick these numbers so
+
+116
+0:03:57,120 --> 0:03:59,040
+that this series does a good job of
+
+117
+0:03:59,040 --> 0:04:00,400
+matching up with f
+
+118
+0:04:00,400 --> 0:04:01,840
+well we've already seen what the first
+
+119
+0:04:01,840 --> 0:04:03,920
+couple of coefficients are when we plug
+
+120
+0:04:03,920 --> 0:04:06,159
+in x equals 0 everything except the
+
+121
+0:04:06,159 --> 0:04:08,879
+first term disappears and we get f 0
+
+122
+0:04:08,879 --> 0:04:11,120
+equals c 0. so that first number in the
+
+123
+0:04:11,120 --> 0:04:13,200
+series is just the value of the function
+
+124
+0:04:13,200 --> 0:04:15,599
+at our starting point x equals zero as
+
+125
+0:04:15,599 --> 0:04:18,079
+for the next one c one x and everything
+
+126
+0:04:18,079 --> 0:04:19,919
+after it disappears when we plug in x
+
+127
+0:04:19,919 --> 0:04:21,519
+equals zero but what if we take the
+
+128
+0:04:21,519 --> 0:04
+derivative first remembering the rule
+
+129
+0:04 --> 0:04:25,919
+that to take the derivative of x to the
+
+130
+0:04:25,919 --> 0:04:28,160
+n we bring the power down out front and
+
+131
+0:04:28,160 --> 0:04:30,800
+then reduce the exponent by one we get f
+
+132
+0:04:30,800 --> 0:04:33,840
+prime of x equals c one plus two c two
+
+133
+0:04:33,840 --> 0:04:36,880
+times x plus three c three x squared
+
+134
+0:04:36,880 --> 0:04:39,360
+plus dot dot dot now when we plug in x
+
+135
+0:04:39,360 --> 0:04:42,080
+equals zero the c one term survives f
+
+136
+0:04:42,080 --> 0:04:44,880
+prime of 0 equals c1 so again like we
+
+137
+0:04:44,880 --> 0:04:46,560
+already knew we should set this first
+
+138
+0:04:46,560 --> 0:04:49,280
+coefficient c1 to be the derivative of f
+
+139
+0:04:49,280 --> 0:04:51,360
+at x equals 0. but now we've got the
+
+140
+0:04:51,360 --> 0:04:53,919
+idea if we take the derivative again we
+
+141
+0:04:53,919 --> 0:04:56,720
+get f double prime of x equals two c two
+
+142
+0:04:56,720 --> 0:04:59,759
+plus three times two c three x and so on
+
+143
+0:04:59,759 --> 0:05:02,160
+and so when we plug in x equals zero we
+
+144
+0:05:02,160 --> 0:05:03,919
+learned that f double prime of zero
+
+145
+0:05:03,919 --> 0:05:06,240
+equals two c two then we should choose c
+
+146
+0:05:06,240 --> 0:05:08,720
+two to be half the second derivative of
+
+147
+0:05:08,720 --> 0:05:11,680
+f at x equals zero and on and on it goes
+
+148
+0:05:11,680 --> 0:05:13,680
+hopefully you see the pattern for the x
+
+149
+0:05:13,680 --> 0:05:15,680
+to the n term in the sum we need to take
+
+150
+0:05:15,680 --> 0:05:18,160
+the derivative n times until this is the
+
+151
+0:05:18,160 --> 0:05:20,320
+only term that's around when we plug in
+
+152
+0:05:20,320 --> 0:05:22,560
+x equals zero each derivative brings
+
+153
+0:05:22,560 --> 0:05:25,759
+down a power first n then n minus 1 n
+
+154
+0:05:25,759 --> 0:05:28,479
+minus 2 and so on all the way down to 3
+
+155
+0:05:28,479 --> 0:05:31,280
+2 1. in other words the nth derivative
+
+156
+0:05:31,280 --> 0:05:34,400
+is n factorial times c n so the nth
+
+157
+0:05:34,400 --> 0:05:37,039
+coefficient is 1 over n factorial times
+
+158
+0:05:37,039 --> 0:05:39,759
+the nth derivative of f evaluated at x
+
+159
+0:05:39,759 --> 0:05
+equals 0. for this x cubed term for
+
+160
+0:05 --> 0:05:44,400
+example we get 1 over 3 factorial which
+
+161
+0:05:44,400 --> 0:05:46,800
+is 1 6 times the third derivative of f
+
+162
+0:05:46,800 --> 0:05:49,199
+at 0. by the way i go through all this
+
+163
+0:05:49,199 --> 0:05:50,960
+step by step in the notes which you can
+
+164
+0:05:50,960 --> 0:05:52,639
+get at the link in the description to
+
+165
+0:05:52,639 --> 0:05:54,240
+dig through all the details here after
+
+166
+0:05:54,240 --> 0:05:55,280
+you've watched
+
+167
+0:05:55,280 --> 0:05:57,280
+now we're in business we've written an
+
+168
+0:05:57,280 --> 0:05:59,520
+approximation for our function f as a
+
+169
+0:05:59,520 --> 0:06:02,160
+sum of powers of x this is the taylor
+
+170
+0:06:02,160 --> 0:06:04,800
+series for f when x is tiny so that
+
+171
+0:06:04,800 --> 0:06:06,560
+we're close to the starting point here
+
+172
+0:06:06,560 --> 0:06:09,360
+each higher power of x is an even tinier
+
+173
+0:06:09,360 --> 0:06:11,280
+number than the one that came before it
+
+174
+0:06:11,280 --> 0:06:12,720
+and so we already get a good
+
+175
+0:06:12,720 --> 0:06:14,639
+approximation by keeping just the first
+
+176
+0:06:14,639 --> 0:06:17,280
+few terms in the series the farther away
+
+177
+0:06:17,280 --> 0:06:19,440
+we venture from x equals 0 the more
+
+178
+0:06:19,440 --> 0:06:21,440
+terms we need to include in the series
+
+179
+0:06:21,440 --> 0:06:22,880
+in order to get a good description of
+
+180
+0:06:22,880 --> 0:06:24,479
+the function but now that we have the
+
+181
+0:06:24,479 --> 0:06:26,400
+general formula for the coefficients we
+
+182
+0:06:26,400 --> 0:06:28,400
+can include as many terms as we like
+
+183
+0:06:28,400 --> 0:06:29,600
+here's what it looks like for this
+
+184
+0:06:29,600 --> 0:06:31,360
+function as we make the total number of
+
+185
+0:06:31,360 --> 0:06:33,759
+terms bigger and bigger you can see that
+
+186
+0:06:33,759 --> 0:06:35,759
+the series approximation matches the
+
+187
+0:06:35,759 --> 0:06:38,720
+curve better and better as n gets large
+
+188
+0:06:38,720 --> 0:06:40,639
+and here's the kicker when we include
+
+189
+0:06:40,639 --> 0:06:42,720
+all the terms by summing up the infinite
+
+190
+0:06:42,720 --> 0:06:45,360
+series over all powers of x we actually
+
+191
+0:06:45,360 --> 0:06:47,360
+reproduce the exact function that we
+
+192
+0:06:47,360 --> 0:06:49,280
+started with as long as it was smooth
+
+193
+0:06:49,280 --> 0:06:50,720
+and well behaved and the series
+
+194
+0:06:50,720 --> 0:06:51,840
+converges
+
+195
+0:06:51,840 --> 0:06:54,720
+this is truly remarkable it says that if
+
+196
+0:06:54,720 --> 0:06:56,639
+we know all the derivatives of a smooth
+
+197
+0:06:56,639 --> 0:06:58,319
+function at a single point we can
+
+198
+0:06:58,319 --> 0:07:00,080
+reconstruct the rest of the function
+
+199
+0:07:00,080 --> 0:07:02,479
+everywhere else let's do some examples
+
+200
+0:07:02,479 --> 0:07:04,800
+how about f of x equals sine of x let's
+
+201
+0:07:04,800 --> 0:07:06,720
+write down its taylor series around x
+
+202
+0:07:06,720 --> 0:07:08,800
+equals 0. we just need to know what its
+
+203
+0:07:08,800 --> 0:07:10,800
+derivatives are at that point so let's
+
+204
+0:07:10,800 --> 0:07:12,160
+make a little table
+
+205
+0:07:12,160 --> 0:07:14,479
+sine of x passes through the origin so
+
+206
+0:07:14,479 --> 0:07:17,199
+we start off with f of zero equals zero
+
+207
+0:07:17,199 --> 0:07:19,440
+zero factorial is defined to be one by
+
+208
+0:07:19,440 --> 0:07:21,120
+the way and so this first term in the
+
+209
+0:07:21,120 --> 0:07:23,759
+taylor series is just zero next up we
+
+210
+0:07:23,759 --> 0:07:25,520
+need the derivative of sine of x which
+
+211
+0:07:25,520 --> 0:07:27,919
+is cosine of x now when we plug in x
+
+212
+0:07:27,919 --> 0:07:30,160
+equals zero we get cosine of 0 which is
+
+213
+0:07:30,160 --> 0:07:32,479
+1. and so the first interesting term in
+
+214
+0:07:32,479 --> 0:07:34,880
+the taylor series is just x a straight
+
+215
+0:07:34,880 --> 0:07:37,199
+line through the origin with slope 1.
+
+216
+0:07:37,199 --> 0:07:39,199
+that's already a very good approximation
+
+217
+0:07:39,199 --> 0:07:41,440
+to sine of x when x is a small number
+
+218
+0:07:41,440 --> 0:07:43,520
+and so we use the approximation sine of
+
+219
+0:07:43,520 --> 0:07
+x equals x often in physics but as x
+
+220
+0:07 --> 0:07:47,680
+gets a little bigger clearly the
+
+221
+0:07:47,680 --> 0:07:49,199
+straight line isn't going to cut it
+
+222
+0:07:49,199 --> 0:07:51,360
+anymore so let's keep going for the next
+
+223
+0:07:51,360 --> 0:07:53,520
+term we need the derivative of cosine of
+
+224
+0:07:53,520 --> 0:07:55,759
+x which is minus sine of x but that
+
+225
+0:07:55,759 --> 0:07:57,759
+vanishes again when x equals zero and so
+
+226
+0:07:57,759 --> 0:08
+the x squared term actually disappears
+
+227
+0:08 --> 0:08:01,599
+that's part of the reason the linear
+
+228
+0:08:01,599 --> 0:08:04,240
+approximation was so good to begin with
+
+229
+0:08:04,240 --> 0:08:06,400
+now for f triple prime of x we need the
+
+230
+0:08:06,400 --> 0:08:08,479
+derivative of minus sine and we get
+
+231
+0:08:08,479 --> 0:08:11,360
+minus cosine then f triple prime of zero
+
+232
+0:08:11,360 --> 0:08:13,280
+equals minus one and so the qubit
+
+233
+0:08:13,280 --> 0:08:15,440
+coefficient is minus one over three
+
+234
+0:08:15,440 --> 0:08:16,639
+factorial
+
+235
+0:08:16,639 --> 0:08:18,400
+let's do one more line we want the
+
+236
+0:08:18,400 --> 0:08:21,039
+derivative of minus cosine which is sine
+
+237
+0:08:21,039 --> 0:08:22,960
+this vanishes again when we plug in x
+
+238
+0:08:22,960 --> 0:08:24,960
+equals zero and so there's no x to the
+
+239
+0:08:24,960 --> 0:08:26,400
+four term in the series
+
+240
+0:08:26,400 --> 0:08:27,919
+we could keep going like this and take
+
+241
+0:08:27,919 --> 0:08:29,840
+more derivatives but notice that with
+
+242
+0:08:29,840 --> 0:08:31,520
+the fourth derivative here we've just
+
+243
+0:08:31,520 --> 0:08:33,120
+gotten back to where we started with
+
+244
+0:08:33,120 --> 0:08:35,680
+sine of x so this same sequence of four
+
+245
+0:08:35,680 --> 0:08:37,440
+derivatives is just going to repeat
+
+246
+0:08:37,440 --> 0:08:39,599
+itself over and over again then we can
+
+247
+0:08:39,599 --> 0:08:41,440
+just write down the whole series without
+
+248
+0:08:41,440 --> 0:08:44,080
+any more work the next term is x to the
+
+249
+0:08:44,080 --> 0:08:46,480
+fifth over five factorial followed by
+
+250
+0:08:46,480 --> 0:08:48,959
+minus one over seven factorial x to the
+
+251
+0:08:48,959 --> 0:08:51,839
+seventh and plus one over nine factorial
+
+252
+0:08:51,839 --> 0:08:54,320
+x to the nine and so on here's what it
+
+253
+0:08:54,320 --> 0:08:56,720
+looks like going up to x to the 29 you
+
+254
+0:08:56,720 --> 0:08:58,320
+can see that it does a good job
+
+255
+0:08:58,320 --> 0:09:00,080
+reproducing the sine curve right up to
+
+256
+0:09:00,080 --> 0:09:02,320
+the edges of these four periods
+
+257
+0:09:02,320 --> 0:09:04,880
+notice that only odd powers of x show up
+
+258
+0:09:04,880 --> 0:09:06,880
+here in the taylor series that's because
+
+259
+0:09:06,880 --> 0:09:09,279
+sine of x is an odd function when you
+
+260
+0:09:09,279 --> 0:09:11,120
+compare it on the right and left sides
+
+261
+0:09:11,120 --> 0:09:13,600
+of the y axis it looks the same except
+
+262
+0:09:13,600 --> 0:09:15,440
+that it's been flipped over in other
+
+263
+0:09:15,440 --> 0:09:18,320
+words sine of minus x equals minus sine
+
+264
+0:09:18,320 --> 0:09:21,440
+of x odd powers of x share that property
+
+265
+0:09:21,440 --> 0:09:23,839
+but even powers don't and that's why
+
+266
+0:09:23,839 --> 0:09:25,760
+there are no even powers of x in the
+
+267
+0:09:25,760 --> 0:09:27,920
+taylor series for sine like i mentioned
+
+268
+0:09:27,920 --> 0:09
+before oftentimes in physics we're not
+
+269
+0:09 --> 0:09:31,760
+actually interested in the whole taylor
+
+270
+0:09:31,760 --> 0:09:33,839
+series what we really want is a good
+
+271
+0:09:33,839 --> 0:09:36,160
+approximation to a complicated function
+
+272
+0:09:36,160 --> 0:09:38,080
+that makes a problem simpler to solve
+
+273
+0:09:38,080 --> 0:09:39,760
+i'll show you examples of what i mean in
+
+274
+0:09:39,760 --> 0:09:41,920
+a minute so in this case we might stop
+
+275
+0:09:41,920 --> 0:09:43,680
+with the first term and just apply the
+
+276
+0:09:43,680 --> 0:09:45,920
+fact that sine of x is approximately
+
+277
+0:09:45,920 --> 0:09:48,080
+equal to x when x is small this is
+
+278
+0:09:48,080 --> 0:09:50,240
+called the small angle approximation and
+
+279
+0:09:50,240 --> 0:09:51,600
+you may have run into it in your first
+
+280
+0:09:51,600 --> 0:09:53,200
+physics class when you learned about the
+
+281
+0:09:53,200 --> 0:09:55,519
+simple pendulum the key point here is
+
+282
+0:09:55,519 --> 0:09:58,560
+that when x is small like say 0.1 then
+
+283
+0:09:58,560 --> 0:10:00,640
+when we take larger powers of x in the
+
+284
+0:10:00,640 --> 0:10:02,560
+successive terms in the taylor series
+
+285
+0:10:02,560 --> 0:10:05,279
+they get even smaller x cubed equals
+
+286
+0:10:05,279 --> 0:10:10,079
+.001 x to the fifth equals .0001
+
+287
+0:10:10,079 --> 0:10
+and so on not to mention the effect of
+
+288
+0:10 --> 0:10:14,640
+the huge factorials in the denominators
+
+289
+0:10:14,640 --> 0:10:16,560
+that's why we can ignore the higher
+
+290
+0:10:16,560 --> 0:10:18,720
+order terms for small x and get a good
+
+291
+0:10:18,720 --> 0:10:20,480
+approximation to our function just by
+
+292
+0:10:20,480 --> 0:10:22,480
+keeping the leading term let's do one
+
+293
+0:10:22,480 --> 0:10:24,800
+more quick example f of x equals e to
+
+294
+0:10:24,800 --> 0:10:26,959
+the x this will be important in a moment
+
+295
+0:10:26,959 --> 0:10:28,480
+for seeing the slickest way to write
+
+296
+0:10:28,480 --> 0:10:30,880
+down taylor's formula this one's easy
+
+297
+0:10:30,880 --> 0:10:32,880
+because the derivative of e to the x is
+
+298
+0:10:32,880 --> 0:10:34,880
+just e to the x again and when we plug
+
+299
+0:10:34,880 --> 0:10:37,360
+in x equals zero we get one and the
+
+300
+0:10:37,360 --> 0:10:40,079
+coefficients are one over n factorial so
+
+301
+0:10:40,079 --> 0:10:41,680
+we can just jump right to the taylor
+
+302
+0:10:41,680 --> 0:10:44,959
+series e to the x equals one plus x plus
+
+303
+0:10:44,959 --> 0:10:47,279
+one over two factorial x squared plus
+
+304
+0:10:47,279 --> 0:10:49,519
+one over three factorial x cubed and so
+
+305
+0:10:49,519 --> 0:10:52,320
+on and once again if x is tiny then we
+
+306
+0:10:52,320 --> 0:10:54,480
+can get a good approximation by stopping
+
+307
+0:10:54,480 --> 0:10:56,320
+at the linear term it's not quite as
+
+308
+0:10:56,320 --> 0:10:58,079
+good as we had for sine of x though
+
+309
+0:10:58,079 --> 0:10:59,839
+because in that case the x squared
+
+310
+0:10:59,839 --> 0:11:02,399
+correction vanished now before we get to
+
+311
+0:11:02,399 --> 0:11:04,240
+the physics examples the last thing i
+
+312
+0:11:04,240 --> 0:11:06,160
+want to do is show you a few convenient
+
+313
+0:11:06,160 --> 0:11
+ways of writing taylor's formula
+
+314
+0:11 --> 0:11:09,760
+spelling out the whole sum like this
+
+315
+0:11:09,760 --> 0:11:12,160
+obviously isn't very concise but we can
+
+316
+0:11:12,160 --> 0:11:14,240
+write the same thing much more compactly
+
+317
+0:11:14,240 --> 0:11:17,040
+using some notation the sum over n of
+
+318
+0:11:17,040 --> 0:11:19,519
+one over n factorial the nth derivative
+
+319
+0:11:19,519 --> 0:11:22,800
+of f evaluated at zero times x to the n
+
+320
+0:11:22,800 --> 0:11:25,200
+this is the taylor series for f x
+
+321
+0:11:25,200 --> 0:11:27,680
+expanded around x equals zero but come
+
+322
+0:11:27,680 --> 0:11:29,440
+to think of it there was nothing special
+
+323
+0:11:29,440 --> 0:11:31,200
+about x equals zero here that's just
+
+324
+0:11:31,200 --> 0:11:32,880
+where we happened to put the origin when
+
+325
+0:11:32,880 --> 0:11:34,720
+we drew the graph of f of x we could
+
+326
+0:11:34,720 --> 0:11:36,399
+just as well write an expansion around
+
+327
+0:11:36,399 --> 0:11:39,200
+any other point call it x zero say then
+
+328
+0:11:39,200 --> 0:11:42,079
+the taylor expansion of f around x0 is
+
+329
+0:11:42,079 --> 0:11:44,399
+given by the sum of one over n factorial
+
+330
+0:11:44,399 --> 0:11:46,800
+times the derivatives of f evaluated at
+
+331
+0:11:46,800 --> 0:11:49,440
+that starting point x0 times the powers
+
+332
+0:11:49,440 --> 0:11:52,320
+of the distance from there x minus x0
+
+333
+0:11:52,320 --> 0:11:53,839
+for example here's what we get with the
+
+334
+0:11:53,839 --> 0:11:55,760
+first few terms of the taylor series for
+
+335
+0:11:55,760 --> 0:11:57,760
+this function expanded around this given
+
+336
+0:11:57,760 --> 0:11:58,560
+point
+
+337
+0:11:58,560 --> 0:12:00,079
+actually there's another way of writing
+
+338
+0:12:00,079 --> 0:12:02,560
+this expression that's often more useful
+
+339
+0:12:02,560 --> 0:12:04,240
+let epsilon denote this quantity in
+
+340
+0:12:04,240 --> 0:12:07,120
+parentheses x minus x0 it measures how
+
+341
+0:12:07,120 --> 0:12:08,959
+far away you are from the starting point
+
+342
+0:12:08,959 --> 0:12:10,959
+so when epsilon is small you're very
+
+343
+0:12:10,959 --> 0:12:13,040
+close to x0 and as it gets bigger you
+
+344
+0:12:13,040 --> 0:12:16,240
+get farther away then x is given by x0
+
+345
+0:12:16,240 --> 0:12:18,160
+plus epsilon and we can write the same
+
+346
+0:12:18,160 --> 0:12:19,839
+expression like this
+
+347
+0:12:19,839 --> 0:12:21,360
+this way of writing things makes it
+
+348
+0:12:21,360 --> 0:12:22,880
+really clear that we can think of the
+
+349
+0:12:22,880 --> 0:12:24,800
+taylor series as starting at the point
+
+350
+0:12:24,800 --> 0:12:27,200
+x0 and then expanding out away from
+
+351
+0:12:27,200 --> 0:12:30,720
+there by evaluating f at x0 plus epsilon
+
+352
+0:12:30,720 --> 0:12:32,880
+in powers of the displacement but this
+
+353
+0:12:32,880 --> 0:12:34,320
+isn't even the slickest way to write the
+
+354
+0:12:34,320 --> 0:12:35,920
+taylor series which is the formula i
+
+355
+0:12:35,920 --> 0:12:37,360
+showed you at the very beginning of the
+
+356
+0:12:37,360 --> 0:12:39,600
+video to see how that works we'll switch
+
+357
+0:12:39,600 --> 0:12:41,760
+to the other notation for derivatives so
+
+358
+0:12:41,760 --> 0:12:44,240
+the nth derivative of f is obtained by
+
+359
+0:12:44,240 --> 0:12:47,200
+applying d by dx to it n times or in
+
+360
+0:12:47,200 --> 0:12:49,920
+other words d by dx to the power n
+
+361
+0:12:49,920 --> 0:12:52,079
+acting on f then we'll plug this into
+
+362
+0:12:52,079 --> 0:12:53,760
+the taylor series which lets us write it
+
+363
+0:12:53,760 --> 0:12:55,680
+like this i went ahead and dropped the
+
+364
+0:12:55,680 --> 0:12:57,760
+x0 subscript now because that was just a
+
+365
+0:12:57,760 --> 0:13
+label that we don't need anymore so far
+
+366
+0:13 --> 0:13:01,120
+this doesn't look like a huge
+
+367
+0:13:01,120 --> 0:13:03,519
+simplification but now let's drag that
+
+368
+0:13:03,519 --> 0:13:05,600
+epsilon to the end to the left inside
+
+369
+0:13:05,600 --> 0:13:06,959
+the parentheses
+
+370
+0:13:06,959 --> 0:13:08,959
+now this looks really interesting it
+
+371
+0:13:08,959 --> 0:13:10,720
+says that if we want to know the value
+
+372
+0:13:10,720 --> 0:13:12,560
+of our function f at a point that's
+
+373
+0:13:12,560 --> 0:13:15,279
+shifted away from x by an amount epsilon
+
+374
+0:13:15,279 --> 0:13:17,279
+what we should do is take the function
+
+375
+0:13:17,279 --> 0:13:19,839
+at the original point x and apply this
+
+376
+0:13:19,839 --> 0:13:22,480
+special combination of derivatives to it
+
+377
+0:13:22,480 --> 0:13
+but hang on a second that might look
+
+378
+0:13 --> 0:13:26,240
+familiar remember from a minute ago that
+
+379
+0:13:26,240 --> 0:13:28,160
+the taylor series we found for e to the
+
+380
+0:13:28,160 --> 0:13:30,959
+z was one plus z plus one over two
+
+381
+0:13:30,959 --> 0:13:33,360
+factorial z squared plus one over three
+
+382
+0:13:33,360 --> 0:13
+factorial z cubed plus dot dot
+
+383
+0:13 --> 0:13:38,320
+or in some notation the sum of one over
+
+384
+0:13:38,320 --> 0:13:40,720
+n factorial z to the n but that's
+
+385
+0:13:40,720 --> 0:13:42,720
+exactly what this differential operator
+
+386
+0:13:42,720 --> 0:13:44,399
+looks like where z is this thing in
+
+387
+0:13:44,399 --> 0:13:47,279
+parentheses epsilon d by dx then this
+
+388
+0:13:47,279 --> 0:13:49,920
+big sum of derivatives is nothing but e
+
+389
+0:13:49,920 --> 0:13:52,880
+to the epsilon d by d x and so at least
+
+390
+0:13:52,880 --> 0:13:55,279
+formally we can write f of x plus
+
+391
+0:13:55,279 --> 0:13:58,399
+epsilon equals e to the epsilon d by d x
+
+392
+0:13:58,399 --> 0:14:00,160
+acting on f x
+
+393
+0:14:00,160 --> 0:14:02,639
+this is the most compact convenient and
+
+394
+0:14:02,639 --> 0:14:04,079
+beautiful way of writing taylor's
+
+395
+0:14:04,079 --> 0:14:06,880
+formula it neatly repackages the whole
+
+396
+0:14:06,880 --> 0:14:09,199
+infinite sum over derivatives of f and
+
+397
+0:14:09,199 --> 0:14:11,680
+powers of the displacement into a single
+
+398
+0:14:11,680 --> 0:14:14,720
+operator e to the epsilon d by dx acting
+
+399
+0:14:14,720 --> 0:14:16,720
+on the function just to make sure it's
+
+400
+0:14:16,720 --> 0:14:18,639
+clear how this works let's try applying
+
+401
+0:14:18,639 --> 0:14:20,720
+it to a really simple function f of x
+
+402
+0:14:20,720 --> 0:14:23,440
+equals mx plus b obviously the taylor
+
+403
+0:14:23,440 --> 0:14:24,800
+series for this one is going to be
+
+404
+0:14:24,800 --> 0:14:26,800
+really boring it already is its own
+
+405
+0:14:26,800 --> 0:14:28,639
+taylor series we expand out the
+
+406
+0:14:28,639 --> 0:14:31,199
+exponential and get one plus epsilon
+
+407
+0:14:31,199 --> 0:14:33,279
+times the first derivative plus one half
+
+408
+0:14:33,279 --> 0:14:34,880
+epsilon squared times the second
+
+409
+0:14:34,880 --> 0:14:36,880
+derivative and so on and then all that
+
+410
+0:14:36,880 --> 0:14:39,440
+acts on the function mx plus b when we
+
+411
+0:14:39,440 --> 0:14:42,160
+multiply out the one we just get back mx
+
+412
+0:14:42,160 --> 0:14:44,079
+plus b and when the first derivative
+
+413
+0:14:44,079 --> 0:14:46,959
+term x we get epsilon m as for that
+
+414
+0:14:46,959 --> 0:14:49,040
+second derivative and everything else
+
+415
+0:14:49,040 --> 0:14:50,800
+all that disappears because when you
+
+416
+0:14:50,800 --> 0:14:52,320
+take more than one derivative of a
+
+417
+0:14:52,320 --> 0:14:55,040
+straight line you get zero so altogether
+
+418
+0:14:55,040 --> 0:14
+we've got mx plus b plus epsilon m or
+
+419
+0:14 --> 0:15:00,880
+equivalently m times x plus epsilon plus
+
+420
+0:15:00,880 --> 0:15:03,760
+b which is precisely f of x plus epsilon
+
+421
+0:15:03,760 --> 0:15:05,199
+just as expected
+
+422
+0:15:05,199 --> 0:15:06,959
+one last beautiful thing about this way
+
+423
+0:15:06,959 --> 0:15:08,560
+of writing taylor's formula before we
+
+424
+0:15:08,560 --> 0:15:10,079
+get to the physics it makes the
+
+425
+0:15:10,079 --> 0:15:12,160
+generalization to the multivariable
+
+426
+0:15:12,160 --> 0:15:14,320
+taylor expansion really straightforward
+
+427
+0:15:14,320 --> 0:15:17,279
+say we now have a function f of x y z
+
+428
+0:15:17,279 --> 0:15:19,199
+for example this might be the potential
+
+429
+0:15:19,199 --> 0:15:20,959
+energy function of a particle moving
+
+430
+0:15:20,959 --> 0:15:22,959
+around in three dimensional space then
+
+431
+0:15:22,959 --> 0:15:25,440
+what's the taylor expansion of this the
+
+432
+0:15:25,440 --> 0:15:27,360
+most direct way to approach it is to
+
+433
+0:15:27,360 --> 0:15:29,600
+expand like before with one variable at
+
+434
+0:15:29,600 --> 0:15:31,920
+a time if we apply the taylor expansion
+
+435
+0:15:31,920 --> 0:15:34,880
+just in x we get f of x still with y
+
+436
+0:15:34,880 --> 0:15:37,839
+plus epsilon y z plus epsilon z plus
+
+437
+0:15:37,839 --> 0:15:40,800
+epsilon x d by dx of that plus half
+
+438
+0:15:40,800 --> 0:15:42,800
+epsilon x squared times the second
+
+439
+0:15:42,800 --> 0:15:45,120
+derivative with respect to x and so on
+
+440
+0:15:45,120 --> 0:15:47,199
+where these are now partial derivatives
+
+441
+0:15:47,199 --> 0:15:49,040
+because f is a function of more than one
+
+442
+0:15:49,040 --> 0:15:51,120
+variable all that means is that we take
+
+443
+0:15:51,120 --> 0:15:53,040
+the derivative of f with respect to x
+
+444
+0:15:53,040 --> 0:15:54,639
+like we normally would treating the
+
+445
+0:15:54,639 --> 0:15:57,600
+other variables y and z as constants but
+
+446
+0:15:57,600 --> 0:15:59,759
+now we have to do the same expansion
+
+447
+0:15:59,759 --> 0:16:02,560
+over again in each of these terms for y
+
+448
+0:16:02,560 --> 0:16:04,639
+and then again in each of those terms
+
+449
+0:16:04,639 --> 0:16:07,279
+for z it's a bit of a mess but our
+
+450
+0:16:07,279 --> 0:16:09,279
+exponential formula makes the whole
+
+451
+0:16:09,279 --> 0:16:11,759
+thing incredibly simple let's write r
+
+452
+0:16:11,759 --> 0:16:14,240
+vector equals x y z for the position
+
+453
+0:16:14,240 --> 0:16:16,800
+vector and epsilon vector equals epsilon
+
+454
+0:16:16,800 --> 0:16:19,279
+x epsilon y epsilon z for the
+
+455
+0:16:19,279 --> 0:16:21,600
+displacement vector then we're trying to
+
+456
+0:16:21,600 --> 0:16:25,120
+tailor expand f of r vector plus epsilon
+
+457
+0:16:25,120 --> 0:16:27,120
+all we need to do to generalize our
+
+458
+0:16:27,120 --> 0:16:29,279
+original formula is to replace the
+
+459
+0:16:29,279 --> 0:16:31,920
+epsilon d by dx in the exponent with the
+
+460
+0:16:31,920 --> 0:16:34,480
+dot product between epsilon vector and
+
+461
+0:16:34,480 --> 0:16:36,320
+the quote-unquote vector of partial
+
+462
+0:16:36,320 --> 0:16:39,759
+derivatives d by d x d by d y d by d z
+
+463
+0:16:39,759 --> 0:16:41,680
+which is usually denoted by this upside
+
+464
+0:16:41,680 --> 0:16:44,639
+down triangle called del and so this dot
+
+465
+0:16:44,639 --> 0:16:47,440
+product just means epsilon x d by d x
+
+466
+0:16:47,440 --> 0:16:50,800
+plus epsilon y d by d y plus epsilon z d
+
+467
+0:16:50,800 --> 0:16:53,519
+by d z then by combining the exponential
+
+468
+0:16:53,519 --> 0:16
+formulas for the taylor series in x y
+
+469
+0:16 --> 0:16:58,399
+and z we get this beautiful compact
+
+470
+0:16:58,399 --> 0:17:00,160
+formula for the taylor expansion in
+
+471
+0:17:00,160 --> 0:17:02,639
+three or any number of variables
+
+472
+0:17:02,639 --> 0:17:04,959
+okay that's enough math now let's put it
+
+473
+0:17:04,959 --> 0:17:07,679
+to work with part two the physics i
+
+474
+0:17:07,679 --> 0:17:09,839
+promised to show you three applications
+
+475
+0:17:09,839 --> 0:17:11,839
+number one how to make the complicated
+
+476
+0:17:11,839 --> 0:17:13,760
+equations that we often need to solve in
+
+477
+0:17:13,760 --> 0:17:16,160
+physics simpler by studying special
+
+478
+0:17:16,160 --> 0:17:18,720
+linearized limits number two the
+
+479
+0:17:18,720 --> 0:17:20,799
+non-relativistic limit of einstein's
+
+480
+0:17:20,799 --> 0:17:23,120
+energy formula and how it contributes to
+
+481
+0:17:23,120 --> 0:17:25,600
+the fine structure of the hydrogen atom
+
+482
+0:17:25,600 --> 0:17:27,679
+and number three the definition of the
+
+483
+0:17:27,679 --> 0:17:30,080
+momentum operator in quantum mechanics
+
+484
+0:17:30,080 --> 0:17:32,240
+let's go one by one again you don't
+
+485
+0:17:32,240 --> 0:17:33,919
+necessarily need to know anything going
+
+486
+0:17:33,919 --> 0:17:36,080
+in about relativity or quantum mechanics
+
+487
+0:17:36,080 --> 0:17:38,080
+the point is just to get a taste of how
+
+488
+0:17:38,080 --> 0:17:40,400
+taylor's formula appears in several very
+
+489
+0:17:40,400 --> 0:17:42,559
+different areas of physics starting with
+
+490
+0:17:42,559 --> 0:17:44,720
+number one making complicated problems
+
+491
+0:17:44,720 --> 0:17:46,960
+simple the basic procedure to solve a
+
+492
+0:17:46,960 --> 0:17:48,799
+problem in classical mechanics is to
+
+493
+0:17:48,799 --> 0:17:50,799
+write down all the forces on a particle
+
+494
+0:17:50,799 --> 0:17:52,640
+and then add them up and write f equals
+
+495
+0:17:52,640 --> 0:17:54,720
+ma and then solve this equation for the
+
+496
+0:17:54,720 --> 0:17:56,400
+position of the particle as a function
+
+497
+0:17:56,400 --> 0:17:58,480
+of time that's easier said than done
+
+498
+0:17:58,480 --> 0:18:00,960
+though especially the last step solving
+
+499
+0:18:00,960 --> 0:18:02,880
+f equals m a because for all but the
+
+500
+0:18:02,880 --> 0:18:05,120
+simplest systems this equation quickly
+
+501
+0:18:05,120 --> 0:18:07,919
+becomes too hard to solve exactly f
+
+502
+0:18:07,919 --> 0:18:10,320
+equals m a is a differential equation
+
+503
+0:18:10,320 --> 0:18:11,840
+which just means that it contains
+
+504
+0:18:11,840 --> 0:18:13,520
+derivatives of the function that you're
+
+505
+0:18:13,520 --> 0:18:16,240
+trying to solve for r of t in this case
+
+506
+0:18:16,240 --> 0:18:18,080
+and differential equations are much
+
+507
+0:18:18,080 --> 0:18:20,080
+harder to solve than the algebraic
+
+508
+0:18:20,080 --> 0:18:22,160
+equations that we all first learn about
+
+509
+0:18:22,160 --> 0:18:23,840
+in middle school and high school a
+
+510
+0:18:23,840 --> 0:18:25,520
+simple example that i've told you about
+
+511
+0:18:25,520 --> 0:18
+in a few past videos is the pendulum
+
+512
+0:18 --> 0:18:29,360
+when solving for the motion of a
+
+513
+0:18:29,360 --> 0:18:31,280
+pendulum the main force we're interested
+
+514
+0:18:31,280 --> 0:18:33,200
+in is the component of gravity that
+
+515
+0:18:33,200 --> 0:18:35,120
+points along the tangent direction to
+
+516
+0:18:35,120 --> 0:18:36,720
+the circle where the particle is
+
+517
+0:18:36,720 --> 0:18:39,440
+constrained to move that's given by mg
+
+518
+0:18:39,440 --> 0:18:41,440
+sine of theta where theta is the angle
+
+519
+0:18:41,440 --> 0:18:42,559
+that the pendulum makes with the
+
+520
+0:18:42,559 --> 0:18:44,559
+vertical axis like i showed you in the
+
+521
+0:18:44,559 --> 0:18:46,240
+very first video i posted here on the
+
+522
+0:18:46,240 --> 0:18:48,400
+channel then the f equals ma equation
+
+523
+0:18:48,400 --> 0:18:50,240
+for theta can be written after a little
+
+524
+0:18:50,240 --> 0:18:52,240
+simplifying as the second derivative of
+
+525
+0:18:52,240 --> 0:18:54,320
+theta with respect to time equals minus
+
+526
+0:18:54,320 --> 0:18:57,120
+g over l sine of theta simple as this
+
+527
+0:18:57,120 --> 0:18:59,280
+physical setup looks this equation is
+
+528
+0:18:59,280 --> 0:19:01,440
+already very complicated because of this
+
+529
+0:19:01,440 --> 0:19:03,600
+factor of sine of theta it makes it what
+
+530
+0:19:03,600 --> 0:19:05,600
+we call a non-linear differential
+
+531
+0:19:05,600 --> 0:19:07,600
+equation which can be very nasty to try
+
+532
+0:19:07,600 --> 0:19:09,760
+to solve on the other hand when theta is
+
+533
+0:19:09,760 --> 0:19:12,080
+small you can picture a pendulum gently
+
+534
+0:19:12,080 --> 0:19:13,440
+rocking back and forth like a
+
+535
+0:19:13,440 --> 0:19:15,200
+grandfather clock and that motion
+
+536
+0:19:15,200 --> 0:19:17,200
+certainly doesn't seem very complicated
+
+537
+0:19:17,200 --> 0:19:19,440
+is it possible then that we can simplify
+
+538
+0:19:19,440 --> 0:19:21,440
+this equation when theta is relatively
+
+539
+0:19:21,440 --> 0:19:24,080
+small the taylor series lets us do just
+
+540
+0:19:24,080 --> 0:19:25,840
+that like we worked out before the
+
+541
+0:19:25,840 --> 0:19:28,240
+taylor series for sine is theta minus
+
+542
+0:19:28,240 --> 0:19:30,400
+one over three factorial theta cubed
+
+543
+0:19:30,400 --> 0:19:32,320
+plus one over five factorial theta to
+
+544
+0:19:32,320 --> 0:19:34,640
+the fifth plus dot dot dot then for tiny
+
+545
+0:19:34,640 --> 0:19:36,640
+thetas we can apply the small angle
+
+546
+0:19:36,640 --> 0:19:38,720
+approximation like we saw before then
+
+547
+0:19:38,720 --> 0:19:41,039
+this complicated f equals ma equation
+
+548
+0:19:41,039 --> 0:19:43,679
+becomes vastly simpler there's no sine
+
+549
+0:19:43,679 --> 0:19:45,679
+theta factor here anymore making this
+
+550
+0:19:45,679 --> 0:19:48,080
+equation complicated and non-linear by
+
+551
+0:19:48,080 --> 0:19:49,840
+applying the taylor series we've been
+
+552
+0:19:49,840 --> 0:19:51,840
+able to linearize the differential
+
+553
+0:19:51,840 --> 0:19:53,679
+equation to turn it into a problem we
+
+554
+0:19:53,679 --> 0:19:55,679
+can solve much more easily in the
+
+555
+0:19:55,679 --> 0:19:57,840
+special case when the pendulum isn't too
+
+556
+0:19:57,840 --> 0:20:00,080
+far away from equilibrium this is just
+
+557
+0:20:00,080 --> 0:20:01,760
+the equation of a simple harmonic
+
+558
+0:20:01,760 --> 0:20:03,919
+oscillator now like a mass on a spring
+
+559
+0:20:03,919 --> 0:20:05,919
+and the general solution is a sum of
+
+560
+0:20:05,919 --> 0:20:08,480
+sines and cosines with angular frequency
+
+561
+0:20:08,480 --> 0:20:10,799
+square root g over l so the pendulum
+
+562
+0:20:10,799 --> 0:20:12,799
+indeed rocks gently back and forth from
+
+563
+0:20:12,799 --> 0:20:14,640
+side to side if you've been watching my
+
+564
+0:20:14,640 --> 0:20:16,159
+recent videos and all this looks
+
+565
+0:20:16,159 --> 0:20:18,559
+familiar it's no accident i told you a
+
+566
+0:20:18,559 --> 0:20:20,559
+few weeks ago about how the first thing
+
+567
+0:20:20,559 --> 0:20:22,720
+we should do in any physics problem is
+
+568
+0:20:22,720 --> 0:20:24,799
+expand the potential energy function
+
+569
+0:20:24,799 --> 0:20:26,960
+around a stable equilibrium point in a
+
+570
+0:20:26,960 --> 0:20:29,840
+taylor series u of x equals u of zero
+
+571
+0:20:29,840 --> 0:20:32,799
+plus u prime of zero times x plus half u
+
+572
+0:20:32,799 --> 0:20:35,200
+double prime of zero x squared plus dot
+
+573
+0:20:35,200 --> 0:20:37,200
+dot where i chose my coordinates here so
+
+574
+0:20:37,200 --> 0:20:38,960
+that the equilibrium point is at x
+
+575
+0:20:38,960 --> 0:20:41,360
+equals zero the first term u of zero is
+
+576
+0:20:41,360 --> 0:20:43,120
+just a constant and that doesn't matter
+
+577
+0:20:43,120 --> 0:20:44,880
+you're always allowed to change what you
+
+578
+0:20:44,880 --> 0:20:46,960
+call the ground level of your potential
+
+579
+0:20:46,960 --> 0:20:48,880
+energy function and shift this constant
+
+580
+0:20:48,880 --> 0:20:51,600
+away the second term meanwhile vanishes
+
+581
+0:20:51,600 --> 0:20:53,760
+because we've chosen to expand around a
+
+582
+0:20:53,760 --> 0:20:55,600
+minimum of the potential where u prime
+
+583
+0:20:55,600 --> 0:20
+is equal to zero so typically the first
+
+584
+0:20 --> 0:20:59,919
+interesting term in the taylor expansion
+
+585
+0:20:59,919 --> 0:21:02,080
+of a potential around equilibrium is the
+
+586
+0:21:02,080 --> 0:21:04,080
+quadratic term which is just like the
+
+587
+0:21:04,080 --> 0:21:06,720
+potential energy one half kx squared of
+
+588
+0:21:06,720 --> 0:21:09,280
+a block on a spring this is why systems
+
+589
+0:21:09,280 --> 0:21:11,280
+oscillate back and forth around their
+
+590
+0:21:11,280 --> 0:21:13,120
+equilibrium position i'll put a link in
+
+591
+0:21:13,120 --> 0:21:14,400
+the description to the video where i
+
+592
+0:21:14,400 --> 0:21:16,799
+talked all about this as for the force
+
+593
+0:21:16,799 --> 0:21:18,559
+that's related to the potential energy
+
+594
+0:21:18,559 --> 0:21:21,200
+by f equals minus to u by dx and
+
+595
+0:21:21,200 --> 0:21:22,960
+therefore the taylor series for the
+
+596
+0:21:22,960 --> 0:21:25,120
+force on a particle near equilibrium
+
+597
+0:21:25,120 --> 0:21:27,520
+starts with f equals minus u double
+
+598
+0:21:27,520 --> 0:21:30,559
+prime of zero times x again just like
+
+599
+0:21:30,559 --> 0:21:33,120
+the spring force minus kx
+
+600
+0:21:33,120 --> 0:21:36,480
+in particular the force is linear so the
+
+601
+0:21:36,480 --> 0:21:38,400
+trick i taught you a couple of weeks ago
+
+602
+0:21:38,400 --> 0:21:40,080
+about the simple harmonic motion you
+
+603
+0:21:40,080 --> 0:21:42,240
+discover when you expand the potential
+
+604
+0:21:42,240 --> 0:21:44,559
+energy around a stable equilibrium is
+
+605
+0:21:44,559 --> 0:21:47,280
+secretly the same thing as linearizing
+
+606
+0:21:47,280 --> 0:21:49,360
+the f equals ma equation
+
+607
+0:21:49,360 --> 0:21:51,360
+next up let's look at the newtonian
+
+608
+0:21:51,360 --> 0:21:53,440
+limit of einstein's theory of special
+
+609
+0:21:53,440 --> 0:21:56,240
+relativity in newtonian mechanics a free
+
+610
+0:21:56,240 --> 0:21:58,880
+particle has kinetic energy one-half mv
+
+611
+0:21:58,880 --> 0:22:01,039
+squared alternatively if we plug in the
+
+612
+0:22:01,039 --> 0:22:03,280
+momentum p equals mv we can write the
+
+613
+0:22:03,280 --> 0:22:06,480
+same thing as p squared over 2m
+
+614
+0:22:06,480 --> 0:22:08,880
+this is the energy of a non-relativistic
+
+615
+0:22:08,880 --> 0:22:11,159
+free particle with momentum p
+
+616
+0:22:11,159 --> 0:22:13,440
+non-relativistic means that the particle
+
+617
+0:22:13,440 --> 0:22:15,280
+isn't moving very fast compared to the
+
+618
+0:22:15,280 --> 0:22:17,120
+speed of light when particles do
+
+619
+0:22:17,120 --> 0:22:18,960
+approach the speed of light some weird
+
+620
+0:22:18,960 --> 0:22:20,480
+and wild things happen that were
+
+621
+0:22:20,480 --> 0:22:22,400
+discovered by einstein 100 and some
+
+622
+0:22:22,400 --> 0:22:24,320
+years ago when he wrote down his special
+
+623
+0:22:24,320 --> 0:22:26,080
+theory of relativity in special
+
+624
+0:22:26,080 --> 0:22:28,480
+relativity the energy of a free particle
+
+625
+0:22:28,480 --> 0:22:30,960
+of mass m and momentum p is given by
+
+626
+0:22:30,960 --> 0:22:33,520
+this new formula the square root of m
+
+627
+0:22:33,520 --> 0:22:36,080
+squared c to the four plus p squared c
+
+628
+0:22:36,080 --> 0:22:38,240
+squared where c is the speed of light
+
+629
+0:22:38,240 --> 0:22:39,760
+you've seen this before even if you've
+
+630
+0:22:39,760 --> 0:22:41,840
+never studied special relativity because
+
+631
+0:22:41,840 --> 0:22:43,919
+if the particle is at rest so that p
+
+632
+0:22:43,919 --> 0:22:47,039
+equals zero we get e equals m c squared
+
+633
+0:22:47,039 --> 0:22:48,799
+which might be the most famous equation
+
+634
+0:22:48,799 --> 0:22:50,720
+in physics but when the particle is
+
+635
+0:22:50,720 --> 0:22:53,120
+moving we need this more general formula
+
+636
+0:22:53,120 --> 0:22:54,559
+including the contribution from the
+
+637
+0:22:54,559 --> 0:22:57,039
+momentum this formula holds even if the
+
+638
+0:22:57,039 --> 0:22:58,799
+speed of the particle approaches the
+
+639
+0:22:58,799 --> 0:23:01,120
+speed of light but on the other hand we
+
+640
+0:23:01,120 --> 0:23:02,960
+know what the energy is supposed to be
+
+641
+0:23:02,960 --> 0:23:05,440
+when p is small so how do we see that
+
+642
+0:23:05,440 --> 0:23:07,679
+einstein's formula correctly reproduces
+
+643
+0:23:07,679 --> 0:23:09,360
+newton's formula for a slow moving
+
+644
+0:23:09,360 --> 0:23
+particle the idea is of course to apply
+
+645
+0:23 --> 0:23:13,919
+the taylor expansion of einstein's
+
+646
+0:23:13,919 --> 0:23:16,080
+energy when p is small let's first of
+
+647
+0:23:16,080 --> 0:23:18,080
+all pull this factor of m squared c to
+
+648
+0:23:18,080 --> 0:23
+the 4 outside the square root then we
+
+649
+0:23 --> 0:23:21,679
+can write the whole thing like this this
+
+650
+0:23:21,679 --> 0:23:23,360
+makes it clear that what we want to do
+
+651
+0:23:23,360 --> 0:23:25,679
+here is compute the taylor series for f
+
+652
+0:23:25,679 --> 0:23:29,039
+of x equals 1 plus x square root when x
+
+653
+0:23:29,039 --> 0:23:31,039
+equals p squared over m squared c
+
+654
+0:23:31,039 --> 0:23:33,360
+squared is small actually this kind of
+
+655
+0:23:33,360 --> 0:23:35,280
+taylor series shows up so often in
+
+656
+0:23:35,280 --> 0:23:36,960
+physics that it's worth writing down the
+
+657
+0:23:36,960 --> 0:23:39,200
+slightly more general case for f of x
+
+658
+0:23:39,200 --> 0:23:41,919
+equals one plus x to some power q our
+
+659
+0:23:41,919 --> 0:23:43,440
+current case with the square root would
+
+660
+0:23:43,440 --> 0:23:45,679
+be q equals half i'll let you work out
+
+661
+0:23:45,679 --> 0:23:47,200
+the first few terms of this taylor
+
+662
+0:23:47,200 --> 0:23:49,200
+series for yourself for practice i also
+
+663
+0:23:49,200 --> 0:23:51,039
+go through the details in the notes i
+
+664
+0:23:51,039 --> 0:23:54,960
+get f of x equals one plus q x plus half
+
+665
+0:23:54,960 --> 0:23:58,080
+q q minus one times x squared the first
+
+666
+0:23:58,080 --> 0:24:00,159
+pair of terms here is again a very
+
+667
+0:24:00,159 --> 0:24:02,400
+useful approximation that comes up a lot
+
+668
+0:24:02,400 --> 0:24:04,880
+in physics now back to the relativistic
+
+669
+0:24:04,880 --> 0:24:07,760
+energy we just plug in q equals half and
+
+670
+0:24:07,760 --> 0:24
+x equals p squared over m squared c
+
+671
+0:24 --> 0:24:12,080
+squared then here's what we get and if
+
+672
+0:24:12,080 --> 0:24:14,240
+we multiply through by the m c squared
+
+673
+0:24:14,240 --> 0:24:16,720
+here's where we end up e equals m c
+
+674
+0:24:16,720 --> 0:24:19,520
+squared plus p squared over two m minus
+
+675
+0:24:19,520 --> 0:24:21,760
+p to the four over eight m cubed c
+
+676
+0:24:21,760 --> 0:24:24,480
+squared plus the higher powers of p the
+
+677
+0:24:24,480 --> 0:24:27,039
+first term is e equals m c squared again
+
+678
+0:24:27,039 --> 0:24:28,799
+that's what we get by evaluating the
+
+679
+0:24:28,799 --> 0:24:30,480
+energy of a particle at rest and
+
+680
+0:24:30,480 --> 0:24:32,320
+relativity it doesn't have a direct
+
+681
+0:24:32,320 --> 0:24:34,559
+analog in newtonian mechanics but on the
+
+682
+0:24:34,559 --> 0:24:36,320
+other hand it's just a constant and
+
+683
+0:24:36,320 --> 0:24:37,919
+you're always free to add a constant to
+
+684
+0:24:37,919 --> 0:24:39,840
+the total energy in newtonian mechanics
+
+685
+0:24:39,840 --> 0:24:41,919
+without changing anything as for the
+
+686
+0:24:41,919 --> 0:24
+second term there we see how the taylor
+
+687
+0:24 --> 0:24:46,640
+series reproduces precisely the kinetic
+
+688
+0:24:46,640 --> 0:24:48,480
+energy that we expect in newtonian
+
+689
+0:24:48,480 --> 0:24:50,559
+mechanics actually i'm being slightly
+
+690
+0:24:50,559 --> 0:24:52,320
+sloppy here because the definition of
+
+691
+0:24:52,320 --> 0:24:54,720
+the momentum p actually gets modified in
+
+692
+0:24:54,720 --> 0:24:56,559
+relativity and we should really tailor
+
+693
+0:24:56,559 --> 0:24:58,400
+expand that as well but in the
+
+694
+0:24:58,400 --> 0:25:00,400
+non-relativistic limit we of course get
+
+695
+0:25:00,400 --> 0:25:03,520
+back the newtonian momentum p equals mv
+
+696
+0:25:03,520 --> 0:25:05,039
+but what about this next term in the
+
+697
+0:25:05,039 --> 0:25:06,640
+taylor series that goes like p to the
+
+698
+0:25:06,640 --> 0:25:08,080
+four what are we supposed to make of
+
+699
+0:25:08,080 --> 0:25:11,039
+that the point is newtonian mechanics is
+
+700
+0:25:11,039 --> 0:25:12,799
+a good description of the world for
+
+701
+0:25:12,799 --> 0:25:14,640
+particles that aren't moving anywhere
+
+702
+0:25:14,640 --> 0:25:16,400
+close to the speed of light but it's
+
+703
+0:25:16,400 --> 0:25:18,960
+only an approximation this next term in
+
+704
+0:25:18,960 --> 0:25:20,960
+the taylor expansion is the leading
+
+705
+0:25:20,960 --> 0:25:23,360
+relativistic correction to the newtonian
+
+706
+0:25:23,360 --> 0:25:25,760
+energy when the speed is tiny compared
+
+707
+0:25:25,760 --> 0:25:27,120
+to the speed of light and this
+
+708
+0:25:27,120 --> 0:25:28,960
+additional term gives a very small
+
+709
+0:25:28,960 --> 0:25:30,799
+correction to newton's result and we can
+
+710
+0:25:30,799 --> 0:25:32,799
+ignore it without losing much accuracy
+
+711
+0:25:32,799 --> 0:25:34,640
+but as the speed gets larger this
+
+712
+0:25:34,640 --> 0:25:36,240
+correction becomes increasingly
+
+713
+0:25:36,240 --> 0:25:38,159
+important one place we can see this
+
+714
+0:25:38,159 --> 0:25:40,320
+correction in action is in the binding
+
+715
+0:25:40,320 --> 0:25:42,320
+energy of a hydrogen atom that's the
+
+716
+0:25:42,320 --> 0:25:44,320
+amount of energy you would need to kick
+
+717
+0:25:44,320 --> 0:25:46,320
+the electron out of its quote-unquote
+
+718
+0:25:46,320 --> 0:25:48,400
+orbit around the proton at the center of
+
+719
+0:25:48,400 --> 0:25:50,240
+the atom in a video from a couple of
+
+720
+0:25:50,240 --> 0:25:52,240
+months ago i showed you how we can get
+
+721
+0:25:52,240 --> 0:25:54,240
+90 percent of the way to the answer for
+
+722
+0:25:54,240 --> 0:25:56,400
+the binding energy just by applying
+
+723
+0:25:56,400 --> 0:25:58,799
+dimensional analysis in other words by
+
+724
+0:25:58,799 --> 0:26:00,880
+making a list of the parameters we have
+
+725
+0:26:00,880 --> 0:26:02,880
+available to play with and their units
+
+726
+0:26:02,880 --> 0:26:05,039
+and seeing how we can combine them to
+
+727
+0:26:05,039 --> 0:26:06,559
+get something with the units that we
+
+728
+0:26:06,559 --> 0:26:08,640
+want in this case we saw that we can
+
+729
+0:26:08,640 --> 0:26:11,600
+combine the electron mass m in kilograms
+
+730
+0:26:11,600 --> 0:26
+its electric charge e in coulombs
+
+731
+0:26 --> 0:26:16,240
+coulomb's constant k which sets the
+
+732
+0:26:16,240 --> 0:26:17,919
+strength of the electric force in
+
+733
+0:26:17,919 --> 0:26:19,840
+newton's meters squared per coulomb
+
+734
+0:26:19,840 --> 0:26:22,080
+squared and planck's constant h-bar
+
+735
+0:26:22,080 --> 0:26:23,279
+which sets the scale of quantum
+
+736
+0:26:23,279 --> 0:26:25,440
+mechanics in kilograms meters squared
+
+737
+0:26:25,440 --> 0:26:27,760
+per second to get units of energy like
+
+738
+0:26:27,760 --> 0:26:29,919
+so then the binding energy of the
+
+739
+0:26:29,919 --> 0:26:32,320
+hydrogen atom must be proportional to
+
+740
+0:26:32,320 --> 0:26:34,559
+this just by thinking about the units
+
+741
+0:26:34,559 --> 0:26:36,799
+like this gets us almost all the way to
+
+742
+0:26:36,799 --> 0:26:39,120
+the answer the actual formula for the
+
+743
+0:26:39,120 --> 0:26:41,039
+binding energy comes with a factor of
+
+744
+0:26:41,039 --> 0:26:42,960
+half though which we can't get by only
+
+745
+0:26:42,960 --> 0:26:44,799
+thinking about the units because 2
+
+746
+0:26:44,799 --> 0:26:47,360
+doesn't have any units this is bohr's
+
+747
+0:26:47,360 --> 0:26:48,960
+formula for the binding energy of
+
+748
+0:26:48,960 --> 0:26:50,720
+hydrogen and it was one of the first
+
+749
+0:26:50,720 --> 0:26:52,080
+great accomplishments of quantum
+
+750
+0:26:52,080 --> 0:26:55,600
+mechanics its numerical value about 13.6
+
+751
+0:26:55,600 --> 0:26:57,760
+electron volts matches very closely to
+
+752
+0:26:57,760 --> 0:26:59,600
+the experimental value of the binding
+
+753
+0:26:59,600 --> 0:27:02,159
+energy and yet bohr's formula is only an
+
+754
+0:27:02,159 --> 0:27:04,720
+approximation it neglects the small but
+
+755
+0:27:04,720 --> 0:27:06,400
+fascinating and experimentally
+
+756
+0:27:06,400 --> 0:27:08,720
+observable effects of special relativity
+
+757
+0:27:08,720 --> 0:27:10,080
+but where do we go wrong in our
+
+758
+0:27:10,080 --> 0:27:12,080
+dimensional analysis argument we wrote
+
+759
+0:27:12,080 --> 0:27:15,279
+down the only possible way to combine m
+
+760
+0:27:15,279 --> 0:27:18,480
+e k and h bar to make units of energy
+
+761
+0:27:18,480 --> 0:27:20,880
+well it's not that we went wrong per se
+
+762
+0:27:20,880 --> 0:27:22,399
+it's that in writing down the
+
+763
+0:27:22,399 --> 0:27:24,399
+non-relativistic approximation to the
+
+764
+0:27:24,399 --> 0:27:26,559
+binding energy we omitted the speed of
+
+765
+0:27:26,559 --> 0:27:29,200
+light c from our list of parameters so
+
+766
+0:27:29,200 --> 0:27:30,640
+if we want to include the effects of
+
+767
+0:27:30,640 --> 0:27:32,640
+special relativity we need to consider
+
+768
+0:27:32,640 --> 0:27:34,559
+how c can enter the formula for the
+
+769
+0:27:34,559 --> 0:27:37,120
+energy but something remarkable happens
+
+770
+0:27:37,120 --> 0:27:39,360
+when we add c to the list of parameters
+
+771
+0:27:39,360 --> 0:27:41,679
+we can form a dimensionless combination
+
+772
+0:27:41,679 --> 0:27:45,279
+by alpha equals ke squared over h bar c
+
+773
+0:27:45,279 --> 0:27:47,120
+this combination is called the fine
+
+774
+0:27:47,120 --> 0:27:48,960
+structure constant i'll leave it for you
+
+775
+0:27:48,960 --> 0:27:50,640
+to check that all the dimensions really
+
+776
+0:27:50,640 --> 0:27:52,399
+do cancel out here when you plug in the
+
+777
+0:27:52,399 --> 0:27:54,320
+units if you put in the numbers you'll
+
+778
+0:27:54,320 --> 0:27:57,760
+find that alpha is about .0073
+
+779
+0:27:57,760 --> 0:27:59,840
+or a little more memorably about one
+
+780
+0:27:59,840 --> 0:28
+divided by 137
+
+781
+0:28 --> 0:28
+since alpha is unitless dimensional
+
+782
+0:28 --> 0:28:06,159
+analysis doesn't tell us anything about
+
+783
+0:28:06,159 --> 0:28:07,840
+how it appears in the formula for the
+
+784
+0:28:07,840 --> 0:28:09,520
+energy no more than it could tell us
+
+785
+0:28:09,520 --> 0:28:11,840
+about the factor of 2 in the denominator
+
+786
+0:28:11,840 --> 0:28:13,919
+any function of alpha can multiply our
+
+787
+0:28:13,919 --> 0:28:15,600
+expression for the energy without
+
+788
+0:28:15,600 --> 0:28:17,520
+spoiling the units this is how
+
+789
+0:28:17,520 --> 0:28:19,679
+relativity allows small corrections to
+
+790
+0:28:19,679 --> 0:28:22,320
+bohr's formula which remember was itself
+
+791
+0:28:22,320 --> 0:28:24,559
+already an excellent approximation to
+
+792
+0:28:24,559 --> 0:28:26,480
+the experimental value of the hydrogen
+
+793
+0:28:26,480 --> 0:28:28,720
+binding energy but we can get an even
+
+794
+0:28:28,720 --> 0:28:30,480
+better theoretical prediction by
+
+795
+0:28:30,480 --> 0:28:32,720
+considering the relativistic corrections
+
+796
+0:28:32,720 --> 0:28:34,159
+with that leading relativistic
+
+797
+0:28:34,159 --> 0:28:36,240
+correction that we derived by applying
+
+798
+0:28:36,240 --> 0:28:38,159
+the taylor series to einstein's formula
+
+799
+0:28:38,159 --> 0:28:40,320
+we can determine the small modification
+
+800
+0:28:40,320 --> 0:28:42,559
+that relativity makes to bohr's formula
+
+801
+0:28:42,559 --> 0:28:44,559
+the details require quantum mechanics so
+
+802
+0:28:44,559 --> 0:28:46,640
+i won't go into that here but the result
+
+803
+0:28:46,640 --> 0:28:49,200
+is that this function f is given by 1.
+
+804
+0:28:49,200 --> 0:28:50,960
+that was for the original bohr answer
+
+805
+0:28:50,960 --> 0:28
+plus 5 4 alpha squared remember that
+
+806
+0:28 --> 0:28:55,600
+alpha is a tiny number so this
+
+807
+0:28:55,600 --> 0:28:57,760
+correction that goes like alpha squared
+
+808
+0:28:57,760 --> 0:29
+is even tinier still it's therefore
+
+809
+0:29 --> 0:29
+called a fine structure correction to
+
+810
+0:29 --> 0:29:03,760
+the energy there are in fact further
+
+811
+0:29:03,760 --> 0:29:05,520
+corrections to this formula both at
+
+812
+0:29:05,520 --> 0:29:07,360
+order alpha squared as well as even
+
+813
+0:29:07,360 --> 0:29:09,279
+smaller corrections at higher orders in
+
+814
+0:29:09,279 --> 0:29:11,600
+alpha from various physical effects
+
+815
+0:29:11,600 --> 0:29:13,200
+finally while we're on the subject of
+
+816
+0:29:13,200 --> 0:29:15,279
+quantum mechanics let's finish by seeing
+
+817
+0:29:15,279 --> 0:29:17,279
+how taylor's formula is related to the
+
+818
+0:29:17,279 --> 0:29:19,200
+definition of momentum in quantum
+
+819
+0:29:19,200 --> 0:29:21,520
+mechanics in classical mechanics the
+
+820
+0:29:21,520 --> 0:29:23,120
+main question is to solve for the
+
+821
+0:29:23,120 --> 0:29:25,520
+trajectory x of t of a particle as a
+
+822
+0:29:25,520 --> 0:29:27,679
+function of time in quantum mechanics on
+
+823
+0:29:27,679 --> 0:29:29,600
+the other hand the goal is to find the
+
+824
+0:29:29,600 --> 0:29:31,919
+wave function psi of x and how it
+
+825
+0:29:31,919 --> 0:29:33,840
+evolves with time wherever the wave
+
+826
+0:29:33,840 --> 0:29:36,159
+function or rather its square is bigger
+
+827
+0:29:36,159 --> 0:29:37,679
+the more likely you are to find the
+
+828
+0:29:37,679 --> 0:29:39,520
+particle at that location when you make
+
+829
+0:29:39,520 --> 0:29:41,039
+a measurement those things that we
+
+830
+0:29:41,039 --> 0:29:42,799
+measure about the particle like its
+
+831
+0:29:42,799 --> 0:29:45,279
+position and momentum are represented by
+
+832
+0:29:45,279 --> 0:29:47,600
+operators that act on the wave function
+
+833
+0:29:47,600 --> 0:29:49,520
+we write x hat for the operator that
+
+834
+0:29:49,520 --> 0:29:51,600
+measures the position and p-hat for the
+
+835
+0:29:51,600 --> 0:29:53,360
+operator that measures the momentum the
+
+836
+0:29:53,360 --> 0:29:54,720
+point of this video isn't to learn
+
+837
+0:29:54,720 --> 0:29:56,559
+quantum mechanics right now but i gave
+
+838
+0:29:56,559 --> 0:29:58,320
+you a bit of a crash course in the video
+
+839
+0:29:58,320 --> 0:30
+i posted about symmetries in quantum
+
+840
+0:30 --> 0:30:01,120
+mechanics that i'll link in the
+
+841
+0:30:01,120 --> 0:30:02,960
+description if you want to see more i
+
+842
+0:30:02,960 --> 0:30:04,799
+told you there about how the momentum
+
+843
+0:30:04,799 --> 0:30:06,559
+operator is closely related to
+
+844
+0:30:06,559 --> 0:30:09,520
+translations in space so let's define an
+
+845
+0:30:09,520 --> 0:30:11,760
+operator call it u of epsilon that
+
+846
+0:30:11,760 --> 0:30:14,320
+shifts the wave function over by epsilon
+
+847
+0:30:14,320 --> 0:30
+if you haven't seen those earlier videos
+
+848
+0:30 --> 0:30:17,440
+where i explained more about what all
+
+849
+0:30:17,440 --> 0:30:19,279
+this means don't sweat it right now
+
+850
+0:30:19,279 --> 0:30:21,200
+we'll just take this as a definition and
+
+851
+0:30:21,200 --> 0:30:23,039
+discover how it's related to taylor's
+
+852
+0:30:23,039 --> 0:30:25,200
+formula and indeed this looks familiar
+
+853
+0:30:25,200 --> 0:30:27,520
+physics aside psi of x is just a
+
+854
+0:30:27,520 --> 0:30:29,600
+function and this formula tells us that
+
+855
+0:30:29,600 --> 0:30:31,200
+we're looking for an operator that
+
+856
+0:30:31,200 --> 0:30:34,159
+shifts psi of x over to psi of x minus
+
+857
+0:30:34,159 --> 0:30:36,399
+epsilon and that's exactly what taylor's
+
+858
+0:30:36,399 --> 0:30:37,600
+formula does
+
+859
+0:30:37,600 --> 0:30:39,520
+therefore we identify the translation
+
+860
+0:30:39,520 --> 0:30:42,399
+operator u with e to the minus epsilon d
+
+861
+0:30:42,399 --> 0:30:44,720
+by dx for reasons we won't delve into
+
+862
+0:30:44,720 --> 0:30:47,200
+right now this translation operator u is
+
+863
+0:30:47,200 --> 0:30:49,520
+related to the momentum operator by u of
+
+864
+0:30:49,520 --> 0:30:52,480
+epsilon equals e to the minus i over h
+
+865
+0:30:52,480 --> 0:30:55,520
+bar epsilon times p and comparing the
+
+866
+0:30:55,520 --> 0:30:57,919
+two sides taylor's formula shows us that
+
+867
+0:30:57,919 --> 0:30:59,919
+we should identify the momentum operator
+
+868
+0:30:59,919 --> 0:31:02,640
+in quantum mechanics with p equals h bar
+
+869
+0:31:02,640 --> 0:31:05,440
+over i d by dx when you do start
+
+870
+0:31:05,440 --> 0:31:07,120
+studying quantum mechanics this will be
+
+871
+0:31:07,120 --> 0:31:08,960
+one of the first formulas you'll learn
+
+872
+0:31:08,960 --> 0:31:10,960
+it follows directly from taylor's
+
+873
+0:31:10,960 --> 0:31:11,919
+formula
+
+874
+0:31:11,919 --> 0:31:13,919
+this has been just a small selection of
+
+875
+0:31:13,919 --> 0:31:15,600
+physics applications where taylor's
+
+876
+0:31:15,600 --> 0:31:17,919
+formula shows up but again you'd really
+
+877
+0:31:17,919 --> 0:31:20,399
+be hard-pressed to find any chapter of
+
+878
+0:31:20,399 --> 0:31:22,080
+any physics textbook where it isn't
+
+879
+0:31:22,080 --> 0:31:24,320
+applied keep your eyes open and you'll
+
+880
+0:31:24,320 --> 0:31:26,640
+see taylor's formula everywhere you can
+
+881
+0:31:26,640 --> 0:31:28,399
+find the notes for this video as well as
+
+882
+0:31:28,399 --> 0:31:30,080
+links to all the earlier videos that i
+
+883
+0:31:30,080 --> 0:31
+mentioned down in the description if you
+
+884
+0:31 --> 0:31:33,279
+like the video and you want to help
+
+885
+0:31:33,279 --> 0:31:35,120
+support the channel i'll also put a link
+
+886
+0:31:35,120 --> 0:31:37,360
+to my patreon page thank you so much for
+
+887
+0:31:37,360 --> 0:31:39,200
+watching and i'll see you back here soon
+
+888
+0:31:39,200 --> 0:31:43,080
+for another physics lesson
+

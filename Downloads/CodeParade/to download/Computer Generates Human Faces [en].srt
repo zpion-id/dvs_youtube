@@ -1,0 +1,876 @@
+1
+0:00:00,030 --> 0:00:02,310
+can a computer make a completely unique
+
+2
+0:00:02,310 --> 0:00:04,680
+and realistic face what kinds of
+
+3
+0:00:04,680 --> 0:00:07,379
+features we'll learn to find out I
+
+4
+0:00:07,379 --> 0:00:09,420
+needed a big data set with lots of faces
+
+5
+0:00:09,420 --> 0:00:12,660
+I decided to use 1,700 faces from my
+
+6
+0:00:12,660 --> 0:00:14,820
+high school yearbook this is a great
+
+7
+0:00:14,820 --> 0:00:16,529
+data set because everyone has posed the
+
+8
+0:00:16,529 --> 0:00:18,180
+same way in front of identical
+
+9
+0:00:18,180 --> 0:00:20,550
+backgrounds the downside is that
+
+10
+0:00:20,550 --> 0:00:22,619
+everyone is teenaged so we're not going
+
+11
+0:00:22,619 --> 0:00:24,300
+to get much facial hair wrinkles or
+
+12
+0:00:24,300 --> 0:00:27,150
+baldness now is the time I need to give
+
+13
+0:00:27,150 --> 0:00:29,070
+a warning if you're not looking for a
+
+14
+0:00:29,070 --> 0:00:31,170
+technical explanation just click here to
+
+15
+0:00:31,170 --> 0:00:33,600
+skip to the results all right so let's
+
+16
+0:00:33,600 --> 0:00:36,210
+talk about autoencoders an autoencoder
+
+17
+0:00:36,210 --> 0:00:38,370
+is simply a transformation that tries to
+
+18
+0:00:38,370 --> 0:00:40,739
+map samples from one space into the same
+
+19
+0:00:40,739 --> 0:00:42,600
+space so you might be asking yourself
+
+20
+0:00:42,600 --> 0:00:44,910
+why is that useful I don't see how
+
+21
+0:00:44,910 --> 0:00:47,219
+that's different from an identity the
+
+22
+0:00:47,219 --> 0:00:49,230
+idea is to try to squeeze the high
+
+23
+0:00:49,230 --> 0:00:50,760
+dimensional space through a lower
+
+24
+0:00:50,760 --> 0:00:52,980
+dimensional bottleneck to see how well
+
+25
+0:00:52,980 --> 0:00:54,710
+it can reconstruct the original samples
+
+26
+0:00:54,710 --> 0:00:57,690
+in this case there's an encoder and a
+
+27
+0:00:57,690 --> 0:00:59,579
+decoder network which you can think of
+
+28
+0:00:59,579 --> 0:01:01,590
+as black boxes that do the complicated
+
+29
+0:01:01,590 --> 0:01:04,470
+math for you with images it's a lot like
+
+30
+0:01:04,470 --> 0:01:06,930
+JPEG compression you can afford to lose
+
+31
+0:01:06,930 --> 0:01:09,030
+a lot of the dimensionality which is the
+
+32
+0:01:09,030 --> 0:01:11,070
+file size but still reconstruct the
+
+33
+0:01:11,070 --> 0:01:13,170
+original with only a small loss of
+
+34
+0:01:13,170 --> 0:01:15,630
+quality let's look at the JPEG example
+
+35
+0:01:15,630 --> 0:01:18,150
+you probably can't even see the quality
+
+36
+0:01:18,150 --> 0:01:20,220
+loss but this is already compressed 14
+
+37
+0:01:20,220 --> 0:01:22,520
+times smaller than the raw original size
+
+38
+0:01:22,520 --> 0:01:24,840
+but watch what happens as we decrease
+
+39
+0:01:24,840 --> 0:01:30,960
+the dimensionality
+
+40
+0:01:30,960 --> 0:01:34,590
+[Music]
+
+41
+0:01:34,590 --> 0:01:37,210
+the quality is suffered but it's still
+
+42
+0:01:37,210 --> 0:01:39,730
+recognizable so let's compare that to
+
+43
+0:01:39,730 --> 0:01:41,550
+the auto encoder we're about to use
+
+44
+0:01:41,550 --> 0:01:44,530
+we're starting with an image that's 144
+
+45
+0:01:44,530 --> 0:01:47,680
+pixels wide by 192 pixels tall with
+
+46
+0:01:47,680 --> 0:01:50,860
+three color channels that's about 83,000
+
+47
+0:01:50,860 --> 0:01:52,900
+dimensions and we're gonna squeeze that
+
+48
+0:01:52,900 --> 0:01:56,020
+down through just 80 that's more than a
+
+49
+0:01:56,020 --> 0:01:58,720
+thousand times compression but how can
+
+50
+0:01:58,720 --> 0:02:00,700
+we possibly expect a decent looking face
+
+51
+0:02:00,700 --> 0:02:03,220
+with this much reduction we just saw
+
+52
+0:02:03,220 --> 0:02:04,990
+what happened to JPEG with 100x
+
+53
+0:02:04,990 --> 0:02:08,020
+compression the reason is that JPEG has
+
+54
+0:02:08,020 --> 0:02:10,300
+to compress all possible images or as
+
+55
+0:02:10,300 --> 0:02:12,670
+we're only interested in faces if you
+
+56
+0:02:12,670 --> 0:02:14,230
+think about it the space of all possible
+
+57
+0:02:14,230 --> 0:02:16,720
+faces is way smaller than the space of
+
+58
+0:02:16,720 --> 0:02:18,930
+all images by orders of magnitude
+
+59
+0:02:18,930 --> 0:02:20,800
+especially considering they were all
+
+60
+0:02:20,800 --> 0:02:23,680
+posed similarly since we forced it to
+
+61
+0:02:23,680 --> 0:02:26,350
+learn only 80 features the only way it
+
+62
+0:02:26,350 --> 0:02:27,700
+could provide a good reconstruction
+
+63
+0:02:27,700 --> 0:02:29,320
+given what we just saw with the general
+
+64
+0:02:29,320 --> 0:02:31,959
+compression is if those 80 features are
+
+65
+0:02:31,959 --> 0:02:34,870
+face specific so hopefully it will learn
+
+66
+0:02:34,870 --> 0:02:37,180
+what it means to be a face there's one
+
+67
+0:02:37,180 --> 0:02:38,799
+other trick we can use to simplify this
+
+68
+0:02:38,799 --> 0:02:41,380
+model though since we really just want
+
+69
+0:02:41,380 --> 0:02:43,269
+to generate faces we don't actually need
+
+70
+0:02:43,269 --> 0:02:45,900
+the encoder not even during training
+
+71
+0:02:45,900 --> 0:02:48,250
+instead we just embed all training
+
+72
+0:02:48,250 --> 0:02:50,100
+samples randomly into the latent space
+
+73
+0:02:50,100 --> 0:02:52,570
+their weights then just get updated just
+
+74
+0:02:52,570 --> 0:02:55,030
+like the network wave when training to
+
+75
+0:02:55,030 --> 0:02:57,250
+generate a random face we'll just sample
+
+76
+0:02:57,250 --> 0:02:59,230
+each of the 80 dimensions using the same
+
+77
+0:02:59,230 --> 0:03
+means and variances as we see in the
+
+78
+0:03 --> 0:03:04,060
+training so what 80 features do you
+
+79
+0:03:04,060 --> 0:03:07,390
+think it learned well let's see each of
+
+80
+0:03:07,390 --> 0:03:09,070
+these sliders represents one of the 80
+
+81
+0:03:09,070 --> 0:03:11,620
+latent space dimensions each tick mark
+
+82
+0:03:11,620 --> 0:03:13,450
+is one standard deviation and the center
+
+83
+0:03:13,450 --> 0:03:14,430
+is the mean
+
+84
+0:03:14,430 --> 0:03:16,920
+we can see that each slider is making it
+
+85
+0:03:16,920 --> 0:03:18,840
+change but it's not clear what each one
+
+86
+0:03:18,840 --> 0:03:21,030
+does and in fact what the slider does
+
+87
+0:03:21,030 --> 0:03:22,799
+actually depends on the state of all the
+
+88
+0:03:22,799 --> 0:03:25,290
+other sliders so it's really impossible
+
+89
+0:03:25,290 --> 0:03:28,260
+to say so does that mean to just learn
+
+90
+0:03:28,260 --> 0:03:30,689
+some insanely complex representation
+
+91
+0:03:30,689 --> 0:03:33,120
+that humans could never comprehend are
+
+92
+0:03:33,120 --> 0:03:33,920
+we done
+
+93
+0:03:33,920 --> 0:03:36,150
+well no there's actually a big mistake
+
+94
+0:03:36,150 --> 0:03:38,280
+we made and fixing it will help us solve
+
+95
+0:03:38,280 --> 0:03:39,689
+this problem and improve the face
+
+96
+0:03:39,689 --> 0:03:43,890
+quality let's look back at one of the
+
+97
+0:03:43,890 --> 0:03:46,319
+assumptions we made we said we'd sample
+
+98
+0:03:46,319 --> 0:03:48,150
+each dimension using the same mean and
+
+99
+0:03:48,150 --> 0:03:49,950
+variance as the Train Leighton space
+
+100
+0:03:49,950 --> 0:03:52,530
+samples to do that we assumed that each
+
+101
+0:03:52,530 --> 0:03:54,510
+dimension is normally distributed is
+
+102
+0:03:54,510 --> 0:03:57,060
+that assumption valid well I checked and
+
+103
+0:03:57,060 --> 0:03:58,829
+it does appear to be normal so that's
+
+104
+0:03:58,829 --> 0:04:02,189
+not an issue let's look at just two of
+
+105
+0:04:02,189 --> 0:04:04,079
+the dimensions so we can make a visual
+
+106
+0:04:04,079 --> 0:04:07,769
+in 2d were sampling each one dimensional
+
+107
+0:04:07,769 --> 0:04:09,329
+distribution to get our two-dimensional
+
+108
+0:04:09,329 --> 0:04:11,760
+distribution looks good right
+
+109
+0:04:11,760 --> 0:04:14,010
+but let's plot the actual distribution
+
+110
+0:04:14,010 --> 0:04:16,019
+here instead of our randomly generated
+
+111
+0:04:16,019 --> 0:04:19,260
+one as you can see although both 1d
+
+112
+0:04:19,260 --> 0:04:20,729
+distributions are correct they don't
+
+113
+0:04:20,729 --> 0:04:23,610
+uniquely define the 2d distribution the
+
+114
+0:04:23,610 --> 0:04:25,169
+problem is that our variances are
+
+115
+0:04:25,169 --> 0:04:27,479
+correlated so they can't be sampled
+
+116
+0:04:27,479 --> 0:04:29,970
+independently otherwise we're much more
+
+117
+0:04:29,970 --> 0:04:31,680
+likely to sample areas outside the
+
+118
+0:04:31,680 --> 0:04:34,199
+distribution so how can we solve this
+
+119
+0:04:34,199 --> 0:04:36,900
+problem well this is done by
+
+120
+0:04:36,900 --> 0:04:39,389
+change-of-basis instead of sampling the
+
+121
+0:04:39,389 --> 0:04:41,760
+two latent variables we sample over new
+
+122
+0:04:41,760 --> 0:04:44,419
+axes that are as independent as possible
+
+123
+0:04:44,419 --> 0:04:47,099
+finding those axes is called principal
+
+124
+0:04:47,099 --> 0:04:50,430
+component analysis or PCA you can treat
+
+125
+0:04:50,430 --> 0:04:52,500
+that as another black box for now but
+
+126
+0:04:52,500 --> 0:04:54,810
+the math is really interesting this
+
+127
+0:04:54,810 --> 0:04:56,490
+easily extends to higher dimensions
+
+128
+0:04:56,490 --> 0:04:59,159
+after all we're gonna need a T the
+
+129
+0:04:59,159 --> 0:05:01,380
+really interesting thing about PCA is
+
+130
+0:05:01,380 --> 0:05:03,090
+that it gives us the length of each axis
+
+131
+0:05:03,090 --> 0:05:04,949
+which by the way is just the standard
+
+132
+0:05:04,949 --> 0:05:07,860
+deviation along that axis the longer the
+
+133
+0:05:07,860 --> 0:05:09,810
+length the more variance there is in
+
+134
+0:05:09,810 --> 0:05:11,820
+that dimension and therefore the more
+
+135
+0:05:11,820 --> 0:05:13,500
+important the feature is to the overall
+
+136
+0:05:13,500 --> 0:05:15,840
+reconstruction so we can sort the
+
+137
+0:05:15,840 --> 0:05:17,330
+principal components by importance
+
+138
+0:05:17,330 --> 0:05:20,460
+here's the actual distribution it
+
+139
+0:05:20,460 --> 0:05:22,110
+follows an exponential decay which is
+
+140
+0:05:22,110 --> 0:05:24,180
+typical of structured data like faces as
+
+141
+0:05:24,180 --> 0:05:26,580
+you can see the vast majority of the
+
+142
+0:05:26,580 --> 0:05:28,680
+variance is actually only in the
+
+143
+0:05:28,680 --> 0:05:31,229
+20 or so dimensions so now we'll update
+
+144
+0:05:31,229 --> 0:05:33,870
+our face generation as follows we'll
+
+145
+0:05:33,870 --> 0:05:35,639
+generate a sample in the PCA
+
+146
+0:05:35,639 --> 0:05:37,830
+distribution convert that to the latent
+
+147
+0:05:37,830 --> 0:05:40,020
+space coordinate and finally run it
+
+148
+0:05:40,020 --> 0:05:41,340
+through the decoder to generate the
+
+149
+0:05:41,340 --> 0:05:43,860
+image before I start what do you think
+
+150
+0:05:43,860 --> 0:05:45,210
+are the top eight most important
+
+151
+0:05:45,210 --> 0:05:46,800
+features in a face that produce the
+
+152
+0:05:46,800 --> 0:05:49,320
+largest changes to the image pause now
+
+153
+0:05:49,320 --> 0:05:51,870
+if you want to think about it so let's
+
+154
+0:05:51,870 --> 0:05:54,090
+check it out I've sorted the sliders
+
+155
+0:05:54,090 --> 0:05:55,860
+from largest to smallest principal
+
+156
+0:05:55,860 --> 0:05:58,710
+component so the number one most
+
+157
+0:05:58,710 --> 0:06:00,990
+important feature is apparently shirt
+
+158
+0:06:00,990 --> 0:06:03,330
+color I guess it makes sense the shirt
+
+159
+0:06:03,330 --> 0:06:05,010
+takes up about a third of the image and
+
+160
+0:06:05,010 --> 0:06:06,479
+it can range from pitch black to
+
+161
+0:06:06,479 --> 0:06:09,090
+completely white number two appears to
+
+162
+0:06:09,090 --> 0:06:11,610
+be gender obviously hair length is
+
+163
+0:06:11,610 --> 0:06:13,380
+highly correlated to gender and long
+
+164
+0:06:13,380 --> 0:06:15,060
+hair takes up a lot of the image
+
+165
+0:06:15,060 --> 0:06:17,580
+number three is head position people
+
+166
+0:06:17,580 --> 0:06:19,139
+tend to lean their head during photos
+
+167
+0:06:19,139 --> 0:06:20,580
+and it's not too surprising that this
+
+168
+0:06:20,580 --> 0:06:23,070
+would be a dominant feature number four
+
+169
+0:06:23,070 --> 0:06:25,289
+is the person's height again not too
+
+170
+0:06:25,289 --> 0:06:26,789
+surprising it varies a lot between
+
+171
+0:06:26,789 --> 0:06:30,300
+people spot number five is a little
+
+172
+0:06:30,300 --> 0:06:30,780
+weird
+
+173
+0:06:30,780 --> 0:06:32,940
+I call it hair density it's kind of like
+
+174
+0:06:32,940 --> 0:06:35,729
+how much the hairline recedes and also
+
+175
+0:06:35,729 --> 0:06:39,360
+how light or dark the hair is number six
+
+176
+0:06:39,360 --> 0:06:42,389
+is head size more more likely how close
+
+177
+0:06:42,389 --> 0:06:44,070
+or zoomed in the person's head was to
+
+178
+0:06:44,070 --> 0:06:48,120
+the camera number seven is collar height
+
+179
+0:06:48,120 --> 0:06:50,220
+not one I would have thought of but I
+
+180
+0:06:50,220 --> 0:06:52,220
+guess it makes sense
+
+181
+0:06:52,220 --> 0:06:55,950
+number eight is well I'm not really sure
+
+182
+0:06:55,950 --> 0:06:58,740
+I can't tell what this is doing but it's
+
+183
+0:06:58,740 --> 0:07:01,919
+doing something the last really obvious
+
+184
+0:07:01,919 --> 0:07:04,530
+one is number nine which is what
+
+185
+0:07:04,530 --> 0:07:10,050
+direction the head is facing
+
+186
+0:07:10,050 --> 0:07:14,740
+[Music]
+
+187
+0:07:14,740 --> 0:07:18,430
+as I adjust the less important sliders
+
+188
+0:07:18,430 --> 0:07:20,110
+you can see how a little they affect the
+
+189
+0:07:20,110 --> 0:07:22,449
+image they mostly just make really small
+
+190
+0:07:22,449 --> 0:07:25,300
+fine-tuning details but we can now build
+
+191
+0:07:25,300 --> 0:07:27,729
+phases based on these parameters let's
+
+192
+0:07:27,729 --> 0:07:29,639
+say we want someone with a dark shirt
+
+193
+0:07:29,639 --> 0:07:33,610
+female leaning to the left tall thin
+
+194
+0:07:33,610 --> 0:07:36,160
+hair large or actually let's give her a
+
+195
+0:07:36,160 --> 0:07:38,919
+smaller head and we'll just the rest of
+
+196
+0:07:38,919 --> 0:07:41,740
+these to our liking you can imagine how
+
+197
+0:07:41,740 --> 0:07:43,270
+this could have some useful applications
+
+198
+0:07:43,270 --> 0:07:47,080
+like maybe for police sketching what I
+
+199
+0:07:47,080 --> 0:07:49,060
+find most amazing about this is that the
+
+200
+0:07:49,060 --> 0:07:51,009
+entire process was done unsupervised
+
+201
+0:07:51,009 --> 0:07:53,409
+what that means is that we used only
+
+202
+0:07:53,409 --> 0:07:56,169
+images of faces without any labels we
+
+203
+0:07:56,169 --> 0:07:57,970
+could have gotten away better result if
+
+204
+0:07:57,970 --> 0:07:59,770
+we had humans come up with 80 really
+
+205
+0:07:59,770 --> 0:08
+good features and then learn
+
+206
+0:08 --> 0:08:03,639
+reconstruction from that but then again
+
+207
+0:08:03,639 --> 0:08:05,860
+I'm not gonna sit here and hand label
+
+208
+0:08:05,860 --> 0:08:09,069
+1700 images with 80 properties each that
+
+209
+0:08:09,069 --> 0:08:11,020
+would take days and this is a relatively
+
+210
+0:08:11,020 --> 0:08:13,750
+small data set - typically you'd want to
+
+211
+0:08:13,750 --> 0:08:15,639
+use hundreds of thousands of samples so
+
+212
+0:08:15,639 --> 0:08:17,650
+you can really see the advantage of
+
+213
+0:08:17,650 --> 0:08:20,979
+unsupervised learning anyway let me know
+
+214
+0:08:20,979 --> 0:08:22,419
+if you'd like to see more in-depth
+
+215
+0:08:22,419 --> 0:08:24,159
+technical videos like this in the future
+
+216
+0:08:24,159 --> 0:08:26,259
+I'm still not sure what the format of
+
+217
+0:08:26,259 --> 0:08:29,480
+this channel will be thanks for watching
+
+218
+0:08:29,480 --> 0:09:00,150
+[Music]
+
+219
+0:09:00,150 --> 0:09:03,260
+[Music]
+

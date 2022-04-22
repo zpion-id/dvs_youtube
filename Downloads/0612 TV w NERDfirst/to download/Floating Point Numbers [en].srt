@@ -1,0 +1,1680 @@
+1
+0:00:00,030 --> 0:00:02,909
+floating-point numbers if you've
+
+2
+0:00:02,909 --> 0:00:05,759
+programs you've probably use these right
+
+3
+0:00:05,759 --> 0:00:07,649
+flowing point numbers and numbers that
+
+4
+0:00:07,649 --> 0:00:11,610
+support decimal points now we have an
+
+5
+0:00:11,610 --> 0:00:13,620
+idea of how computers store numbers
+
+6
+0:00:13,620 --> 0:00:15,570
+hopefully if you don't have video
+
+7
+0:00:15,570 --> 0:00:17,550
+resources that you can refer to watch
+
+8
+0:00:17,550 --> 0:00:19,350
+that video first to get an idea of how
+
+9
+0:00:19,350 --> 0:00:22,140
+integers whole numbers are being stored
+
+10
+0:00:22,140 --> 0:00:24,300
+by computers and then come back here and
+
+11
+0:00:24,300 --> 0:00:25,880
+we'll talk about the decimals all right
+
+12
+0:00:25,880 --> 0:00:27,779
+Yoshi not have red noon Wednesday
+
+13
+0:00:27,779 --> 0:00:34,020
+episode on zero six one two TV hello and
+
+14
+0:00:34,020 --> 0:00:36,180
+welcome back to another random Wednesday
+
+15
+0:00:36,180 --> 0:00:39,570
+episode today let's talk floating points
+
+16
+0:00:39,570 --> 0:00:42,180
+clearly decimal numbers are not that
+
+17
+0:00:42,180 --> 0:00:45,090
+easy to represent we're gonna first very
+
+18
+0:00:45,090 --> 0:00:47,309
+briefly talk about fixed point numbers
+
+19
+0:00:47,309 --> 0:00:49,410
+you know how when you're working with a
+
+20
+0:00:49,410 --> 0:00:51,870
+normal integer well you've got your
+
+21
+0:00:51,870 --> 0:00:54,480
+different bits and each bit basically
+
+22
+0:00:54,480 --> 0:00:56,579
+represents whether you want to switch on
+
+23
+0:00:56,579 --> 0:00:58,890
+or off a particular power of two right
+
+24
+0:00:58,890 --> 0:01:01,079
+so this combination is gonna give you
+
+25
+0:01:01,079 --> 0:01:03,270
+these values that you add together and
+
+26
+0:01:03,270 --> 0:01:06,540
+that gives you this answer the easiest
+
+27
+0:01:06,540 --> 0:01:09,720
+way to do decimal numbers is to simply
+
+28
+0:01:09,720 --> 0:01:13,010
+change up those powers of two on top
+
+29
+0:01:13,010 --> 0:01:16,259
+what I can say is let's assign a decimal
+
+30
+0:01:16,259 --> 0:01:18,780
+point smack in the middle the left side
+
+31
+0:01:18,780 --> 0:01:20,520
+of the decimal points is where our
+
+32
+0:01:20,520 --> 0:01:23,400
+normal powers of two starts on the right
+
+33
+0:01:23,400 --> 0:01:28,380
+side we have negative powers of two yes
+
+34
+0:01:28,380 --> 0:01:30,210
+what this means is this is half this is
+
+35
+0:01:30,210 --> 0:01:34,979
+1/4 this end if this is a 16 so yeah we
+
+36
+0:01:34,979 --> 0:01:36,420
+can do that right and you can start to
+
+37
+0:01:36,420 --> 0:01:39,990
+have decimal numbers but watch what
+
+38
+0:01:39,990 --> 0:01:41,030
+happens
+
+39
+0:01:41,030 --> 0:01:43,439
+originally we could represent zero to
+
+40
+0:01:43,439 --> 0:01:47,189
+255 with an unsigned 8-bit number so
+
+41
+0:01:47,189 --> 0:01:49,680
+we've got a fairly good reach but now
+
+42
+0:01:49,680 --> 0:01:52,399
+because of how we've sort of you know
+
+43
+0:01:52,399 --> 0:01:55,140
+reallocated our bits here they don't
+
+44
+0:01:55,140 --> 0:01:57,299
+represent a much smaller range of
+
+45
+0:01:57,299 --> 0:02:00,090
+numbers right because I essentially only
+
+46
+0:02:00,090 --> 0:02:01,979
+have a four bit in the gel on the left I
+
+47
+0:02:01,979 --> 0:02:05,280
+only have 0 to 15 and on my right side
+
+48
+0:02:05,280 --> 0:02:07,350
+this doesn't give me all the decimal
+
+49
+0:02:07,350 --> 0:02:09,420
+numbers that I can possibly represent
+
+50
+0:02:09,420 --> 0:02:11,489
+within this range for example if I
+
+51
+0:02:11,489 --> 0:02:13,020
+wanted to point five I could do that
+
+52
+0:02:13,020 --> 0:02:13,650
+right
+
+53
+0:02:13,650 --> 0:02:15,720
+I'll get two on the left side by you
+
+54
+0:02:15,720 --> 0:02:18,980
+know doing it the usual way and for 1.5
+
+55
+0:02:18,980 --> 0:02:22,470
+then the two to a power of minus one bit
+
+56
+0:02:22,470 --> 0:02:23,340
+will be switched on
+
+57
+0:02:23,340 --> 0:02:26,010
+that's half so in that context it's all
+
+58
+0:02:26,010 --> 0:02:27,989
+well and good everything works just fine
+
+59
+0:02:27,989 --> 0:02:30,930
+but that's just because I chose an
+
+60
+0:02:30,930 --> 0:02:33,390
+example that worked let's take a look at
+
+61
+0:02:33,390 --> 0:02:35,040
+some other numbers that will not work
+
+62
+0:02:35,040 --> 0:02:38,299
+with this very simple fixed point scheme
+
+63
+0:02:38,299 --> 0:02:40,680
+starting first with something like 16
+
+64
+0:02:40,680 --> 0:02:42,689
+well clearly you can't do that because
+
+65
+0:02:42,689 --> 0:02:45,390
+you only have four integer bits the
+
+66
+0:02:45,390 --> 0:02:47,340
+biggest number you can represent is 15
+
+67
+0:02:47,340 --> 0:02:49,290
+so there is an overflow in it's this
+
+68
+0:02:49,290 --> 0:02:51,690
+situation um the same idea actually
+
+69
+0:02:51,690 --> 0:02:54,120
+applies on a decimal portion as well if
+
+70
+0:02:54,120 --> 0:02:55,590
+you want to represent 2 to the power of
+
+71
+0:02:55,590 --> 0:02:57,540
+negative 5 you're out of luck because
+
+72
+0:02:57,540 --> 0:03:00,510
+there is no such bits of course nothing
+
+73
+0:03:00,510 --> 0:03:02,189
+stopping us from having both on the same
+
+74
+0:03:02,189 --> 0:03:04,109
+number right so you get overflows on
+
+75
+0:03:04,109 --> 0:03:06,959
+both ends these examples are just simple
+
+76
+0:03:06,959 --> 0:03:08,909
+ones for this particular fixed point
+
+77
+0:03:08,909 --> 0:03:11,579
+representation for all three of these
+
+78
+0:03:11,579 --> 0:03:14,159
+problems we could technically attempts
+
+79
+0:03:14,159 --> 0:03:16,590
+to solve it by simply adding more bits
+
+80
+0:03:16,590 --> 0:03:19,379
+we have 8 bits total here if we have 16
+
+81
+0:03:19,379 --> 0:03:21,359
+then of course we have more numbers on
+
+82
+0:03:21,359 --> 0:03:24,419
+site however there is still great in
+
+83
+0:03:24,419 --> 0:03:27,180
+flexibility for example we wouldn't have
+
+84
+0:03:27,180 --> 0:03:29,669
+a problem storing this value if we were
+
+85
+0:03:29,669 --> 0:03:31,470
+able to shift the decimal point
+
+86
+0:03:31,470 --> 0:03:32,310
+somewhere else
+
+87
+0:03:32,310 --> 0:03:34,260
+in fact it's not as it shifts by just
+
+88
+0:03:34,260 --> 0:03:36,750
+one place then this will be ok
+
+89
+0:03:36,750 --> 0:03:39,659
+but unfortunately these are fixed point
+
+90
+0:03:39,659 --> 0:03:41,400
+numbers and that doesn't happen of
+
+91
+0:03:41,400 --> 0:03:43,650
+course there are restrictions at play
+
+92
+0:03:43,650 --> 0:03:45,930
+here as well for example if you try to
+
+93
+0:03:45,930 --> 0:03:48,959
+represent zero point 2 as a fraction
+
+94
+0:03:48,959 --> 0:03:52,440
+that's 1 over 5 and there is no possible
+
+95
+0:03:52,440 --> 0:03:55,260
+negative power of 2 that can exactly
+
+96
+0:03:55,260 --> 0:03:58,739
+represent this now this problem runs
+
+97
+0:03:58,739 --> 0:04:01,109
+deep when we move on to floating point
+
+98
+0:04:01,109 --> 0:04:03,329
+numbers this problem cannot be solved
+
+99
+0:04:03,329 --> 0:04:05,790
+either so really we're just including
+
+100
+0:04:05,790 --> 0:04:08,940
+this here for completeness sake so fixed
+
+101
+0:04:08,940 --> 0:04:10,919
+point numbers are good step towards
+
+102
+0:04:10,919 --> 0:04:13,829
+having decimal numbers but not quite
+
+103
+0:04:13,829 --> 0:04:16,019
+good enough because most numbers cannot
+
+104
+0:04:16,019 --> 0:04:19,169
+be represented properly this ladies and
+
+105
+0:04:19,169 --> 0:04:20,940
+gentlemen is where the floating point
+
+106
+0:04:20,940 --> 0:04:23,460
+number comes into play we're gonna now
+
+107
+0:04:23,460 --> 0:04:26,430
+enter the world of 32-bit numbers all
+
+108
+0:04:26,430 --> 0:04:27,240
+right so
+
+109
+0:04:27,240 --> 0:04:29,220
+yeah every number we're gonna talk about
+
+110
+0:04:29,220 --> 0:04:31,380
+from this point on is made up of a total
+
+111
+0:04:31,380 --> 0:04:33,780
+of 32 bits that's how most computers
+
+112
+0:04:33,780 --> 0:04:34,979
+feel of it anyway
+
+113
+0:04:34,979 --> 0:04:37,530
+here's the idea instead of using the
+
+114
+0:04:37,530 --> 0:04:40,080
+entire 32 bits to represent one number
+
+115
+0:04:40,080 --> 0:04:42,599
+we're gonna break up these bits into
+
+116
+0:04:42,599 --> 0:04:44,759
+three parts and they're gonna represent
+
+117
+0:04:44,759 --> 0:04:47,580
+three different numbers in essentially a
+
+118
+0:04:47,580 --> 0:04:49,800
+mathematical equation that we can
+
+119
+0:04:49,800 --> 0:04:52,560
+eventually evaluate you see the
+
+120
+0:04:52,560 --> 0:04:54,150
+ingenious way in which a floating-point
+
+121
+0:04:54,150 --> 0:04:56,490
+number makes use of a study two bits is
+
+122
+0:04:56,490 --> 0:04:58,740
+the first bit represents a site just
+
+123
+0:04:58,740 --> 0:05:01,889
+like in a sty number the next eight bits
+
+124
+0:05:01,889 --> 0:05:04,020
+represent this thing called an exponent
+
+125
+0:05:04,020 --> 0:05:06,660
+while the remainder is this thing called
+
+126
+0:05:06,660 --> 0:05:10,440
+a mantissa we use these three numbers in
+
+127
+0:05:10,440 --> 0:05:13,860
+an equation like this of us the science
+
+128
+0:05:13,860 --> 0:05:16,199
+simply determines whether well they're
+
+129
+0:05:16,199 --> 0:05:18,229
+gonna have a positive or negative number
+
+130
+0:05:18,229 --> 0:05:21,539
+the mantissa refers to the body of the
+
+131
+0:05:21,539 --> 0:05:24,720
+number itself and the exponent is used
+
+132
+0:05:24,720 --> 0:05:27,659
+as a 2 to a power of something what's
+
+133
+0:05:27,659 --> 0:05:29,669
+really cool about this is that well no
+
+134
+0:05:29,669 --> 0:05:31,710
+matter what a mantissa is you can play
+
+135
+0:05:31,710 --> 0:05:33,479
+of the exponent and get a very small
+
+136
+0:05:33,479 --> 0:05:36,539
+number or a very big number that's why
+
+137
+0:05:36,539 --> 0:05:38,880
+it's kind of floating points it doesn't
+
+138
+0:05:38,880 --> 0:05:41,130
+have a fixed decimal point somewhere
+
+139
+0:05:41,130 --> 0:05:43,650
+within the bit string instead it uses
+
+140
+0:05:43,650 --> 0:05:46,349
+the exponents allowing you to shift the
+
+141
+0:05:46,349 --> 0:05:48,509
+decimal points to both basically
+
+142
+0:05:48,509 --> 0:05:51,570
+anywhere and that's the power now that
+
+143
+0:05:51,570 --> 0:05:52,889
+in a nutshell is how floating-point
+
+144
+0:05:52,889 --> 0:05:54,990
+numbers work and if the only one is
+
+145
+0:05:54,990 --> 0:05:56,669
+surface understanding then we can stop
+
+146
+0:05:56,669 --> 0:05:59,789
+here but not me because we're gonna
+
+147
+0:05:59,789 --> 0:06:01,590
+delve even deeper into this we're gonna
+
+148
+0:06:01,590 --> 0:06:04,669
+construct our own floating point number
+
+149
+0:06:04,669 --> 0:06:06,840
+this is where things get a little bit
+
+150
+0:06:06,840 --> 0:06:10,169
+messy and messy at the same time so you
+
+151
+0:06:10,169 --> 0:06:12,360
+know prepare yourselves how I'm gonna do
+
+152
+0:06:12,360 --> 0:06:15,300
+this right is I'm going to just fix a
+
+153
+0:06:15,300 --> 0:06:17,430
+number to start off with I'm not gonna
+
+154
+0:06:17,430 --> 0:06:19,259
+tell you what the number is I'm gonna
+
+155
+0:06:19,259 --> 0:06:21,810
+show you the 32-bit bits tree it looks
+
+156
+0:06:21,810 --> 0:06:25,050
+like this and I've already separated the
+
+157
+0:06:25,050 --> 0:06:29,070
+sign exponent and mantissa paths so yeah
+
+158
+0:06:29,070 --> 0:06:31,289
+we already have three paths let's now
+
+159
+0:06:31,289 --> 0:06:33,270
+try and figure out how each part
+
+160
+0:06:33,270 --> 0:06:35,669
+actually works the sign is the easiest
+
+161
+0:06:35,669 --> 0:06:38,039
+part if that bit is 0 the number is
+
+162
+0:06:38,039 --> 0:06:40,229
+positive if that bit is 1 the number is
+
+163
+0:06:40,229 --> 0:06:41,039
+negative
+
+164
+0:06:41,039 --> 0:06:44,580
+dad one third of the problem clear let's
+
+165
+0:06:44,580 --> 0:06:47,369
+move on to the exponent now the exponent
+
+166
+0:06:47,369 --> 0:06:48,869
+is interesting because how you read it
+
+167
+0:06:48,869 --> 0:06:51,180
+off it's just like any old unsigned
+
+168
+0:06:51,180 --> 0:06:54,149
+8-bit number so let's go ahead and read
+
+169
+0:06:54,149 --> 0:06:57,240
+it out as you can see if we were to use
+
+170
+0:06:57,240 --> 0:07:00,569
+our powers do our usual math we get a
+
+171
+0:07:00,569 --> 0:07:04,409
+number now that's a huge number for an
+
+172
+0:07:04,409 --> 0:07:06,659
+exponent and that's a reason why there
+
+173
+0:07:06,659 --> 0:07:09,899
+is don't forget that is an unsigned
+
+174
+0:07:09,899 --> 0:07:11,999
+number but while we're dealing with
+
+175
+0:07:11,999 --> 0:07:14,099
+floating-point numbers we will once
+
+176
+0:07:14,099 --> 0:07:16,729
+negative exponents to make small numbers
+
+177
+0:07:16,729 --> 0:07:19,289
+how they beautiful is problem how they
+
+178
+0:07:19,289 --> 0:07:21,300
+reintroduce sign back into the equation
+
+179
+0:07:21,300 --> 0:07:25,289
+is that a number is being offset in fact
+
+180
+0:07:25,289 --> 0:07:27,529
+the actual number is the value you get
+
+181
+0:07:27,529 --> 0:07:29,539
+minus one to seven
+
+182
+0:07:29,539 --> 0:07:31,860
+what is nice is if you see that number
+
+183
+0:07:31,860 --> 0:07:35,580
+as zero then the actual exponent
+
+184
+0:07:35,580 --> 0:07:37,559
+represented that is negative one to
+
+185
+0:07:37,559 --> 0:07:40,289
+seven if you see one to eight the actual
+
+186
+0:07:40,289 --> 0:07:42,779
+exponents is one hopefully that makes
+
+187
+0:07:42,779 --> 0:07:43,499
+sense to you
+
+188
+0:07:43,499 --> 0:07:46,050
+with offset that number so that you can
+
+189
+0:07:46,050 --> 0:07:48,149
+represent positive and negative numbers
+
+190
+0:07:48,149 --> 0:07:49,979
+you just got to do a bit of math to
+
+191
+0:07:49,979 --> 0:07:51,629
+recover the actual number you're
+
+192
+0:07:51,629 --> 0:07:55,050
+supposed to have so exponent done let's
+
+193
+0:07:55,050 --> 0:07:57,209
+uh move on to our man teaser our largest
+
+194
+0:07:57,209 --> 0:08:00,839
+part consisting of 23 bits yes how I
+
+195
+0:08:00,839 --> 0:08:02,879
+meant you sir works if you cast your
+
+196
+0:08:02,879 --> 0:08:06,360
+mind back to fix point numbers well I
+
+197
+0:08:06,360 --> 0:08:08,430
+meant T cell works the same way pseudo
+
+198
+0:08:08,430 --> 0:08:10,620
+power of minus 1 to the power of minus 2
+
+199
+0:08:10,620 --> 0:08:12,930
+it's all negative powers starting from
+
+200
+0:08:12,930 --> 0:08:15,539
+negative 1 so yeah it's basically our
+
+201
+0:08:15,539 --> 0:08:19,289
+usual bit math again but this time we
+
+202
+0:08:19,289 --> 0:08:21,120
+need to introduce one more thing and
+
+203
+0:08:21,120 --> 0:08:23,819
+that's our 2 to the power of 0 as it
+
+204
+0:08:23,819 --> 0:08:26,399
+turns out while there is no bit for it
+
+205
+0:08:26,399 --> 0:08:30,360
+it is on by default therefore no matter
+
+206
+0:08:30,360 --> 0:08:32,880
+what the rest of the mantissa says we
+
+207
+0:08:32,880 --> 0:08:35,639
+always add 1 to it now how did it
+
+208
+0:08:35,639 --> 0:08:37,139
+approach the next step is I'm gonna
+
+209
+0:08:37,139 --> 0:08:39,229
+convert all those numbers into fractions
+
+210
+0:08:39,229 --> 0:08:41,550
+the reason why I convert them into
+
+211
+0:08:41,550 --> 0:08:43,440
+fractions is because I don't want to do
+
+212
+0:08:43,440 --> 0:08:46,019
+decimal math just yet remember we're
+
+213
+0:08:46,019 --> 0:08:47,790
+discussing our decimals work right we
+
+214
+0:08:47,790 --> 0:08:50,459
+don't have decimals to do that so we'll
+
+215
+0:08:50,459 --> 0:08:52,949
+leave everything as fractions and what
+
+216
+0:08:52,949 --> 0:08:54,340
+this allows us to do is to
+
+217
+0:08:54,340 --> 0:08:57,340
+up these fractions in to our final
+
+218
+0:08:57,340 --> 0:08:59,200
+equation remember our final equation
+
+219
+0:08:59,200 --> 0:09:01,270
+right we've got out of sight we've got
+
+220
+0:09:01,270 --> 0:09:03,250
+our two to the power of the exponent
+
+221
+0:09:03,250 --> 0:09:05,410
+that calculates it we've got our
+
+222
+0:09:05,410 --> 0:09:07,600
+mantissa and we need to multiply
+
+223
+0:09:07,600 --> 0:09:10,360
+everything together again I'm gonna do
+
+224
+0:09:10,360 --> 0:09:12,190
+this in terms of fractions until the
+
+225
+0:09:12,190 --> 0:09:13,680
+very end
+
+226
+0:09:13,680 --> 0:09:17,290
+essentially once we solve this part we
+
+227
+0:09:17,290 --> 0:09:19,750
+end up with one single gigantic fraction
+
+228
+0:09:19,750 --> 0:09:22,420
+that looks like this since we have one
+
+229
+0:09:22,420 --> 0:09:24,610
+fraction that's essentially a division
+
+230
+0:09:24,610 --> 0:09:27,130
+which allows us to derive our final
+
+231
+0:09:27,130 --> 0:09:30,660
+value and that is this decimal value
+
+232
+0:09:30,660 --> 0:09:33,220
+well done is we've just worked our way
+
+233
+0:09:33,220 --> 0:09:36,220
+from the binary representation all the
+
+234
+0:09:36,220 --> 0:09:38,820
+way down back to the original decimal
+
+235
+0:09:38,820 --> 0:09:42,280
+that bit string up there gives us this
+
+236
+0:09:42,280 --> 0:09:45,820
+decimal value so that's pretty cool
+
+237
+0:09:45,820 --> 0:09:48,030
+we've just crate a floating-point number
+
+238
+0:09:48,030 --> 0:09:50,800
+of course we can do the reverse and I'm
+
+239
+0:09:50,800 --> 0:09:52,390
+gonna go a little bit faster through
+
+240
+0:09:52,390 --> 0:09:55,210
+that because it's a lot of divisions but
+
+241
+0:09:55,210 --> 0:09:57,940
+yeah the way in which we turn a decimal
+
+242
+0:09:57,940 --> 0:10:00,280
+number into a bit string is also fairly
+
+243
+0:10:00,280 --> 0:10:02,350
+straightforward if converting from
+
+244
+0:10:02,350 --> 0:10:04,480
+binary to decimal is repeated
+
+245
+0:10:04,480 --> 0:10:06,520
+multiplication as in the powers of two
+
+246
+0:10:06,520 --> 0:10:09,940
+then converting backwards to binary is
+
+247
+0:10:09,940 --> 0:10:12,820
+repeated division for this part we'll
+
+248
+0:10:12,820 --> 0:10:15,040
+start by taking the integer portion and
+
+249
+0:10:15,040 --> 0:10:18,190
+just repeatedly dividing it by two each
+
+250
+0:10:18,190 --> 0:10:20,650
+time we divide we are more concerned
+
+251
+0:10:20,650 --> 0:10:22,780
+about the remainder than the actual
+
+252
+0:10:22,780 --> 0:10:26,320
+result of the division in this case 17
+
+253
+0:10:26,320 --> 0:10:30,070
+divided by 2 just as a remainder of 1 we
+
+254
+0:10:30,070 --> 0:10:32,560
+proceed on with the quotient eat and we
+
+255
+0:10:32,560 --> 0:10:35,980
+basically repeat this procedure if we
+
+256
+0:10:35,980 --> 0:10:38,860
+keep going we'll end up with a set of
+
+257
+0:10:38,860 --> 0:10:41,200
+remainders that can only be either 0 or
+
+258
+0:10:41,200 --> 0:10:44,740
+1 we'll have to keep going until we stop
+
+259
+0:10:44,740 --> 0:10:47,710
+at 0 now it happens that for this
+
+260
+0:10:47,710 --> 0:10:49,990
+particular example this bit string can
+
+261
+0:10:49,990 --> 0:10:51,820
+be read in whichever direction and it
+
+262
+0:10:51,820 --> 0:10:53,800
+looks the same but strictly speaking
+
+263
+0:10:53,800 --> 0:10:56,290
+you're gonna need to read this upwards
+
+264
+0:10:56,290 --> 0:10:58,900
+the order is important you're gonna
+
+265
+0:10:58,900 --> 0:11:01,450
+start at the bottom anyway this is our
+
+266
+0:11:01,450 --> 0:11:05,080
+in dejure portion done let's move on to
+
+267
+0:11:05,080 --> 0:11:07,360
+the decimal portion
+
+268
+0:11:07,360 --> 0:11:09,790
+now because we are now dealing with
+
+269
+0:11:09,790 --> 0:11:12,220
+negative powers of two we are again
+
+270
+0:11:12,220 --> 0:11:14,949
+doing the inverse so how this is done is
+
+271
+0:11:14,949 --> 0:11:17,290
+we are essentially doing doubles each
+
+272
+0:11:17,290 --> 0:11:20,619
+time doubling the number gives us well
+
+273
+0:11:20,619 --> 0:11:22,899
+another number and essentially our
+
+274
+0:11:22,899 --> 0:11:25,480
+result for that pad our remainder so to
+
+275
+0:11:25,480 --> 0:11:28,600
+speak checks the integer portion of this
+
+276
+0:11:28,600 --> 0:11:31,269
+number if it's zero then the result is
+
+277
+0:11:31,269 --> 0:11:34,119
+zero and we simply carry on rinse and
+
+278
+0:11:34,119 --> 0:11:36,489
+repeats and essentially what happens is
+
+279
+0:11:36,489 --> 0:11:40,119
+well in this case we'll end up at a
+
+280
+0:11:40,119 --> 0:11:43,629
+value that is 1 or greater when you get
+
+281
+0:11:43,629 --> 0:11:46,540
+that the bit being reflected here will
+
+282
+0:11:46,540 --> 0:11:49,420
+become 1 and we'll subtract one from
+
+283
+0:11:49,420 --> 0:11:52,839
+this before carrying on it happens that
+
+284
+0:11:52,839 --> 0:11:54,579
+in this case because it's perfectly one
+
+285
+0:11:54,579 --> 0:11:57,040
+after the subtraction we get zero so we
+
+286
+0:11:57,040 --> 0:11:59,529
+stop if it's not then you have to
+
+287
+0:11:59,529 --> 0:12:02,439
+continue the process now in this case
+
+288
+0:12:02,439 --> 0:12:04,119
+because this example is fairly
+
+289
+0:12:04,119 --> 0:12:06,910
+simplistic we're done for the decimal
+
+290
+0:12:06,910 --> 0:12:09,069
+portion we read off the bits from top to
+
+291
+0:12:09,069 --> 0:12:09,730
+bottom
+
+292
+0:12:09,730 --> 0:12:12,040
+now as mentioned this is an extremely
+
+293
+0:12:12,040 --> 0:12:14,919
+simple case but there may be some
+
+294
+0:12:14,919 --> 0:12:16,899
+decimal values that keep on going
+
+295
+0:12:16,899 --> 0:12:19,629
+nonstop in this case we use zero point
+
+296
+0:12:19,629 --> 0:12:21,850
+seven and as you can see no matter what
+
+297
+0:12:21,850 --> 0:12:24,279
+you do you will never end up at one if
+
+298
+0:12:24,279 --> 0:12:26,679
+you get a value that's a one point six
+
+299
+0:12:26,679 --> 0:12:28,419
+right you'll take out the one you
+
+300
+0:12:28,419 --> 0:12:31,149
+continue on with zero point six and as
+
+301
+0:12:31,149 --> 0:12:34,600
+it turns out this never ends we know
+
+302
+0:12:34,600 --> 0:12:37,329
+this for sure because well we have a
+
+303
+0:12:37,329 --> 0:12:40,059
+point that leads us back to essentially
+
+304
+0:12:40,059 --> 0:12:41,290
+the same thing it's a pattern that
+
+305
+0:12:41,290 --> 0:12:44,290
+repeats itself this tells us for sure
+
+306
+0:12:44,290 --> 0:12:46,540
+that this particular sequence will go on
+
+307
+0:12:46,540 --> 0:12:49,239
+forever there are two ways in which we
+
+308
+0:12:49,239 --> 0:12:51,730
+can stop this process either when we
+
+309
+0:12:51,730 --> 0:12:55,269
+recognize a repetition like this or when
+
+310
+0:12:55,269 --> 0:12:58,569
+we have enough bits to work with says
+
+311
+0:12:58,569 --> 0:13:00,549
+our mantissa has a limit at length we
+
+312
+0:13:00,549 --> 0:13:02,410
+don't have to keep on going once we have
+
+313
+0:13:02,410 --> 0:13:05,799
+enough bits that's that so what we
+
+314
+0:13:05,799 --> 0:13:08,019
+essentially have now is one bit string
+
+315
+0:13:08,019 --> 0:13:10,689
+for the integer portion and one bit
+
+316
+0:13:10,689 --> 0:13:13,049
+string for the decimal portion
+
+317
+0:13:13,049 --> 0:13:15,819
+essentially we have a fixed point number
+
+318
+0:13:15,819 --> 0:13:17,589
+if we were to assemble these two parts
+
+319
+0:13:17,589 --> 0:13:19,990
+together so yeah if we were dealing with
+
+320
+0:13:19,990 --> 0:13:20,950
+fixed point bigger
+
+321
+0:13:20,950 --> 0:13:23,200
+stop here but what we're doing here is
+
+322
+0:13:23,200 --> 0:13:24,850
+floating points so we have to fit
+
+323
+0:13:24,850 --> 0:13:26,620
+everything into the mold of sight
+
+324
+0:13:26,620 --> 0:13:30,400
+mantissa and exponent let's start by
+
+325
+0:13:30,400 --> 0:13:32,980
+figuring out the exponents now
+
+326
+0:13:32,980 --> 0:13:35,950
+essentially what we have right now can
+
+327
+0:13:35,950 --> 0:13:37,810
+be expressed as multiplied by 2 to the
+
+328
+0:13:37,810 --> 0:13:40,360
+power of 0 this of course just means 1
+
+329
+0:13:40,360 --> 0:13:42,760
+rights and the whole thing just doesn't
+
+330
+0:13:42,760 --> 0:13:45,250
+change but what we can do is we can
+
+331
+0:13:45,250 --> 0:13:49,330
+shift the decimal points every shift to
+
+332
+0:13:49,330 --> 0:13:51,700
+the left increases the exponent by 1
+
+333
+0:13:51,700 --> 0:13:54,520
+every shift to the right
+
+334
+0:13:54,520 --> 0:13:57,490
+decreases the exponents now in this case
+
+335
+0:13:57,490 --> 0:14:00,520
+because the number is well quite large
+
+336
+0:14:00,520 --> 0:14:03,850
+we are shifting to the left and our goal
+
+337
+0:14:03,850 --> 0:14:06,940
+is to keep on doing this until our
+
+338
+0:14:06,940 --> 0:14:11,260
+decimal point ends up here essentially
+
+339
+0:14:11,260 --> 0:14:13,600
+we want to stop when there is only one
+
+340
+0:14:13,600 --> 0:14:17,440
+one before the decimal points this by
+
+341
+0:14:17,440 --> 0:14:19,660
+the way is why we always assume there is
+
+342
+0:14:19,660 --> 0:14:22,690
+a 1 if it was 0 then we can stop at a
+
+343
+0:14:22,690 --> 0:14:24,190
+different place and express that with a
+
+344
+0:14:24,190 --> 0:14:26,980
+different exponent what it means as we
+
+345
+0:14:26,980 --> 0:14:29,020
+technically already have everything of
+
+346
+0:14:29,020 --> 0:14:31,150
+course we know the sign right we can
+
+347
+0:14:31,150 --> 0:14:33,280
+figure that out by just inspecting the
+
+348
+0:14:33,280 --> 0:14:36,370
+original number but we also know the
+
+349
+0:14:36,370 --> 0:14:39,640
+mantissa it's basically everything that
+
+350
+0:14:39,640 --> 0:14:42,730
+comes after the decimal point and our
+
+351
+0:14:42,730 --> 0:14:46,480
+exponent is simply the power up here of
+
+352
+0:14:46,480 --> 0:14:48,490
+us we need to do one more step with the
+
+353
+0:14:48,490 --> 0:14:49,750
+exponents right
+
+354
+0:14:49,750 --> 0:14:51,910
+remember our exponent is offsets so we
+
+355
+0:14:51,910 --> 0:14:55,030
+need to add 1 to 7 to this number giving
+
+356
+0:14:55,030 --> 0:14:58,270
+us 1 3 1 which we can then convert back
+
+357
+0:14:58,270 --> 0:15:00,340
+to binary so again we're doing that
+
+358
+0:15:00,340 --> 0:15:02,290
+multiple division thing right I won't go
+
+359
+0:15:02,290 --> 0:15:03,610
+through the steps of you again it's the
+
+360
+0:15:03,610 --> 0:15:06,190
+same set of steps at the end of the day
+
+361
+0:15:06,190 --> 0:15:10,330
+1 3 1 gives us this bit string that it's
+
+362
+0:15:10,330 --> 0:15:13,150
+our exponents since we now have all
+
+363
+0:15:13,150 --> 0:15:15,130
+three parts we can now assemble
+
+364
+0:15:15,130 --> 0:15:17,350
+everything together starting with the
+
+365
+0:15:17,350 --> 0:15:20,620
+sign which is of course 0 the exponent
+
+366
+0:15:20,620 --> 0:15:22,060
+which have just calculated with the
+
+367
+0:15:22,060 --> 0:15:25,540
+value of 1 3 1 and finally our mantissa
+
+368
+0:15:25,540 --> 0:15:28,690
+of course this leads to total up to 32
+
+369
+0:15:28,690 --> 0:15:30,880
+bits so we simply pad out the rest the
+
+370
+0:15:30,880 --> 0:15:34,840
+mantissa with zeros so these continued
+
+371
+0:15:34,840 --> 0:15:36,400
+represent the rest of your negative
+
+372
+0:15:36,400 --> 0:15:38,530
+powers of two but we don't need them we
+
+373
+0:15:38,530 --> 0:15:40,540
+don't use them so yeah we just leave
+
+374
+0:15:40,540 --> 0:15:43,750
+them as zero and that's basically it
+
+375
+0:15:43,750 --> 0:15:46,090
+what we have here is the same bit string
+
+376
+0:15:46,090 --> 0:15:48,250
+that we used earlier to get the value
+
+377
+0:15:48,250 --> 0:15:53,110
+seventeen point one two five so there
+
+378
+0:15:53,110 --> 0:15:55,330
+you have it that is your floating point
+
+379
+0:15:55,330 --> 0:15:58,870
+number now with only discuss 32-bit
+
+380
+0:15:58,870 --> 0:16:00,970
+floating point numbers today but the
+
+381
+0:16:00,970 --> 0:16:02,980
+logic works to see if you are dealing
+
+382
+0:16:02,980 --> 0:16:05,650
+with a double a double is a floating
+
+383
+0:16:05,650 --> 0:16:08,920
+point number in 64 bits into it it's
+
+384
+0:16:08,920 --> 0:16:11,080
+double right we use devildis space so we
+
+385
+0:16:11,080 --> 0:16:13,330
+get better precision the sign bit
+
+386
+0:16:13,330 --> 0:16:15,430
+remains one bit we've got a few more
+
+387
+0:16:15,430 --> 0:16:18,610
+exponent bits and a whole lot more mint
+
+388
+0:16:18,610 --> 0:16:19,720
+ISA bits
+
+389
+0:16:19,720 --> 0:16:21,880
+well this means of course is that well
+
+390
+0:16:21,880 --> 0:16:24,220
+the whole discarding thing happens much
+
+391
+0:16:24,220 --> 0:16:26,350
+later down the line and as a result of
+
+392
+0:16:26,350 --> 0:16:28,960
+that we can have much better decimal
+
+393
+0:16:28,960 --> 0:16:31,540
+values that's why usually we like
+
+394
+0:16:31,540 --> 0:16:33,910
+doubles right because yeah there tends
+
+395
+0:16:33,910 --> 0:16:36,610
+to be less problems with that assuming
+
+396
+0:16:36,610 --> 0:16:38,200
+of course your system supports it and
+
+397
+0:16:38,200 --> 0:16:40,960
+it's able to be quick so yeah that's it
+
+398
+0:16:40,960 --> 0:16:43,450
+that's flowing point numbers if you want
+
+399
+0:16:43,450 --> 0:16:45,040
+to play with floating point numbers if
+
+400
+0:16:45,040 --> 0:16:46,860
+you want to see the working and math I
+
+401
+0:16:46,860 --> 0:16:50,080
+have set up a little program to do this
+
+402
+0:16:50,080 --> 0:16:52,510
+on the website so yeah go ahead and
+
+403
+0:16:52,510 --> 0:16:54,310
+click the link on screen or in the video
+
+404
+0:16:54,310 --> 0:16:57,460
+description and well play of it
+
+405
+0:16:57,460 --> 0:16:59,260
+have fun of it let's take a look at how
+
+406
+0:16:59,260 --> 0:17:01,090
+the decimal numbers are being broken
+
+407
+0:17:01,090 --> 0:17:03,220
+down anyway that's all there is for this
+
+408
+0:17:03,220 --> 0:17:04,930
+particular episode I hope you found it
+
+409
+0:17:04,930 --> 0:17:07,180
+useful but until next time you're
+
+410
+0:17:07,180 --> 0:17:09,010
+watching 0 6 wants you TV with note
+
+411
+0:17:09,010 --> 0:17:11,410
+first dotnet thank you very much for
+
+412
+0:17:11,410 --> 0:17:13,360
+watching if you like my work and I'm
+
+413
+0:17:13,360 --> 0:17:15,070
+feeling generous you can shoot me a
+
+414
+0:17:15,070 --> 0:17:17,290
+one-time donation on PayPal or sign up
+
+415
+0:17:17,290 --> 0:17:19,930
+for a recurring one on patreon of course
+
+416
+0:17:19,930 --> 0:17:21,340
+you can simply like comments and
+
+417
+0:17:21,340 --> 0:17:23,830
+subscribe you know the deal for more
+
+418
+0:17:23,830 --> 0:17:26,080
+videos links to my channel and a related
+
+419
+0:17:26,080 --> 0:17:28,420
+playlists are on screen thank you for
+
+420
+0:17:28,420 --> 0:17:30,660
+your support
+

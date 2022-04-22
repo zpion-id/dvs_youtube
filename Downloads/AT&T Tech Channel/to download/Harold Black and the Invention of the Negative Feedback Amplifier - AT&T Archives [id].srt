@@ -1,0 +1,396 @@
+1
+00:00:00,000 --> 0:00:03,570
+berbagai macam sistem modern bergantung
+
+2
+0:00:03,570 --> 0:00:05,190
+untuk pengoperasiannya pada penemuan yang
+
+3
+0:00:05,190 --> 0:00:07,859
+dibuat di Bell Laboratories lebih dari
+
+4
+0:00:07,859 --> 0:00:11,250
+50 tahun yang lalu terus digunakan di
+
+5
+0:00:11,250 --> 0:00:13,530
+seluruh Sistem Bell dan
+
+6
+0:00:13,530 --> 0:00:16,320
+perangkat telepon mesin switching terbaru dan
+
+7
+0:00:16,320 --> 0:00:18,420
+sistem modern untuk transmisi
+
+8
+0:00:18,420 --> 0:00:21,660
+panggilan telepon ini adalah versi awal
+
+9
+0:00:21,660 --> 0:00:24,029
+dari penemuan itu yang disebut
+
+10
+0:00:24,029 --> 0:00:33,969
+penguat umpan balik negatif
+
+11
+0:00:33,969 --> 0:00:36,070
+pada hari-hari awal panggilan jarak jauh
+
+12
+0:00:36,070 --> 0:00:38,230
+hanya beberapa suara yang dapat
+
+13
+0:00:38,230 --> 0:00:41,110
+dibawa pada satu pasang kabel karena
+
+14
+0:00:41,110 --> 0:00
+panggilan jarak jauh tumbuh
+
+15
+0:00 --> 0:00:45,100
+sistem berkapasitas tinggi diperlukan untuk membawa banyak
+
+16
+0:00:45,100 --> 0:00:48,159
+panggilan telepon secara bersamaan tetapi
+
+17
+0:00:48,159 --> 0:00:50,559
+sinyal digunakan dalam  sistem berkapasitas tinggi
+
+18
+0:00:50,559 --> 0:00:53,199
+perlu diperkuat lebih sering dan
+
+19
+0:00:53,199 --> 0:00:56,140
+amplifier yang tersedia mendistorsi
+
+20
+0:00:56,140 --> 0:01:00,670
+sinyal pada tahun 1921 harold black mulai
+
+21
+0:01:00,670 --> 0:01:02,559
+bekerja pada amplifier bebas distorsi yang efisien
+
+22
+0:01:02,559 --> 0:01:04,629
+yang akan memungkinkan
+
+23
+0:01:04,629 --> 0:01:06,610
+transmisi jarak jauh dari
+
+24
+0:01:06,610 --> 0:01:10,229
+sejumlah besar panggilan telepon dengan biaya rendah Saya
+
+25
+0:01:10,229 --> 0:01:17,679
+mencoba lagi dan lagi  untuk membangun
+
+26
+0:01:17,679 --> 0:01:21,759
+amplifier yang praktis atau layak yang akan
+
+27
+0:01:21,759 --> 0:01:26,039
+mencapai apa yang saya coba  lakukan
+
+28
+0:01:26,039 --> 0:01:31,409
+dan setiap orang gagal total
+
+29
+0:01:31,409 --> 0:01:36,429
+beberapa bahkan ketika saya membuat sketsa saya dapat
+
+30
+0:01:36,429 --> 0:01:40,590
+melihat bahwa saya tidak mendapatkan apa-apa
+
+31
+0:01:40,590 --> 0:01:47,340
+dan ketika saya mengatakan ke mana-mana maksud saya tidak mungkin dan
+
+32
+0:01:47,340 --> 0:01:51,720
+kemudian datang pagi yang menentukan di bulan
+
+33
+0:01:51,720 --> 0:01:57,819
+Agustus 1927 saya naik feri dan pergi  untuk
+
+34
+0:01:57,819 --> 0:02:04,820
+bekerja seperti hari-hari lainnya
+
+35
+0:02:04,820 --> 0:02:07,270
+saya sedang melihat Patung Liberty
+
+36
+0:02:07,270 --> 0:02:12,800
+dan tiba-tiba ide datang kepada saya
+
+37
+0:02:12,800 --> 0:02:19,180
+dalam daging saya memikirkan bagaimana membuat
+
+38
+0:02:19,180 --> 0:02:25,600
+penguat umpan balik negatif kemudian saya
+
+39
+0:02:25,600 --> 0:02:29,180
+membeli waktu New York saya tidak ada yang
+
+40
+0:02:29,180 --> 0:02:33,440
+benar  jadi saya membelinya dan saya membuka
+
+41
+0:02:33,440 --> 0:02:38,060
+halaman dan itu hanya kebetulan
+
+42
+0:02:38,060 --> 0:02:42,890
+bahwa hari itu saya memiliki nama
+
+43
+0:02:42,890 --> 0:02:45,830
+surat kabar dan tanggal dan kemudian
+
+44
+0:02:45,830 --> 0:02:49,670
+seluruh halaman hampir dalam pita yang sangat bersih
+
+45
+0:02:49,670 --> 0:02:57,260
+dan saya tidak pernah merasa saya menghabiskan
+
+46
+0:02:57,260 --> 0:03:01,910
+sedikit waktu membuat diagram Saya
+
+47
+0:03:01,910 --> 0:03:05,270
+menyebutnya diagram kanonik karena bersifat
+
+48
+0:03:05,270 --> 0:03:13,660
+universal dan berlaku untuk semua
+
+49
+0:03:13,660 --> 0:03:17,420
+hidrodinamika kimia mekanik listrik atau sistem gelombang apa pun
+
+50
+0:03:17,420 --> 0:03:21,430
+yang dapat Anda pikirkan ketika saya sampai di
+
+51
+0:03:21,430 --> 0:03:24,980
+laboratorium dan saya berlari untuk sampai ke sana
+
+52
+0:03:24,980 --> 0:03:25,489
+dengan tergesa-gesa
+
+53
+0:03:25,489 --> 0:03:33,360
+aku punya  yang segera
+
+54
+0:03:33,360 --> 0:03:39,300
+disaksikan dan dipahami oleh EC memberkati salah
+
+55
+0:03:39,300 --> 0:03:43,200
+satu rekan saya kemudian saya menunjukkan salinan
+
+56
+0:03:43,200 --> 0:03:46,620
+diagram saya ke st-
+
+57
+0:03:46,620 --> 0:03:53,880
+dan memintanya untuk merakit bagian-bagiannya
+
+58
+0:03:53,880 --> 0:03:58,680
+sehingga kami dapat melanjutkan dengan pembuatan
+
+59
+0:03:58,680 --> 0:04:05,870
+model kerja seperti pagi hari yang
+
+60
+0:04:05,870 --> 0:04:12,180
+dia lakukan  baik dan banyak dari mereka
+
+61
+0:04:12,180 --> 0:04:17,299
+dipasang tetapi setiap 15 menit saya terus
+
+62
+0:04:17,299 --> 0:04:21,870
+berjalan ke kamar kecil dan mengatakan
+
+63
+0:04:21,870 --> 0:04:25,610
+Steve apa kabar dan dia berkata
+
+64
+0:04:25,610 --> 0:04:29,460
+Harold saya baik-baik saja tetapi jika
+
+65
+0:04:29,460 --> 0:04:32,400
+Anda membiarkan saya sendiri kembali ke
+
+66
+0:04:32,400 --> 0:04:36,320
+kantor Anda santai letakkan kaki Anda di  meja
+
+67
+0:04:36,320 --> 0:04:40,740
+dan mungkin akan ada masalah lain
+
+68
+0:04:40,740 --> 0:04:45,990
+dari penguat umpan balik negatif
+
+69
+0:04:45,990 --> 0:04:49,669
+yang perlu diperhatikan dengan
+
+70
+0:04:49,669 --> 0:04:53,880
+baik yang terbukti menjadi nasihat yang lebih baik
+
+71
+0:04:53,880 --> 0:04:58,100
+dan Steve bermaksud Saya yakin
+
+72
+0:04:58,100 --> 0:05:04,820
+karena pada akhir kami memiliki
+
+73
+0:05:04,820 --> 0:05:09,090
+penguat umpan balik negatif broadband
+
+74
+0:05:09,090 --> 0:05:16,290
+yang berfungsi  cukup aneh memiliki
+
+75
+0:05:16,290 --> 0:05:22,160
+umpan balik negatif sebanyak 50 desibel
+
+76
+0:05:22,160 --> 0:05:28,190
+lebih dari cukup untuk menyelesaikan pekerjaan
+
+77
+0:05:28,190 --> 0:05:33,360
+yang saya mulai
+
+78
+0:05:33,360 --> 0:05:40,450
+Desember 1921 penguat umpan balik negatif
+
+79
+0:05:40,450 --> 0:05:44,020
+bekerja dengan cara ini pada input
+
+80
+0:05:44,020 --> 0:05:45,870
+tingkat rendah  sinyal yang ingin Anda perkuat
+
+81
+0:05:45,870 --> 0:05:48,840
+pada output adalah sinyal yang diperkuat yang
+
+82
+0:05:48,840 --> 0:05:51,550
+diperbesar sesuai keinginan Anda tetapi
+
+83
+0:05:51,550 --> 0:05:54,130
+amplifier memperkenalkan distorsi yang
+
+84
+0:05:54,130 --> 0:05:56,830
+juga diperbesar dengan menghubungkan sebagian kecil
+
+85
+0:05:56,830 --> 0:05:58,680
+dari output kembali ke
+
+86
+0:05:58,680 --> 0:06:01,690
+input, distorsi dibatalkan dan
+
+87
+0:06:01,690 --> 0:06:04,750
+sinyal menjadi jelas sejak
+
+88
+0:06:04,750 --> 0:06:07,180
+penemuan umpan balik negatif Harald black telah
+
+89
+0:06:07,180 --> 0:06:09,310
+menerima lebih dari selusin penghargaan utama
+
+90
+0:06:09,310 --> 0:06:11,260
+dan telah dinobatkan sebagai rekan dari 10
+
+91
+0:06:11,260 --> 0:06:14,290
+masyarakat profesional yang masih dia
+
+92
+0:06:14,290 --> 0:06:16,270
+ingat hari ketika semuanya dimulai dengan
+
+93
+0:06:16,270 --> 0:06:18,900
+kilasan pengakuan lebih dari 50 tahun yang
+
+94
+0:06:18,900 --> 0:06:23,560
+lalu kilasan pengakuan adalah sesuatu
+
+95
+0:06:23,560 --> 0:06:29,350
+yang  Saya tidak dapat memahami pada
+
+96
+0:06:29,350 --> 0:06:34,360
+saat itu dan dalam 50 tahun yang telah
+
+97
+0:06:34,360 --> 0:06:37,660
+berlalu dan saya telah memikirkannya lagi dan
+
+98
+0:06:37,660 --> 0:07:01,110
+lagi, saya tidak memiliki penjelasan apa pun dari
+
+99
+0:07:01,110 --> 0:07:03,170
+Anda
+

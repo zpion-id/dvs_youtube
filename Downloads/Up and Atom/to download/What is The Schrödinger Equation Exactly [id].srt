@@ -1,0 +1,1064 @@
+1
+00:00:00,000 --> 0:00:02,700
+hai teman-teman, saya Jade senang bertemu dengan Anda, jadi
+
+2
+0:00:02,700 --> 0:00:04,319
+persamaan Schrodinger adalah salah satu
+
+3
+0:00:04,319 --> 0:00:05,850
+hal yang banyak muncul seperti
+
+4
+0:00:05,850 --> 0:00:08,069
+artikel dan jurnal sains kuantum
+
+5
+0:00:08,069 --> 0:00:10,650
+dan sebagainya, tetapi jurnalis
+
+6
+0:00:10,650 --> 0:00:12,960
+biasanya tidak membahas artinya yang
+
+7
+0:00:12,960 --> 0:00:14,969
+adil karena itu  topik yang cukup kompleks
+
+8
+0:00:14,969 --> 0:00:16,830
+jadi hari ini saya hanya ingin berbagi dengan
+
+9
+0:00:16,830 --> 0:00:19,050
+kalian seperti apa artinya sebenarnya jadi lain
+
+10
+0:00:19,050 --> 0:00:21,570
+kali Anda membacanya di sebuah artikel, Anda bisa
+
+11
+0:00:21,570 --> 0:00:24,029
+mendapatkan intisari yang lebih baik tentang apa itu jadi
+
+12
+0:00:24,029 --> 0:00:25,740
+versi singkatnya adalah persamaan Schrodinger
+
+13
+0:00:25,740 --> 0:00:27,359
+memberi tahu kita semua yang kita
+
+14
+0:00:27,359 --> 0:00:28,949
+mungkin dapat mengetahui tentang sistem kuantum
+
+15
+0:00:28,949 --> 0:00:31,289
+itu pada dasarnya adalah ma etis dari
+
+16
+0:00:31,289 --> 0:00:33,239
+dunia kuantum jika Anda melempar bola dan
+
+17
+0:00:33,239 --> 0:00:34,469
+MA etis diri
+
+18
+0:00:34,469 --> 0:00:35,880
+Anda dapat memprediksi posisi dan
+
+19
+0:00:35,880 --> 0:00:38,070
+momentumnya untuk setiap saat setelah Anda
+
+20
+0:00:38,070 --> 0:00:40,050
+memiliki keduanya, pada dasarnya Anda dapat memperoleh
+
+21
+0:00:40,050 --> 0:00:41,640
+semua hal lain yang Anda bisa  mungkin tahu
+
+22
+0:00:41,640 --> 0:00:45,059
+tentang itu energi kecepatan dll tetapi ketika kita
+
+23
+0:00:45,059 --> 0:00:46,829
+turun ke tanah partikel
+
+24
+0:00:46,829 --> 0:00:48,510
+persamaan Newton tidak bekerja lagi
+
+25
+0:00:48,510 --> 0:00:50,340
+jika kita memasukkan partikel ke dalam sebuah kotak dan kita
+
+26
+0:00:50,340 --> 0:00:52,800
+ingin tahu di mana itu f sama dengan MA hanya
+
+27
+0:00:52,800 --> 0:00:55,199
+tidak'  t memotongnya,
+
+28
+0:00:55,199 --> 0:00:57,030
+prinsip ketidakpastian Heisenberg mengatakan bahwa kita tidak dapat
+
+29
+0:00:57,030 --> 0:00:58,739
+mengetahui posisi pasti dan
+
+30
+0:00:58,739 --> 0:01:01,800
+momentum objek kuantum, tetapi kita dapat
+
+31
+0:01:01,800 --> 0:01:04,049
+mengetahui hal-hal lain seperti tingkat energi
+
+32
+0:01:04,049 --> 0:01:05,939
+dalam fungsi gelombang yang akan kita jelajahi
+
+33
+0:01:05,939 --> 0:01:08,040
+dalam video ini, tetapi semua informasi itu ada
+
+34
+0:01:08,040 --> 0:01:10,170
+di dalamnya  persamaan Schrodinger dan
+
+35
+0:01:10,170 --> 0:01:12,180
+dengan beberapa matematika hardcore kita dapat
+
+36
+0:01:12,180 --> 0:01:15,509
+menguraikannya sekarang versi panjang jadi
+
+37
+0:01:15,509 --> 0:01:17,159
+sebelum saya mulai saya harus mengatakan bahwa
+
+38
+0:01:17,159 --> 0:01:19,290
+ini adalah versi independen waktu yang
+
+39
+0:01:19,290 --> 0:01:22,439
+berarti bahwa itu tidak melibatkan waktu dan
+
+40
+0:01:22,439 --> 0:01:24,180
+jika pada titik mana pun sepanjang video Anda
+
+41
+0:01:24,180 --> 0:01:26,850
+mendapatkan  hilang jangan khawatir bahkan Schrodinger
+
+42
+0:01:26,850 --> 0:01:28,320
+tidak tahu persis apa
+
+43
+0:01:28,320 --> 0:01:30,210
+arti persamaannya jadi katakanlah kita memiliki sistem kuantum
+
+44
+0:01:30,210 --> 0:01:32,759
+sebuah elektron di dalam kotak kita ingin
+
+45
+0:01:32,759 --> 0:01:34,350
+tahu semua yang kita bisa tentang
+
+46
+0:01:34,350 --> 0:01:35,700
+elektron ini sehingga kita dapat membuat prediksi di
+
+47
+0:01:35,700 --> 0:01:37,259
+mana
+
+48
+0:01:37,259 --> 0:01:39,479
+mungkin energinya  tingkat itu mungkin di
+
+49
+0:01:39,479 --> 0:01:41,340
+jawaban ini semua terkubur dalam
+
+50
+0:01:41,340 --> 0:01:43,770
+persamaan Schrodinger jadi pertama mari kita
+
+51
+0:01:43,770 --> 0:01:45,840
+mulai dengan orang ini buku pitch hal
+
+52
+0:01:45,840 --> 0:01:47,909
+ini adalah huruf Yunani sy dan itu
+
+53
+0:01:47,909 --> 0:01:49,350
+singkatan dari apa kal  memimpin fungsi gelombang
+
+54
+0:01:49,350 --> 0:01:51,479
+itu memberi tahu Anda di mana kemungkinan elektron
+
+55
+0:01:51,479 --> 0:01:54,659
+berada tetapi tidak di mana ia akan
+
+56
+0:01:54,659 --> 0:01:57,350
+berada Objek kuantum licik di
+
+57
+0:01:57,350 --> 0:01:58,850
+Anda tidak dapat memprediksi dengan tepat di mana mereka akan
+
+58
+0:01:58,850 --> 0:02:01,100
+berada sampai Anda mengukurnya Anda hanya dapat
+
+59
+0:02:01,100 --> 0:02:03,799
+memprediksi di mana mereka akan  mungkin bisa dikatakan
+
+60
+0:02:03,799 --> 0:02:05,479
+ada anak ini Anda tahu Anda telah
+
+61
+0:02:05,479 --> 0:02:07,220
+tumbuh bersama mereka sepanjang hidup Anda mereka melihat
+
+62
+0:02:07,220 --> 0:02:08,690
+ke kamar mereka dengan pekerjaan rumah mereka
+
+63
+0:02:08,690 --> 0:02:10,850
+Playstation dan tempat tidur jika Anda harus
+
+64
+0:02:10,850 --> 0:02:12,260
+menebak di mana mereka berada Anda akan mengatakan ada
+
+65
+0:02:12,260 --> 0:02:14,420
+sekitar 80% kemungkinan mereka  berada di
+
+66
+0:02:14,420 --> 0:02:17,030
+PlayStation dan kemungkinan 19% mereka
+
+67
+0:02:17,030 --> 0:02:19,069
+di tempat tidur dan kemungkinan 1%
+
+68
+0:02:19,069 --> 0:02:20,840
+mereka mengerjakan pekerjaan rumah mereka ketika Anda membuka
+
+69
+0:02:20,840 --> 0:02:22,700
+pintu, Anda akan tahu pasti tetapi Anda
+
+70
+0:02:22,700 --> 0:02:24,590
+dapat membuat prediksi ini karena
+
+71
+0:02:24,590 --> 0:02:26,600
+Anda tahu orang ini apa  jika Anda harus
+
+72
+0:02:26,600 --> 0:02:28,280
+menebak di mana elektron ini berada, Anda tidak
+
+73
+0:02:28,280 --> 0:02:30,980
+mengetahui elektron ini dengan baik, itulah yang dikatakan oleh
+
+74
+0:02:30,980 --> 0:02:33,230
+fungsi gelombang, ini memberi kita
+
+75
+0:02:33,230 --> 0:02:35,480
+probabilitas di mana kemungkinannya,
+
+76
+0:02:35,480 --> 0:02:38,060
+tetapi perbedaan besar adalah bahwa
+
+77
+0:02:38,060 --> 0:02:40,580
+pria itu hanya berada di satu tempat pada suatu waktu.  waktu
+
+78
+0:02:40,580 --> 0:02:42,650
+elektron berada dalam superposit  ion dari semua
+
+79
+0:02:42,650 --> 0:02:45,500
+tempat yang mungkin pada saat yang sama Anda mungkin
+
+80
+0:02:45,500 --> 0:02:47,030
+pernah mendengar eksperimen pemikiran yang terkenal
+
+81
+0:02:47,030 --> 0:02:48,709
+Kucing Schrodinger yang berada dalam
+
+82
+0:02:48,709 --> 0:02:50,870
+superposisi mati dan hidup
+
+83
+0:02:50,870 --> 0:02:52,850
+sampai kotak dibuka dan dipaksa
+
+84
+0:02:52,850 --> 0:02:55,340
+untuk memilih keadaan. Ini kesepakatan yang sama di
+
+85
+0:02:55,340 --> 0:02:57,350
+sini tindakan tidak mengetahui  di mana
+
+86
+0:02:57,350 --> 0:02:59,060
+elektron memungkinkan
+
+87
+0:02:59,060 --> 0:03:01,100
+distribusi probabilitasnya menyebar di
+
+88
+0:03:01,100 --> 0:03:02,810
+ruang yang besar seperti gelombang
+
+89
+0:03:02,810 --> 0:03:04,579
+Jenis gelombang yang berbeda dapat mewakili
+
+90
+0:03:04,579 --> 0:03:06,380
+probabilitas yang berbeda di mana
+
+91
+0:03:06,380 --> 0:03:08,780
+kemungkinannya maka nama
+
+92
+0:03:08,780 --> 0:03:10,850
+fungsi gelombang itu adalah fungsi yang menggambarkan
+
+93
+0:03:10,850 --> 0:03:12,799
+bentuk gelombang probabilitas
+
+94
+0:03:12,799 --> 0:03:14,630
+distribusi elektron
+
+95
+0:03:14,630 --> 0:03:16,310
+oh ya dan ketika Anda membuka pintu dan
+
+96
+0:03:16,310 --> 0:03:17,690
+mengukur di mana itu adalah
+
+97
+0:03:17,690 --> 0:03:20,209
+kemungkinan gelombang fungsi awan runtuh
+
+98
+0:03:20,209 --> 0:03:22,070
+dan elektron menjadi partikel lagi tidak ada
+
+99
+0:03:22,070 --> 0:03:23,930
+yang terlalu yakin untuk pergi bingung jadi
+
+100
+0:03:23,930 --> 0:03:25,519
+itulah nada keduanya berarti
+
+101
+0:03:25,519 --> 0:03:26,870
+fungsi gelombang memberitahu kita  di mana
+
+102
+0:03:26,870 --> 0:03:29,120
+kemungkinan elektron kita sekarang mari
+
+103
+0:03:29,120 --> 0:03:31,400
+kita lihat ini a itu mewakili
+
+104
+0:03:31,400 --> 0:03:33,440
+energi yang diizinkan elektron
+
+105
+0:03:33,440 --> 0:03:35,570
+sekarang sebelum saya  masuk ke apa artinya Saya
+
+106
+0:03:35,570 --> 0:03:37,070
+hanya ingin menunjukkan bahwa cara
+
+107
+0:03:37,070 --> 0:03:39,200
+persamaan ini disusun, nilai-nilai ini
+
+108
+0:03:39,200 --> 0:03:40,970
+adalah yang kami coba selesaikan
+
+109
+0:03:40,970 --> 0:03:42,980
+sehingga memberi tahu kami bahwa jika Anda melakukan semua
+
+110
+0:03:42,980 --> 0:03:45,230
+hal ini, Anda dapat mengetahui
+
+111
+0:03:45,230 --> 0:03:46,670
+tingkat energi  fungsi gelombang
+
+112
+0:03:46,670 --> 0:03:48,920
+elektron dan jika kita mengetahui dua hal ini,
+
+113
+0:03:48,920 --> 0:03:50,720
+kita dapat memperoleh semua hal lain yang mungkin dapat kita
+
+114
+0:03:50,720 --> 0:03:52,609
+ketahui tentang partikel
+
+115
+0:03:52,609 --> 0:03:54,650
+seperti posisi dan momentum wol
+
+116
+0:03:54,650 --> 0:03:57,350
+tetapi mari kita mundur sejenak apa yang saya maksud
+
+117
+0:03:57,350 --> 0:03:59,450
+ketika saya mengatakan tingkat energi elektron
+
+118
+0:03:59,450 --> 0:04:01,430
+diizinkan untuk memiliki seperti
+
+119
+0:04:01,430 --> 0:04:02,630
+itu elektron yang tumbuh dapat memiliki tingkat energi apa
+
+120
+0:04:02,630 --> 0:04:05,900
+pun sekaligus benar tahu di
+
+121
+0:04:05,900 --> 0:04:07,580
+dunia biasa kita lihat di sekitar
+
+122
+0:04:07,580 --> 0:04:09,230
+dan jika Anda bisa naik dan turun dengan cara yang
+
+123
+0:04:09,230 --> 0:04:11,690
+mulus terus menerus tapi ini tidak
+
+124
+0:04:11,690 --> 0:04:13,700
+terjadi di dunia kuantum  dan alasannya
+
+125
+0:04:13,700 --> 0:04:15,440
+berasal dari sifat seperti gelombang dari
+
+126
+0:04:15,440 --> 0:04:17,630
+distribusi probabilitas karena
+
+127
+0:04:17,630 --> 0:04
+partikel kita berada di dalam kotak memiliki
+
+128
+0:04 --> 0:04:22,220
+probabilitas nol untuk ditemukan di dalam atau di
+
+129
+0:04:22,220 --> 0:04:24,470
+luar dinding jadi ini berarti fungsi gelombang
+
+130
+0:04:24,470 --> 0:04:26,870
+harus selalu nol  jika
+
+131
+0:04:26,870 --> 0:04:28,550
+tidak, ada beberapa kemungkinan bahwa
+
+132
+0:04:28,550 --> 0:04:30,770
+elektron bisa berada di luar kotak yang
+
+133
+0:04:30,770 --> 0:04:32,750
+kita tahu bukan itu berarti
+
+134
+0:04:32,750 --> 0:04:34,070
+elektron hanya dapat memiliki frekuensi tertentu yang
+
+135
+0:04:34,070 --> 0:04:36,350
+terkait dengannya,
+
+136
+0:04:36,350 --> 0:04:38,060
+frekuensi ini diperbolehkan karena fungsi gelombang
+
+137
+0:04:38,060 --> 0:04:40,460
+adalah nol di kedua sisi dan
+
+138
+0:04:40,460 --> 0:04:43,280
+frekuensi ini bukan ini  frekuensi
+
+139
+0:04:43,280 --> 0:04:46,040
+diperbolehkan dan yang ini tidak begitu Einstein
+
+140
+0:04:46,040 --> 0:04:48,260
+menemukan bahwa energi sebenarnya
+
+141
+0:04:48,260 --> 0:04:50,300
+sebanding dengan frekuensi dengan
+
+142
+0:04:50,300 --> 0:04:53,390
+hubungan ini e sama dengan H F di mana E adalah
+
+143
+0:04:53,390 --> 0:04:56,180
+energi F adalah frekuensi dan ini H di
+
+144
+0:04:56,180 --> 0:04:58,370
+sini adalah konstanta Planck jangan
+
+145
+0:04:58,370 --> 0:04:59,990
+terlalu khawatir tentang H itu untuk  sekarang yang
+
+146
+0:04:59,990 --> 0:05:01,610
+perlu Anda ketahui adalah bahwa itu adalah konstanta
+
+147
+0:05:01,610 --> 0:05:03,920
+yang berarti nilainya tidak berubah jadi
+
+148
+0:05:03,920 --> 0:05:05,690
+jika hanya frekuensi tertentu yang diizinkan
+
+149
+0:05:05,690 --> 0:05:08,180
+di dalam kotak dan ini adalah konstanta
+
+150
+0:05:08,180 --> 0:05:10,520
+maka hanya tingkat energi tertentu
+
+151
+0:05:10,520 --> 0:05:13,520
+yang diizinkan di dalam kotak -
+
+152
+0:05:13,520 --> 0:05:16,040
+properti ini  nilai diskrit atau terkuantisasi
+
+153
+0:05:16,040 --> 0:05:17,900
+adalah di mana mekanika kuantum mendapatkan namanya
+
+154
+0:05:17,900 --> 0:05:20,060
+hal-hal yang dapat mengambil nilai terus menerus
+
+155
+0:05:20,060 --> 0:05:22,310
+di dunia biasa seperti
+
+156
+0:05:22,310 --> 0:05:24,169
+tingkat energi hanya dapat mengambil o  n
+
+157
+0:05:24,169 --> 0:05:26,630
+nilai terkuantisasi tertentu pada skala kuantum
+
+158
+0:05:26,630 --> 0:05:28,850
+sekarang mari kita lihat sisi lain
+
+159
+0:05:28,850 --> 0:05:30,620
+persamaan kita tahu apa yang kita selesaikan untuk
+
+160
+0:05:30,620 --> 0:05:32,750
+tingkat energi dan fungsi gelombang
+
+161
+0:05:32,750 --> 0:05:35,510
+tetapi bagaimana semua ini akan membantu kita
+
+162
+0:05:35,510 --> 0:05:38,480
+sampai di sana dengan baik energi secara keseluruhan dibuat  naik
+
+163
+0:05:38,480 --> 0:05:40,730
+dari energi kinetik dan energi potensial
+
+164
+0:05:40,730 --> 0:05:42,500
+jika pemain skateboard berada di jalan skate
+
+165
+0:05:42,500 --> 0:05:44,330
+mereka akan melakukan perjalanan dengan kecepatan tertentu dan
+
+166
+0:05:44,330 --> 0:05:45,980
+memiliki energi kinetik tetapi ketika mereka
+
+167
+0:05:45,980 --> 0:05:48,290
+berhenti di atas mereka masih memiliki energi
+
+168
+0:05:48,290 --> 0:05:50,120
+itu hanya berubah menjadi
+
+169
+0:05:50,120 --> 0:05:52,790
+energi potensial yang berbeda seluruh
+
+170
+0:05:52,790 --> 0:05:54,890
+energi sistem hanyalah energi kinetik
+
+171
+0:05:54,890 --> 0:05:56,780
+ditambah energi potensial dan sementara itu
+
+172
+0:05:56,780 --> 0:05:58,220
+dapat bergerak bolak-balik di antara
+
+173
+0:05:58,220 --> 0:06:00,530
+kedua keadaan itu nilai totalnya selalu
+
+174
+0:06:00,530 --> 0:06:03,860
+kekal kadang-kadang energi potensial
+
+175
+0:06:03,860 --> 0:06:06,229
+ditulis sebagai V jadi istilah ini adalah
+
+176
+0:06:06,229 --> 0:06:08,720
+energi potensial dari fungsi gelombang  jadi
+
+177
+0:06:08,720 --> 0:06:10,610
+jika ini adalah energi potensial yang
+
+178
+0:06:10,610 --> 0:06:12,350
+harus berarti bahwa istilah ini di sini adalah
+
+179
+0:06:12,350 --> 0:06:14,300
+energi kinetik saya tahu itu tidak benar-benar
+
+180
+0:06:14,300 --> 0:06:15,919
+terlihat seperti persamaan energi kinetik yang
+
+181
+0:06:15,919 --> 0:06:17,450
+pernah kita lihat sebelumnya kan  t jadi
+
+182
+0:06:17,450 --> 0:06:18,680
+inilah turunannya jika Anda tidak
+
+183
+0:06:18,680 --> 0:06:21,009
+percaya jadi jika kita dapat memecahkan
+
+184
+0:06:21,009 --> 0:06:22,749
+energi kinetik potensial dari sistem kuantum kita,
+
+185
+0:06:22,749 --> 0:06:24,309
+ini akan memberi tahu kita tingkat energi yang
+
+186
+0:06:24,309 --> 0:06:25,960
+diizinkan dan hanya itu yang
+
+187
+0:06:25,960 --> 0:06:28,180
+perlu diketahui tentang elektron kecil kita, jadi
+
+188
+0:06:28,180 --> 0:06:29,740
+apa yang biasanya
+
+189
+0:06:29,740 --> 0:06:32,830
+Solusi Schrodinger terlihat cocok untuk masalah khusus ini
+
+190
+0:06:32,830 --> 0:06:34,689
+semua solusi untuk fungsi gelombang
+
+191
+0:06:34,689 --> 0:06:37,029
+mengambil dua bentuk ini dan persamaan energi
+
+192
+0:06:37,029 --> 0:06:39,399
+yang muncul adalah
+
+193
+0:06:39,399 --> 0:06:40,839
+bentuk yang bagus ini jadi apa artinya
+
+194
+0:06:40,839 --> 0:06:42,369
+baik hal pertama yang harus diperhatikan adalah bahwa
+
+195
+0:06:42,369 --> 0:06:44,439
+setiap suku dalam ini  ekspresi
+
+196
+0:06:44,439 --> 0:06:47,289
+adalah konstanta atau bilangan bulat h-bar adalah
+
+197
+0:06:47,289 --> 0:06:50,649
+konstanta 2 jelas merupakan konstanta M
+
+198
+0:06:50,649 --> 0:06:53,199
+massa elektron adalah konstanta pi
+
+199
+0:06:53,199 --> 0:06:55,809
+adalah konstanta dan L panjang kotak
+
+200
+0:06:55,809 --> 0:06:58,180
+adalah konstan dan n
+
+201
+0:06:58,180 --> 0:06:59,919
+menyatakan keadaan yang berbeda  elektron dan
+
+202
+0:06:59,919 --> 0:07:03,999
+mereka semua bilangan bulat 1 2 3 dll
+
+203
+0:07:03,999 --> 0:07:06,430
+jadi energi e hanya dapat memiliki
+
+204
+0:07:06,430 --> 0:07:09,639
+nilai tertentu itu terkuantisasi tetapi bagaimana dengan
+
+205
+0:07:09,639 --> 0:07:13,059
+fungsi gelombang di mana elektron yah
+
+206
+0:07:13,059 --> 0:07:14,680
+mari kita lihat orang ini  ketika
+
+207
+0:07:14,680 --> 0:07:16,629
+elektron dalam keadaan energi pertama ketika n
+
+208
+0:07:16,629 --> 0:07:20,319
+sama dengan 1 kita mendapatkan ini itu salah satu
+
+209
+0:07:20,319 --> 0:07:22,209
+fungsi gelombang elektron dan jika kita
+
+210
+0:07:22,209 --> 0:07:24,789
+kuadratkan kita mendapatkan distribusi probabilitas
+
+211
+0:07:24,789 --> 0:07:27,219
+alias di mana elektron kemungkinan besar
+
+212
+0:07:27,219 --> 0:07:28,659
+kita dapat melihat bahwa ada  probabilitas tinggi
+
+213
+0:07:28,659 --> 0:07:30,370
+bahwa itu akan ditemukan di
+
+214
+0:07:30,370 --> 0:07:32,110
+tengah sini tetapi sebagai probabilitas nol
+
+215
+0:07:32,110 --> 0:07:34,779
+itu akan ditemukan tepat di tepi sini
+
+216
+0:07:34,779 --> 0:07:35,979
+adalah beberapa fungsi gelombang dan
+
+217
+0:07:35,979 --> 0:07:37,689
+kepadatan probabilitas untuk keadaan energi lain
+
+218
+0:07:37,689 --> 0:07:39,699
+lihat bagaimana fungsi gelombang
+
+219
+0:07:39,699 --> 0:07:43,509
+selalu selalu 0 tepat di  ujung-ujungnya ini
+
+220
+0:07:43,509 --> 0:07:45,639
+membawa saya satu semester penuh gelar fisika
+
+221
+0:07:45,639 --> 0:07:47,259
+untuk memahami dan apa yang benar-benar
+
+222
+0:07:47,259 --> 0:07:48,969
+membantu saya bekerja melalui banyak
+
+223
+0:07:48,969 --> 0:07:50,830
+masalah dan meluangkan waktu untuk membangun
+
+224
+0:07:50,830 --> 0:07:53,080
+intuisi yang kuat org brilian memiliki
+
+225
+0:07:53,080 --> 0:07:54,879
+seluruh kursus yang didedikasikan untuk
+
+226
+0:07:54,879 --> 0:07:56,469
+mekanika kuantum yang dimulai dengan
+
+227
+0:07:56,469 --> 0:07:58,180
+eksperimen  yang pertama kali menemukan
+
+228
+0:07:58,180 --> 0:07:59,979
+perilaku kuantum dan mengarah pada
+
+229
+0:07:59,979 --> 0:08:01,269
+derivasi persamaan Schrodinger
+
+230
+0:08:01,269 --> 0:08:03,729
+yang memiliki contoh yang dapat Anda kerjakan dengan
+
+231
+0:08:03,729 --> 0:08:05,559
+kecepatan Anda sendiri.
+
+232
+0:08:05,559 --> 0:08:07,149
+t untuk menyegarkan ingatan saya dan
+
+233
+0:08:07,149 --> 0:08:08,800
+mempelajari beberapa hal yang saya tidak tahu dan
+
+234
+0:08:08,800 --> 0:08:10,539
+pasti memahami beberapa hal dengan lebih baik
+
+235
+0:08:10,539 --> 0:08:12,639
+mereka juga memiliki banyak kursus lain
+
+236
+0:08:12,639 --> 0:08:14,589
+terutama tentang fisika matematika dan
+
+237
+0:08:14,589 --> 0:08:16,059
+ilmu komputer dan mereka selalu menambahkan lebih banyak
+
+238
+0:08:16,059 --> 0:08:18,399
+200 orang pertama untuk mengklik tautan di
+
+239
+0:08:18,399 --> 0:08:20,050
+bawah  dan mendaftar akan mendapatkan diskon 20%,
+
+240
+0:08:20,050 --> 0:08:22,959
+buka saja org brilian slash
+
+241
+0:08:22,959 --> 0:08:25,959
+up dan Adam tautannya ada di layar dan
+
+242
+0:08:25,959 --> 0:08:27,759
+di deskripsi dan jika Anda bertanya-tanya
+
+243
+0:08:27,759 --> 0:08:29,769
+mengapa saya tidak memasukkan matematika di balik
+
+244
+0:08:29,769 --> 0:08:31,029
+solusi persamaan Schrodinger
+
+245
+0:08:31,029 --> 0:08:32,979
+itu karena  itu akan membawa saya
+
+246
+0:08:32,979 --> 0:08:34,840
+sekitar satu jam hanya untuk menulis
+
+247
+0:08:34,840 --> 0:08:36,880
+mungkin lima minggu lagi untuk menjelaskan
+
+248
+0:08:36,880 --> 0:08:38,740
+tetapi bagi Anda yang sangat
+
+249
+0:08:38,740 --> 0:08:41,440
+ingin tahu, saya telah memposting esai ujian akhir saya
+
+250
+0:08:41,440 --> 0:08:43,540
+tentang fisika kuantum dalam deskripsi itu
+
+251
+0:08:43,540 --> 0:08:44,920
+termasuk turunan dari
+
+252
+0:08:44,920 --> 0:08:46,480
+persamaan Schrodinger sebagai  serta
+
+253
+0:08:46,480 --> 0:08:48,640
+solusi dan beberapa hal menarik lainnya
+
+254
+0:08:48,640 --> 0:08:50,260
+seperti pertanyaan acak untuk profesor saya,
+
+255
+0:08:50,260 --> 0:08:52,450
+jadi teman-teman, tolong jujur, apakah
+
+256
+0:08:52,450 --> 0:08:53,740
+Anda memahami persamaan Schrodinger
+
+257
+0:08:53,740 --> 0:08:56,530
+sedikit lebih baik sekarang, saya harap Anda mengerti, tetapi jika
+
+258
+0:08:56,530 --> 0:08:58,750
+Anda  jangan ragu untuk memberi
+
+259
+0:08:58,750 --> 0:09:00,610
+saya umpan balik tentang bagaimana saya dapat membuat
+
+260
+0:09:00,610 --> 0:09:02,740
+penjelasan saya lebih baik untuk video masa depan
+
+261
+0:09:02,740 --> 0:09:04,900
+fisika kuantum sangat keren dan saya benar
+
+262
+0:09:04,900 --> 0:09:07,300
+-benar tidak ingin ada yang ketinggalan jadi ya
+
+263
+0:09:07,300 --> 0:09:08,910
+itu saja dari saya bye
+
+264
+0:09:08,910 --> 0:09:16,900
+[Musik]
+
+265
+0:09:16,900 --> 0:09:24,900
+[Musik  ]
+
+266
+0:09:24,900 --> 0:09:27,980
+[Musik]
+

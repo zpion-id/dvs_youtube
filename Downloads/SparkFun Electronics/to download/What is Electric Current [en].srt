@@ -1,0 +1,572 @@
+1
+0:00:04,220 --> 0:00:06,750
+previously we talked about how electric
+
+2
+0:00:06,750 --> 0:00:08,460
+charges can build up on surfaces and
+
+3
+0:00:08,460 --> 0:00:10,019
+create something known as static
+
+4
+0:00:10,019 --> 0:00:12,750
+electricity in this episode let's talk
+
+5
+0:00:12,750 --> 0:00:14,250
+about what happens when these electric
+
+6
+0:00:14,250 --> 0:00:16,440
+charges continuously move in a process
+
+7
+0:00:16,440 --> 0:00:18,869
+known as current electricity most
+
+8
+0:00:18,869 --> 0:00:20,369
+electronics everything from your
+
+9
+0:00:20,369 --> 0:00:22,619
+refrigerator to your smartphone requires
+
+10
+0:00:22,619 --> 0:00:25,230
+current electricity to operate let's
+
+11
+0:00:25,230 --> 0:00:26,939
+assume that we have a copper wire that's
+
+12
+0:00:26,939 --> 0:00:29,189
+filled with copper atoms copper is one
+
+13
+0:00:29,189 --> 0:00:30,689
+of those elements that has only one
+
+14
+0:00:30,689 --> 0:00:33,030
+electron in its outermost shell which
+
+15
+0:00:33,030 --> 0:00:35,010
+means that with only a little energy
+
+16
+0:00:35,010 --> 0:00:37,200
+that electron can be easily ejected if
+
+17
+0:00:37,200 --> 0:00:39,510
+we push a free electron into the copper
+
+18
+0:00:39,510 --> 0:00:41,610
+wire it will eventually find a new atom
+
+19
+0:00:41,610 --> 0:00:43,800
+to latch onto the negative charge of
+
+20
+0:00:43,800 --> 0:00:45,390
+that electron will eject another
+
+21
+0:00:45,390 --> 0:00:47,850
+electron from the outer shell which will
+
+22
+0:00:47,850 --> 0:00:49,980
+then move on to the next atom and so on
+
+23
+0:00:49,980 --> 0:00:52,649
+and so on this chain of moving electrons
+
+24
+0:00:52,649 --> 0:00:55,110
+creates a flow known as electric current
+
+25
+0:00:55,110 --> 0:00:57,629
+some elements like copper aluminum and
+
+26
+0:00:57,629 --> 0:00:59,879
+gold can move electrons easily and are
+
+27
+0:00:59,879 --> 0:01:02,550
+known as conductors we can look at
+
+28
+0:01:02,550 --> 0:01:05,070
+moving charges in another way let's say
+
+29
+0:01:05,070 --> 0:01:06,960
+that this tube is a conductive wire and
+
+30
+0:01:06,960 --> 0:01:08,729
+the steel balls are negative electric
+
+31
+0:01:08,729 --> 0:01:11,070
+charges electrons in this case we might
+
+32
+0:01:11,070 --> 0:01:13,470
+think that one charged particle needs to
+
+33
+0:01:13,470 --> 0:01:15,330
+move completely through the conductor to
+
+34
+0:01:15,330 --> 0:01:17,490
+create a flow but that's not actually
+
+35
+0:01:17,490 --> 0:01:20,040
+the case as we push a ball in one end
+
+36
+0:01:20,040 --> 0:01:22,320
+the force causes all the balls to move
+
+37
+0:01:22,320 --> 0:01:24,659
+and one pops out the other end as you
+
+38
+0:01:24,659 --> 0:01:27,150
+can see one electron even if it doesn't
+
+39
+0:01:27,150 --> 0:01:29,189
+move very far can force all the other
+
+40
+0:01:29,189 --> 0:01:31,950
+electrons to move creating a flow what
+
+41
+0:01:31,950 --> 0:01:33,840
+we just showed was electric current
+
+42
+0:01:33,840 --> 0:01:35,939
+which is a flow of electric charge in
+
+43
+0:01:35,939 --> 0:01:38,070
+most circuits this is accomplished by
+
+44
+0:01:38,070 --> 0:01:40,409
+moving electrons the unit for measuring
+
+45
+0:01:40,409 --> 0:01:42,810
+current is the ampere which is often
+
+46
+0:01:42,810 --> 0:01:44,640
+abbreviated as amps and written with a
+
+47
+0:01:44,640 --> 0:01:47,790
+capital A one ampere is defined as one
+
+48
+0:01:47,790 --> 0:01:49,920
+Coulomb of charge moving past a point
+
+49
+0:01:49,920 --> 0:01:52,619
+per second let's look at a cross-section
+
+50
+0:01:52,619 --> 0:01:54,990
+of wire carrying an electric current if
+
+51
+0:01:54,990 --> 0:01:58,020
+it takes three seconds for 6 coulombs of
+
+52
+0:01:58,020 --> 0:01:59,130
+charge to move through that
+
+53
+0:01:59,130 --> 0:02:01,799
+cross-section then we say that two amps
+
+54
+0:02:01,799 --> 0:02:03,079
+are moving through that wire
+
+55
+0:02:03,079 --> 0:02:05,490
+unfortunately electric current doesn't
+
+56
+0:02:05,490 --> 0:02:07,590
+just magically flow through wires it
+
+57
+0:02:07,590 --> 0:02:10,890
+needs a little help if left alone the
+
+58
+0:02:10,890 --> 0:02:12,740
+electrons in a wire won't move
+
+59
+0:02:12,740 --> 0:02:14,810
+we need to give them a little push to do
+
+60
+0:02:14,810 --> 0:02:16,790
+that we'll use a voltage source like a
+
+61
+0:02:16,790 --> 0:02:18,920
+battery in a battery there is a buildup
+
+62
+0:02:18,920 --> 0:02:20,900
+of negative charge on one side in the
+
+63
+0:02:20,900 --> 0:02:23,300
+form of excess electrons the other side
+
+64
+0:02:23,300 --> 0:02:25,190
+has a buildup of positive charge in
+
+65
+0:02:25,190 --> 0:02:27,710
+absence of electrons in this case the
+
+66
+0:02:27,710 --> 0:02:30,050
+charges want to balance out but the only
+
+67
+0:02:30,050 --> 0:02:31,880
+way to do that is for the excess
+
+68
+0:02:31,880 --> 0:02:33,560
+electrons to flow around the battery
+
+69
+0:02:33,560 --> 0:02:36,260
+through a conductor that we provide if
+
+70
+0:02:36,260 --> 0:02:37,820
+we connect a piece of wire to the
+
+71
+0:02:37,820 --> 0:02:39,740
+negative terminal the electrons will
+
+72
+0:02:39,740 --> 0:02:41,810
+push against the electrons in the wire
+
+73
+0:02:41,810 --> 0:02:44,390
+however air is an insulator as its
+
+74
+0:02:44,390 --> 0:02:45,920
+molecules do not have very mobile
+
+75
+0:02:45,920 --> 0:02:48,050
+electrons and it won't readily accept
+
+76
+0:02:48,050 --> 0:02:49,940
+the free electrons to show this we'll
+
+77
+0:02:49,940 --> 0:02:51,500
+put a piece of tape at the end of the
+
+78
+0:02:51,500 --> 0:02:53,900
+tube now the electrons at the end of the
+
+79
+0:02:53,900 --> 0:02:54,950
+wire have nowhere to go
+
+80
+0:02:54,950 --> 0:02:57,380
+even if we push against the electrons in
+
+81
+0:02:57,380 --> 0:02:59,450
+the wire they still won't budge to fix
+
+82
+0:02:59,450 --> 0:03:01,460
+this we need to connect the other end of
+
+83
+0:03:01,460 --> 0:03:03,140
+the wire to a place where the electrons
+
+84
+0:03:03,140 --> 0:03:05,240
+want to go and the positive end of the
+
+85
+0:03:05,240 --> 0:03:06,560
+battery will happily accept the
+
+86
+0:03:06,560 --> 0:03:09,080
+electrons in fact don't try this with a
+
+87
+0:03:09,080 --> 0:03:10,880
+real battery there is nothing slowing
+
+88
+0:03:10,880 --> 0:03:11,900
+down or restricting the flow of
+
+89
+0:03:11,900 --> 0:03:13,910
+electrons which results in tremendous
+
+90
+0:03:13,910 --> 0:03:15,860
+amounts of energy being transformed into
+
+91
+0:03:15,860 --> 0:03:17,960
+heat in the wire and this could easily
+
+92
+0:03:17,960 --> 0:03:20,110
+melt the wire insulation or start a fire
+
+93
+0:03:20,110 --> 0:03:23,150
+this is known as a closed circuit as it
+
+94
+0:03:23,150 --> 0:03:24,980
+creates a loop from one side of the
+
+95
+0:03:24,980 --> 0:03:27,320
+energy source to the other if we break
+
+96
+0:03:27,320 --> 0:03:29,120
+the wire or remove it from one of the
+
+97
+0:03:29,120 --> 0:03:30,980
+terminals then the electrons will stop
+
+98
+0:03:30,980 --> 0:03:33,340
+flowing this is known as an open circuit
+
+99
+0:03:33,340 --> 0:03:35,810
+we've been talking about electron flow
+
+100
+0:03:35,810 --> 0:03:37,760
+in a circuit and showing how electrons
+
+101
+0:03:37,760 --> 0:03:39,590
+move from the negative terminal to the
+
+102
+0:03:39,590 --> 0:03:42,830
+positive terminal however in electronics
+
+103
+0:03:42,830 --> 0:03:44,780
+we usually assign current as flowing
+
+104
+0:03:44,780 --> 0:03:47,480
+from positive to negative or from higher
+
+105
+0:03:47,480 --> 0:03:49,760
+potential to lower potential this is
+
+106
+0:03:49,760 --> 0:03:52,430
+known as conventional current in the
+
+107
+0:03:52,430 --> 0:03:55,100
+mid-1700s Benjamin Franklin theorized
+
+108
+0:03:55,100 --> 0:03:57,320
+that positively charged objects had an
+
+109
+0:03:57,320 --> 0:03:59,300
+excess of what he called electric fluid
+
+110
+0:03:59,300 --> 0:04:01,910
+and that negatively charged objects had
+
+111
+0:04:01,910 --> 0:04:04,550
+a deficit of this fluid Franklin noted
+
+112
+0:04:04,550 --> 0:04:06,800
+that this fluid had a tendency to flow
+
+113
+0:04:06,800 --> 0:04:08,960
+from positive to negative to distribute
+
+114
+0:04:08,960 --> 0:04:11,330
+itself more evenly it wasn't until the
+
+115
+0:04:11,330 --> 0:04:13,250
+end of the 19th century that English
+
+116
+0:04:13,250 --> 0:04:15,530
+physicist JJ Thompson discovered the
+
+117
+0:04:15,530 --> 0:04:17,930
+existence of the electron even though we
+
+118
+0:04:17,930 --> 0:04:19,940
+now know that it is electrons that move
+
+119
+0:04:19,940 --> 0:04:21,799
+inside of most circuits from low to high
+
+120
+0:04:21,799 --> 0:04:24,050
+potential the convention of current
+
+121
+0:04:24,050 --> 0:04:26,060
+moving from high to low potential stop
+
+122
+0:04:26,060 --> 0:04:28,190
+as a result most current measurements
+
+123
+0:04:28,190 --> 0:04:29,960
+are given as conventional current which
+
+124
+0:04:29,960 --> 0:04:32,150
+is the movement of positive charge in a
+
+125
+0:04:32,150 --> 0:04:33,800
+circuit and is represented by the
+
+126
+0:04:33,800 --> 0:04:36,080
+capital letter I don't worry the math
+
+127
+0:04:36,080 --> 0:04:37,880
+still works out as long as we stick with
+
+128
+0:04:37,880 --> 0:04:40,040
+either electron flow or conventional
+
+129
+0:04:40,040 --> 0:04:42,050
+current and since most electronics
+
+130
+0:04:42,050 --> 0:04:43,910
+textbooks use conventional current we'll
+
+131
+0:04:43,910 --> 0:04:46,040
+go with that we talked about making
+
+132
+0:04:46,040 --> 0:04:48,410
+electricity do work for us and the
+
+133
+0:04:48,410 --> 0:04:50,389
+circuit forms the basis for all modern
+
+134
+0:04:50,389 --> 0:04:52,340
+electronics everything from the simple
+
+135
+0:04:52,340 --> 0:04:54,500
+flashlight to massive supercomputers if
+
+136
+0:04:54,500 --> 0:04:56,720
+we made a circuit out of just a battery
+
+137
+0:04:56,720 --> 0:04:58,970
+and a piece of wire there's a chance we
+
+138
+0:04:58,970 --> 0:05:00,770
+might melt that wire as the electrons
+
+139
+0:05:00,770 --> 0:05:02,389
+move through that wire at an alarming
+
+140
+0:05:02,389 --> 0:05:04,760
+rate and generate massive amounts of
+
+141
+0:05:04,760 --> 0:05:06,979
+heat in the next episode we'll talk
+
+142
+0:05:06,979 --> 0:05:08,540
+about the relationship between voltage
+
+143
+0:05:08,540 --> 0:05:13,030
+and current and introduce the resistor
+

@@ -1,0 +1,464 @@
+1
+0:00:00,800 --> 0:00:07,230
+sains menjelaskan hari ini mari kita
+
+2
+0:00:07,230 --> 0:00:09,030
+berlatih menentukan
+
+3
+0:00:09,030 --> 0:00:12,690
+rumus molekul jadi mari kita lihat
+
+4
+0:00:12,690 --> 0:00:15,839
+pertanyaannya nikotin adalah senyawa yang ditemukan dalam
+
+5
+0:00:15,839 --> 0:00:16,890
+rokok
+
+6
+0:00:16,890 --> 0:00:19,770
+jika nikotin adalah tujuh puluh empat koma nol
+
+7
+0:00:19,770 --> 0:00:22,830
+dua persen karbon delapan koma tujuh satu
+
+8
+0:00:22,830 --> 0:00:26,039
+nol persen hidrogen dan 17 koma dua
+
+9
+0:00:26,039 --> 0:00:29,939
+tujuh persen nitrogen  berdasarkan massa dan empat puluh
+
+10
+0:00:29,939 --> 0:00:32,399
+koma lima tujuh gram nikotin
+
+11
+0:00:32,399 --> 0:00:34,829
+sama dengan nol koma dua lima nol nol
+
+12
+0:00:34,829 --> 0:00:38,670
+mol apa rumus molekul
+
+13
+0:00:38,670 --> 0:00:41,399
+nikotin jadi jika Anda tidak yakin
+
+14
+0:00:41,399 --> 0:00:43,170
+bagaimana melakukannya, lanjutkan dan lihat
+
+15
+0:00:43,170 --> 0:00:46,320
+tutorial saya tentang analisis unsur yang
+
+16
+0:00:46,320 --> 0:00:48,539
+akan memberi Anda strategi yang Anda butuhkan
+
+17
+0:00:48,539 --> 0:00:50,700
+untuk menjawab pertanyaan ini dan ketika Anda
+
+18
+0:00:50,700 --> 0:01:11,280
+siap, lanjutkan dan coba jadi kami
+
+19
+0:01:11,280 --> 0:01:13,380
+memiliki persentase massa kami di atas di
+
+20
+0:01:13,380 --> 0:01:16,049
+sini dan kami juga memiliki informasi kami
+
+21
+0:01:16,049 --> 0:01:18,299
+yang memberi tahu kami bahwa 40 poin 5  7 gram
+
+22
+0:01:18,299 --> 0:01:20,939
+nikotin sama dengan nol koma dua lima nol
+
+23
+0:01:20,939 --> 0:01:23,520
+nol mol nikotin jadi apa yang
+
+24
+0:01:23,520 --> 0:01:25,439
+akan kita lakukan dengan informasi ini dengan baik
+
+25
+0:01:25,439 --> 0:01:27,240
+cara termudah untuk melakukannya adalah dengan
+
+26
+0:01:27,240 --> 0:01:30,299
+melanjutkan dan mengasumsikan beberapa massa o  f nikotin
+
+27
+0:01:30,299 --> 0:01:32,850
+untuk mulai melakukan beberapa perhitungan karena
+
+28
+0:01:32,850 --> 0:01:34,890
+itu benar-benar sewenang-wenang massa apa yang kita
+
+29
+0:01:34,890 --> 0:01:36,150
+pilih karena kita berurusan dengan
+
+30
+0:01:36,150 --> 0:01:38,850
+persentase mari kita gunakan seratus
+
+31
+0:01:38,850 --> 0:01:40,920
+gram dan buat matematikanya bagus dan mudah untuk
+
+32
+0:01:40,920 --> 0:01:43,740
+diri kita sendiri jadi jika kita memiliki seratus
+
+33
+0:01:43,740 --> 0:01:45,960
+gram nikotin itu berarti kita harus  memiliki
+
+34
+0:01:45,960 --> 0:01:48,450
+tujuh puluh empat koma nol dua gram
+
+35
+0:01:48,450 --> 0:01:51,329
+karbon delapan koma tujuh satu nol
+
+36
+0:01:51,329 --> 0:01:54,720
+gram hidrogen dan 17 koma dua tujuh
+
+37
+0:01:54,720 --> 0:01:55,619
+gram nitrogen
+
+38
+0:01:55,619 --> 0:01
+kita hanya mengambil
+
+39
+0:01 --> 0:01:59,310
+persentase dari seratus dan
+
+40
+0:01:59,310 --> 0:02:04,380
+mengubahnya menjadi gram sekarang kita perlu
+
+41
+0:02:04,380 --> 0:02:06,420
+mengubahnya menjadi  mol karena massa tidak
+
+42
+0:02:06,420 --> 0:02:07,950
+memberi tahu kita apa pun setiap kali kita melakukan
+
+43
+0:02:07,950 --> 0:02:09,780
+perhitungan seperti ini, kita selalu
+
+44
+0:02:09,780 --> 0:02:11,780
+menginginkan mol jadi mari kita ambil massa
+
+45
+0:02:11,780 --> 0:02:14,380
+karbon dan kalikan dengan satu mol lebih dari
+
+46
+0:02:14,380 --> 0:02:17,270
+12,01 gram yang merupakan massa atom
+
+47
+0:02:17,270 --> 0:02:21,050
+karbon gram akan dibatalkan dan kita memiliki 6
+
+48
+0:02:21,050 --> 0:02:23,690
+titik  1 6 3 mol karbon dalam
+
+49
+0:02:23,690 --> 0:02:26,780
+sampel hipotetis nikotin kami sekarang untuk
+
+50
+0:02:26,780 --> 0:02:29,410
+hidrogen mari kita kalikan dengan 1 mol lebih dari
+
+51
+0:02:29,410 --> 0:02:32,480
+1,008 gram yang merupakan massa atom
+
+52
+0:02:32,480 --> 0:02:35,810
+hidrogen gram akan membatalkan dan kami memiliki
+
+53
+0:02:35,810 --> 0:02:38,090
+delapan koma enam dua empat mol
+
+54
+0:02:38,090 --> 0:02:41,450
+hidrogen terakhir untuk nitrogen kita kalikan
+
+55
+0:02:41,450 --> 0:02:43,850
+dengan satu mol lebih dari empat belas koma nol satu
+
+56
+0:02:43,850 --> 0:02:46,120
+gram itulah massa atom nitrogen
+
+57
+0:02:46,120 --> 0:02:49,040
+gram akan membatalkan dan kami memiliki satu koma
+
+58
+0:02:49,040 --> 0:02:54,230
+dua tiga tiga mol nitrogen jadi dalam
+
+59
+0:02:54,230 --> 0:02:56,810
+sampel ini kami memiliki banyak  mol
+
+60
+0:02:56,810 --> 0:02:59,390
+masing-masing unsur jadi ini memberitahu kita
+
+61
+0:02:59,390 --> 0:03:01,250
+sesuatu tentang rasio unsur-
+
+62
+0:03:01,250 --> 0:03:03,769
+unsur ini dalam senyawa jadi bagaimana kita bisa
+
+63
+0:03:03,769 --> 0:03:05,690
+mendapatkan ini dengan cara yang sedikit lebih
+
+64
+0:03:05,690 --> 0:03:10,370
+berguna yang bisa kita lakukan adalah membagi masing-masing
+
+65
+0:03:10,370 --> 0:03:13,459
+nilai ini dengan yang terkecil sehingga kita
+
+66
+0:03:13,459 --> 0:03:16,340
+dapatkan satu untuk yang terkecil dan kemudian
+
+67
+0:03:16,340 --> 0:03:19,190
+beberapa rasio untuk yang lain dan mudah
+
+68
+0:03:19,190 --> 0:03:21,170
+-mudahan mereka akan menjadi bilangan bulat dan itu
+
+69
+0:03:21,170 --> 0:03:23,450
+akan memberi kita rumus empiris jadi jika
+
+70
+0:03:23,450 --> 0:03:25,370
+kita membagi masing-masing dengan yang terkecil
+
+71
+0:03:25,370 --> 0:03:27,290
+yaitu satu koma dua tiga
+
+72
+0:03:27,290 --> 0:03:30,829
+tiga kita berakhir dengan satu mol
+
+73
+0:03:30,829 --> 0:03:33,829
+nitrogen dan kita juga berakhir dengan nilai bilangan bulat
+
+74
+0:03:33,829 --> 0:03:35,870
+untuk karbon dan hidrogen kita memiliki
+
+75
+0:03:35,870 --> 0:03:40,299
+lima dan tujuh sehingga berarti untuk setiap
+
+76
+0:03:40,299 --> 0:03:43,640
+atom nitrogen dalam sampel kita memiliki lima
+
+77
+0:03:43,640 --> 0:03:46,310
+atom karbon dan kita memiliki tujuh h
+
+78
+0:03:46,310 --> 0:03:48,680
+atom hidrogen jadi itu berarti rumus empiris
+
+79
+0:03:48,680 --> 0:03:53,720
+nikotin harus c5 h7n
+
+80
+0:03:53,720 --> 0:03:55,700
+itulah satu-satunya cara agar persentase massa ini
+
+81
+0:03:55,700 --> 0:03:57,680
+bekerja sebagaimana
+
+82
+0:03:57,680 --> 0:04:01,549
+adanya tetapi sekali lagi kita memerlukan
+
+83
+0:04:01,549 --> 0:04:04,220
+rumus molekul untuk mendapatkan bahwa
+
+84
+0:04:04,220 --> 0:04:07,130
+kita memerlukan massa molekul atau  massa molar
+
+85
+0:04:07,130 --> 0:04:10,040
+dan mari kita ambil sedikit
+
+86
+0:04:10,040 --> 0:04:12,140
+informasi lain yang kita miliki jika kita ingin mengetahui
+
+87
+0:04:12,140 --> 0:04:14,660
+massa molar nikotin dalam gram per
+
+88
+0:04:14,660 --> 0:04:17,120
+mol baik kita memiliki empat puluh koma lima tujuh
+
+89
+0:04:17,120 --> 0:04:19,160
+gram dan kita dapat membaginya dengan
+
+90
+0:04:19,160 --> 0:04:21,320
+nol koma dua lima nol nol mol  itu
+
+91
+0:04:21,320 --> 0:04:23,960
+akan memberi kita nilai dalam gram per mol
+
+92
+0:04:23,960 --> 0:04:28,460
+dan jadi kita mendapatkan 160 2,3 gram per mol jadi
+
+93
+0:04:28,460 --> 0:04:32,630
+bagaimana itu berguna juga kita tahu bahwa jika
+
+94
+0:04:32,630 --> 0:04:34,819
+kita menjumlahkan massa dari 5
+
+95
+0:04:34,819 --> 0:04:37,250
+atom karbon dan 7 atom hidrogen dan 1
+
+96
+0:04:37,250 --> 0:04:40,340
+atom nitrogen itu  menambahkan hingga 81 koma 1
+
+97
+0:04:40,340 --> 0:04:43,400
+3 gram per mol sehingga
+
+98
+0:04:43,400 --> 0:04:47,389
+massa molar satu unit rumus empiris sekarang
+
+99
+0:04:47,389 --> 0:04:50,780
+massa molar kami dua kali lebih banyak kami memiliki
+
+100
+0:04:50,780 --> 0:04:53,030
+rasio dua banding satu sehingga berarti
+
+101
+0:04:53,030 --> 0:04:55,340
+untuk mendapatkan rumus molekul yang
+
+102
+0:04:55,340 --> 0:04:57,770
+mewakili sebenarnya  jumlah atom  f
+
+103
+0:04:57,770 --> 0:05:00,289
+setiap elemen dalam molekul yang perlu
+
+104
+0:05:00,289 --> 0:05:03,979
+kita lakukan adalah menggandakan semuanya jadi mari kita ambil
+
+105
+0:05:03,979 --> 0:05:05,720
+rumus empiris kita dan memasukkannya ke dalam
+
+106
+0:05:05,720 --> 0:05:08,900
+tanda kurung dan mengalikannya dengan dua jika kita
+
+107
+0:05:08,900 --> 0:05:10,699
+menggandakan semuanya, kita akan mendapatkan dua kali
+
+108
+0:05:10,699 --> 0:05:13,310
+massa itu dan kita akan mendapatkan massa molar kita dan
+
+109
+0:05:13,310 --> 0:05:15,620
+itu  berarti rumus molekulnya
+
+110
+0:05:15,620 --> 0:05:23,270
+harus C 10 H 14 dan 2 terima kasih sudah
+
+111
+0:05:23,270 --> 0:05:24,979
+menonton guys subscribe channel saya
+
+112
+0:05:24,979 --> 0:05:27,020
+untuk tutorial lainnya dukung saya di patreon
+
+113
+0:05:27,020 --> 0:05:28,820
+agar saya bisa terus membuat konten dan seperti
+
+114
+0:05:28,820 --> 0:05:30,830
+biasa jangan ragu untuk email saya profesor
+
+115
+0:05:30,830 --> 0:05:33,270
+Dave menjelaskan di gmail.com
+
+116
+0:05:33,270 --> 0:05:53,999
+[  Musik]
+

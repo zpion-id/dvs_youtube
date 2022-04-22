@@ -1,0 +1,460 @@
+1
+0:00:01,410 --> 0:00:08,240
+[Musik]
+
+2
+0:00:08,240 --> 0:00:10,800
+Saya Rita Hana dan saya bagian dari
+
+3
+0:00:10,800 --> 0:00:13,259
+tim pipa DNA jeruk di sini di
+
+4
+0:00:13,259 --> 0:00:16,830
+Sanger Institute tugas saya adalah menguji dan
+
+5
+0:00:16,830 --> 0:00:20,210
+mengembangkan metode baru untuk mengurutkan
+
+6
+0:00:20,210 --> 0:00:24,210
+DNA pipa DNA adalah proses pengambilan
+
+7
+0:00:24,210 --> 0:00:26,670
+sampel DNA mempersiapkan mereka untuk
+
+8
+0:00:26,670 --> 0:00:29,130
+pengurutan  dan mengurutkannya sebelum
+
+9
+0:00:29,130 --> 0:00:31,279
+merilis data ke peneliti
+
+10
+0:00:31,279 --> 0:00:33,960
+karena kami bekerja dengan sampel DNA dan
+
+11
+0:00:33,960 --> 0:00:35,700
+terkadang sampel tersebut memiliki
+
+12
+0:00:35,700 --> 0:00:37,800
+jumlah DNA yang sangat sedikit. Kami perlu memastikan bahwa
+
+13
+0:00:37,800 --> 0:00:39,840
+kami tidak akan pernah mencemari mereka dengan
+
+14
+0:00:39,840 --> 0:00:41,969
+DNA kami sendiri dan itulah sebabnya kami memakai jas lab
+
+15
+0:00:41,969 --> 0:00:44,760
+dan sarung tangan.  setiap saat kami menerima
+
+16
+0:00:44,760 --> 0:00:47,760
+sampel di pelat 96-sumur dan saya
+
+17
+0:00:47,760 --> 0:00:50,039
+sudah diekstraksi dan dimurnikan dari
+
+18
+0:00:50,039 --> 0:00:53,370
+jaringan sel atau darah ketika kami
+
+19
+0:00:53,370 --> 0:00:54,780
+menerima sampel itu, kami perlu memeriksa
+
+20
+0:00:54,780 --> 0:00:56,579
+kualitas DNA untuk memeriksa apakah itu
+
+21
+0:00:56,579 --> 0:00:59,309
+masih memiliki kekuatan genom yang sangat panjang.  DNA
+
+22
+0:00:59,309 --> 0:01:01,680
+itulah yang kami sebut dengan quality control
+
+23
+0:01:01,680 --> 0:01:04,530
+atau langkah QC kami sangat tidak ingin
+
+24
+0:01:04,530 --> 0:01:06,930
+membuang banyak sample untuk quality
+
+25
+0:01:06,930 --> 0:01:09,330
+control makanya kami menggunakan robot nyamuk
+
+26
+0:01:09,330 --> 0:01:11,700
+untuk langkah tersebut karena hanya
+
+27
+0:01:11,700 --> 0:01:15,960
+bisa di hewan peliharaan  nanoliter DNA ini
+
+28
+0:01:15,960 --> 0:01:18,600
+nano liter DNA yang diadu oleh
+
+29
+0:01:18,600 --> 0:01:20,790
+robot kemudian dicampur dengan larutan yang
+
+30
+0:01:20,790 --> 0:01:23,369
+mengandung pewarna fluoresen,
+
+31
+0:01:23,369 --> 0:01:25,799
+molekul pewarna ini tumbuh sangat sangat terang
+
+32
+0:01:25,799 --> 0:01:28,470
+hanya ketika mereka menyentuh DNA sehingga kita dapat
+
+33
+0:01:28,470 --> 0:01:31,200
+menghubungkan tingkat fluoresensi dengan
+
+34
+0:01:31,200 --> 0:01:33,329
+konsentrasi sebenarnya dari DNA di
+
+35
+0:01:33,329 --> 0:01:35,729
+sampel kemudian ketika kami yakin bahwa bagaimana
+
+36
+0:01:35,729 --> 0:01:38,250
+DNA berkualitas baik dan dalam
+
+37
+0:01:38,250 --> 0:01:40,020
+jumlah yang baik kami memulai pembangunan perpustakaan
+
+38
+0:01:40,020 --> 0:01:42,630
+itu sendiri ini berlangsung
+
+39
+0:01:42,630 --> 0:01:46,020
+di lab pra PCL kami pada robot Bravo
+
+40
+0:01:46,020 --> 0:01:49,290
+robot Bravo akan dapat mengintip beberapa
+
+41
+0:01:49,290 --> 0:01:51,509
+solusi yang mengandung apa yang kami  panggil
+
+42
+0:01:51,509 --> 0:01:54,390
+adaptor adaptor tersebut adalah
+
+43
+0:01:54,390 --> 0:01:56,729
+fragmen DNA yang sangat pendek yang dilampirkan atau
+
+44
+0:01:56,729 --> 0:02:00,090
+diikat ke ujung sampel audio
+
+45
+0:02:00,090 --> 0:02:02,250
+adaptor memiliki dua tujuan mereka akan
+
+46
+0:02:02,250 --> 0:02:04,320
+memuat sampel untuk dilampirkan di permukaan
+
+47
+0:02:04,320 --> 0:02:06,960
+sel aliran dan mereka juga berisi
+
+48
+0:02:06,960 --> 0:02:09,750
+tag yang akan menjadi bagian  data pengurutan kami
+
+49
+0:02:09,750 --> 0:02:11,980
+dan dengan kami semua untuk
+
+50
+0:02:11,980 --> 0:02:14,890
+mengetahui fragmen DNA mana yang berasal dari
+
+51
+0:02:14,890 --> 0:02:17,800
+sampel mana karena kami memproses
+
+52
+0:02:17,800 --> 0:02:20,290
+sampel dalam jumlah besar, kami perlu
+
+53
+0:02:20,290 --> 0:02:22,660
+memastikan bahwa kami tidak pernah melakukan pertukaran  pasang atau
+
+54
+0:02:22,660 --> 0:02:24,760
+hilangkan dan itulah sebabnya kami menggunakan kode batang di
+
+55
+0:02:24,760 --> 0:02:28,060
+setiap piring kami, kami memiliki proses yang
+
+56
+0:02:28,060 --> 0:02:30,550
+disebut anggota badan untuk
+
+57
+0:02:30,550 --> 0:02:33,880
+sistem manajemen informasi laboratorium yang memungkinkan kami memindai
+
+58
+0:02:33,880 --> 0:02:36,220
+semua kode batang itu dan melacak sampel
+
+59
+0:02:36,220 --> 0:02:38,200
+sepanjang proses persiapan perpustakaan
+
+60
+0:02:38,200 --> 0:02:41,560
+setelah memasang adaptor ke
+
+61
+0:02:41,560 --> 0:02:44,830
+sebuah fragmen DNA kami mengambil sampel dari
+
+62
+0:02:44,830 --> 0:02:48,610
+dek robot ke bangku karena
+
+63
+0:02:48,610 --> 0:02:50,709
+kami berbagi bangku itu dengan banyak
+
+64
+0:02:50,709 --> 0:02:52,510
+orang di lab yang mereka butuhkan untuk tetap
+
+65
+0:02:52,510 --> 0:02:55,599
+sangat rapi dan bersih sehingga kami telah
+
+66
+0:02:55,599 --> 0:02
+membagi ruang dengan selotip dan label sehingga
+
+67
+0:02 --> 0:03:00,579
+kami tahu  persis di mana hal-hal
+
+68
+0:03:00,579 --> 0:03:02,290
+sampel sekarang siap untuk
+
+69
+0:03:02,290 --> 0:03:05,380
+amplifikasi PCR dan selama proses ini kita
+
+70
+0:03:05,380 --> 0:03:07,450
+harus memanaskan sampel ke
+
+71
+0:03:07,450 --> 0:03:10,720
+suhu tinggi untuk menghindari penguapan kita
+
+72
+0:03:10,720 --> 0:03:14,110
+menutup pelat dengan segel yang sangat ketat
+
+73
+0:03:14,110 --> 0:03:16,060
+amplifikasi PCR harus dilakukan di
+
+74
+0:03:16,060 --> 0:03:17,500
+laboratorium yang berbeda untuk menghindari
+
+75
+0:03:17,500 --> 0:03:20,170
+silang  -kontaminasi dan sampel kami lewati
+
+76
+0:03:20,170 --> 0:03:22,480
+melalui lubang khusus di
+
+77
+0:03:22,480 --> 0:03:25,660
+antara kedua lab tersebut, masing-masing lab memiliki
+
+78
+0:03:25,660 --> 0:03:27,790
+warna jas lab yang berbeda untuk memastikan bahwa
+
+79
+0:03:27,790 --> 0:03:29,739
+kami tidak terkontaminasi  g sampel
+
+80
+0:03:29,739 --> 0:03:32,440
+antar lab kami kemudian mengambil sampel dan
+
+81
+0:03:32,440 --> 0:03:35,019
+memasukkannya ke dalam mesin PCR yang
+
+82
+0:03:35,019 --> 0:03:38,109
+mampu mengamplifikasi DNA sampel
+
+83
+0:03:38,109 --> 0:03:41,109
+DNA sekarang siap untuk diurutkan dan
+
+84
+0:03:41,109 --> 0:03:42,970
+untuk dimuat di sequencer kita perlu
+
+85
+0:03:42,970 --> 0:03:45,220
+melepas segel sekarang itu cukup
+
+86
+0:03:45,220 --> 0:03:47,079
+langkah yang rumit meskipun
+
+87
+0:03:47,079 --> 0:03:49,209
+terlihat sangat sederhana dan tidak ada robot yang dapat melakukannya
+
+88
+0:03:49,209 --> 0:03:51,660
+, itu harus dilakukan dengan tangan untuk menghindari
+
+89
+0:03:51,660 --> 0:03:54,340
+percikan di antara sampel yang akan
+
+90
+0:03:54,340 --> 0:03:57,670
+menyebabkan kontaminasi silang,
+
+91
+0:03:57,670 --> 0:03:59,859
+sampel kemudian diletakkan pada sel aliran yang dimuat
+
+92
+0:03:59,859 --> 0:04:02,170
+pada sequencer  dan proses pengurutan dapat
+
+93
+0:04:02,170 --> 0:04:03,299
+dimulai
+
+94
+0:04:03,299 --> 0:04:06,640
+selama proses, kami dapat memeriksa
+
+95
+0:04:06,640 --> 0:04:09,280
+monitor setiap pengurutan kualitas
+
+96
+0:04:09,280 --> 0:04:11,110
+data yang dibuat dan memeriksa apakah
+
+97
+0:04:11,110 --> 0:04:12,760
+semuanya berfungsi dengan baik pada
+
+98
+0:04:12,760 --> 0:04:14,920
+pengurutan saat rangkaian pengurutan
+
+99
+0:04:14,920 --> 0:04:16,870
+selesai, data ditransfer ke
+
+100
+0:04:16,870 --> 0:04:19,780
+pusat data yang  adalah sekelompok besar
+
+101
+0:04:19,780 --> 0:04:22,900
+komputer, tahap terakhir untuk tim saluran pipa
+
+102
+0:04:22,900 --> 0:04:24,820
+adalah memeriksa apakah kami telah menghasilkan
+
+103
+0:04:24,820 --> 0:04:27,970
+data yang cukup dan berkualitas baik dan ketika
+
+104
+0:04:27,970 --> 0:04:30,610
+pemeriksaan terakhir dilakukan, para peneliti
+
+105
+0:04:30,610 --> 0:04:32,199
+yang awalnya meminta
+
+106
+0:04:32,199 --> 0:04:34,240
+pengurutan dapat mengakses data
+
+107
+0:04:34,240 --> 0:04:37,720
+dalam cluster Saya sangat suka bekerja di
+
+108
+0:04:37,720 --> 0:04:40,630
+jalur pipa DNA karena menggunakan banyak
+
+109
+0:04:40,630 --> 0:04:43,630
+keterampilan yang berbeda Saya belajar kimia
+
+110
+0:04:43,630 --> 0:04:46,720
+dan kemudian saya bekerja di lab biofisika jadi
+
+111
+0:04:46,720 --> 0:04:48,940
+itu sebabnya saya sangat menyukainya
+
+112
+0:04:48,940 --> 0:04:52,030
+selalu menarik dan tidak pernah  membosankan
+
+113
+0:04:52,030 --> 0:04:52,360
+[Tepuk tangan]
+
+114
+0:04:52,360 --> 0:05:04,050
+[Musik]
+
+115
+0:05:04,050 --> 0:05:06,110
+kamu
+

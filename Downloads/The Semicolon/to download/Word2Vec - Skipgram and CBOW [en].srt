@@ -1,0 +1,660 @@
+1
+0:00:00,240 --> 0:00:04,400
+[Music]
+
+2
+0:00:04,400 --> 0:00:07,200
+hey everyone welcome to the semicolon in
+
+3
+0:00:07,200 --> 0:00:08,700
+this video we'll be learning about a
+
+4
+0:00:08,700 --> 0:00:10,559
+very popular method for representing
+
+5
+0:00:10,559 --> 0:00:13,799
+text called word Tuvok so machine
+
+6
+0:00:13,799 --> 0:00:15,480
+learning and deep learning algorithms
+
+7
+0:00:15,480 --> 0:00:18,750
+cannot accept text directly we need some
+
+8
+0:00:18,750 --> 0:00:21,270
+sort of numerical representation so that
+
+9
+0:00:21,270 --> 0:00:24,619
+the algorithms can process the data and
+
+10
+0:00:24,619 --> 0:00:27,390
+in simple machine learning applications
+
+11
+0:00:27,390 --> 0:00:30,750
+we use contract riser or tf-idf both of
+
+12
+0:00:30,750 --> 0:00:32,759
+which do not preserve any relationship
+
+13
+0:00:32,759 --> 0:00:34,800
+between the words this is where word
+
+14
+0:00:34,800 --> 0:00:37,140
+embeddings come in they map all the
+
+15
+0:00:37,140 --> 0:00:39,329
+words in a language into a vector space
+
+16
+0:00:39,329 --> 0:00:42,840
+of a given dimension so word to Veck is
+
+17
+0:00:42,840 --> 0:00:44,579
+a popular method to generate word
+
+18
+0:00:44,579 --> 0:00:47,700
+embeddings this converts words into
+
+19
+0:00:47,700 --> 0:00:49,590
+vectors and with vectors we have
+
+20
+0:00:49,590 --> 0:00:52,500
+multiple operations like add subtract
+
+21
+0:00:52,500 --> 0:00:55,890
+calculate distance and that is how the
+
+22
+0:00:55,890 --> 0:00:57,360
+relationship among the words are
+
+23
+0:00:57,360 --> 0:01:00,030
+preserved so one example of this
+
+24
+0:01:00,030 --> 0:01:02,340
+relationship is a very famous result of
+
+25
+0:01:02,340 --> 0:01:05,309
+word Tuvok which says the vector of the
+
+26
+0:01:05,309 --> 0:01:10,200
+word kill - word man + the word woman
+
+27
+0:01:10,200 --> 0:01:13,080
+gives you the word vector of the word
+
+28
+0:01:13,080 --> 0:01:16,200
+Queen and this relationship is preserved
+
+29
+0:01:16,200 --> 0:01:18,750
+by word to work just by iterating
+
+30
+0:01:18,750 --> 0:01:21,330
+through a large corpus of text like a
+
+31
+0:01:21,330 --> 0:01:26,040
+Wikipedia or newspaper corpus so word
+
+32
+0:01:26,040 --> 0:01:28,229
+tuvok is generally included in a lot of
+
+33
+0:01:28,229 --> 0:01:30,420
+deep learning courses but there's no
+
+34
+0:01:30,420 --> 0:01:31,920
+deep learning involved in generating
+
+35
+0:01:31,920 --> 0:01:34,650
+word embeddings using word - ik it is
+
+36
+0:01:34,650 --> 0:01:36,720
+just a simple two layered neural network
+
+37
+0:01:36,720 --> 0:01:39,450
+now that being said a lot of deep
+
+38
+0:01:39,450 --> 0:01:41,640
+learning applications involving text
+
+39
+0:01:41,640 --> 0:01:43,770
+have shown improvement after using word
+
+40
+0:01:43,770 --> 0:01:47,790
+- ik embeddings as features training the
+
+41
+0:01:47,790 --> 0:01:49,439
+word - ik model is also very
+
+42
+0:01:49,439 --> 0:01:51,600
+resource-intensive as it requires large
+
+43
+0:01:51,600 --> 0:01:53,640
+amount of RAM to store the vocabulary of
+
+44
+0:01:53,640 --> 0:01:57,750
+the corpus so now the question is how
+
+45
+0:01:57,750 --> 0:02:01,530
+are these relationships formed in simple
+
+46
+0:02:01,530 --> 0:02:04,140
+terms word - a tries to make the words
+
+47
+0:02:04,140 --> 0:02:06,840
+with similar contexts have similar
+
+48
+0:02:06,840 --> 0:02:09,950
+embeddings so let's consider an example
+
+49
+0:02:09,950 --> 0:02:13,080
+to understand it better so we have to
+
+50
+0:02:13,080 --> 0:02:13,990
+send
+
+51
+0:02:13,990 --> 0:02:15,850
+the kid said he would grow up to be
+
+52
+0:02:15,850 --> 0:02:18,370
+Superman and the child said he would
+
+53
+0:02:18,370 --> 0:02:21,070
+grow up to be Superman if you observe
+
+54
+0:02:21,070 --> 0:02:23,800
+the words kid and child there are two
+
+55
+0:02:23,800 --> 0:02:26,080
+different words with same context and
+
+56
+0:02:26,080 --> 0:02:28,630
+since word two it tries to make words
+
+57
+0:02:28,630 --> 0:02:31,330
+with similar context have similar
+
+58
+0:02:31,330 --> 0:02:33,430
+embeddings kid and child will have
+
+59
+0:02:33,430 --> 0:02:36,160
+similar vectors when you iterate through
+
+60
+0:02:36,160 --> 0:02:38,500
+a large corpus you would get a lot of
+
+61
+0:02:38,500 --> 0:02:41,920
+sentences where kid is replaceable by
+
+62
+0:02:41,920 --> 0:02:43,810
+child and hence these vectors will have
+
+63
+0:02:43,810 --> 0:02:47,560
+similar embeddings and how does word to
+
+64
+0:02:47,560 --> 0:02:50,230
+work do the task of generating vectors
+
+65
+0:02:50,230 --> 0:02:52,870
+from the words so there are two
+
+66
+0:02:52,870 --> 0:02:55,450
+algorithms for it continuous bag of
+
+67
+0:02:55,450 --> 0:02:56,160
+words
+
+68
+0:02:56,160 --> 0:03:00,100
+sibo and skip gram in continuous bag of
+
+69
+0:03:00,100 --> 0:03:02,950
+words or Seba we predict the target word
+
+70
+0:03:02,950 --> 0:03:05,800
+from the context something like this and
+
+71
+0:03:05,800 --> 0:03:08,080
+in skip gram we try to predict the
+
+72
+0:03:08,080 --> 0:03:12,220
+context words from the target word you
+
+73
+0:03:12,220 --> 0:03:13,990
+may ask why are we trying to predict
+
+74
+0:03:13,990 --> 0:03:17,080
+words when we need vectors for each word
+
+75
+0:03:17,080 --> 0:03:19,540
+I'll answer the question later on in the
+
+76
+0:03:19,540 --> 0:03:22,270
+video for now let's look at the detailed
+
+77
+0:03:22,270 --> 0:03:25,540
+working of each of this method so for
+
+78
+0:03:25,540 --> 0:03:27,790
+that we'll need a smaller example
+
+79
+0:03:27,790 --> 0:03:30,580
+because English language has around 13
+
+80
+0:03:30,580 --> 0:03:32,620
+million words in the dictionary which is
+
+81
+0:03:32,620 --> 0:03:34,930
+quite huge for an example so let's
+
+82
+0:03:34,930 --> 0:03:37,390
+consider a language which has just five
+
+83
+0:03:37,390 --> 0:03:40,840
+words so those words are can free hope
+
+84
+0:03:40,840 --> 0:03:43,600
+set and you and nothing else so we
+
+85
+0:03:43,600 --> 0:03:46,210
+initially encode each word as one hot
+
+86
+0:03:46,210 --> 0:03:49,270
+vector and to generate word vectors from
+
+87
+0:03:49,270 --> 0:03:52,030
+this vocabulary we trade through a
+
+88
+0:03:52,030 --> 0:03:54,700
+corpus and for simplicity let's assume
+
+89
+0:03:54,700 --> 0:03:58,210
+our corpus has just one sentence that is
+
+90
+0:03:58,210 --> 0:04:01,420
+hope can set you free so now we need to
+
+91
+0:04:01,420 --> 0:04:03,640
+select a window size for iterating over
+
+92
+0:04:03,640 --> 0:04:06,670
+the sentences so let's consider it to be
+
+93
+0:04:06,670 --> 0:04:09,370
+three in this case and as discussed
+
+94
+0:04:09,370 --> 0:04:12,340
+earlier in continuous bag of words we
+
+95
+0:04:12,340 --> 0:04:14,200
+try to predict this Center word from the
+
+96
+0:04:14,200 --> 0:04:17,230
+context words so our window size is 3
+
+97
+0:04:17,230 --> 0:04:19,480
+the Center word is the word we need to
+
+98
+0:04:19,480 --> 0:04:21,130
+predict using the two words surrounding
+
+99
+0:04:21,130 --> 0:04:24,220
+it so we use a simple neural network for
+
+100
+0:04:24,220 --> 0:04:26,440
+this and when the neural network
+
+101
+0:04:26,440 --> 0:04:29,230
+has the context words hope and said as
+
+102
+0:04:29,230 --> 0:04:32,350
+input we need we need a neural network
+
+103
+0:04:32,350 --> 0:04:35,920
+to predict can there is one more thing
+
+104
+0:04:35,920 --> 0:04:37,690
+which we need to choose that is the size
+
+105
+0:04:37,690 --> 0:04:40,390
+of each vector let's say the size of
+
+106
+0:04:40,390 --> 0:04:43,480
+each vector is three then we'll choose
+
+107
+0:04:43,480 --> 0:04:46,540
+the hidden layer to be of size three so
+
+108
+0:04:46,540 --> 0:04:48,370
+on your network now looks something like
+
+109
+0:04:48,370 --> 0:04:48,940
+this
+
+110
+0:04:48,940 --> 0:04:51,730
+one important thing to note here is the
+
+111
+0:04:51,730 --> 0:04:54,490
+fire of three input matrix is shared by
+
+112
+0:04:54,490 --> 0:04:58,420
+the context words and we pass the one
+
+113
+0:04:58,420 --> 0:05:02,110
+hot vector of hope and set and a neural
+
+114
+0:05:02,110 --> 0:05:04,020
+network tries to predict this enter word
+
+115
+0:05:04,020 --> 0:05:06,370
+we pass it through the softmax function
+
+116
+0:05:06,370 --> 0:05:08,650
+get the probabilities and compare it
+
+117
+0:05:08,650 --> 0:05:11,140
+with the actual word and then the error
+
+118
+0:05:11,140 --> 0:05:13,390
+is used to update the weights then we
+
+119
+0:05:13,390 --> 0:05:15,190
+slide the window and continue the same
+
+120
+0:05:15,190 --> 0:05:17,110
+process this way the weights are updated
+
+121
+0:05:17,110 --> 0:05:20,410
+and once done we take the weight matrix
+
+122
+0:05:20,410 --> 0:05:24,400
+of these weights and these are these set
+
+123
+0:05:24,400 --> 0:05:27,550
+of our vectors and this is how
+
+124
+0:05:27,550 --> 0:05:30,730
+continuous bag-of-words work the case of
+
+125
+0:05:30,730 --> 0:05:33,580
+skip gram is very similar in skip gram
+
+126
+0:05:33,580 --> 0:05:35,680
+we choose the window size and give the
+
+127
+0:05:35,680 --> 0:05:38,470
+Center word as input trying to predict
+
+128
+0:05:38,470 --> 0:05:40,390
+the context words the weights are
+
+129
+0:05:40,390 --> 0:05:42,700
+updated in a similar way and here again
+
+130
+0:05:42,700 --> 0:05:46,680
+the output matrix of size Phi cos 3 is
+
+131
+0:05:46,680 --> 0:05:51,310
+shared by the context words this way
+
+132
+0:05:51,310 --> 0:05:54,100
+both the algorithm help updating the
+
+133
+0:05:54,100 --> 0:05:56,230
+weight matrix based on the words and
+
+134
+0:05:56,230 --> 0:05:59,080
+context then we generally take the input
+
+135
+0:05:59,080 --> 0:06:01,090
+weight matrix and multiply it with the
+
+136
+0:06:01,090 --> 0:06
+one-hot vector of a particular world to
+
+137
+0:06 --> 0:06:06,430
+obtain its word vector now this word
+
+138
+0:06:06,430 --> 0:06:08,770
+vector is what we call word embeddings
+
+139
+0:06:08,770 --> 0:06:13,210
+in real applications we generally train
+
+140
+0:06:13,210 --> 0:06:15,700
+it over Wikipedia text choosing window
+
+141
+0:06:15,700 --> 0:06:20,050
+size around 5 to 10 and vector size is
+
+142
+0:06:20,050 --> 0:06:23,140
+generally around 300 the number of words
+
+143
+0:06:23,140 --> 0:06:26,230
+in the corpus is around 13 million and
+
+144
+0:06:26,230 --> 0:06:28,840
+hence it takes huge amount of resource
+
+145
+0:06:28,840 --> 0:06:32,080
+to train and generate word embeddings if
+
+146
+0:06:32,080 --> 0:06:33,669
+you want to skip this process you may
+
+147
+0:06:33,669 --> 0:06:35,260
+very well go ahead and download the
+
+148
+0:06:35,260 --> 0:06:38,169
+Praetorian word vectors you can choose
+
+149
+0:06:38,169 --> 0:06:39,999
+any one of the two algorithms
+
+150
+0:06:39,999 --> 0:06:42,309
+Kip gram or continious bag of words in
+
+151
+0:06:42,309 --> 0:06:44,229
+general continuous bag of words is
+
+152
+0:06:44,229 --> 0:06:46,779
+preferred for smaller corpus and is
+
+153
+0:06:46,779 --> 0:06:49,869
+faster to Train skip gram is slower but
+
+154
+0:06:49,869 --> 0:06:52,269
+works well on large corpus and large
+
+155
+0:06:52,269 --> 0:06:55,419
+dimensions there are few other things to
+
+156
+0:06:55,419 --> 0:06:57,999
+tweak to improve accuracy like adding
+
+157
+0:06:57,999 --> 0:07:00,399
+more data and this kind of obvious we
+
+158
+0:07:00,399 --> 0:07:02,259
+can also increase the dimensions of word
+
+159
+0:07:02,259 --> 0:07:04,809
+vector and in this way more information
+
+160
+0:07:04,809 --> 0:07:07,269
+will be preserved increasing the window
+
+161
+0:07:07,269 --> 0:07:09,639
+size also helps but it makes training
+
+162
+0:07:09,639 --> 0:07:12,009
+little difficult so this is all about
+
+163
+0:07:12,009 --> 0:07:14,289
+word to ik and word embeddings in the
+
+164
+0:07:14,289 --> 0:07:16,479
+next video we'll look at how we can
+
+165
+0:07:16,479 --> 0:07:21,059
+implement this and bite them thank you
+

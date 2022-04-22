@@ -1,0 +1,404 @@
+1
+0:00:02,550 --> 0:00:14,920
+[Musik]
+
+2
+0:00:14,920 --> 0:00:17,150
+oke
+
+3
+0:00:17,150 --> 0:00:51,680
+[Musik]
+
+4
+0:00:51,680 --> 0:00:56,399
+yesus tidak bukan yesus itu hanya saya
+
+5
+0:00:56,399 --> 0:00:59,840
+apa yang terjadi oh yeah um
+
+6
+0:00:59,840 --> 0:01
+yeah saya sedang mengerjakan program ini dan
+
+7
+0:01 --> 0:01:02,879
+um yeah
+
+8
+0:01:02,879 --> 0:01:04,799
+saya pikir saya menemukan jawabannya saya pikir saya
+
+9
+0:01:04,799 --> 0:01:06,560
+mendapatkan formula jadi pada dasarnya jika
+
+10
+0:01:06,560 --> 0:01:09,040
+Anda menggabungkan  persamaan proyeksi tunggu
+
+11
+0:01:09,040 --> 0:01:10,640
+tunggu tunggu
+
+12
+0:01:10,640 --> 0:01:13,920
+apa yang kamu lakukan oh benar
+
+13
+0:01:13,920 --> 0:01:17,280
+um oke biarkan saya tunjukkan saja
+
+14
+0:01:17,280 --> 0:01:26,990
+biarkan saya menyelesaikannya dengan sangat cepat
+
+15
+0:01:26,990 --> 0:01:38,840
+[Musik]
+
+16
+0:01:38,840 --> 0:01:40,370
+siap
+
+17
+0:01:40,370 --> 0:01:47,280
+[Musik]
+
+18
+0:01:47,280 --> 0:01:50,159
+tunggu saya saya saya tidak mengikuti ini adalah
+
+19
+0:01:50,159 --> 0:01:51,600
+donat
+
+20
+0:01:51,600 --> 0:01:54,799
+itu luar biasa bukan'  t
+
+21
+0:01:54,799 --> 0:01:58,159
+jadi jadi semua ini hanya
+
+22
+0:01:58,159 --> 0:02
+untuk membuat donat di terminal Anda
+
+23
+0:02 --> 0:02:07,680
+terima kasih telah
+
+24
+0:02:07,680 --> 0:02:10,319
+menonton ide dan kodenya berasal
+
+25
+0:02:10,319 --> 0:02:12,480
+dari andy sloan yang luar biasa di
+
+26
+0:02:12,480 --> 0:02:14,640
+mana dia dapat mengkodekan seluruh
+
+27
+0:02:14,640 --> 0:02:16,400
+program ini dan melihat
+
+28
+0:02:16,400 --> 0:02:19,280
+dan membuat kode itu sendiri terlihat seperti
+
+29
+0:02:19,280 --> 0:02:20,400
+donat
+
+30
+0:02:20,400 --> 0:02:22,160
+dia memiliki artikel yang menjelaskan cara
+
+31
+0:02:22,160 --> 0:02:23,840
+kerja kode yang akan saya tautkan
+
+32
+0:02:23,840 --> 0:02:26,959
+dalam deskripsi jadi mengapa matematika
+
+33
+0:02:26,959 --> 0:02:28,480
+penting untuk pemrograman dengan
+
+34
+0:02:28,480 --> 0:02:31,920
+baik karena meskipun 99
+
+35
+0:02:31,920 --> 0:02:34,160
+dari waktu Anda tidak membutuhkannya, ada
+
+36
+0:02:34,160 --> 0:02:36,319
+satu persen kemungkinan Anda mungkin
+
+37
+0:02:36,319 --> 0:02:38,640
+dan itu  di saat-saat yang memisahkan
+
+38
+0:02:38,640 --> 0:02:40,319
+o  ut seorang programmer hebat
+
+39
+0:02:40,319 --> 0:02:42,720
+dari yang rata-rata dan jika Anda tahu
+
+40
+0:02:42,720 --> 0:02:43,519
+matematika
+
+41
+0:02:43,519 --> 0:02:45,840
+Anda, Anda akan tahu cara memodifikasi donat ini untuk
+
+42
+0:02:45,840 --> 0:02:47,200
+menambah ukuran
+
+43
+0:02:47,200 --> 0:02
+mengubah rotasi atau bahkan membuat kubus
+
+44
+0:02 --> 0:02
+sebagai gantinya
+
+45
+0:02 --> 0:02:54,480
+juga jika Anda ingin melakukan
+
+46
+0:02:54,480 --> 0:02:56,800
+pembelajaran mesin grafis komputer atau kriptografi
+
+47
+0:02:56,800 --> 0:02:59,360
+Anda'  Anda akan membutuhkan matematika jadi
+
+48
+0:02:59,360 --> 0:03:00,319
+sebaiknya Anda menguasainya
+
+49
+0:03:00,319 --> 0:03:03,519
+seperti yang Anda lakukan untuk pemrograman kembali
+
+50
+0:03:03,519 --> 0:03:04,640
+ke donat
+
+51
+0:03:04,640 --> 0:03:07,920
+bagaimana kita menulis program ini dengan baik pertama
+
+52
+0:03:07,920 --> 0:03:08,959
+Anda harus
+
+53
+0:03:08,959 --> 0:03:12,560
+membuat donat yang pada dasarnya adalah sebuah revolusi padat di
+
+54
+0:03:12,560 --> 0:03:14,879
+mana kita memiliki lingkaran yang berputar
+
+55
+0:03:14,879 --> 0:03:16,400
+di sekitar sumbu y
+
+56
+0:03:16,400 --> 0:03:20,400
+yang akan membuat donat alias turis
+
+57
+0:03:20,400 --> 0:03:22,879
+ini adalah rumus untuk membuat lingkaran
+
+58
+0:03:22,879 --> 0:03:24,640
+berpusat di r2
+
+59
+0:03:24,640 --> 0:03:27,680
+dengan jari-jari r1 dan ini
+
+60
+0:03:27,680 --> 0:03:30,879
+adalah matriks rotasi untuk memutar lingkaran ini di
+
+61
+0:03:30,879 --> 0:03:34,080
+sekitar sumbu y sehingga ketika kita menggabungkannya
+
+62
+0:03:34,080 --> 0:03:36,480
+kita mendapatkan koordinat  dari setiap titik pada
+
+63
+0:03:36,480 --> 0:03:38,080
+donat Anda
+
+64
+0:03:38,080 --> 0:03:40,959
+sekarang kami memiliki donat tutup mulut saya tahu
+
+65
+0:03:40,959 --> 0:03:42,319
+ini adalah bagel
+
+66
+0:03:42,319 --> 0:03:44,560
+sekarang kami memiliki donat kami ingin
+
+67
+0:03:44,560 --> 0:03:46,400
+memutarnya di sekitar sumbu x
+
+68
+0:03:46,400 --> 0:03:49,680
+dan z sehingga terlihat keren semua terbang
+
+69
+0:03:49,680 --> 0:03:50,959
+dan hal-hal yang
+
+70
+0:03:50,959 --> 0:03:54,319
+dapat kami lakukan dengan  kelipatan  meletakkan koordinat donat kami
+
+71
+0:03:54,319 --> 0:03:57,360
+dengan dua matriks rotasi ini
+
+72
+0:03:57,360 --> 0:04:00,720
+sekarang kami harus memetakan donat terbang 3d ini
+
+73
+0:04:00,720 --> 0:04:04,720
+ke layar 2d yang akan menjadi terminal kami
+
+74
+0:04:04,720 --> 0:04:07,360
+sehingga setiap karakter di terminal akan
+
+75
+0:04:07,360 --> 0:04:08,319
+menjadi piksel
+
+76
+0:04:08,319 --> 0:04:11,519
+di layar untuk mengetahui cara menaungi
+
+77
+0:04:11,519 --> 0:04:12,400
+donat
+
+78
+0:04:12,400 --> 0:04:14,560
+kami, kami menghitung  produk titik dari
+
+79
+0:04:14,560 --> 0:04:15,840
+permukaan normal
+
+80
+0:04:15,840 --> 0:04:18,320
+dan arah cahaya sehingga Anda
+
+81
+0:04:18,320 --> 0:04:19,280
+dapat melihat
+
+82
+0:04:19,280 --> 0:04
+ketika titik normal mengarah ke sini jauh
+
+83
+0:04 --> 0:04:22,800
+lebih terang
+
+84
+0:04:22,800 --> 0:04:24,880
+dan ketika mengarah ke sana itu jauh
+
+85
+0:04:24,880 --> 0:04:25,840
+lebih gelap
+
+86
+0:04:25,840 --> 0:04:27,680
+sehingga produk titik akan memberi tahu kita seberapa
+
+87
+0:04:27,680 --> 0:04:29,680
+terang atau gelapnya
+
+88
+0:04:29,680 --> 0:04:32,320
+kita  ambil hasil dari produk titik
+
+89
+0:04:32,320 --> 0:04:33,120
+dan petakan
+
+90
+0:04:33,120 --> 0:04
+ke dalam karakter-karakter ini dari yang paling gelap ke yang
+
+91
+0:04 --> 0:04:37,120
+paling terang
+
+92
+0:04:37,120 --> 0:04:39,600
+dan terakhir kami menggambarnya di terminal kami
+
+93
+0:04:39,600 --> 0:04:41,360
+dan voila
+
+94
+0:04:41,360 --> 0:04:43,680
+jika Anda menyukai cara saya mengajar, Anda dapat
+
+95
+0:04:43,680 --> 0:04:45,520
+melihat kursus baru saya tentang
+
+96
+0:04:45,520 --> 0:04:47,199
+struktur data dan algoritme
+
+97
+0:04:47,199 --> 0:04:49,120
+yang saya gunakan dengan mudah  untuk memahami
+
+98
+0:04:49,120 --> 0:04:52,560
+animasi untuk menjelaskan konsep-konsep ini
+
+99
+0:04:52,560 --> 0:04:54,720
+, 100 orang pertama yang mendaftar ke
+
+100
+0:04:54,720 --> 0:04:55,680
+kelas joma akan mendapatkan
+
+101
+0:04:55,680 --> 0:05:04,160
+diskon 15 persen untuk kelas joma
+

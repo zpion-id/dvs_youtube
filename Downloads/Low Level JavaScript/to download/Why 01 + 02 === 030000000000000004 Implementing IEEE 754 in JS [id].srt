@@ -1,0 +1,1948 @@
+1
+00:00:00,000 --> 0:00:01,290
+halo dan selamat datang di JavaScript tingkat rendah
+
+2
+0:00:01,290 --> 0:00:02,730
+hari ini kita akan
+
+3
+0:00:02,730 --> 0:00:03,840
+berbicara tentang sesuatu yang sering
+
+4
+0:00:03,840 --> 0:00:05,730
+disalahartikan oleh pengembang sebagai kekurangan JavaScript
+
+5
+0:00:05,730 --> 0:00:08,460
+yaitu apa sebenarnya yang Anda
+
+6
+0:00:08,460 --> 0:00:09,960
+harapkan dari jawaban tambahan sederhana ini
+
+7
+0:00:09,960 --> 0:00:13,290
+jika Anda mengatakan atau titik
+
+8
+0:00:13,290 --> 0:00:15,719
+tiga nol nol  nol nol nol nol
+
+9
+0:00:15,719 --> 0:00:18,359
+nol nol nol nol nol nol nol empat
+
+10
+0:00:18,359 --> 0:00:20,279
+maka Anda benar meskipun itu berarti
+
+11
+0:00:20,279 --> 0:00:21,359
+Anda mungkin telah terkena
+
+12
+0:00:21,359 --> 0:00:23,670
+keanehan numerik ini lakukan sekarang ini
+
+13
+0:00:23,670 --> 0:00:25,560
+tentu saja aneh kan dan pada komputer
+
+14
+0:00:25,560 --> 0:00:27,599
+dimaksudkan untuk menjadi pandai dalam perhitungan bagaimana melakukannya
+
+15
+0:00:27,599 --> 0:00:29,369
+JavaScript berhasil mengacaukan ini dengan
+
+16
+0:00:29,369 --> 0:00:31,710
+sangat buruk dan tentu saja ini sebenarnya bukan
+
+17
+0:00:31,710 --> 0:00:33,899
+kesalahan JavaScript ada banyak
+
+18
+0:00:33,899 --> 0:00:35,309
+bahasa di mana ini akan terjadi Anda
+
+19
+0:00:35,309 --> 0:00:36,899
+mungkin menemukan ini terjadi di Python atau
+
+20
+0:00:36,899 --> 0:00:41,219
+di Haskell atau di C atau C++ L go Java rust
+
+21
+0:00:41,219 --> 0:00:43,170
+dan banyak lagi lainnya dan
+
+22
+0:00:43,170 --> 0:00:45,390
+masalahnya bukan benar-benar kesalahan itu hanya
+
+23
+0:00:45,390 --> 0:00:47,219
+konsekuensi dari sistem yang telah
+
+24
+0:00:47,219 --> 0:00:48,420
+dirancang dengan beberapa jenis
+
+25
+0:00:48,420 --> 0:00:50,700
+trade-off dalam pikiran bahwa sistem adalah I
+
+26
+0:00:50,700 --> 0:00:53,489
+Triple E 754 floating point nu  mber
+
+27
+0:00:53,489 --> 0:00:55,350
+spesifikasi yang menyediakan metode untuk
+
+28
+0:00:55,350 --> 0:00:57,539
+menstandardisasi pengkodean biner dari
+
+29
+0:00:57,539 --> 0:00:59,460
+angka yang dapat memiliki ekspansi desimal
+
+30
+0:00:59,460 --> 0:01:01,050
+Maksud saya, pikirkan saja sebentar
+
+31
+0:01:01,050 --> 0:01:02,640
+komputer beroperasi di sirkuit yang
+
+32
+0:01:02,640 --> 0:01:04,589
+berhubungan dengan satu dan nol dan mereka
+
+33
+0:01:04,589 --> 0:01:06,420
+cukup banyak hanya dapat melakukan
+
+34
+0:01:06,420 --> 0:01:08,310
+operasi yang sangat sederhana seperti  tambahan dan tanpa
+
+35
+0:01:08,310 --> 0:01:10,290
+semacam sistem di atas sistem
+
+36
+0:01:10,290 --> 0:01:12,090
+lama dan nol biasa, bagaimana Anda bisa
+
+37
+0:01:12,090 --> 0:01:14,220
+berharap untuk mengekspresikan konsep seperti pi,
+
+38
+0:01:14,220 --> 0:01:16,650
+itulah sebenarnya spesifikasi I Triple E 754
+
+39
+0:01:16,650 --> 0:01:19,140
+dan dalam video ini tidak
+
+40
+0:01:19,140 --> 0:01:20,009
+hanya kita akan belajar  bagaimana
+
+41
+0:01:20,009 --> 0:01:21,750
+sistem itu bekerja tetapi kami juga akan
+
+42
+0:01:21,750 --> 0:01:23,670
+membuatnya dari awal dalam perangkat lunak sekarang
+
+43
+0:01:23,670 --> 0:01:24,900
+jika Anda mencarinya, Anda akan menemukan
+
+44
+0:01:24,900 --> 0:01:26,520
+banyak sumber daya yang menyelami
+
+45
+0:01:26,520 --> 0:01:28,680
+spesifikasi dan menggunakan bahasa akademis yang mendalam untuk
+
+46
+0:01:28,680 --> 0:01:30,329
+menggambarkan konsep dan Anda mungkin baik-
+
+47
+0:01:30,329 --> 0:01:30,960
+baik saja  dengan itu
+
+48
+0:01:30,960 --> 0:01:33,150
+atau Anda mungkin merasa sangat kewalahan
+
+49
+0:01:33,150 --> 0:01:34,619
+dalam video ini, kami sebenarnya akan
+
+50
+0:01:34,619 --> 0:01:36,840
+melewatkan pendekatan akademis dan alih-alih
+
+51
+0:01:36,840 --> 0:01:38,430
+melompatinya dengan pendekatan berbasis intuisi
+
+52
+0:01:38,430 --> 0:01:40,290
+yang memungkinkan Anda melihat sy ini  batang
+
+53
+0:01:40,290 --> 0:01:42,270
+sebagai eksekusi dari jenis
+
+54
+0:01:42,270 --> 0:01:44,610
+ide tertentu yang pada intinya benar-benar semacam
+
+55
+0:01:44,610 --> 0:01:47,189
+angka titik-mengambang sederhana yang disandikan
+
+56
+0:01:47,189 --> 0:01:48,780
+sebenarnya adalah semacam
+
+57
+0:01:48,780 --> 0:01:50,759
+algoritma kompresi yang saya maksud adalah kita
+
+58
+0:01:50,759 --> 0:01:53,130
+mengompresi rangkaian angka tak terbatas
+
+59
+0:01:53,130 --> 0:01:55,439
+dari 0 hingga tak terhingga dan dari  0 hingga minus
+
+60
+0:01:55,439 --> 0:01:57,630
+tak terhingga dan semua angka yang muncul di
+
+61
+0:01:57,630 --> 0:01:59,820
+antara setiap bilangan bulat. Kami
+
+62
+0:01:59,820 --> 0:02:01,649
+memampatkan semua angka tersebut ke
+
+63
+0:02:01,649 --> 0:02:03,960
+dalam ruang yang sangat terbatas dari
+
+64
+0:02:03,960 --> 0:02:06,119
+sejumlah bit biner tertentu jika kita memiliki
+
+65
+0:02:06,119 --> 0:02:08,700
+katakanlah 16 bit tersedia untuk menyimpan angka
+
+66
+0:02:08,700 --> 0:02:10,950
+, artinya kita dapat  nyatakan pada enam
+
+67
+0:02:10,950 --> 0:02:13,440
+angka terbaik yang
+
+68
+0:02:13,440 --> 0:02:15,810
+berbeda dan pada kenyataannya kami
+
+69
+0:02:15,810 --> 0:02:17,430
+bahkan tidak dapat mengelola semua angka tersebut
+
+70
+0:02:17,430 --> 0:02:20,460
+. I Triple E 75 untuk spek mencoba
+
+71
+0:02:20,460 --> 0:02:22,500
+menangkap sebanyak mungkin angka tersebut
+
+72
+0:02:22,500 --> 0:02:24,360
+dalam sistem ini sambil menjaga
+
+73
+0:02:24,360 --> 0:02:26,520
+hal-hal tetap masuk akal tetapi tidak peduli berapa banyak
+
+74
+0:02:26,520 --> 0:02:28,500
+bit yang Anda miliki akan selalu
+
+75
+0:02:28,500 --> 0:02:30,510
+ada celah karena kami tidak memiliki
+
+76
+0:02:30,510 --> 0:02:32,580
+jumlah ruang yang tak terbatas apa yang Anda
+
+77
+0:02:32,580 --> 0:02:34,890
+miliki pada akhirnya dengan sistem ini adalah
+
+78
+0:02:34,890 --> 0:02:36,840
+format angka tunggal yang memungkinkan Anda untuk
+
+79
+0:02:36,840 --> 0:02:39,360
+mengekspresikan  s hal-hal yang sangat besar dan hal-hal yang sangat
+
+80
+0:02:39,360 --> 0:02:41,370
+kecil dalam presisi sub integer dan
+
+81
+0:02:41,370 --> 0:02:42,810
+itu adalah sesuatu yang kita anggap
+
+82
+0:02:42,810 --> 0:02:44,520
+remeh sekarang tapi ini sebenarnya bukan
+
+83
+0:02:44,520 --> 0:02:46,230
+pencapaian kecil dan mudah-mudahan dengan
+
+84
+0:02:46,230 --> 0:02:47,790
+itu dalam pikiran yang seharusnya sudah menjawab
+
+85
+0:02:47,790 --> 0:02:49,650
+teka-teki Y sia-sia titik satu ledakan
+
+86
+0:02:49,650 --> 0:02:51,480
+titik nol  dua sama dengan
+
+87
+0:02:51,480 --> 0:02:53,340
+variasi titik tiga yang aneh
+
+88
+0:02:53,340 --> 0:02:54,720
+ini tidak ada cara untuk menyatakan bahwa
+
+89
+0:02:54,720 --> 0:02:56,790
+nomor satu kita memiliki jumlah bit ini
+
+90
+0:02:56,790 --> 0:02:59,310
+yang sebenarnya bagi kita cukup dekat dalam
+
+91
+0:02:59,310 --> 0:03:00,840
+kebanyakan keadaan sehingga tidak menjadi
+
+92
+0:03:00,840 --> 0:03:02,370
+masalah kecuali jika Anda
+
+93
+0:03:02,370 --> 0:03:03,600
+menghitung uang atau  Anda sedang membangun
+
+94
+0:03:03,600 --> 0:03:05,790
+Rockets maka hal-hal itu benar-benar penting
+
+95
+0:03:05,790 --> 0:03:07,620
+bagi orang-orang, tetapi untuk sebagian besar hal itu baik-baik saja,
+
+96
+0:03:07,620 --> 0:03:09,120
+mari kita menjadi nyata sekarang dan berbicara tentang
+
+97
+0:03:09,120 --> 0:03:10,710
+mekanisme permainan yang sebenarnya, kita akan
+
+98
+0:03:10,710 --> 0:03:13,260
+membangun sistem angka floating-point 16-bit,
+
+99
+0:03:13,260 --> 0:03:16,170
+ini jauh lebih sedikit  daripada 64
+
+100
+0:03:16,170 --> 0:03:17,670
+bit yang digunakan JavaScript dan sebagian besar
+
+101
+0:03:17,670 --> 0:03:19,320
+bahasa lain sebagai
+
+102
+0:03:19,320 --> 0:03:21,239
+angka floating-point standar mereka tetapi
+
+103
+0:03:21,239 --> 0:03:23,190
+prinsipnya akan sama persis tidak
+
+104
+0:03:23,190 --> 0:03:24,270
+peduli berapa banyak bit yang Anda gunakan
+
+105
+0:03:24,270 --> 0:03:26,370
+floating-point  angka selalu
+
+106
+0:03:26,370 --> 0:03:29,190
+dibagi menjadi tiga bagian tanda
+
+107
+0:03:29,190 --> 0:03:32,160
+eksponen dan mantissa sekarang Anda
+
+108
+0:03:32,160 --> 0:03:33,420
+mungkin memiliki beberapa gagasan tentang apa itu
+
+109
+0:03:33,420 --> 0:03:35,790
+tanda dan apa itu eksponen tetapi
+
+110
+0:03:35,790 --> 0:03:37,110
+kecuali Anda seorang ahli matematika atau Anda telah
+
+111
+0:03:37,110 --> 0:03:38,820
+banyak bekerja dengan tabel logaritma Anda
+
+112
+0:03:38,820 --> 0:03:40,020
+mungkin  bahkan belum pernah melihat kata
+
+113
+0:03:40,020 --> 0:03:42,420
+Gunung Isa sebelum tanda itu berbicara semua
+
+114
+0:03:42,420 --> 0:03:43,530
+tentang apakah angka itu akan
+
+115
+0:03:43,530 --> 0:03:45,120
+positif atau negatif dan itu hanya
+
+116
+0:03:45,120 --> 0:03:47,340
+memakan satu bit eksponen adalah angka
+
+117
+0:03:47,340 --> 0:03:49,560
+yang digunakan dalam ekspresi seperti
+
+118
+0:03:49,560 --> 0:03:51,150
+dua pangkat sesuatu  dan itu
+
+119
+0:03:51,150 --> 0:03:52,769
+akan digunakan untuk menunjukkan wilayah umum
+
+120
+0:03:52,769 --> 0:03:54,360
+dari garis bilangan yang kita
+
+121
+0:03:54,360 --> 0:03:56,370
+fokuskan yang membutuhkan lima bit
+
+122
+0:03:56,370 --> 0:03:58,110
+dan akhirnya mantissa seperti
+
+123
+0:03:58,110 --> 0:04:00,030
+kaca pembesar dan itu akan membiarkan
+
+124
+0:04:00,030 --> 0:04:02,070
+kita memperbesar kurang lebih tepat
+
+125
+0:04:02,070 --> 0:04:03,989
+lokasi nomor dan yang
+
+126
+0:04:03,989 --> 0:04:06,360
+mengambil sisa sepuluh bit dari total 16 kami
+
+127
+0:04:06,360 --> 0:04
+ketiga komponen ini bersama-sama masuk ke
+
+128
+0:04 --> 0:04:11,220
+dalam semacam formula di mana di sini adalah
+
+129
+0:04:11,220 --> 0:04:12,120
+angka floating point yang
+
+130
+0:04:12,120 --> 0:04:14,280
+sebenarnya kita hadapi sekarang ini mungkin
+
+131
+0:04:14,280 --> 0:04:16,049
+tidak membuat apa pun lebih
+
+132
+0:04:16,049 --> 0:04:18,090
+jelas sekarang, tetapi yang saya ingin Anda ketahui adalah
+
+133
+0:04:18,090 --> 0:04:19,590
+bahwa jika Anda menyipitkan mata, Anda masih
+
+134
+0:04:19,590 --> 0:04:20,970
+dapat melihat tiga bagian berbeda
+
+135
+0:04:20,970 --> 0:04:23,310
+yang telah kita lihat pada
+
+136
+0:04:23,310 --> 0:04:26,160
+tanda eksponen dan mantissa tetapi saya
+
+137
+0:04:26,160 --> 0:04:27,290
+benar-benar berjanji  beberapa
+
+138
+0:04:27,290 --> 0:04:29,360
+pelajaran dan tidak semua formula
+
+139
+0:04:29,360 --> 0:04:30,710
+dan nama mewah seperti yang saya katakan sebelumnya
+
+140
+0:04:30,710 --> 0:04:32,630
+angka floating-point adalah
+
+141
+0:04:32,630 --> 0:04:34,520
+algoritma kompresi dan itu juga
+
+142
+0:04:34,520 --> 0:04:36,590
+trade-off mereka mereka menukar betapa mudahnya Anda
+
+143
+0:04:36,590 --> 0:04:38,450
+dapat mewakili sejumlah besar angka
+
+144
+0:04:38,450 --> 0:04:40,430
+dengan seberapa tepat angka-angka itu dapat
+
+145
+0:04:40,430 --> 0:04:42,140
+mewakili kunci sebenarnya untuk
+
+146
+0:04:42,140 --> 0:04:43,430
+memahami angka-angka ini adalah
+
+147
+0:04:43,430 --> 0:04:44,570
+menyadari bahwa akan ada
+
+148
+0:04:44,570 --> 0:04:46,850
+proses bermain di sini dan itulah
+
+149
+0:04:46,850 --> 0:04:48,560
+ide untuk mengambil gambaran kasar tentang di mana
+
+150
+0:04:48,560 --> 0:04:50,570
+angka yang kita inginkan dan kemudian memperbesar
+
+151
+0:04:50,570 --> 0:04
+lokasi yang bagus itu mari kita lihat
+
+152
+0:04 --> 0:04:55,190
+di area kasar pertama ini adalah di
+
+153
+0:04:55,190 --> 0:04:57,140
+mana eksponen masuk Anda seharusnya sudah
+
+154
+0:04:57,140 --> 0:04:58,610
+tahu bahwa komputer bekerja dengan kekuatan
+
+155
+0:04:58,610 --> 0:05:00,260
+dua di sini di bagan ini kita dapat melihat bahwa
+
+156
+0:05:00,260 --> 0:05:02,390
+dua pangkat 0 adalah 1 ke 1 itu 2
+
+157
+0:05:02,390 --> 0:05:04,790
+2 t  o 2 adalah 4 mereka berlipat ganda setiap kali
+
+158
+0:05:04,790 --> 0:05:06,770
+kita juga dapat menggunakan kekuatan negatif dan
+
+159
+0:05:06,770 --> 0:05:08,600
+itu benar-benar memberi kita kebalikan dalam
+
+160
+0:05:08,600 --> 0:05:10,640
+implementasi kita, kita memiliki 5 bit yang
+
+161
+0:05:10,640 --> 0:05:12,740
+tersedia bagi kita untuk mengekspresikan eksponen
+
+162
+0:05:12,740 --> 0:05:14,180
+dan kita akan memperlakukannya sebagai
+
+163
+0:05:14,180 --> 0:05:16,310
+bilangan bulat bertanda yang berarti  kita
+
+164
+0:05:16,310 --> 0:05:18,680
+akan memiliki semua angka dari minus 16 hingga
+
+165
+0:05:18,680 --> 0:05:20,780
+15 dan saya ingin Anda memikirkan
+
+166
+0:05:20,780 --> 0:05:22,640
+eksponen ini dengan cara tertentu bukan sebagai
+
+167
+0:05:22,640 --> 0:05:25,220
+angka tunggal tetapi sebagai rentang sehingga kita dapat
+
+168
+0:05:25,220 --> 0:05:27,230
+membuat rentang dari pangkat dua
+
+169
+0:05:27,230 --> 0:05
+yang mengatakan bahwa  jika kita memiliki eksponen
+
+170
+0:05 --> 0:05:30,710
+seperti nol, kita akan memperlakukannya
+
+171
+0:05:30,710 --> 0:05:32,870
+sebagai rentang nol satu jika kita memiliki dua ke
+
+172
+0:05:32,870 --> 0:05:34,190
+nol itu akan memberi kita satu dan jika
+
+173
+0:05:34,190 --> 0:05:35,630
+kita memiliki dua ke satu itu akan
+
+174
+0:05:35,630 --> 0:05:37,100
+memberi kita dua jadi kita punya ini
+
+175
+0:05:37,100 --> 0:05:39,440
+rentang numerik satu dan dua juga jika kita akan
+
+176
+0:05:39,440 --> 0:05:41,540
+memiliki eksponen dua maka kita akan
+
+177
+0:05:41,540 --> 0:05:43,310
+menganggap rentang kita menjadi dua dan tiga
+
+178
+0:05:43,310 --> 0:05:45,170
+yang akan memberi kita rentang numerik
+
+179
+0:05:45,170 --> 0:05:46,880
+empat dan delapan ini akan menjadi
+
+180
+0:05:46,880 --> 0:05:48,980
+alat kita ketika kita berbicara tentang area kasar
+
+181
+0:05:48,980 --> 0:05:51,170
+dari jumlah kami mewakili area kasar
+
+182
+0:05:51,170 --> 0:05:53,270
+tha  t angka tersebut masuk sebagai salah satu
+
+183
+0:05:53,270 --> 0:05:55,580
+dari rentang ini mari kita ambil contoh nyata
+
+184
+0:05:55,580 --> 0:05:57,080
+sekarang mari kita lihat angka seperti
+
+185
+0:05:57,080 --> 0:05:59,570
+dua belas koma lima dua lima tujuh satu
+
+186
+0:05:59,570 --> 0:06
+angka itu termasuk dalam
+
+187
+0:06 --> 0:06:04,220
+rentang numerik delapan dan enam belas dan kita
+
+188
+0:06:04,220 --> 0:06:05,390
+sudah tahu bahwa itu akan
+
+189
+0:06:05,390 --> 0:06:07,490
+mewakili  rentang eksponen tiga dan
+
+190
+0:06:07,490 --> 0:06:09,350
+empat yang berarti eksponen kita
+
+191
+0:06:09,350 --> 0:06:12,290
+akan menjadi tiga sekarang yang perlu kita lakukan adalah
+
+192
+0:06:12,290 --> 0:06:13,910
+memperbesar dan saat itulah mantissa
+
+193
+0:06:13,910 --> 0:06:15,650
+akan masuk dan hal pertama yang
+
+194
+0:06:15,650 --> 0:06:17,330
+akan kita lakukan untuk melakukannya adalah
+
+195
+0:06:17,330 --> 0:06:19,070
+untuk mengetahui dengan tepat di mana sebagai
+
+196
+0:06:19,070 --> 0:06:21,470
+persentase dua belas koma lima dua lima
+
+197
+0:06:21,470 --> 0:06:24,380
+tujuh satu berada dalam kisaran delapan hingga
+
+198
+0:06:24,380 --> 0:06:26,570
+enam belas dan kita dapat melakukannya seperti ini,
+
+199
+0:06:26,570 --> 0:06:28,640
+kita memiliki batas bawah kisaran numerik
+
+200
+0:06:28,640 --> 0:06:30,080
+dan batas atas kita dan jika kita
+
+201
+0:06:30,080 --> 0:06:31,940
+menggantinya dengan itu  kita dapat menyelesaikan
+
+202
+0:06:31,940 --> 0:06:34,340
+ini sebagai semacam persentase yang
+
+203
+0:06:34,340 --> 0:06:36,169
+kita dapatkan dengan sembilan koma lima enam lima tujuh
+
+204
+0:06:36,169 --> 0:06:38,210
+satu tiga tujuh lima dan kita dapat meyakinkan
+
+205
+0:06:38,210 --> 0:06:39,860
+diri kita sendiri tentang itu dengan melihat ini pada
+
+206
+0:06:39,860 --> 0:06:40,940
+garis bilangan dan
+
+207
+0:06:40,940 --> 0:06:42,770
+melihat bahwa itu kira-kira lebih dari
+
+208
+0:06:42,770 --> 0:06:45,350
+setengah jalan ke t  jangkauannya dan jadi salah satu cara yang
+
+209
+0:06:45,350 --> 0:06:47,420
+mungkin kita pikirkan tentang ini adalah kita mengambil
+
+210
+0:06:47,420 --> 0:06:49,520
+ujung bawah kisaran yaitu 8 dan kita
+
+211
+0:06:49,520 --> 0:06:51,980
+mengalikannya dengan 1 plus dan kemudian
+
+212
+0:06:51,980 --> 0:06:53,450
+persentase yang kita miliki ini, kita benar-
+
+213
+0:06:53,450 --> 0:06:55,940
+benar kembali ke angka aslinya, jadi
+
+214
+0:06:55,940 --> 0:06:57,710
+kita baik-baik saja  menggunakan eksponen itu dan
+
+215
+0:06:57,710 --> 0:06:59,930
+bagian pecahan ini yang telah kita peroleh
+
+216
+0:06:59,930 --> 0:07:01,940
+sebagai persentase, kita dapat menyandikan
+
+217
+0:07:01,940 --> 0:07:04,520
+angka asli itu, tetapi bagaimana kita
+
+218
+0:07:04,520 --> 0:07:06,380
+benar-benar menyandikan persentase ini menjadi
+
+219
+0:07:06,380 --> 0:07:08,630
+angka biner karena sekarang kita masih memiliki
+
+220
+0:07:08,630 --> 0:07:10,130
+angka floating-point sepertinya
+
+221
+0:07:10,130 --> 0:07:12,410
+kita kembali ke titik awal mari kita pikirkan
+
+222
+0:07:12,410 --> 0:07:14,510
+tentang mantissa di mantissa kita, kita
+
+223
+0:07:14,510 --> 0:07:16,820
+memiliki 10 bit yang tersedia yang memberi kita
+
+224
+0:07:16,820 --> 0:07:20,960
+semua angka antara 0 dan 1024 kita
+
+225
+0:07:20,960 --> 0:07:22,700
+dapat mengkodekan persentase ini dengan
+
+226
+0:07:22,700 --> 0:07:27,350
+mencari tahu apa sebenarnya 56,57 1 3 7 5% dari 1024
+
+227
+0:07:27,350 --> 0:07:29,270
+adalah jika kita menghitungnya, kita mendapatkan
+
+228
+0:07:29,270 --> 0:07:32,270
+579 koma dua sembilan nol delapan delapan dan
+
+229
+0:07:32,270 --> 0:07:34,370
+jika kita membulatkannya ke
+
+230
+0:07:34,370 --> 0:07:37,100
+bilangan bulat terdekat kita mendapatkan 579 yang dalam
+
+231
+0:07:37,100 --> 0:07:39,890
+biner akan dengan senang hati muat dalam sepuluh bit jadi di
+
+232
+0:07:39,890 --> 0:07:41,570
+sini kita telah berhasil mengkodekannya kira-
+
+233
+0:07:41,570 --> 0:07:44,900
+kira 56  persen menjadi bilangan bulat w  yang
+
+234
+0:07:44,900 --> 0:07:46,460
+dapat kita miliki di dalam
+
+235
+0:07:46,460 --> 0:07:49,400
+representasi titik-mengambang 16-bit dan perhatikan
+
+236
+0:07:49,400 --> 0:07:50,630
+bahwa ini adalah langkah di mana kita benar-benar
+
+237
+0:07:50,630 --> 0:07:52,669
+melakukan kompresi karena
+
+238
+0:07:52,669 --> 0:07:54,410
+pembulatan yang kita lakukan berarti bahwa kita kehilangan
+
+239
+0:07:54,410 --> 0:07:55,490
+beberapa presisi yang akan memberi
+
+240
+0:07:55,490 --> 0:07:58,610
+kita tepat dua belas koma lima dua lima
+
+241
+0:07:58,610 --> 0:08:00,560
+tujuh satu jika kita mencoba melakukan ini secara
+
+242
+0:08:00,560 --> 0:08:03,440
+Terbalik sekarang dan kita mengubah 579 kembali
+
+243
+0:08:03,440 --> 0:08:05,840
+menjadi persentase yang benar-benar memberi kita atau
+
+244
+0:08:05,840 --> 0:08:08,960
+titik lima enam lima empat dua sembilan enam
+
+245
+0:08:08,960 --> 0:08:11,180
+delapan tujuh lima yang sangat dekat dengan
+
+246
+0:08:11,180 --> 0:08:14,480
+tetapi tidak persis seperti aslinya atau titik
+
+247
+0:08:14,480 --> 0:08:17,570
+lima enam tujuh  satu tiga tujuh lima ketika
+
+248
+0:08:17,570 --> 0:08:19,790
+kita melewati proses dan
+
+249
+0:08:19,790 --> 0:08:21,770
+kita mengambil eksponen kita dan kita mengalikannya dengan
+
+250
+0:08:21,770 --> 0:08:24,230
+satu ditambah angka itu kita berakhir dengan
+
+251
+0:08:24,230 --> 0:08:26,630
+dua belas koma lima dua tiga empat tiga
+
+252
+0:08:26,630 --> 0:08:29,780
+tujuh lima dan lagi itu cukup dekat
+
+253
+0:08:29,780 --> 0:08:31,880
+dengan apa yang menjadi bilangan asli kita  tapi itu
+
+254
+0:08:31,880 --> 0:08:33,860
+tidak cukup di sana kami memiliki kesalahan
+
+255
+0:08:33,860 --> 0:08:35,839
+kira-kira nol titik nol nol dua
+
+256
+0:08:35,839 --> 0:08:37,969
+sampai tujuh dan itu cukup bagus bahkan untuk
+
+257
+0:08:37,969 --> 0:08:40,610
+angka floating point 16-bit tapi sekali lagi
+
+258
+0:08:40,610 --> 0:08:42,080
+itu mungkin bukan jenis kesalahan  atau
+
+259
+0:08:42,080 --> 0:08:44,290
+Anda ingin dalam perhitungan perbankan Anda
+
+260
+0:08:44,290 --> 0:08:46,339
+dipersenjatai dengan semua pengetahuan ini, kita
+
+261
+0:08:46,339 --> 0:08:48,110
+mungkin punya cukup banyak untuk masuk dan menulis
+
+262
+0:08:48,110 --> 0:08:49,820
+implementasi perangkat lunak itu jadi mari kita
+
+263
+0:08:49,820 --> 0:08:51,560
+beralih ke editor dan mulai menulis
+
+264
+0:08:51,560 --> 0:08:54,200
+beberapa kode mari kita mulai di sini dengan
+
+265
+0:08:54,200 --> 0:08:54,710
+sedikit ekor di
+
+266
+0:08:54,710 --> 0:08:56,720
+sana  hanya mengingatkan kita tentang
+
+267
+0:08:56,720 --> 0:08:58,610
+posisi bit dan peran yang mereka mainkan
+
+268
+0:08:58,610 --> 0:09:00,290
+sehubungan dengan tanda eksponen
+
+269
+0:09:00,290 --> 0:09:02,990
+atau mantissa dan kemudian kita dapat menulis beberapa
+
+270
+0:09:02,990 --> 0:09:04,790
+konstanta yang diketahui terkait dengan
+
+271
+0:09:04,790 --> 0:09:06,980
+pengaturan bit ini misalnya
+
+272
+0:09:06,980 --> 0:09:08,540
+kita dapat mengatur bit eksponen menjadi lima karena
+
+273
+0:09:08,540 --> 0:09:09,830
+kita menggunakan lima bit untuk itu dan
+
+274
+0:09:09,830 --> 0:09:12,770
+bit mantissa ke sepuluh mari kita tulis fungsi yang
+
+275
+0:09:12,770 --> 0:09:14,779
+disebut encode terlebih dahulu fungsi ini
+
+276
+0:09:14,779 --> 0:09:16,130
+akan mengambil angka floating-point N
+
+277
+0:09:16,130 --> 0:09:20,120
+dan mengkodekannya ke dalam sistem biner kita jadi
+
+278
+0:09:20,120 --> 0:09:21,440
+kita perlu membuat ketiga
+
+279
+0:09:21,440 --> 0:09:22,970
+komponen tersebut sinus eksponen
+
+280
+0:09:22,970 --> 0:09:24,920
+mantissa sinus cukup mudah kita hanya
+
+281
+0:09:24,920 --> 0:09:26,450
+perlu mencari bilangan sinus yang mana
+
+282
+0:09:26,450 --> 0:09:27,830
+dan kita dapat menggunakan matematika atau sinus untuk itu
+
+283
+0:09:27,830 --> 0:09:29,750
+selanjutnya kita perlu mencari jangkauan
+
+284
+0:09:29,750 --> 0:09:31,670
+kita sekarang sebelum kita hanya mengurutkan  lihat
+
+285
+0:09:31,670 --> 0:09:33,230
+ini di tabel yang kami buat tetapi jika kami
+
+286
+0:09:33,230 --> 0:09:34,760
+ingin melakukan ini secara terprogram, kami
+
+287
+0:09:34,760 --> 0:09:37,279
+perlu mengajukan pertanyaan apa kekuatan terdekat
+
+288
+0:09:37,279 --> 0:09:39,050
+dari dua yang lebih kecil dari atau
+
+289
+0:09:39,050 --> 0:09
+tepatnya nomor kami dan kami dapat menjawab
+
+290
+0:09 --> 0:09:43,190
+pertanyaan itu menggunakan logaritma sekarang jika
+
+291
+0:09:43,190 --> 0:09:44,510
+Anda '  pernah berurusan dengan eksponen
+
+292
+0:09:44,510 --> 0:09:45,980
+logaritma selalu bersembunyi di
+
+293
+0:09:45,980 --> 0:09:47,180
+sudut dan itu karena ada
+
+294
+0:09:47,180 --> 0:09:49,160
+semacam dua sisi dari mata uang yang sama tiga biru
+
+295
+0:09:49,160 --> 0:09:50,839
+satu coklat melakukan video yang bagus tentang ini
+
+296
+0:09:50,839 --> 0:09:52,399
+Saya bahkan tidak akan mencoba menjelaskannya
+
+297
+0:09:52,399 --> 0:09:53,779
+seperti yang dia lakukan  jadi periksa bahwa jika Anda ingin
+
+298
+0:09:53,779 --> 0:09:55,940
+tahu lebih banyak tetapi kami dapat menemukan kekuatan
+
+299
+0:09:55,940 --> 0:09:57,980
+dua kami dengan mengambil logaritma dari
+
+300
+0:09:57,980 --> 0:09:59,810
+nomor kami dibagi dengan logaritma dua
+
+301
+0:09:59,810 --> 0:10:02,060
+yang akan memberi kami
+
+302
+0:10:02,060 --> 0:10:03,709
+kekuatan dua yang akan kami gunakan
+
+303
+0:10:03,709 --> 0:10:05,660
+untuk kembali ke kami  nomor tetapi kita perlu
+
+304
+0:10:05,660 --> 0:10:07,760
+mengambil dasar itu untuk
+
+305
+0:10:07,760 --> 0:10:09,230
+menabraknya ke bagian bawah kisaran
+
+306
+0:10:09,230 --> 0:10:11,990
+ini sekarang akan menjadi eksponen kita
+
+307
+0:10:11,990 --> 0:10:14,330
+hampir ingat formula seperti yang saya
+
+308
+0:10:14,330 --> 0:10:15,709
+tunjukkan sebelumnya yang memiliki
+
+309
+0:10:15,709 --> 0:10:17,420
+klausa kecil di dalamnya yang mengatakan eksponen  memiliki
+
+310
+0:10:17,420 --> 0:10:19,310
+untuk dikodekan ada alasan khusus
+
+311
+0:10:19,310 --> 0:10:20,570
+untuk itu tetapi saya tidak akan membahasnya
+
+312
+0:10:20,570 --> 0:10:22,550
+di sini yang perlu kita lakukan hanyalah menambahkan 15 ke
+
+313
+0:10:22,550 --> 0:10:24,080
+satu nomor dan kemudian memastikan bahwa kita
+
+314
+0:10:24,080 --> 0:10:25,610
+pasti mendapatkannya dalam lima bit sehingga
+
+315
+0:10:25,610 --> 0:10:27,070
+kita akan menggunakan  beberapa penyembunyian untuk melakukan itu
+
+316
+0:10:27,070 --> 0:10:29,270
+mendapatkan bagian atas rentang
+
+317
+0:10:29,270 --> 0:10:32,630
+lebih mudah seperti menambahkan satu sekarang kasus tepi di
+
+318
+0:10:32,630 --> 0:10:33,830
+sini adalah bahwa jika jumlahnya negatif
+
+319
+0:10:33,830 --> 0:10:35,390
+ini tidak akan bekerja tentu saja namun
+
+320
+0:10:35,390 --> 0:10:37,339
+jika kita hanya menggunakan nilai absolut dalam
+
+321
+0:10:37,339 --> 0:10:39,740
+perhitungan kita, kita bisa  encode apakah itu
+
+322
+0:10:39,740 --> 0:10:41,300
+positif atau negatif sedikit
+
+323
+0:10:41,300 --> 0:10:43,100
+kemudian menggunakan bit tanda dan itu akan
+
+324
+0:10:43,100 --> 0:10:44,720
+menjaga tidak harus berurusan dengan
+
+325
+0:10:44,720 --> 0:10:46,850
+eksponen negatif sekarang jadi kita punya
+
+326
+0:10:46,850 --> 0:10:48,440
+rentang kekuatan kita maka kita bisa menggunakan
+
+327
+0:10:48,440 --> 0:10:50,480
+jenis perhitungan yang sama seperti yang kita lakukan  sebelumnya untuk
+
+328
+0:10:50,480 --> 0:10:52,579
+mendapatkan persentase ini pastikan kita menggunakan
+
+329
+0:10:52,579 --> 0:10:54,709
+nilai absolut n lagi
+
+330
+0:10:54,709 --> 0:10:57,320
+mantissa yang sebenarnya dapat dengan mudah dihitung berdasarkan
+
+331
+0:10:57,320 --> 0:10:59,899
+persentase ini sekarang yang tersisa
+
+332
+0:10:59,899 --> 0:11:01,279
+untuk dilakukan adalah menyatukan ketiga bagian ini
+
+333
+0:11:01,279 --> 0:11:03,290
+menjadi satu angka tunggal dengan
+
+334
+0:11:03,290 --> 0:11:05,120
+menggeser dan selama bagian yang berbeda  s
+
+335
+0:11:05,120 --> 0:11:08,630
+ke tempatnya
+
+336
+0:11:08,630 --> 0:11:11,060
+sekarang mari kita coba
+
+337
+0:11:11,060 --> 0:11:15,590
+jika kita menyandikan 12 poin 5 2 5 7 1 kita
+
+338
+0:11:15,590 --> 0:11:20,900
+mendapatkan bilangan bulat 19,000 dan 11 dan kita dapat
+
+339
+0:11:20,900 --> 0:11:22,490
+melihat bit yang tepat dari itu dan yang
+
+340
+0:11:22,490 --> 0:11:25,970
+memberi kita ini ini memiliki 0
+
+341
+0:11:25,970 --> 0:11:28,130
+sedikit implisit untuk  tanda dan jika kita membagi ini
+
+342
+0:11:28,130 --> 0:11:30,050
+menjadi tiga bagian kita dapat melihat bahwa
+
+343
+0:11:30,050 --> 0:11:32,090
+eksponen yang akan keluar sebagai 18
+
+344
+0:11:32,090 --> 0:11:34,220
+tapi tentu saja kita perlu dikurangi 15 dari
+
+345
+0:11:34,220 --> 0:11:36,650
+yang memberi kita 3 dan akhirnya kita
+
+346
+0:11:36,650 --> 0:11:38,360
+memiliki mantissa yang jika kita melihatnya
+
+347
+0:11:38,360 --> 0:11:41,420
+adalah 579 persis apa yang kita keluarkan
+
+348
+0:11:41,420 --> 0:11:44,150
+sebelumnya sehingga semuanya tampak seperti
+
+349
+0:11:44,150 --> 0:11:45,920
+itu bekerja di tahap penyandian tapi
+
+350
+0:11:45,920 --> 0:11:47,150
+kita tidak akan tahu pasti sampai kita
+
+351
+0:11:47,150 --> 0:11:48,620
+mengimplementasikan fungsi decode jadi mari kita
+
+352
+0:11:48,620 --> 0:11:50,110
+lakukan
+
+353
+0:11:50,110 --> 0:11:52,400
+decode itu juga akan berakhir tetapi
+
+354
+0:11:52,400 --> 0:11:54,230
+dalam hal ini  jika n akan menjadi
+
+355
+0:11:54,230 --> 0:11:56,120
+nomor yang dikodekan, hal pertama yang perlu
+
+356
+0:11:56,120 --> 0:11:57,740
+kita lakukan adalah mengekstrak tanda
+
+357
+0:11:57,740 --> 0:11:59,600
+eksponen dan mantissa dan kita akan melakukan
+
+358
+0:11:59,600 --> 0:12:01,220
+sedikit lebih banyak menggeser sedikit
+
+359
+0:12:01,220 --> 0:12:09,590
+sihir untuk mewujudkannya
+
+360
+0:12:09,590 --> 0:12:11,910
+hal berikutnya yang kita butuhkan  yang harus dilakukan adalah mengubah
+
+361
+0:12:11,910 --> 0:12:13,740
+mantissa itu kembali menjadi persentase
+
+362
+0:12:13,740 --> 0:12:15,510
+yang mendasar  sekutu kebalikan dari apa yang
+
+363
+0:12:15,510 --> 0:12:17,160
+telah kita lakukan kita hanya perlu
+
+364
+0:12:17,160 --> 0:12:21,840
+membaginya dengan 1.024 sekarang kita memiliki semua
+
+365
+0:12:21,840 --> 0:12:23,460
+komponen untuk menerapkan rumus yang
+
+366
+0:12:23,460 --> 0:12:24,660
+sebenarnya kita lihat di awal
+
+367
+0:12:24,660 --> 0:12:27,210
+video pertama-tama kita mendapatkan sinus
+
+368
+0:12:27,210 --> 0:12:29,040
+yang hanya  negatif 1
+
+369
+0:12:29,040 --> 0:12:31,350
+pangkat tanda perhatikan bahwa ini karena
+
+370
+0:12:31,350 --> 0:12:33,150
+sinus selalu akan menjadi 0 atau
+
+371
+0:12:33,150 --> 0:12:35,100
+akan menjadi 1 dan hanya dua nilai yang dapat
+
+372
+0:12:35,100 --> 0:12:36,690
+keluar dari ekspresi ini atau satu dan
+
+373
+0:12:36,690 --> 0:12:38,190
+minus satu itu sebenarnya
+
+374
+0:12:38,190 --> 0:12:40,590
+trik kecil yang cukup bagus  selanjutnya kita perlu
+
+375
+0:12:40,590 --> 0:12:42,800
+mengalikannya dengan 1 ditambah mantissa dan
+
+376
+0:12:42,800 --> 0:12
+akhirnya semuanya dikalikan
+
+377
+0:12 --> 0:12:47,130
+dengan 2 pangkat eksponen dikurangi
+
+378
+0:12:47,130 --> 0:12:49,020
+15 dan hanya itu
+
+379
+0:12:49,020 --> 0:12:50,940
+mari kita lihat apakah fungsi decode kita dapat
+
+380
+0:12:50,940 --> 0:12:55,110
+memecahkan kode nomor kita dan kita lihat kita mendapatkan 12
+
+381
+0:12:55,110 --> 0:12:59,100
+poin 5  2 3 4 3 7 5 yang merupakan nilai
+
+382
+0:12:59,100 --> 0:13:01,170
+yang kami harapkan dari sebelumnya jadi kami
+
+383
+0:13:01,170 --> 0:13:03,810
+selesai di sini baik-baik saja dekat ada
+
+384
+0:13:03,810 --> 0:13:05,880
+beberapa hal yang hilang di sini sekarang pertama-
+
+385
+0:13:05,880 --> 0:13:08,490
+tama I Triple E 754 sebenarnya menentukan
+
+386
+0:13:08,490 --> 0:13:11,100
+beberapa nilai khusus misalnya bukan
+
+387
+0:13:11,100 --> 0:13:13,950
+angka  tak terhingga dikurangi tak terhingga dan  minus
+
+388
+0:13:13,950 --> 0:13:17,280
+0 angka-angka ini terjadi sebagai hasil dari
+
+389
+0:13:17,280 --> 0:13:19,140
+melakukan jenis operasi tertentu
+
+390
+0:13:19,140 --> 0:13
+pada angka floating-point seperti
+
+391
+0:13 --> 0:13:23,970
+pembagian mereka biasanya tidak terjadi dengan
+
+392
+0:13:23,970 --> 0:13:25,050
+membangunnya meskipun Anda pasti
+
+393
+0:13:25,050 --> 0:13:27,660
+bisa melakukan itu nol negatif adalah salah satu
+
+394
+0:13:27,660 --> 0:13:29,730
+yang masuk akal jika Anda  memiliki
+
+395
+0:13:29,730 --> 0:13:31,980
+sedikit tanda yang ditetapkan tetapi nilai sebenarnya
+
+396
+0:13:31,980 --> 0:13:33,870
+dari angka tersebut adalah nol maka Anda
+
+397
+0:13:33,870 --> 0:13:35,580
+masih memiliki nol tetapi sekarang negatif
+
+398
+0:13:35,580 --> 0:13:37,740
+tidak terlalu masuk akal dalam kenyataan tetapi
+
+399
+0:13:37,740 --> 0:13:39,990
+dalam sistem ini itu adalah persyaratan jika Anda
+
+400
+0:13:39,990 --> 0:13:41,940
+memiliki eksponen tertinggi dan
+
+401
+0:13:41,940 --> 0:13:44,460
+semua nol  untuk mantissa maka spesifikasi
+
+402
+0:13:44,460 --> 0:13:46,320
+menganggap angka ini sebagai nilai tak terbatas
+
+403
+0:13:46,320 --> 0:13:48,120
+dan bit tanda mengatakan apakah
+
+404
+0:13:48,120 --> 0:13:50,900
+itu positif atau negatif tak terhingga
+
+405
+0:13:50,900 --> 0:13:53,330
+jika Anda memiliki eksponen tertinggi
+
+406
+0:13:53,330 --> 0:13:55,880
+dan mantissa bukan nol maka spesifikasi
+
+407
+0:13:55,880 --> 0:13:58,279
+menganggap ini bukan angka sekarang di
+
+408
+0:13:58,279 --> 0:14:00,440
+JavaScript kami hanya  memiliki satu bukan nilai angka
+
+409
+0:14:00,440 --> 0:14:01,940
+dan dalam banyak bahasa lain juga
+
+410
+0:14:01,940 --> 0:14:04,190
+tetapi spesifikasi sebenarnya menentukan
+
+411
+0:14:04,190 --> 0:14:05,960
+jenis yang berbeda jika bukan angka yang
+
+412
+0:14:05,960 --> 0:14:08,180
+dapat menyandikan apa yang salah dalam
+
+413
+0:14:08,180 --> 0:14:10,040
+kalkula  tion sekarang kita akan melewatkan
+
+414
+0:14:10,040 --> 0:14:12,350
+itu untuk saat ini dan hanya menyandikan aturan dasar
+
+415
+0:14:12,350 --> 0:14:15,529
+bukan angka sekarang saya katakan
+
+416
+0:14:15,529 --> 0:14:17,060
+ada beberapa masalah di sini dan
+
+417
+0:14:17,060 --> 0:14:18,800
+masalah lain yang bisa muncul adalah jika ketika kita
+
+418
+0:14:18,800 --> 0:14:20,390
+menghitung eksponen untuk nomor kita itu
+
+419
+0:14:20,390 --> 0:14:22,220
+berakhir  menjadi nol ini dianggap
+
+420
+0:14:22,220 --> 0:14:23,600
+sebagai sesuatu yang disebut angka yang didenormalisasi
+
+421
+0:14:23,600 --> 0:14:26,210
+secara fungsional apa artinya
+
+422
+0:14:26,210 --> 0:14:28,910
+jangan alih-alih melakukan satu mantissa seperti yang
+
+423
+0:14:28,910 --> 0:14:31,100
+kita lakukan dalam rumus kita cukup menggunakan
+
+424
+0:14:31,100 --> 0:14:33,050
+mantissa sendiri Saya tidak ingin
+
+425
+0:14:33,050 --> 0:14:34,430
+terlalu terjebak dalam  detail matematisnya di
+
+426
+0:14:34,430 --> 0:14:36,050
+sini tetapi ini hanyalah cara
+
+427
+0:14:36,050 --> 0:14:37,700
+bagi kami untuk mewakili angka yang
+
+428
+0:14:37,700 --> 0:14:39,500
+tidak dapat kami wakili sebaliknya dan ini adalah tambahan yang
+
+429
+0:14:39,500 --> 0:14:41,089
+cukup cerdas untuk sistem Saya
+
+430
+0:14:41,089 --> 0:14:42,350
+akan meninggalkan banyak tautan
+
+431
+0:14:42,350 --> 0:14:43,880
+di deskripsi di mana Anda dapat membaca tentang
+
+432
+0:14:43,880 --> 0:14:45,380
+semua konsep yang berbeda ini secara
+
+433
+0:14:45,380 --> 0:14:48,800
+lebih rinci nol cukup
+
+434
+0:14:48,800 --> 0:14:49,790
+mudah karena mereka hanya
+
+435
+0:14:49,790 --> 0:14:51,650
+memerlukan segalanya tetapi mungkin
+
+436
+0:14:51,650 --> 0:14:55,040
+bit tanda adalah nol kita perlu menambahkan
+
+437
+0:14:55,040 --> 0:14:57,260
+kondisi ini atau mengkodekan juga untuk memastikan
+
+438
+0:14:57,260 --> 0:14:58,760
+bahwa kita benar-benar dapat p  menyandikan
+
+439
+0:14:58,760 --> 0:15:00,260
+nol atau nol negatif untuk
+
+440
+0:15:00,260 --> 0:15:02,150
+metode itu jadi jika n adalah nol maka kita perlu
+
+441
+0:15:02,150 --> 0:15:03,680
+mendapatkan tanda ini sebenarnya bisa sangat
+
+442
+0:15:03,680 --> 0:15:05,600
+rumit karena jika Anda mencoba mengambil
+
+443
+0:15:05,600 --> 0:15:08,209
+matematika titik sinus dari nol negatif itu hanya
+
+444
+0:15:08,209 --> 0:15:09,650
+memberi Anda nol negatif kembali lagi
+
+445
+0:15:09,650 --> 0:15:11,720
+alih-alih minus satu Anda bisa mendapatkan
+
+446
+0:15:11,720 --> 0:15:13,970
+tanda sebenarnya dengan membagi satu dengan nol mana pun yang
+
+447
+0:15:13,970 --> 0:15:15,980
+Anda miliki dan kemudian mengambil tanda
+
+448
+0:15:15,980 --> 0:15:17,660
+dari hasil itu karena itu akan menjadi
+
+449
+0:15:17,660 --> 0:15:19,160
+tak terhingga negatif atau
+
+450
+0:15:19,160 --> 0:15:21,770
+tak terhingga positif sekarang kita dapat mengubahnya
+
+451
+0:15:21,770 --> 0:15:24,050
+menjadi 1 atau 0  dan menggesernya ke
+
+452
+0:15:24,050 --> 0:15:25,850
+tempat bit tanda
+
+453
+0:15:25,850 --> 0:15:27,890
+Infinity dapat diperiksa dengan melihat
+
+454
+0:15:27,890 --> 0:15:29,510
+apakah eksponennya sama dengan
+
+455
+0:15:29,510 --> 0:15:31,550
+nilai 5 bit tertinggi yang mungkin maka kita perlu
+
+456
+0:15:31,550 --> 0:15:33,200
+memeriksa mantissa tidak sama dengan 0
+
+457
+0:15:33,200 --> 0:15:35,480
+yang tidak akan menjadi angka jika
+
+458
+0:15:35,480 --> 0:15:36,890
+bukan nol maka sisinya  bit akan
+
+459
+0:15:36,890 --> 0:15:38,090
+menentukan apakah itu tak terhingga negatif
+
+460
+0:15:38,090 --> 0:15:40,340
+atau tak terhingga positif dan kemudian kita hanya akan
+
+461
+0:15:40,340 --> 0:15:41,720
+menangani kasus lain di mana ini akan menjadi
+
+462
+0:15:41,720 --> 0:15:43,430
+kata benda dan akhirnya jika kita berhasil melewati
+
+463
+0:15:43,430 --> 0:15:44,840
+semua pemeriksaan itu kita perlu
+
+464
+0:15:44,840 --> 0:15:46,700
+menangani kemungkinan  angka yang didenormalisasi
+
+465
+0:15:46,700 --> 0:15:49,310
+jika eksponennya adalah nol yang berarti
+
+466
+0:15:49,310 --> 0:15:50,870
+seluruh bagian mantissa sebenarnya
+
+467
+0:15:50,870 --> 0:15:53,030
+juga akan menjadi nol jika tidak, itu akan menjadi 1
+
+468
+0:15:53,030 --> 0:15:55,280
+dan meskipun kita tidak bisa mendapatkan semua nilai ini
+
+469
+0:15:55,280 --> 0:15:56,990
+ke fungsi penyandian kita, kita dapat
+
+470
+0:15:56,990 --> 0:15:58,520
+membuat pasangan secara manual  diantaranya untuk
+
+471
+0:15:58,520 --> 0:16:09,760
+memeriksa kode terlebih dahulu infinity
+
+472
+0:16:09,760 --> 0:16:14,030
+bukan angka
+
+473
+0:16:14,030 --> 0:16:17,970
+anda
+
+474
+0:16:17,970 --> 0:16:20,339
+jadi ini sudah penjelasan tapi
+
+475
+0:16:20,339 --> 0:16:21,130
+juga ahli
+
+476
+0:16:21,130 --> 0:16:23,170
+dalam implementasi eye trip
+
+477
+0:16:23,170 --> 0:16:24,850
+ke e75 untuk sistem bilangan floating point
+
+478
+0:16:24,850 --> 0:16:26,590
+tapi tidak lengkap tanpa
+
+479
+0:16:26,590 --> 0:16:28,360
+operasi sebenarnya yang kami lakukan  pada
+
+480
+0:16:28,360 --> 0:16:30,070
+angka-angka ini di angsuran berikutnya
+
+481
+0:16:30,070 --> 0:16:31,840
+kami benar-benar akan menerapkan beberapa
+
+482
+0:16:31,840 --> 0:16:33,160
+operasi yang diperlukan seperti penjumlahan
+
+483
+0:16:33,160 --> 0:16:35,320
+pengurangan perkalian pembagian dan
+
+484
+0:16:35,320 --> 0:16:36,910
+akar kuadrat jadi pastikan Anda
+
+485
+0:16:36,910 --> 0:16:38,350
+berlangganan JavaScript tingkat rendah jika Anda
+
+486
+0:16:38,350 --> 0:16:40,210
+ingin menangkap terima kasih telah menonton
+
+487
+0:16:40,210 --> 0:16:43,140
+dan saya akan melihat  kamu lain kali
+

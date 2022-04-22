@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 0:00:02,310
+thanks for tuning in with aerospace pal
+
+2
+0:00:02,310 --> 0:00:04,350
+as we discuss the pros and cons of
+
+3
+0:00:04,350 --> 0:00:06,810
+current-limiting circuits when designing
+
+4
+0:00:06,810 --> 0:00:08,849
+a power supply one must consider the
+
+5
+0:00:08,849 --> 0:00:10,260
+holdup time during the power
+
+6
+0:00:10,260 --> 0:00:12,330
+interruption and often times large
+
+7
+0:00:12,330 --> 0:00:14,219
+capacitors are placed on the main power
+
+8
+0:00:14,219 --> 0:00:16,440
+line to handle this goal because of
+
+9
+0:00:16,440 --> 0:00:18,300
+interest requirements or tantalum
+
+10
+0:00:18,300 --> 0:00:20,490
+component limitations it can be required
+
+11
+0:00:20,490 --> 0:00:22,650
+to limit the current to that holdup
+
+12
+0:00:22,650 --> 0:00:24,960
+circuitry many engineers use a simple
+
+13
+0:00:24,960 --> 0:00:27,300
+current limiting resistor and diode to
+
+14
+0:00:27,300 --> 0:00:30,060
+do this job and this works it's simple
+
+15
+0:00:30,060 --> 0:00:31,940
+and effective for the power dropout
+
+16
+0:00:31,940 --> 0:00:34,200
+however engineers miss a great
+
+17
+0:00:34,200 --> 0:00:36,450
+opportunity that might hurt them when
+
+18
+0:00:36,450 --> 0:00:38,579
+they go to do emissions testing at
+
+19
+0:00:38,579 --> 0:00:41,370
+qualification high capacitance is
+
+20
+0:00:41,370 --> 0:00:43,620
+effective at filtering out low-frequency
+
+21
+0:00:43,620 --> 0:00:45,329
+noise and can be hard to do with any
+
+22
+0:00:45,329 --> 0:00:47,789
+other component using the configuration
+
+23
+0:00:47,789 --> 0:00:50,219
+shown the holdup cap of a thousand
+
+24
+0:00:50,219 --> 0:00:52,800
+microfarads will be charged to the same
+
+25
+0:00:52,800 --> 0:00:55,649
+level as the one microfarad caps however
+
+26
+0:00:55,649 --> 0:00:58,170
+during a low frequency event it will be
+
+27
+0:00:58,170 --> 0:01:00,660
+limited to the d1 forward voltage drop
+
+28
+0:01:00,660 --> 0:01:03,420
+and as you can see if you do power
+
+29
+0:01:03,420 --> 0:01:04,949
+interruption test it will
+
+30
+0:01:04,949 --> 0:01:07,619
+instantaneously drop by the d1 forward
+
+31
+0:01:07,619 --> 0:01:10,080
+voltage this transient can cause an
+
+32
+0:01:10,080 --> 0:01:12,330
+emissions failure at qualification
+
+33
+0:01:12,330 --> 0:01:15,180
+alternatively if use this four component
+
+34
+0:01:15,180 --> 0:01:17,700
+circuit to actively limit the current to
+
+35
+0:01:17,700 --> 0:01:19,470
+your holdup capacitor it'll put your
+
+36
+0:01:19,470 --> 0:01:21,450
+holdup capacitor in line with your
+
+37
+0:01:21,450 --> 0:01:23,850
+decoupling caps effectively filtering
+
+38
+0:01:23,850 --> 0:01:26,189
+out low-frequency current demand noise
+
+39
+0:01:26,189 --> 0:01:28,590
+using this circuit and it's dynamic
+
+40
+0:01:28,590 --> 0:01:30,600
+resistance you can charge your holdup
+
+41
+0:01:30,600 --> 0:01:32,670
+capacitance in the set amount of time
+
+42
+0:01:32,670 --> 0:01:35,070
+you choose learn how to use this circuit
+
+43
+0:01:35,070 --> 0:01:37,530
+picking specific values for each
+
+44
+0:01:37,530 --> 0:01:40,740
+component at aerospace pal comm click
+
+45
+0:01:40,740 --> 0:01:42,930
+the link below to get direct access
+
+46
+0:01:42,930 --> 0:01:45,479
+thanks for watching and I hope you check
+
+47
+0:01:45,479 --> 0:01:47,790
+out aerospace pal and use this circuit
+
+48
+0:01:47,790 --> 0:01:50,840
+on future designs
+

@@ -1,0 +1,696 @@
+1
+0:00:03,980 --> 0:00:06,509
+salah satu cara yang paling berguna untuk menganalisis
+
+2
+0:00:06,509 --> 0:00:08,429
+rangkaian adalah dengan melihat hubungan
+
+3
+0:00:08,429 --> 0:00:10,769
+antara tegangan dan arus dan ada
+
+4
+0:00:10,769 --> 0:00:12,480
+satu komponen yang membuat analisis itu
+
+5
+0:00:12,480 --> 0:00:15,210
+sangat sederhana ini adalah resistor
+
+6
+0:00:15,210 --> 0:00:17,520
+fungsinya sangat sederhana membatasi
+
+7
+0:00:17,520 --> 0:00:19,800
+aliran elektron sekarang menghambat arus
+
+8
+0:00:19,800 --> 0:00:21,869
+mungkin  tampak sedikit konyol tetapi ada
+
+9
+0:00:21,869 --> 0:00:23,910
+kalanya Anda mungkin ingin mengurangi arus yang
+
+10
+0:00:23,910 --> 0:00:25,800
+mengalir ke komponen atau menurunkan
+
+11
+0:00:25,800 --> 0:00:27,119
+tegangan ke beberapa
+
+12
+0:00:27,119 --> 0:00:29,369
+elektronik sensitif di dunia yang ideal
+
+13
+0:00:29,369 --> 0:00:31,230
+resistor menciptakan hubungan linier
+
+14
+0:00:31,230 --> 0:00:33,809
+antara arus dan tegangan dan jika Anda
+
+15
+0:00:33,809 --> 0:00:35,730
+tahu dua dari ketiganya  hal tegangan
+
+16
+0:00:35,730 --> 0:00:37,710
+arus dan hambatan Anda dapat dengan mudah
+
+17
+0:00:37,710 --> 0:00:39,780
+menghitung ketiga kita akan melihat bagaimana
+
+18
+0:00:39,780 --> 0:00:40,290
+melakukannya nanti
+
+19
+0:00:40,290 --> 0:00:42,329
+tapi untuk sekarang mari kita lihat bagaimana resistor
+
+20
+0:00:42,329 --> 0:00:44,579
+bekerja di sirkuit di episode sebelumnya
+
+21
+0:00:44,579 --> 0:00:46,710
+saya menunjukkan bagaimana arus bergerak
+
+22
+0:00:46,710 --> 0:00:48,539
+dapat diwakili oleh bola baja dalam tabung
+
+23
+0:00:48,539 --> 0:00
+jika satu bola baja mewakili satu
+
+24
+0:00 --> 0:00:53,579
+elektron maka dibutuhkan sekitar enam
+
+25
+0:00:53,579 --> 0:00:55,920
+koma dua lima kali 10 ke 18
+
+26
+0:00:55,920 --> 0:00:58,829
+bola baja untuk bergerak melewati satu titik per detik untuk
+
+27
+0:00:58,829 --> 0:01:00,989
+membuat  satu amp karena saya tidak memiliki miliaran
+
+28
+0:01:00,989 --> 0:01:03,539
+bola baja dalam tabung plastik besar,
+
+29
+0:01:03,539 --> 0:01:05,909
+kami membutuhkan cara lain untuk menunjukkan
+
+30
+0:01:05,909 --> 0:01:08,369
+arus listrik karena ternyata cairan seperti udara
+
+31
+0:01:08,369 --> 0:01:10,409
+dan air sebenarnya membuat representasi yang cukup bagus
+
+32
+0:01:10,409 --> 0:01:12,780
+untuk arus listrik seperti yang
+
+33
+0:01:12,780 --> 0:01:15,150
+saya dapatkan di sini  adalah sirkuit bukan
+
+34
+0:01:15,150 --> 0:01:17,549
+listrik tetapi air Saya telah menambahkan beberapa
+
+35
+0:01:17,549 --> 0:01:19,650
+bubuk mika dan pewarna makanan biru ke dalamnya
+
+36
+0:01:19,650 --> 0:01:21,030
+sehingga Anda dapat melihat air mengalir lebih
+
+37
+0:01:21,030 --> 0:01:23,280
+mudah dalam demo kecil kami, pompa
+
+38
+0:01:23,280 --> 0:01:25,409
+mewakili catu daya seperti baterai
+
+39
+0:01:25,409 --> 0:01:27,420
+atau adaptor dinding yang menarik  air naik
+
+40
+0:01:27,420 --> 0:01:29,460
+dari sumur dan memberikan dorongan yang dibutuhkan
+
+41
+0:01:29,460 --> 0:01:31,590
+untuk bergerak di sekitar sirkuit tabung
+
+42
+0:01:31,590 --> 0:01:33,659
+seperti kabel mereka menyediakan jalur untuk
+
+43
+0:01:33,659 --> 0:01:35,490
+arus tekanan air dalam tabung
+
+44
+0:01:35,490 --> 0:01:37,799
+sesuai dengan tegangan dan jumlah
+
+45
+0:01:37,799 --> 0:01:39,720
+air yang bergerak melalui tabung sesuai
+
+46
+0:01:39,720 --> 0:01:41,909
+dengan arus listrik catatan  bahwa kita
+
+47
+0:01:41,909 --> 0:01:43,979
+menggunakan arus konvensional sehingga
+
+48
+0:01:43,979 --> 0:01:45,390
+air mengalir dari tekanan tinggi ke
+
+49
+0:01:45,390 --> 0:01:48,270
+tekanan rendah ampere adalah coulomb per detik
+
+50
+0:01:48,270 --> 0:01:49,920
+jadi dalam hal air itu akan menjadi
+
+51
+0:01:49,920 --> 0:01:51,630
+laju aliran volumetrik seperti
+
+52
+0:01:51,630 --> 0:01:54,119
+kubik  c sentimeter per detik yang kita
+
+53
+0:01:54,119 --> 0:01:56,009
+dapatkan di sini adalah analogi air dari sebuah
+
+54
+0:01:56,009 --> 0:01:58,170
+resistor ini adalah beberapa wol baja yang dimasukkan
+
+55
+0:01:58,170 --> 0:02:00,119
+ke dalam tabung Anda dapat melihat bagaimana semua
+
+56
+0:02:00,119 --> 0:02:02,130
+bahan itu menahan aliran air dan
+
+57
+0:02:02,130 --> 0:02:04,110
+ada tekanan yang lebih tinggi di sisi tempat
+
+58
+0:02:04,110 --> 0:02:06,240
+air masuk  resistor yang sama
+
+59
+0:02:06,240 --> 0:02:08,099
+berlaku dalam elektronik ada
+
+60
+0:02:08,099 --> 0:02:09,869
+perbedaan tegangan antara
+
+61
+0:02:09,869 --> 0:02:11,220
+ujung resistor ketika arus mengalir
+
+62
+0:02:11,220 --> 0:02:13,020
+melaluinya dan ini dikenal sebagai
+
+63
+0:02:13,020 --> 0:02:14,170
+penurunan tegangan
+
+64
+0:02:14,170 --> 0:02:16,210
+mari kita kembali ke komponen resistor yang sebenarnya
+
+65
+0:02:16,210 --> 0:02:18,310
+jika Anda harus mengiris satu terbuka
+
+66
+0:02:18,310 --> 0:02:20,020
+Anda akan  menemukan gulungan atau film kawat kecil
+
+67
+0:02:20,020 --> 0:02:22,959
+atau inti padat yang terbuat dari campuran karbon
+
+68
+0:02:22,959 --> 0:02:25,300
+namun resistor bertindak untuk
+
+69
+0:02:25,300 --> 0:02:28,480
+menghambat arus pada tahun 1825
+
+70
+0:02:28,480 --> 0:02:30,610
+fisikawan dan matematikawan Jerman Georg ohm
+
+71
+0:02:30,610 --> 0:02:32,890
+mulai bereksperimen dengan baterai kimia awal
+
+72
+0:02:32,890 --> 0:02:34,630
+dan termokopel untuk menghasilkan
+
+73
+0:02:34,630 --> 0:02:37,360
+tegangan dengan memvariasikan ukuran  kabel yang
+
+74
+0:02:37,360 --> 0:02:39,130
+digunakan untuk menyelesaikan rangkaian ia
+
+75
+0:02:39,130 --> 0:02:40,900
+menentukan bahwa tegangan dan arus
+
+76
+0:02:40,900 --> 0:02:43,630
+sebanding dalam istilah matematika yang
+
+77
+0:02:43,630 --> 0:02:45,880
+berarti tegangan antara dua titik sama
+
+78
+0:02:45,880 --> 0:02:47,290
+dengan  arus yang mengalir di antara
+
+79
+0:02:47,290 --> 0:02:49,780
+titik-titik tersebut dikalikan dengan beberapa angka dan angka
+
+80
+0:02:49,780 --> 0:02:51,400
+tersebut dikenal sebagai hambatan antara
+
+81
+0:02:51,400 --> 0:02:54,489
+titik-titik tersebut Hukum Ohm sering ditulis sebagai V
+
+82
+0:02:54,489 --> 0:02:57,250
+sama dengan IR atau tegangan sama dengan arus
+
+83
+0:02:57,250 --> 0:03:00,519
+kali hambatan beruntung bagi mr.  ohm
+
+84
+0:03:00,519 --> 0:03:02,410
+unit untuk resistansi dinamai menurut
+
+85
+0:03:02,410 --> 0:03:04,420
+namanya ohm disingkat dengan huruf Yunani
+
+86
+0:03:04,420 --> 0:03:06,640
+Omega dengan informasi ini kita
+
+87
+0:03:06,640 --> 0:03:08,860
+dapat mulai menganalisis rangkaian sebagai
+
+88
+0:03:08,860 --> 0:03:10,630
+contoh kita akan menghubungkan resistor ke
+
+89
+0:03:10,630 --> 0:03:13,450
+catu daya yang menyediakan 3 volt
+
+90
+0:03:13,450 --> 0:03:15,130
+simbol elektronik untuk resistor  adalah
+
+91
+0:03:15,130 --> 0:03:17,800
+zigzag dengan dua terminal itu mewakili
+
+92
+0:03:17,800 --> 0:03:19,900
+jalur yang lebih rumit dan oleh karena itu
+
+93
+0:03:19,900 --> 0:03:21,940
+mengurangi aliran arus perhatikan bahwa
+
+94
+0:03:21,940 --> 0:03:23,530
+tidak masalah ke mana kita menghubungkan
+
+95
+0:03:23,530 --> 0:03:25,239
+resistor itu akan melakukan hal itu terlepas
+
+96
+0:03:25,239 --> 0:03:27,340
+dari orientasi kita akan menghubungkan
+
+97
+0:03:27,340 --> 0:03:28,600
+terminal resistor ke
+
+98
+0:03:28,600 --> 0:03:30,310
+positif dan  terminal negatif dari
+
+99
+0:03:30,310 --> 0:03:32,650
+catu daya yang telah diatur untuk bertindak sebagai
+
+100
+0:03:32,650 --> 0:03:35,019
+sumber tegangan sumber tegangan yang mirip
+
+101
+0:03:35,019 --> 0:03:37,450
+dengan baterai akan memasok arus
+
+102
+0:03:37,450 --> 0:03:38,829
+sebanyak yang diperlukan untuk mempertahankan tegangan tertentu
+
+103
+0:03:38,829 --> 0:03:41,380
+antara terminal sekarang
+
+104
+0:03:41,380 --> 0:03:43,329
+kita memiliki rangkaian arus akan mengalir dari
+
+105
+0:03:43,329 --> 0:03:44,590
+terminal positif  dari sumber tegangan
+
+106
+0:03:44,590 --> 0:03:47,170
+melalui resistor dan kembali ke
+
+107
+0:03:47,170 --> 0:03:49,060
+terminal negatif catu daya
+
+108
+0:03:49,060 --> 0:03:51,070
+akan diatur ke 3 volt dan juga akan
+
+109
+0:03:51,070 --> 0:03:52,959
+memberi tahu kami  berapa banyak arus yang disuplai
+
+110
+0:03:52,959 --> 0:03:55,180
+dengan informasi itu kita dapat
+
+111
+0:03:55,180 --> 0:03:57,549
+menentukan resistansi resistor mari kita
+
+112
+0:03:57,549 --> 0:03:58,840
+coba semuanya baik-baik saja
+
+113
+0:03:58,840 --> 0:04:00,370
+Saya telah menghubungkan resistor ke
+
+114
+0:04:00,370 --> 0:04:02,290
+catu daya ini menggunakan beberapa kabel klip buaya
+
+115
+0:04:02,290 --> 0:04:04,239
+Anda akan melihat saya menggunakan merah untuk
+
+116
+0:04:04,239 --> 0:04:05,799
+positif dan hitam untuk negatif
+
+117
+0:04:05,799 --> 0:04:07,269
+terminal terhubung ke catu daya
+
+118
+0:04:07,269 --> 0:04:11,920
+ketika saya menyalakannya membaca sekitar 3,0 3
+
+119
+0:04:11,920 --> 0:04:14,200
+volt dan juga memberitahu saya bahwa tentang
+
+120
+0:04:14,200 --> 0:04:17,109
+titik nol 3 amp mengalir dari
+
+121
+0:04:17,109 --> 0:04:18,970
+terminal positif melalui resistor
+
+122
+0:04:18,970 --> 0:04:21,400
+dan kembali ke terminal negatif mari kita
+
+123
+0:04:21,400 --> 0:04:23,410
+lihat apakah kita dapat menggunakan ini  untuk menghitung
+
+124
+0:04:23,410 --> 0:04:27,070
+resistansi komponen ini menggunakan hukum Ohm
+
+125
+0:04:27,070 --> 0:04:29,380
+kali I kita dapat memasukkan nilai
+
+126
+0:04:29,380 --> 0:04:31,930
+dari pembacaan kita sehingga 3 volt sama dengan
+
+127
+0:04:31,930 --> 0:04:34,990
+titik 0 3 amp kali menggunakan
+
+128
+0:04:34,990 --> 0:04:37,750
+sedikit aljabar kita dapat menghitung R dan kita
+
+129
+0:04:37,750 --> 0:04:40,030
+mendapatkan R sama dengan 101 memiliki
+
+130
+0:04:40,030 --> 0:04:41,950
+sekarang kita telah menentukan secara matematis
+
+131
+0:04:41,950 --> 0:04:44,380
+bahwa kita memiliki resistor 100 1 ohm mari kita
+
+132
+0:04:44,380 --> 0:04:46,420
+periksa pekerjaan kita ini adalah multimeter digital
+
+133
+0:04:46,420 --> 0:04:48,040
+dan ini adalah salah satu teman terbaik Anda
+
+134
+0:04:48,040 --> 0:04:50,410
+ketika menganalisis rangkaian
+
+135
+0:04:50,410 --> 0:04:52,330
+model paling dasar ca  n melakukan hal-hal seperti mengukur
+
+136
+0:04:52,330 --> 0:04:55,570
+arus tegangan dan resistansi kami akan mengatur yang
+
+137
+0:04:55,570 --> 0:04:57,580
+ini untuk mengukur resistansi dan menyentuh
+
+138
+0:04:57,580 --> 0:04:59,260
+ujung resistor seperti yang
+
+139
+0:04:59,260 --> 0:05:02,440
+Anda lihat membaca sekitar 100 koma
+
+140
+0:05:02,440 --> 0:05:04,420
+dua ohm yang cukup dekat dengan
+
+141
+0:05:04,420 --> 0:05:06,700
+hasil matematika kami karena ini  diberi label sebagai
+
+142
+0:05:06,700 --> 0:05:08,500
+resistor 100 ohm kami akan menyebutnya cukup baik
+
+143
+0:05:08,500 --> 0:05:10,630
+jika Anda bertanya-tanya mengapa
+
+144
+0:05:10,630 --> 0:05:12,310
+pengukuran dan perhitungan tidak
+
+145
+0:05:12,310 --> 0:05:14,350
+keluar tepat 100 ohm itu
+
+146
+0:05:14,350 --> 0:05
+karena ada inkonsistensi dalam
+
+147
+0:05 --> 0:05:18,190
+pembuatan resistor yang
+
+148
+0:05:18,190 --> 0:05:19,960
+tentu saja berarti bahwa resistansi
+
+149
+0:05:19,960 --> 0:05:22,140
+bisa sedikit melenceng dari nilai yang tercantum
+
+150
+0:05:22,140 --> 0:05:24,700
+selain itu ada hambatan di
+
+151
+0:05:24,700 --> 0:05:26,320
+kabel dan berpotensi catu daya
+
+152
+0:05:26,320 --> 0:05:28,300
+itu sendiri sehingga mengukur tegangan
+
+153
+0:05:28,300 --> 0:05:30,070
+antara terminal catu daya
+
+154
+0:05:30,070 --> 0:05:31,540
+bisa sedikit berbeda dari
+
+155
+0:05:31,540 --> 0:05:33,250
+mengukur tegangan antara terminal
+
+156
+0:05:33,250 --> 0:05:36,400
+resistor kembali  untuk demo air kami, kami melihat
+
+157
+0:05:36,400 --> 0:05:38,200
+bahwa wol baja seperti
+
+158
+0:05:38,200 --> 0:05:40,600
+resistor membatasi aliran jika kami
+
+159
+0:05:40,600 --> 0:05:42,400
+menambahkan bahan yang lebih padat seperti
+
+160
+0:05:42,400 --> 0:05:44,380
+spons.  arus akan berkurang
+
+161
+0:05:44,380 --> 0:05:46,300
+lebih jauh, hal yang sama berlaku dalam
+
+162
+0:05:46,300 --> 0:05:48,430
+elektronik untuk tegangan tertentu karena
+
+163
+0:05:48,430 --> 0:05:52,170
+resistansi meningkat, arus berkurang,
+
+164
+0:05:52,170 --> 0:05:54,970
+mengetahui hukum Ohm dengan hati, V sama dengan IR,
+
+165
+0:05:54,970 --> 0:05:56,620
+akan membantu Anda melalui banyak masalah di
+
+166
+0:05:56,620 --> 0:05:58,510
+dunia listrik, jadi ini adalah salah satu dari
+
+167
+0:05:58,510 --> 0:06:00,130
+sedikit persamaan yang saya sarankan untuk disimpan di
+
+168
+0:06:00,130 --> 0:06:03,460
+memori.  selain itu hanya 3 huruf
+
+169
+0:06:03,460 --> 0:06:05,200
+ternyata dengan melawan arus
+
+170
+0:06:05,200 --> 0:06
+energi listrik akan diubah menjadi panas
+
+171
+0:06 --> 0:06:09,430
+di episode berikutnya kita akan belajar bagaimana
+
+172
+0:06:09,430 --> 0:06:11,980
+menghitung daya listrik dan
+
+173
+0:06:11,980 --> 0:06:13,480
+mencari cara untuk melakukan sesuatu yang berguna dengan
+
+174
+0:06:13,480 --> 0:06:16,560
+semua panas dari resistor
+

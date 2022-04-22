@@ -1,0 +1,656 @@
+1
+0:00:00,240 --> 0:00:04,400
+[Musik]
+
+2
+0:00:04,400 --> 0:00:07,200
+hai semuanya, selamat datang di titik koma di
+
+3
+0:00:07,200 --> 0:00:08,700
+video ini kita akan belajar tentang metode yang
+
+4
+0:00:08,700 --> 0:00:10,559
+sangat populer untuk merepresentasikan
+
+5
+0:00:10,559 --> 0:00:13,799
+teks yang disebut kata Tuvok sehingga
+
+6
+0:00:13,799 --> 0:00:15,480
+pembelajaran mesin dan algoritme pembelajaran mendalam
+
+7
+0:00:15,480 --> 0:00:18,750
+tidak dapat menerima teks secara langsung, kami memerlukan
+
+8
+0:00:18,750 --> 0:00:21,270
+semacam representasi numerik
+
+9
+0:00:21,270 --> 0:00:24,619
+agar algoritme  dapat memproses data dan
+
+10
+0:00:24,619 --> 0:00:27,390
+dalam aplikasi pembelajaran mesin sederhana
+
+11
+0:00:27,390 --> 0:00:30,750
+kami menggunakan contract riser atau tf-idf
+
+12
+0:00:30,750 --> 0:00:32,759
+keduanya tidak mempertahankan hubungan apa pun
+
+13
+0:00:32,759 --> 0:00:34,800
+antara kata-kata Di sinilah
+
+14
+0:00:34,800 --> 0:00:37,140
+penyisipan kata masuk mereka memetakan semua
+
+15
+0:00:37,140 --> 0:00:39,329
+kata dalam suatu bahasa ke dalam ruang vektor
+
+16
+0:00:39,329 --> 0:00:42,840
+suatu  diberikan dimensi sehingga kata ke Veck adalah
+
+17
+0:00:42,840 --> 0:00:44,579
+metode populer untuk menghasilkan
+
+18
+0:00:44,579 --> 0:00:47,700
+penyisipan kata ini mengubah kata menjadi
+
+19
+0:00:47,700 --> 0:00:49,590
+vektor dan dengan vektor kami memiliki
+
+20
+0:00:49,590 --> 0:00:52,500
+beberapa operasi seperti menambah pengurangan
+
+21
+0:00:52,500 --> 0:00:55,890
+menghitung jarak dan begitulah
+
+22
+0:00:55,890 --> 0:00:57,360
+hubungan antara kata-kata
+
+23
+0:00:57,360 --> 0:01:00,030
+dipertahankan jadi salah satu contoh hubungan ini
+
+24
+0:01:00,030 --> 0:01:02,340
+adalah  hasil yang sangat terkenal dari
+
+25
+0:01:02,340 --> 0:01:05,309
+kata Tuvok yang mengatakan vektor
+
+26
+0:01:05,309 --> 0:01:10,200
+kata membunuh - kata pria + kata wanita
+
+27
+0:01:10,200 --> 0:01:13,080
+memberi Anda kata ve  ctor kata
+
+28
+0:01:13,080 --> 0:01:16,200
+Ratu dan hubungan ini dipertahankan
+
+29
+0:01:16,200 --> 0:01:18,750
+oleh kata untuk bekerja hanya dengan iterasi
+
+30
+0:01:18,750 --> 0:01:21,330
+melalui korpus besar teks seperti
+
+31
+0:01:21,330 --> 0:01:26,040
+Wikipedia atau korpus surat kabar sehingga kata
+
+32
+0:01:26,040 --> 0:01:28,229
+tuvok umumnya termasuk dalam banyak
+
+33
+0:01:28,229 --> 0:01:30,420
+kursus pembelajaran mendalam tetapi tidak ada
+
+34
+0:01:30,420 --> 0:01:31,920
+pembelajaran mendalam yang terlibat dalam menghasilkan
+
+35
+0:01:31,920 --> 0:01:34,650
+penyematan kata menggunakan kata - ik itu
+
+36
+0:01:34,650 --> 0:01:36,720
+hanya jaringan saraf dua lapis sederhana
+
+37
+0:01:36,720 --> 0:01:39,450
+sekarang karena banyak aplikasi pembelajaran mendalam yang
+
+38
+0:01:39,450 --> 0:01:41,640
+melibatkan teks
+
+39
+0:01:41,640 --> 0:01:43,770
+telah menunjukkan peningkatan setelah menggunakan
+
+40
+0:01:43,770 --> 0:01:47,790
+penyematan kata - ik sebagai fitur pelatihan
+
+41
+0:01:47,790 --> 0:01:49,439
+kata - model ik juga sangat
+
+42
+0:01:49,439 --> 0:01:51,600
+intensif sumber daya  karena membutuhkan
+
+43
+0:01:51,600 --> 0:01:53,640
+RAM dalam jumlah besar untuk menyimpan
+
+44
+0:01:53,640 --> 0:01:57,750
+kosakata korpus jadi sekarang pertanyaannya adalah
+
+45
+0:01:57,750 --> 0:02:01,530
+bagaimana hubungan ini terbentuk dalam
+
+46
+0:02:01,530 --> 0:02:04,140
+istilah sederhana Word - a mencoba membuat kata-kata
+
+47
+0:02:04,140 --> 0:02:06,840
+dengan konteks serupa memiliki
+
+48
+0:02:06,840 --> 0:02:09,950
+penyematan yang serupa jadi mari kita pertimbangkan contoh
+
+49
+0:02:09,950 --> 0:02:13,990
+untuk memahaminya dengan lebih baik  jadi kita harus
+
+50
+0:02:13,990 --> 0:02:15,850
+mengirim anak itu mengatakan dia akan tumbuh menjadi
+
+51
+0:02:15,850 --> 0:02:18,370
+Superman dan anak itu mengatakan dia akan
+
+52
+0:02:18,370 --> 0:02:21,070
+tumbuh menjadi Superman jika Anda
+
+53
+0:02:21,070 --> 0:02:23,800
+mengamati  kata anak dan anak ada dua
+
+54
+0:02:23,800 --> 0:02:26,080
+kata yang berbeda dengan konteks yang sama dan
+
+55
+0:02:26,080 --> 0:02:28,630
+karena kata dua mencoba membuat kata
+
+56
+0:02:28,630 --> 0:02:31,330
+dengan konteks yang sama memiliki
+
+57
+0:02:31,330 --> 0:02:33,430
+penyematan yang sama anak dan anak akan
+
+58
+0:02:33,430 --> 0:02:36,160
+memiliki vektor yang sama ketika Anda mengulangi
+
+59
+0:02:36,160 --> 0:02:38,500
+melalui korpus besar Anda akan mendapatkan banyak
+
+60
+0:02:38,500 --> 0:02:41,920
+kalimat di mana anak  dapat diganti oleh
+
+61
+0:02:41,920 --> 0:02:43,810
+anak dan karenanya vektor-vektor ini akan memiliki
+
+62
+0:02:43,810 --> 0:02:47,560
+penyematan yang serupa dan bagaimana cara
+
+63
+0:02:47,560 --> 0:02:50,230
+kerja kata melakukan tugas menghasilkan vektor
+
+64
+0:02:50,230 --> 0:02:52,870
+dari kata-kata sehingga ada dua
+
+65
+0:02:52,870 --> 0:02:55,450
+algoritme untuk itu kantong
+
+66
+0:02:55,450 --> 0:02:56,160
+kata-kata
+
+67
+0:02:56,160 --> 0:03:00,100
+berkelanjutan sibo dan lewati gram dalam kantong
+
+68
+0:03:00,100 --> 0:03:02,950
+kata-kata berkelanjutan atau Seba kita  memprediksi kata target
+
+69
+0:03:02,950 --> 0:03:05,800
+dari konteksnya kira-kira seperti ini dan
+
+70
+0:03:05,800 --> 0:03:08,080
+di skip gram kami mencoba memprediksi
+
+71
+0:03:08,080 --> 0:03:12,220
+kata konteks dari kata target Anda
+
+72
+0:03:12,220 --> 0:03:13,990
+mungkin bertanya mengapa kami mencoba memprediksi
+
+73
+0:03:13,990 --> 0:03:17,080
+kata ketika kami membutuhkan vektor untuk setiap kata
+
+74
+0:03:17,080 --> 0:03:19,540
+saya akan menjawab pertanyaan nanti  dalam
+
+75
+0:03:19,540 --> 0:03:22,270
+video untuk saat ini mari kita lihat detail
+
+76
+0:03:22,270 --> 0:03:25,540
+kerja dari masing-masing metode ini sehingga untuk
+
+77
+0:03:25,540 --> 0:03:27,790
+itu kita memerlukan contoh yang lebih kecil
+
+78
+0:03:27,790 --> 0:03:30,580
+karena bahasa Inggris memiliki sekitar 13
+
+79
+0:03:30,580 --> 0:03:32,620
+juta kata di dalamnya.  kamus yang
+
+80
+0:03:32,620 --> 0:03:34,930
+cukup besar sebagai contoh jadi mari kita
+
+81
+0:03:34,930 --> 0:03:37,390
+pertimbangkan bahasa yang hanya memiliki lima
+
+82
+0:03:37,390 --> 0:03:40,840
+kata sehingga kata-kata itu dapat membebaskan harapan
+
+83
+0:03:40,840 --> 0:03:43,600
+dan Anda dan tidak ada yang lain jadi kami
+
+84
+0:03:43,600 --> 0:03:46,210
+awalnya menyandikan setiap kata sebagai satu
+
+85
+0:03:46,210 --> 0:03:49,270
+vektor panas dan untuk menghasilkan vektor kata dari
+
+86
+0:03:49,270 --> 0:03:52,030
+kosakata ini  kami berdagang melalui
+
+87
+0:03:52,030 --> 0:03:54,700
+korpus dan untuk kesederhanaan mari kita asumsikan
+
+88
+0:03:54,700 --> 0:03:58,210
+korpus kita hanya memiliki satu kalimat yang
+
+89
+0:03:58,210 --> 0:04:01,420
+diharapkan dapat membebaskan Anda jadi sekarang kita perlu
+
+90
+0:04:01,420 --> 0:04:03,640
+memilih ukuran jendela untuk
+
+91
+0:04:03,640 --> 0:04:06,670
+mengulangi kalimat jadi mari kita anggap itu menjadi
+
+92
+0:04:06,670 --> 0:04:09,370
+tiga dalam kasus ini dan seperti yang dibahas
+
+93
+0:04:09,370 --> 0:04:12,340
+sebelumnya dalam rangkaian kata terus menerus kami
+
+94
+0:04:12,340 --> 0:04:14,200
+mencoba memprediksi kata Pusat ini dari
+
+95
+0:04:14,200 --> 0:04:17,230
+kata konteks sehingga ukuran jendela kami adalah
+
+96
+0:04:17,230 --> 0:04:19,480
+3 Kata Pusat adalah kata yang perlu kami
+
+97
+0:04:19,480 --> 0:04:21,130
+prediksi menggunakan dua kata yang
+
+98
+0:04:21,130 --> 0:04:24,220
+mengelilinginya jadi kami menggunakan jaringan saraf sederhana untuk
+
+99
+0:04:24,220 --> 0:04:26,440
+ini dan kapan  jaringan saraf
+
+100
+0:04:26,440 --> 0:04:29,230
+memiliki kata konteks harapan dan mengatakan sebagai
+
+101
+0:04:29,230 --> 0:04:32,350
+masukan yang kita butuhkan kita membutuhkan jaringan saraf
+
+102
+0:04:32,350 --> 0:04:35,920
+untuk memprediksi dapatkah ada satu hal lagi
+
+103
+0:04:35,920 --> 0:04:37,690
+yang perlu kita pilih yaitu
+
+104
+0:04:37,690 --> 0:04:40,390
+ukuran setiap vektor mari kita  y ukuran masing-
+
+105
+0:04:40,390 --> 0:04:43,480
+masing vektor adalah tiga maka kita akan memilih
+
+106
+0:04:43,480 --> 0:04:46,540
+lapisan tersembunyi menjadi ukuran tiga sehingga
+
+107
+0:04:46,540 --> 0:04:48,370
+pada jaringan Anda sekarang terlihat seperti
+
+108
+0:04:48,370 --> 0:04:48,940
+ini
+
+109
+0:04:48,940 --> 0:04:51,730
+satu hal penting yang perlu diperhatikan di sini adalah
+
+110
+0:04:51,730 --> 0:04:54,490
+api dari tiga matriks input dibagi oleh
+
+111
+0:04:54,490 --> 0:04:58,420
+kata-kata konteks dan  kami melewati satu
+
+112
+0:04:58,420 --> 0:05:02,110
+vektor harapan dan set panas dan jaringan saraf
+
+113
+0:05:02,110 --> 0:05:04,020
+mencoba memprediksi kata yang masuk ini
+
+114
+0:05:04,020 --> 0:05:06,370
+kami melewatinya melalui fungsi softmax
+
+115
+0:05:06,370 --> 0:05:08,650
+mendapatkan probabilitas dan membandingkannya
+
+116
+0:05:08,650 --> 0:05:11,140
+dengan kata yang sebenarnya dan kemudian
+
+117
+0:05:11,140 --> 0:05:13,390
+kesalahan digunakan untuk memperbarui bobot lalu kami
+
+118
+0:05:13,390 --> 0:05:15,190
+meluncur  jendela dan lanjutkan
+
+119
+0:05:15,190 --> 0:05:17,110
+proses yang sama dengan cara ini bobot diperbarui
+
+120
+0:05:17,110 --> 0:05:20,410
+dan setelah selesai, kami mengambil matriks bobot
+
+121
+0:05:20,410 --> 0:05:24,400
+dari bobot ini dan ini adalah
+
+122
+0:05:24,400 --> 0:05:27,550
+kumpulan vektor kami dan ini adalah cara kerja
+
+123
+0:05:27,550 --> 0:05:30,730
+bag-of-words yang berkelanjutan kasus
+
+124
+0:05:30,730 --> 0:05:33,580
+skip gram sangat  serupa di skip gram
+
+125
+0:05:33,580 --> 0:05:35,680
+kami memilih ukuran jendela dan
+
+126
+0:05:35,680 --> 0:05:38,470
+memberikan kata Tengah sebagai input mencoba memprediksi
+
+127
+0:05:38,470 --> 0:05:40,390
+kata konteks, bobot
+
+128
+0:05:40,390 --> 0:05:42,700
+diperbarui dengan cara yang sama dan di sini lagi
+
+129
+0:05:42,700 --> 0:05:46,680
+matriks keluaran ukuran Phi cos 3
+
+130
+0:05:46,680 --> 0:05:51,310
+dibagikan oleh cont  kata-kata ext dengan cara ini
+
+131
+0:05:51,310 --> 0:05:54,100
+kedua algoritma membantu memperbarui
+
+132
+0:05:54,100 --> 0:05:56,230
+matriks bobot berdasarkan kata-kata dan
+
+133
+0:05:56,230 --> 0:05:59,080
+konteks kemudian kita biasanya mengambil
+
+134
+0:05:59,080 --> 0:06:01,090
+matriks bobot input dan mengalikannya dengan
+
+135
+0:06:01,090 --> 0:06
+vektor satu panas dari dunia tertentu untuk
+
+136
+0:06 --> 0:06:06,430
+mendapatkan vektor kata sekarang vektor kata ini
+
+137
+0:06:06,430 --> 0:06:08,770
+adalah apa  kami menyebut penyematan kata
+
+138
+0:06:08,770 --> 0:06:13,210
+dalam aplikasi nyata, kami biasanya
+
+139
+0:06:13,210 --> 0:06:15,700
+melatihnya melalui teks Wikipedia, memilih
+
+140
+0:06:15,700 --> 0:06:20,050
+ukuran jendela sekitar 5 hingga 10 dan ukuran vektor
+
+141
+0:06:20,050 --> 0:06:23,140
+umumnya sekitar 300. Jumlah kata
+
+142
+0:06:23,140 --> 0:06:26,230
+dalam korpus sekitar 13 juta dan
+
+143
+0:06:26,230 --> 0:06:28,840
+karenanya dibutuhkan sumber daya yang sangat besar
+
+144
+0:06:28,840 --> 0:06:32,080
+untuk melatih dan  menghasilkan penyisipan kata jika
+
+145
+0:06:32,080 --> 0:06:33,669
+Anda ingin melewati proses ini, Anda
+
+146
+0:06:33,669 --> 0:06:35,260
+dapat melanjutkan dan mengunduh
+
+147
+0:06:35,260 --> 0:06:38,169
+vektor kata Praetorian Anda dapat memilih
+
+148
+0:06:38,169 --> 0:06:39,999
+salah satu dari dua algoritme
+
+149
+0:06:39,999 --> 0:06:42,309
+Kip gram atau kumpulan kata yang
+
+150
+0:06:42,309 --> 0:06:44,229
+berkelanjutan secara umum, kumpulan kata yang berkesinambungan
+
+151
+0:06:44,229 --> 0:06:46,779
+lebih disukai untuk korpus yang lebih kecil dan
+
+152
+0:06:46,779 --> 0:06:49,869
+lebih cepat untuk Melatih skip gram lebih lambat tetapi
+
+153
+0:06:49,869 --> 0:06:52,269
+bekerja dengan baik pada corpus besar dan
+
+154
+0:06:52,269 --> 0:06:55,419
+dimensi besar ada beberapa hal lain yang perlu
+
+155
+0:06:55,419 --> 0:06:57,999
+diubah untuk meningkatkan akurasi seperti menambahkan
+
+156
+0:06:57,999 --> 0:07:00,399
+lebih banyak data dan jenis ini jelas kami
+
+157
+0:07:00,399 --> 0:07:02,259
+juga dapat meningkatkan dimensi
+
+158
+0:07:02,259 --> 0:07:04,809
+vektor kata dan dengan cara ini lebih banyak informasi
+
+159
+0:07:04,809 --> 0:07:07,269
+akan dipertahankan meningkatkan ukuran jendela
+
+160
+0:07:07,269 --> 0:07:09,639
+juga membantu tetapi membuat pelatihan
+
+161
+0:07:09,639 --> 0:07:12,009
+sedikit sulit jadi ini semua tentang
+
+162
+0:07:12,009 --> 0:07:14,289
+kata ke ik dan penyisipan kata di
+
+163
+0:07:14,289 --> 0:07:16,479
+video berikutnya kita akan melihat bagaimana kita bisa
+
+164
+0:07:16,479 --> 0:07:21,059
+menerapkan ini dan menggigit mereka terima kasih
+

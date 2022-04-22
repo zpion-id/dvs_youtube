@@ -1,0 +1,704 @@
+1
+0:00:03,980 --> 0:00:06,509
+one of the most useful ways to analyze a
+
+2
+0:00:06,509 --> 0:00:08,429
+circuit is to look at the relationship
+
+3
+0:00:08,429 --> 0:00:10,769
+between voltage and current and there is
+
+4
+0:00:10,769 --> 0:00:12,480
+one component that makes that analysis
+
+5
+0:00:12,480 --> 0:00:15,210
+very simple this is the resistor its
+
+6
+0:00:15,210 --> 0:00:17,520
+function is very simple it restricts the
+
+7
+0:00:17,520 --> 0:00:19,800
+flow of electrons now impeding current
+
+8
+0:00:19,800 --> 0:00:21,869
+may seem a little silly but there are
+
+9
+0:00:21,869 --> 0:00:23,910
+times you may want to reduce the current
+
+10
+0:00:23,910 --> 0:00:25,800
+flowing to a component or lower the
+
+11
+0:00:25,800 --> 0:00:27,119
+voltage going to some sensitive
+
+12
+0:00:27,119 --> 0:00:29,369
+electronics in an ideal world the
+
+13
+0:00:29,369 --> 0:00:31,230
+resistor creates a linear relationship
+
+14
+0:00:31,230 --> 0:00:33,809
+between current and voltage and if you
+
+15
+0:00:33,809 --> 0:00:35,730
+know two of those three things voltage
+
+16
+0:00:35,730 --> 0:00:37,710
+current and resistance you can easily
+
+17
+0:00:37,710 --> 0:00:39,780
+calculate the third we'll see how to do
+
+18
+0:00:39,780 --> 0:00:40,290
+that later
+
+19
+0:00:40,290 --> 0:00:42,329
+but for now let's see how a resistor
+
+20
+0:00:42,329 --> 0:00:44,579
+works in a circuit in the previous
+
+21
+0:00:44,579 --> 0:00:46,710
+episode I showed how moving current can
+
+22
+0:00:46,710 --> 0:00:48,539
+be represented by steel balls in a tube
+
+23
+0:00:48,539 --> 0:00
+if one steel ball represented one
+
+24
+0:00 --> 0:00:53,579
+electron then it would take around six
+
+25
+0:00:53,579 --> 0:00:55,920
+point two five times 10 to the 18 steel
+
+26
+0:00:55,920 --> 0:00:58,829
+balls to move past a point per second to
+
+27
+0:00:58,829 --> 0:01:00,989
+make one amp since I don't have billions
+
+28
+0:01:00,989 --> 0:01:03,539
+of steel balls in a massive plastic tube
+
+29
+0:01:03,539 --> 0:01:05,909
+we need some other way to show electric
+
+30
+0:01:05,909 --> 0:01:08,369
+current as it turns out fluids like air
+
+31
+0:01:08,369 --> 0:01:10,409
+and water actually make a pretty good
+
+32
+0:01:10,409 --> 0:01:12,780
+representation for electric current what
+
+33
+0:01:12,780 --> 0:01:15,150
+I've got here is a circuit not of
+
+34
+0:01:15,150 --> 0:01:17,549
+electricity but of water I've added some
+
+35
+0:01:17,549 --> 0:01:19,650
+mica powder and blue food coloring to it
+
+36
+0:01:19,650 --> 0:01:21,030
+so you can see the water flowing more
+
+37
+0:01:21,030 --> 0:01:23,280
+easily in our little demo the pump
+
+38
+0:01:23,280 --> 0:01:25,409
+represents a power supply like a battery
+
+39
+0:01:25,409 --> 0:01:27,420
+or a wall adapter that pulls water up
+
+40
+0:01:27,420 --> 0:01:29,460
+from well and gives it the push needed
+
+41
+0:01:29,460 --> 0:01:31,590
+to move around the circuit the tubes are
+
+42
+0:01:31,590 --> 0:01:33,659
+like wires they provide a path for the
+
+43
+0:01:33,659 --> 0:01:35,490
+current the water pressure in the tubes
+
+44
+0:01:35,490 --> 0:01:37,799
+corresponds to voltage and the amount of
+
+45
+0:01:37,799 --> 0:01:39,720
+water moving through a tube corresponds
+
+46
+0:01:39,720 --> 0:01:41,909
+to electrical current note that we're
+
+47
+0:01:41,909 --> 0:01:43,979
+using conventional current so the water
+
+48
+0:01:43,979 --> 0:01:45,390
+is flowing from high pressure to low
+
+49
+0:01:45,390 --> 0:01:48,270
+pressure amperes is coulombs per second
+
+50
+0:01:48,270 --> 0:01:49,920
+so in terms of water that would be
+
+51
+0:01:49,920 --> 0:01:51,630
+volumetric flow rate something like
+
+52
+0:01:51,630 --> 0:01:54,119
+cubic centimeters per second what we've
+
+53
+0:01:54,119 --> 0:01:56,009
+got here is the water analogy of a
+
+54
+0:01:56,009 --> 0:01:58,170
+resistor this is some steel wool shoved
+
+55
+0:01:58,170 --> 0:02:00,119
+into a tube you can see how all that
+
+56
+0:02:00,119 --> 0:02:02,130
+material resists the flow of water and
+
+57
+0:02:02,130 --> 0:02:04,110
+there is higher pressure on the side the
+
+58
+0:02:04,110 --> 0:02:06,240
+water is entering the resistor the same
+
+59
+0:02:06,240 --> 0:02:08,099
+holds true in electronics there is a
+
+60
+0:02:08,099 --> 0:02:09,869
+voltage difference between the ends of
+
+61
+0:02:09,869 --> 0:02:11,220
+the resistor when current is flowing
+
+62
+0:02:11,220 --> 0:02:13,020
+through it and this is known as a
+
+63
+0:02:13,020 --> 0:02:14,170
+voltage drop
+
+64
+0:02:14,170 --> 0:02:16,210
+let's go back to the actual resistor
+
+65
+0:02:16,210 --> 0:02:18,310
+component if you were to slice one open
+
+66
+0:02:18,310 --> 0:02:20,020
+you would find coils or film of tiny
+
+67
+0:02:20,020 --> 0:02:22,270
+wire or a solid core made of a carbon
+
+68
+0:02:22,270 --> 0:02:22,959
+mixture
+
+69
+0:02:22,959 --> 0:02:25,300
+however it's made the resistor acts to
+
+70
+0:02:25,300 --> 0:02:28,480
+impede current in 1825 the german
+
+71
+0:02:28,480 --> 0:02:30,610
+physicist and mathematician Georg ohm
+
+72
+0:02:30,610 --> 0:02:32,890
+began experimenting with early chemical
+
+73
+0:02:32,890 --> 0:02:34,630
+batteries and thermocouples to produce
+
+74
+0:02:34,630 --> 0:02:37,360
+voltages by varying the size of wires
+
+75
+0:02:37,360 --> 0:02:39,130
+used to complete the circuit he
+
+76
+0:02:39,130 --> 0:02:40,900
+determined that voltage and current were
+
+77
+0:02:40,900 --> 0:02:43,630
+proportional in math terms that means
+
+78
+0:02:43,630 --> 0:02:45,880
+the voltage between two points is equal
+
+79
+0:02:45,880 --> 0:02:47,290
+to the current flowing between those
+
+80
+0:02:47,290 --> 0:02:49,780
+points times some number and that number
+
+81
+0:02:49,780 --> 0:02:51,400
+is known as the resistance between those
+
+82
+0:02:51,400 --> 0:02:54,489
+points Ohm's law is often written as V
+
+83
+0:02:54,489 --> 0:02:57,250
+equals IR or voltage is equal to current
+
+84
+0:02:57,250 --> 0:03:00,519
+times resistance lucky for mr. ohm the
+
+85
+0:03:00,519 --> 0:03:02,410
+unit for resistance was named after him
+
+86
+0:03:02,410 --> 0:03:04,420
+the ohm is abbreviated with the Greek
+
+87
+0:03:04,420 --> 0:03:06,640
+letter Omega with this information we
+
+88
+0:03:06,640 --> 0:03:08,860
+can begin to analyze circuits as an
+
+89
+0:03:08,860 --> 0:03:10,630
+example we'll connect a resistor to a
+
+90
+0:03:10,630 --> 0:03:13,450
+power supply that provides 3 volts the
+
+91
+0:03:13,450 --> 0:03:15,130
+electronic symbol for a resistor is a
+
+92
+0:03:15,130 --> 0:03:17,800
+zigzag with two terminals it represents
+
+93
+0:03:17,800 --> 0:03:19,900
+a more complicated path and therefore
+
+94
+0:03:19,900 --> 0:03:21,940
+reduced current flow note that it
+
+95
+0:03:21,940 --> 0:03:23,530
+doesn't matter which way we connect the
+
+96
+0:03:23,530 --> 0:03:25,239
+resistor it will do its thing regardless
+
+97
+0:03:25,239 --> 0:03:27,340
+of orientation we will connect the
+
+98
+0:03:27,340 --> 0:03:28,600
+terminals of the resistor to the
+
+99
+0:03:28,600 --> 0:03:30,310
+positive and negative terminals of a
+
+100
+0:03:30,310 --> 0:03:32,650
+power supply that's been set to act as a
+
+101
+0:03:32,650 --> 0:03:35,019
+voltage source a voltage source similar
+
+102
+0:03:35,019 --> 0:03:37,450
+to a battery will supply as much current
+
+103
+0:03:37,450 --> 0:03:38,829
+as needed to maintain a particular
+
+104
+0:03:38,829 --> 0:03:41,380
+voltage between the terminals now that
+
+105
+0:03:41,380 --> 0:03:43,329
+we have a circuit current will flow from
+
+106
+0:03:43,329 --> 0:03:44,590
+the positive terminal of the voltage
+
+107
+0:03:44,590 --> 0:03:47,170
+source through the resistor and back to
+
+108
+0:03:47,170 --> 0:03:49,060
+the negative terminal the power supply
+
+109
+0:03:49,060 --> 0:03:51,070
+will be set to 3 volts and it will also
+
+110
+0:03:51,070 --> 0:03:52,959
+tell us how much current it is supplying
+
+111
+0:03:52,959 --> 0:03:55,180
+with that information we can determine
+
+112
+0:03:55,180 --> 0:03:57,549
+the resistance of the resistor let's try
+
+113
+0:03:57,549 --> 0:03:58,840
+it all right
+
+114
+0:03:58,840 --> 0:04:00,370
+I've connected the resistor to this
+
+115
+0:04:00,370 --> 0:04:02,290
+power supply using some alligator clip
+
+116
+0:04:02,290 --> 0:04:04,239
+leads you'll notice I used red for
+
+117
+0:04:04,239 --> 0:04:05,799
+positive and black for negative
+
+118
+0:04:05,799 --> 0:04:07,269
+terminals connected to the power supply
+
+119
+0:04:07,269 --> 0:04:11,920
+when I turn it on it reads about 3.0 3
+
+120
+0:04:11,920 --> 0:04:14,200
+volts and it also tells me that about
+
+121
+0:04:14,200 --> 0:04:17,109
+point zero 3 amps are flowing from the
+
+122
+0:04:17,109 --> 0:04:18,970
+positive terminal through the resistor
+
+123
+0:04:18,970 --> 0:04:21,400
+and back to the negative terminal let's
+
+124
+0:04:21,400 --> 0:04:23,410
+see if we can use this to calculate the
+
+125
+0:04:23,410 --> 0:04:25,840
+resistance of this component using Ohm's
+
+126
+0:04:25,840 --> 0:04:27,070
+law the
+
+127
+0:04:27,070 --> 0:04:29,380
+I times are we can plug in the values
+
+128
+0:04:29,380 --> 0:04:31,930
+from our readings so 3 volts equals
+
+129
+0:04:31,930 --> 0:04:34,990
+point 0 3 amps times are using a little
+
+130
+0:04:34,990 --> 0:04:37,750
+bit of algebra we can calculate R and we
+
+131
+0:04:37,750 --> 0:04:40,030
+get R equals 101 owns
+
+132
+0:04:40,030 --> 0:04:41,950
+now that we've mathematically determined
+
+133
+0:04:41,950 --> 0:04:44,380
+that we have a 100 1 ohm resistor let's
+
+134
+0:04:44,380 --> 0:04:46,420
+check our work this is a digital
+
+135
+0:04:46,420 --> 0:04:48,040
+multimeter and it's one of your best
+
+136
+0:04:48,040 --> 0:04:50,410
+friends when analyzing a circuit most
+
+137
+0:04:50,410 --> 0:04:52,330
+basic models can do things like measure
+
+138
+0:04:52,330 --> 0:04:55,570
+voltage current and resistance we'll set
+
+139
+0:04:55,570 --> 0:04:57,580
+this one to measure resistance and touch
+
+140
+0:04:57,580 --> 0:04:59,260
+the leads to the ends of the resistor as
+
+141
+0:04:59,260 --> 0:05:02,440
+you can see it's reading about 100 point
+
+142
+0:05:02,440 --> 0:05:04,420
+two ohms which is pretty close to our
+
+143
+0:05:04,420 --> 0:05:06,700
+math results since this is labeled as a
+
+144
+0:05:06,700 --> 0:05:08,500
+100 ohm resistor we'll call it good
+
+145
+0:05:08,500 --> 0:05:10,630
+enough if you're wondering why the
+
+146
+0:05:10,630 --> 0:05:12,310
+measurements and calculations didn't
+
+147
+0:05:12,310 --> 0:05:14,350
+come out to be exactly 100 ohms that's
+
+148
+0:05:14,350 --> 0:05
+because there are inconsistencies in the
+
+149
+0:05 --> 0:05:18,190
+manufacturing of resistors which of
+
+150
+0:05:18,190 --> 0:05:19,960
+course means that the resistance can be
+
+151
+0:05:19,960 --> 0:05:22,140
+a little bit off from the listed value
+
+152
+0:05:22,140 --> 0:05:24,700
+additionally there's resistance in the
+
+153
+0:05:24,700 --> 0:05:26,320
+wires and potentially the power supply
+
+154
+0:05:26,320 --> 0:05:28,300
+itself so measuring the voltage between
+
+155
+0:05:28,300 --> 0:05:30,070
+the terminals of the power supply could
+
+156
+0:05:30,070 --> 0:05:31,540
+be a little bit different than measuring
+
+157
+0:05:31,540 --> 0:05:33,250
+the voltage between the terminals of the
+
+158
+0:05:33,250 --> 0:05:36,400
+resistor back to our water demo we see
+
+159
+0:05:36,400 --> 0:05:38,200
+that the steel wool much like the
+
+160
+0:05:38,200 --> 0:05:40,600
+resistor restricts flow if we were to
+
+161
+0:05:40,600 --> 0:05:42,400
+add an even denser material like a
+
+162
+0:05:42,400 --> 0:05:44,380
+sponge the water flow would decrease
+
+163
+0:05:44,380 --> 0:05:46,300
+even further the same holds true in
+
+164
+0:05:46,300 --> 0:05:48,430
+electronics for a given voltage as
+
+165
+0:05:48,430 --> 0:05:52,170
+resistance increases current decreases
+
+166
+0:05:52,170 --> 0:05:54,970
+knowing Ohm's law by heart V equals IR
+
+167
+0:05:54,970 --> 0:05:56,620
+will get you through many troubles in
+
+168
+0:05:56,620 --> 0:05:58,510
+the electrical world so it's one of the
+
+169
+0:05:58,510 --> 0:06:00,130
+few equations I recommend committing to
+
+170
+0:06:00,130 --> 0:06:03,460
+memory besides it's only 3 letters as it
+
+171
+0:06:03,460 --> 0:06:05,200
+turns out by resisting current
+
+172
+0:06:05,200 --> 0:06
+electrical energy gets converted to heat
+
+173
+0:06 --> 0:06:09,430
+in the next episode we'll learn how to
+
+174
+0:06:09,430 --> 0:06:11,980
+calculate electrical power and figure
+
+175
+0:06:11,980 --> 0:06:13,480
+out how to do something useful with all
+
+176
+0:06:13,480 --> 0:06:16,560
+of that heat from resistors
+

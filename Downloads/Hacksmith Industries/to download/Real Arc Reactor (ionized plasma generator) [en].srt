@@ -1,0 +1,844 @@
+1
+0:00:02,990 --> 0:00:15,619
+[Music]
+
+2
+0:00:15,619 --> 0:00:18,119
+hey guys I'm the hack Smith and on this
+
+3
+0:00:18,119 --> 0:00:19,650
+episode make it real we're gonna try and
+
+4
+0:00:19,650 --> 0:00:21,480
+make a real arc reactor since it's been
+
+5
+0:00:21,480 --> 0:00:27,470
+one of your most common requests
+
+6
+0:00:27,470 --> 0:00:31,050
+so what exactly is an arc reactor well
+
+7
+0:00:31,050 --> 0:00:32,880
+it was first introduced to the MCU in
+
+8
+0:00:32,880 --> 0:00:35,160
+iron man and just looking at it it looks
+
+9
+0:00:35,160 --> 0:00:37,050
+like it produces a continual arc of
+
+10
+0:00:37,050 --> 0:00:39,720
+electricity in a loop and somehow that
+
+11
+0:00:39,720 --> 0:00:42,900
+generates power in the footage now to me
+
+12
+0:00:42,900 --> 0:00:44,580
+it kind of looks like a perpetual energy
+
+13
+0:00:44,580 --> 0:00:47,400
+device which we know is impossible
+
+14
+0:00:47,400 --> 0:00:49,200
+because the most fundamental law of
+
+15
+0:00:49,200 --> 0:00:50,700
+physics is a conservation of energy
+
+16
+0:00:50,700 --> 0:00:52,739
+which states that energy in a closed
+
+17
+0:00:52,739 --> 0:00:54,540
+system is constant which means energy
+
+18
+0:00:54,540 --> 0:00:58,020
+cannot be created only transformed that
+
+19
+0:00:58,020 --> 0:01:00,180
+simplifies into an equation energy N
+
+20
+0:01:00,180 --> 0:01:02,879
+equals energy out plus losses usually in
+
+21
+0:01:02,879 --> 0:01:04,800
+the form of heat because of the second
+
+22
+0:01:04,800 --> 0:01:06,360
+law of thermodynamics we know there are
+
+23
+0:01:06,360 --> 0:01:09,030
+always losses always which kind of makes
+
+24
+0:01:09,030 --> 0:01:11,490
+sense when Obadiah says this the arc
+
+25
+0:01:11,490 --> 0:01:20,250
+reactor that's a publicity stunt shut
+
+26
+0:01:20,250 --> 0:01:22,620
+the hippies up it works yeah as a
+
+27
+0:01:22,620 --> 0:01:25,890
+science project but then in the cave
+
+28
+0:01:25,890 --> 0:01:27,570
+when Toni miniaturized the arc reactor
+
+29
+0:01:27,570 --> 0:01:30,180
+uses palladium what is that
+
+30
+0:01:30,180 --> 0:01:33,240
+that's palladium 0.15 grams which
+
+31
+0:01:33,240 --> 0:01:34,799
+suggests the arc reactor might actually
+
+32
+0:01:34,799 --> 0:01:36,659
+be nuclear technology since some
+
+33
+0:01:36,659 --> 0:01:39,180
+palladium is radioactive unfortunately
+
+34
+0:01:39,180 --> 0:01:41,579
+it's also highly carcinogenic and toxic
+
+35
+0:01:41,579 --> 0:01:43,289
+so I'm not about to play with the lady
+
+36
+0:01:43,289 --> 0:01:46,259
+'m for a fictional technology now the
+
+37
+0:01:46,259 --> 0:01:48,719
+power output specified is also kind of
+
+38
+0:01:48,719 --> 0:01:52,049
+ridiculous could you generate if my math
+
+39
+0:01:52,049 --> 0:01:54,869
+is right I know it is three gigajoules
+
+40
+0:01:54,869 --> 0:01:57,810
+per second a Joule per second is just a
+
+41
+0:01:57,810 --> 0:01:59,880
+fancy scientific way of saying a single
+
+42
+0:01:59,880 --> 0:02:01,380
+watt which means the arc reactor
+
+43
+0:02:01,380 --> 0:02:04,079
+produces three gigawatts of power that's
+
+44
+0:02:04,079 --> 0:02:06,060
+almost three times the power output of a
+
+45
+0:02:06,060 --> 0:02:07,649
+time-travelling DeLorean from Back to
+
+46
+0:02:07,649 --> 0:02:16,320
+the Future in fact if we were to sell
+
+47
+0:02:16,320 --> 0:02:17,970
+that energy back to the power grid the
+
+48
+0:02:17,970 --> 0:02:20,100
+same way I sell solar energy for my roof
+
+49
+0:02:20,100 --> 0:02:22,470
+it would be the equivalent of 833
+
+50
+0:02:22,470 --> 0:02:24,630
+kilowatt hours which will generate two
+
+51
+0:02:24,630 --> 0:02:26,400
+hundred and fifty dollars per second of
+
+52
+0:02:26,400 --> 0:02:28,500
+income or twenty one point six million
+
+53
+0:02:28,500 --> 0:02:31,350
+dollars per day basically if I were to
+
+54
+0:02:31,350 --> 0:02:32,910
+invent a real working Eric reactor all
+
+55
+0:02:32,910 --> 0:02:34,470
+of our funding issues would be solved
+
+56
+0:02:34,470 --> 0:02:36,330
+and we'd be well on our way to building
+
+57
+0:02:36,330 --> 0:02:36,840
+a real life
+
+58
+0:02:36,840 --> 0:02:39,540
+iron man suit or more realistically our
+
+59
+0:02:39,540 --> 0:02:41,310
+entire company would be assassinated by
+
+60
+0:02:41,310 --> 0:02:43,680
+the big oil companies so it's pretty
+
+61
+0:02:43,680 --> 0:02:45,180
+much impossible to make a real working
+
+62
+0:02:45,180 --> 0:02:47,640
+hour crow actor so let's build a real
+
+63
+0:02:47,640 --> 0:02:49,590
+working hour Cree actor all right now
+
+64
+0:02:49,590 --> 0:02:51,090
+before we build the art corrector let's
+
+65
+0:02:51,090 --> 0:02:52,680
+take a look at a 3d model using some
+
+66
+0:02:52,680 --> 0:02:54,599
+augmented reality tech not unlike tony
+
+67
+0:02:54,599 --> 0:02:58,440
+stark himself pretty cool right let's
+
+68
+0:02:58,440 --> 0:03:04,230
+take a closer look now it looks like the
+
+69
+0:03:04,230 --> 0:03:05,849
+electricity is being generated in the
+
+70
+0:03:05,849 --> 0:03:08,099
+final ring of the assembly but I guess
+
+71
+0:03:08,099 --> 0:03:09,329
+the real question is if we're building
+
+72
+0:03:09,329 --> 0:03:11,160
+an arc reactor how are we gonna do that
+
+73
+0:03:11,160 --> 0:03:13,319
+let's get some paper out and actually do
+
+74
+0:03:13,319 --> 0:03:31,049
+some calculations by hand so to sustain
+
+75
+0:03:31,049 --> 0:03
+an arc of electricity around the arc
+
+76
+0:03 --> 0:03:34,590
+reactor we're gonna need a lot of
+
+77
+0:03:34,590 --> 0:03:36,480
+voltage but I am during the arc reactor
+
+78
+0:03:36,480 --> 0:03:38,819
+is around 75 millimeters across which
+
+79
+0:03:38,819 --> 0:03:40,650
+gives us a circumference of around 2 or
+
+80
+0:03:40,650 --> 0:03:42,959
+41 millimeters which would be the path
+
+81
+0:03:42,959 --> 0:03:45,420
+electricity actually has to follow now
+
+82
+0:03:45,420 --> 0:03:46,889
+it takes approximately three million
+
+83
+0:03:46,889 --> 0:03:49,290
+volts to ionize air for an arc to form
+
+84
+0:03:49,290 --> 0:03:51,720
+across a distance of 1 meter at roughly
+
+85
+0:03:51,720 --> 0:03:55,019
+30,000 volts per centimeter so with the
+
+86
+0:03:55,019 --> 0:03:57,180
+24 point one centimeter travel path
+
+87
+0:03:57,180 --> 0:04:00,510
+we'll need approximately 720 3900 volts
+
+88
+0:04:00,510 --> 0:04:02,670
+of electricity luckily we have these
+
+89
+0:04:02,670 --> 0:04:04,319
+little high voltage transformers which
+
+90
+0:04:04,319 --> 0:04:06,750
+produce about 80,000 volts each there's
+
+91
+0:04:06,750 --> 0:04:09,209
+ten segments in the arc reactor so that
+
+92
+0:04:09,209 --> 0:04:11,310
+would be about eight hearts this might
+
+93
+0:04:11,310 --> 0:04:24,590
+actually work let's start assembling it
+
+94
+0:04:24,590 --> 0:04:29,470
+[Music]
+
+95
+0:04:29,470 --> 0:04:31,270
+they do need to be close together so I
+
+96
+0:04:31,270 --> 0:04:35,750
+might sicken up that divider wall yeah
+
+97
+0:04:35,750 --> 0:04:40,340
+[Music]
+
+98
+0:04:40,340 --> 0:04:43,350
+smells nice yeah I don't know what that
+
+99
+0:04:43,350 --> 0:04:49,350
+I think it might be acrylic but most
+
+100
+0:04:49,350 --> 0:04:51,380
+realistic arc reactor ever
+
+101
+0:04:51,380 --> 0:04:55,879
+[Music]
+
+102
+0:04:55,879 --> 0:05:00,469
+yeah so these wires you're not very sick
+
+103
+0:05:00,469 --> 0:05:01,999
+but like if they're next to each other
+
+104
+0:05:01,999 --> 0:05:04,339
+they don't arc as long as there's
+
+105
+0:05:04,339 --> 0:05:06,259
+something else there so I'm wondering
+
+106
+0:05:06,259 --> 0:05:08,509
+how thick the wires I need carrying the
+
+107
+0:05:08,509 --> 0:05:15,379
+high voltage near my body safely safe as
+
+108
+0:05:15,379 --> 0:05:16,819
+long as you don't become the path of
+
+109
+0:05:16,819 --> 0:05:21,590
+least resistance would be fine
+
+110
+0:05:21,590 --> 0:05:34,970
+[Music]
+
+111
+0:05:34,970 --> 0:05:45,830
+[Music]
+
+112
+0:05:45,830 --> 0:05:48,569
+[Music]
+
+113
+0:05:48,569 --> 0:05:50,469
+all right now that we have mostly
+
+114
+0:05:50,469 --> 0:05:51,879
+components assembled we're gonna have to
+
+115
+0:05:51,879 --> 0:05:54,490
+control them somehow I made a quick
+
+116
+0:05:54,490 --> 0:05:55,990
+block diagram to explain how the
+
+117
+0:05:55,990 --> 0:05:57,550
+circuits actually gonna work but
+
+118
+0:05:57,550 --> 0:05:59,110
+basically we're gonna use a relay bank
+
+119
+0:05:59,110 --> 0:06:00,789
+to control the outputs of each high
+
+120
+0:06:00,789 --> 0:06:04,360
+voltage module using Arduino the power
+
+121
+0:06:04,360 --> 0:06:05,649
+input is from the lithium polymer
+
+122
+0:06:05,649 --> 0:06:07,839
+battery now we actually have a more
+
+123
+0:06:07,839 --> 0:06:09,639
+detailed electronics diagram which you
+
+124
+0:06:09,639 --> 0:06:10,839
+can check out using the link in the
+
+125
+0:06:10,839 --> 0:06:12,699
+description below to visit our project
+
+126
+0:06:12,699 --> 0:06:14,080
+on maker dot io
+
+127
+0:06:14,080 --> 0:06:46,880
+[Music]
+
+128
+0:06:46,880 --> 0:06:51,170
+better he's connected l okay miss powers
+
+129
+0:06:51,170 --> 0:07:00,780
+are doing
+
+130
+0:07:00,780 --> 0:07:04,800
+ready for its first test to the most
+
+131
+0:07:04,800 --> 0:07:06,180
+realistic thing about this aircraft is
+
+132
+0:07:06,180 --> 0:07:07,650
+the number of wires coming off of it
+
+133
+0:07:07,650 --> 0:07:08,970
+because it was actually producing that
+
+134
+0:07:08,970 --> 0:07
+much electricity you'd need some serious
+
+135
+0:07 --> 0:07:13,980
+current carriers to get that energy some
+
+136
+0:07:13,980 --> 0:07:27,510
+are useful
+
+137
+0:07:27,510 --> 0:07:55,490
+[Music]
+
+138
+0:07:55,490 --> 0:09:06,650
+[Music]
+
+139
+0:09:06,650 --> 0:09:44,870
+[Music]
+
+140
+0:09:44,870 --> 0:09:52,980
+[Music]
+
+141
+0:09:52,980 --> 0:09:59,460
+[Music]
+
+142
+0:09:59,460 --> 0:10:15,220
+[Music]
+
+143
+0:10:15,220 --> 0:10:25,400
+[Music]
+
+144
+0:10:25,400 --> 0:10:48,930
+[Music]
+
+145
+0:10:48,930 --> 0:11:00,650
+[Music]
+
+146
+0:11:00,650 --> 0:11:11,889
+[Music]
+
+147
+0:11:11,889 --> 0:11:13,939
+all right so we've got the arc reactor
+
+148
+0:11:13,939 --> 0:11:15,799
+all set up and we have a clamp meter to
+
+149
+0:11:15,799 --> 0:11:17,209
+measure the current flowing through the
+
+150
+0:11:17,209 --> 0:11:26,760
+wires as we do a start-up sequence
+
+151
+0:11:26,760 --> 0:11:29,170
+all right so obviously I don't have a
+
+152
+0:11:29,170 --> 0:11:30,700
+hole in my chest so I can't actually
+
+153
+0:11:30,700 --> 0:11:33,430
+wear this arc reactor so I thought it'd
+
+154
+0:11:33,430 --> 0:11:34,690
+be nice to make a nice kind of like
+
+155
+0:11:34,690 --> 0:11:37,480
+display case that we can use for one
+
+156
+0:11:37,480 --> 0:11:39,070
+we're actually powering stuff using the
+
+157
+0:11:39,070 --> 0:11:54,230
+arc reactor
+
+158
+0:11:54,230 --> 0:12:00,640
+[Music]
+
+159
+0:12:00,640 --> 0:12:02,170
+all right so we've got the arc reactor
+
+160
+0:12:02,170 --> 0:12:03,970
+in its box now and we've actually got
+
+161
+0:12:03,970 --> 0:12:06,370
+the switches on the box so let's open it
+
+162
+0:12:06,370 --> 0:12:15,070
+up all right so main power is a switch
+
+163
+0:12:15,070 --> 0:12:18,880
+here and we'll try and do a startup
+
+164
+0:12:18,880 --> 0:12:39,280
+sequence
+
+165
+0:12:39,280 --> 0:12:41,540
+all right let's see what else is in
+
+166
+0:12:41,540 --> 0:12:52,870
+power
+
+167
+0:12:52,870 --> 0:12:55,160
+all right so we're here at the main
+
+168
+0:12:55,160 --> 0:12:56,720
+circuit breaker for my house and we're
+
+169
+0:12:56,720 --> 0:12:59,510
+gonna plug in the arc reactor all right
+
+170
+0:12:59,510 --> 0:13:01,790
+let's turn it on and see what happens
+
+171
+0:13:01,790 --> 0:13:04,870
+[Applause]
+
+172
+0:13:04,870 --> 0:13:06,950
+all right so these are the power meters
+
+173
+0:13:06,950 --> 0:13:09,079
+for the house and as you can see that's
+
+174
+0:13:09,079 --> 0:13:10,970
+how many kilowatt hours were using okay
+
+175
+0:13:10,970 --> 0:13:17,750
+let's reconnect it to the grid all right
+
+176
+0:13:17,750 --> 0:13:19,190
+so obviously it's not actually producing
+
+177
+0:13:19,190 --> 0:13:21,019
+enough power to do anything useful but
+
+178
+0:13:21,019 --> 0:13:22,970
+it certainly looks cool and sounds
+
+179
+0:13:22,970 --> 0:13:23,959
+terrifying
+
+180
+0:13:23,959 --> 0:13:25,519
+we'll be using it for some future gags
+
+181
+0:13:25,519 --> 0:13:27,079
+in upcoming videos where we use it to
+
+182
+0:13:27,079 --> 0:13:29,060
+actually power our projects one of our
+
+183
+0:13:29,060 --> 0:13:30,649
+goals here is to inspire people into
+
+184
+0:13:30,649 --> 0:13:32,300
+STEM fields to learn and create things
+
+185
+0:13:32,300 --> 0:13:34,399
+themselves we get tons of messages
+
+186
+0:13:34,399 --> 0:13:36,050
+asking how we learn to do this stuff and
+
+187
+0:13:36,050 --> 0:13:37,760
+the answer is simple I'm a problem
+
+188
+0:13:37,760 --> 0:13:39,769
+solver I'm not some kind of genius I
+
+189
+0:13:39,769 --> 0:13:41,089
+just like to learn and use those
+
+190
+0:13:41,089 --> 0:13:43,490
+concepts to make cool stuff I learned by
+
+191
+0:13:43,490 --> 0:13:44,839
+doing and that's exactly what brilliant
+
+192
+0:13:44,839 --> 0:13:47,180
+org allows you to do brilliant
+
+193
+0:13:47,180 --> 0:13:48,620
+org is a problem-solving site that helps
+
+194
+0:13:48,620 --> 0:13:50,720
+you think like an engineer by guiding
+
+195
+0:13:50,720 --> 0:13:51,950
+you through the problems that bring you
+
+196
+0:13:51,950 --> 0:13:53,630
+from knowing nothing to having a deep
+
+197
+0:13:53,630 --> 0:13:55,550
+understanding of the topic if you'd like
+
+198
+0:13:55,550 --> 0:13:56,930
+to learn more about problem-solving and
+
+199
+0:13:56,930 --> 0:13:58,430
+engineering so you can build stuff like
+
+200
+0:13:58,430 --> 0:14:00,260
+this yourself and support a channel at
+
+201
+0:14:00,260 --> 0:14:02,120
+the same time go to brilliant org slash
+
+202
+0:14:02,120 --> 0:14:03,949
+hack Smith and sign up for free the
+
+203
+0:14:03,949 --> 0:14:05,480
+first 200 people that go to that link
+
+204
+0:14:05,480 --> 0:14:07,250
+will receive 20% off their annual
+
+205
+0:14:07,250 --> 0:14:10,279
+premium subscription well thanks for
+
+206
+0:14:10,279 --> 0:14:11,839
+watching hack Smith industries now has
+
+207
+0:14:11,839 --> 0:14:13,610
+their very own arc reactor leave a
+
+208
+0:14:13,610 --> 0:14:14,899
+comment below to tell us what other
+
+209
+0:14:14,899 --> 0:14:16,750
+comic book tech we should recreate
+
+210
+0:14:16,750 --> 0:14:26,610
+[Music]
+
+211
+0:14:26,610 --> 0:14:29,690
+the lien is not going to touch it
+

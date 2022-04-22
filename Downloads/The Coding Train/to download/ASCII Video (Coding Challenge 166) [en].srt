@@ -1,0 +1,2288 @@
+1
+0:00:01,439 --> 0:00:03,120
+hello
+
+2
+0:00:03,120 --> 0:00:04,880
+choo-choo
+
+3
+0:00:04,880 --> 0:00:06,240
+welcome to another coding challenge
+
+4
+0:00:06,240 --> 0:00:07,600
+video i am i want to let you know
+
+5
+0:00:07,600 --> 0:00:09,120
+something before i get started thinking
+
+6
+0:00:09,120 --> 0:00:10,480
+about changing the name of the coding
+
+7
+0:00:10,480 --> 0:00:12,320
+challenges to me the idea of a challenge
+
+8
+0:00:12,320 --> 0:00:14,320
+is something you have to beat
+
+9
+0:00:14,320 --> 0:00:16,480
+or like defeat i want something more
+
+10
+0:00:16,480 --> 0:00:18,800
+exploratory and collaborative and train
+
+11
+0:00:18,800 --> 0:00:20,560
+themed like a maybe a journey but i
+
+12
+0:00:20,560 --> 0:00:21,840
+don't know if that works if you got any
+
+13
+0:00:21,840 --> 0:00:24,160
+ideas let me know in the comments we'd
+
+14
+0:00:24,160 --> 0:00:26,560
+love to hear what should these be called
+
+15
+0:00:26,560 --> 0:00:29,679
+going forward but today boy do i have an
+
+16
+0:00:29,679 --> 0:00:31,760
+exciting one for you it is one
+
+17
+0:00:31,760 --> 0:00:34,320
+that i made during a live stream uh
+
+18
+0:00:34,320 --> 0:00:36,640
+about a year ago translating an image's
+
+19
+0:00:36,640 --> 0:00:39,040
+pixels to ascii characters like you're
+
+20
+0:00:39,040 --> 0:00:41,040
+seeing right here so i want to do this
+
+21
+0:00:41,040 --> 0:00:43,280
+again i bear i have no memory of doing
+
+22
+0:00:43,280 --> 0:00:44,960
+this a year ago so i'm kind of starting
+
+23
+0:00:44,960 --> 0:00:46,960
+fresh we'll see if the result i get is
+
+24
+0:00:46,960 --> 0:00:48,960
+the same as what i have here and then
+
+25
+0:00:48,960 --> 0:00:50,480
+hopefully you will make your own
+
+26
+0:00:50,480 --> 0:00:52,719
+creative version of this and share it
+
+27
+0:00:52,719 --> 0:00
+with me
+
+28
+0:00 --> 0:00:55,520
+on the coding train website or in the
+
+29
+0:00:55,520 --> 0:00:57,360
+comments or on social media or all the
+
+30
+0:00:57,360 --> 0:00:58,960
+ways people share things with each other
+
+31
+0:00:58,960 --> 0:01:01,440
+let's get started first i would like to
+
+32
+0:01:01,440 --> 0:01:02,879
+thank
+
+33
+0:01:02,879 --> 0:01:08,240
+ert
+
+34
+0:01:08,240 --> 0:01:11,040
+this is a wonderful example i believe of
+
+35
+0:01:11,040 --> 0:01:13,840
+some shader code to render
+
+36
+0:01:13,840 --> 0:01:16,880
+some beautiful ascii art and it all
+
+37
+0:01:16,880 --> 0:01:19,600
+relies entirely on this
+
+38
+0:01:19,600 --> 0:01:22,560
+array of characters this array of
+
+39
+0:01:22,560 --> 0:01:25,520
+characters is ordered from
+
+40
+0:01:25,520 --> 0:01:28,960
+either brightest to darkest or darkest
+
+41
+0:01:28,960 --> 0:01:30,960
+to brightest depending on what color
+
+42
+0:01:30,960 --> 0:01:32,320
+you're sort of rendering the background
+
+43
+0:01:32,320 --> 0:01:35,280
+or the character so i believe that what
+
+44
+0:01:35,280 --> 0:01:38,240
+i can do oh let's use the whiteboard so
+
+45
+0:01:38,240 --> 0:01:39,759
+the idea is that i have an image and
+
+46
+0:01:39,759 --> 0:01:41,840
+maybe i'll start like i did a year ago
+
+47
+0:01:41,840 --> 0:01:48,720
+with an image of a kitten
+
+48
+0:01:48,720 --> 0:01:52,159
+now every pixel of an image has an rgb
+
+49
+0:01:52,159 --> 0:01
+value
+
+50
+0:01 --> 0:01:56,079
+typically the rgb values are stored as
+
+51
+0:01:56,079 --> 0:02:00,560
+numbers between 0 and 255.
+
+52
+0:02:00,560 --> 0:02:03,119
+if i want to get a brightness value for
+
+53
+0:02:03,119 --> 0:02:05,840
+a given pixel the higher the number the
+
+54
+0:02:05,840 --> 0:02:07,920
+more the color there is the more red the
+
+55
+0:02:07,920 --> 0:02:10,399
+more green the more blue if all of those
+
+56
+0:02:10,399 --> 0:02:12,879
+values are all the way up to 255 we've
+
+57
+0:02:12,879 --> 0:02:15,520
+got white so the higher the numbers the
+
+58
+0:02:15,520 --> 0:02:17,680
+brighter the pixel if i wanted to have
+
+59
+0:02:17,680 --> 0:02:19,520
+one number to represent the brightness
+
+60
+0:02:19,520 --> 0:02:21,360
+of a given pixel the sort of grayscale
+
+61
+0:02:21,360 --> 0:02:23,520
+value of that pixel one way i could do
+
+62
+0:02:23,520 --> 0:02:28,560
+that is by averaging these three values
+
+63
+0:02:28,560 --> 0:02:30,160
+now there are more sophisticated
+
+64
+0:02:30,160 --> 0:02:32,640
+algorithms for taking an rgb value and
+
+65
+0:02:32,640 --> 0:02:34,640
+translating it into a black and white
+
+66
+0:02:34,640 --> 0:02:37,599
+image a brightness value
+
+67
+0:02:37,599 --> 0:02:39,280
+maybe i'll investigate that as i get
+
+68
+0:02:39,280 --> 0:02:40,800
+further along with this project but i
+
+69
+0:02:40,800 --> 0:02:42,640
+think i'm going to get a good enough
+
+70
+0:02:42,640 --> 0:02:45,599
+effect just with the average so let's
+
+71
+0:02:45,599 --> 0:02:47,920
+say that any one of these pixels let's
+
+72
+0:02:47,920 --> 0:02:49,200
+pick this one
+
+73
+0:02:49,200 --> 0:02:50,959
+let's say that its brightness value
+
+74
+0:02:50,959 --> 0:02:52,160
+happens to be
+
+75
+0:02:52,160 --> 0:02:55,040
+137
+
+76
+0:02:55,040 --> 0:02:57,040
+now if you'll come with me back over to
+
+77
+0:02:57,040 --> 0:02:59,920
+my computer screen
+
+78
+0:02:59,920 --> 0:03:02,319
+let me remind you again of this string
+
+79
+0:03:02,319 --> 0:03:04,640
+of characters called density do you
+
+80
+0:03:04,640 --> 0:03:06,560
+think is there any chance i could write
+
+81
+0:03:06,560 --> 0:03:09,440
+out all of those in the same order on my
+
+82
+0:03:09,440 --> 0:03:11,440
+whiteboard over there almost none but
+
+83
+0:03:11,440 --> 0:03:18,159
+i'm gonna try to do it anyway
+
+84
+0:03:18,159 --> 0:03:22,080
+mark estimation abc oh no i ran out of
+
+85
+0:03:22,080 --> 0:03:24,799
+room i did not plan this well
+
+86
+0:03:24,799 --> 0:03:26,560
+close enough that keeps going maybe i'll
+
+87
+0:03:26,560 --> 0:03
+maybe it'll be fixed who knows i don't
+
+88
+0:03 --> 0:03:29,120
+know what you're seeing because it's
+
+89
+0:03:29,120 --> 0:03:30,959
+like a magic thing happens after i do
+
+90
+0:03:30,959 --> 0:03:33,360
+this it's amazing if we're looking at
+
+91
+0:03:33,360 --> 0:03:35,599
+this like first of all there are so many
+
+92
+0:03:35,599 --> 0:03:38,159
+possible one beautiful abstract
+
+93
+0:03:38,159 --> 0:03:40,720
+generative kinds of images we could make
+
+94
+0:03:40,720 --> 0:03:43,280
+just using these ascii characters so i
+
+95
+0:03:43,280 --> 0:03:44,959
+would encourage you to go in that
+
+96
+0:03:44,959 --> 0:03:46,400
+direction but i'm going to go in a
+
+97
+0:03:46,400 --> 0:03:48,400
+different direction which is to say the
+
+98
+0:03:48,400 --> 0:03:51,440
+denser the character the more pixels it
+
+99
+0:03:51,440 --> 0:03:54,080
+uses i'm going to match that to a bright
+
+100
+0:03:54,080 --> 0:03:55,120
+pixel
+
+101
+0:03:55,120 --> 0:03:57,360
+so essentially i could create some sort
+
+102
+0:03:57,360 --> 0:03:58,640
+of mapping
+
+103
+0:03:58,640 --> 0:04:01,760
+where if the color is 255 the brightness
+
+104
+0:04:01,760 --> 0:04:04,159
+value then i would render this
+
+105
+0:04:04,159 --> 0:04:06,480
+particular character if the brightness
+
+106
+0:04:06,480 --> 0:04:08,959
+value were zero i would render whatever
+
+107
+0:04:08,959 --> 0:04:11,439
+character i didn't get to down here and
+
+108
+0:04:11,439 --> 0:04:14,400
+then 137 would be appropriately
+
+109
+0:04:14,400 --> 0:04:16,720
+somewhere here so like 127 would be
+
+110
+0:04:16,720 --> 0:04:19,840
+exactly in the middle so maybe 137 this
+
+111
+0:04:19,840 --> 0:04:22,400
+is like highly approximate might be this
+
+112
+0:04:22,400 --> 0:04:25,199
+character would get drawn over here to
+
+113
+0:04:25,199 --> 0:04:28,479
+represent you know the uh ear of this
+
+114
+0:04:28,479 --> 0:04:31,840
+particular cat who is now sadly in jail
+
+115
+0:04:31,840 --> 0:04:33,600
+oh that poor cousin let's play we got to
+
+116
+0:04:33,600 --> 0:04:35,759
+let the cat out cat go free
+
+117
+0:04:35,759 --> 0:04:36,639
+run
+
+118
+0:04:36,639 --> 0:04:38,479
+like the wind
+
+119
+0:04:38,479 --> 0:04:41,040
+go so the first thing i'm going to do is
+
+120
+0:04:41,040 --> 0:04:43,919
+take this string of characters and bring
+
+121
+0:04:43,919 --> 0:04:47,280
+it into my own p5.js sketch
+
+122
+0:04:47,280 --> 0:04:48,720
+now in case for some reason this is the
+
+123
+0:04:48,720 --> 0:04:49,759
+first time you're ever watching the
+
+124
+0:04:49,759 --> 0:04:52,080
+coding train this is p5.js a javascript
+
+125
+0:04:52,080 --> 0:04:53,199
+library for
+
+126
+0:04:53,199 --> 0:04:55,040
+creative coding images animations and
+
+127
+0:04:55,040 --> 0:04:57,040
+all sorts of wonderful beautiful stuff
+
+128
+0:04:57,040 --> 0:04:59,440
+find out more at p5js.org
+
+129
+0:04:59,440 --> 0:05:00,800
+i also want to point out that i'm trying
+
+130
+0:05:00,800 --> 0:05:02,400
+to get in the habit a little bit more
+
+131
+0:05:02,400 --> 0:05:04,479
+about when i declare a variable that i
+
+132
+0:05:04,479 --> 0:05:06,800
+know isn't going to ever change i'm
+
+133
+0:05:06,800 --> 0:05:09,440
+going to use const instead of let oh i
+
+134
+0:05:09,440 --> 0:05:12,160
+forgot to talk about the timer
+
+135
+0:05:12,160 --> 0:05:13,680
+has there been a timer going this whole
+
+136
+0:05:13,680 --> 0:05:16,720
+time i hope so good it's usually now
+
+137
+0:05:16,720 --> 0:05:18,400
+over here that's where it is it should
+
+138
+0:05:18,400 --> 0:05:19,600
+be there how long i've been doing this
+
+139
+0:05:19,600 --> 0:05:21,440
+for like seven and a half hours even
+
+140
+0:05:21,440 --> 0:05:22,400
+though you've only been watching this
+
+141
+0:05:22,400 --> 0:05:24,400
+for 10 minutes or whatever it is right
+
+142
+0:05:24,400 --> 0:05:26,880
+now before i start trying to load a
+
+143
+0:05:26,880 --> 0:05:29,919
+video into my p5 just sketch i have got
+
+144
+0:05:29,919 --> 0:05:33,440
+this nice little photo of gloria pickle
+
+145
+0:05:33,440 --> 0:05:35,759
+dog and i quickly just removed the
+
+146
+0:05:35,759 --> 0:05:37,440
+background from the image in photoshop
+
+147
+0:05:37,440 --> 0:05:39,120
+which i think will make the ascii
+
+148
+0:05:39,120 --> 0:05:41,440
+version of this image pop a bit more
+
+149
+0:05:41,440 --> 0:05:43,039
+in terms of what i'm about to try to do
+
+150
+0:05:43,039 --> 0:05:46,639
+so um i uploaded a very small 48 by 48
+
+151
+0:05:46,639 --> 0:05:50,400
+pixel size image to this p5 uh project
+
+152
+0:05:50,400 --> 0:05
+i've got a separate video about how to
+
+153
+0:05 --> 0:05:53,520
+upload files to the editor if that's
+
+154
+0:05:53,520 --> 0:05:55,120
+something that you haven't done before
+
+155
+0:05:55,120 --> 0:05:57,280
+and then all i need to do is add a
+
+156
+0:05:57,280 --> 0:06:04,560
+preload function to load the image
+
+157
+0:06:04,560 --> 0:06:06,479
+and we can see that gloria has been
+
+158
+0:06:06,479 --> 0:06:08,479
+loaded it's kind of fuzzy it's blurry
+
+159
+0:06:08,479 --> 0:06
+because i'm using this very low
+
+160
+0:06 --> 0:06:11,919
+resolution version that's going to make
+
+161
+0:06:11,919 --> 0:06:14,080
+translating it over to ascii easier of
+
+162
+0:06:14,080 --> 0:06
+course i could work with altering the
+
+163
+0:06 --> 0:06:18,400
+scale within the code itself but i think
+
+164
+0:06:18,400 --> 0:06:20,240
+the demonstrations could be much easier
+
+165
+0:06:20,240 --> 0:06
+if it is a one-to-one napping each pixel
+
+166
+0:06 --> 0:06:26,560
+gets one character
+
+167
+0:06:26,560 --> 0:06:29,120
+the next step that i need to do is write
+
+168
+0:06:29,120 --> 0:06:31,759
+an algorithm to walk through and look at
+
+169
+0:06:31,759 --> 0:06
+the brightness of every single pixel
+
+170
+0:06 --> 0:06:45,520
+within this image
+
+171
+0:06:45,520 --> 0:06:48,720
+now this is probably a block of code
+
+172
+0:06:48,720 --> 0:06:51,120
+that i have typed in countless numbers
+
+173
+0:06:51,120 --> 0:06:53,680
+of videos and explained it over and over
+
+174
+0:06:53,680 --> 0:06:55,759
+again i do have an entire video all
+
+175
+0:06:55,759 --> 0:06:59,199
+about how the pixel array works in p5.js
+
+176
+0:06:59,199 --> 0:07:00,720
+so i would look at that if you want all
+
+177
+0:07:00,720 --> 0:07:02,160
+of the details but just to give you the
+
+178
+0:07:02,160 --> 0:07:04,479
+quick high level points every single
+
+179
+0:07:04,479 --> 0:07:09,759
+pixel has an rgb value as well as an
+
+180
+0:07:09,759 --> 0:07:12,080
+alpha value the alpha dealing with
+
+181
+0:07:12,080 --> 0:07:14,960
+transparency so i am not worrying about
+
+182
+0:07:14,960 --> 0:07:16,479
+transparency for this particular
+
+183
+0:07:16,479 --> 0:07:18,560
+application but i do have to account for
+
+184
+0:07:18,560 --> 0:07:21,280
+that within the pixel array every single
+
+185
+0:07:21,280 --> 0:07:25,280
+pixel we can think of as having a number
+
+186
+0:07:25,280 --> 0:07:32,880
+zero through the end of the image
+
+187
+0:07:32,880 --> 0:07:35,360
+so in this case with this five by five
+
+188
+0:07:35,360 --> 0:07:39,039
+image there's 25 pixels but since every
+
+189
+0:07:39,039 --> 0:07:40,479
+single pixel
+
+190
+0:07:40,479 --> 0:07:43,680
+has four numbers associated with it the
+
+191
+0:07:43,680 --> 0:07:45,440
+actual array
+
+192
+0:07:45,440 --> 0:07:49,039
+storing all the information is rgba
+
+193
+0:07:49,039 --> 0:07:50,800
+for pixel 0
+
+194
+0:07:50,800 --> 0:07:52,960
+then rgba
+
+195
+0:07:52,960 --> 0:07:57,360
+for pixel 1 then rgba for pixel 2 etc
+
+196
+0:07:57,360 --> 0:08:00,639
+etc so that translates back to
+
+197
+0:08:00,639 --> 0:08:02,879
+this really nice formula where i can say
+
+198
+0:08:02,879 --> 0:08
+the column plus the row times the width
+
+199
+0:08 --> 0:08:09,599
+times 4 gives me the red value for any
+
+200
+0:08:09,599 --> 0:08:12,240
+given column and row pixel and then i
+
+201
+0:08:12,240 --> 0:08:14,319
+could get the green value by going one
+
+202
+0:08:14,319 --> 0:08:16,720
+spot later and the red the blue value
+
+203
+0:08:16,720 --> 0:08:19,280
+sorry by going two spots later so i kind
+
+204
+0:08:19,280 --> 0:08:21,520
+of just explained the whole thing uh it
+
+205
+0:08:21,520 --> 0:08:23,120
+might not have total made sense to you
+
+206
+0:08:23,120 --> 0:08:24,560
+what i would suggest if this is
+
+207
+0:08:24,560 --> 0:08:26,319
+confusing to you go find a piece of
+
+208
+0:08:26,319 --> 0:08:28,400
+graph paper or any regular paper make
+
+209
+0:08:28,400 --> 0:08:30,479
+your own little five by five image and
+
+210
+0:08:30,479 --> 0:08:32,479
+just try numbering everything and trying
+
+211
+0:08:32,479 --> 0:08:34,479
+things manually that's really the way i
+
+212
+0:08:34,479 --> 0:08:36,240
+learned this stuff and kind of was able
+
+213
+0:08:36,240 --> 0:08:37,599
+to wrap my head around it and you can
+
+214
+0:08:37,599 --> 0:08:39,120
+also check out that other video where i
+
+215
+0:08:39,120 --> 0:08:40,719
+explain it in more detail just to make
+
+216
+0:08:40,719 --> 0:08:42,399
+sure this worked let me now try to draw
+
+217
+0:08:42,399 --> 0:08:44,720
+every pixel as a square so first thing i
+
+218
+0:08:44,720 --> 0:08:46,640
+need to do is figure out how what is the
+
+219
+0:08:46,640 --> 0:08:49,519
+size of the squares
+
+220
+0:08:49,519 --> 0:08:51,120
+for the moment i'm still working on this
+
+221
+0:08:51,120 --> 0:08:52,720
+for canvas i'm going to try to switch
+
+222
+0:08:52,720 --> 0:08:54,160
+over to making these dom elements at
+
+223
+0:08:54,160 --> 0:08:55,440
+some point but i could just take the
+
+224
+0:08:55,440 --> 0:08:57,600
+width of the canvas divided by the width
+
+225
+0:08:57,600 --> 0:08:59,120
+of the actual image to know what that
+
+226
+0:08:59,120 --> 0:09:04,399
+ratio is
+
+227
+0:09:04,399 --> 0:09:05,920
+what did i do wrong
+
+228
+0:09:05,920 --> 0:09:07,519
+what did i do wrong here i messed
+
+229
+0:09:07,519 --> 0:09:08,720
+something up
+
+230
+0:09:08,720 --> 0:09:12,720
+i guess i need to call load pixels
+
+231
+0:09:12,720 --> 0:09:15,680
+ah i need to call load pixels so if i'm
+
+232
+0:09:15,680 --> 0:09:17,040
+going to use the pixel array of that
+
+233
+0:09:17,040 --> 0:09:19,920
+image i've gotta alert p5 to it and call
+
+234
+0:09:19,920 --> 0:09:21,920
+load pixels so there you can see
+
+235
+0:09:21,920 --> 0:09:24,640
+pixelated gloria i think for changing
+
+236
+0:09:24,640 --> 0:09:26,800
+this into ascii having an even lower
+
+237
+0:09:26,800 --> 0:09:28,959
+resolution image of gloria is going to
+
+238
+0:09:28,959 --> 0:09:30,720
+improve things so i quickly made one
+
+239
+0:09:30,720 --> 0:09:33,040
+that's just 20 by 20 and uploaded that
+
+240
+0:09:33,040 --> 0:09:34,959
+and i'm using that instead now now again
+
+241
+0:09:34,959 --> 0:09:36,320
+there's so many visualization
+
+242
+0:09:36,320 --> 0:09:38,560
+possibilities we could do here with rgb
+
+243
+0:09:38,560 --> 0:09:40,560
+color with multiple images with varying
+
+244
+0:09:40,560 --> 0:09:42,320
+degrees of resolution
+
+245
+0:09:42,320 --> 0:09:44,800
+i'm not gonna go down all of those roads
+
+246
+0:09:44,800 --> 0:09:46,560
+it's a train it's a train it's not a car
+
+247
+0:09:46,560 --> 0:09:48,480
+we're not driving on a road it's a train
+
+248
+0:09:48,480 --> 0:09:50,640
+the track the train track i'm gonna
+
+249
+0:09:50,640 --> 0:09:53,440
+follow is towards ascii so let's now
+
+250
+0:09:53,440 --> 0:09:55,279
+look at the brightness value of each of
+
+251
+0:09:55,279 --> 0:09:57,760
+these just by doing the average of rgb
+
+252
+0:09:57,760 --> 0:09:59,600
+now there is a p5.js function called
+
+253
+0:09:59,600 --> 0:10:01,120
+brightness we could try that and see if
+
+254
+0:10:01,120 --> 0:10:03,120
+we get a different result um this is
+
+255
+0:10:03,120 --> 0:10:04,640
+actually taking the color value and
+
+256
+0:10:04,640 --> 0:10:06,560
+converting it to hue saturation
+
+257
+0:10:06,560 --> 0:10
+brightness but just to keep things
+
+258
+0:10 --> 0:10:09,440
+simple for me just going to do the
+
+259
+0:10:09,440 --> 0:10:12,959
+average
+
+260
+0:10:12,959 --> 0:10:15,440
+now we can see a grayscale version of
+
+261
+0:10:15,440 --> 0:10:18,959
+gloria now to add text so what if i were
+
+262
+0:10:18,959 --> 0:10:21,200
+instead of drawing a square we're just
+
+263
+0:10:21,200 --> 0:10:23,040
+to draw an individual character just the
+
+264
+0:10:23,040 --> 0:10:27,200
+character g for gloria
+
+265
+0:10:27,200 --> 0:10:30,079
+let's not draw the image anymore
+
+266
+0:10:30,079 --> 0:10:32,480
+let's make the font the size of the
+
+267
+0:10:32,480 --> 0:10:34,079
+square
+
+268
+0:10:34,079 --> 0:10:36,560
+and then i will need to shift everything
+
+269
+0:10:36,560 --> 0:10:38,480
+down because i want the letter to appear
+
+270
+0:10:38,480 --> 0:10:43,360
+in the center of the square
+
+271
+0:10:43,360 --> 0:10:45,120
+i think this would probably more be much
+
+272
+0:10:45,120 --> 0:10:47,680
+more clear if i use the black background
+
+273
+0:10:47,680 --> 0:10:49,920
+and we could kind of see gloria peeking
+
+274
+0:10:49,920 --> 0:10:52,079
+out there from all of those g's but
+
+275
+0:10:52,079 --> 0:10:54,160
+again this is not what i want to do this
+
+276
+0:10:54,160 --> 0:10:55,440
+is something i could do and there's
+
+277
+0:10:55,440 --> 0:10:57,360
+plenty of possible outcomes maybe i
+
+278
+0:10:57,360 --> 0:10:59,120
+could start writing some poetry or
+
+279
+0:10:59,120 --> 0:11:01,120
+having the text change or pulling from a
+
+280
+0:11:01,120 --> 0:11:03,519
+live data feed so many things but
+
+281
+0:11:03,519 --> 0:11:06,160
+instead i want to take the brightness
+
+282
+0:11:06,160 --> 0:11:08,160
+value and map it to one of these
+
+283
+0:11:08,160 --> 0:11:12,079
+characters in my density string
+
+284
+0:11:12,079 --> 0:11:14,399
+so i can get the length of the string
+
+285
+0:11:14,399 --> 0:11:16,320
+so now i need the mapping to go from
+
+286
+0:11:16,320 --> 0:11
+zero to that length or length minus one
+
+287
+0:11 --> 0:11:25,120
+so that character index is
+
+288
+0:11:25,120 --> 0:11:27,120
+take the brightness value which has a
+
+289
+0:11:27,120 --> 0:11:30,800
+range between 0 and 255 and map that to
+
+290
+0:11:30,800 --> 0:11:32,880
+some number between 0 and the length of
+
+291
+0:11:32,880 --> 0:11:35,279
+the string ah but this is going to give
+
+292
+0:11:35,279 --> 0:11:38,120
+me interim values like character
+
+293
+0:11:38,120 --> 0:11:41,120
+3.1759 it's like kind of like pi but not
+
+294
+0:11:41,120 --> 0:11:42,399
+i don't know why i picked that out of my
+
+295
+0:11:42,399 --> 0:11:45,279
+head so i need to add the floor function
+
+296
+0:11:45,279 --> 0:11:47,200
+to take the decimal off so i'm only
+
+297
+0:11:47,200 --> 0:11:49,440
+getting the index to a particular value
+
+298
+0:11:49,440 --> 0:11:52,880
+0 1 2 3.
+
+299
+0:11:52,880 --> 0:11:55,920
+now instead of drawing g i can just draw
+
+300
+0:11:55,920 --> 0:11:59,519
+that particular character
+
+301
+0:11:59,519 --> 0:12:01,519
+and the point of this is for the
+
+302
+0:12:01,519 --> 0:12:05,040
+brightness to come not from me setting
+
+303
+0:12:05,040 --> 0:12:06,959
+the color of that character i'm drawing
+
+304
+0:12:06,959 --> 0:12:08,800
+but from the contours the amount of
+
+305
+0:12:08,800 --> 0:12:10,560
+pixels that shape of that character
+
+306
+0:12:10,560 --> 0:12:13,440
+itself so now the fill shouldn't be tied
+
+307
+0:12:13,440 --> 0:12:16,240
+to brightness it should just be 255 for
+
+308
+0:12:16,240 --> 0:12:19,360
+all of them now do you see
+
+309
+0:12:19,360 --> 0:12:22,079
+do we see gloria in there not so much
+
+310
+0:12:22,079 --> 0:12:24,079
+just yet let's see if we can fiddle with
+
+311
+0:12:24,079 --> 0:12:26,880
+this a bit one thing is this is inverted
+
+312
+0:12:26,880 --> 0:12:29,360
+right so remember the brightest
+
+313
+0:12:29,360 --> 0:12:31,680
+characters are at the front the
+
+314
+0:12:31,680 --> 0:12:33,360
+beginning of the string and the darker
+
+315
+0:12:33,360 --> 0:12:35,519
+ones are at the end so i want to reverse
+
+316
+0:12:35,519 --> 0:12:38,560
+this to from length down to zero
+
+317
+0:12:38,560 --> 0:12:41,279
+there now that looks quite a bit more
+
+318
+0:12:41,279 --> 0:12:43,760
+like gloria i think there's an issue
+
+319
+0:12:43,760 --> 0:12:45,680
+here with the spacing between the
+
+320
+0:12:45,680 --> 0:12:48,240
+characters maybe i want to have the the
+
+321
+0:12:48,240 --> 0:12
+spacing between the characters to be
+
+322
+0:12 --> 0:12:51,120
+less
+
+323
+0:12:51,120 --> 0:12:52,320
+i want to arrange them in a different
+
+324
+0:12:52,320 --> 0:12:53,760
+way i want to use a different font a
+
+325
+0:12:53,760 --> 0:12:55,120
+different scale
+
+326
+0:12:55,120 --> 0:12:57,440
+but i think that this is going to be
+
+327
+0:12:57,440 --> 0:13:00,079
+more effective to play with by changing
+
+328
+0:13:00,079 --> 0:13:03,519
+this over from canvas to actual dom
+
+329
+0:13:03,519 --> 0:13:06,160
+elements meaning i'm going to render the
+
+330
+0:13:06,160 --> 0:13:08,800
+text on the web page itself rather than
+
+331
+0:13:08,800 --> 0:13:12,079
+draw the pixels for text into a image a
+
+332
+0:13:12,079 --> 0:13:14,320
+canvas image both have value depending
+
+333
+0:13:14,320 --> 0:13:15,680
+on what application you might want to
+
+334
+0:13:15,680 --> 0:13:18,399
+use this for but i'm just curious to see
+
+335
+0:13:18,399 --> 0:13:20,320
+since i'm in the browser i could
+
+336
+0:13:20,320 --> 0:13:23,120
+actually just copy paste my ascii art
+
+337
+0:13:23,120 --> 0:13:24,639
+and put it into somewhere else that
+
+338
+0:13:24,639 --> 0:13:26,240
+would be kind of fun to do i'm going to
+
+339
+0:13:26,240 --> 0:13:28,959
+take a big leap of faith now and get rid
+
+340
+0:13:28,959 --> 0:13:33,600
+of create canvas and type in no canvas
+
+341
+0:13:33,600 --> 0:13:36,320
+i'm also going to remove the draw loop
+
+342
+0:13:36,320 --> 0:13
+because i'm just rendering a static
+
+343
+0:13 --> 0:13:40,079
+image now of course once i add video in
+
+344
+0:13:40,079 --> 0:13:42,959
+a moment you know at about 17 hours into
+
+345
+0:13:42,959 --> 0:13:44,560
+this video
+
+346
+0:13:44,560 --> 0:13:46,639
+then i'll need to put the draw loop or
+
+347
+0:13:46,639 --> 0:13:49,120
+some type of uh animation back in but
+
+348
+0:13:49,120 --> 0:13:50,800
+right now i'm going to remove that one
+
+349
+0:13:50,800 --> 0:13:53,120
+thing i'm curious about actually is can
+
+350
+0:13:53,120 --> 0:13:55,440
+i get gloria to show up just in the
+
+351
+0:13:55,440 --> 0:13:56,560
+console
+
+352
+0:13:56,560 --> 0:13:59,519
+right because ultimately what i'm doing
+
+353
+0:13:59,519 --> 0:14:01,920
+is for every row now i need to do the
+
+354
+0:14:01,920 --> 0:14:04,720
+rows and i just realized that my
+
+355
+0:14:04,720 --> 0:14:07,440
+algorithm is in reverse because i'm
+
+356
+0:14:07,440 --> 0:14:09,120
+taking for every
+
+357
+0:14:09,120 --> 0:14:11,360
+column no i need i need to do all of the
+
+358
+0:14:11,360 --> 0:14:13,600
+columns in other words
+
+359
+0:14:13,600 --> 0:14:14,880
+currently the way i've written those
+
+360
+0:14:14,880 --> 0:14:17,040
+nested loops i'm going to this pixel
+
+361
+0:14:17,040 --> 0:14:18,639
+then this pixel and this pixel and this
+
+362
+0:14:18,639 --> 0:14:20,560
+pixel and this pixel then back up to
+
+363
+0:14:20,560 --> 0:14:23,920
+here and what i want to do instead is go
+
+364
+0:14:23,920 --> 0:14:25,600
+through all of the columns then down to
+
+365
+0:14:25,600 --> 0:14:27,120
+the next row so i think i could just
+
+366
+0:14:27,120 --> 0:14:28,839
+flip those two lines of
+
+367
+0:14:28,839 --> 0:14:31,600
+code and then i can accumulate all of
+
+368
+0:14:31,600 --> 0:14
+the characters into a string for each
+
+369
+0:14 --> 0:14:35,519
+row
+
+370
+0:14:35,519 --> 0:14:41,519
+there's no concept of drawing now
+
+371
+0:14:41,519 --> 0:14:44,240
+just that row of characters and i
+
+372
+0:14:44,240 --> 0:14:46,079
+believe then i should be able to just
+
+373
+0:14:46,079 --> 0:14:47,360
+say
+
+374
+0:14:47,360 --> 0:14:49,760
+console log row
+
+375
+0:14:49,760 --> 0:14:53,199
+run the sketch
+
+376
+0:14:53,199 --> 0:14:55,920
+that's kind of a squashed gloria right
+
+377
+0:14:55,920 --> 0:14:57,760
+stretch it out can we like stretch out
+
+378
+0:14:57,760 --> 0:14:59,760
+in post somehow just to like see it for
+
+379
+0:14:59,760 --> 0:15:02,320
+a moment so the reason it's squashed is
+
+380
+0:15:02,320 --> 0:15:05,199
+because each pixel takes up the same
+
+381
+0:15:05,199 --> 0:15:07,519
+amount of space horizontally and
+
+382
+0:15:07,519 --> 0:15:09,120
+vertically but
+
+383
+0:15:09,120 --> 0:15:12,240
+these particular pixels are spread out
+
+384
+0:15:12,240 --> 0:15:14,079
+there's more spacing between each line
+
+385
+0:15:14,079 --> 0:15:15,920
+than there is between each character so
+
+386
+0:15:15,920 --> 0:15:17,360
+i could have more control over
+
+387
+0:15:17,360 --> 0:15:19,600
+manipulating that by rendering my own
+
+388
+0:15:19,600 --> 0:15:22,959
+text into the browser page
+
+389
+0:15:22,959 --> 0:15:25,040
+now i can't see it because i've got a
+
+390
+0:15:25,040 --> 0:15:26,399
+dark gray background
+
+391
+0:15:26,399 --> 0:15
+and very small characters that are black
+
+392
+0:15 --> 0:15:30,959
+text so i can add some code into the css
+
+393
+0:15:30,959 --> 0:15:33,120
+file to change the background color set
+
+394
+0:15:33,120 --> 0:15:38,880
+the font and make the font larger
+
+395
+0:15:38,880 --> 0:15:41,199
+now if you don't know css good we're in
+
+396
+0:15:41,199 --> 0:15:43,839
+the same boat neither do i but i know
+
+397
+0:15:43,839 --> 0:15:45,440
+enough to kind of make things work when
+
+398
+0:15:45,440 --> 0:15:47,279
+i need to and i do have a video tutorial
+
+399
+0:15:47,279 --> 0:15:49,440
+a bit about the basics of css that you
+
+400
+0:15:49,440 --> 0:15:51,360
+could refer to one thing that's kind of
+
+401
+0:15:51,360 --> 0:15:53,040
+critical here that i haven't addressed
+
+402
+0:15:53,040 --> 0:15:55,199
+is that i'm using the font courier on
+
+403
+0:15:55,199 --> 0:15:57,279
+purpose for me it's a little bit easier
+
+404
+0:15:57,279 --> 0:15:59,680
+right now to just use a fixed width font
+
+405
+0:15:59,680 --> 0:16:01,600
+meaning every character no matter what
+
+406
+0:16:01,600 --> 0:16:03,680
+it is takes up the same amount of
+
+407
+0:16:03,680 --> 0:16:06,399
+horizontal space um this makes just sort
+
+408
+0:16:06,399 --> 0:16:08,160
+of the math of arranging the pixels much
+
+409
+0:16:08,160 --> 0:16:09,680
+easier although it is an interesting
+
+410
+0:16:09,680 --> 0:16:11,519
+problem to think about how we would do
+
+411
+0:16:11,519 --> 0:16:13,440
+this without a fixed swift font that's
+
+412
+0:16:13,440 --> 0:16:14,720
+something that you could take on as your
+
+413
+0:16:14,720 --> 0:16:17,120
+own challenge perhaps i'm also noticing
+
+414
+0:16:17,120 --> 0:16:19,120
+something a bit odd here which is that
+
+415
+0:16:19,120 --> 0:16
+the contours of gloria are lost every
+
+416
+0:16 --> 0:16:24,240
+single row starts all the way over at
+
+417
+0:16:24,240 --> 0:16:27,120
+the left why is this well if we go back
+
+418
+0:16:27,120 --> 0:16:29,600
+to here you might notice that this
+
+419
+0:16:29,600 --> 0:16:31,759
+character at the very end of the density
+
+420
+0:16:31,759 --> 0:16:35,040
+string is a space and if i put a space
+
+421
+0:16:35,040 --> 0:16:37,440
+into a web page it's not actually going
+
+422
+0:16:37,440 --> 0:16:39,920
+to necessarily render it unless it's in
+
+423
+0:16:39,920 --> 0:16:42,639
+between characters in a particular way
+
+424
+0:16:42,639 --> 0:16:45,920
+so what i need to do here is instead of
+
+425
+0:16:45,920 --> 0:16:48,240
+rendering a space actually use the
+
+426
+0:16:48,240 --> 0:16:51,519
+non-breaking space character thingymabob
+
+427
+0:16:51,519 --> 0:16
+what is that
+
+428
+0:16 --> 0:16:57,199
+ah it is an html entity which is a piece
+
+429
+0:16:57,199 --> 0:16:59,279
+of text that begins with an ampersand it
+
+430
+0:16:59,279 --> 0:17:01,040
+ends with a semicolon and there's
+
+431
+0:17:01,040 --> 0:17:04,559
+different reserved ones like ampersand
+
+432
+0:17:04,559 --> 0:17:06,959
+greater than less than there's one for
+
+433
+0:17:06,959 --> 0:17:08,720
+non-breaking space character i forget
+
+434
+0:17:08,720 --> 0:17
+what that is though what does it stand
+
+435
+0:17 --> 0:17:12,720
+for non-breaking space i think it's just
+
+436
+0:17:12,720 --> 0:17:20,319
+sp for space
+
+437
+0:17:20,319 --> 0:17:22,079
+i think what i'll try to do is add the
+
+438
+0:17:22,079 --> 0:17:24,880
+line height property to spring the lines
+
+439
+0:17:24,880 --> 0:17:28,480
+a bit closer to each other
+
+440
+0:17:28,480 --> 0:17:31,120
+if i make that 12 point okay that's much
+
+441
+0:17:31,120 --> 0:17:34,559
+too overlapping
+
+442
+0:17:34,559 --> 0:17:36,160
+that's a little bit better
+
+443
+0:17:36,160 --> 0:17:38,240
+let me go back to the higher resolution
+
+444
+0:17:38,240 --> 0:17:39,120
+image
+
+445
+0:17:39,120 --> 0:17:42,720
+the one that was 48 by 48 pixels
+
+446
+0:17:42,720 --> 0:17:45,280
+make a smaller font size
+
+447
+0:17:45,280 --> 0:17:47,440
+and there we go you can see glory in
+
+448
+0:17:47,440 --> 0:17:49,039
+there can't you
+
+449
+0:17:49,039 --> 0:17:51,440
+don't you see gloria what i love about
+
+450
+0:17:51,440 --> 0:17:54,320
+this now is i can take this hit copy
+
+451
+0:17:54,320 --> 0:17:56,880
+make a just a plain text file and paste
+
+452
+0:17:56,880 --> 0:17:58,559
+it in this is definitely looking much
+
+453
+0:17:58,559 --> 0:18:01,039
+better kind of white on black let me try
+
+454
+0:18:01,039 --> 0:18:06,400
+to recreate that in my version here
+
+455
+0:18:06,400 --> 0:18:07,520
+ta-da
+
+456
+0:18:07,520 --> 0:18:10,400
+gloria pickle as ascii art
+
+457
+0:18:10,400 --> 0:18:13,120
+now i want to show you how easy i think
+
+458
+0:18:13,120 --> 0:18:16,720
+this will be to take this from a static
+
+459
+0:18:16,720 --> 0:18:18,559
+image to a video i have no idea where
+
+460
+0:18:18,559 --> 0:18:21,280
+the timer is at right now but i expect
+
+461
+0:18:21,280 --> 0:18:23,360
+that i'm gonna have it in the next
+
+462
+0:18:23,360 --> 0:18:25,760
+minute or two instead of gloria let me
+
+463
+0:18:25,760 --> 0:18:28,080
+make a variable called video
+
+464
+0:18:28,080 --> 0:18:30,720
+no more preload
+
+465
+0:18:30,720 --> 0:18:34,080
+there's my video image right now
+
+466
+0:18:34,080 --> 0:18:37,039
+let me resize it to 48 by 48
+
+467
+0:18:37,039 --> 0:18:39,360
+i'm going to add draw back in
+
+468
+0:18:39,360 --> 0:18:41,039
+to use the draw loop even though there's
+
+469
+0:18:41,039 --> 0:18:43,120
+no canvas i don't need these width and
+
+470
+0:18:43,120 --> 0:18:44,480
+heights anymore i forgot about that
+
+471
+0:18:44,480 --> 0:18:47,360
+because i'm not drawing
+
+472
+0:18:47,360 --> 0:18:51,360
+this should be video
+
+473
+0:18:51,360 --> 0:18:53,600
+hey i'm getting somewhere really fast
+
+474
+0:18:53,600 --> 0:18:56,960
+and oh i've i've done a horrible thing
+
+475
+0:18:56,960 --> 0:18:59,200
+so because i'm using creative i hit stop
+
+476
+0:18:59,200 --> 0:19:01,360
+i just created image after image after
+
+477
+0:19:01,360 --> 0:19:03,200
+image on the page so instead of using
+
+478
+0:19:03,200 --> 0:19:05,679
+creative i need to update the text of
+
+479
+0:19:05,679 --> 0:19:06,799
+each div
+
+480
+0:19:06,799 --> 0:19:08,559
+i think this will also be easier if i
+
+481
+0:19:08,559 --> 0:19:10,960
+just make one div that has line breaks
+
+482
+0:19:10,960 --> 0:19:12,960
+in it rather than each row is a
+
+483
+0:19:12,960 --> 0:19:15,200
+particular div you might be asking what
+
+484
+0:19:15,200 --> 0:19:16,960
+is the div
+
+485
+0:19:16,960 --> 0:19:18,240
+i'll include a link in the video's
+
+486
+0:19:18,240 --> 0:19:23,039
+description with more info
+
+487
+0:19:23,039 --> 0:19:25,919
+so now just one div that i'm going to
+
+488
+0:19:25,919 --> 0:19:28,400
+display on the page so instead of each
+
+489
+0:19:28,400 --> 0:19:31,919
+row being a separate string
+
+490
+0:19:31,919 --> 0:19:34,240
+i'm just going to write
+
+491
+0:19:34,240 --> 0:19
+a string called ascii image
+
+492
+0:19 --> 0:19:40,240
+and accumulate all the text into ascii
+
+493
+0:19:40,240 --> 0:19:41,760
+image and then
+
+494
+0:19:41,760 --> 0:19:45,440
+after each row
+
+495
+0:19:45,440 --> 0:19:48,400
+add the html tag for a line break i
+
+496
+0:19:48,400 --> 0:19:50,160
+believe
+
+497
+0:19:50,160 --> 0:19:53,360
+this should work
+
+498
+0:19:53,360 --> 0:19:55,840
+okay well i need to update the div to
+
+499
+0:19:55,840 --> 0:19:59,679
+include that text
+
+500
+0:19:59,679 --> 0:20:01,760
+and we've done it
+
+501
+0:20:01,760 --> 0:20:03,200
+we can stop the timer i mean we have
+
+502
+0:20:03,200 --> 0:20:04,559
+some more things to say i want to clean
+
+503
+0:20:04,559 --> 0:20:06,559
+this up a little bit but we can stop the
+
+504
+0:20:06,559 --> 0:20:08,400
+timer this is pretty close to whatever i
+
+505
+0:20:08,400 --> 0:20:10,880
+did a year ago looking at this i'd like
+
+506
+0:20:10,880 --> 0:20:12,880
+to sort of see if i can fix this up a
+
+507
+0:20:12,880 --> 0:20:14,559
+bit one of the things that i can
+
+508
+0:20:14,559 --> 0:20:17,840
+immediately do is work with that string
+
+509
+0:20:17,840 --> 0:20:20,240
+of characters that i have in my density
+
+510
+0:20:20,240 --> 0:20:22,960
+string for example what i since i have
+
+511
+0:20:22,960 --> 0:20:25,280
+this kind of locked in green background
+
+512
+0:20:25,280 --> 0:20:28,080
+i think i can use many more blank
+
+513
+0:20:28,080 --> 0:20:31,360
+characters blank spaces for uh darker
+
+514
+0:20:31,360 --> 0:20:32,880
+characters
+
+515
+0:20:32,880 --> 0:20:34,720
+so for example just adding a lot of
+
+516
+0:20:34,720 --> 0:20:37,360
+spaces here
+
+517
+0:20:37,360 --> 0:20:40,240
+we can start to see that i am kind of
+
+518
+0:20:40,240 --> 0:20:42,960
+reducing i'm essentially thresholding
+
+519
+0:20:42,960 --> 0:20:45,280
+the image in a way so that only the
+
+520
+0:20:45,280 --> 0:20:46,880
+brightest pixels
+
+521
+0:20:46,880 --> 0:20:49,120
+get uh kind of going with a particular
+
+522
+0:20:49,120 --> 0:20:51,840
+character i can also just use different
+
+523
+0:20:51,840 --> 0:20:54,159
+character strings
+
+524
+0:20:54,159 --> 0:20:55,919
+for example here's another one although
+
+525
+0:20:55,919 --> 0:20:57,919
+i have it inverted so if i have the
+
+526
+0:20:57,919 --> 0:20:59,440
+darker characters at the beginning of
+
+527
+0:20:59,440 --> 0:21:01,280
+the string and the brighter characters
+
+528
+0:21:01,280 --> 0:21:02,559
+at the end
+
+529
+0:21:02,559 --> 0:21:05,440
+i will want to change update my mapping
+
+530
+0:21:05,440 --> 0:21:07,440
+to go from zero
+
+531
+0:21:07,440 --> 0:21:08,960
+to length
+
+532
+0:21:08,960 --> 0:21:10,400
+we can also play around with the
+
+533
+0:21:10,400 --> 0:21:12,400
+resolution of the image i don't need to
+
+534
+0:21:12,400 --> 0:21:14,840
+squash it into a square i don't
+
+535
+0:21:14,840 --> 0:21:18,400
+think so now if it's 64 by 48 and i've
+
+536
+0:21:18,400 --> 0:21:20,240
+adjusted the spacing of the characters
+
+537
+0:21:20,240 --> 0:21:22,080
+and the line height i've done a pretty
+
+538
+0:21:22,080 --> 0:21:25,520
+good job of having the image retain its
+
+539
+0:21:25,520 --> 0:21:28,240
+original aspect ratio and dimensions i'm
+
+540
+0:21:28,240 --> 0:21:29,679
+recording this during a live twitch
+
+541
+0:21:29,679 --> 0:21:31,280
+stream so by the way you can go
+
+542
+0:21:31,280 --> 0:21:32,559
+subscribe on twitch i don't know how
+
+543
+0:21:32,559 --> 0:21:34,080
+much i'll be streaming on twitch versus
+
+544
+0:21:34,080 --> 0:21:35,520
+youtube but i might as well put this in
+
+545
+0:21:35,520 --> 0:21:37,360
+the video right now and in the chat i
+
+546
+0:21:37,360 --> 0:21:39,120
+just got a suggestion why don't you
+
+547
+0:21:39,120 --> 0:21:40,640
+filter out green since that's what a
+
+548
+0:21:40,640 --> 0:21:43,120
+green screen is for so yes if i want to
+
+549
+0:21:43,120 --> 0:21:45,200
+make use of the color values of the
+
+550
+0:21:45,200 --> 0:21:47,280
+pixels there's a lot more that i could
+
+551
+0:21:47,280 --> 0:21:49,600
+try i just i could keep going i don't
+
+552
+0:21:49,600 --> 0:21:51,840
+want to keep going i want to stop here i
+
+553
+0:21:51,840 --> 0:21
+want you to explore this and i want to
+
+554
+0:21 --> 0:21:56,159
+create i want to see what kind of ascii
+
+555
+0:21:56,159 --> 0:21:58,159
+art you create from this video please
+
+556
+0:21:58,159 --> 0:21:59,679
+share it with me on the coding train
+
+557
+0:21:59,679 --> 0:22:02,240
+website on social media all the links
+
+558
+0:22:02,240 --> 0:22:03,200
+and various things are in the
+
+559
+0:22:03,200 --> 0:22:05,600
+description thanks for tuning in i hope
+
+560
+0:22:05,600 --> 0:22
+you enjoyed this coding challenge ah the
+
+561
+0:22 --> 0:22:10,159
+boiler just came on there's a loud
+
+562
+0:22:10,159 --> 0:22:12,640
+buzzing sound i'm leaving it in we're
+
+563
+0:22:12,640 --> 0:22:15,360
+leaving it in this is in i'm in a
+
+564
+0:22:15,360 --> 0:22:18,159
+freezing cold garage right now i had the
+
+565
+0:22:18,159 --> 0:22:20,400
+heat off during this whole time just so
+
+566
+0:22:20,400 --> 0:22:21,440
+i've been recording this coating
+
+567
+0:22:21,440 --> 0:22:23,039
+challenge with you the heat just came
+
+568
+0:22:23,039 --> 0:22:25,039
+back on i'm gonna go warm up inside with
+
+569
+0:22:25,039 --> 0:22:27,039
+a toasty mug of something and i'll see
+
+570
+0:22:27,039 --> 0:22:30,860
+you next time on the coding train
+
+571
+0:22:30,860 --> 0:22:41,039
+[Music]
+
+572
+0:22:41,039 --> 0:22:43,120
+you
+
